@@ -1,0 +1,18 @@
+---
+permalink: storage/concept_system_manage_snmp_manage_snmp.html 
+sidebar: sidebar 
+keywords: snmp, manage, config, cluster, requestor, usm, traps, monitor 
+summary: '클러스터에서 SNMP(Simple Network Management Protocol)\ 를 구성할 수 있습니다.' 
+---
+= SNMP를 관리합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클러스터에서 SNMP(Simple Network Management Protocol)를 구성할 수 있습니다.
+
+SNMP 요청자를 선택하고, 사용할 SNMP 버전을 선택하고, USM(사용자 기반 보안 모델) 사용자를 식별하고, SolidFire 클러스터를 모니터링하기 위한 트랩을 구성할 수 있습니다. 관리 정보 기반 파일을 보고 액세스할 수도 있습니다.
+
+
+NOTE: IPv4와 IPv6 주소를 모두 사용할 수 있습니다.

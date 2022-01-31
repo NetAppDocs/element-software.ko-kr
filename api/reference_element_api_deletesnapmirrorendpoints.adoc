@@ -1,0 +1,47 @@
+---
+permalink: api/reference_element_api_deletesnapmirrorendpoints.html 
+sidebar: sidebar 
+keywords: SnapMirror,endpoints,endpoint,delete,deleting,DeleteSnapMirrorEndpoints 
+summary: Element 웹 UI에서는 DeleteSnapMirrorEndpoints 를 사용하여 시스템에서 하나 이상의 SnapMirror 끝점을 삭제합니다. 
+---
+= DeleteSnapMirrorEndpoints 를 클릭합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 웹 UI에서는 DeleteSnapMirrorEndpoints를 사용하여 시스템에서 하나 이상의 SnapMirror 끝점을 삭제합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+snapMirrorEndpointID입니다
+ a| 
+삭제할 SnapMirror 엔드포인트의 ID 배열입니다.
+ a| 
+정수 배열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 버전 이후 새로운 기능
+
+10.0

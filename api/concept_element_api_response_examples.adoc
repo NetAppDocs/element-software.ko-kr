@@ -1,0 +1,33 @@
+---
+permalink: api/concept_element_api_response_examples.html 
+sidebar: sidebar 
+keywords: response,example 
+summary: 여기에 전체 응답 예가 나와 있습니다. 
+---
+= 답변 예
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+여기에 전체 응답 예가 나와 있습니다.
+
+* xref:reference_element_api_response_example_getconfig.adoc[getconfig를 참조하십시오]
+* xref:reference_element_api_response_example_getclusterhardwareinfo.adoc[GetClusterHardwareInfo 를 참조하십시오]
+* xref:reference_element_api_response_example_getlldpinfo.adoc[GetLldpInfo 를 참조하십시오]
+* xref:reference_element_api_response_example_getnetworkconfig.adoc[GetNetworkConfig 를 참조하십시오]
+* xref:reference_element_api_response_example_getnodehardwareinfo.adoc[GetNodeHardwareInfo(iSCSI 출력)]
+* xref:reference_element_api_response_example_getnodehardwareinfo_fibre_channel.adoc[GetNodeHardwareInfo(Fibre Channel 노드의 출력)]
+* xref:reference_element_api_response_example_getnvraminfo.adoc[GetNvramInfo 를 참조하십시오]
+* xref:reference_element_api_response_example_listactivenodes.adoc[ListActiveNodes 를 선택합니다]
+* xref:reference_element_api_response_example_listactivevolumes.adoc[ListActiveVolumes]
+* xref:reference_element_api_response_example_testhardwareconfig.adoc[TestHardwareConfig]
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
+

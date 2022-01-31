@@ -1,0 +1,144 @@
+---
+permalink: api/reference_element_api_listinitiators.html 
+sidebar: sidebar 
+keywords: initiators,initiator,list,listing,listinitiators,iqn,wwpn,iqns,wwpns 
+summary: 'ListInitiators 메서드를 사용하면 이니시에이터 IQN 또는 WWPN(World Wide Port Name\) 목록을 가져올 수 있습니다.' 
+---
+= ListInitiators(목록 초기자
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListInitiators" 방법을 사용하면 이니시에이터 IQN 또는 WWPN(World Wide Port Name)의 목록을 가져올 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+이니시에이터
+ a| 
+검색할 이니시에이터 ID 목록입니다. 이 매개 변수 또는 startInitialatorID 매개 변수를 제공할 수 있지만 둘 다 제공할 수는 없습니다.
+ a| 
+정수 배열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+startInitialatorID입니다
+ a| 
+리스팅을 시작할 이니시에이터 ID입니다. 이 매개 변수 또는 initiators 매개 변수를 제공할 수 있지만 둘 다 제공할 수는 없습니다.
+ a| 
+정수
+ a| 
+0
+ a| 
+아니요
+
+
+
+ a| 
+제한
+ a| 
+반환할 최대 이니시에이터 개체 수입니다.
+ a| 
+정수
+ a| 
+(무제한)
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+이니시에이터
+ a| 
+이니시에이터 정보 목록입니다.
+ a| 
+xref:reference_element_api_initiator.adoc[이니시에이터] 스토리지
+
+|===
+
+
+== 예외
+
+이 메서드는 다음과 같은 예외를 가질 수 있습니다.
+
+|===
+
+
+| 이름 | 설명 
+
+
+ a| 
+xInvalidParameter 를 선택합니다
+ a| 
+동일한 메서드 호출에 startInitialatorID 및 initiators 매개 변수를 모두 포함하는 경우 throw됩니다.
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "ListInitiators",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "initiators": [
+      {
+        "alias": "",
+        "attributes": {},
+        "initiatorID": 2,
+        "initiatorName": "iqn.1993-08.org.debian:01:c84ffd71216",
+        "volumeAccessGroups": [
+          1
+        ]
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

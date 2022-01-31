@@ -1,0 +1,97 @@
+---
+permalink: api/reference_element_api_listbulkvolumejobs.html 
+sidebar: sidebar 
+keywords: bulk,volume,job,jobs,volumes,read,write,operation,list,listing,listbulkvolumejobs 
+summary: ListBulkVolumeJobs 메서드를 사용하여 시스템에서 발생하는 각 대량 볼륨 읽기 또는 쓰기 작업에 대한 정보를 얻을 수 있습니다. 
+---
+= ListBulkVolumeJobs
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListBulkVolumeJobs" 방법을 사용하여 시스템에서 발생하는 각 대량 볼륨 읽기 또는 쓰기 작업에 대한 정보를 얻을 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+벌크 VolumeJobs
+ a| 
+각 대량 볼륨 작업에 대한 정보 배열입니다.
+ a| 
+xref:reference_element_api_bulkvolumejob.adoc[벌크 볼륨 작업] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "ListBulkVolumeJobs",
+   "params": {
+      },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "bulkVolumeJobs": [
+        {
+          "attributes": {
+            "blocksPerTransfer": 1024,
+            "firstPendingLba": 216064,
+            "nLbas": 2441472,
+            "nextLba": 226304,
+            "pendingLbas": "[220160, 223232, 221184, 224256, 217088, 225280, 222208, 218112, 219136, 216064]",
+            "percentComplete": 8,
+            "startLba": 0
+          },
+          "bulkVolumeID": 2,
+          "createTime": "2015-05-07T14:52:17Z",
+          "elapsedTime": 44,
+          "format": "native",
+          "key": "eaffb0526d4fb47107061f09bfc9a806",
+          "percentComplete": 8,
+          "remainingTime": 506,
+          "script": "bv_internal.py",
+          "snapshotID": 509,
+          "srcVolumeID": 3,
+          "status": "running",
+          "type": "read"
+       }
+     ]
+   }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

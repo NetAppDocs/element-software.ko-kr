@@ -1,0 +1,135 @@
+---
+permalink: api/reference_element_api_gethardwareconfig.html 
+sidebar: sidebar 
+keywords: node,hardware,config,configuration,get,getting,gethardwareconfig 
+summary: GetHardwareConfig 메서드를 사용하여 노드의 하드웨어 구성 정보를 가져올 수 있습니다. 
+---
+= GetHardwareConfig 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetHardwareConfig" 메서드를 사용하여 노드의 하드웨어 구성 정보를 가져올 수 있습니다. 이 구성 데이터는 내부용입니다. 보다 유용한 라이브 시스템 하드웨어 구성 요소 인벤토리를 얻으려면 대신 GetHardwareInfo 메서드를 사용합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+| 하드웨어 구성 | 하드웨어 정보 및 현재 설정 목록입니다. | JSON 개체 
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "GetHardwareConfig",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드에 대한 응답은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "hardwareConfig": {
+            "biosRevision": "1.0",
+            "biosVendor": [
+                "NetApp",
+                "SolidFire"
+            ],
+            "biosVersion": "1.1.2",
+            "blockDriveSizeBytes": 300069052416,
+            "blockDrives": [
+                "/dev/slot0",
+                "/dev/slot1",
+                "/dev/slot2",
+                "/dev/slot3",
+                "/dev/slot4",
+                "/dev/slot5",
+                "/dev/slot6",
+                "/dev/slot7",
+                "/dev/slot8",
+                "/dev/slot9"
+            ],
+            "blockServiceFormat": "Standard",
+            "bmcFirmwareRevision": "1.6",
+            "bmcIpmiVersion": "2.0",
+            "chassisType": "R620",
+            "cpuCores": 6,
+            "cpuCoresEnabled": 6,
+            "cpuModel": "Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz",
+            "cpuThreads": 12,
+            "driveSizeBytesInternal": 400088457216,
+            "fibreChannelFirmwareRevision": "",
+            "fibreChannelModel": "",
+            "fibreChannelPorts": {},
+            "idracVersion": "1.06.06",
+            "ignoreFirmware": [],
+            "memoryGB": 72,
+            "memoryMhz": 1333,
+            "networkDriver": [
+                "bnx2x"
+            ],
+            "nicPortMap": {
+                "PortA": "eth2",
+                "PortB": "eth3",
+                "PortC": "eth0",
+                "PortD": "eth1"
+            },
+            "nodeType": "SF3010",
+            "numCpu": 2,
+            "numDrives": 10,
+            "numDrivesInternal": 1,
+            "nvramTempMonitorEnable": false,
+            "rootDrive": "/dev/sdimm0",
+            "scsiBusExternalDriver": "mpt3sas",
+            "scsiBusInternalDriver": "ahci",
+            "sliceDriveSizeBytes": 299988156416,
+            "sliceDrives": [
+                "/dev/sdimm0p4"
+            ],
+            "slotOffset": 0,
+            "solidfireDefaults": {
+                "bufferCacheGB": 12,
+                "configuredIops": 50000,
+                "cpuDmaLatency": -1,
+                "driveWriteThroughputMBPerSleep": 10,
+                "maxDriveWriteThroughputMBPerSec": 175,
+                "maxIncomingSliceSyncs": 10,
+                "postCallbackThreadCount": 8,
+                "sCacheFileCapacity": 100000000,
+                "sliceFileLogFileCapacity": 5000000000
+            }
+        }
+    }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

@@ -1,0 +1,23 @@
+---
+permalink: storage/task_troubleshoot_remove_mdss_drives.html 
+sidebar: sidebar 
+keywords: mdss, remove, multi-drive slice service 
+summary: '다중 드라이브 슬라이스 서비스\(MDSS\) 드라이브를 제거할 수 있습니다. 이 절차는 노드에 여러 개의 슬라이스 드라이브가 있는 경우에만 적용됩니다.' 
+---
+= MDSS 드라이브를 제거합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+다중 드라이브 슬라이스 서비스(MDSS) 드라이브를 제거할 수 있습니다. 이 절차는 노드에 여러 개의 슬라이스 드라이브가 있는 경우에만 적용됩니다.
+
+
+NOTE: 시스템 슬라이스 드라이브와 슬롯 2 드라이브에 장애가 발생하면 시스템은 슬라이스 서비스를 종료하고 드라이브를 제거합니다. 장애가 발생하지 않고 드라이브를 분리하는 경우 두 드라이브를 동시에 제거해야 합니다.
+
+. Cluster * > * Drives * 를 클릭합니다.
+. Available * drives(사용 가능한 * 드라이브) 탭에서 제거할 슬라이스 드라이브의 확인란을 클릭합니다.
+. 대량 작업 * 을 클릭합니다.
+. 제거 * 를 클릭합니다.
+. 작업을 확인합니다.
+

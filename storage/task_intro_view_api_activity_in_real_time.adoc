@@ -1,0 +1,42 @@
+---
+permalink: storage/task_intro_view_api_activity_in_real_time.html 
+sidebar: sidebar 
+keywords: solidfire api, element api, element os, element, viewing the API log, viewing API calls 
+summary: Element 시스템은 NetAppElement API를 기능 및 기능의 기반으로 사용합니다. Element UI를 사용하면 인터페이스를 사용할 때 시스템에서 다양한 유형의 실시간 API 작업을 볼 수 있습니다. API 로그를 사용하면 사용자 시작 및 백그라운드 시스템 API 작업과 현재 보고 있는 페이지에서 수행된 API 호출을 볼 수 있습니다. 
+---
+= API 활동을 봅니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 시스템은 NetApp Element API를 기능 및 기능의 기반으로 사용합니다. Element UI를 사용하면 인터페이스를 사용할 때 시스템에서 다양한 유형의 실시간 API 작업을 볼 수 있습니다. API 로그를 사용하면 사용자 시작 및 백그라운드 시스템 API 작업과 현재 보고 있는 페이지에서 수행된 API 호출을 볼 수 있습니다.
+
+API 로그를 사용하여 특정 작업에 사용되는 API 메서드를 식별하고 API 메서드 및 개체를 사용하여 사용자 지정 응용 프로그램을 빌드하는 방법을 확인할 수 있습니다.
+
+각 방법에 대한 자세한 내용은 을 참조하십시오 link:../api/index.html["Element 소프트웨어 API 참조입니다"].
+
+. Element UI 탐색 모음에서 * API 로그 * 를 클릭합니다.
+. API Log 창에 표시되는 API 작업 유형을 수정하려면 다음 단계를 수행하십시오.
++
+.. API 요청 트래픽을 표시하려면 * 요청 * 을 선택합니다.
+.. 응답 * 을 선택하여 API 응답 트래픽을 표시합니다.
+.. 다음 중 하나를 선택하여 API 트래픽 유형을 필터링합니다.
++
+*** * 사용자 시작 *: 이 웹 UI 세션 동안 사용자의 활동에 의한 API 트래픽.
+*** * 백그라운드 폴링 *: 백그라운드 시스템 작업에 의해 생성된 API 트래픽입니다.
+*** * 현재 페이지 *: 현재 보고 있는 페이지의 작업에 의해 생성된 API 트래픽입니다.
+
+
+
+
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* link:../api/index.html["Element API를 사용하여 스토리지 관리"]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

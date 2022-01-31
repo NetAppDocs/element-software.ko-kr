@@ -1,0 +1,931 @@
+---
+section: api
+title: Element API를 사용하여 스토리지 관리
+url: "/api/index.html"
+entries:
+- title: Element 소프트웨어 API 정보
+  url: "/api/concept_element_api_about_the_api.html"
+  entries:
+  - title: 객체 구성원 요청
+    url: "/api/reference_element_api_request_object_members.html"
+  - title: 응답 객체 멤버
+    url: "/api/reference_element_api_response_object_members.html"
+  - title: 엔드포인트 요청
+    url: "/api/concept_element_api_request_endpoints.html"
+  - title: API 인증
+    url: "/api/concept_element_api_authentication.html"
+  - title: 비동기 메서드
+    url: "/api/concept_element_api_asynchronous_methods.html"
+  - title: 속성
+    url: "/api/reference_element_api_attributes.html"
+- title: 공통 개체
+  url: "/api/concept_element_api_common_objects.html"
+  entries:
+  - title: 계정
+    url: "/api/reference_element_api_account.html"
+  - title: AuthSessionInfo 를 참조하십시오
+    url: "/api/reference_element_api_authsessioninfo.html"
+  - title: 벌크 볼륨 작업
+    url: "/api/reference_element_api_bulkvolumejob.html"
+  - title: 바인딩(가상 볼륨)
+    url: "/api/reference_element_api_binding_vvols.html"
+  - title: 인증서 세부 정보
+    url: "/api/reference_element_api_certificatedetails.html"
+  - title: 클러스터
+    url: "/api/reference_element_api_cluster.html"
+  - title: 클러스터 관리자
+    url: "/api/reference_element_api_clusteradmin.html"
+  - title: 클러스터 용량
+    url: "/api/reference_element_api_clustercapacity.html"
+  - title: 클러스터 구성
+    url: "/api/reference_element_api_clusterconfig.html"
+  - title: 클러스터 정보
+    url: "/api/reference_element_api_clusterinfo.html"
+  - title: 클러스터 쌍
+    url: "/api/reference_element_api_clusterpair.html"
+  - title: 클러스터 통계
+    url: "/api/reference_element_api_clusterstats.html"
+  - title: 클러스터 구조
+    url: "/api/reference_element_api_clusterstructure.html"
+  - title: 드라이브
+    url: "/api/reference_element_api_drive.html"
+  - title: 드라이브 통계
+    url: "/api/reference_element_api_drivestats.html"
+  - title: 오류
+    url: "/api/reference_element_api_error.html"
+  - title: 이벤트
+    url: "/api/reference_element_api_event.html"
+  - title: 오류
+    url: "/api/reference_element_api_fault.html"
+  - title: 광섬유 채널 포트
+    url: "/api/reference_element_api_fibrechannelport.html"
+  - title: fipsErrorNodeReport를 참조하십시오
+    url: "/api/reference_element_api_fipserrornodereport.html"
+  - title: FipsNodeReport를 참조하십시오
+    url: "/api/reference_element_api_fipsnodereport.html"
+  - title: fipsReport를 참조하십시오
+    url: "/api/reference_element_api_fipsreport.html"
+  - title: 그룹 스냅샷
+    url: "/api/reference_element_api_groupsnapshot.html"
+  - title: 하드웨어 정보
+    url: "/api/reference_element_api_hardwareinfo.html"
+  - title: 호스트(가상 볼륨)
+    url: "/api/reference_element_api_host.html"
+  - title: idpConfigInfo
+    url: "/api/reference_element_api_idpconfiginfo.html"
+  - title: 이니시에이터
+    url: "/api/reference_element_api_initiator.html"
+  - title: KeyProviderKmip 을 참조하십시오
+    url: "/api/reference_element_api_keyproviderkmip.html"
+  - title: KeyServerKmip
+    url: "/api/reference_element_api_keyserverkmip.html"
+  - title: ldapConfiguration 을 선택합니다
+    url: "/api/reference_element_api_ldapconfiguration.html"
+  - title: 로그 서버
+    url: "/api/reference_element_api_loggingserver.html"
+  - title: 네트워크(연결된 인터페이스)
+    url: "/api/reference_element_api_network_bonded_interfaces.html"
+  - title: 네트워크(모든 인터페이스)
+    url: "/api/reference_element_api_network_all_interfaces.html"
+  - title: 네트워크(이더넷 인터페이스)
+    url: "/api/reference_element_api_network_ethernet_interfaces.html"
+  - title: 네트워크(로컬 인터페이스)
+    url: "/api/reference_element_api_network_local_interfaces.html"
+  - title: 네트워크(SNMP)
+    url: "/api/reference_element_api_network_snmp.html"
+  - title: 네트워크 인터페이스
+    url: "/api/reference_element_api_networkinterface.html"
+  - title: 네트워크 인터페이스 통계
+    url: "/api/reference_element_api_networkinterfacestats.html"
+  - title: 노드
+    url: "/api/reference_element_api_node.html"
+  - title: 노드 보호도메인
+    url: "/api/reference_element_api_nodeprotectiondomains.html"
+  - title: 노드 통계
+    url: "/api/reference_element_api_nodestats.html"
+  - title: ontapVersionInfo
+    url: "/api/reference_element_api_ontapversioninfo.html"
+  - title: 활성 노드
+    url: "/api/reference_element_api_pendingactivenode.html"
+  - title: 펜던트 노드
+    url: "/api/reference_element_api_pendingnode.html"
+  - title: 보호 도메인
+    url: "/api/reference_element_api_protectiondomain.html"
+  - title: 보호도메인레벨
+    url: "/api/reference_element_api_protectiondomainlevel.html"
+  - title: 보호무역도메인복원력
+    url: "/api/reference_element_api_protectiondomainresiliency.html"
+  - title: 보호무역도메인허용치
+    url: "/api/reference_element_api_protectiondomaintolerance.html"
+  - title: 보호무역회로복원력
+    url: "/api/reference_element_api_protectionschemeresiliency.html"
+  - title: 보호무역계통허용치
+    url: "/api/reference_element_api_protectionschemetolerance.html"
+  - title: ProtocolEndpoint
+    url: "/api/reference_element_api_protocolendpoint.html"
+  - title: QoS를 참조하십시오
+    url: "/api/reference_element_api_qos.html"
+  - title: QoSPolicy를 참조하십시오
+    url: "/api/reference_element_api_qospolicy.html"
+  - title: 원격 클러스터 스냅샷상태
+    url: "/api/reference_element_api_remoteclustersnapshotstatus.html"
+  - title: 스케줄
+    url: "/api/reference_element_api_schedule.html"
+  - title: 세션(Fibre Channel)
+    url: "/api/reference_element_api_session_fibre_channel.html"
+  - title: 세션(iSCSI)
+    url: "/api/reference_element_api_session_iscsi.html"
+  - title: snapMirrorAggregate
+    url: "/api/reference_element_api_snapmirroraggregate.html"
+  - title: snapMirrorClusterIdentity를 선택합니다
+    url: "/api/reference_element_api_snapmirrorclusteridentity.html"
+  - title: snapMirrorEndpoint
+    url: "/api/reference_element_api_snapmirrorendpoint.html"
+  - title: snapMirrorJobScheduleCronInfo를 참조하십시오
+    url: "/api/reference_element_api_snapmirrorjobschedulecroninfo.html"
+  - title: snapMirrorLunInfo
+    url: "/api/reference_element_api_snapmirrorluninfo.html"
+  - title: snapMirrorNetworkInterface를 참조하십시오
+    url: "/api/reference_element_api_snapmirrornetworkinterface.html"
+  - title: snapMirrorNode를 선택합니다
+    url: "/api/reference_element_api_snapmirrornode.html"
+  - title: snapMirrorPolicy를 참조하십시오
+    url: "/api/reference_element_api_snapmirrorpolicy.html"
+  - title: snapMirrorPolicyRule 을 참조하십시오
+    url: "/api/reference_element_api_snapmirrorpolicyrule.html"
+  - title: snapMirrorRelationship
+    url: "/api/reference_element_api_snapmirrorrelationship.html"
+  - title: snapMirrorVolume(스냅 볼륨)
+    url: "/api/reference_element_api_snapmirrorvolume.html"
+  - title: snapMirrorVolumeInfo
+    url: "/api/reference_element_api_snapmirrorvolumeinfo.html"
+  - title: snapMirrorVserver
+    url: "/api/reference_element_api_snapmirrorvserver.html"
+  - title: snapMirrorVserverAggregateInfo를 참조하십시오
+    url: "/api/reference_element_api_snapmirrorvserveraggregateinfo.html"
+  - title: 스냅샷
+    url: "/api/reference_element_api_snapshot.html"
+  - title: snmpTrapRecipient를 선택합니다
+    url: "/api/reference_element_api_snmptraprecipient.html"
+  - title: storageContainer 를 선택합니다
+    url: "/api/reference_element_api_storagecontainer.html"
+  - title: 동기화 작업
+    url: "/api/reference_element_api_syncjob.html"
+  - title: 작업(가상 볼륨)
+    url: "/api/reference_element_api_task_virtual_volumes.html"
+  - title: usmUser(사용자)
+    url: "/api/reference_element_api_usmuser.html"
+  - title: 가상네트워크
+    url: "/api/reference_element_api_virtualnetwork.html"
+  - title: 가상볼륨
+    url: "/api/reference_element_api_virtualvolume.html"
+  - title: 볼륨
+    url: "/api/reference_element_api_volume.html"
+  - title: 볼륨 액세스 그룹
+    url: "/api/reference_element_api_volumeaccessgroup.html"
+  - title: 볼륨페어가 있습니다
+    url: "/api/reference_element_api_volumepair.html"
+  - title: 볼륨 통계
+    url: "/api/reference_element_api_volumestats.html"
+- title: 일반적인 방법
+  url: "/api/concept_element_api_common_methods.html"
+  entries:
+  - title: GetAPI 를 참조하십시오
+    url: "/api/reference_element_api_getapi.html"
+  - title: GetAsyncResult 를 참조하십시오
+    url: "/api/reference_element_api_getasyncresult.html"
+  - title: GetCompleteStats 를 참조하십시오
+    url: "/api/reference_element_api_getcompletestats.html"
+  - title: GetLimits 를 선택합니다
+    url: "/api/reference_element_api_getlimits.html"
+  - title: GetOrigin 을 클릭합니다
+    url: "/api/reference_element_api_getorigin.html"
+  - title: GetRawStats 를 참조하십시오
+    url: "/api/reference_element_api_getrawstats.html"
+  - title: ListAsyncResults 를 참조하십시오
+    url: "/api/reference_element_api_listasyncresults.html"
+- title: 계정 API 메소드
+  url: "/api/concept_element_api_account_api_methods.html"
+  entries:
+  - title: 추가 계정
+    url: "/api/reference_element_api_addaccount.html"
+  - title: GetAccountByID입니다
+    url: "/api/reference_element_api_getaccountbyid.html"
+  - title: GetAccountByName입니다
+    url: "/api/reference_element_api_getaccountbyname.html"
+  - title: GetAccountEfficiency를 참조하십시오
+    url: "/api/reference_element_api_getaccountefficiency.html"
+  - title: 계정 목록
+    url: "/api/reference_element_api_listaccounts.html"
+  - title: ModifyAccount(수정 계정)
+    url: "/api/reference_element_api_modifyaccount.html"
+  - title: 계정 제거
+    url: "/api/reference_element_api_removeaccount.html"
+- title: 관리자 API 메소드
+  url: "/api/concept_element_api_administrator_api_methods.html"
+  entries:
+  - title: 추가\n\n새 관리자
+    url: "/api/reference_element_api_addclusteradmin.html"
+  - title: GetCurrentClusterAdmin 을 참조하십시오
+    url: "/api/reference_element_api_getcurrentclusteradmin.html"
+  - title: GetLoginBanner 를 참조하십시오
+    url: "/api/reference_element_api_getloginbanner.html"
+  - title: ListClusterAdmins입니다
+    url: "/api/reference_element_api_listclusteradmins.html"
+  - title: ModifyClusterAdmin 을 선택합니다
+    url: "/api/reference_element_api_modifyclusteradmin.html"
+  - title: RemoveClusterAdmin
+    url: "/api/reference_element_api_removeclusteradmin.html"
+  - title: SetLoginBanner를 선택합니다
+    url: "/api/reference_element_api_setloginbanner.html"
+- title: 클러스터 API 메소드
+  url: "/api/concept_element_api_cluster_api_methods.html"
+  entries:
+  - title: 추가 노드
+    url: "/api/reference_element_api_addnodes.html"
+  - title: 클리어클러스터 폭행
+    url: "/api/reference_element_api_clearclusterfaults.html"
+  - title: CreateClusterInterfacePreference를 선택합니다
+    url: "/api/reference_element_api_createclusterinterfacepreference.html"
+  - title: DeleteClusterInterfacePreference(삭제 클러스터
+    url: "/api/reference_element_api_deleteclusterinterfacepreference.html"
+  - title: 공급 기능
+    url: "/api/reference_element_api_enablefeature.html"
+  - title: GetClusterCapacity 를 선택합니다
+    url: "/api/reference_element_api_getclustercapacity.html"
+  - title: GetClusterFullThreshold 를 참조하십시오
+    url: "/api/reference_element_api_getclusterfullthreshold.html"
+  - title: GetClusterHardwareInfo 를 참조하십시오
+    url: "/api/reference_element_api_getclusterhardwareinfo.html"
+  - title: GetClusterInfo 를 참조하십시오
+    url: "/api/reference_element_api_getclusterinfo.html"
+  - title: GetClusterInterfacePreference를 선택합니다
+    url: "/api/reference_element_api_getclusterinterfacepreference.html"
+  - title: GetClusterMasterNodeID를 참조하십시오
+    url: "/api/reference_element_api_getclustermasternodeid.html"
+  - title: GetClusterStats 를 참조하십시오
+    url: "/api/reference_element_api_getclusterstats.html"
+  - title: GetClusterVersionInfo 를 참조하십시오
+    url: "/api/reference_element_api_getclusterversioninfo.html"
+  - title: GetFeatureStatus 를 참조하십시오
+    url: "/api/reference_element_api_getfeaturestatus.html"
+  - title: GetLicenseKey 를 참조하십시오
+    url: "/api/reference_element_api_getlicensekey.html"
+  - title: GetLoginSessionInfo 를 참조하십시오
+    url: "/api/reference_element_api_getloginsessioninfo.html"
+  - title: GetNodeHardwareInfo 를 참조하십시오
+    url: "/api/reference_element_api_getnodehardwareinfo.html"
+  - title: GetNodeStats 를 참조하십시오
+    url: "/api/reference_element_api_getnodestats.html"
+  - title: ListActiveNodes 를 선택합니다
+    url: "/api/reference_element_api_listactivenodes.html"
+  - title: 목록노드
+    url: "/api/reference_element_api_listallnodes.html"
+  - title: ListClusterFats
+    url: "/api/reference_element_api_listclusterfaults.html"
+  - title: ListClusterInterfacePreferences 를 선택합니다
+    url: "/api/reference_element_api_listclusterinterfacepreferences.html"
+  - title: ListEvents 를 선택합니다
+    url: "/api/reference_element_api_listevents.html"
+  - title: ListNodeStats 를 참조하십시오
+    url: "/api/reference_element_api_listnodestats.html"
+  - title: 목록 세션
+    url: "/api/reference_element_api_listiscsisessions.html"
+  - title: ListServices 를 클릭합니다
+    url: "/api/reference_element_api_listservices.html"
+  - title: ListPendingNodes 를 참조하십시오
+    url: "/api/reference_element_api_listpendingnodes.html"
+  - title: ListPendingActiveNodes 를 선택합니다
+    url: "/api/reference_element_api_listpendingactivenodes.html"
+  - title: ModifyClusterFullThreshold를 참조하십시오
+    url: "/api/reference_element_api_modifyclusterfullthreshold.html"
+  - title: ModifyClusterInterfacePreference를 선택합니다
+    url: "/api/reference_element_api_modifyclusterinterfacepreference.html"
+  - title: 노드 제거
+    url: "/api/reference_element_api_removenodes.html"
+  - title: SetLicenseKey를 선택합니다
+    url: "/api/reference_element_api_setlicensekey.html"
+  - title: SetLoginSessionInfo 를 참조하십시오
+    url: "/api/reference_element_api_setloginsessioninfo.html"
+  - title: 종료
+    url: "/api/reference_element_api_shutdown.html"
+- title: 클러스터 생성 API 메소드
+  url: "/api/concept_element_api_create_cluster_api_methods.html"
+  entries:
+  - title: ProposedCluster를 참조하십시오
+    url: "/api/reference_element_api_checkproposedcluster.html"
+  - title: 클러스터 생성
+    url: "/api/reference_element_api_createcluster.html"
+  - title: GetBootstrapConfig 를 참조하십시오
+    url: "/api/reference_element_api_getbootstrapconfig.html"
+- title: 드라이브 API 메소드
+  url: "/api/concept_element_api_drive_api_methods.html"
+  entries:
+  - title: 추가 드라이브
+    url: "/api/reference_element_api_adddrives.html"
+  - title: GetDriveHardwareInfo 를 참조하십시오
+    url: "/api/reference_element_api_getdrivehardwareinfo.html"
+  - title: GetDriveStats 를 참조하십시오
+    url: "/api/reference_element_api_getdrivestats.html"
+  - title: ListDrives를 선택합니다
+    url: "/api/reference_element_api_listdrives.html"
+  - title: 목록드라이브 통계
+    url: "/api/reference_element_api_listdrivestats.html"
+  - title: 드라이브 제거
+    url: "/api/reference_element_api_removedrives.html"
+  - title: SecureEraseDrives
+    url: "/api/reference_element_api_secureerasedrives.html"
+- title: Fibre Channel API 메소드
+  url: "/api/concept_element_api_fibre_channel_api_methods.html"
+  entries:
+  - title: GetVolumeAccessGroupLunAssignments 를 참조하십시오
+    url: "/api/reference_element_api_getvolumeaccessgrouplunassignments.html"
+  - title: ListFiberChannelPortInfo 를 참조하십시오
+    url: "/api/reference_element_api_listfibrechannelportinfo.html"
+  - title: ListFiberChannelSessions 를 선택합니다
+    url: "/api/reference_element_api_listfibrechannelsessions.html"
+  - title: ListNodeFiberChannelPortInfo 를 참조하십시오
+    url: "/api/reference_element_api_listnodefibrechannelportinfo.html"
+  - title: ModifyVolumeAccessGroupLunAssignments 를 참조하십시오
+    url: "/api/reference_element_api_modifyvolumeaccessgrouplunassignments.html"
+- title: 이니시에이터 API 메소드
+  url: "/api/concept_element_api_initiator_api_methods.html"
+  entries:
+  - title: CreateInitiators(초기자)
+    url: "/api/reference_element_api_createinitiators.html"
+  - title: DeleteInitiators(삭제 초기자
+    url: "/api/reference_element_api_deleteinitiators.html"
+  - title: ListInitiators(목록 초기자
+    url: "/api/reference_element_api_listinitiators.html"
+  - title: 한정자
+    url: "/api/reference_element_api_modifyinitiators.html"
+- title: LDAP API 메소드
+  url: "/api/concept_element_api_ldap_api_methods.html"
+  entries:
+  - title: 추가\n\n\n새 클러스터 관리자
+    url: "/api/reference_element_api_addldapclusteradmin.html"
+  - title: EnableLdapAuthentication 을 참조하십시오
+    url: "/api/reference_element_api_enableldapauthentication.html"
+  - title: DisableLdapAuthentication을 참조하십시오
+    url: "/api/reference_element_api_disableldapauthentication.html"
+  - title: GetLdapConfiguration 을 참조하십시오
+    url: "/api/reference_element_api_getldapconfiguration.html"
+  - title: TestLdapAuthentication을 참조하십시오
+    url: "/api/reference_element_api_testldapauthentication.html"
+- title: 다중 요소 인증 API 메서드
+  url: "/api/concept_element_api_multi_factor_authentication_api_methods.html"
+  entries:
+  - title: AddIdpClusterAdmin 을 선택합니다
+    url: "/api/reference_element_api_addidpclusteradmin.html"
+  - title: CreateIdpConfiguration 을 참조하십시오
+    url: "/api/reference_element_api_createidpconfiguration.html"
+  - title: DeleteAuthSession
+    url: "/api/reference_element_api_deleteauthsession.html"
+  - title: DeleteAuthSessionsByClusterAdmin 을 참조하십시오
+    url: "/api/reference_element_api_deleteauthsessionsbyclusteradmin.html"
+  - title: DeleteAuthSessionsByUsername입니다
+    url: "/api/reference_element_api_deleteauthsessionsbyusername.html"
+  - title: DeleteIdpConfiguration 을 클릭합니다
+    url: "/api/reference_element_api_deleteidpconfiguration.html"
+  - title: DisableIdpAuthentication을 참조하십시오
+    url: "/api/reference_element_api_disableidpauthentication.html"
+  - title: EnableIdpAuthentication 을 참조하십시오
+    url: "/api/reference_element_api_enableidpauthentication.html"
+  - title: GetIdpAuthenticationState 를 참조하십시오
+    url: "/api/reference_element_api_getidpauthenticationstate.html"
+  - title: ListActiveAuthSessions
+    url: "/api/reference_element_api_listactiveauthsessions.html"
+  - title: ListIdpConfigurations 를 참조하십시오
+    url: "/api/reference_element_api_listidpconfigurations.html"
+  - title: UpdateIdpConfiguration 을 선택합니다
+    url: "/api/reference_element_api_updateidpconfiguration.html"
+- title: 세션 인증 API 메서드
+  url: "/api/concept_element_api_session_authentication_api_methods.html"
+  entries:
+  - title: ListAuthSessionsByClusterAdmin 을 참조하십시오
+    url: "/api/reference_element_api_listauthsessionbyclusteradmin.html"
+  - title: ListAuthSessionsByUsername입니다
+    url: "/api/reference_element_api_listauthsessionbyusername.html"
+- title: 노드 API 메소드
+  url: "/api/concept_element_api_node_api_methods.html"
+  entries:
+  - title: 체크핑온블란
+    url: "/api/reference_element_api_checkpingonvlan.html"
+  - title: ProposedNodeAdveditions를 참조하십시오
+    url: "/api/reference_element_api_checkproposednodeadditions.html"
+  - title: CreateClusterSupportBundle
+    url: "/api/reference_element_api_createclustersupportbundle.html"
+  - title: CreateSupportBundle을 참조하십시오
+    url: "/api/reference_element_api_createsupportbundle.html"
+  - title: DeleteAllSupportBundles 를 참조하십시오
+    url: "/api/reference_element_api_deleteallsupportbundles.html"
+  - title: Disable유지보수모드
+    url: "/api/reference_element_api_disablemaintenancemode.html"
+  - title: DisableSsh(비활성화 시
+    url: "/api/reference_element_api_disablessh.html"
+  - title: Enable유지보수모드
+    url: "/api/reference_element_api_enablemaintenancemode.html"
+  - title: 서버
+    url: "/api/reference_element_api_enablessh.html"
+  - title: GetClusterConfig
+    url: "/api/reference_element_api_getclusterconfig.html"
+  - title: GetClusterState 를 선택합니다
+    url: "/api/reference_element_api_getclusterstate.html"
+  - title: getconfig를 참조하십시오
+    url: "/api/reference_element_api_getconfig.html"
+  - title: GetDriveConfig 를 참조하십시오
+    url: "/api/reference_element_api_getdriveconfig.html"
+  - title: GetHardwareConfig 를 참조하십시오
+    url: "/api/reference_element_api_gethardwareconfig.html"
+  - title: GetHardwareInfo 를 참조하십시오
+    url: "/api/reference_element_api_gethardwareinfo.html"
+  - title: GetIpmiConfig 를 참조하십시오
+    url: "/api/reference_element_api_getipmiconfig.html"
+  - title: GetIpmiInfo 를 참조하십시오
+    url: "/api/reference_element_api_getipmiinfo.html"
+  - title: GetNetworkConfig 를 참조하십시오
+    url: "/api/reference_element_api_getnetworkconfig.html"
+  - title: GetNetworkInterface 를 참조하십시오
+    url: "/api/reference_element_api_getnetworkinterface.html"
+  - title: GetNodeActiveTlsCiphers 를 참조하십시오
+    url: "/api/reference_element_api_getnodeactivetlsciphers.html"
+  - title: GetNodeFipsDrivesReport 를 참조하십시오
+    url: "/api/reference_element_api_getnodefipsdrivesreport.html"
+  - title: GetNodeSSLCertificate를 참조하십시오
+    url: "/api/reference_element_api_getnodesslcertificate.html"
+  - title: GetNodeSupportedTlsCiphers 를 참조하십시오
+    url: "/api/reference_element_api_getnodesupportedtlsciphers.html"
+  - title: GetPatchInfo 를 참조하십시오
+    url: "/api/reference_element_api_getpatchinfo.html"
+  - title: GetPendingOperation 을 참조하십시오
+    url: "/api/reference_element_api_getpendingoperation.html"
+  - title: GetSshInfo 를 참조하십시오
+    url: "/api/reference_element_api_getsshinfo.html"
+  - title: 목록하드웨어
+    url: "/api/reference_element_api_listdrivehardware.html"
+  - title: ListNetworkInterfaces 를 참조하십시오
+    url: "/api/reference_element_api_listnetworkinterfaces.html"
+  - title: ListNetworkInterfaceStats 를 참조하십시오
+    url: "/api/reference_element_api_listnetworkinterfacestats.html"
+  - title: ListTests(목록 테스트
+    url: "/api/reference_element_api_listtests.html"
+  - title: 목록\n Utilities
+    url: "/api/reference_element_api_listutilities.html"
+  - title: RemoveNodeSSLCertificate를 참조하십시오
+    url: "/api/reference_element_api_removenodesslcertificate.html"
+  - title: 재설정 드라이브
+    url: "/api/reference_element_api_resetdrives.html"
+  - title: ResetNode 를 선택합니다
+    url: "/api/reference_element_api_resetnode.html"
+  - title: ResetNodeSupplementalTlsCiphers 를 참조하십시오
+    url: "/api/reference_element_api_resetnodesupplementaltlsciphers.html"
+  - title: 다시 시작 네트워킹
+    url: "/api/reference_element_api_restartnetworking.html"
+  - title: 서비스를 다시 시작합니다
+    url: "/api/reference_element_api_restartservices.html"
+  - title: SetClusterConfig
+    url: "/api/reference_element_api_setclusterconfig.html"
+  - title: 설정 구성
+    url: "/api/reference_element_api_setconfig.html"
+  - title: SetNetworkConfig
+    url: "/api/reference_element_api_setnetworkconfig.html"
+  - title: SetNodeSSLCertificate를 선택합니다
+    url: "/api/reference_element_api_setnodesslcertificate.html"
+  - title: SetNodeSupplementalTlsCiphers 를 참조하십시오
+    url: "/api/reference_element_api_setnodesupplementaltlsciphers.html"
+  - title: 종료
+    url: "/api/reference_element_api_shutdown.html"
+  - title: TestConnectEnsemble을 참조하십시오
+    url: "/api/reference_element_api_testconnectensemble.html"
+  - title: 테스트 ConnectMvip
+    url: "/api/reference_element_api_testconnectmvip.html"
+  - title: 테스트 ConnectSvip
+    url: "/api/reference_element_api_testconnectsvip.html"
+  - title: 테스트 드라이브
+    url: "/api/reference_element_api_testdrives.html"
+  - title: TestHardwareConfig
+    url: "/api/reference_element_api_testhardwareconfig.html"
+  - title: TestLocateCluster를 참조하십시오
+    url: "/api/reference_element_api_testlocatecluster.html"
+  - title: TestLocalConnectivity를 클릭합니다
+    url: "/api/reference_element_api_testlocalconnectivity.html"
+  - title: TestNetworkConfig를 참조하십시오
+    url: "/api/reference_element_api_testnetworkconfig.html"
+  - title: 테스트 핑
+    url: "/api/reference_element_api_testping.html"
+  - title: TestRemoteConnectivity를 참조하십시오
+    url: "/api/reference_element_api_testremoteconnectivity.html"
+- title: 복제 API 메소드
+  url: "/api/concept_element_api_replication_api_methods.html"
+  entries:
+  - title: 클러스터 페어링 작업 순서
+    url: "/api/reference_element_api_cluster_pairing_order_of_operations.html"
+  - title: 볼륨 페어링 작업 순서
+    url: "/api/reference_element_api_volume_pairing_order_of_operations.html"
+  - title: 페어링된 클러스터에 지원되는 복제 모드입니다
+    url: "/api/reference_element_api_supported_modes_of_replication.html"
+  - title: CompleteClusterPairing
+    url: "/api/reference_element_api_completeclusterpairing.html"
+  - title: CompleteVolumePairing
+    url: "/api/reference_element_api_completevolumepairing.html"
+  - title: ListClusterPairs
+    url: "/api/reference_element_api_listclusterpairs.html"
+  - title: ListActive유료볼륨
+    url: "/api/reference_element_api_listactivepairedvolumes.html"
+  - title: ModifyVolumePair
+    url: "/api/reference_element_api_modifyvolumepair.html"
+  - title: RemoveClusterPair(클러스터 쌍 제거)
+    url: "/api/reference_element_api_removeclusterpair.html"
+  - title: RemoveVolumePair
+    url: "/api/reference_element_api_removevolumepair.html"
+  - title: StartClusterPairing을 선택합니다
+    url: "/api/reference_element_api_startclusterpairing.html"
+  - title: StartVolumePairing
+    url: "/api/reference_element_api_startvolumepairing.html"
+- title: 보안 API 메서드
+  url: "/api/concept_element_api_security_api_methods.html"
+  entries:
+  - title: AddKeyServerToProviderKmip 를 참조하십시오
+    url: "/api/reference_element_api_addkeyservertoproviderkmip.html"
+  - title: CreateKeyProviderKmip 을 참조하십시오
+    url: "/api/reference_element_api_createkeyproviderkmip.html"
+  - title: CreateKeyServerKmip 을 참조하십시오
+    url: "/api/reference_element_api_createkeyserverkmip.html"
+  - title: CreatePublicPrivateKeyPair 를 참조하십시오
+    url: "/api/reference_element_api_createpublicprivatekeypair.html"
+  - title: DeleteKeyProviderKmip 를 클릭합니다
+    url: "/api/reference_element_api_deletekeyproviderkmip.html"
+  - title: DeleteKeyServerKmip 를 클릭합니다
+    url: "/api/reference_element_api_deletekeyserverkmip.html"
+  - title: DisableEncryptionAtRest
+    url: "/api/reference_element_api_disableencryptionatrest.html"
+  - title: EnableEncryptionAtRest 를 참조하십시오
+    url: "/api/reference_element_api_enableencryptionatrest.html"
+  - title: GetClientCertificateSignRequest 를 참조하십시오
+    url: "/api/reference_element_api_getclientcertificatesignrequest.html"
+  - title: GetKeyProviderKmip 을 참조하십시오
+    url: "/api/reference_element_api_getkeyproviderkmip.html"
+  - title: GetKeyServerKmip 을 참조하십시오
+    url: "/api/reference_element_api_getkeyserverkmip.html"
+  - title: GetSoftwareEncryptionatRestInfo 를 참조하십시오
+    url: "/api/reference_element_api_getsoftwareencryptionatrestinfo.html"
+  - title: ListKeyProvidersKmip 을 참조하십시오
+    url: "/api/reference_element_api_listkeyproviderskmip.html"
+  - title: ListKeyServersKmip 를 참조하십시오
+    url: "/api/reference_element_api_listkeyserverskmip.html"
+  - title: ModifyKeyServerKmip
+    url: "/api/reference_element_api_modifykeyserverkmip.html"
+  - title: RekeySoftwareEncryptionAtRestMasterKey를 참조하십시오
+    url: "/api/reference_element_api_rekeysoftwareencryptionatrestmasterkey.html"
+  - title: RemoveKeyServerFromProviderKmip 를 참조하십시오
+    url: "/api/reference_element_api_removekeyserverfromproviderkmip.html"
+  - title: TestKeyProviderKmip 을 참조하십시오
+    url: "/api/reference_element_api_testkeyproviderkmip.html"
+  - title: TestKeyServerKmip
+    url: "/api/reference_element_api_testkeyserverkmip.html"
+- title: SnapMirror API 메소드
+  url: "/api/concept_element_api_snapmirror_api_methods.html"
+  entries:
+  - title: AbortSnapMirror 관계
+    url: "/api/reference_element_api_abortsnapmirrorrelationship.html"
+  - title: BreakSnapMirrorRelationship을 참조하십시오
+    url: "/api/reference_element_api_breaksnapmirrorrelationship.html"
+  - title: BreakSnapMirrorVolume을 참조하십시오
+    url: "/api/reference_element_api_breaksnapmirrorvolume.html"
+  - title: CreateSnapMirrorEndpoint
+    url: "/api/reference_element_api_createsnapmirrorendpoint.html"
+  - title: CreateSnapMirrorEndpointUnmanaged 를 참조하십시오
+    url: "/api/reference_element_api_createsnapmirrorendpoint_unmanaged.html"
+  - title: CreateSnapMirrorRelationship을 참조하십시오
+    url: "/api/reference_element_api_createsnapmirrorrelationship.html"
+  - title: CreateSnapMirror 볼륨
+    url: "/api/reference_element_api_createsnapmirrorvolume.html"
+  - title: DeleteSnapMirrorEndpoints 를 클릭합니다
+    url: "/api/reference_element_api_deletesnapmirrorendpoints.html"
+  - title: DeleteSnapMirrorRelationships
+    url: "/api/reference_element_api_deletesnapmirrorrelationships.html"
+  - title: GetOntapVersionInfo 를 참조하십시오
+    url: "/api/reference_element_api_getontapversioninfo.html"
+  - title: GetSnapMirrorClusterIdentity 를 참조하십시오
+    url: "/api/reference_element_api_getsnapmirrorclusteridentity.html"
+  - title: InitializeSnapMirrorRelationship 을 참조하십시오
+    url: "/api/reference_element_api_initializesnapmirrorrelationship.html"
+  - title: ListSnapMirroregates를 참조하십시오
+    url: "/api/reference_element_api_listsnapmirroraggregates.html"
+  - title: ListSnapMirrorEndpoints를 선택합니다
+    url: "/api/reference_element_api_listsnapmirrorendpoints.html"
+  - title: ListSnapMirrorLuns
+    url: "/api/reference_element_api_listsnapmirrorluns.html"
+  - title: ListSnapMirrorNetworkInterfaces 를 참조하십시오
+    url: "/api/reference_element_api_listsnapmirrornetworkinterfaces.html"
+  - title: ListSnapMirrorNodes를 선택합니다
+    url: "/api/reference_element_api_listsnapmirrornodes.html"
+  - title: ListSnapMirrorPolicies 를 참조하십시오
+    url: "/api/reference_element_api_listsnapmirrorpolicies.html"
+  - title: ListSnapMirror 스케줄입니다
+    url: "/api/reference_element_api_listsnapmirrorschedules.html"
+  - title: ListSnapMirror 관계
+    url: "/api/reference_element_api_listsnapmirrorrelationships.html"
+  - title: ListSnapMirror 볼륨
+    url: "/api/reference_element_api_listsnapmirrorvolumes.html"
+  - title: ListSnapMirrorVservers를 선택합니다
+    url: "/api/reference_element_api_listsnapmirrorvservers.html"
+  - title: ModifySnapMirrorEndpoint입니다
+    url: "/api/reference_element_api_modifysnapmirrorendpoint.html"
+  - title: ModifySnapMirrorEndpoint(관리되지 않음)
+    url: "/api/reference_element_api_modifysnapmirrorendpoint_unmanaged.html"
+  - title: ModifySnapMirrorRelationship 을 참조하십시오
+    url: "/api/reference_element_api_modifysnapmirrorrelationship.html"
+  - title: UpdateSnapMirror 관계
+    url: "/api/reference_element_api_updatesnapmirrorrelationship.html"
+  - title: QuiesceSnapMirror 관계
+    url: "/api/reference_element_api_quiescesnapmirrorrelationship.html"
+  - title: ResumeSnapMirrorRelationship
+    url: "/api/reference_element_api_resumesnapmirrorrelationship.html"
+  - title: 재동기화 SnapMirror 관계
+    url: "/api/reference_element_api_resyncsnapmirrorrelationship.html"
+- title: 시스템 구성 API 메소드
+  url: "/api/concept_element_api_system_configuration_api_methods.html"
+  entries:
+  - title: DisableBmcColdReset(비활성화
+    url: "/api/reference_element_api_disablebmccoldreset.html"
+  - title: DisableClusterSsh
+    url: "/api/reference_element_api_disableclusterssh.html"
+  - title: DisableSnmp
+    url: "/api/reference_element_api_disablesnmp.html"
+  - title: EnableBmcColdReset 을 클릭합니다
+    url: "/api/reference_element_api_enablebmccoldreset.html"
+  - title: EnableClusterSsh
+    url: "/api/reference_element_api_enableclusterssh.html"
+  - title: EnableSnmp
+    url: "/api/reference_element_api_enablesnmp.html"
+  - title: GetBinAssignmentProperties 를 참조하십시오
+    url: "/api/reference_element_api_getbinassignmentproperties.html"
+  - title: GetClusterSshInfo 를 참조하십시오
+    url: "/api/reference_element_api_getclustersshinfo.html"
+  - title: GetClusterStructure 를 참조하십시오
+    url: "/api/reference_element_api_getclusterstructure.html"
+  - title: GetFipsReport 를 참조하십시오
+    url: "/api/reference_element_api_getfipsreport.html"
+  - title: GetLldpConfig 를 참조하십시오
+    url: "/api/reference_element_api_getlldpconfig.html"
+  - title: GetLldpInfo 를 참조하십시오
+    url: "/api/reference_element_api_getlldpinfo.html"
+  - title: GetNodeFipsDrivesReport 를 참조하십시오
+    url: "/api/reference_element_api_getnodefipsdrivesreport.html"
+  - title: GetNtpInfo 를 참조하십시오
+    url: "/api/reference_element_api_getntpinfo.html"
+  - title: GetNvramInfo 를 참조하십시오
+    url: "/api/reference_element_api_getnvraminfo.html"
+  - title: GetProtectionDomainLayout 을 참조하십시오
+    url: "/api/reference_element_api_getprotectiondomainlayout.html"
+  - title: GetRemoteLoggingHosts 를 참조하십시오
+    url: "/api/reference_element_api_getremotelogginghosts.html"
+  - title: GetSnmpACL
+    url: "/api/reference_element_api_getsnmpacl.html"
+  - title: GetSnmpInfo 를 참조하십시오
+    url: "/api/reference_element_api_getsnmpinfo.html"
+  - title: GetSnmpState 를 선택합니다
+    url: "/api/reference_element_api_getsnmpstate.html"
+  - title: GetSnmpTrapInfo 를 참조하십시오
+    url: "/api/reference_element_api_getsnmptrapinfo.html"
+  - title: GetSSLCertificate 를 참조하십시오
+    url: "/api/reference_element_api_getsslcertificate.html"
+  - title: ListProtectionDomainLevels 를 참조하십시오
+    url: "/api/reference_element_api_listprotectiondomainlevels.html"
+  - title: RemoveSSLCertificate를 선택합니다
+    url: "/api/reference_element_api_removesslcertificate.html"
+  - title: ResetNetworkConfig 를 참조하십시오
+    url: "/api/reference_element_api_resetnetworkconfig.html"
+  - title: ResetSupplementalTlsCiphers 를 참조하십시오
+    url: "/api/reference_element_api_resetsupplementaltlsciphers.html"
+  - title: SetClusterStructure 를 선택합니다
+    url: "/api/reference_element_api_setclusterstructure.html"
+  - title: SetLldpConfig 를 참조하십시오
+    url: "/api/reference_element_api_setlldpconfig.html"
+  - title: SetNtpInfo 를 참조하십시오
+    url: "/api/reference_element_api_setntpinfo.html"
+  - title: SetProtectionDomainLayout 을 참조하십시오
+    url: "/api/reference_element_api_setprotectiondomainlayout.html"
+  - title: SetRemoteLoggingHosts 를 선택합니다
+    url: "/api/reference_element_api_setremotelogginghosts.html"
+  - title: SetSnmpACL
+    url: "/api/reference_element_api_setsnmpacl.html"
+  - title: SetSnmpInfo 를 선택합니다
+    url: "/api/reference_element_api_setsnmpinfo.html"
+  - title: SetSnmpTrapInfo 를 선택합니다
+    url: "/api/reference_element_api_setsnmptrapinfo.html"
+  - title: SetSSLCertificate를 선택합니다
+    url: "/api/reference_element_api_setsslcertificate.html"
+  - title: SnmpSendTestTraps를 참조하십시오
+    url: "/api/reference_element_api_snmpsendtesttraps.html"
+  - title: TestAddressAvailability입니다
+    url: "/api/reference_element_api_testaddressavailability.html"
+- title: 멀티 테넌트 네트워킹 API 메소드
+  url: "/api/concept_element_api_multitenant_networking_api_methods.html"
+  entries:
+  - title: 가상 네트워크 명명 규칙
+    url: "/api/concept_element_api_virtual_network_naming_conventions.html"
+  - title: AddVirtualNetwork 를 참조하십시오
+    url: "/api/reference_element_api_addvirtualnetwork.html"
+  - title: ModifyVirtualNetwork의 약어입니다
+    url: "/api/reference_element_api_modifyvirtualnetwork.html"
+  - title: 목록가상네트워크
+    url: "/api/reference_element_api_listvirtualnetworks.html"
+  - title: RemoveVirtualNetwork 를 참조하십시오
+    url: "/api/reference_element_api_removevirtualnetwork.html"
+- title: 볼륨 API 메소드
+  url: "/api/concept_element_api_volume_api_methods.html"
+  entries:
+  - title: CancelClone을 클릭합니다
+    url: "/api/reference_element_api_cancelclone.html"
+  - title: CancelGroupClone을 클릭합니다
+    url: "/api/reference_element_api_cancelgroupclone.html"
+  - title: CloneMultipleVolumes
+    url: "/api/reference_element_api_clonemultiplevolumes.html"
+  - title: CloneVolume(볼륨)
+    url: "/api/reference_element_api_clonevolume.html"
+  - title: CopyVolume(복사 볼륨)
+    url: "/api/reference_element_api_copyvolume.html"
+  - title: CreateQoSPolicy 를 참조하십시오
+    url: "/api/reference_element_api_createqospolicy.html"
+  - title: CreateVolume(생성 볼륨)
+    url: "/api/reference_element_api_createvolume.html"
+  - title: CreateBackupTarget 을 선택합니다
+    url: "/api/reference_element_api_createbackuptarget.html"
+  - title: 삭제 QoS 정책
+    url: "/api/reference_element_api_deleteqospolicy.html"
+  - title: DeleteVolume(삭제 볼륨
+    url: "/api/reference_element_api_deletevolume.html"
+  - title: DeleteVolumes 를 클릭합니다
+    url: "/api/reference_element_api_deletevolumes.html"
+  - title: GetBackupTarget 을 참조하십시오
+    url: "/api/reference_element_api_getbackuptarget.html"
+  - title: GetVolumeStats 를 참조하십시오
+    url: "/api/reference_element_api_getvolumestats.html"
+  - title: GetDefaultQoS를 참조하십시오
+    url: "/api/reference_element_api_getdefaultqos.html"
+  - title: GetQoSPolicy 를 참조하십시오
+    url: "/api/reference_element_api_getqospolicy.html"
+  - title: GetVolumeCount
+    url: "/api/reference_element_api_getvolumecount.html"
+  - title: GetVolumeEffiency(볼륨 효율성)
+    url: "/api/reference_element_api_getvolumeefficiency.html"
+  - title: ListActiveVolumes
+    url: "/api/reference_element_api_listactivevolumes.html"
+  - title: ListBackupTargets 를 선택합니다
+    url: "/api/reference_element_api_listbackuptargets.html"
+  - title: ListBulkVolumeJobs
+    url: "/api/reference_element_api_listbulkvolumejobs.html"
+  - title: ListDeletedVolumes 를 클릭합니다
+    url: "/api/reference_element_api_listdeletedvolumes.html"
+  - title: 목록\n관리 정책
+    url: "/api/reference_element_api_listqospolicies.html"
+  - title: ListSyncJobs 를 선택합니다
+    url: "/api/reference_element_api_listsyncjobs.html"
+  - title: ListVolumeQoSHistogram
+    url: "/api/reference_element_api_listvolumeqoshistograms.html"
+  - title: 목록 볼륨
+    url: "/api/reference_element_api_listvolumes.html"
+  - title: ListVolumeStats
+    url: "/api/reference_element_api_listvolumestats.html"
+  - title: ListVolumesForAccount
+    url: "/api/reference_element_api_listvolumesforaccount.html"
+  - title: ListVolumeStatsByAccount
+    url: "/api/reference_element_api_listvolumestatsbyaccount.html"
+  - title: ListVolumeStatsByVirtualVolume
+    url: "/api/reference_element_api_listvolumestatsbyvirtualvolume.html"
+  - title: ListVolumeStatsByVolume
+    url: "/api/reference_element_api_listvolumestatsbyvolume.html"
+  - title: ListVolumeStatsByVolumeAccessGroup
+    url: "/api/reference_element_api_listvolumestatsbyvolumeaccessgroup.html"
+  - title: ModifyBackupTarget을 선택합니다
+    url: "/api/reference_element_api_modifybackuptarget.html"
+  - title: 수정 서비스 정책
+    url: "/api/reference_element_api_modifyqospolicy.html"
+  - title: ModifyVolume(수정 볼륨)
+    url: "/api/reference_element_api_modifyvolume.html"
+  - title: ModifyVolumes를 선택합니다
+    url: "/api/reference_element_api_modifyvolumes.html"
+  - title: PurgeDeletedVolume
+    url: "/api/reference_element_api_purgedeletedvolume.html"
+  - title: PurgeDeletedVolumes를 참조하십시오
+    url: "/api/reference_element_api_purgedeletedvolumes.html"
+  - title: RemoveBackupTarget 을 선택합니다
+    url: "/api/reference_element_api_removebackuptarget.html"
+  - title: RestoreDeletedVolume
+    url: "/api/reference_element_api_restoredeletedvolume.html"
+  - title: SetDefaultQoS를 선택합니다
+    url: "/api/reference_element_api_setdefaultqos.html"
+  - title: StartBulkVolumeRead
+    url: "/api/reference_element_api_startbulkvolumeread.html"
+  - title: StartBulkVolumeWrite
+    url: "/api/reference_element_api_startbulkvolumewrite.html"
+  - title: UpdateBulkVolumeStatus 를 선택합니다
+    url: "/api/reference_element_api_updatebulkvolumestatus.html"
+- title: 볼륨 액세스 그룹 API 메소드
+  url: "/api/concept_element_api_volume_access_group_api_methods.html"
+  entries:
+  - title: AddInitialatorsToVolumeAccessGroup 을 참조하십시오
+    url: "/api/reference_element_api_addinitiatorstovolumeaccessgroup.html"
+  - title: AddVolumesToVolumeAccessGroup
+    url: "/api/reference_element_api_addvolumestovolumeaccessgroup.html"
+  - title: CreateVolumeAccessGroup 을 선택합니다
+    url: "/api/reference_element_api_createvolumeaccessgroup.html"
+  - title: DeleteVolumeAccessGroup 을 클릭합니다
+    url: "/api/reference_element_api_deletevolumeaccessgroup.html"
+  - title: ListVolumeAccessGroups 를 선택합니다
+    url: "/api/reference_element_api_listvolumeaccessgroups.html"
+  - title: RemoveVolumesFromVolumeAccessGroup
+    url: "/api/reference_element_api_removevolumesfromvolumeaccessgroup.html"
+  - title: RemoveInitialatorsFromVolumeAccessGroup 을 참조하십시오
+    url: "/api/reference_element_api_removeinitiatorsfromvolumeaccessgroup.html"
+  - title: ModifyVolumeAccessGroup
+    url: "/api/reference_element_api_modifyvolumeaccessgroup.html"
+  - title: GetVolumeAccessGroupEfficiency
+    url: "/api/reference_element_api_getvolumeaccessgroupefficiency.html"
+- title: 볼륨 스냅샷 API 메소드
+  url: "/api/concept_element_api_volume_snapshot_api_methods.html"
+  entries:
+  - title: 스냅샷 개요
+    url: "/api/concept_element_api_snapshots_overview.html"
+  - title: CreateGroupSnapshot 을 클릭합니다
+    url: "/api/reference_element_api_creategroupsnapshot.html"
+  - title: 생성 일정 을 클릭합니다
+    url: "/api/reference_element_api_createschedule.html"
+  - title: 스냅샷 생성
+    url: "/api/reference_element_api_createsnapshot.html"
+  - title: DeleteGroupSnapshot 을 클릭합니다
+    url: "/api/reference_element_api_deletegroupsnapshot.html"
+  - title: DeleteSnapshot을 클릭합니다
+    url: "/api/reference_element_api_deletesnapshot.html"
+  - title: GetSchedule 을 클릭합니다
+    url: "/api/reference_element_api_getschedule.html"
+  - title: ListGroupSnapshots을 선택합니다
+    url: "/api/reference_element_api_listgroupsnapshots.html"
+  - title: ListSchedules(일정 목록
+    url: "/api/reference_element_api_listschedules.html"
+  - title: 목록\n\n 스냅샷
+    url: "/api/reference_element_api_listsnapshots.html"
+  - title: ModifyGroupSnapshot 을 참조하십시오
+    url: "/api/reference_element_api_modifygroupsnapshot.html"
+  - title: ModifySchedule 을 선택합니다
+    url: "/api/reference_element_api_modifyschedule.html"
+  - title: ModifySnapshot을 선택합니다
+    url: "/api/reference_element_api_modifysnapshot.html"
+  - title: RollbackToGroupSnapshot 을 참조하십시오
+    url: "/api/reference_element_api_rollbacktogroupsnapshot.html"
+  - title: RollbackToSnapshot 을 클릭합니다
+    url: "/api/reference_element_api_rollbacktosnapshot.html"
+- title: 가상 볼륨 API 메소드
+  url: "/api/concept_element_api_vvols_api_methods.html"
+  entries:
+  - title: CreateStorageContainer 를 참조하십시오
+    url: "/api/reference_element_api_createstoragecontainer.html"
+  - title: DeleteStorageContainers 를 클릭합니다
+    url: "/api/reference_element_api_deletestoragecontainers.html"
+  - title: GetStorageContainerEfficiency
+    url: "/api/reference_element_api_getstoragecontainerefficiency.html"
+  - title: GetVirtualVolumeCount
+    url: "/api/reference_element_api_getvirtualvolumecount.html"
+  - title: ListProtocolEndpoints를 선택합니다
+    url: "/api/reference_element_api_listprotocolendpoints.html"
+  - title: ListStorageContainers 를 선택합니다
+    url: "/api/reference_element_api_liststoragecontainers.html"
+  - title: ListVirtualVolumeBindings
+    url: "/api/reference_element_api_listvirtualvolumebindings.html"
+  - title: ListVirtualVolumeHosts 를 선택합니다
+    url: "/api/reference_element_api_listvirtualvolumehosts.html"
+  - title: 목록 가상볼륨
+    url: "/api/reference_element_api_listvirtualvolumes.html"
+  - title: ListVirtualVolumeTasks를 참조하십시오
+    url: "/api/reference_element_api_listvirtualvolumetasks.html"
+  - title: ModifyStorageContainer 를 참조하십시오
+    url: "/api/reference_element_api_modifystoragecontainer.html"
+- title: 클러스터 고장 코드
+  url: "/api/reference_element_api_app_a_cluster_fault_codes.html"
+- title: 액세스 제어
+  url: "/api/reference_element_api_app_b_access_control.html"
+- title: 답변 예
+  url: "/api/concept_element_api_response_examples.html"
+  entries:
+  - title: getconfig를 참조하십시오
+    url: "/api/reference_element_api_response_example_getconfig.html"
+  - title: GetClusterHardwareInfo 를 참조하십시오
+    url: "/api/reference_element_api_response_example_getclusterhardwareinfo.html"
+  - title: GetLldpInfo 를 참조하십시오
+    url: "/api/reference_element_api_response_example_getlldpinfo.html"
+  - title: GetNetworkConfig 를 참조하십시오
+    url: "/api/reference_element_api_response_example_getnetworkconfig.html"
+  - title: GetNodeHardwareInfo(iSCSI 출력)
+    url: "/api/reference_element_api_response_example_getnodehardwareinfo.html"
+  - title: GetNodeHardwareInfo(Fibre Channel 노드의 출력)
+    url: "/api/reference_element_api_response_example_getnodehardwareinfo_fibre_channel.html"
+  - title: GetNvramInfo 를 참조하십시오
+    url: "/api/reference_element_api_response_example_getnvraminfo.html"
+  - title: ListActiveNodes 를 선택합니다
+    url: "/api/reference_element_api_response_example_listactivenodes.html"
+  - title: ListActiveVolumes
+    url: "/api/reference_element_api_response_example_listactivevolumes.html"
+  - title: TestHardwareConfig
+    url: "/api/reference_element_api_response_example_testhardwareconfig.html"

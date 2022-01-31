@@ -1,0 +1,87 @@
+---
+permalink: api/reference_element_api_getsoftwareencryptionatrestinfo.html 
+sidebar: sidebar 
+keywords: system, api, security, get, getting, software encryption at rest 
+summary: GetSoftwareEncryptionAtRestInfo 메서드를 사용하면 클러스터에서 유휴 데이터를 암호화하는 데 사용하는 정보를 가져올 수 있습니다. 
+---
+= GetSoftwareEncryptionAtRestInfo 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetSoftwareEncryptionAtRestInfo" 메서드를 사용하면 유휴 데이터를 암호화하는 데 클러스터에서 사용하는 유휴 소프트웨어 암호화 정보를 가져올 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+[cols="4*"]
+|===
+| 매개 변수 | 설명 | 유형 | 선택 사항 
+
+
+| 마스터키정보 | 현재 소프트웨어 암호화 - 유휴 상태 마스터 키에 대한 정보입니다. | 암호화키정보 | 참 
+
+
+| rekeyMasterKeyAsyncResultID 를 참조하십시오 | 아직 삭제되지 않은 경우 현재 또는 최근 키를 다시 입력하다 GetAsyncResult 출력에는 새 마스터 키에 대한 정보가 들어 있는 newKey 필드와 이전 키에 대한 정보가 들어 있는 keyToDecommission 필드가 포함됩니다. | 정수 | 참 
+
+
+| 상태 | 현재 소프트웨어 유휴 데이터의 암호화 상태입니다. 가능한 값은 비활성화 또는 활성화 입니다. | 문자열 | 거짓 
+
+
+| 버전 | 저장된 소프트웨어 암호화가 활성화될 때마다 증가하는 버전 번호입니다. | 정수 | 거짓 
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+ "method": "getsoftwareencryptionatrestinfo"
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "masterKeyInfo": {
+            "keyCreatedTime": "2021-09-20T23:15:56Z",
+            "keyID": "4d80a629-a11b-40ab-8b30-d66dd5647cfd",
+            "keyManagementType": "internal"
+        },
+        "state": "enabled",
+        "version": 1
+    }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+12.3
+
+[discrete]
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
+

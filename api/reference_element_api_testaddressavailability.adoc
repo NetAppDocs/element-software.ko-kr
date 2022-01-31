@@ -1,0 +1,145 @@
+---
+permalink: api/reference_element_api_testaddressavailability.html 
+sidebar: sidebar 
+keywords: ip,address,availability,test,testing,ensemble,cluster,testaddressavailability 
+summary: TestAddressAvailability 메서드를 사용하여 스토리지 클러스터 내의 인터페이스에서 특정 IP 주소가 사용 중인지 확인할 수 있습니다. 
+---
+= TestAddressAvailability입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"TestAddressAvailability" 메서드를 사용하여 스토리지 클러스터 내의 인터페이스에서 특정 IP 주소가 사용 중인지 확인할 수 있습니다.
+
+
+NOTE: SolidFire 엔터프라이즈 SDS는 이 방법을 지원하지 않습니다. SolidFire ESDS 시스템에서 이 메서드를 사용하면 메서드가 오류를 반환합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+인터페이스
+ a| 
+대상 네트워크 인터페이스(예: eth0, Bond10G 등)
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+주소
+ a| 
+대상 인터페이스에서 검색할 IP 주소입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+가상네트워크 태그
+ a| 
+대상 VLAN ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+시간 초과
+ a| 
+대상 주소를 테스트하기 위한 시간 제한(초)입니다.
+ a| 
+정수
+ a| 
+5
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+주소
+ a| 
+테스트된 IP 주소.
+ a| 
+문자열
+
+
+
+ a| 
+사용 가능
+ a| 
+요청된 IP 주소가 사용 중이면 true 이고, 그렇지 않으면 false 입니다.
+ a| 
+부울
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+	"method": "TestAddressAvailability",
+	"params": {
+		"interface": "Bond10G",
+		"address": "10.0.0.1",
+		"virtualNetworkTag": 1234
+	}
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"address":"10.0.0.1",
+		"available": true
+	}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+11.0

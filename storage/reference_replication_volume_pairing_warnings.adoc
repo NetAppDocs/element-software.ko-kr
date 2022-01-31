@@ -1,0 +1,55 @@
+---
+permalink: storage/reference_replication_volume_pairing_warnings.html 
+sidebar: sidebar 
+keywords: volume warnings, messages, replication, data protection 
+summary: '데이터 보호 탭의 볼륨 쌍 페이지에는 볼륨을 페어링한 후 이러한 메시지가 표시됩니다. 이러한 메시지는 Replicating Volumes(볼륨 복제) 목록 보기에서 \ (달리 지정하지 않는 한)쌍의 소스 및 타겟 끝에 모두 표시될 수 있습니다.' 
+---
+= 볼륨 페어링 경고
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터 보호 탭의 볼륨 쌍 페이지에는 볼륨을 페어링한 후 이러한 메시지가 표시됩니다. 이러한 메시지는 Replicating Volumes(볼륨 복제) 목록 보기에서 페어의 소스 끝과 타겟 끝 모두에 표시될 수 있습니다(달리 명시되지 않은 경우).
+
+* * PausedClusterFull *
++
+타겟 클러스터가 가득 차서 소스 복제 및 대량 데이터 전송을 계속할 수 없습니다. 메시지는 페어의 소스 끝에만 표시됩니다.
+
+* * PausedExcededMaxSnapshotCount *
++
+타겟 볼륨에 이미 최대 스냅샷 수가 있으며 추가 스냅샷을 복제할 수 없습니다.
+
+* * PausedManual *(PausedManual *)
++
+로컬 볼륨이 수동으로 일시 중지되었습니다. 복제를 다시 시작하기 전에 일시 중지 해제되어야 합니다.
+
+* * PausedManualRemote *
++
+원격 볼륨이 수동 일시 중지 모드에 있습니다. 복제를 다시 시작하기 전에 원격 볼륨의 일시 중지를 해제하는 데 수동 개입이 필요합니다.
+
+* * PausedMisconfigured *
++
+활성 소스 및 타겟을 기다리는 중입니다. 복제를 다시 시작하려면 수동 작업이 필요합니다.
+
+* * PausedQoS *
++
+타겟 QoS가 들어오는 IO를 유지할 수 없습니다. 복제가 자동으로 재개됩니다. 메시지는 페어의 소스 끝에만 표시됩니다.
+
+* * PausedSlowLink *
++
+느린 링크가 감지되어 복제가 중지되었습니다. 복제가 자동으로 재개됩니다. 메시지는 페어의 소스 끝에만 표시됩니다.
+
+* * PausedVolumeSizeMismatch *
++
+타겟 볼륨이 소스 볼륨과 크기가 다릅니다.
+
+* * PausedXCopy *
++
+소스 볼륨에 SCSI XCOPY 명령이 실행 중입니다. 복제를 다시 시작하려면 명령을 완료해야 합니다. 메시지는 페어의 소스 끝에만 표시됩니다.
+
+* * StoppedMisconfigured *
++
+영구적인 구성 오류가 감지되었습니다. 원격 볼륨이 제거되었거나 페어링되지 않았습니다. 수정 조치가 가능하지 않습니다. 새 페어링을 설정해야 합니다.
+
+

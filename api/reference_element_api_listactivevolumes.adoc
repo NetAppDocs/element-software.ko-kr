@@ -1,0 +1,110 @@
+---
+permalink: api/reference_element_api_listactivevolumes.html 
+sidebar: sidebar 
+keywords: active,volume,volumes,list,listing,listactivevolumes,cluster 
+summary: 'ListActiveVolumes 메서드를 사용하여 현재 시스템에 있는 활성 볼륨의 목록을 가져올 수 있습니다. 볼륨 목록은 VolumeID 순서로 정렬되며 여러 부분\(pages\)으로 반환할 수 있습니다.' 
+---
+= ListActiveVolumes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListActiveVolumes" 메서드를 사용하여 현재 시스템에 있는 활성 볼륨의 목록을 가져올 수 있습니다. 볼륨 목록은 VolumeID 순서로 정렬되며 여러 부분(페이지)으로 반환할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+여기에는 VirtualVolumes가 포함됩니다
+ a| 
+가상 볼륨은 기본적으로 응답에 포함됩니다. 가상 볼륨을 제외하려면 FALSE로 설정합니다.
+ a| 
+부울
+ a| 
+참
+ a| 
+아니요
+
+
+
+ a| 
+시작 볼륨 ID입니다
+ a| 
+반환할 VolumeID를 시작합니다. 이 VolumeID를 가진 볼륨이 없으면 다음 볼륨(VolumeID)이 목록의 시작으로 사용됩니다. 목록을 페이지 이동하려면 이전 응답에서 마지막 볼륨의 VolumeID + 1을 전달합니다.
+ a| 
+정수
+ a| 
+0
+ a| 
+아니요
+
+
+
+ a| 
+제한
+ a| 
+반환할 볼륨 정보 객체의 최대 개수입니다. 0(영)은 모든 볼륨(무제한)을 반환합니다.
+ a| 
+정수
+ a| 
+(무제한)
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+볼륨
+ a| 
+활성 볼륨 목록입니다.
+ a| 
+xref:reference_element_api_volume.adoc[볼륨] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "ListActiveVolumes",
+   "params": {
+      "startVolumeID"  : 0,
+      "limit" : 1000
+   },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 응답 예제의 길이로 인해 보충 토픽에 문서화됩니다.
+
+
+
+== 버전 이후 새로운 기능
+
+9.6

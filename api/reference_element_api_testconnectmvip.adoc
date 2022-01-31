@@ -1,0 +1,145 @@
+---
+permalink: api/reference_element_api_testconnectmvip.html 
+sidebar: sidebar 
+keywords: management,connection,test,testing,mvip,testconnectmvip 
+summary: TestConnectMvip 메서드를 사용하여 스토리지 클러스터에 대한 관리 접속을 테스트할 수 있습니다. 이 테스트에서는 MVIP를 ping하여 간단한 API 메소드를 실행하여 접속 상태를 확인합니다. 
+---
+= 테스트 ConnectMvip
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"TestConnectMvip" 메서드를 사용하여 스토리지 클러스터에 대한 관리 접속을 테스트할 수 있습니다. 이 테스트에서는 MVIP를 ping하여 간단한 API 메소드를 실행하여 접속 상태를 확인합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+| 진동 | 이 값을 전달하여 다른 MVIP의 관리 연결을 테스트할 수 있습니다. 타겟 클러스터와의 연결을 테스트할 때 이 값을 사용할 필요는 없습니다. | 문자열 | 없음 | 아니요 
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+| 세부 정보  a| 
+테스트 작업에 대한 정보(JSON 개체):
+
+* '연결됨': 테스트가 MVIP(부울)에 연결될 수 있는지 여부를 나타냅니다.
+* MVIP: MVIP 테스트 대상(string)
+* pingBytes : 56바이트, 1500바이트(object)로 ping 테스트에 대한 상세 정보
++
+** '56': 56바이트 ping 테스트 결과(JSON 개체):
++
+*** 개별 응답 시간: 각 앙상블 노드의 응답 시간 목록(문자열 배열)
+*** 개별 상태: 각 앙상블 노드의 핑 상태 목록(부울 배열)
+*** 응답 시간: 평균 Ping 응답 시간(문자열)
+*** '성공': Ping 테스트가 성공했는지 여부를 나타냅니다(부울).
+
+
+** 1500바이트 핑 테스트 결과(JSON 개체):
++
+*** 개별 응답 시간: 각 앙상블 노드의 응답 시간 목록(문자열 배열)
+*** 개별 상태: 각 앙상블 노드의 핑 상태 목록(부울 배열)
+*** 응답 시간: 평균 Ping 응답 시간(문자열)
+*** '성공': ping 테스트 성공 여부(부울)
+
+
+** 채도: 테스트 실행에 필요한 시간(문자열)
+** "결과": 전체 테스트 결과(문자열)
+
+
+
+| JSON 개체 
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "TestConnectMvip",
+   "params": {
+       "mvip" : "172.27.62.50"
+       },
+    "id":1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "details": {
+      "connected": true,
+      "mvip": "172.27.62.50",
+      "pingBytes": {
+        "1500": {
+          "individualResponseTimes": [
+            "00:00:00.000250",
+            "00:00:00.000206",
+            "00:00:00.000200",
+            "00:00:00.000199",
+            "00:00:00.000199"
+         ],
+          "individualStatus": [
+             true,
+             true,
+             true,
+             true,
+             true
+         ],
+         "responseTime": "00:00:00.000211",
+         "successful": true
+       },
+       "56": {
+          "individualResponseTimes": [
+            "00:00:00.000217",
+            "00:00:00.000122",
+            "00:00:00.000117",
+            "00:00:00.000119",
+            "00:00:00.000121"
+         ],
+         "individualStatus": [
+            true,
+            true,
+            true,
+            true,
+            true
+         ],
+         "responseTime": "00:00:00.000139",
+         "successful": true
+        }
+      }
+    },
+    "duration": "00:00:00.271244",
+    "result": "Passed"
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

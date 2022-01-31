@@ -1,0 +1,105 @@
+---
+permalink: api/reference_element_api_listpendingnodes.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,pending,nodes,node,listpendingnodes 
+summary: ListPendingNodes 메서드를 사용하여 시스템에서 보류 중인 스토리지 노드를 나열할 수 있습니다. 보류 중인 노드는 스토리지 클러스터를 조인하도록 실행 및 구성되어 있지만 AddNodes API 메서드를 사용하여 아직 추가되지 않은 스토리지 노드입니다. 
+---
+= ListPendingNodes 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListPendingNodes" 메서드를 사용하여 시스템에서 보류 중인 스토리지 노드를 나열할 수 있습니다. 보류 중인 노드는 스토리지 클러스터를 조인하도록 실행 및 구성되어 있지만 AddNodes API 메서드를 사용하여 아직 추가되지 않은 스토리지 노드입니다.
+
+
+
+== IPv4 및 IPv6 관리 주소입니다
+
+ListPendingNodes에는 MIP(관리 IP 주소)와 MVIP(관리 가상 IP 주소)에 대해 주소 유형이 다른 보류 중인 노드가 나열되지 않습니다. 예를 들어 보류 중인 노드에 IPv6 MVIP와 IPv4 MIP가 있는 경우 "ListPendingNodes"는 결과 중 일부로 노드를 포함하지 않습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+펜딩노드
+ a| 
+클러스터에서 보류 중인 노드의 목록입니다.
+ a| 
+xref:reference_element_api_pendingnode.adoc[펜던트 노드] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "ListPendingNodes",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 3,
+  "result": {
+    "pendingNodes": [
+      {
+        "assignedNodeID": 0,
+        "cip": "10.26.65.101",
+        "cipi": "Bond10G",
+        "compatible": true,
+        "mip": "172.26.65.101",
+        "mipi": "Bond1G",
+        "name": "VWC-EN101",
+        "pendingNodeID": 1,
+        "platformInfo": {
+          "chassisType": "R620",
+          "cpuModel": "Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz",
+          "nodeMemoryGB": 72,
+          "nodeType": "SF3010"
+        },
+        "sip": "10.26.65.101",
+        "sipi": "Bond10G",
+        "softwareVersion": "9.0.0.1554",
+        "uuid": "4C4C4544-0048-4410-8056-C7C04F395931"
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_addnodes.adoc[추가 노드]

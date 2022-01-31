@@ -1,0 +1,98 @@
+---
+permalink: api/reference_element_api_secureerasedrives.html 
+sidebar: sidebar 
+keywords: drive,drives,secure,erase,reset,resetting,encryption,key,secureerasedrives 
+summary: 'SecureEraseDrives 메서드를 사용하면 "사용 가능" 상태인 드라이브에서 남아 있는 데이터를 제거할 수 있습니다. 중요한 데이터가 포함된 드라이브의 사용 수명이 거의 다 된 드라이브를 교체할 때 이 방법을 사용할 수 있습니다. 이 방법은 보안 지우기 장치 명령을 사용하여 드라이브에 미리 정의된 패턴을 쓰고 드라이브의 암호화 키를 재설정합니다. 이 비동기 메서드를 완료하는 데 몇 분 정도 걸릴 수 있습니다.' 
+---
+= SecureEraseDrives
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'ecureEraseDrives' 방법을 사용하여 "Available" 상태인 드라이브에서 남아 있는 데이터를 제거할 수 있습니다. 중요한 데이터가 포함된 드라이브의 사용 수명이 거의 다 된 드라이브를 교체할 때 이 방법을 사용할 수 있습니다. 이 방법은 보안 지우기 장치 명령을 사용하여 드라이브에 미리 정의된 패턴을 쓰고 드라이브의 암호화 키를 재설정합니다. 이 비동기 메서드를 완료하는 데 몇 분 정도 걸릴 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+드라이브
+ a| 
+보안 지우기를 위한 드라이브 ID 목록입니다.
+ a| 
+정수 배열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+asyncHandle
+ a| 
+작업 결과를 얻는 데 사용되는 Handle 값입니다.
+ a| 
+정수
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "SecureEraseDrives",
+   "params": {
+     "drives"  : [3, 4, 5]
+   },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id" : 1
+   "result" : {
+     "asyncHandle" : 1
+   }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult 를 참조하십시오]
+* xref:reference_element_api_listdrives.adoc[ListDrives를 선택합니다]
+

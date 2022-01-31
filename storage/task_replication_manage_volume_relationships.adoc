@@ -1,0 +1,22 @@
+---
+permalink: storage/task_replication_manage_volume_relationships.html 
+sidebar: sidebar 
+keywords: volume pairing reversal, volume pair, replication 
+summary: 복제 일시 중지, 볼륨 페어링 되돌리기, 복제 모드 변경, 볼륨 쌍 삭제, 클러스터 쌍 삭제 등 다양한 방법으로 볼륨 관계를 관리할 수 있습니다. 
+---
+= 볼륨 관계 관리
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+복제 일시 중지, 볼륨 페어링 되돌리기, 복제 모드 변경, 볼륨 쌍 삭제, 클러스터 쌍 삭제 등 다양한 방법으로 볼륨 관계를 관리할 수 있습니다.
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:task_replication_pause_replication.adoc[복제를 일시 중지합니다]
+* xref:task_replication_change_the_mode.adoc[복제 모드를 변경합니다]
+* xref:task_replication_delete_volume_pairs.adoc[볼륨 쌍을 삭제합니다]
+

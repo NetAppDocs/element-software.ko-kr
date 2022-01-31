@@ -1,0 +1,146 @@
+---
+permalink: api/reference_element_api_modifyinitiators.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,initiators,initiator,attribute,attributes,modifyinitiators 
+summary: ModifyInitiators 메서드를 사용하여 하나 이상의 기존 이니시에이터의 특성을 변경할 수 있습니다. 
+---
+= 한정자
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ModifyInitiators 메서드를 사용하여 하나 이상의 기존 이니시에이터의 특성을 변경할 수 있습니다.
+
+기존 이니시에이터의 이름은 변경할 수 없습니다. 이니시에이터의 이름을 변경해야 하는 경우 먼저 을 사용하여 삭제합니다 xref:reference_element_api_deleteinitiators.adoc[DeleteInitiators(삭제 초기자] 를 사용하여 새 메서드를 만듭니다 xref:reference_element_api_createinitiators.adoc[CreateInitiators(초기자)] 방법.
+
+ModifyInitiators 가 매개 변수에 제공된 이니시에이터 중 하나를 변경하지 못할 경우 메서드는 오류를 반환하고 이니시에이터를 수정하지 않습니다(부분 완료는 가능하지 않음).
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+이니시에이터
+ a| 
+수정할 각 이니시에이터의 특성을 포함하는 객체 목록입니다. 가능한 개체:
+
+* '별칭': (선택 사항) 초기자에 할당할 새로운 대화명. (문자열)
+* 'attributes': (선택 사항) 초기자에 할당할 새로운 JSON 특성 세트입니다. (JSON 개체)
+* 'chapUsername': (선택 사항) 이 초기자에 대한 새로운 고유 CHAP 사용자 이름입니다. (문자열)
+* 'forceDuringUpgrade': 업그레이드 중 초기자 수정을 완료합니다.
+* initiatorID: (필수) 수정할 초기자의 ID. (정수)
+* initiatorSecret: (선택 사항) 초기자를 인증하는 데 사용되는 새 CHAP 암호입니다. (문자열)
+* RequirChap: (선택 사항) 이 초기자에 CHAP가 필요한 경우 True입니다. (부울)
+* targetSecret: (선택 사항) 대상을 인증하는 데 사용되는 새 CHAP 암호(상호 CHAP 인증 사용 시) (문자열)
+* 'virtualNetworkIDs': (선택 사항) 이 이니시에이터와 연결된 가상 네트워크 식별자 목록입니다. 하나 이상의 가상 네트워크를 정의하는 경우 이 이니시에이터는 해당 가상 네트워크에만 로그인할 수 있습니다. 가상 네트워크를 정의하지 않으면 이 이니시에이터가 모든 네트워크에 로그인할 수 있습니다.
+* 'volumeAccessGroupID': (선택 사항) 초기자를 추가해야 하는 볼륨 액세스 그룹의 ID입니다. 이전에 이니시에이터가 다른 볼륨 액세스 그룹에 있었던 경우 이전 볼륨 액세스 그룹에서 제거됩니다. 이 키가 있지만 null이면 이니시에이터가 현재 볼륨 액세스 그룹에서 제거되지만 새 볼륨 액세스 그룹에 배치되지 않습니다. (정수)
+
+ a| 
+JSON 개체 어레이
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+이니시에이터
+ a| 
+새로 수정된 이니시에이터를 설명하는 객체 목록입니다.
+ a| 
+xref:reference_element_api_initiator.adoc[이니시에이터] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "id": 6683,
+  "method": "ModifyInitiators",
+  "params": {
+    "initiators": [
+      {
+        "initiatorID": 2,
+        "alias": "alias1",
+        "volumeAccessGroupID": null
+      },
+      {
+        "initiatorID": 3,
+        "alias": "alias2",
+        "volumeAccessGroupID": 1
+      }
+    ]
+  }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 6683,
+  "result": {
+    "initiators": [
+      {
+        "alias": "alias1",
+        "attributes": {},
+        "initiatorID": 2,
+        "initiatorName": "iqn.1993-08.org.debian:01:395543635",
+        "volumeAccessGroups": []
+      },
+      {
+        "alias": "alias2",
+        "attributes": {},
+        "initiatorID": 3,
+        "initiatorName": "iqn.1993-08.org.debian:01:935573135",
+        "volumeAccessGroups": [
+          1
+        ]
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_createinitiators.adoc[CreateInitiators(초기자)]
+* xref:reference_element_api_deleteinitiators.adoc[DeleteInitiators(삭제 초기자]
+

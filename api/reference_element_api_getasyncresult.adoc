@@ -1,0 +1,222 @@
+---
+permalink: api/reference_element_api_getasyncresult.html 
+sidebar: sidebar 
+keywords: async,asynchronous,results,result,get,getting,GetAsyncResult 
+summary: GetAsyncResult 를 사용하여 비동기 메서드 호출의 결과를 검색할 수 있습니다. 일부 메서드 호출은 실행하는 데 약간의 시간이 필요하며 시스템이 초기 응답을 보낼 때 완료되지 않을 수 있습니다. 메서드 호출의 상태 또는 결과를 가져오려면 GetAsyncResult 를 사용하여 메서드에서 반환된 asyncHandle 값을 폴링합니다. 
+---
+= GetAsyncResult 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetAsyncResult 를 사용하여 비동기 메서드 호출의 결과를 검색할 수 있습니다. 일부 메서드 호출은 실행하는 데 약간의 시간이 필요하며 시스템이 초기 응답을 보낼 때 완료되지 않을 수 있습니다. 메서드 호출의 상태 또는 결과를 얻으려면 GetAsyncResult 를 사용하여 메서드에서 반환된 asyncHandle 값을 폴링합니다.
+
+GetAsyncResult 는 작업의 전반적인 상태(진행 중, 완료 또는 오류)를 표준 방식으로 반환하지만 작업에 대해 반환되는 실제 데이터는 원래 메서드 호출에 따라 달라지며 각 메서드로 반환 데이터를 문서화합니다.
+
+keepResult 매개 변수가 없거나 false 이면 결과가 반환될 때 asyncHandle 이 비활성화되고 나중에 asyncHandle 에서 오류를 반환하도록 쿼리를 시도합니다. keepResult 매개 변수를 true 로 설정하여 이후의 쿼리에 대해 asyncHandle 을 활성 상태로 유지할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+asyncHandle
+ a| 
+원래 비동기 메서드 호출에서 반환된 값입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+keepResult(keepResult)
+ a| 
+true 인 경우 GetAsyncResult 는 반환 시 비동기 결과를 제거하지 않으므로 나중에 해당 asyncHandle 에 쿼리를 실행할 수 있습니다.
+ a| 
+부울
+ a| 
+거짓
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+상태
+ a| 
+비동기 메서드 호출의 상태입니다. 가능한 값:
+
+* 실행 중: 메소드가 여전히 실행 중입니다.
+* 완료: 메서드가 완료되고 결과 또는 오류를 사용할 수 있습니다.
+
+ a| 
+문자열
+
+
+
+ a| 
+결과
+ a| 
+비동기 메서드가 성공적으로 완료되면 비동기 작업의 결과입니다. 비동기 작업이 실패한 경우 이 멤버는 존재하지 않습니다.
+ a| 
+문자열
+
+
+
+ a| 
+오류
+ a| 
+상태가 완료이고 비동기 메서드가 실패한 경우 이 멤버는 오류 세부 정보를 포함합니다. 비동기 작업이 성공하면 이 멤버가 없습니다.
+ a| 
+문자열
+
+
+
+ a| 
+결과 유형
+ a| 
+비동기 메서드 호출이 수행 중이거나 수행 중인 작업의 유형입니다.
+ a| 
+문자열
+
+
+
+ a| 
+세부 정보
+ a| 
+상태가 Running 인 경우 이 멤버는 메서드의 현재 작업과 관련된 정보를 포함합니다. 비동기 메서드가 실행되고 있지 않으면 이 멤버가 없습니다.
+ a| 
+JSON 개체
+
+
+
+ a| 
+createTime(createTime)
+ a| 
+비동기 메서드가 호출된 시간(UTC + 0 형식).
+ a| 
+ISO 8601 날짜 문자열
+
+
+
+ a| 
+마지막 업데이트 시간
+ a| 
+비동기 메서드의 상태가 마지막으로 업데이트된 시간(UTC + 0 형식)
+ a| 
+ISO 8601 날짜 문자열
+
+|===
+* 참고: * GetAsyncResult 의 반환 값은 기본적으로 추가 상태 필드가 있는 표준 JSON 응답의 중첩 버전입니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "GetAsyncResult",
+  "params": {
+      "asyncHandle" : 389
+},
+"id" : 1
+}
+----
+
+
+== 응답 예: 메서드 오류
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "error": {
+      "code": 500,
+      "message": "DBClient operation requested on a non-existent path at [/asyncresults/1]",
+      "name": "xDBNoSuchPath"
+   },
+   "id": 1
+}
+----
+"response"가 GetAsyncResult 호출의 JSON 응답 개체인 경우 "response.error"는 GetAsyncResult 메서드 자체의 오류(예: 존재하지 않는 asyncHandle 쿼리)에 해당합니다.
+
+
+
+== 응답 예: 비동기 작업 오류
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "createTime": "2016-01-01T02:05:53Z",
+     "error": {
+       "bvID": 1,
+       "message": "Bulk volume job failed",
+       "name": "xBulkVolumeScriptFailure",
+       "volumeID": 34
+     },
+     "lastUpdateTime": "2016-01-21T02:06:56Z",
+     "resultType": "BulkVolume",
+     "status": "complete"
+   }
+}
+----
+"respongse.result.error" 는 원래 메서드 호출의 오류 결과에 해당합니다.
+
+
+
+== 응답 예: 비동기 작업 성공
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "createTime": "2016-01-01T22:29:18Z",
+     "lastUpdateTime": "2016-01-01T22:45:51Z",
+     "result": {
+       "cloneID": 25,
+       "message": "Clone complete.",
+       "volumeID": 47
+     },
+     "resultType": "Clone",
+     "status": "complete"
+   }
+}
+----
+"respongse.result.result" 는 호출이 성공적으로 완료된 경우 원래 메서드 호출에 대한 반환 값입니다.
+
+
+
+== 버전 이후 새로운 기능
+
+9.6

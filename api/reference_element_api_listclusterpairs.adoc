@@ -1,0 +1,93 @@
+---
+permalink: api/reference_element_api_listclusterpairs.html 
+sidebar: sidebar 
+keywords: cluster,pair,pairs,paired,list,listing,listclusterpairs 
+summary: 'ListClusterPairs 메서드를 사용하여 현재 클러스터와 페어링된 모든 클러스터를 나열할 수 있습니다. 이 방법은 현재 페어링에 대한 통계, 클러스터 페어링의 연결 및 지연 시간(밀리초 단위) 등과 같이 활성 및 보류 중인 클러스터 페어링에 대한 정보를 반환합니다.' 
+---
+= ListClusterPairs
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListClusterPairs" 방법을 사용하여 현재 클러스터와 페어링된 모든 클러스터를 나열할 수 있습니다. 이 메서드는 현재 페어링에 대한 통계와 클러스터 페어링의 연결 및 지연 시간(밀리초)과 같이 활성 및 보류 중인 클러스터 페어링에 대한 정보를 반환합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+클러스터박람회
+ a| 
+페어링된 각 클러스터에 대한 정보
+ a| 
+xref:reference_element_api_clusterpair.adoc[클러스터 쌍] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "ListClusterPairs",
+   "params": {
+      },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+ "id": 1,
+ "result": {
+   "clusterPairs": [
+     {
+      "clusterName": "cluster2",
+      "clusterPairID": 3,
+      "clusterPairUUID": "9866fbeb-c2f8-4df3-beb9-58a5c4e49c9b",
+      "clusterUUID": 5487,
+      "latency": 1,
+      "mvip": "172.1.1.5",
+      "status": "Connected"
+      "version": "8.0.0.1361"
+     },
+     {
+      "clusterName": "cluster3",
+      "clusterPairID": 2,
+      "clusterPairUUID": "8132a699-ce82-41e0-b406-fb914f976042",
+      "clusterUUID": 1383,
+      "latency": 1,
+      "mvip": "172.1.1.6",
+      "status": "Connected"
+      "version": "8.0.0.1361"
+     }
+   ]
+ }
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

@@ -1,0 +1,7 @@
+---
+section: try
+title: 시도해 보십시오
+url: "/try/task_try_overview.html"
+entries:
+- title: Element Demo Node를 사용하여 스토리지 기능을 사용해 보십시오
+  url: "/try/task_use_demonode.html"

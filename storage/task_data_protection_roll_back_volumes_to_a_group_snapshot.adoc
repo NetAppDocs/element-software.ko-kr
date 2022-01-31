@@ -1,0 +1,27 @@
+---
+permalink: storage/task_data_protection_roll_back_volumes_to_a_group_snapshot.html 
+sidebar: sidebar 
+keywords: volumes, rollback, group snapshot, purge 
+summary: 언제든지 볼륨 그룹을 그룹 스냅샷으로 롤백할 수 있습니다. 
+---
+= 볼륨을 그룹 스냅샷으로 롤백합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+언제든지 볼륨 그룹을 그룹 스냅샷으로 롤백할 수 있습니다.
+
+볼륨 그룹을 롤백하면 그룹의 모든 볼륨이 그룹 스냅샷이 생성된 시점의 상태로 복구됩니다. 또한 롤백하면 볼륨 크기가 원래 스냅샷에 기록된 크기로 복원됩니다. 시스템에서 볼륨을 제거한 경우 해당 볼륨의 모든 스냅숏도 삭제 시점에 삭제되었으며 시스템은 삭제된 볼륨 스냅숏을 복원하지 않습니다.
+
+. 데이터 보호 * > * 그룹 스냅샷 * 을 클릭합니다.
+. 볼륨 롤백에 사용할 그룹 스냅숏의 작업 아이콘을 클릭합니다.
+. 결과 메뉴에서 * Rollback Volumes to Group Snapshot * 을 선택합니다.
+. * 선택 사항 *: 스냅샷으로 롤백하기 전에 볼륨의 현재 상태를 저장하려면
++
+.. 스냅샷으로 롤백 * 대화 상자에서 * 볼륨의 현재 상태를 그룹 스냅샷으로 저장 * 을 선택합니다.
+.. 새 스냅샷의 이름을 입력합니다.
+
+
+. 그룹 스냅샷 롤백 * 을 클릭합니다.
+

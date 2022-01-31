@@ -1,0 +1,157 @@
+---
+permalink: api/reference_element_api_resetnode.html 
+sidebar: sidebar 
+keywords:  
+summary: 'ResetNode 메서드를 사용하여 노드를 공장 초기 설정으로 재설정할 수 있습니다. 이 메서드를 호출하면 모든 데이터, 패키지\(소프트웨어 업그레이드 등\), 구성 및 로그 파일이 노드에서 삭제됩니다. 그러나 이 작업 중에 노드의 네트워크 설정은 유지됩니다. 클러스터에 참여하고 있는 노드는 공장 초기 설정으로 재설정할 수 없습니다.' 
+---
+= ResetNode 를 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ResetNode" 메서드를 사용하여 노드를 공장 초기 설정으로 재설정할 수 있습니다. 이 메서드를 호출하면 모든 데이터, 패키지(소프트웨어 업그레이드 등), 구성 및 로그 파일이 노드에서 삭제됩니다. 그러나 이 작업 중에 노드의 네트워크 설정은 유지됩니다. 클러스터에 참여하고 있는 노드는 공장 초기 설정으로 재설정할 수 없습니다.
+
+
+NOTE: SolidFire 엔터프라이즈 SDS는 이 방법을 지원하지 않습니다. SolidFire ESDS 시스템에서 이 메서드를 사용하면 메서드가 오류를 반환합니다.
+
+
+
+== 매개 변수
+
+ResetNode API는 "사용 가능" 상태인 노드에서만 사용할 수 있습니다. 클러스터의 "활성" 노드 또는 "보류 중" 상태인 노드에는 사용할 수 없습니다.
+
+주의:
+
+이 방법은 노드에 있는 모든 고객 데이터를 지웁니다.
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+빌드
+ a| 
+노드를 재설정할 원격 요소 소프트웨어 이미지에 대한 URL을 지정하는 데 사용됩니다.
+ a| 
+URL
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+하중
+ a| 
+노드를 재설정하려면 true로 설정합니다.
+ a| 
+부울
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+옵션
+ a| 
+재설정 작업을 실행하기 위한 사양을 입력하는 데 사용됩니다. 자세한 내용은 필요한 경우 NetApp Support에서 제공합니다.
+ a| 
+JSON 개체
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "ResetNode",
+   "params": {
+      "build" : "file:///sf/rtfi/image/filesystem.squashfs",
+      "force" : true
+              },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": null,
+  "result": {
+    "rtfiInfo": {
+      "build": "file:///sf/rtfi/image/filesystem.squashfs",
+      "generation": "9",
+      "options": {
+        "edebug": "",
+        "sf_auto": "0",
+        "sf_bond_mode": "ActivePassive",
+        "sf_check_hardware": "0",
+        "sf_disable_otpw": "0",
+        "sf_fa_host": "",
+        "sf_hostname": "SF-FA18",
+        "sf_inplace": "1",
+        "sf_inplace_die_action": "kexec",
+        "sf_inplace_safe": "0",
+        "sf_keep_cluster_config": "0",
+        "sf_keep_data": "0",
+        "sf_keep_hostname": "0",
+        "sf_keep_network_config": "0",
+        "sf_keep_paths": "\"/var/log/hardware.xml\"",
+        "sf_max_archives": "5",
+        "sf_nvram_size": "",
+        "sf_oldroot": "",
+        "sf_postinst_erase_root_drive": "0",
+        "sf_root_drive": "",
+        "sf_rtfi_cleanup_state": "",
+        "sf_secure_erase": "1",
+        "sf_secure_erase_retries": "5",
+        "sf_slice_size": "",
+        "sf_ssh_key": "1",
+        "sf_ssh_root": "1",
+        "sf_start_rtfi": "1",
+        "sf_status_httpserver": "1",
+        "sf_status_httpserver_stop_delay": "5m",
+        "sf_status_inject_failure": "",
+        "sf_status_json": "0",
+        "sf_support_host": "sfsupport.solidfire.com",
+        "sf_test_hardware": "0",
+        "sf_upgrade": "0",
+        "sf_upgrade_firmware": "0",
+        "sf_upload_logs_url": ""
+     },
+      "statusUrlAll": "http://192.168.130.20/status/all.json",
+      "statusUrlCurrent": "http://192.168.130.20/status/current.json"
+    }
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

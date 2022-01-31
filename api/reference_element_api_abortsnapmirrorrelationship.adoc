@@ -1,0 +1,89 @@
+---
+permalink: api/reference_element_api_abortsnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords:  
+summary: Element 소프트웨어 웹 UI에서는 AbortSnapMirrorRelationship 메서드를 사용하여 시작되었지만 아직 완료되지 않은 SnapMirror 전송을 중지합니다. 
+---
+= AbortSnapMirror 관계
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 소프트웨어 웹 UI에서는 "AbortSnapMirrorRelationship" 메서드를 사용하여 시작되었지만 아직 완료되지 않은 SnapMirror 전송을 중지합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+snapMirrorEndpointID입니다
+ a| 
+Element 스토리지 클러스터와 통신하는 원격 ONTAP 스토리지 시스템의 끝점 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+디스테이징 볼륨
+ a| 
+SnapMirror 관계의 대상 볼륨입니다.
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+clearCheckpoint 를 선택합니다
+ a| 
+재시작 체크포인트를 지우할지 여부를 결정합니다. 가능한 값:
+
+* 참
+* 거짓
+
+ a| 
+부울
+ a| 
+거짓
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+snapMirrorRelationship
+ a| 
+중단된 SnapMirror 관계에 대한 정보가 포함된 개체입니다.
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationship]
+
+|===
+
+
+== 버전 이후 새로운 기능
+
+10.1

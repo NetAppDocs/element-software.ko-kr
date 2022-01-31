@@ -1,0 +1,68 @@
+---
+permalink: api/reference_element_api_keyproviderkmip.html 
+sidebar: sidebar 
+keywords: key provider,KMIP,keys 
+summary: 'keyProviderKmip 개체는 키 관리 상호 운용성 프로토콜\(KMIP\) 키 공급자를 설명합니다. 키 공급자는 저장 시 암호화 등의 클러스터 기능에 사용할 인증 키를 검색하는 메커니즘과 위치입니다.' 
+---
+= KeyProviderKmip 을 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+keyProviderKmip 개체는 KMIP(Key Management Interoperability Protocol) 키 공급자를 설명합니다. 키 공급자는 저장 시 암호화 등의 클러스터 기능에 사용할 인증 키를 검색하는 메커니즘과 위치입니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+KeyProviderID를 입력합니다
+ a| 
+KMIP 키 공급자의 ID입니다. 이 값은 변경할 수 없는 키 공급자를 생성하는 동안 클러스터에서 할당한 고유한 값입니다.
+ a| 
+정수
+
+
+
+ a| 
+KeyProviderIsActive 를 참조하십시오
+ a| 
+KMIP 키 공급자가 활성화된 경우 true입니다. 생성되었지만 아직 삭제되지 않은 미해결 키가 있어 계속 사용 중인 것으로 가정하면 공급자가 활성 상태로 간주됩니다.
+ a| 
+부울
+
+
+
+ a| 
+KeyProviderName 을 클릭합니다
+ a| 
+KMIP 키 공급자의 이름입니다.
+ a| 
+문자열
+
+
+
+ a| 
+키서버 ID
+ a| 
+이 공급자와 연결된 키 서버 ID입니다. 이 공급자를 활성화하려면 서버를 추가해야 합니다. 이 공급자가 활성화되어 있는 동안에는 서버를 제거할 수 없습니다. 각 공급자에 대해 하나의 서버 ID만 지원됩니다.
+ a| 
+정수 배열
+
+
+
+ a| 
+KmipCapabilities를 참조하십시오
+ a| 
+기본 라이브러리, FIPS 준수, SSL 공급자 등에 대한 세부 정보를 포함한 이 KMIP 키 공급자의 기능
+ a| 
+문자열
+
+|===

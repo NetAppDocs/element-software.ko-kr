@@ -1,0 +1,192 @@
+---
+permalink: api/reference_element_api_setprotectiondomainlayout.html 
+sidebar: sidebar 
+keywords: layout,custom,protection domain,protection domains,setting protection domains 
+summary: SetProtectionDomainLayout 메서드를 사용하여 노드를 사용자 지정 보호 도메인에 할당할 수 있습니다. 
+---
+= SetProtectionDomainLayout 을 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'SetProtectionDomainLayout' 메서드를 사용하여 노드를 사용자 지정 보호 도메인에 할당할 수 있습니다.
+
+클러스터의 모든 활성 노드에 대한 정보를 제공해야 하며 비활성 노드에 대한 정보는 제공할 수 없습니다. 지정된 섀시의 모든 노드를 동일한 사용자 지정 보호 도메인에 할당해야 합니다. 모든 노드에 대해 동일한 보호도메인 유형을 제공해야 합니다. 노드나 섀시와 같이 사용자 지정이 아닌 protectionDomainTypes는 포함하지 않아야 합니다. 둘 중 하나가 제공된 경우 사용자 지정 보호 도메인이 무시되고 적절한 오류가 반환됩니다.
+
+
+NOTE: 사용자 지정 보호 도메인은 다음 구성에서 지원되지 않습니다.
+
+* 공유 섀시가 포함된 스토리지 클러스터
+* 2노드 스토리지 클러스터
+
+
+이 메서드는 이러한 구성의 스토리지 클러스터에서 사용할 때 오류를 반환합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+보호도메인레이아웃
+ a| 
+각 노드에 대한 보호 도메인 정보
+ a| 
+의 JSON 목록 link:reference_element_api_nodeprotectiondomains.md#GUID-3750B3B8-6A66-402F-85F1-E828005084BB["노드 보호도메인"] 오브젝트.
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+보호도메인레이아웃
+ a| 
+각 노드에 연결된 보호 도메인이 있는 노드 목록입니다.
+ a| 
+의 JSON 목록 link:reference_element_api_nodeprotectiondomains.md#GUID-3750B3B8-6A66-402F-85F1-E828005084BB["노드 보호도메인"] 오브젝트.
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "method": "SetProtectionDomainLayout",
+  "params": {
+    "protectionDomainLayout": [
+      {
+        "nodeID": 1,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "Rack-1",
+            "protectionDomainType": "custom"
+          }
+        ]
+      },
+      {
+        "nodeID": 2,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "Rack-1",
+            "protectionDomainType": "custom"
+          }
+        ]
+      },
+      {
+        "nodeID": 3,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "Rack-2",
+            "protectionDomainType": "custom"
+          }
+        ]
+      },
+      {
+        "nodeID": 4,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "Rack-2",
+            "protectionDomainType": "custom"
+          }
+        ]
+      }
+    ]
+  }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+
+{
+  "id": 1,
+  "result": {
+    "protectionDomainLayout": [
+      {
+        "nodeID": 1,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "QTFCR2914008D",
+            "protectionDomainType": "chassis"
+          },
+          {
+            "protectionDomainName": "Rack-1",
+            "protectionDomainType": "custom"
+          }
+        ]
+      },
+      {
+        "nodeID": 2,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "QTFCR291500EA",
+            "protectionDomainType": "chassis"
+          },
+          {
+            "protectionDomainName": "Rack-1",
+            "protectionDomainType": "custom"
+          }
+        ]
+      },
+      {
+        "nodeID": 3,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "QTFCR291500C3",
+            "protectionDomainType": "chassis"
+          },
+          {
+            "protectionDomainName": "Rack-2",
+            "protectionDomainType": "custom"
+          }
+        ]
+      },
+      {
+        "nodeID": 4,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "QTFCR291400E6",
+            "protectionDomainType": "chassis"
+          },
+          {
+            "protectionDomainName": "Rack-2",
+            "protectionDomainType": "custom"
+          }
+        ]
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+12.0

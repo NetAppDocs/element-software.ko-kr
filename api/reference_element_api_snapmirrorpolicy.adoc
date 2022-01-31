@@ -1,0 +1,112 @@
+---
+permalink: api/reference_element_api_snapmirrorpolicy.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorPolicy 
+summary: snapMirrorPolicy 개체에는 ONTAP 시스템에 저장된 SnapMirror 정책에 대한 정보가 들어 있습니다. 
+---
+= snapMirrorPolicy를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorPolicy 개체에는 ONTAP 시스템에 저장된 SnapMirror 정책에 대한 정보가 들어 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+snapMirrorEndpointID입니다
+ a| 
+대상 ONTAP 시스템의 ID입니다.
+ a| 
+정수
+
+
+
+ a| 
+정책 이름
+ a| 
+정책에 할당된 고유한 이름입니다.
+ a| 
+문자열
+
+
+
+ a| 
+정책 유형
+ a| 
+정책 유형입니다. 가능한 값:
+
+* Async_mirror입니다
+* mirror_vault 를 선택합니다
+
+ a| 
+문자열
+
+
+
+ a| 
+설명
+ a| 
+SnapMirror 정책과 관련하여 사람이 읽을 수 있는 설명입니다.
+ a| 
+문자열
+
+
+
+ a| 
+전송 우선 순위
+ a| 
+SnapMirror 전송이 실행되는 우선 순위입니다. 가능한 값:
+
+* Normal(일반): 기본 우선 순위입니다. 이러한 전송은 우선 순위가 가장 낮은 전송 전에 예약됩니다.
+* 낮음: 이러한 전송은 가장 낮은 우선 순위를 가지며 가장 일반적인 우선 순위 전송 후에 예약됩니다.
+
+ a| 
+문자열
+
+
+
+ a| 
+정책 규칙
+ a| 
+정책 규칙을 설명하는 객체 목록입니다.
+ a| 
+xref:reference_element_api_snapmirrorpolicyrule.adoc[snapMirrorPolicyRule 을 참조하십시오] 스토리지
+
+
+
+ a| 
+총 KeepCount입니다
+ a| 
+정책의 모든 규칙에 대한 총 보존 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+전체규칙
+ a| 
+정책의 총 규칙 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+vserverName입니다
+ a| 
+SnapMirror 정책에 대한 SVM의 이름입니다.
+ a| 
+문자열
+
+|===

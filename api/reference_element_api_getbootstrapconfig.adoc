@@ -1,0 +1,172 @@
+---
+permalink: api/reference_element_api_getbootstrapconfig.html 
+sidebar: sidebar 
+keywords: cluster,getting,bootstrap,information,node,GetBootstrapConfig 
+summary: GetBootstrapConfig 메서드를 사용하여 부트스트랩 구성 파일에서 클러스터 및 노드 정보를 가져올 수 있습니다. 개별 노드에 대해 이 API 메소드를 사용하여 클러스터에 가입합니다. 이 메서드가 반환하는 정보는 클러스터를 생성할 때 클러스터 구성 인터페이스에서 사용됩니다. 
+---
+= GetBootstrapConfig 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetBootstrapConfig" 메서드를 사용하여 부트스트랩 구성 파일에서 클러스터 및 노드 정보를 가져올 수 있습니다. 개별 노드에 대해 이 API 메소드를 사용하여 클러스터에 가입합니다. 이 메서드가 반환하는 정보는 클러스터를 생성할 때 클러스터 구성 인터페이스에서 사용됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+클러스터 이름
+ a| 
+클러스터의 이름입니다.
+ a| 
+문자열
+
+
+
+ a| 
+진동
+ a| 
+클러스터 MVIP 주소입니다. 노드가 클러스터의 일부가 아닌 경우 비어 있습니다.
+ a| 
+문자열
+
+
+
+ a| 
+이름
+ a| 
+노드의 이름입니다.
+ a| 
+문자열
+
+
+
+ a| 
+노드
+ a| 
+활성 상태로 클러스터 연결을 기다리는 각 노드에 대한 정보 목록입니다. 가능한 값:
+
+* chassisType: (string) 노드의 하드웨어 플랫폼입니다.
+* CIP: (string) 노드의 클러스터 IP 주소입니다.
+* Compatible: (boolean) API 호출이 실행된 노드와 노드가 호환되는지 여부를 나타냅니다.
+* 호스트 이름: (string) 노드의 호스트 이름입니다.
+* MIP: (string) 노드의 IPv4 관리 IP 주소입니다.
+* mipv6: (string) 노드의 IPv6 관리 IP 주소입니다.
+* NodeType: (string) 노드의 모델 이름입니다.
+* 버전: (string) 현재 노드에 설치된 소프트웨어의 버전입니다.
+
+ a| 
+JSON 개체 어레이
+
+
+
+ a| 
+비프
+ a| 
+클러스터 SVIP 주소입니다. 노드가 클러스터의 일부가 아닌 경우 Null입니다.
+ a| 
+문자열
+
+
+
+ a| 
+버전
+ a| 
+이 API 메서드가 호출한 노드에 현재 설치된 Element 소프트웨어의 버전입니다.
+ a| 
+문자열
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "GetBootstrapConfig",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+	"id":1,
+	"result":{
+		"clusterName":"testname",
+		"nodeName":"testnode",
+		"svip": "10.117.1.5",
+		"mvip": "10.117.1.6",
+		"nodes":[
+			{
+				"chassisType":"R630",
+				"cip":"10.117.115.16",
+				"compatible":true,
+				"hostname":"NLABP1132",
+				"mip":"10.117.114.16",
+				"mipV6":"fd20:8b1e:b256:45a::16",
+				"nodeType":"SF2405",
+				"role":"Storage",
+				"version":"11.0"
+			},
+			{
+				"chassisType":"R630",
+				"cip":"10.117.115.17",
+				"compatible":true,
+				"hostname":"NLABP1133",
+				"mip":"10.117.114.17",
+				"mipV6":"fd20:8b1e:b256:45a::17",
+				"nodeType":"SF2405",
+				"role":"Storage",
+				"version":"11.0"
+			},
+			{
+				"chassisType":"R630",
+				"cip":"10.117.115.18",
+				"compatible":true,
+				"hostname":"NLABP1134",
+				"mip":"10.117.114.18",
+				"mipV6":"fd20:8b1e:b256:45a::18",
+				"nodeType":"SF2405",
+				"role":"Storage",
+				"version":"11.0"
+			}
+		],
+		"version":"11.0"
+	}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_createcluster.adoc[클러스터 생성]

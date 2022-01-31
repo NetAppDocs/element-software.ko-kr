@@ -1,0 +1,24 @@
+---
+permalink: storage/concept_system_manage_virtual_manage_virtual_networks.html 
+sidebar: sidebar 
+keywords: virtual networks, manage, traffic, clients, vlan tagging 
+summary: SolidFire 스토리지의 가상 네트워킹을 사용하면 별도의 논리 네트워크에 있는 여러 클라이언트 간의 트래픽을 하나의 클러스터에 연결할 수 있습니다. 클러스터에 대한 연결은 VLAN 태그 지정을 사용하여 네트워킹 스택에서 분리됩니다. 
+---
+= 가상 네트워크를 관리합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire 스토리지의 가상 네트워킹을 사용하면 별도의 논리 네트워크에 있는 여러 클라이언트 간의 트래픽을 하나의 클러스터에 연결할 수 있습니다. 클러스터에 대한 연결은 VLAN 태그 지정을 사용하여 네트워킹 스택에서 분리됩니다.
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:task_system_manage_virtual_add_a_virtual_network.adoc[가상 네트워크를 추가합니다]
+* xref:task_system_manage_virtual_enable_virtual_routing_and_forwarding.adoc[가상 라우팅 및 전달을 활성화합니다]
+* xref:task_system_manage_virtual_edit_a_virtual_network.adoc[가상 네트워크를 편집합니다]
+* xref:task_system_manage_virtual_edit_vrf_vlans.adoc[VRF VLAN을 편집합니다]
+* xref:task_system_manage_virtual_delete_a_virtual_network.adoc[가상 네트워크를 삭제합니다]
+

@@ -1,0 +1,45 @@
+---
+permalink: storage/task_system_manage_mfa_set_up_multi_factor_authentication.html 
+sidebar: sidebar 
+keywords: idp, json, mfa, cluster, metadata, saml 
+summary: Element API를 통해 이러한 기본 단계를 사용하여 다중 요소 인증을 사용하도록 클러스터를 설정할 수 있습니다. 각 API 메소드에 대한 자세한 내용은 Element API 참조 문서를 참조하십시오. 
+---
+= 다중 요소 인증을 설정합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element API를 통해 이러한 기본 단계를 사용하여 다중 요소 인증을 사용하도록 클러스터를 설정할 수 있습니다.
+
+각 API 메소드에 대한 자세한 내용은 에서 확인할 수 있습니다 link:../api/index.html["요소 API 참조입니다"].
+
+. 다음 API 메서드를 호출하고 IDP 메타데이터를 JSON 형식 "CreateIdpConfiguration"으로 전달하여 클러스터에 대한 새로운 타사 ID 공급자(IDP) 구성을 생성합니다
++
+IDP 메타데이터는 일반 텍스트 형식으로 타사 IDP에서 검색됩니다. 이 메타데이터는 JSON으로 올바르게 포맷되었는지 확인하기 위해 유효성을 검증해야 합니다. 사용할 수 있는 JSON 포맷터 응용 프로그램은 매우 다양합니다(예: https://freeformatter.com/json-escape.html).
+
+. spMetadataUrl 을 통해 클러스터 메타데이터를 검색하여 다음과 같은 API 메서드('ListIdpConfigurations')를 호출하여 타사 IDP로 복사합니다
++
+SpMetadataUrl 은 신뢰 관계를 설정하기 위해 IDP의 클러스터에서 서비스 공급자 메타데이터를 검색하는 데 사용되는 URL입니다.
+
+. 타사 IDP의 SAML 어설션을 구성하여 감사 로깅을 위한 사용자를 고유하게 식별하고 단일 로그아웃이 제대로 작동하는지 ""NameID"" 속성을 포함시킵니다.
+. 다음 API 메서드('AddIdpClusterAdmin')를 호출하여 인증을 위해 타사 IDP에 의해 인증된 클러스터 관리자 사용자 계정을 하나 이상 생성합니다
++
+
+NOTE: IDP 클러스터 관리자의 사용자 이름은 다음 예와 같이 원하는 효과에 대한 SAML 속성 이름/값 매핑과 일치해야 합니다.
+
++
+** email=bob@company.com -- SAML 속성에서 이메일 주소를 해제하도록 IDP가 구성된 경우.
+** group=cluster-administrator - IDP가 모든 사용자가 액세스해야 하는 그룹 속성을 해제하도록 구성되어 있습니다. SAML 속성 이름/값 페어링은 보안을 위해 대/소문자를 구분합니다.
+
+
+. 다음 API 메서드 "EnableIdpAuthentication"을 호출하여 클러스터에 대한 MFA를 활성화합니다
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

@@ -1,0 +1,93 @@
+---
+permalink: api/reference_element_api_binding_vvols.html 
+sidebar: sidebar 
+keywords: binding,object,objects,volume,volumes,virtual 
+summary: 바인딩 개체에는 가상 볼륨의 바인딩에 대한 정보가 들어 있습니다. ListVirtualVolumeBindings API 메소드를 사용하여 모든 가상 볼륨에 대한 이 정보 목록을 검색할 수 있습니다. 
+---
+= 바인딩(가상 볼륨)
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+바인딩 개체에는 가상 볼륨의 바인딩에 대한 정보가 들어 있습니다. 'ListVirtualVolumeBindings' API 메소드를 사용하여 모든 가상 볼륨에 대한 이 정보 목록을 검색할 수 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+프로토콜종점 ID
+ a| 
+프로토콜 끝점의 고유 ID입니다.
+ a| 
+UUID입니다
+
+
+
+ a| 
+프로토콜엔드포인츠반디트
+ a| 
+프로토콜 끝점의 scsiNADeviceID입니다.
+ a| 
+문자열
+
+
+
+ a| 
+프로토콜종점 유형
+ a| 
+프로토콜 엔드포인트 유형입니다. SCSI는 프로토콜 엔드포인트 유형에 대해 반환되는 유일한 값입니다.
+ a| 
+문자열
+
+
+
+ a| 
+가상VolumeBindingID
+ a| 
+가상 볼륨 바인딩 개체의 고유 ID입니다.
+ a| 
+정수
+
+
+
+ a| 
+가상볼륨 호스트 ID
+ a| 
+가상 볼륨 호스트의 고유 ID입니다.
+ a| 
+UUID입니다
+
+
+
+ a| 
+가상볼륨 ID
+ a| 
+가상 볼륨의 고유 ID입니다.
+ a| 
+UUID입니다
+
+
+
+ a| 
+virtualVolumeSecondaryID
+ a| 
+가상 볼륨의 보조 ID입니다.
+ a| 
+문자열
+
+|===
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_listvirtualvolumebindings.adoc[ListVirtualVolumeBindings]
+* xref:reference_element_api_protocolendpoint.adoc[ProtocolEndpoint]
+

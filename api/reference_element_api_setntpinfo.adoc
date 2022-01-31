@@ -1,0 +1,100 @@
+---
+permalink: api/reference_element_api_setntpinfo.html 
+sidebar: sidebar 
+keywords: ntp,info,set,setting,setntpinfo 
+summary: SetNtpInfo 메서드를 사용하여 클러스터 노드에서 NTP를 구성할 수 있습니다. 이 인터페이스를 사용하여 설정한 값은 클러스터의 모든 노드에 적용됩니다. NTP 브로드캐스트 서버가 네트워크에서 시간 정보를 주기적으로 브로드캐스트하는 경우 선택적으로 노드를 브로드캐스트 클라이언트로 구성할 수 있습니다. 
+---
+= SetNtpInfo 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클러스터 노드에서 NTP를 구성하기 위해 '셋NtpInfo' 방법을 사용할 수 있다. 이 인터페이스를 사용하여 설정한 값은 클러스터의 모든 노드에 적용됩니다. NTP 브로드캐스트 서버가 네트워크에서 시간 정보를 주기적으로 브로드캐스트하는 경우 선택적으로 노드를 브로드캐스트 클라이언트로 구성할 수 있습니다.
+
+
+NOTE: SolidFire 엔터프라이즈 SDS는 이 방법을 지원하지 않습니다. SolidFire ESDS 시스템에서 이 메서드를 사용하면 메서드가 오류를 반환합니다.
+
+
+
+== 매개 변수
+
+
+NOTE: 설치 기본값이 아닌 네트워크 내부에 있는 NTP 서버를 사용해야 합니다.
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+서버
+ a| 
+각 노드 NTP 구성에 추가할 NTP 서버 목록입니다.
+ a| 
+문자열 배열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+방송입니다
+ a| 
+클러스터의 모든 노드를 브로드캐스트 클라이언트로 활성화합니다.
+ a| 
+부울
+ a| 
+거짓
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "SetNtpInfo",
+   "params": {
+     "servers"  : [
+       "ntpserver1.example.org",
+       "ntpserver2.example.org",
+       "ntpserver3.example.org"
+     ],
+     "broadcastclient" : false
+   },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "id" : 1,
+    "result" : {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

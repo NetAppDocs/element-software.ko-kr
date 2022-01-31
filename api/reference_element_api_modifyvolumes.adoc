@@ -1,0 +1,383 @@
+---
+permalink: api/reference_element_api_modifyvolumes.html 
+sidebar: sidebar 
+keywords: volume,volumes,modifying,modify,change,changing,edit,editing,modifyvolumes 
+summary: ModifyVolumes 메서드를 사용하여 한 번에 최대 500개의 기존 볼륨을 구성할 수 있습니다. 변경 사항은 즉시 적용됩니다. ModifyVolumes 가 지정된 볼륨을 수정하지 못하면 지정된 볼륨이 변경되지 않습니다. 
+---
+= ModifyVolumes를 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ModifyVolumes 메서드를 사용하여 한 번에 최대 500개의 기존 볼륨을 구성할 수 있습니다. 변경 사항은 즉시 적용됩니다. ModifyVolumes가 지정된 볼륨을 수정하지 못하면 지정된 볼륨이 변경되지 않습니다.
+
+볼륨을 수정할 때 QoS 값을 지정하지 않으면 각 볼륨의 QoS 값이 변경되지 않습니다. GetDefaultQoS 메서드를 실행하여 새로 생성된 볼륨의 기본 QoS 값을 검색할 수 있습니다.
+
+복제 중인 볼륨의 크기를 늘려야 하는 경우 복제 오류를 방지하려면 다음 순서대로 볼륨을 늘리십시오.
+
+. ReplicationTarget 액세스를 사용하여 볼륨의 크기를 늘립니다.
+. ReadWrite 액세스를 사용하여 소스 또는 볼륨의 크기를 늘립니다.
+
+
+타겟 볼륨과 소스 볼륨의 크기가 동일한지 확인합니다.
+
+
+NOTE: 액세스 상태를 잠금 또는 복제 대상으로 변경하면 기존의 모든 iSCSI 연결이 종료됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+액세스
+ a| 
+볼륨에 대한 액세스가 허용됩니다. 가능한 값:
+
+* "읽기 전용": 읽기 작업만 허용됩니다.
+* 다시 쓰기: 읽기와 쓰기가 허용됩니다.
+* 잠금: 읽기 또는 쓰기가 허용되지 않습니다. 지정하지 않으면 액세스 값이 변경되지 않습니다.
+* replicationTarget: 볼륨을 페어링된 볼륨 세트의 타겟 볼륨으로 식별합니다. 볼륨이 페어링되지 않은 경우 액세스 상태가 잠깁니다. 값을 지정하지 않으면 액세스 값이 변경되지 않습니다.
+
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+계정 ID입니다
+ a| 
+볼륨이 재할당되는 계정 ID입니다. 지정하지 않으면 이전 계정 이름이 사용됩니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+associateWithQoSPolicy를 참조하십시오
+ a| 
+볼륨을 지정된 QoS 정책에 연결합니다. 가능한 값:
+
+* True: QoSPolicyID 매개 변수에 지정된 QoS 정책과 볼륨을 연결합니다.
+* False: QoSPolicyID 매개 변수에 지정된 QoS 정책과 볼륨을 연결하지 마십시오. false 이면 QoSPolicy 매개 변수에 QoS 정책을 지정했는지 여부에 관계없이 기존 정책 연결이 제거됩니다.
+
+ a| 
+부울
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+속성
+ a| 
+JSON 개체 형식의 이름-값 쌍 목록입니다.
+ a| 
+JSON 개체
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+createTime(createTime)
+ a| 
+새 볼륨 생성 날짜로 설정할 ISO 8601 날짜 문자열. setCreateTime 이 true 로 설정된 경우 필요합니다.
+ a| 
+ISO 8601 문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+enableSnapMirrorReplication
+ a| 
+SnapMirror 엔드포인트에서 복제를 위해 볼륨을 사용할 수 있는지 여부를 결정합니다. 가능한 값:
+
+* "참"입니다
+* 거짓입니다
+
+ a| 
+부울
+ a| 
+거짓
+ a| 
+아니요
+
+
+
+| 50 크기 | 볼륨이 지원하는 FIFO(First In First Out) 스냅샷의 최대 수를 지정합니다. FIFO 및 FIFO 외 스냅샷은 모두 볼륨에서 사용 가능한 스냅샷 슬롯의 동일한 풀을 사용합니다. 이 옵션을 사용하여 사용 가능한 스냅샷 슬롯의 FIFO 스냅샷 소비를 제한할 수 있습니다. 이 값은 현재 FIFO 스냅샷 수보다 적게 수정할 수 없습니다. | 정수 | 없음 | 아니요 
+
+
+| 미니 크기 | FIFO(First-In-First-Out) 스냅샷에만 예약된 스냅샷 슬롯의 수를 지정합니다. FIFO 및 FIFO 이외 스냅숏은 동일한 풀을 공유하기 때문에 min다섯포크기 매개변수는 FIFO가 아닌 스냅숏의 총 수를 같은 양으로 줄입니다. 이 값은 현재 FIFO 스냅샷 수와 충돌하도록 수정할 수 없습니다. | 정수 | 없음 | 아니요 
+
+
+ a| 
+모드를 선택합니다
+ a| 
+볼륨 복제 모드입니다. 가능한 값:
+
+* asynch: 데이터가 소스에 저장되었음을 시스템이 인지할 때까지 기다린 후 대상에 씁니다.
+* '동기화': 소스의 데이터 전송 확인 메시지가 타겟에 데이터를 쓰기 시작하는 것을 기다리지 않습니다.
+
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+QoS를 참조하십시오
+ a| 
+볼륨에 대한 새로운 서비스 품질 설정. 지정하지 않으면 QoS 설정이 변경되지 않습니다. 가능한 값:
+
+* minIOPS
+* 'maxIOPS'입니다
+* 버스트IOPS
+
+ a| 
+xref:reference_element_api_qos.adoc[QoS를 참조하십시오]
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+qosPolicyID입니다
+ a| 
+QoS 설정을 지정된 볼륨에 적용해야 하는 정책의 ID입니다. 이 매개 변수는 QoS 매개 변수와 함께 사용할 수 없습니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+setCreateTime(설정 생성 시간)
+ a| 
+기록된 볼륨 생성 날짜를 변경하려면 true로 설정합니다.
+ a| 
+부울
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+총 크기
+ a| 
+볼륨의 새 크기(바이트)입니다. 1000000000은 1GB입니다. 크기는 가장 가까운 메가바이트 크기로 반올림됩니다. 이 매개 변수는 볼륨의 크기를 늘리는 데만 사용할 수 있습니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+볼륨 ID
+ a| 
+수정할 볼륨의 볼륨 ID 목록입니다.
+ a| 
+정수 배열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+볼륨
+ a| 
+새로 수정된 각 볼륨에 대한 정보가 포함된 객체 배열입니다.
+ a| 
+xref:reference_element_api_volume.adoc[볼륨] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "ModifyVolumes",
+  "params": {
+    "volumeIDs": [2,3],
+    "attributes": {
+      "name1": "value1",
+      "name2": "value2",
+      "name3": "value3"
+    },
+    "qos": {
+      "minIOPS": 50,
+      "maxIOPS": 100,
+      "burstIOPS": 150,
+      "burstTime": 60
+    },
+    "access" : "replicationTarget"
+  },
+  "totalSize": 80000000000,
+  "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumes": [
+      {
+        "access": "replicationTarget",
+        "accountID": 1,
+        "attributes": {
+          "name1": "value1",
+          "name2": "value2",
+          "name3": "value3"
+        },
+        "blockSize": 4096,
+        "createTime": "2016-04-06T17:25:13Z",
+        "deleteTime": "",
+        "enable512e": false,
+        "iqn": "iqn.2010-01.com.solidfire:jo73.2",
+        "name": "doctest1",
+        "purgeTime": "",
+        "qos": {
+          "burstIOPS": 150,
+          "burstTime": 60,
+          "curve": {
+            "4096": 100,
+            "8192": 160,
+            "16384": 270,
+            "32768": 500,
+            "65536": 1000,
+            "131072": 1950,
+            "262144": 3900,
+            "524288": 7600,
+            "1048576": 15000
+          },
+          "maxIOPS": 100,
+          "minIOPS": 50
+        },
+        "scsiEUIDeviceID": "6a6f373300000002f47acc0100000000",
+        "scsiNAADeviceID": "6f47acc1000000006a6f373300000002",
+        "sliceCount": 1,
+        "status": "active",
+        "totalSize": 1000341504,
+        "virtualVolumeID": null,
+        "volumeAccessGroups": [],
+        "volumeID": 2,
+        "volumePairs": []
+      },
+      {
+        "access": "replicationTarget",
+        "accountID": 1,
+        "attributes": {
+          "name1": "value1",
+          "name2": "value2",
+          "name3": "value3"
+        },
+        "blockSize": 4096,
+        "createTime": "2016-04-06T17:26:31Z",
+        "deleteTime": "",
+        "enable512e": false,
+        "iqn": "iqn.2010-01.com.solidfire:jo73.3",
+        "name": "doctest2",
+        "purgeTime": "",
+        "qos": {
+          "burstIOPS": 150,
+          "burstTime": 60,
+          "curve": {
+            "4096": 100,
+            "8192": 160,
+            "16384": 270,
+            "32768": 500,
+            "65536": 1000,
+            "131072": 1950,
+            "262144": 3900,
+            "524288": 7600,
+            "1048576": 15000
+          },
+          "maxIOPS": 100,
+          "minIOPS": 50
+        },
+        "scsiEUIDeviceID": "6a6f373300000003f47acc0100000000",
+        "scsiNAADeviceID": "6f47acc1000000006a6f373300000003",
+        "sliceCount": 1,
+        "status": "active",
+        "totalSize": 1000341504,
+        "virtualVolumeID": null,
+        "volumeAccessGroups": [],
+        "volumeID": 3,
+        "volumePairs": []
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_getdefaultqos.adoc[GetDefaultQoS를 참조하십시오]

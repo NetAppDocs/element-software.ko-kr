@@ -1,0 +1,21 @@
+---
+permalink: storage/concept_system_manage_nodes_manage_nodes.html 
+sidebar: sidebar 
+keywords: nodes, manage, cluster, capacity rule, pairs, stranded nodes 
+summary: 클러스터 탭의 노드 페이지에서 SolidFire 스토리지 및 파이버 채널 노드를 관리할 수 있습니다. 
+---
+= 노드 관리
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클러스터 탭의 노드 페이지에서 SolidFire 스토리지 및 파이버 채널 노드를 관리할 수 있습니다.
+
+새로 추가된 노드가 전체 클러스터 용량의 50% 이상을 차지하는 경우 이 노드의 일부 용량을 사용할 수 없게 되어 용량 규칙을 준수합니다("고립됨"). 이는 더 많은 스토리지가 추가될 때까지 유지됩니다. 용량 규칙에 불복종하는 매우 큰 노드가 추가되면 이전에 고립된 노드는 더 이상 고립되지 않고 새로 추가된 노드는 고립됩니다. 이러한 상황이 발생하지 않도록 용량을 항상 쌍으로 추가해야 합니다. 노드가 고립되면 적절한 클러스터 장애가 throw됩니다.
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:task_system_manage_nodes_adding_a_node_to_a_cluster.adoc[클러스터에 노드를 추가합니다]

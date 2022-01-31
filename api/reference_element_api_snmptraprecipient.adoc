@@ -1,0 +1,50 @@
+---
+permalink: api/reference_element_api_snmptraprecipient.html 
+sidebar: sidebar 
+keywords: object,objects,snmptraprecipient 
+summary: snmpTrapRecipient 객체에는 스토리지 클러스터에서 생성된 SNMP 트랩을 수신하도록 구성된 호스트에 대한 정보가 포함되어 있습니다. GetSnmpTrapInfo API 메서드를 사용하여 SNMP 트랩을 수신하도록 구성된 호스트 목록을 가져올 수 있습니다. 
+---
+= snmpTrapRecipient를 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snmpTrapRecipient 객체에는 스토리지 클러스터에서 생성된 SNMP 트랩을 수신하도록 구성된 호스트에 대한 정보가 포함되어 있습니다. GetSnmpTrapInfo API 메소드를 사용하여 SNMP 트랩을 수신하도록 구성된 호스트 목록을 가져올 수 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+호스트
+ a| 
+대상 호스트의 IP 주소 또는 호스트 이름입니다.
+ a| 
+문자열
+
+
+
+ a| 
+포트
+ a| 
+트랩이 전송되어야 하는 호스트의 UDP 포트 번호입니다. 유효한 범위는 1 ~ 65535입니다. 0(영)은(는) 올바른 포트 번호가 아닙니다. 기본 포트는 162입니다.
+ a| 
+정수
+
+
+
+ a| 
+커뮤니티
+ a| 
+SNMP 커뮤니티 문자열입니다.
+ a| 
+문자열
+
+|===

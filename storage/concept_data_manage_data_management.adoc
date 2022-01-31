@@ -1,0 +1,26 @@
+---
+permalink: storage/concept_data_manage_data_management.html 
+sidebar: sidebar 
+keywords: virtual volumes, volumes, manage 
+summary: 'Element UI의 관리 탭에서 Element 소프트웨어를 실행하는 클러스터의 데이터를 관리할 수 있습니다. 사용 가능한 클러스터 관리 기능에는 데이터 볼륨, 사용자 계정, 볼륨 액세스 그룹, 이니시에이터 및 서비스 품질(QoS\) 정책의 생성 및 관리가 포함됩니다.' 
+---
+= 볼륨 및 가상 볼륨 관리
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element UI의 관리 탭에서 Element 소프트웨어를 실행하는 클러스터의 데이터를 관리할 수 있습니다. 사용 가능한 클러스터 관리 기능에는 데이터 볼륨, 볼륨 액세스 그룹, 이니시에이터, QoS(서비스 품질) 정책의 생성 및 관리가 포함됩니다.
+
+* link:task_data_manage_volumes_work_with_volumes_task.html["볼륨 작업"]
+* link:concept_data_manage_vvol_work_virtual_volumes.html["가상 볼륨 작업"]
+* link:concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html["볼륨 액세스 그룹 및 이니시에이터와 작업합니다"]
+
+
+
+
+== 를 참조하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

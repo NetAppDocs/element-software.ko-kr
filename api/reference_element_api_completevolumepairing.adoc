@@ -1,0 +1,96 @@
+---
+permalink: api/reference_element_api_completevolumepairing.html 
+sidebar: sidebar 
+keywords: volume,pairing,CompleteVolumePairing,pair,volumes,complete,completing 
+summary: CompleteVolumePairing을 사용하여 두 볼륨의 페어링을 완료할 수 있습니다. 
+---
+= CompleteVolumePairing
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'CompleteVolumePairing'을 사용하여 두 볼륨의 페어링을 완료할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+볼륨 ID
+ a| 
+볼륨 쌍을 완료할 볼륨의 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+볼륨 키퍼링키
+ a| 
+에서 반환된 키입니다 xref:reference_element_api_startvolumepairing.adoc[StartVolumePairing] API 메소드.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "CompleteVolumePairing",
+   "params": {
+        "volumeID" : 12,
+        "volumePairingKey" : "7b22636c7573746572506169724944223a312c22636c75737465725061697255554944223a2231636561313336322d346338662d343631612d626537322d373435363661393533643266222c22636c7573746572556e697175654944223a2278736d36222c226d766970223a223139322e3136382e3133392e313232222c226e616d65223a224175746f54657374322d63307552222c2270617373776f7264223a22695e59686f20492d64774d7d4c67614b222c22727063436f6e6e656374696f6e4944223a3931333134323634392c22757365726e616d65223a225f5f53465f706169725f50597a796647704c7246564432444a42227d"
+        },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+"id": 1,
+"result": {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_startvolumepairing.adoc[StartVolumePairing]

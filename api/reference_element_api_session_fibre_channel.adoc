@@ -1,0 +1,89 @@
+---
+permalink: api/reference_element_api_session_fibre_channel.html 
+sidebar: sidebar 
+keywords: object,objects,session 
+summary: 세션 객체에는 클러스터에 표시되는 각 Fibre Channel 세션과 해당 세션에서 볼 수 있는 타겟 포트에 대한 정보가 포함됩니다. ListFiberChannelSessions API 메서드를 사용하여 이 정보를 검색할 수 있습니다. 
+---
+= 세션(Fibre Channel)
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+세션 객체에는 클러스터에 표시되는 각 Fibre Channel 세션과 해당 세션에서 볼 수 있는 타겟 포트에 대한 정보가 포함됩니다. 'ListFiberChannelSessions' API 메소드를 사용하여 이 정보를 검색할 수 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+initiatorWWPN입니다
+ a| 
+타겟 포트에 로그인하는 이니시에이터의 WWPN(World Wide Port Name)입니다.
+ a| 
+문자열
+
+
+
+ a| 
+노드 ID입니다
+ a| 
+Fibre Channel 세션을 소유하는 노드입니다.
+ a| 
+정수
+
+
+
+ a| 
+이니시에이터
+ a| 
+이 Fibre Channel 세션의 서버 이니시에이터에 대한 정보입니다. 구성원:
+
+* 별칭: 이니시에이터에 할당된 대화명입니다.
+* 특성: 이 이니시에이터의 특성입니다.
+* initiatorID: 이 이니시에이터의 ID입니다.
+* initiatorname: 이 이니시에이터의 이름입니다.
+* volumeAccessGroups: 이 이니시에이터와 연결된 볼륨 액세스 그룹 목록입니다.
+
+ a| 
+JSON 개체
+
+
+
+ a| 
+서비스 ID입니다
+ a| 
+이 세션에 포함된 타겟 포트의 서비스 ID입니다.
+ a| 
+정수
+
+
+
+ a| 
+targetWWPN입니다
+ a| 
+이 세션에 관련된 타겟 포트의 WWPN입니다.
+ a| 
+문자열
+
+
+
+ a| 
+볼륨 액세스 그룹 ID입니다
+ a| 
+initiatorWWPN이 속하는 볼륨 액세스 그룹의 ID입니다. 볼륨 액세스 그룹에 없는 경우 이 값은 null입니다.
+ a| 
+정수
+
+|===
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_listfibrechannelsessions.adoc[ListFiberChannelSessions 를 선택합니다]

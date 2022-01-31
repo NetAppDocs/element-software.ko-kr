@@ -1,0 +1,100 @@
+---
+permalink: api/reference_element_api_getdriveconfig.html 
+sidebar: sidebar 
+keywords: drive,config,configuration,get,getting,getdriveconfig 
+summary: GetDriveConfig 메서드를 사용하여 예상 슬라이스 및 블록 드라이브 수에 대한 드라이브 정보와 현재 노드에 연결된 슬라이스 및 블록 드라이브의 수를 확인할 수 있습니다. 
+---
+= GetDriveConfig 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetDriveConfig" 메서드를 사용하면 예상되는 슬라이스 및 블록 드라이브 수에 대한 드라이브 정보와 현재 노드에 연결된 슬라이스 및 블록 드라이브의 수를 확인할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+드라이브 구성
+ a| 
+노드에 연결된 드라이브에 대한 정보입니다.
+ a| 
+xref:reference_element_api_drive.adoc[드라이브]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "GetDriveConfig",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드에 대한 응답은 다음 예제와 비슷합니다. 길이로 인해 하나의 스토리지 노드 드라이브에 대한 정보만 응답에 포함됩니다.
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+			"driveConfig": {
+					"drives": [
+						{
+							"canonicalName": "sda",
+							"connected": true,
+							"dev": 2052,
+							"devPath": "/dev/sdimm0p4",
+							"driveType": "Slice",
+							"name": "scsi-SATA_VRFSD3400GNCVMT205581853-part4",
+							"path": "/dev/sda4",
+							"pathLink": "/dev/sdimm0p4",
+							"product": "VRFSD3400GNCVMTKS1",
+							"scsiCompatId": "scsi-SATA_VRFSD3400GNCVMT205581853-part4",
+							"scsiState": "Running",
+							"securityAtMaximum": false,
+							"securityEnabled": false,
+							"securityFrozen": true,
+							"securityLocked": false,
+							"securitySupported": true,
+							"serial": "205581853",
+							"size": 299988156416,
+							"slot": -1,
+							"uuid": "9d4b198b-5ff9-4f7c-04fc-3bc4e2f38974",
+							"vendor": "Viking",
+							"version": "612ABBF0"
+						}
+					],
+					"numBlockActual": 10,
+					"numBlockExpected": 10,
+					"numSliceActual": 1,
+					"numSliceExpected": 1,
+					"numTotalActual": 11,
+					"numTotalExpected": 11
+			}
+	}
+}
+----

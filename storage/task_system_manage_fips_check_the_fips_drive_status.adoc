@@ -1,0 +1,36 @@
+---
+permalink: storage/task_system_manage_fips_check_the_fips_drive_status.html 
+sidebar: sidebar 
+keywords: fips, security, federal information processing standards, 140-2, drive, enable 
+summary: NetApp Element 소프트웨어 GetFeatureStatus API 메소드를 사용하여 FIPS 드라이브 기능이 클러스터에서 활성화되어 있는지 여부를 확인할 수 있습니다. 이 메소드는 FIPS 드라이브 사용 상태가 true인지 false인지 여부를 나타냅니다. 
+---
+= FIPS 드라이브 상태를 확인합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element 소프트웨어 GetFeatureStatus API 메소드를 사용하여 FIPS 드라이브 기능이 클러스터에서 활성화되어 있는지 여부를 확인할 수 있습니다. 이 API 메소드에는 FIPS 드라이브 사용 상태가 true인지 false인지 여부가 표시됩니다.
+
+. Element API를 사용하여 다음을 입력하여 클러스터의 FIPS 드라이브 기능을 확인합니다.
++
+GetFeatureStatus입니다
+
+. GetFeatureStatus API 호출 결과를 검토합니다. FIPS Drives enabled 값이 True인 경우 FIPS 드라이브 기능이 활성화됩니다.
++
+[listing]
+----
+{"enabled": true,
+"feature": "FipsDrives"
+}
+----
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* link:../api/index.html["Element API를 사용하여 스토리지를 관리합니다"]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

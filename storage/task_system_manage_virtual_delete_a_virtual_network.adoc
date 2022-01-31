@@ -1,0 +1,25 @@
+---
+permalink: storage/task_system_manage_virtual_delete_a_virtual_network.html 
+sidebar: sidebar 
+keywords: virtual network delete, remove, object, address blocks, vlan 
+summary: 가상 네트워크 개체를 제거할 수 있습니다. 가상 네트워크를 제거하기 전에 주소 블록을 다른 가상 네트워크에 추가해야 합니다. 
+---
+= 가상 네트워크를 삭제합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+가상 네트워크 개체를 제거할 수 있습니다. 가상 네트워크를 제거하기 전에 주소 블록을 다른 가상 네트워크에 추가해야 합니다.
+
+. Cluster * > * Network * 를 클릭합니다.
+. 삭제할 VLAN의 작업 아이콘을 클릭합니다.
+. 삭제 * 를 클릭합니다.
+. 메시지를 확인합니다.
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:task_system_manage_virtual_edit_a_virtual_network.adoc[가상 네트워크를 편집합니다]

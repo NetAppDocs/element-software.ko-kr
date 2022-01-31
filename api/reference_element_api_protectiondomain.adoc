@@ -1,0 +1,45 @@
+---
+permalink: api/reference_element_api_protectiondomain.html 
+sidebar: sidebar 
+keywords: object,objects,protection domains 
+summary: protectionDomain 객체에는 보호 도메인의 이름 및 유형 세부 정보가 포함됩니다. 
+---
+= 보호 도메인
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionDomain 객체에는 보호 도메인의 이름 및 유형 세부 정보가 포함됩니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+보호도메인 이름
+ a| 
+보호 도메인의 이름입니다.
+ a| 
+문자열
+
+
+
+ a| 
+보호도메인유형입니다
+ a| 
+보호 도메인의 유형입니다. 가능한 값:
+
+* 섀시: 단일 섀시의 모든 스토리지 노드
+* 사용자 지정: 단일 고객 정의 보호 도메인에 있는 모든 스토리지 노드
+
+ a| 
+문자열
+
+|===

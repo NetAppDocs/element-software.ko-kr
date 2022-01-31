@@ -1,0 +1,76 @@
+---
+permalink: api/reference_element_api_getconfig.html 
+sidebar: sidebar 
+keywords: node,get,getting,info,config,configuration,getconfig 
+summary: getconfig API 메소드를 사용하여 노드에 대한 모든 구성 정보를 가져올 수 있습니다. 이 API 메서드에는 GetClusterConfig 및 GetNetworkConfig API 메서드 모두에서 사용할 수 있는 동일한 정보가 포함되어 있습니다. 
+---
+= getconfig를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'getconfig' API 메소드를 사용하여 노드에 대한 모든 구성 정보를 가져올 수 있습니다. 이 API 메서드는 GetClusterConfig 및 GetNetworkConfig API 메서드에서 사용할 수 있는 것과 동일한 정보를 포함합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+구성
+ a| 
+클러스터의 구성 세부 정보입니다. 이 개체에는 다음이 포함됩니다.
+
+* xref:reference_element_api_cluster.adoc[클러스터]: 스토리지 노드가 연결된 스토리지 클러스터와 통신하는 방법을 식별하는 클러스터 정보입니다.
+* xref:reference_element_api_network_all_interfaces.adoc[네트워크(모든 인터페이스)]: 노드의 각 네트워크 인터페이스에 대한 네트워크 연결 유형 및 현재 설정입니다.
+
+ a| 
+JSON 개체
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "GetConfig",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 응답 예제의 길이로 인해 보충 토픽에 문서화됩니다.
+
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_getclusterconfig.adoc[GetClusterConfig]
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetworkConfig 를 참조하십시오]
+* xref:reference_element_api_response_example_getconfig.adoc[getconfig를 참조하십시오]
+

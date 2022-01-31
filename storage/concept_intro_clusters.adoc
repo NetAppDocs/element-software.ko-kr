@@ -1,0 +1,22 @@
+---
+permalink: storage/concept_intro_clusters.html 
+sidebar: sidebar 
+keywords: clusters, about clusters, collection of nodes, nodes in a cluster, block storage, logical group, add nodes, access cluster 
+summary: 클러스터는 SolidFire 스토리지 시스템의 허브이며 노드 모음으로 구성됩니다. SolidFire 스토리지 효율성을 실현하려면 하나의 클러스터에 최소 4개의 노드가 있어야 합니다. 클러스터는 네트워크에 단일 논리 그룹으로 표시되며, 블록 스토리지로 액세스할 수 있습니다. 
+---
+= 클러스터
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클러스터는 SolidFire 스토리지 시스템의 허브이며 노드 모음으로 구성됩니다. SolidFire 스토리지 효율성을 실현하려면 하나의 클러스터에 최소 4개의 노드가 있어야 합니다. 클러스터는 네트워크에 단일 논리 그룹으로 표시되며, 블록 스토리지로 액세스할 수 있습니다.
+
+새 클러스터를 생성하면 클러스터의 통신 소유자로 노드가 초기화되고 클러스터의 각 노드에 대한 네트워크 통신이 설정됩니다. 이 프로세스는 각 새 클러스터에 대해 한 번만 수행됩니다. Element UI 또는 API를 사용하여 클러스터를 생성할 수 있습니다.
+
+노드를 추가하여 클러스터를 확장할 수 있습니다. 새 노드를 추가할 경우 서비스가 중단되지 않으며 클러스터는 새 노드의 성능과 용량을 자동으로 사용합니다.
+
+관리자와 호스트는 가상 IP 주소를 사용하여 클러스터에 액세스할 수 있습니다. 클러스터의 모든 노드에서 가상 IP 주소를 호스팅할 수 있습니다. MVIP(Management Virtual IP)를 사용하면 1GbE 연결을 통해 클러스터를 관리할 수 있고 SVIP(Storage Virtual IP)를 통해 10GbE 연결을 통해 스토리지에 대한 호스트 액세스가 가능합니다. 이러한 가상 IP 주소는 SolidFire 클러스터의 크기나 구성과 상관없이 일관된 연결을 지원합니다. 가상 IP 주소를 호스팅하는 노드에 장애가 발생하면 클러스터의 다른 노드에서 가상 IP 주소를 호스팅하기 시작합니다.
+
+
+NOTE: Element 버전 11.0부터는 노드의 관리 네트워크에 대해 IPv4, IPv6 또는 두 주소를 모두 사용하여 노드를 구성할 수 있습니다. IPv6을 지원하지 않는 관리 노드 11.3 이상을 제외하고 스토리지 노드와 관리 노드 모두에 적용됩니다. 클러스터를 생성할 때 단일 IPv4 또는 IPv6 주소만 MVIP에 사용할 수 있으며 모든 노드에서 해당 주소 유형을 구성해야 합니다.

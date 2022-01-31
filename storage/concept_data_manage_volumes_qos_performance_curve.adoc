@@ -1,0 +1,21 @@
+---
+permalink: storage/concept_data_manage_volumes_qos_performance_curve.html 
+sidebar: sidebar 
+keywords: qos, performance curve, block size, iops 
+summary: '서비스 품질\(QoS\) 성능 곡선은 블록 크기와 IOPS 백분율 간의 관계를 보여줍니다.' 
+---
+= QoS 성능 곡선
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+QoS(서비스 품질) 성능 곡선은 블록 크기와 IOPS 백분율 간의 관계를 보여줍니다.
+
+블록 크기 및 대역폭은 애플리케이션이 얻을 수 있는 IOPS 수에 직접적인 영향을 미칩니다. Element 소프트웨어는 블록 크기를 4K로 정규화하여 수신하는 블록 크기를 고려합니다. 워크로드에 따라 시스템에서 블록 크기를 늘릴 수 있습니다. 블록 크기가 증가함에 따라 시스템에서 더 큰 블록 크기를 처리하는 데 필요한 수준까지 대역폭을 높일 수 있습니다. 대역폭이 증가할수록 시스템에서 달성할 수 있는 IOPS가 감소합니다.
+
+QoS 성능 곡선은 블록 크기 증가와 IOPS 백분율 간의 관계를 보여줍니다.
+
+image::../media/element_qos_performance_curve.png[QoS에 대해 블록 크기와 IOPS 증가 사이의 관계를 설명합니다.]
+
+예를 들어, 블록 크기가 4K이고 대역폭이 4,000kbps인 경우 IOPS는 1000입니다. 블록 크기가 8K로 증가할 경우 대역폭이 5,000kbps로 증가하고 IOPS는 625로 감소합니다. 블록 크기를 고려하여 시스템은 백업 및 하이퍼바이저 작업과 같이 더 높은 블록 크기를 사용하는 낮은 우선 순위 워크로드가 더 작은 블록 크기를 사용하는 높은 우선 순위 트래픽에 필요한 성능을 너무 많이 사용하지 않도록 보장합니다.

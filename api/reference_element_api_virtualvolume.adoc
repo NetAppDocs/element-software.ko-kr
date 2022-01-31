@@ -1,0 +1,154 @@
+---
+permalink: api/reference_element_api_virtualvolume.html 
+sidebar: sidebar 
+keywords: object,objects,virtualVolume 
+summary: virtualVolume 개체에는 가상 볼륨에 대한 구성 정보와 가상 볼륨의 스냅숏에 대한 정보가 들어 있습니다. 런타임 또는 사용 정보는 포함되지 않습니다. ListVirtualVolumes 메서드를 사용하여 클러스터에 대한 이 정보를 검색할 수 있습니다. 
+---
+= 가상볼륨
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+virtualVolume 개체에는 가상 볼륨에 대한 구성 정보와 가상 볼륨의 스냅숏에 대한 정보가 들어 있습니다. 런타임 또는 사용 정보는 포함되지 않습니다. "ListVirtualVolumes" 메서드를 사용하여 클러스터에 대한 이 정보를 검색할 수 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+바인딩
+ a| 
+이 가상 볼륨에 대한 바인딩 ID 목록입니다.
+ a| 
+UUID 배열
+
+
+
+ a| 
+어린이
+ a| 
+이 가상 볼륨의 하위 항목인 가상 볼륨 UUID 목록입니다.
+ a| 
+UUID 배열
+
+
+
+ a| 
+하위 항목
+ a| 
+ListVirtualVolumes 메서드에 recursive:true 를 전달하는 경우 에는 이 가상 볼륨의 하위 항목인 가상 볼륨 UUID 목록이 포함되어 있습니다.
+ a| 
+UUID 배열
+
+
+
+ a| 
+메타데이터
+ a| 
+가상 볼륨 유형, 게스트 OS 유형 등과 같은 가상 볼륨 메타데이터의 키 값 쌍입니다.
+ a| 
+JSON 개체
+
+
+
+ a| 
+ParentVirtualVolumeID입니다
+ a| 
+상위 가상 볼륨의 가상 볼륨 ID입니다. ID가 모두 0인 경우 상위 볼륨에 대한 링크가 없는 독립 가상 볼륨입니다.
+ a| 
+UUID입니다
+
+
+
+ a| 
+스냅샷 ID입니다
+ a| 
+기본 볼륨 스냅샷의 ID입니다. 가상 볼륨이 스냅샷을 나타내지 않는 경우 이 값은 "0"입니다.
+ a| 
+정수
+
+
+
+ a| 
+스냅샷 정보
+ a| 
+연결된 스냅샷의 스냅샷 객체(비 ixestent인 경우 null).
+ a| 
+xref:reference_element_api_snapshot.adoc[스냅샷]
+
+
+
+ a| 
+상태
+ a| 
+가상 볼륨의 현재 상태입니다. 가능한 값:
+
+* 클론 생성: 클론 또는 스냅샷 작업에 대한 응답으로 가상 볼륨이 처리되고 있습니다.
+* 대기 중: 가상 볼륨이 스냅샷 작업이 완료될 때까지 대기 중입니다.
+* 준비됨: 가상 볼륨이 범용 용도에 맞게 준비되었습니다.
+
+ a| 
+문자열
+
+
+
+ a| 
+storageContainer 를 선택합니다
+ a| 
+이 가상 볼륨을 소유하는 스토리지 컨테이너를 설명하는 객체입니다.
+ a| 
+xref:reference_element_api_storagecontainer.adoc[storageContainer 를 선택합니다]
+
+
+
+ a| 
+가상볼륨 ID
+ a| 
+가상 볼륨의 고유 ID입니다.
+ a| 
+UUID입니다
+
+
+
+ a| 
+가상볼륨 유형
+ a| 
+가상 볼륨의 유형입니다.
+ a| 
+문자열
+
+
+
+ a| 
+볼륨 ID
+ a| 
+기본 볼륨의 ID입니다.
+ a| 
+정수
+
+
+
+ a| 
+볼륨 정보
+ a| 
+ListVirtualVolumes 메서드에 details:true 를 전달하면 이 멤버는 볼륨을 설명하는 개체입니다.
+ a| 
+xref:reference_element_api_volume.adoc[볼륨]
+
+|===
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_listvirtualvolumes.adoc[목록 가상볼륨]
+* xref:reference_element_api_snapshot.adoc[스냅샷]
+* xref:reference_element_api_storagecontainer.adoc[storageContainer 를 선택합니다]
+* xref:reference_element_api_volume.adoc[볼륨]
+

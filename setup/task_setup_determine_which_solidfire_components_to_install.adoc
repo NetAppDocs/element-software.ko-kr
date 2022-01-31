@@ -1,0 +1,66 @@
+---
+permalink: setup/task_setup_determine_which_solidfire_components_to_install.html 
+sidebar: sidebar 
+keywords: setup, element, solidfire active iq 
+summary: '구성 및 배포 선택에 따라 설치해야 하는 관리 노드, Active IQ 및 NetApp 모니터링 에이전트(NMA\)와 같은 SolidFire 구성 요소를 확인할 수 있습니다.' 
+---
+= 설치할 SolidFire 구성 요소를 확인합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+구성 및 배포 옵션에 따라 설치해야 하는 관리 노드, Active IQ, NetApp 모니터링 에이전트(NMA) 등의 SolidFire 구성 요소를 확인할 수 있습니다.
+
+다음 표에는 추가 구성 요소와 해당 구성 요소를 설치해야 하는지 여부가 나와 있습니다.
+
+[cols="3*"]
+|===
+| 구성 요소 | 독립 실행형 SolidFire 스토리지 클러스터 | NetApp HCI 클러스터 
+
+
+ a| 
+관리 노드
+ a| 
+권장
+ a| 
+기본적으로 설치되며 필수 요소입니다
+
+
+
+ a| 
+Active IQ
+ a| 
+권장 *
+ a| 
+권장 *
+
+
+
+ a| 
+NetApp 모니터링 에이전트
+ a| 
+지원되지 않습니다
+ a| 
+권장
+
+|===
+용량 라이센스가 있는 SolidFire 스토리지 클러스터에는 * Active IQ가 필요합니다.
+
+.단계
+. 어떤 구성 요소를 설치해야 하는지 확인합니다.
+. 에 따라 설치를 완료합니다 link:../mnode/task_mnode_install.html["관리 노드를 설치합니다"] 절차를 참조하십시오.
++
+
+NOTE: Active IQ를 설정하려면 설정 스크립트에서 '--telemetry_active' 매개변수를 사용하여 Active IQ 분석을 위한 데이터 수집을 활성화합니다.
+
+. NetApp Monitoring Agent에 대한 자세한 내용은 다음을 참조하십시오 link:../mnode/task_mnode_enable_activeIQ.html["절차를 참조하십시오"].
+
+
+
+
+== 를 참조하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

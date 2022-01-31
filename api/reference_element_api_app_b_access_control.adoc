@@ -1,0 +1,1109 @@
+---
+permalink: api/reference_element_api_app_b_access_control.html 
+sidebar: sidebar 
+keywords: access,control,type 
+summary: 사용할 수 있는 Element API 메서드는 사용자가 설정한 액세스 유형에 따라 달라집니다. 
+---
+= 액세스 제어
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+사용할 수 있는 Element API 메서드는 사용자가 설정한 액세스 유형에 따라 달라집니다.
+
+
+
+== 계정
+
+계정 액세스 유형에 사용할 수 있는 방법은 다음과 같습니다.
+
+|===
+
+
+ a| 
+추가 계정
+
+
+
+ a| 
+GetAccountByID입니다
+
+
+
+ a| 
+ModifyAccount(수정 계정)
+
+
+
+ a| 
+GetAccountByName입니다
+
+
+
+ a| 
+계정 목록
+
+
+
+ a| 
+GetAccountEfficiency를 참조하십시오
+
+
+
+ a| 
+계정 제거
+
+|===
+
+
+== 관리자
+
+모든 방법은 관리자 액세스 유형에 사용할 수 있습니다.
+
+
+
+== 클러스터 관리자
+
+클러스터 관리자 액세스 유형에는 다음 방법을 사용할 수 있습니다.
+
+|===
+
+
+ a| 
+추가\n\n새 관리자
+
+
+
+ a| 
+ListBackupTargets 를 선택합니다
+
+
+
+ a| 
+AddInitialatorsToVolumeAccessGroup 을 참조하십시오
+
+
+
+ a| 
+ListBulkVolumeJobs
+
+
+
+ a| 
+추가\n\n\n새 클러스터 관리자
+
+
+
+ a| 
+ListClusterAdmins입니다
+
+
+
+ a| 
+AddVirtualNetwork 를 참조하십시오
+
+
+
+ a| 
+ListClusterPairs
+
+
+
+ a| 
+AddVirtualNetwork 를 참조하십시오
+
+
+
+ a| 
+ListNodeFiberChannelPortInfo 를 참조하십시오
+
+
+
+ a| 
+AddVolumetoVolumeAccessGroup(추가 볼륨 그룹)
+
+
+
+ a| 
+ListBackupTargets 를 선택합니다
+
+
+
+ a| 
+CloneMultipleVolumes
+
+
+
+ a| 
+목록하드웨어
+
+
+
+ a| 
+CompleteClusterPairing
+
+
+
+ a| 
+ListFiberChannelSessions 를 선택합니다
+
+
+
+ a| 
+CompleteVolumePairing
+
+
+
+ a| 
+ListFiberChannelPortInfo 를 참조하십시오
+
+
+
+ a| 
+CreateBackupTarget 을 선택합니다
+
+
+
+ a| 
+ListGroupSnapshots을 선택합니다
+
+
+
+ a| 
+생성 일정 을 클릭합니다
+
+
+
+ a| 
+ListActive유료볼륨
+
+
+
+ a| 
+스냅샷 생성
+
+
+
+ a| 
+ModifyBackupTarget을 선택합니다
+
+
+
+ a| 
+CreateSupportBundle을 참조하십시오
+
+
+
+ a| 
+ModifyClusterAdmin 을 선택합니다
+
+
+
+ a| 
+CreateClusterSupportBundle
+
+
+
+ a| 
+ModifyGroupSnapshot 을 참조하십시오
+
+
+
+ a| 
+CreateGroupSnapshot 을 클릭합니다
+
+
+
+ a| 
+ModifyClusterFullThreshold를 참조하십시오
+
+
+
+ a| 
+CreateVolumeAccessGroup 을 선택합니다
+
+
+
+ a| 
+ModifyVolumeAccessGroup
+
+
+
+ a| 
+DeleteAllSupportBundles 를 참조하십시오
+
+
+
+ a| 
+ModifyVolumeAccessGroupLunAssignments 를 참조하십시오
+
+
+
+ a| 
+DeleteSnapshot을 클릭합니다
+
+
+
+ a| 
+ModifyVolumePair
+
+
+
+ a| 
+DeleteGroupSnapshot 을 클릭합니다
+
+
+
+ a| 
+ModifyVirtualNetwork의 약어입니다
+
+
+
+ a| 
+DeleteVolumeAccessGroup 을 클릭합니다
+
+
+
+ a| 
+RemoveClusterAdmin
+
+
+
+ a| 
+DisableEncryptionAtRest
+
+
+
+ a| 
+RemoveVolumePair
+
+
+
+ a| 
+DisableLdapAuthentication을 참조하십시오
+
+
+
+ a| 
+RemoveVirtualNetwork 를 참조하십시오
+
+
+
+ a| 
+DisableSnmp
+
+
+
+ a| 
+RemoveVolumesFromVolumeAccessGroup
+
+
+
+ a| 
+EnableEncryptionAtRest 를 참조하십시오
+
+
+
+ a| 
+RemoveInitialatorsFromVolumeAccessGroup 을 참조하십시오
+
+
+
+ a| 
+EnableLdapAuthentication 을 참조하십시오
+
+
+
+ a| 
+RollbackToSnapshot 을 클릭합니다
+
+
+
+ a| 
+EnableSnmp
+
+
+
+ a| 
+RollbackToGroupSnapshot 을 참조하십시오
+
+
+
+ a| 
+GetBackupTarget 을 참조하십시오
+
+
+
+ a| 
+SetLoginSessionInfo 를 참조하십시오
+
+
+
+ a| 
+GetClusterFullThreshold 를 참조하십시오
+
+
+
+ a| 
+SetNtpInfo 를 참조하십시오
+
+
+
+ a| 
+GetClusterMasterNodeID를 참조하십시오
+
+
+
+ a| 
+SetSnmpACL
+
+
+
+ a| 
+GetHardwareConfig 를 참조하십시오
+
+
+
+ a| 
+SetSnmpInfo 를 선택합니다
+
+
+
+ a| 
+GetLdapConfiguration 을 참조하십시오
+
+
+
+ a| 
+SetSnmpTrapInfo 를 선택합니다
+
+
+
+ a| 
+GetLoginSessionInfo 를 참조하십시오
+
+
+
+ a| 
+SetRemoteLoggingHosts 를 선택합니다
+
+
+
+ a| 
+GetNtpInfo 를 참조하십시오
+
+
+
+ a| 
+종료
+
+
+
+ a| 
+GetNvramInfo 를 참조하십시오
+
+
+
+ a| 
+StartBulkVolumeRead
+
+
+
+ a| 
+GetRawStats 를 참조하십시오
+
+
+
+ a| 
+StartBulkVolumeWrite
+
+
+
+ a| 
+GetSnmpACL
+
+
+
+ a| 
+StartClusterPairing을 선택합니다
+
+
+
+ a| 
+GetVolumeAccessGroupEfficiency
+
+
+
+ a| 
+StartVolumePairing
+
+
+
+ a| 
+GetVolumeAccessLunAssignments 를 참조하십시오
+
+
+
+ a| 
+TestLdapAuthentication을 참조하십시오
+
+
+
+ a| 
+GetVirtualNetwork 를 참조하십시오
+
+
+
+ a| 
+
+|===
+
+
+== 드라이브
+
+드라이브 액세스 유형에 사용할 수 있는 방법은 다음과 같습니다.
+
+|===
+
+
+ a| 
+ListDrives를 선택합니다
+
+
+
+ a| 
+드라이브 제거
+
+
+
+ a| 
+추가 드라이브
+
+
+
+ a| 
+SecureEraseDrives
+
+|===
+
+
+== 노드
+
+노드 액세스 유형에 사용할 수 있는 방법은 다음과 같습니다.
+
+|===
+
+
+ a| 
+추가 노드
+
+
+
+ a| 
+ListPendingNodes 를 참조하십시오
+
+
+
+ a| 
+ListActiveNodes 를 선택합니다
+
+
+
+ a| 
+노드 제거
+
+|===
+
+
+== 읽기
+
+읽기 액세스 유형에 사용할 수 있는 방법은 다음과 같습니다.
+
+|===
+
+
+ a| 
+GetAccountByID입니다
+
+
+
+ a| 
+목록\n\n\n\n\n
+
+
+
+ a| 
+GetAccountByName입니다
+
+
+
+ a| 
+ListDeletedVolumes 를 클릭합니다
+
+
+
+ a| 
+GetAsyncResult 를 참조하십시오
+
+
+
+ a| 
+목록하드웨어
+
+
+
+ a| 
+GetClusterCapacity 를 선택합니다
+
+
+
+ a| 
+ListDrives를 선택합니다
+
+
+
+ a| 
+GetDefaultQoS를 참조하십시오
+
+
+
+ a| 
+ListEvents 를 선택합니다
+
+
+
+ a| 
+GetDriveStats 를 참조하십시오
+
+
+
+ a| 
+목록 세션
+
+
+
+ a| 
+소프트웨어업그레이드
+
+
+
+ a| 
+ListPendingNodes 를 참조하십시오
+
+
+
+ a| 
+GetVolumeStats 를 참조하십시오
+
+
+
+ a| 
+ListSyncJobs 를 선택합니다
+
+
+
+ a| 
+계정 목록
+
+
+
+ a| 
+ListVolumeAccessGroups 를 선택합니다
+
+
+
+ a| 
+ListActiveNodes 를 선택합니다
+
+
+
+ a| 
+ListVolumeStatsByAccount
+
+
+
+ a| 
+ListActiveNodes 를 선택합니다
+
+
+
+ a| 
+ListVolumeStatsByVolume
+
+
+
+ a| 
+ListActiveVolumes
+
+
+
+ a| 
+ListVolumeStatsByVolumeAccessGroup
+
+
+
+ a| 
+목록노드
+
+
+
+ a| 
+ListVolumesForAccount
+
+
+
+ a| 
+ListBackupTargets 를 선택합니다
+
+|===
+
+
+== 보고
+
+보고 액세스 유형에 사용할 수 있는 방법은 다음과 같습니다.
+
+|===
+
+
+ a| 
+클리어클러스터 폭행
+
+
+
+ a| 
+GetVolumeEffiency(볼륨 효율성)
+
+
+
+ a| 
+GetAccountEfficiency를 참조하십시오
+
+
+
+ a| 
+GetVolumeStats 를 참조하십시오
+
+
+
+ a| 
+GetClusterCapacity 를 선택합니다
+
+
+
+ a| 
+목록\n\n\n\n\n
+
+
+
+ a| 
+GetClusterHardwareInfo 를 참조하십시오
+
+
+
+ a| 
+ListClusterFats
+
+
+
+ a| 
+GetClusterInfo 를 참조하십시오
+
+
+
+ a| 
+ListClusterPairs
+
+
+
+ a| 
+GetClusterMasterNodeID를 참조하십시오
+
+
+
+ a| 
+목록하드웨어
+
+
+
+ a| 
+GetClusterStats 를 참조하십시오
+
+
+
+ a| 
+ListEvents 를 선택합니다
+
+
+
+ a| 
+GetDriveHardwareInfo 를 참조하십시오
+
+
+
+ a| 
+목록 세션
+
+
+
+ a| 
+GetDriveStats 를 참조하십시오
+
+
+
+ a| 
+ListSchedules(일정 목록
+
+
+
+ a| 
+GetNetworkConfig 를 참조하십시오
+
+
+
+ a| 
+ListServices 를 클릭합니다
+
+
+
+ a| 
+GetNodeHardwareInfo 를 참조하십시오
+
+
+
+ a| 
+ListSyncJobs 를 선택합니다
+
+
+
+ a| 
+GetNodeStats 를 참조하십시오
+
+
+
+ a| 
+목록가상네트워크
+
+
+
+ a| 
+GetSnmpInfo 를 참조하십시오
+
+
+
+ a| 
+ListVolumeStatsByAccount
+
+
+
+ a| 
+GetSnmpTrapInfo 를 참조하십시오
+
+
+
+ a| 
+ListVolumeStatsByVolume
+
+
+
+ a| 
+GetVolumeAccessGroupEfficiency
+
+
+
+ a| 
+ListVolumeStatsByVolumeAccessGroup
+
+|===
+
+
+== 리포지토리
+
+ListAllNodes 메서드는 리포지토리 액세스 유형에 사용할 수 있습니다.
+
+
+
+== 볼륨
+
+볼륨 액세스 유형에 사용할 수 있는 방법은 다음과 같습니다.
+
+|===
+
+
+ a| 
+CreateVolume(생성 볼륨)
+
+
+
+ a| 
+DeleteVolume(삭제 볼륨
+
+
+
+ a| 
+ModifyBackupTarget을 선택합니다
+
+
+
+ a| 
+CloneVolume(볼륨)
+
+
+
+ a| 
+삭제 볼륨 페어링
+
+
+
+ a| 
+ModifyVolumes를 선택합니다
+
+
+
+ a| 
+CloneMultipleVolumes
+
+
+
+ a| 
+GetBackupTarget 을 참조하십시오
+
+
+
+ a| 
+ModifyVolumePair
+
+
+
+ a| 
+CreateBackupTarget 을 선택합니다
+
+
+
+ a| 
+GetDefaultQoS를 참조하십시오
+
+
+
+ a| 
+PurgeDeletedVolume
+
+
+
+ a| 
+스냅샷 생성
+
+
+
+ a| 
+ListActiveVolumes
+
+
+
+ a| 
+RemoveBackupTarget 을 선택합니다
+
+
+
+ a| 
+CreateGroupSnapshot 을 클릭합니다
+
+
+
+ a| 
+ListBackupTarget 을 선택합니다
+
+
+
+ a| 
+RemoveVolumePair
+
+
+
+ a| 
+CompleteVolumePairing
+
+
+
+ a| 
+ListGroupSnapshots을 선택합니다
+
+
+
+ a| 
+RestoreDeletedVolume
+
+
+
+ a| 
+CloneMultipleVolumes
+
+
+
+ a| 
+ListVolumesForAccount
+
+
+
+ a| 
+RollbackToGroupSnapshot 을 참조하십시오
+
+
+
+ a| 
+DeleteGroupSnapshot 을 클릭합니다
+
+
+
+ a| 
+ListDeletedVolumes 를 클릭합니다
+
+
+
+ a| 
+RollbackToSnapshot 을 클릭합니다
+
+
+
+ a| 
+DeleteSnapshot을 클릭합니다
+
+
+
+ a| 
+ListGroupSnapshots을 선택합니다
+
+
+
+ a| 
+StartBulkVolumeRead
+
+
+
+ a| 
+StartBulkVolumeWrite
+
+
+
+ a| 
+StartVolumePairing
+
+
+
+ a| 
+UpdateBulkVolumeStatus 를 선택합니다
+
+|===
+
+
+== 쓰기
+
+쓰기 액세스 유형에는 다음 방법을 사용할 수 있습니다.
+
+|===
+
+
+ a| 
+추가 드라이브
+
+
+
+ a| 
+노드 제거
+
+
+
+ a| 
+추가 노드
+
+
+
+ a| 
+계정 제거
+
+
+
+ a| 
+추가 계정
+
+
+
+ a| 
+RemoveVolumesFromVolumeAccessGroup
+
+
+
+ a| 
+AddVolumeToVolumeAccessGroup
+
+
+
+ a| 
+RemoveInitialatorsFromVolumeAccessGroup 을 참조하십시오
+
+
+
+ a| 
+AddInitialatorsToVolumeAccessGroup 을 참조하십시오
+
+
+
+ a| 
+DeleteVolumeAccessGroup 을 클릭합니다
+
+
+
+ a| 
+CreateVolumeAccessGroup 을 선택합니다
+
+
+
+ a| 
+DeleteVolume(삭제 볼륨
+
+
+
+ a| 
+ModifyVolumeAccessGroup
+
+
+
+ a| 
+RestoreDeletedVolume
+
+
+
+ a| 
+ModifyAccount(수정 계정)
+
+
+
+ a| 
+PurgeDeletedVolume
+
+
+
+ a| 
+CreateVolume(생성 볼륨)
+
+
+
+ a| 
+ModifyVolume(수정 볼륨)
+
+
+
+ a| 
+CloneVolume(볼륨)
+
+
+
+ a| 
+GetAsyncResult 를 참조하십시오
+
+
+
+ a| 
+드라이브 제거
+
+|===

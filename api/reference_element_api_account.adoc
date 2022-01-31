@@ -1,0 +1,118 @@
+---
+permalink: api/reference_element_api_account.html 
+sidebar: sidebar 
+keywords: account,object,accounts 
+summary: '계정 개체에는 계정에 대한 정보가 들어 있습니다. 이 개체에는 계정에 대한 "구성된" 정보만 포함되며 런타임 또는 사용 정보는 포함되지 않습니다.' 
+---
+= 계정
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+계정 개체에는 계정에 대한 정보가 들어 있습니다. 이 개체에는 계정에 대한 "구성된" 정보만 포함되며 런타임 또는 사용 정보는 포함되지 않습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+계정 ID입니다
+ a| 
+계정의 고유 계정 ID입니다.
+ a| 
+정수
+
+
+
+ a| 
+속성
+ a| 
+JSON 개체 형식의 이름-값 쌍 목록입니다.
+ a| 
+JSON 개체
+
+
+
+ a| 
+기본 표시
+ a| 
+초기자가 CHAP 계정 자격 증명을 사용하여 볼륨에 액세스할 수 있는지 여부를 지정합니다.
+ a| 
+부울
+
+
+
+ a| 
+이니토시크입니다
+ a| 
+이니시에이터 CHAP 암호입니다.
+ a| 
+문자열
+
+
+
+ a| 
+상태
+ a| 
+계정의 현재 상태입니다. 가능한 값:
+
+* 활성: 활성 계정.
+* 잠김: 잠긴 계정입니다.
+* 제거됨: 삭제 및 삭제된 계정입니다.
+
+ a| 
+문자열
+
+
+
+ a| 
+storageContainerID입니다
+ a| 
+이 계정과 연결된 가상 볼륨 저장소 컨테이너의 고유 ID입니다.
+ a| 
+UUID입니다
+
+
+
+ a| 
+targetSecret
+ a| 
+대상 CHAP 암호입니다.
+ a| 
+문자열
+
+
+
+ a| 
+사용자 이름
+ a| 
+계정의 사용자 이름입니다.
+ a| 
+문자열
+
+
+
+ a| 
+볼륨
+ a| 
+이 계정이 소유한 볼륨의 볼륨 ID 목록입니다.
+ a| 
+정수 배열
+
+|===
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_addaccount.adoc[추가 계정]
+* xref:reference_element_api_getaccountbyid.adoc[GetAccountByID입니다]
+* xref:reference_element_api_getaccountbyname.adoc[GetAccountByName입니다]
+* xref:reference_element_api_listaccounts.adoc[계정 목록]
+

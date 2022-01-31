@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_ontapversioninfo.html 
+sidebar: sidebar 
+keywords: object,objects,ontapVersionInfo 
+summary: ontapVersionInfo 개체에는 SnapMirror 관계에 있는 ONTAP 클러스터의 API 버전에 대한 정보가 포함되어 있습니다. 요소 웹 UI에서는 GetOntapVersionInfo API 메서드를 사용하여 이 정보를 가져옵니다. 
+---
+= ontapVersionInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ontapVersionInfo 개체에는 SnapMirror 관계에 있는 ONTAP 클러스터의 API 버전에 대한 정보가 포함되어 있습니다. 요소 웹 UI에서는 GetOntapVersionInfo API 메서드를 사용하여 이 정보를 가져옵니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+snapMirrorEndpointID입니다
+ a| 
+대상 ONTAP 시스템의 ID입니다.
+ a| 
+정수
+
+
+
+ a| 
+clientAPIMajorVesion을 참조하십시오
+ a| 
+Element API 클라이언트에서 사용 중인 ONTAP API 주 버전입니다.
+ a| 
+문자열
+
+
+
+ a| 
+clientAPIMinorVesion을 참조하십시오
+ a| 
+Element API 클라이언트에서 사용 중인 ONTAP API 부 버전입니다.
+ a| 
+문자열
+
+
+
+ a| 
+ontapAPIMajorVersion(ontapAPIMaj
+ a| 
+ONTAP 시스템에서 지원하는 현재 API 주요 버전입니다.
+ a| 
+문자열
+
+
+
+ a| 
+ontapAPIMinorVesion
+ a| 
+ONTAP 시스템에서 지원하는 현재 API 부 버전입니다.
+ a| 
+문자열
+
+
+
+ a| 
+ontapVersion
+ a| 
+ONTAP 클러스터에서 실행 중인 현재 소프트웨어 버전입니다.
+ a| 
+문자열
+
+|===

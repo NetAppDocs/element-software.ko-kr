@@ -1,0 +1,29 @@
+---
+permalink: storage/task_intro_provide_feedback.html 
+sidebar: sidebar 
+keywords: feedback, web user interface, UI issues, feedback form, relevant information, screenshots 
+summary: UI 전체에서 액세스할 수 있는 피드백 양식을 사용하여 Element 소프트웨어 웹 사용자 인터페이스를 개선하고 UI 문제를 해결할 수 있습니다. 
+---
+= 피드백을 제공합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+UI 전체에서 액세스할 수 있는 피드백 양식을 사용하여 Element 소프트웨어 웹 사용자 인터페이스를 개선하고 UI 문제를 해결할 수 있습니다.
+
+. Element UI의 페이지에서 * Feedback * 버튼을 클릭합니다.
+. 요약 및 설명 필드에 관련 정보를 입력합니다.
+. 유용한 스크린샷을 첨부하십시오.
+. 이름과 이메일 주소를 입력합니다.
+. 현재 환경에 대한 데이터를 포함하려면 이 확인란을 선택합니다.
+. 제출 * 을 클릭합니다.
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

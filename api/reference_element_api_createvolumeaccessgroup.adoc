@@ -1,0 +1,177 @@
+---
+permalink: api/reference_element_api_createvolumeaccessgroup.html 
+sidebar: sidebar 
+keywords: volume,access,groups,group,create,creating,CreateVolumeAccessGroup 
+summary: CreateVolumeAccessGroup을 사용하여 새 볼륨 액세스 그룹을 생성할 수 있습니다. 볼륨 액세스 그룹을 생성할 때 이름을 지정하고 이니시에이터 및 볼륨을 선택적으로 입력할 수 있습니다. 
+---
+= CreateVolumeAccessGroup 을 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'CreateVolumeAccessGroup'을 사용하여 새 볼륨 액세스 그룹을 생성할 수 있습니다. 볼륨 액세스 그룹을 생성할 때 이름을 지정하고 이니시에이터 및 볼륨을 선택적으로 입력할 수 있습니다.
+
+볼륨 액세스 그룹에 추가하는 모든 이니시에이터 IQN은 CHAP 인증 없이 그룹의 모든 볼륨에 액세스할 수 있습니다.
+
+
+NOTE: 클론 복제된 볼륨은 소스 볼륨에서 볼륨 액세스 그룹 구성원 자격을 상속하지 않습니다.
+
+볼륨 액세스 그룹을 생성할 때 다음 사항을 고려하십시오.
+
+* 볼륨 액세스 그룹은 최대 64개의 이니시에이터 IQN을 포함할 수 있습니다.
+* 이니시에이터는 하나의 볼륨 액세스 그룹에만 속할 수 있습니다.
+* 볼륨 액세스 그룹은 최대 2000개의 볼륨을 포함할 수 있습니다.
+* 각 볼륨 액세스 그룹은 최대 4개의 다른 볼륨 액세스 그룹에 속할 수 있습니다.
+
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+이니시에이터
+ a| 
+볼륨 액세스 그룹에 포함할 이니시에이터 ID 또는 이름(IQN 및 WWPN) 목록입니다. 이니시에이터 이름 목록을 전달하는 경우 이니시에이터가 없으면 이니시에이터가 생성됩니다. 이니시에이터 ID 목록을 전달하는 경우 초기자가 없으면 오류가 반환됩니다. 이니시에이터 이름 전달은 더 이상 사용되지 않으므로 가능하면 이니시에이터 ID를 사용해야 합니다.
+ a| 
+정수 배열 또는 문자열 배열(사용되지 않음)
+ a| 
+ a| 
+아니요
+
+
+
+ a| 
+이름
+ a| 
+볼륨 액세스 그룹의 이름입니다. 고유하지 않아도 되지만 권장됨. 길이는 1-64자여야 합니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+볼륨
+ a| 
+볼륨 액세스 그룹에 포함할 볼륨 ID 목록입니다.
+ a| 
+정수 배열
+ a| 
+ a| 
+아니요
+
+
+
+ a| 
+속성
+ a| 
+JSON 개체 형식의 이름-값 쌍 목록입니다.
+ a| 
+JSON 개체
+ a| 
+{}
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+볼륨 액세스 그룹
+ a| 
+새로 생성된 볼륨 액세스 그룹에 대한 정보가 포함된 객체입니다.
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[볼륨 액세스 그룹]
+
+
+
+ a| 
+볼륨 액세스 그룹 ID입니다
+ a| 
+새로 생성된 볼륨 액세스 그룹의 ID입니다.
+ a| 
+정수
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "CreateVolumeAccessGroup",
+   "params": {
+      "name": "myaccessgroup",
+      "initiators": ["iqn.1993-08.org.debian: 01: a31b1d799d5c"],
+      "volumes": [327],
+      "attributes": {}
+   }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": null,
+  "result": {
+    "volumeAccessGroup": {
+      "attributes": {},
+      "deletedVolumes": [],
+      "initiatorIDs": [
+        95
+      ],
+      "initiators": [
+        "iqn.1993-08.org.debian: 01: a31b1d799d5c"
+      ],
+      "name": "myaccessgroup",
+      "volumeAccessGroupID": 96,
+      "volumes": [
+        327
+      ]
+    },
+    "volumeAccessGroupID": 96
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult 를 참조하십시오]
+* xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs 를 선택합니다]
+* xref:reference_element_api_modifyvolume.adoc[ModifyVolume(수정 볼륨)]
+

@@ -1,0 +1,24 @@
+---
+permalink: storage/task_replication_create_a_target_volume_with_read_write_access.html 
+sidebar: sidebar 
+keywords: target volume, create, read, write access 
+summary: 복제 프로세스에는 소스 볼륨과 타겟 볼륨의 두 엔드포인트가 포함됩니다. 타겟 볼륨을 생성할 때 볼륨이 복제 중에 데이터를 수락하도록 읽기/쓰기 모드로 자동 설정됩니다. 
+---
+= 읽기 또는 쓰기 권한이 있는 타겟 볼륨을 생성합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+복제 프로세스에는 소스 볼륨과 타겟 볼륨의 두 엔드포인트가 포함됩니다. 타겟 볼륨을 생성할 때 볼륨이 복제 중에 데이터를 수락하도록 읽기/쓰기 모드로 자동 설정됩니다.
+
+. Management * > * Volumes * 를 선택합니다.
+. Create Volume * 을 클릭합니다.
+. 새 볼륨 생성 대화 상자에서 볼륨 이름을 입력합니다.
+. 볼륨의 총 크기를 입력하고 볼륨의 블록 크기를 선택한 다음 볼륨에 액세스할 수 있는 계정을 선택합니다.
+. Create Volume * 을 클릭합니다.
+. Active(활성) 창에서 볼륨에 대한 Actions(작업) 아이콘을 클릭합니다.
+. 편집 * 을 클릭합니다.
+. 계정 액세스 수준을 복제 타겟으로 변경합니다.
+. 변경 내용 저장 * 을 클릭합니다.
+

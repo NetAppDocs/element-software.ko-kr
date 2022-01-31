@@ -1,0 +1,244 @@
+---
+permalink: api/reference_element_api_testping.html 
+sidebar: sidebar 
+keywords: ping,test,TestPing 
+summary: TestPing 메서드를 사용하여 ICMP 패킷을 사용하여 1G 및 10G 인터페이스 모두에서 클러스터의 모든 노드에 대한 네트워크 연결을 테스트할 수 있습니다. 이 테스트에서는 네트워크 구성의 MTU 설정에 따라 각 패킷에 대해 적절한 MTU 크기를 사용합니다. TestPing은 임시 VLAN 인터페이스를 만들지 않습니다. 
+---
+= 테스트 핑
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"TestPing" 방법을 사용하여 ICMP 패킷을 사용하여 1G 및 10G 인터페이스 모두에서 클러스터의 모든 노드에 대한 네트워크 연결을 테스트할 수 있습니다. 이 테스트에서는 네트워크 구성의 MTU 설정에 따라 각 패킷에 대해 적절한 MTU 크기를 사용합니다. TestPing은 임시 VLAN 인터페이스를 만들지 않습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+시도 횟수
+ a| 
+시스템에서 테스트 ping을 반복할 횟수를 지정합니다.
+ a| 
+정수
+ a| 
+5
+ a| 
+아니요
+
+
+
+ a| 
+호스트
+ a| 
+ping을 수행할 장치의 주소 또는 호스트 이름을 쉼표로 구분하여 지정합니다. 호스트를 지정하지 않으면 스토리지 클러스터에서 호스트를 ping합니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+인터페이스
+ a| 
+Ping을 보내야 하는 기존(기본) 인터페이스입니다. 가능한 값:
+
+* Bond10G: Bond10G 인터페이스에서 ping을 보냅니다.
+* Bond1G: Bond1G 인터페이스에서 Ping을 보냅니다.
+
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+패키지 크기
+ a| 
+각 IP로 전송되는 ICMP 패킷으로 보낼 바이트 수를 지정합니다. 바이트 수는 네트워크 구성에 지정된 최대 MTU보다 작아야 합니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+Ping 시간 초과 초
+ a| 
+각 개별 ping 응답을 대기하는 시간(밀리초)을 지정합니다.
+ a| 
+정수
+ a| 
+500밀리초
+ a| 
+아니요
+
+
+
+ a| 
+조각화를 할 수 없습니다
+ a| 
+ICMP 패킷에 대해 DF(조각화하지 않음) 플래그를 활성화합니다.
+ a| 
+부울
+ a| 
+거짓
+ a| 
+아니요
+
+
+
+ a| 
+SourceAddressV4
+ a| 
+ICMP PING 패킷에 사용할 소스 IPv4 주소입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+SourceAddressV6
+ a| 
+ICMP PING 패킷에 사용할 소스 IPv6 주소입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+totalTimeoutSec
+ a| 
+ping이 다음 ping 시도를 실행하거나 프로세스를 종료하기 전에 시스템 응답을 대기하는 시간(초)을 지정합니다.
+ a| 
+정수
+ a| 
+5
+ a| 
+아니요
+
+
+
+ a| 
+가상네트워크 태그
+ a| 
+Ping 패킷을 보낼 때 사용할 VLAN ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+세부 정보
+ a| 
+노드가 통신할 수 있는 각 IP의 리스트와 ping 응답 통계.
+ a| 
+JSON 개체
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+    "method": "TestPing",
+    "params": {
+        "interface": "Bond1G",
+        "hosts": "192.168.0.1"
+    },
+    "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "details": {
+      "192.168.0.1": {
+        "individualResponseCodes": [
+          "Success",
+          "Success",
+          "Success",
+          "Success",
+          "Success"
+        ],
+        "individualResponseTimes": [
+          "00:00:00.000304",
+          "00:00:00.000123",
+          "00:00:00.000116",
+          "00:00:00.000113",
+          "00:00:00.000111"
+        ],
+        "individualStatus": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "interface": "Bond1G",
+        "responseTime": "00:00:00.000154",
+        "sourceAddressV4": "192.168.0.5",
+        "successful": true
+      }
+    },
+    "duration": "00:00:00.001747",
+    "result": "Passed"
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+5.0

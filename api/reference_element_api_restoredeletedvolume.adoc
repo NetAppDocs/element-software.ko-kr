@@ -1,0 +1,76 @@
+---
+permalink: api/reference_element_api_restoredeletedvolume.html 
+sidebar: sidebar 
+keywords: restore,active,restoring,deleted,volume,volumes,restoredeletedvolume 
+summary: RestoreDeletedVolume 메서드를 사용하여 삭제된 볼륨을 다시 활성 상태로 표시할 수 있습니다. 이 작업을 수행하면 iSCSI 연결에 볼륨을 즉시 사용할 수 있습니다. 
+---
+= RestoreDeletedVolume
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"RestoreDeletedVolume" 메서드를 사용하여 삭제된 볼륨을 다시 활성 상태로 표시할 수 있습니다. 이 작업을 수행하면 iSCSI 연결에 볼륨을 즉시 사용할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+볼륨 ID
+ a| 
+복구할 삭제된 볼륨의 볼륨 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "RestoreDeletedVolume",
+   "params": {
+      "volumeID"  : 5
+   },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id" : 1,
+  "result": {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: element-earlierversions.html 
+keywords: earlier versions, element versions 
+summary: 최신 버전을 실행하지 않는 경우 이전 릴리스에 대한 문서를 사용할 수 있습니다. 
+---
+= 이전 버전의 SolidFire 및 NetApp Element 소프트웨어 설명서
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+이전 릴리스에 대한 문서는 문서 센터에서 제공됩니다.
+
+* https://docs.netapp.com/sfe-122/index.jsp["요소 12.2 문서"^]
+* https://docs.netapp.com/sfe-120/index.jsp["Element 12.0 문서"^]
+* https://docs.netapp.com/sfe-118/index.jsp["Element 11.8 문서"^]
+* https://docs.netapp.com/sfe-117/index.jsp["요소 11.7 문서"^]
+* https://docs.netapp.com/sfe-115/index.jsp["Element 11.5 문서"^]
+* https://docs.netapp.com/sfe-113/index.jsp["Element 11.3 문서"^]
+
+
+
+
+== 를 참조하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

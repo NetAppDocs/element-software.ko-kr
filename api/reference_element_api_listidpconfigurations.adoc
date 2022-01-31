@@ -1,0 +1,129 @@
+---
+permalink: api/reference_element_api_listidpconfigurations.html 
+sidebar: sidebar 
+keywords: configs configurations,idp configs,list 
+summary: ListIdpConfigurations 메서드를 사용하여 타사 IdP에 대한 구성을 나열할 수 있습니다. 필요에 따라 현재 활성화된 IDP 구성을 검색하는 enabledOnly 플래그나 특정 IDP 구성에 대한 정보를 쿼리하는 IDP 메타데이터 UUID 또는 IDP 이름을 제공할 수 있습니다. 
+---
+= ListIdpConfigurations 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListIdpConfigurations" 메서드를 사용하여 타사 IdP에 대한 구성을 나열할 수 있습니다. 또는 현재 활성화된 IDP 구성을 검색하기 위한 "enabledOnly" 플래그를 제공하거나 IDP 메타데이터 UUID 또는 IDP 이름을 제공하여 특정 IDP 구성에 대한 정보를 쿼리할 수도 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+enabledOnly(사용 가능 전용)
+ a| 
+결과를 필터링하여 현재 활성화된 IDP 구성을 반환합니다.
+ a| 
+부울
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+idpConfigurationID입니다
+ a| 
+타사 IDP 구성의 UUID입니다.
+ a| 
+UUID입니다
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+idpName입니다
+ a| 
+특정 IDP 이름에 대한 IDP 구성 정보를 검색합니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+idpConfigInfos
+ a| 
+타사 IDP 구성에 대한 정보입니다.
+ a| 
+link:reference_element_api_idpconfiginfo.md#GUID-7DAF8B5D-7803-417F-822B-F5B1A4E3EA93["idpConfigInfo"] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "ListIdpConfigurations",
+  "params": {}
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "result": {
+        "idpConfigInfo": {
+        "enabled": true,
+        "idpConfigurationID": "f983c602-12f9-4c67-b214-bf505185cfed",
+        "idpMetadata": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n
+        <EntityDescriptor xmlns=\"urn:oasis:names:tc:SAML:2.0:metadata\"\r\n
+        xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\"\r\n
+        xmlns:shibmd=\"urn:mace:shibboleth:metadata:1.0\"\r\n
+        xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\r\n
+        ...</Organization>\r\n
+        </EntityDescriptor>",
+        "idpName": "https://privider.name.url.com",
+        "serviceProviderCertificate": "-----BEGIN CERTIFICATE-----\n
+        MI...BHi\n
+        -----END CERTIFICATE-----\n",
+        "spMetadataUrl": "https://10.193.100.100/auth/ui/saml2"
+        }
+    }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+12.0

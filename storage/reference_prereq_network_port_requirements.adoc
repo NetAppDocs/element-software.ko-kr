@@ -1,0 +1,546 @@
+---
+permalink: storage/reference_prereq_network_port_requirements.html 
+sidebar: sidebar 
+keywords: network port requirements, TCP ports, firewall, utilities, URL, access attempt, ICMP, MIP, SIP, MVIP, SVIP 
+summary: 시스템을 원격으로 관리하고 데이터 센터 외부의 클라이언트가 리소스에 연결할 수 있도록 데이터 센터의 에지 방화벽을 통해 다음 TCP 포트를 허용해야 할 수 있습니다. 시스템 사용 방법에 따라 이러한 포트 중 일부는 필요하지 않을 수 있습니다. 
+---
+= 네트워크 포트 요구 사항
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+시스템을 원격으로 관리하고 데이터 센터 외부의 클라이언트가 리소스에 연결할 수 있도록 데이터 센터의 에지 방화벽을 통해 다음 TCP 포트를 허용해야 할 수 있습니다. 시스템 사용 방법에 따라 이러한 포트 중 일부는 필요하지 않을 수 있습니다.
+
+달리 언급되지 않는 한 모든 포트는 TCP이고, Element 소프트웨어를 실행하는 NetApp Support Server, 관리 노드 및 노드 간의 양방향 통신을 허용해야 합니다.
+
+
+IMPORTANT: NetApp은 NetApp Hybrid Cloud Control의 자동 업그레이드 워크플로우를 지원하는 소프트웨어 및 펌웨어 번들 다운로드를 호스팅하는 온라인 저장소를 리빌딩 중입니다. https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU474["자세한 정보"]
+
+[NOTE]
+====
+NetApp 하이브리드 클라우드 제어 웹 UI 및 API 다운로드 소프트웨어 패키지는 JFrog Artifactory Cloud를 파일 호스팅을 위한 배포 허브 및 CDN 기술로 사용하는 NetApp 온라인 소프트웨어 저장소에서 다운로드할 수 있습니다. 이로 인해 일부 URL 또는 IP 주소는 콘텐츠 전송 네트워크를 기반으로 다른 URL 또는 IP 주소로 해결될 수 있습니다. 가능한 경우 네트워크 엔지니어와 협력하여 다음 일반 단계를 사용하여 이러한 URL 또는 IP 주소를 방화벽 규칙에 추가해야 합니다.
+
+.단계
+. wget 또는 curl 유틸리티를 사용하여 URL(예: repo.netapp.com 액세스합니다.
+. URL에 액세스하지 못했습니다(repo.netapp.com 와는 다름).
+. 방화벽 규칙을 편집하여 새 URL을 허용합니다.
+. 액세스 시도가 성공할 때까지 위의 단계를 반복합니다.
+
+
+====
+
+TIP: 관리 노드, Element 소프트웨어를 실행하는 노드 및 클러스터 MVIP 간에 ICMP를 사용하도록 설정합니다.
+
+표에 사용되는 약어는 다음과 같습니다.
+
+* MIP: 관리 IP 주소, 노드별 주소
+* SIP: 스토리지 IP 주소, 노드당 주소
+* MVIP: 관리 가상 IP 주소입니다
+* SVIP: 스토리지 가상 IP 주소입니다
+
+
+[cols="25,25,15,35"]
+|===
+| 출처 | 목적지 | 포트 | 설명 
+
+
+ a| 
+iSCSI 클라이언트
+ a| 
+스토리지 클러스터 MVIP
+ a| 
+443
+ a| 
+(선택 사항) UI 및 API 액세스
+
+
+
+ a| 
+iSCSI 클라이언트
+ a| 
+스토리지 클러스터 SVIP
+ a| 
+3260
+ a| 
+클라이언트 iSCSI 통신
+
+
+
+ a| 
+iSCSI 클라이언트
+ a| 
+스토리지 노드 SIP
+ a| 
+3260
+ a| 
+클라이언트 iSCSI 통신
+
+
+
+ a| 
+관리 노드
+ a| 
+sfsupport.solidfire.com
+ a| 
+22
+ a| 
+지원 액세스를 위한 역방향 SSH 터널
+
+
+
+ a| 
+관리 노드
+ a| 
+스토리지 노드 MIP
+ a| 
+22
+ a| 
+지원을 위한 SSH 액세스
+
+
+
+ a| 
+관리 노드
+ a| 
+DNS 서버
+ a| 
+53 TCP/UDP
+ a| 
+DNS 조회
+
+
+
+ a| 
+관리 노드
+ a| 
+스토리지 노드 MIP
+ a| 
+442
+ a| 
+스토리지 노드 및 Element 소프트웨어 업그레이드에 대한 UI 및 API 액세스
+
+
+
+ a| 
+관리 노드
+ a| 
+스토리지 클러스터 MVIP
+ a| 
+442
+ a| 
+스토리지 노드 및 Element 소프트웨어 업그레이드에 대한 UI 및 API 액세스
+
+
+
+ a| 
+관리 노드
+ a| 
+온라인 소프트웨어 저장소:
+
+* "https://repo.netapp.com/bintray/api/package`
+* "https://repo.netapp.com/downloads`
+* "https://netappdownloads.jfrog.io:443`
+
+ a| 
+443
+ a| 
+관리 노드 서비스 업그레이드
+
+
+
+ a| 
+관리 노드
+ a| 
+monitoring.solidfire.com
+ a| 
+443
+ a| 
+스토리지 클러스터가 Active IQ에 보고됩니다
+
+
+
+ a| 
+관리 노드
+ a| 
+스토리지 클러스터 MVIP
+ a| 
+443
+ a| 
+스토리지 노드 및 Element 소프트웨어 업그레이드에 대한 UI 및 API 액세스
+
+
+
+ a| 
+관리 노드
+ a| 
+repo.netapp.com
+ a| 
+443
+ a| 
+온-프레미스 배포를 설치/업데이트하는 데 필요한 구성 요소에 대한 액세스를 제공합니다.
+
+
+
+ a| 
+관리 노드
+ a| 
+증인 노드
+ a| 
+9442
+ a| 
+노드별 구성 API 서비스
+
+
+
+ a| 
+관리 노드
+ a| 
+vCenter Server를 선택합니다
+ a| 
+9443
+ a| 
+vCenter 플러그인 등록. 등록이 완료되면 포트를 닫을 수 있습니다.
+
+
+
+ a| 
+SNMP 서버
+ a| 
+스토리지 클러스터 MVIP
+ a| 
+161UDP
+ a| 
+SNMP 폴링
+
+
+
+ a| 
+SNMP 서버
+ a| 
+스토리지 노드 MIP
+ a| 
+161UDP
+ a| 
+SNMP 폴링
+
+
+
+ a| 
+스토리지 노드 MIP
+ a| 
+DNS 서버
+ a| 
+53 TCP/UDP
+ a| 
+DNS 조회
+
+
+
+ a| 
+스토리지 노드 MIP
+ a| 
+관리 노드
+ a| 
+80
+ a| 
+Element 소프트웨어 업그레이드
+
+
+
+ a| 
+스토리지 노드 MIP
+ a| 
+S3/Swift 엔드포인트
+ a| 
+80
+ a| 
+(선택 사항) 백업 및 복구를 위해 S3/Swift 엔드포인트에 대한 HTTP 통신
+
+
+
+ a| 
+스토리지 노드 MIP
+ a| 
+NTP 서버
+ a| 
+123UDP
+ a| 
+NTP
+
+
+
+ a| 
+스토리지 노드 MIP
+ a| 
+관리 노드
+ a| 
+162 UDP
+ a| 
+(선택 사항) SNMP 트랩
+
+
+
+ a| 
+스토리지 노드 MIP
+ a| 
+SNMP 서버
+ a| 
+162 UDP
+ a| 
+(선택 사항) SNMP 트랩
+
+
+
+ a| 
+스토리지 노드 MIP
+ a| 
+LDAP 서버
+ a| 
+389 TCP/UDP
+ a| 
+(선택 사항) LDAP 조회
+
+
+
+ a| 
+스토리지 노드 MIP
+ a| 
+관리 노드
+ a| 
+443
+ a| 
+Element 스토리지 펌웨어 업그레이드
+
+
+
+ a| 
+스토리지 노드 MIP
+ a| 
+원격 스토리지 클러스터 MVIP
+ a| 
+443
+ a| 
+원격 복제 클러스터 페어링 통신
+
+
+
+ a| 
+스토리지 노드 MIP
+ a| 
+원격 스토리지 노드 MIP
+ a| 
+443
+ a| 
+원격 복제 클러스터 페어링 통신
+
+
+
+ a| 
+스토리지 노드 MIP
+ a| 
+S3/Swift 엔드포인트
+ a| 
+443
+ a| 
+(선택 사항) 백업 및 복구를 위해 S3/Swift 엔드포인트에 대한 HTTPS 통신
+
+
+
+ a| 
+스토리지 노드 MIP
+ a| 
+관리 노드
+ a| 
+514 TCP/UDP
+
+10514 TCP/UDP
+ a| 
+Syslog 전달
+
+
+
+ a| 
+스토리지 노드 MIP
+ a| 
+Syslog 서버
+ a| 
+514 TCP/UDP
+
+10514 TCP/UDP
+ a| 
+Syslog 전달
+
+
+
+ a| 
+스토리지 노드 MIP
+ a| 
+LDAPS 서버
+ a| 
+636 TCP/UDP
+ a| 
+LDAPS 조회
+
+
+
+ a| 
+스토리지 노드 MIP
+ a| 
+원격 스토리지 노드 MIP
+ a| 
+2181
+ a| 
+원격 복제를 위한 인터클러스터 통신
+
+
+
+ a| 
+스토리지 노드 SIP
+ a| 
+원격 스토리지 노드 SIP
+ a| 
+2181
+ a| 
+원격 복제를 위한 인터클러스터 통신
+
+
+
+ a| 
+스토리지 노드 SIP
+ a| 
+스토리지 노드 SIP
+ a| 
+3260
+ a| 
+노드 간 iSCSI
+
+
+
+ a| 
+스토리지 노드 SIP
+ a| 
+원격 스토리지 노드 SIP
+ a| 
+4000 ~ 4020
+ a| 
+원격 복제 노드-노드 데이터 전송
+
+
+
+ a| 
+시스템 관리자 PC입니다
+ a| 
+관리 노드
+ a| 
+442
+ a| 
+관리 노드에 대한 HTTPS UI 액세스
+
+
+
+ a| 
+시스템 관리자 PC입니다
+ a| 
+스토리지 노드 MIP
+ a| 
+442
+ a| 
+스토리지 노드에 대한 HTTPS UI 및 API 액세스
+
+
+
+ a| 
+시스템 관리자 PC입니다
+ a| 
+관리 노드
+ a| 
+443
+ a| 
+관리 노드에 대한 HTTPS UI 및 API 액세스
+
+
+
+ a| 
+시스템 관리자 PC입니다
+ a| 
+스토리지 클러스터 MVIP
+ a| 
+443
+ a| 
+스토리지 클러스터에 대한 HTTPS UI 및 API 액세스
+
+
+
+ a| 
+시스템 관리자 PC입니다
+ a| 
+스토리지 노드 MIP
+ a| 
+443
+ a| 
+스토리지 클러스터에 대한 HTTPS 스토리지 클러스터 생성, 구축 후 UI 액세스
+
+
+
+ a| 
+시스템 관리자 PC입니다
+ a| 
+증인 노드
+ a| 
+8080
+ a| 
+증인 노드/노드 웹 UI
+
+
+
+ a| 
+vCenter Server를 선택합니다
+ a| 
+스토리지 클러스터 MVIP
+ a| 
+443
+ a| 
+vCenter 플러그인 API 액세스
+
+
+
+ a| 
+vCenter Server를 선택합니다
+ a| 
+관리 노드
+ a| 
+8443
+ a| 
+(선택 사항) vCenter 플러그인 QoSSIOC 서비스.
+
+
+
+ a| 
+vCenter Server를 선택합니다
+ a| 
+스토리지 클러스터 MVIP
+ a| 
+8444)를 참조하십시오
+ a| 
+vCenter VASA 공급자 액세스(VVOL만 해당)
+
+
+
+ a| 
+vCenter Server를 선택합니다
+ a| 
+관리 노드
+ a| 
+9443
+ a| 
+vCenter 플러그인 등록. 등록이 완료되면 포트를 닫을 수 있습니다.
+
+|===
+
+
+== 를 참조하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

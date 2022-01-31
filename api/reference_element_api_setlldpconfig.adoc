@@ -1,0 +1,117 @@
+---
+permalink: api/reference_element_api_setlldpconfig.html 
+sidebar: sidebar 
+keywords: lldp,config,configure,set,setting,setlldpconfig 
+summary: 'SetLldpConfig 메서드를 사용하여 스토리지 클러스터에 대한 LLDP(Link Layer Discovery Protocol) 설정을 구성할 수 있습니다.' 
+---
+= SetLldpConfig 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스토리지 클러스터에 대한 LLDP(Link Layer Discovery Protocol) 설정을 구성하려면 'setLldpConfig' 메서드를 사용합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+enableOtherProtocols(프로토콜 사용 가능)
+ a| 
+CDP, FDP, EDP 및 SONMP 등의 다른 검색 프로토콜을 자동으로 사용할 수 있도록 설정합니다.
+ a| 
+부울
+ a| 
+참
+ a| 
+아니요
+
+
+
+ a| 
+enableMed
+ a| 
+LLDP-MED(Media Endpoint Discovery)를 활성화합니다.
+ a| 
+부울
+ a| 
+거짓
+ a| 
+아니요
+
+
+
+ a| 
+사용 가능
+ a| 
+LLDP를 활성화 또는 비활성화합니다.
+ a| 
+부울
+ a| 
+참
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+lldpConfig
+ a| 
+새로 변경된 설정을 포함하여 현재 스토리지 클러스터 LLDP 구성에 대한 정보입니다.
+ a| 
+JSON 개체
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "id": 3920,
+  "method":"SetLldpConfig",
+    "params": {
+        "lldpConfig": {
+            "enableMed": true
+        }
+    }
+  }
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 3920,
+  "result": {
+    "lldpConfig": {
+        "enableLldp": true,
+        "enableMed": true,
+        "enableOtherProtocols": true
+     }
+  }
+}
+----

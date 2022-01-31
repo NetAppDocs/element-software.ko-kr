@@ -1,0 +1,101 @@
+---
+permalink: api/reference_element_api_createkeyproviderkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key provider,creating,create 
+summary: 'CreateKeyProviderKmip 메서드를 사용하여 지정된 이름의 키 관리 상호 운용성 프로토콜\(KMIP\) 키 공급자를 만들 수 있습니다. 키 공급자는 인증 키를 검색할 메커니즘과 위치를 정의합니다. 새로운 KMIP 키 공급자를 생성할 때 KMIP 키 서버가 할당되지 않습니다. KMIP 키 서버를 생성하려면 CreateKeyServerKmip 메서드를 사용합니다. 공급자에 할당하려면 AddKeyServerToProviderKmip 을 참조하십시오.' 
+---
+= CreateKeyProviderKmip 을 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'CreateKeyProviderKmip' 메서드를 사용하여 KMIP(Key Management Interoperability Protocol) 키 공급자를 지정된 이름으로 생성할 수 있습니다. 키 공급자는 인증 키를 검색할 메커니즘과 위치를 정의합니다. 새로운 KMIP 키 공급자를 생성할 때 KMIP 키 서버가 할당되지 않습니다. KMIP 키 서버를 생성하려면 'CreateKeyServerKmip' 방법을 사용하십시오. 공급자에 할당하려면 "AddKeyServerToProviderKmip"을 참조하십시오.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+KeyProviderName 을 클릭합니다
+ a| 
+생성된 KMIP 키 공급자와 연관되는 이름입니다. 이 이름은 표시 목적으로만 사용되며 고유한 이름은 필요하지 않습니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+KmipKeyProvider 를 참조하십시오
+ a| 
+새로 만든 키 공급자에 대한 세부 정보가 포함된 개체입니다.
+ a| 
+link:reference_element_api_keyproviderkmip.md#["키ProviderKmip 을 참조하십시오"]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "CreateKeyProviderKmip",
+  "params": {
+    "keyProviderName": "ProviderName",
+    },
+"id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+    "kmipKeyProvider": {
+        "keyProviderName": "ProviderName",
+        "keyProviderIsActive": true,
+        "kmipCapabilities": "SSL",
+        "keyServerIDs": [
+            15
+        ],
+        "keyProviderID": 1
+    }
+}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+11.7

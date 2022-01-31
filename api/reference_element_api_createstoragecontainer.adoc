@@ -1,0 +1,139 @@
+---
+permalink: api/reference_element_api_createstoragecontainer.html 
+sidebar: sidebar 
+keywords: create,creating,storage,container,virtual,volume,volumes,vvol,vvols,CreateStorageContainer 
+summary: 'CreateStorageContainer 메서드를 사용하여 VVol\(Virtual Volume\) 저장소 컨테이너를 만들 수 있습니다. 스토리지 컨테이너를 사용하여 보고 및 리소스 할당을 수행할 수 있습니다. 가상 볼륨 기능을 사용하려면 스토리지 컨테이너를 하나 이상 생성해야 합니다.' 
+---
+= CreateStorageContainer 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'CreateStorageContainer' 메소드를 사용하여 VVol(Virtual Volume) 저장소 컨테이너를 생성할 수 있습니다. 스토리지 컨테이너를 사용하여 보고 및 리소스 할당을 수행할 수 있습니다. 가상 볼륨 기능을 사용하려면 스토리지 컨테이너를 하나 이상 생성해야 합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+이름
+ a| 
+저장소 컨테이너의 이름입니다. Element 소프트웨어 계정 이름 지정 제한 사항을 따릅니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+계정 ID입니다
+ a| 
+저장 컨테이너가 될 비저장 컨테이너 계정입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+이니토시크입니다
+ a| 
+이니시에이터의 CHAP 인증 암호입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+targetSecret
+ a| 
+타겟의 CHAP 인증 암호입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+storageContainer 를 선택합니다
+ a| 
+새로 생성된 저장소 컨테이너에 대한 정보가 들어 있는 개체입니다.
+ a| 
+xref:reference_element_api_storagecontainer.adoc[storageContainer 를 선택합니다]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "CreateStorageContainer",
+    "params": {
+        "name" : "example"
+    },
+    "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "storageContainer": {
+      "accountID": 8,
+      "initiatorSecret": "rVTOi25^H.d;cP}l",
+      "name": "example",
+      "protocolEndpointType": "SCSI",
+      "status": "active",
+      "storageContainerID": "a9ec1138-e386-4a44-90d7-b9acbbc05176",
+      "targetSecret": "6?AEIxWpvo6,!boM"
+    }
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

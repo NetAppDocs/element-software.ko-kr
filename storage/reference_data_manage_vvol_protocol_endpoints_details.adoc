@@ -1,0 +1,51 @@
+---
+permalink: storage/reference_data_manage_vvol_protocol_endpoints_details.html 
+sidebar: sidebar 
+keywords: protocol endpoints, details, vvols, state, type, id 
+summary: 'VVol 탭의 Protocol Endpoints(프로토콜 엔드포인트) 페이지는 프로토콜 엔드포인트 정보를 제공합니다.' 
+---
+= 프로토콜 엔드포인트 세부 정보
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VVol 탭의 Protocol Endpoints(프로토콜 엔드포인트) 페이지는 프로토콜 엔드포인트 정보를 제공합니다.
+
+* * 기본 공급자 ID *
++
+기본 프로토콜 끝점 공급자의 ID입니다.
+
+* * 보조 제공자 ID *
++
+보조 프로토콜 엔드포인트 공급자의 ID입니다.
+
+* * 프로토콜 엔드포인트 ID *
++
+프로토콜 종점의 UUID입니다.
+
+* * 프로토콜 엔드포인트 상태 *
++
+프로토콜 끝점의 상태. 가능한 값은 다음과 같습니다.
+
++
+** Active(활성): 프로토콜 끝점이 사용 중입니다.
+** Start(시작): 프로토콜 끝점이 시작됩니다.
+** 페일오버: 프로토콜 엔드포인트가 페일오버되었습니다.
+** 예약됨: 프로토콜 엔드포인트가 예약되었습니다.
+
+
+* * 공급자 유형 *
++
+프로토콜 끝점의 공급자 유형입니다. 가능한 값은 다음과 같습니다.
+
++
+** 기본
+** 보조
+
+
+* * SCSI NAA 장치 ID *
++
+NAA IEEE Registered Extended Format의 프로토콜 종점에 대한 전역적으로 고유한 SCSI 장치 식별자입니다.
+
+

@@ -1,0 +1,67 @@
+---
+permalink: api/reference_element_api_getidpauthenticationstate.html 
+sidebar: sidebar 
+keywords: IdP,idp,authentication,retrieve get,idp state 
+summary: GetIdpAuthenticationState 메서드를 사용하면 타사 IdP를 사용하여 인증 상태에 대한 정보를 반환할 수 있습니다. 
+---
+= GetIdpAuthenticationState 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetIdpAuthenticationState" 메서드를 사용하면 타사 IdP를 사용하여 인증 상태에 대한 정보를 반환할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+활성화됨
+ a| 
+타사 IDP 인증이 활성화되었는지 여부를 나타냅니다.
+ a| 
+부울
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "GetIdpAuthenticationState"
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "result": {"enabled": true}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+12.0

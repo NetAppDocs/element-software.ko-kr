@@ -1,0 +1,92 @@
+---
+permalink: api/reference_element_api_addkeyservertoproviderkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key server,assigning to key provider,assign,addkeyservertoproviderkmip 
+summary: 'AddKeyServerToProviderKmip 메서드를 사용하여 키 관리 상호 운용성 프로토콜\(KMIP\) 키 서버를 지정된 키 공급자에 할당할 수 있습니다. 할당 중에 서버에 연락하여 기능을 확인합니다. 지정된 키 서버가 이미 지정된 키 공급자에 할당된 경우 아무런 작업도 수행되지 않으며 오류가 반환되지 않습니다. RemoveKeyServerFromProviderKmip 메서드를 사용하여 할당을 제거할 수 있습니다.' 
+---
+= AddKeyServerToProviderKmip 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'AddKeyServerToProviderKmip' 메서드를 사용하여 KMIP(Key Management Interoperability Protocol) 키 서버를 지정된 키 공급자에 할당할 수 있습니다. 할당 중에 서버에 연락하여 기능을 확인합니다. 지정된 키 서버가 이미 지정된 키 공급자에 할당된 경우 아무런 작업도 수행되지 않으며 오류가 반환되지 않습니다. "RemoveKeyServerFromProviderKmip" 메서드를 사용하여 할당을 제거할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+KeyProviderID를 입력합니다
+ a| 
+키 서버를 할당할 키 공급자의 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+KeyServerID를 입력합니다
+ a| 
+할당할 키 서버의 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다. 오류가 반환되지 않는 한 할당이 성공한 것으로 간주됩니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "AddKeyServerToProviderKmip",
+  "params": {
+    "keyProviderID": 1,
+    "keyServerID": 15
+    },
+"id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {}
+    }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+11.7

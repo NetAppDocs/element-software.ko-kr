@@ -1,0 +1,30 @@
+---
+permalink: api/concept_element_api_drive_api_methods.html 
+sidebar: sidebar 
+keywords: drive,API,methods,method 
+summary: 드라이브 API 메소드를 사용하여 스토리지 클러스터에 사용 가능한 드라이브를 추가하고 관리할 수 있습니다. 스토리지 클러스터에 스토리지 노드를 추가하거나 기존 스토리지 노드에 새 드라이브를 설치할 경우 해당 드라이브를 스토리지 클러스터에 추가할 수 있습니다. 
+---
+= 드라이브 API 메소드
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+드라이브 API 메소드를 사용하여 스토리지 클러스터에 사용 가능한 드라이브를 추가하고 관리할 수 있습니다. 스토리지 클러스터에 스토리지 노드를 추가하거나 기존 스토리지 노드에 새 드라이브를 설치할 경우 해당 드라이브를 스토리지 클러스터에 추가할 수 있습니다.
+
+* xref:reference_element_api_adddrives.adoc[추가 드라이브]
+* xref:reference_element_api_getdrivehardwareinfo.adoc[GetDriveHardwareInfo 를 참조하십시오]
+* xref:reference_element_api_getdrivestats.adoc[GetDriveStats 를 참조하십시오]
+* xref:reference_element_api_listdrives.adoc[ListDrives를 선택합니다]
+* xref:reference_element_api_listdrivestats.adoc[목록드라이브 통계]
+* xref:reference_element_api_removedrives.adoc[드라이브 제거]
+* xref:reference_element_api_secureerasedrives.adoc[SecureEraseDrives]
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
+

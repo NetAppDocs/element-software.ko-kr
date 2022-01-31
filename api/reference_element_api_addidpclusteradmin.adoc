@@ -1,0 +1,131 @@
+---
+permalink: api/reference_element_api_addidpclusteradmin.html 
+sidebar: sidebar 
+keywords: IdP,idp,cluster,admin,add,adding,addIdpclusteradmin 
+summary: 'AddIpdClusterAdmin 메서드를 사용하여 타사 ID 공급자\(IDP\)에서 인증한 클러스터 관리자 사용자를 추가할 수 있습니다. IDP 클러스터 관리자 계정은 사용자와 연결된 IDP의 SAML 어설션 내에 제공된 SAML 속성 값 정보를 기반으로 구성됩니다. 사용자가 IdP를 사용하여 성공적으로 인증했으며 SAML 어설션 내에 SAML 속성 문이 여러 IDP 클러스터 관리자 계정과 일치하는 경우 사용자는 해당 IDP 클러스터 관리자 계정의 결합된 액세스 레벨을 갖게 됩니다.' 
+---
+= AddIdpClusterAdmin 을 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'AddIpdClusterAdmin' 방법을 사용하여 타사 ID 공급자(IDP)가 인증한 클러스터 관리자 사용자를 추가할 수 있습니다. IDP 클러스터 관리자 계정은 사용자와 연결된 IDP의 SAML 어설션 내에 제공된 SAML 속성 값 정보를 기반으로 구성됩니다. 사용자가 IdP를 사용하여 성공적으로 인증했으며 SAML 어설션 내에 SAML 속성 문이 여러 IDP 클러스터 관리자 계정과 일치하는 경우 사용자는 해당 IDP 클러스터 관리자 계정의 결합된 액세스 레벨을 갖게 됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+액세스
+ a| 
+이 IDP 클러스터 관리자가 사용할 수 있는 방법을 제어합니다.
+ a| 
+문자열 배열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+허용 가능한 샛길
+ a| 
+최종 사용자 사용권 계약에 동의합니다. 시스템에 클러스터 관리자 계정을 추가하려면 true로 설정합니다. 생략하거나 false 로 설정하면 메서드 호출이 실패합니다.
+ a| 
+부울
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+속성
+ a| 
+JSON 개체 형식의 이름-값 쌍 목록입니다.
+ a| 
+JSON 개체
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+사용자 이름
+ a| 
+IdP 클러스터 관리자에 대한 SAML 속성 값 매핑(예: email=test@example.com) 이 항목은 'NameID'를 사용하여 특정 SAML 제목을 사용하거나 'eduPersonalAffed조정'과 같은 SAML 속성 명령문의 항목으로 정의할 수 있습니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+클러스터 관리자 ID
+ a| 
+새로 생성한 클러스터 관리자의 고유 식별자입니다.
+ a| 
+정수
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+    "method": "AddIdpClusterAdmin",
+    "params": {
+        "username": "email=test@example.com",
+        "acceptEula": true,
+        "access": ["administrator"]
+    }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "result": {
+        "clusterAdminID": 13
+    }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+12.0

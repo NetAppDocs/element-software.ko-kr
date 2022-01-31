@@ -1,0 +1,23 @@
+---
+permalink: storage/task_replication_validate_volume_replication.html 
+sidebar: sidebar 
+keywords: volume pairings, replication, validate volume replication 
+summary: 볼륨이 복제된 후에는 소스 볼륨과 타겟 볼륨이 활성 상태인지 확인해야 합니다. 활성 상태에서 볼륨이 페어링되면 데이터가 소스에서 타겟 볼륨으로 전송되고 데이터가 동기화됩니다. 
+---
+= 볼륨 복제를 확인합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+볼륨이 복제된 후에는 소스 볼륨과 타겟 볼륨이 활성 상태인지 확인해야 합니다. 활성 상태에서 볼륨이 페어링되면 데이터가 소스에서 타겟 볼륨으로 전송되고 데이터가 동기화됩니다.
+
+. 두 클러스터 모두에서 * 데이터 보호 * > * 볼륨 쌍 * 을 선택합니다.
+. 볼륨 상태가 활성인지 확인합니다.
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_replication_volume_pairing_warnings.adoc[볼륨 페어링 경고]

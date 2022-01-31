@@ -1,0 +1,108 @@
+---
+permalink: api/reference_element_api_setsnmptrapinfo.html 
+sidebar: sidebar 
+keywords: snmp,trap,information,info,setting,set,setsnmptrapinfo 
+summary: 'SetSnmpTrapInfo 메서드를 사용하여 클러스터 SNMP 알림 \(트랩\)의 생성을 설정 및 해제하고 알림을 수신하는 호스트 세트를 지정할 수 있습니다. 각 SetSnmpTrapInfo 메서드 호출로 전달하는 값은 이전 호출에 설정된 모든 값을 대체합니다.' 
+---
+= SetSnmpTrapInfo 를 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'SetSnmpTrapInfo' 메소드를 사용하여 클러스터 SNMP 알림(트랩) 생성을 활성화 및 비활성화하고 알림을 수신하는 호스트 세트를 지정할 수 있습니다. 각 SetSnmpTrapInfo 메서드 호출로 전달하는 값은 이전 호출에서 설정한 모든 값을 대체합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+TrapRecipients(수신자)
+ a| 
+스토리지 클러스터에서 생성한 트랩을 수신할 호스트 목록입니다. 트랩 유형 중 하나가 활성화된 경우 하나 이상의 개체가 필요합니다. 이 매개 변수는 부울 매개 변수가 true로 설정된 경우에만 필요합니다. (기본값 없음. 필요하지 않음)
+ a| 
+xref:reference_element_api_snmptraprecipient.adoc[snmpTrapRecipient를 선택합니다] 스토리지
+
+
+
+ a| 
+클러스터포트트라파ssEnabled
+ a| 
+TRUE로 설정하면 클러스터 장애가 기록될 때 해당 클러스터 장애 알림이 구성된 트랩 수신자 목록으로 전송됩니다. (기본값: false. 필요하지 않음)
+ a| 
+부울
+
+
+
+ a| 
+클러스터\n\n\n\n\n\n시스템\n및\n\n
+ a| 
+TRUE로 설정하면 클러스터 장애가 해결되면 해당 클러스터 장애 해결 알림이 구성된 트랩 수신자 목록으로 전송됩니다. (기본값: false. 필요하지 않음)
+ a| 
+부울
+
+
+
+ a| 
+클러스터 EventTrapsEnabled
+ a| 
+true로 설정하면 클러스터 이벤트가 기록될 때 구성된 트랩 수신자 목록으로 해당 클러스터 이벤트 알림이 전송됩니다. (기본값: false. 필요하지 않음)
+ a| 
+부울
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+"method":"SetSnmpTrapInfo",
+"params":{
+    "clusterFaultTrapsEnabled":true,
+    "clusterFaultResolvedTrapsEnabled":true,
+    "clusterEventTrapsEnabled":true,
+    "trapRecipients":[
+    {
+      "host":"192.30.0.10",
+      "port":162,
+      "community":"public"
+    }
+   ]
+  },
+  "id":1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "id" : 1,
+    "result" : {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

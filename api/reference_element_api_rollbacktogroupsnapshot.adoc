@@ -1,0 +1,204 @@
+---
+permalink: api/reference_element_api_rollbacktogroupsnapshot.html 
+sidebar: sidebar 
+keywords: rollbacktogroupsnapshot,snapshot,group,individual,creating,create,roll,back,rollback,roll back,existing 
+summary: RollbackToGroupSnapshot을 사용하여 스냅샷 그룹의 모든 개별 볼륨을 각 볼륨의 개별 스냅샷으로 롤백할 수 있습니다. 
+---
+= RollbackToGroupSnapshot 을 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"RollbackToGroupSnapshot"을 사용하여 스냅샷 그룹의 모든 개별 볼륨을 각 볼륨의 개별 스냅샷으로 롤백할 수 있습니다.
+
+그룹 스냅샷으로 롤백하면 그룹 스냅샷 내의 각 볼륨에 대한 임시 스냅샷이 생성됩니다.
+
+
+NOTE: 클러스터 충만도가 1, 2 또는 3단계에 있는 경우 스냅샷을 생성할 수 있습니다. 클러스터 충만도가 4 또는 5단계에 있으면 스냅샷이 생성되지 않습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+그룹스냅샷디
+ a| 
+그룹 스냅샷의 고유 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+'속성'
+ a| 
+JSON 개체 형식의 이름-값 쌍 목록입니다.
+ a| 
+JSON 개체
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+이름
+ a| 
+'aveCurrentState'가 true로 설정된 경우 생성되는 볼륨의 현재 상태에 대한 그룹 스냅샷의 이름입니다. 이름을 지정하지 않으면 스냅샷(그룹 및 개별 볼륨)의 이름이 롤백이 발생한 시간의 타임스탬프로 설정됩니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+'SaveCurrentState'를 선택합니다
+ a| 
+이전 활성 볼륨 이미지를 저장할지 여부를 지정합니다. 유효한 값:
+
+* "참": 이전 활성 볼륨 이미지가 유지됩니다.
+* "거짓": 이전 활성 볼륨 이미지가 삭제됩니다.
+
+ a| 
+부울
+ a| 
+거짓
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+구성원
+ a| 
+그룹 스냅샷 구성원의 볼륨 ID 및 스냅샷 ID가 포함된 배열입니다. 값:
+
+* 체크섬: 저장된 스냅샷에 있는 데이터의 작은 문자열 표현입니다. 이 체크섬은 나중에 다른 스냅샷을 비교하여 데이터의 오류를 감지하는 데 사용할 수 있습니다. (문자열)
+* snapshotID: 새 스냅샷이 생성된 스냅샷의 고유 ID입니다. snapshotID는 지정된 볼륨의 스냅샷이어야 합니다. (정수)
+* volumeID: 스냅샷의 소스 볼륨 ID입니다. (정수)
+
+ a| 
+JSON 개체 어레이
+
+
+
+ a| 
+groupSnapshotID입니다
+ a| 
+aveCurrentState가 false로 설정된 경우 이 값은 null입니다.
+
+'aveCurrentState'가 true로 설정된 경우 새로 생성된 그룹 스냅샷의 고유 ID입니다.
+ a| 
+정수
+
+
+
+ a| 
+그룹 스냅샷
+ a| 
+aveCurrentState가 false로 설정된 경우 이 값은 null입니다.
+
+aveCurrentState를 true로 설정하면 롤백ToGroupSnapshot이 방금 롤백한 그룹 스냅샷에 대한 정보가 포함된 개체가 됩니다.
+ a| 
+xref:reference_element_api_groupsnapshot.adoc[그룹 스냅샷]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "id": 438,
+  "method": "RollbackToGroupSnapshot",
+  "params": {
+    "groupSnapshotID": 1,
+    "name": "grpsnap1",
+    "saveCurrentState": true
+  }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 438,
+  "result": {
+    "groupSnapshot": {
+      "attributes": {},
+      "createTime": "2016-04-06T17:27:17Z",
+      "groupSnapshotID": 1,
+      "groupSnapshotUUID": "468fe181-0002-4b1d-ae7f-8b2a5c171eee",
+      "members": [
+        {
+          "attributes": {},
+          "checksum": "0x0",
+          "createTime": "2016-04-06T17:27:17Z",
+          "enableRemoteReplication": false,
+          "expirationReason": "None",
+          "expirationTime": null,
+          "groupID": 1,
+          "groupSnapshotUUID": "468fe181-0002-4b1d-ae7f-8b2a5c171eee",
+          "name": "2016-04-06T17:27:17Z",
+          "snapshotID": 4,
+          "snapshotUUID": "03563c5e-51c4-4e3b-a256-a4d0e6b7959d",
+          "status": "done",
+          "totalSize": 1000341504,
+          "virtualVolumeID": null,
+          "volumeID": 2
+        }
+      ],
+      "name": "2016-04-06T17:27:17Z",
+      "status": "done"
+    },
+    "groupSnapshotID": 3,
+    "members": [
+      {
+        "checksum": "0x0",
+        "snapshotID": 2,
+        "snapshotUUID": "719b162c-e170-4d80-b4c7-1282ed88f4e1",
+        "volumeID": 2
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

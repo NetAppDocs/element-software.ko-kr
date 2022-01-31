@@ -1,0 +1,74 @@
+---
+permalink: api/concept_element_api_node_api_methods.html 
+sidebar: sidebar 
+keywords: node,api,methods 
+summary: 노드 API 메소드를 사용하여 개별 노드를 구성할 수 있습니다. 이러한 방법은 구성해야 하는 단일 노드에서 작동하거나, 구성되어 있지만 아직 클러스터에 참여하고 있지 않거나, 클러스터에 적극적으로 참여하고 있는 경우에도 작동합니다. 노드 API 메서드를 사용하면 개별 노드 및 노드와 통신하는 데 사용되는 클러스터 네트워크의 설정을 보고 수정할 수 있습니다. 개별 노드에 대해 이러한 방법을 실행해야 하며 클러스터 주소에 대해 노드당 API 메소드를 실행할 수 없습니다. 
+---
+= 노드 API 메소드
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+노드 API 메소드를 사용하여 개별 노드를 구성할 수 있습니다. 이러한 방법은 구성해야 하는 단일 노드에서 작동하거나, 구성되어 있지만 아직 클러스터에 참여하고 있지 않거나, 클러스터에 적극적으로 참여하고 있는 경우에도 작동합니다. 노드 API 메서드를 사용하면 개별 노드 및 노드와 통신하는 데 사용되는 클러스터 네트워크의 설정을 보고 수정할 수 있습니다. 개별 노드에 대해 이러한 방법을 실행해야 하며 클러스터 주소에 대해 노드당 API 메소드를 실행할 수 없습니다.
+
+* xref:reference_element_api_checkpingonvlan.adoc[체크핑온블란]
+* xref:reference_element_api_checkproposednodeadditions.adoc[ProposedNodeAdveditions를 참조하십시오]
+* xref:reference_element_api_createclustersupportbundle.adoc[CreateClusterSupportBundle]
+* xref:reference_element_api_createsupportbundle.adoc[CreateSupportBundle을 참조하십시오]
+* xref:reference_element_api_deleteallsupportbundles.adoc[DeleteAllSupportBundles 를 참조하십시오]
+* xref:reference_element_api_disablemaintenancemode.adoc[Disable유지보수모드]
+* xref:reference_element_api_disablessh.adoc[DisableSsh(비활성화 시]
+* xref:reference_element_api_enablemaintenancemode.adoc[Enable유지보수모드]
+* xref:reference_element_api_enablessh.adoc[서버]
+* xref:reference_element_api_getclusterconfig.adoc[GetClusterConfig]
+* xref:reference_element_api_getclusterstate.adoc[GetClusterState 를 선택합니다]
+* xref:reference_element_api_getconfig.adoc[getconfig를 참조하십시오]
+* xref:reference_element_api_getdriveconfig.adoc[GetDriveConfig 를 참조하십시오]
+* xref:reference_element_api_gethardwareconfig.adoc[GetHardwareConfig 를 참조하십시오]
+* xref:reference_element_api_gethardwareinfo.adoc[GetHardwareInfo 를 참조하십시오]
+* xref:reference_element_api_getipmiconfig.adoc[GetIpmiConfig 를 참조하십시오]
+* xref:reference_element_api_getipmiinfo.adoc[GetIpmiInfo 를 참조하십시오]
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetworkConfig 를 참조하십시오]
+* xref:reference_element_api_getnetworkinterface.adoc[GetNetworkInterface 를 참조하십시오]
+* xref:reference_element_api_getnodeactivetlsciphers.adoc[GetNodeActiveTlsCiphers 를 참조하십시오]
+* xref:reference_element_api_getnodefipsdrivesreport.adoc[GetNodeFipsDrivesReport 를 참조하십시오]
+* xref:reference_element_api_getnodesslcertificate.adoc[GetNodeSSLCertificate를 참조하십시오]
+* xref:reference_element_api_getnodesupportedtlsciphers.adoc[GetNodeSupportedTlsCiphers 를 참조하십시오]
+* xref:reference_element_api_getpendingoperation.adoc[GetPendingOperation 을 참조하십시오]
+* xref:reference_element_api_getsshinfo.adoc[GetSshInfo 를 참조하십시오]
+* xref:reference_element_api_listdrivehardware.adoc[목록하드웨어]
+* xref:reference_element_api_listnetworkinterfaces.adoc[ListNetworkInterfaces 를 참조하십시오]
+* xref:reference_element_api_listtests.adoc[ListTests(목록 테스트]
+* xref:reference_element_api_listutilities.adoc[목록\n Utilities]
+* xref:reference_element_api_removenodesslcertificate.adoc[RemoveNodeSSLCertificate를 참조하십시오]
+* xref:reference_element_api_resetdrives.adoc[재설정 드라이브]
+* xref:reference_element_api_resetnode.adoc[ResetNode 를 선택합니다]
+* xref:reference_element_api_resetnodesupplementaltlsciphers.adoc[ResetNodeSupplementalTlsCiphers 를 참조하십시오]
+* xref:reference_element_api_restartnetworking.adoc[다시 시작 네트워킹]
+* xref:reference_element_api_restartservices.adoc[서비스를 다시 시작합니다]
+* xref:reference_element_api_setclusterconfig.adoc[SetClusterConfig]
+* xref:reference_element_api_setconfig.adoc[설정 구성]
+* xref:reference_element_api_setnetworkconfig.adoc[SetNetworkConfig]
+* xref:reference_element_api_setnodesslcertificate.adoc[SetNodeSSLCertificate를 선택합니다]
+* xref:reference_element_api_setnodesupplementaltlsciphers.adoc[SetNodeSupplementalTlsCiphers 를 참조하십시오]
+* xref:reference_element_api_shutdown.adoc[종료]
+* xref:reference_element_api_testconnectensemble.adoc[TestConnectEnsemble을 참조하십시오]
+* xref:reference_element_api_testconnectmvip.adoc[테스트 ConnectMvip]
+* xref:reference_element_api_testconnectsvip.adoc[테스트 ConnectSvip]
+* xref:reference_element_api_testdrives.adoc[테스트 드라이브]
+* xref:reference_element_api_testhardwareconfig.adoc[TestHardwareConfig]
+* xref:reference_element_api_testlocatecluster.adoc[TestLocateCluster를 참조하십시오]
+* xref:reference_element_api_testlocalconnectivity.adoc[TestLocalConnectivity를 클릭합니다]
+* xref:reference_element_api_testnetworkconfig.adoc[TestNetworkConfig를 참조하십시오]
+* xref:reference_element_api_testping.adoc[테스트 핑]
+* xref:reference_element_api_testremoteconnectivity.adoc[TestRemoteConnectivity를 참조하십시오]
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
+

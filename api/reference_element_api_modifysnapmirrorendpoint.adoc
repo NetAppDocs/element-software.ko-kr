@@ -1,0 +1,102 @@
+---
+permalink: api/reference_element_api_modifysnapmirrorendpoint.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,snapmirror,endpoint,modifysnapmirrorendpoint 
+summary: Element 소프트웨어 웹 UI에서는 ModifySnapMirrorEndpoint 메서드를 사용하여 SnapMirror 끝점의 이름 및 관리 특성을 변경합니다. 
+---
+= ModifySnapMirrorEndpoint입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 소프트웨어 웹 UI에서는 ModfySnapMirrorEndpoint 메서드를 사용하여 SnapMirror 끝점의 이름 및 관리 특성을 변경합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+SnapMirrorEndpointID입니다
+ a| 
+수정할 SnapMirror 엔드포인트입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+관리 IP
+ a| 
+ONTAP 시스템의 새 관리 IP 주소입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+사용자 이름
+ a| 
+ONTAP 시스템의 새 관리 사용자 이름입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+암호
+ a| 
+ONTAP 시스템의 새 관리 암호입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+snapMirrorEndpoint
+ a| 
+수정된 SnapMirror 엔드포인트에 대한 정보
+ a| 
+xref:reference_element_api_snapmirrorendpoint.adoc[snapMirrorEndpoint]
+
+|===
+
+
+== 버전 이후 새로운 기능
+
+10.0

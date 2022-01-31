@@ -1,0 +1,27 @@
+---
+permalink: storage/concept_system_manage_system_management.html 
+sidebar: sidebar 
+keywords: element, cluster, fips, cluster, multi-factor authentication, authentication 
+summary: 'Element UI에서 시스템을 관리할 수 있습니다. 여기에는 다중 요소 인증 활성화, 클러스터 설정 관리, FIPS(Federal Information Processing Standards) 지원, 외부 키 관리 사용 등이 포함됩니다.' 
+---
+= 시스템 관리
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element UI에서 시스템을 관리할 수 있습니다. 여기에는 다중 요소 인증 활성화, 클러스터 설정 관리, FIPS(Federal Information Processing Standards) 지원, 외부 키 관리 사용 등이 포함됩니다.
+
+* link:concept_system_manage_mfa_enable_multi_factor_authentication.html["다중 요소 인증을 사용합니다"]
+* link:concept_system_manage_cluster_configure_cluster_settings.html["클러스터 설정을 구성합니다"]
+* link:task_system_manage_fips_create_a_cluster_supporting_fips_drives.html["FIPS 드라이브를 지원하는 클러스터를 생성합니다"]
+* link:concept_system_manage_key_get_started_with_external_key_management.html["외부 키 관리를 시작합니다"]
+
+
+
+
+== 를 참조하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

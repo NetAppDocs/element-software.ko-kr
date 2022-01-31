@@ -1,0 +1,70 @@
+---
+permalink: api/reference_element_api_getsshinfo.html 
+sidebar: sidebar 
+keywords: SSH,status,get,getting,getsshinfo 
+summary: GetSshInfo 메서드를 사용하여 단일 노드에서 SSH 서비스의 상태를 쿼리할 수 있습니다. 
+---
+= GetSshInfo 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetSshInfo" 메서드를 사용하여 단일 노드에서 SSH 서비스의 상태를 쿼리할 수 있습니다.
+
+
+NOTE: SolidFire 엔터프라이즈 SDS는 이 방법을 지원하지 않습니다. SolidFire ESDS 시스템에서 이 메서드를 사용하면 메서드가 오류를 반환합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+결과
+ a| 
+이 노드에 대한 SSH 서비스의 상태입니다.
+ a| 
+부울
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+    "method" : "GetSshInfo",
+    "params" : {},
+    "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "enabled": false
+    }
+}
+----

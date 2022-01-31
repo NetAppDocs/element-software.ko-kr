@@ -1,0 +1,103 @@
+---
+permalink: api/reference_element_api_breaksnapmirrorvolume.html 
+sidebar: sidebar 
+keywords: SnapMirror,volume,volumes,break,breaking,relationship,ONTAP,source,snapshot 
+summary: Element 웹 UI에서는 BreakSnapMirrorVolume 메서드를 사용하여 ONTAP 소스 컨테이너와 Element 타겟 볼륨 간의 SnapMirror 관계를 중단합니다. Element SnapMirror 볼륨을 분할하면 데이터를 Element 볼륨으로 복제하는 동안 ONTAP 시스템을 사용할 수 없게 되는 경우에 유용합니다. 스토리지 관리자는 이 기능을 사용하여 Element SnapMirror 볼륨을 제어하고 원격 ONTAP 시스템과의 관계를 끊은 다음 볼륨을 이전 스냅샷으로 되돌릴 수 있습니다. 
+---
+= BreakSnapMirrorVolume을 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 웹 UI에서는 'BreakSnapMirrorVolume' 메서드를 사용하여 ONTAP 소스 컨테이너와 Element 타겟 볼륨 간의 SnapMirror 관계를 중단하게 됩니다. Element SnapMirror 볼륨을 분할하면 데이터를 Element 볼륨으로 복제하는 동안 ONTAP 시스템을 사용할 수 없게 되는 경우에 유용합니다. 스토리지 관리자는 이 기능을 사용하여 Element SnapMirror 볼륨을 제어하고 원격 ONTAP 시스템과의 관계를 끊은 다음 볼륨을 이전 스냅샷으로 되돌릴 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+볼륨 ID
+ a| 
+중단 작업을 수행할 볼륨입니다. 볼륨 액세스 모드는 snapMirrorTarget이어야 합니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+스냅샷 ID입니다
+ a| 
+이 ID로 식별된 스냅샷으로 볼륨을 롤백합니다. 기본 동작은 가장 최근 스냅샷으로 롤백하는 것입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+보존
+ a| 
+snapshotID로 식별되는 스냅샷보다 최신 스냅샷을 보존합니다. 가능한 값:
+
+* True: snapshotID보다 최신 스냅샷을 유지합니다.
+* False: snapshotID보다 최신 스냅샷을 보존하지 마십시오.
+
+
+FALSE이면 snapshotID보다 더 최신 스냅샷이 삭제됩니다.
+ a| 
+부울
+ a| 
+거짓
+ a| 
+아니요
+
+
+
+ a| 
+액세스
+ a| 
+결과 볼륨 액세스 모드입니다. 가능한 값:
+
+* 읽기/쓰기
+* 읽기 전용
+* 잠금
+
+ a| 
+문자열
+ a| 
+읽기/쓰기
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 버전 이후 새로운 기능
+
+10.0
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_breaksnapmirrorrelationship.adoc[BreakSnapMirrorRelationship을 참조하십시오]

@@ -1,0 +1,56 @@
+---
+permalink: api/reference_element_api_disableidpauthentication.html 
+sidebar: sidebar 
+keywords: IdP,idp,authentication,disable 
+summary: DisableIdpAuthentication 메서드를 사용하여 클러스터에 대한 타사 IdP를 사용한 인증 지원을 해제할 수 있습니다. 비활성화되면 타사 IdP에 의해 인증된 사용자가 더 이상 클러스터에 액세스할 수 없으며 활성화된 인증된 모든 세션이 무효화되거나 연결이 해제됩니다. LDAP 및 클러스터 관리자는 지원되는 UI를 통해 클러스터에 액세스할 수 있습니다. 
+---
+= DisableIdpAuthentication을 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"disableIdpAuthentication" 방법을 사용하여 클러스터에 대한 타사 IdP를 사용한 인증 지원을 해제할 수 있습니다. 비활성화되면 타사 IdP에 의해 인증된 사용자가 더 이상 클러스터에 액세스할 수 없으며 활성화된 인증된 모든 세션이 무효화되거나 연결이 해제됩니다. LDAP 및 클러스터 관리자는 지원되는 UI를 통해 클러스터에 액세스할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "DisableIdpAuthentication",
+  "params": {}
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+"result": {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+12.0

@@ -1,0 +1,24 @@
+---
+permalink: storage/task_system_manage_cluster_enable_and_disable_support_access.html 
+sidebar: sidebar 
+keywords: support access, enable, disable 
+summary: 문제 해결을 위해 SSH를 통해 NetApp 지원 담당자가 스토리지 노드에 액세스하도록 일시적으로 지원 액세스를 설정할 수 있습니다. 
+---
+= 지원 액세스를 설정 및 해제합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+문제 해결을 위해 SSH를 통해 NetApp 지원 담당자가 스토리지 노드에 액세스하도록 일시적으로 지원 액세스를 설정할 수 있습니다.
+
+지원 액세스를 변경하려면 클러스터 관리자 권한이 있어야 합니다.
+
+
+NOTE: SolidFire 엔터프라이즈 SDS 클러스터에서는 이 기능을 사용할 수 없습니다.
+
+. Cluster * > * Settings * 를 클릭합니다.
+. 지원 액세스 사용/사용 안 함 섹션에서 지원 액세스를 허용할 기간(시간)을 입력합니다.
+. 지원 액세스 사용 * 을 클릭합니다.
+. * 선택 사항: * 지원 액세스를 비활성화하려면 * 지원 액세스 비활성화 * 를 클릭합니다.
+

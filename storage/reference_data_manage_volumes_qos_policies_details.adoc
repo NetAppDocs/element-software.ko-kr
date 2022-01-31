@@ -1,0 +1,39 @@
+---
+permalink: storage/reference_data_manage_volumes_qos_policies_details.html 
+sidebar: sidebar 
+keywords: qos policies 
+summary: 관리 탭에서 QoS 정책의 세부 정보를 볼 수 있습니다. 
+---
+= QoS 정책 세부 정보
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+관리 탭에서 QoS 정책의 세부 정보를 볼 수 있습니다.
+
+* * ID *
++
+QoS 정책에 대한 시스템 생성 ID입니다.
+
+* * 이름 *
++
+QoS 정책의 사용자 정의 이름입니다.
+
+* 최소 IOPS *
++
+볼륨에 대해 보장된 최소 IOPS 수입니다.
+
+* * 최대 IOPS *
++
+볼륨에 허용되는 최대 IOPS 수입니다.
+
+* * 버스트 IOPS *
++
+해당 볼륨에 대해 짧은 기간 동안 허용되는 최대 IOPS 수입니다. 기본값 = 15,000.
+
+* 볼륨 *
++
+에는 정책을 사용하는 볼륨 수가 나와 있습니다. 이 번호는 정책이 적용된 볼륨 표로 연결됩니다.
+
+

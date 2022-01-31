@@ -1,0 +1,260 @@
+---
+permalink: api/reference_element_api_listevents.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,event,events,listevents 
+summary: ListEvents 메서드를 사용하여 클러스터에서 감지된 이벤트를 가장 오래된 이벤트부터 최신 이벤트까지 정렬할 수 있습니다. 
+---
+= ListEvents 를 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListEvents" 메서드를 사용하면 클러스터에서 감지된 이벤트를 가장 오래된 이벤트부터 최신 이벤트까지 정렬할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+드라이브 ID입니다
+ a| 
+이 드라이브 ID를 가진 이벤트만 반환하도록 지정합니다.
+ a| 
+정수
+ a| 
+0
+ a| 
+아니요
+
+
+
+ a| 
+endEventID입니다
+ a| 
+반환할 이벤트 ID 범위의 끝을 식별합니다.
+ a| 
+정수
+ a| 
+(무제한)
+ a| 
+아니요
+
+
+
+ a| 
+PublishTime(게시 시간)
+ a| 
+이 시간 이전에 게시된 이벤트만 반환되도록 지정합니다.
+ a| 
+문자열
+ a| 
+0
+ a| 
+아니요
+
+
+
+ a| 
+endReportTime을 참조하십시오
+ a| 
+이 시간 이전에 보고된 이벤트만 반환되도록 지정합니다.
+ a| 
+문자열
+ a| 
+0
+ a| 
+아니요
+
+
+
+ a| 
+이벤트 유형
+ a| 
+반환할 이벤트 유형을 지정합니다. 을 참조하십시오 xref:reference_element_api_event.adoc[이벤트] 가능한 이벤트 유형
+ a| 
+문자열
+ a| 
+0
+ a| 
+아니요
+
+
+
+ a| 
+maxEvents 를 선택합니다
+ a| 
+반환할 최대 이벤트 수를 지정합니다.
+ a| 
+정수
+ a| 
+(무제한)
+ a| 
+아니요
+
+
+
+ a| 
+노드 ID입니다
+ a| 
+이 노드 ID를 가진 이벤트만 반환하도록 지정합니다.
+ a| 
+정수
+ a| 
+ a| 
+
+
+
+ a| 
+서비스 ID입니다
+ a| 
+이 서비스 ID를 가진 이벤트만 반환하도록 지정합니다.
+ a| 
+ a| 
+ a| 
+
+
+
+ a| 
+startEventID입니다
+ a| 
+반환할 이벤트 범위의 시작 부분을 식별합니다.
+ a| 
+정수
+ a| 
+0
+ a| 
+아니요
+
+
+
+ a| 
+StartPublishTime(시작 시간)
+ a| 
+이 시간 이후에 게시된 이벤트만 반환되도록 지정합니다.
+ a| 
+문자열
+ a| 
+0
+ a| 
+아니요
+
+
+
+ a| 
+StartReportTime을 시작합니다
+ a| 
+이 시간 이후에 보고된 이벤트만 반환되도록 지정합니다.
+ a| 
+문자열
+ a| 
+0
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+이벤트
+ a| 
+이벤트 목록입니다.
+ a| 
+xref:reference_element_api_event.adoc[이벤트] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "ListEvents",
+   "params": {
+   },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id":1,
+  "result":{
+    "events":[
+       {
+          "details":
+            {
+              "paramGCGeneration":1431550800,
+              "paramServiceID":2
+            },
+          "driveID":0,
+          "eventID":2131,
+          "eventInfoType":"gcEvent",
+          "message":"GC Cluster Coordination Complete",
+          "nodeID":0,
+          "serviceID":2,
+          "severity":0,
+          "timeOfPublish":"2015-05-13T21:00:02.361354Z",
+          "timeOfReport":"2015-05-13T21:00:02.361269Z"
+       },{
+          "details":
+               {
+                  "eligibleBS":[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,24,25,26,27,28,29,30,31,40,41,42,43,44,45,46,47,52,53,54,55,56,57,58,59,60],
+                  "generation":1431550800,
+                  "participatingSS":[23,35,39,51]
+               },
+          "driveID":0,
+          "eventID":2130,
+          "eventInfoType":"gcEvent",
+          "message":"GCStarted",
+          "nodeID":0,
+          "serviceID":2,
+          "severity":0,
+          "timeOfPublish":"2015-05-13T21:00:02.354128Z",
+          "timeOfReport":"2015-05-13T21:00:02.353894Z"
+       },{
+          "details":"",
+          "driveID":0,
+          "eventID":2129,
+          "eventInfoType":"tSEvent",
+          "message":"return code:2 t:41286 tt:41286 qcc:1 qd:1 qc:1 vrc:1 tt:2 ct:Write etl:524288",
+          "nodeID":0,
+          "serviceID":0,
+          "severity":0,
+          "timeOfPublish":"2015-05-13T20:45:21.586483Z",
+          "timeOfReport":"2015-05-13T20:45:21.586311Z"
+       }
+     ]
+   }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

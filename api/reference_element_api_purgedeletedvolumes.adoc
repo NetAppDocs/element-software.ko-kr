@@ -1,0 +1,85 @@
+---
+permalink: api/reference_element_api_purgedeletedvolumes.html 
+sidebar: sidebar 
+keywords: volume,volumes,purge,purging,multiple,deleted,purgedeletedvolumes 
+summary: PurgeDeletedVolumes 메서드를 사용하여 삭제된 볼륨을 즉시 영구적으로 제거할 수 있습니다. 이 방법을 사용하여 한 번에 최대 500개의 볼륨을 제거할 수 있습니다. 
+---
+= PurgeDeletedVolumes를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"PurgeDeletedVolumes" 메서드를 사용하여 삭제된 볼륨을 즉시 영구적으로 제거할 수 있습니다. 이 방법을 사용하면 한 번에 최대 500개의 볼륨을 제거할 수 있습니다.
+
+볼륨을 제거하려면 먼저 DeleteVolumes를 사용하여 볼륨을 삭제해야 합니다. 일정 시간이 지나면 볼륨이 자동으로 제거되므로 일반적으로 이 방법을 사용하지 않아도 됩니다.
+
+
+NOTE: 한 번에 많은 볼륨을 비우거나, 각 볼륨을 삭제하는 볼륨에 연결된 스냅샷이 여러 개 있는 경우 메서드가 실패하고 "xDBConnectionLoss" 오류가 반환될 수 있습니다. 이 경우 더 적은 볼륨으로 메서드 호출을 다시 시도하십시오.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+| 볼륨 ID | 시스템에서 제거할 볼륨의 볼륨 ID 목록입니다. | 정수 배열 | 아니요 | 아니요 
+
+
+| 계정 ID | 계정 ID 목록입니다. 지정된 모든 계정의 모든 볼륨이 시스템에서 제거됩니다. | 정수 배열 | 아니요 | 아니요 
+
+
+| 볼륨 액세스 그룹 ID | 볼륨 액세스 그룹 ID 목록입니다. 지정된 모든 볼륨 액세스 그룹의 모든 볼륨이 시스템에서 제거됩니다. | 정수 배열 | 아니요 | 아니요 
+|===
+* 참고: * 메서드 호출당 위의 매개 변수 중 하나만 지정할 수 있습니다. 둘 이상의 값을 지정하거나 지정하지 않을 경우 오류가 발생합니다.
+
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "PurgeDeletedVolumes",
+   "params": {
+      "accountIDs" : [1, 2, 3]
+   },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id" : 1,
+  "result": {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_deletevolumes.adoc[DeleteVolumes 를 클릭합니다]

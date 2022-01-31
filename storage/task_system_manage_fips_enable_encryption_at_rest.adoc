@@ -1,0 +1,26 @@
+---
+permalink: storage/task_system_manage_fips_enable_encryption_at_rest.html 
+sidebar: sidebar 
+keywords: fips, security, encryption at rest, enable, disable, drives 
+summary: 클러스터 전체의 유휴 암호화를 사용하거나 사용하지 않도록 설정할 수 있습니다. 이 기능은 기본적으로 사용되지 않습니다. FIPS 드라이브를 지원하려면 사용되지 않는 데이터에 대한 암호화를 설정해야 합니다. 
+---
+= 유휴 데이터 암호화 사용
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클러스터 전체의 유휴 암호화를 사용하거나 사용하지 않도록 설정할 수 있습니다. 이 기능은 기본적으로 사용되지 않습니다. FIPS 드라이브를 지원하려면 사용되지 않는 데이터에 대한 암호화를 설정해야 합니다.
+
+. NetApp Element 소프트웨어 UI에서 * 클러스터 * > * 설정 * 을 클릭합니다.
+. 저장 시 암호화 사용 * 을 클릭합니다.
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.adoc[클러스터에 대한 암호화를 사용하거나 사용하지 않도록 설정합니다]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

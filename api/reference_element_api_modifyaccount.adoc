@@ -1,0 +1,187 @@
+---
+permalink: api/reference_element_api_modifyaccount.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,accounts,settings,modifyaccount 
+summary: ModifyAccount 메서드를 사용하여 기존 계정을 수정할 수 있습니다. 
+---
+= ModifyAccount(수정 계정)
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ModifyAccount 방식을 사용하여 기존 계정을 수정할 수 있습니다.
+
+계정을 잠그면 해당 계정의 기존 연결이 즉시 종료됩니다. 계정의 CHAP 설정을 변경하면 기존 연결이 활성 상태로 유지되며 새 CHAP 설정은 이후의 연결 또는 재연결에 사용됩니다. 계정의 특성을 지우려면 attributes 매개 변수에 대해 {}를 지정하십시오.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+계정 ID입니다
+ a| 
+수정할 계정의 계정 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+속성
+ a| 
+JSON 개체 형식의 이름-값 쌍 목록입니다.
+ a| 
+JSON 개체
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+기본 표시
+ a| 
+초기자가 CHAP 계정 자격 증명을 사용하여 볼륨에 액세스할 수 있는지 여부를 지정합니다.
+ a| 
+부울
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+이니토시크입니다
+ a| 
+이니시에이터에 사용할 CHAP 암호입니다. 이 비밀은 길이가 12-16자여야 하며 꿰뚫을 수 없습니다. 이니시에이터 CHAP 암호는 고유해야 하며 대상 CHAP 암호와 같을 수 없습니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+상태
+ a| 
+계정의 상태입니다. 가능한 값:
+
+* 활성: 계정이 활성 상태이고 연결이 허용됩니다.
+* 잠김: 계정이 잠겨 있고 연결이 거부되었습니다.
+
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+targetSecret
+ a| 
+대상에 사용할 CHAP 암호(상호 CHAP 인증) 이 비밀은 길이가 12-16자여야 하며 꿰뚫을 수 없습니다. 타겟 CHAP 암호는 고유해야 하며 이니시에이터 CHAP 암호와 같을 수 없습니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+사용자 이름
+ a| 
+계정과 연결된 사용자 이름을 변경하는 데 사용됩니다. (1-64자 길이여야 함).
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+계정
+ a| 
+수정된 계정에 대한 정보가 포함된 개체입니다.
+ a| 
+xref:reference_element_api_account.adoc[계정]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다. 이 예제에서는 다음과 같이 {}을 지정하여 특성을 지웁니다.
+
+[listing]
+----
+{
+   "method": "ModifyAccount",
+   "params": {
+     "accountID"  : 25,
+     "status"   : "locked",
+     "attributes" : {}
+   },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "account": {
+        "storageContainerID": "abcdef01-1234-5678-90ab-cdef01234567",
+        "username": "user1",
+        "accountID": 1,
+        "volumes": [
+        ],
+        "enableChap": true,
+        "initiatorSecret": "txz123456q890",
+        "attributes": {
+        },
+        "status": active",
+        "targetSecret": "rxe123b567890"
+    }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

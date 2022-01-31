@@ -1,0 +1,148 @@
+---
+permalink: api/reference_element_api_modifyqospolicy.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,qos,policy,policies,modifyqospolicy 
+summary: ModifyQoSPolicy 메서드를 사용하여 시스템의 기존 QoS 정책을 수정할 수 있습니다. 
+---
+= 수정 서비스 정책
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+수정-QoSPolicy 방식을 사용하여 시스템에 대한 기존 QoS 정책을 수정할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+qosPolicyID입니다
+ a| 
+수정할 정책의 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+이름
+ a| 
+제공된 경우 QoS 정책(예: 골드, 플래티넘, 실버)의 이름이 이 값으로 변경됩니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+QoS를 참조하십시오
+ a| 
+제공된 경우 이 정책에 대한 QoS 설정이 이러한 설정으로 변경됩니다. 부분 QoS 값을 제공하고 QoS 설정 중 일부만 변경할 수 있습니다.
+ a| 
+QoS 개체
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+qosPolicy를 참조하십시오
+ a| 
+새로 수정된 QoS 정책의 세부 정보입니다.
+ a| 
+xref:reference_element_api_qospolicy.adoc[QoSPolicy를 참조하십시오]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "id": 1950,
+  "method": "ModifyQoSPolicy",
+  "params": {
+    "qosPolicyID": 2,
+    "qos": {
+      "minIOPS": 51,
+      "maxIOPS": 15002,
+      "burstIOPS": 15002
+    }
+  }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1950,
+  "result": {
+    "qosPolicy": {
+      "name": "bronze",
+      "qos": {
+        "burstIOPS": 15002,
+        "burstTime": 60,
+        "curve": {
+          "4096": 100,
+          "8192": 160,
+          "16384": 270,
+          "32768": 500,
+          "65536": 1000,
+          "131072": 1950,
+          "262144": 3900,
+          "524288": 7600,
+          "1048576": 15000
+        },
+        "maxIOPS": 15002,
+        "minIOPS": 51
+      },
+      "qosPolicyID": 2,
+      "volumeIDs": [
+        2
+      ]
+    }
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+10.0

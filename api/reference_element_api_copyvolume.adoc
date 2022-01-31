@@ -1,0 +1,139 @@
+---
+permalink: api/reference_element_api_copyvolume.html 
+sidebar: sidebar 
+keywords: volume,volumes,CopyVolume,overwrite,overwriting,data 
+summary: 'CopyVolume 메서드를 사용하여 기존 볼륨의 데이터 내용을 다른 볼륨의 데이터 컨텐츠로 덮어쓸 수 있습니다\(또는 snapshot\). IQN, QoS 설정, 크기, 계정, 볼륨 액세스 그룹 구성원 자격 등과 같은 대상 볼륨의 속성은 변경되지 않습니다. 대상 볼륨이 이미 있어야 하며 소스 볼륨과 크기가 같아야 합니다.' 
+---
+= CopyVolume(복사 볼륨)
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"CopyVolume" 방법을 사용하여 기존 볼륨의 데이터 내용을 다른 볼륨(또는 스냅샷)의 데이터 내용으로 덮어쓸 수 있습니다. IQN, QoS 설정, 크기, 계정, 볼륨 액세스 그룹 구성원 자격 등과 같은 대상 볼륨의 속성은 변경되지 않습니다. 대상 볼륨이 이미 있어야 하며 소스 볼륨과 크기가 같아야 합니다.
+
+작업이 시작되기 전에 클라이언트가 대상 볼륨을 마운트 해제하는 것이 가장 좋습니다. 작업 중에 대상 볼륨이 수정되면 변경 사항이 손실됩니다. 이 작업을 완료하는 데 시간이 걸릴 수 있습니다. 를 사용할 수 있습니다 xref:reference_element_api_getasyncresult.adoc[GetAsyncResult 를 참조하십시오] 프로세스가 완료된 시점을 결정하는 방법 및 을 참조하십시오 xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs 를 선택합니다] 를 눌러 복사 진행 상태를 확인합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+dstVolumeID
+ a| 
+덮어쓸 볼륨의 VolumeID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+볼륨 ID
+ a| 
+읽을 볼륨의 VolumeID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+스냅샷 ID입니다
+ a| 
+클론의 소스로 사용되는 스냅샷의 ID입니다. ID가 제공되지 않으면 현재 활성 볼륨이 사용됩니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+asyncHandle
+ a| 
+작업 결과를 얻는 데 사용되는 Handle 값입니다.
+ a| 
+정수
+
+
+
+ a| 
+cloneid(클론 ID)
+ a| 
+새로 복제된 볼륨의 cloneid입니다.
+ a| 
+정수
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "CopyVolume",
+   "params": {
+      "volumeID" : 3,
+      "dstVolumeID" : 2
+   },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "asyncHandle": 9,
+    "cloneID": 5
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult 를 참조하십시오]
+* xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs 를 선택합니다]
+

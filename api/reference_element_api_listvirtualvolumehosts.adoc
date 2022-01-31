@@ -1,0 +1,103 @@
+---
+permalink: api/reference_element_api_listvirtualvolumehosts.html 
+sidebar: sidebar 
+keywords: virtual,volume,vvol,host,hosts,list,listing,known,listvirtualvolumehosts 
+summary: ListVirtualVolumeHosts 메서드를 사용하여 클러스터에 알려진 모든 가상 볼륨 호스트의 목록을 가져올 수 있습니다. 가상 볼륨 호스트는 VASA API 공급자와 세션을 시작한 VMware ESX 호스트입니다. 
+---
+= ListVirtualVolumeHosts 를 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListVirtualVolumeHosts" 방법을 사용하여 클러스터에 알려진 모든 가상 볼륨 호스트의 목록을 가져올 수 있습니다. 가상 볼륨 호스트는 VASA API 공급자와 세션을 시작한 VMware ESX 호스트입니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+가상볼륨 호스트 ID
+ a| 
+정보를 검색할 가상 볼륨 호스트 ID 목록입니다. 이 매개 변수를 생략하면 모든 가상 볼륨 호스트에 대한 정보가 반환됩니다.
+ a| 
+virtualVolumeHostID UUID 배열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+호스트
+ a| 
+클러스터의 가상 볼륨 호스트를 설명하는 객체 목록입니다.
+ a| 
+xref:reference_element_api_host.adoc[호스트] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "ListVirtualVolumeHosts",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "hosts": [
+      {
+        "bindings": [],
+        "clusterID": "5ebdb4ad-9617-4647-adfd-c1013578483b",
+        "hostAddress": "172.30.89.117",
+        "initiatorNames": [
+          "iqn.1998-01.com.vmware:zdc-dhcp-0-c-29-d6-4b-f1-1a0cd614",
+          "iqn.1998-01.com.vmware:zdc-dhcp-0-c-29-d6-4b-f1-5bcf9254"
+        ],
+        "virtualVolumeHostID": "564de1a4-9a99-da0f-8b7c-3a41dfd64bf1",
+        "visibleProtocolEndpointIDs": [
+          "5dd53da0-b9b7-43f9-9b7e-b41c2558e92b"
+        ]
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

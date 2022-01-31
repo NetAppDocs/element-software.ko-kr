@@ -1,0 +1,74 @@
+---
+permalink: api/reference_element_api_enableidpauthentication.html 
+sidebar: sidebar 
+keywords: IdP,idp,authentication,enable 
+summary: EnableIdpAuthentication 메서드를 사용하여 클러스터에 대한 타사 IdP를 사용한 인증 지원을 설정할 수 있습니다. IDP 인증이 활성화되면 LDAP 및 클러스터 관리자가 지원되는 UI를 통해 클러스터에 더 이상 액세스할 수 없으며 활성화된 인증된 세션이 무효화되거나 연결이 해제됩니다. 타사 IdP에서 인증된 사용자만 지원되는 UI를 통해 클러스터에 액세스할 수 있습니다. 
+---
+= EnableIdpAuthentication 을 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"EnableIdpAuthentication" 메서드를 사용하여 클러스터에 대한 타사 IdP를 사용한 인증 지원을 활성화할 수 있습니다. IDP 인증이 활성화되면 LDAP 및 클러스터 관리자가 지원되는 UI를 통해 클러스터에 더 이상 액세스할 수 없으며 활성화된 인증된 세션이 무효화되거나 연결이 해제됩니다. 타사 IdP에서 인증된 사용자만 지원되는 UI를 통해 클러스터에 액세스할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+idpConfigurationID입니다
+ a| 
+타사 IDP 구성의 UUID입니다. 하나의 IDP 구성만 존재하는 경우 기본값은 해당 구성을 활성화하는 것입니다. IdpConfiguration 이 하나만 있는 경우에는 idpConfigurationID 매개 변수를 제공하지 않아도 됩니다.
+ a| 
+UUID입니다
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "EnableIdpAuthentication",
+  "params": {
+    "idpConfigurationID": "f983c602-12f9-4c67-b214-bf505185cfed",
+  }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+"result": {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+12.0

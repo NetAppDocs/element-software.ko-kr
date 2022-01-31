@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_idpconfiginfo.html 
+sidebar: sidebar 
+keywords: objects,object,idpConfigInfo 
+summary: 'idpConfigInfo 개체에는 타사 ID 공급자\(IDP\)에 대한 구성 및 통합 세부 정보가 포함되어 있습니다.' 
+---
+= idpConfigInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+idpConfigInfo 개체에는 타사 ID 공급자(IDP)와 관련된 구성 및 통합 세부 정보가 포함되어 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+활성화됨
+ a| 
+이 타사 IdPconfiguration의 활성화 여부를 지정합니다.
+ a| 
+부울
+
+
+
+ a| 
+idpConfigurationID입니다
+ a| 
+타사 IDP 구성의 UUID입니다.
+ a| 
+UUID입니다
+
+
+
+ a| 
+idpMetadata
+ a| 
+SAML 2.0 SSO(Single Sign-On)에 대한 구성 및 통합 세부 정보에 대한 메타데이터입니다.
+ a| 
+문자열
+
+
+
+ a| 
+idpName입니다
+ a| 
+SAML 2.0 SSO(Single Sign-On)에 대한 IDP 공급자를 검색하는 이름입니다.
+ a| 
+문자열
+
+
+
+ a| 
+serviceProviderCertificate입니다
+ a| 
+이 IDP와의 통신에 사용할 PEM 형식 Base64 인코딩된 PKCS #10 X.509 인증서.
+ a| 
+문자열
+
+
+
+ a| 
+SpMetadataUrl 을 참조하십시오
+ a| 
+트러스트 관계를 설정하기 위해 IDP에 제공할 클러스터에서 SP(서비스 공급자) 메타데이터를 검색하는 URL입니다.
+ a| 
+문자열
+
+|===

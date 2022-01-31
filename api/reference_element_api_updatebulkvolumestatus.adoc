@@ -1,0 +1,183 @@
+---
+permalink: api/reference_element_api_updatebulkvolumestatus.html 
+sidebar: sidebar 
+keywords: updatebulkvolumestatus,update,updating,bulk,volume,status,job 
+summary: UpdateBulkVolumeStatus 메서드를 사용하여 StartBulkVolumeRead 또는 StartBulkVolumeWrite 메서드로 시작한 대량 볼륨 작업의 상태를 업데이트할 수 있습니다. 
+---
+= UpdateBulkVolumeStatus 를 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'UpdateBulkVolumeStatus' 메서드를 사용하여 'tartBulkVolumeRead' 또는 'tartBulkVolumeWrite' 방법으로 시작한 대량 볼륨 작업의 상태를 업데이트할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+키
+ a| 
+를 초기화하는 동안 할당된 키입니다 xref:reference_element_api_startbulkvolumeread.adoc[StartBulkVolumeRead] 또는 xref:reference_element_api_startbulkvolumewrite.adoc[StartBulkVolumeWrite] 세션.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+상태
+ a| 
+지정된 대량 볼륨 작업의 상태가 설정됩니다. 가능한 값:
+
+* 실행 중: 아직 활성 상태인 작업.
+* 완료: 완료된 작업.
+* 실패: 실패한 작업.
+
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+완료입니다
+ a| 
+벌크 볼륨 작업의 완료된 진행률을 백분율로 나타낸 것입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+메시지
+ a| 
+작업이 완료되면 벌크 볼륨 작업의 상태를 반환합니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+속성
+ a| 
+JSON 특성: 대량 볼륨 작업에 있는 항목을 업데이트합니다.
+ a| 
+JSON 개체
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+상태
+ a| 
+요청된 세션의 상태입니다. 반환된 상태:
+
+* 준비 중
+* 활성
+* 완료
+* 실패했습니다
+
+ a| 
+문자열
+
+
+
+ a| 
+속성
+ a| 
+메서드 호출에 지정된 특성을 반환합니다. 값은 변경되었는지 여부에 관계없이 반환됩니다.
+ a| 
+문자열
+
+
+
+ a| 
+URL
+ a| 
+세션이 아직 활성 상태인 경우에만 제공되는 노드의 웹 서버에 액세스하는 URL입니다.
+ a| 
+문자열
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "UpdateBulkVolumeStatus",
+   "params": {
+          "key": "0b2f532123225febda2625f55dcb0448",
+	      "status": "running"
+      },
+   "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id" : 1,
+   "result": {
+	  "status" : "running",
+	  "url" : "https://10.10.23.47:8443/"
+    }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_startbulkvolumeread.adoc[StartBulkVolumeRead]
+* xref:reference_element_api_startbulkvolumewrite.adoc[StartBulkVolumeWrite]
+

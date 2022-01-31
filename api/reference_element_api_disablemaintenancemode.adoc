@@ -1,0 +1,135 @@
+---
+permalink: api/reference_element_api_disablemaintenancemode.html 
+sidebar: sidebar 
+keywords: disable,maintenance,mode 
+summary: DisableMaintenanceMode 메서드를 사용하여 스토리지 노드를 유지 관리 모드에서 가져올 수 있습니다. 유지 관리를 완료하고 노드가 온라인 상태가 된 후에만 유지보수 모드를 해제해야 합니다. 
+---
+= Disable유지보수모드
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+DisableMaintenanceMode' 메서드를 사용하여 스토리지 노드를 유지보수 모드에서 벗어났을 수 있습니다. 유지 관리를 완료하고 노드가 온라인 상태가 된 후에만 유지보수 모드를 해제해야 합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+노드
+ a| 
+유지보수 모드에서 벗어났을 스토리지 노드 ID 목록입니다.
+ a| 
+정수 배열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+asyncHandle
+ a| 
+GetAsyncResult 메서드를 사용하여 이 asyncHandle 을 검색하고 유지 관리 모드 전환이 완료되는 시기를 결정할 수 있습니다.
+ a| 
+정수
+
+
+
+ a| 
+CurrentMode(현재 모드)
+ a| 
+노드의 현재 유지보수 모드 상태입니다. 가능한 값:
+
+* Disabled(비활성화): 요청된 유지 관리가 없습니다.
+* FailedToRecover: 노드가 유지보수 모드에서 복구되지 못했습니다.
+* Unexpected: 노드가 오프라인 상태로 발견되었지만 Disabled 모드에 있습니다.
+* RecoveringFromMaintenance: 노드가 유지보수 모드에서 복구 중입니다.
+* PreparingForMaintenance: 유지 관리를 수행할 노드를 준비하기 위한 작업이 수행됩니다.
+* ReadyForMaintenance: 노드를 유지 관리할 준비가 되었습니다.
+
+ a| 
+유지 관리 모드(문자열)
+
+
+
+ a| 
+requestedMode를 선택합니다
+ a| 
+요청된 노드의 유지보수 모드 상태입니다. 가능한 값:
+
+* Disabled(비활성화): 요청된 유지 관리가 없습니다.
+* FailedToRecover: 노드가 유지보수 모드에서 복구되지 못했습니다.
+* Unexpected: 노드가 오프라인 상태로 발견되었지만 Disabled 모드에 있습니다.
+* RecoveringFromMaintenance: 노드가 유지보수 모드에서 복구 중입니다.
+* PreparingForMaintenance: 유지 관리를 수행할 노드를 준비하기 위한 작업이 수행됩니다.
+* ReadyForMaintenance: 노드를 유지 관리할 준비가 되었습니다.
+
+ a| 
+유지 관리 모드(문자열)
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "DisableMaintenanceMode",
+  "params": {
+    "nodes": [6]
+  },
+"id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+        "requestedMode": "Disabled",
+        "asyncHandle": 1,
+        "currentMode": "Enabled"
+    }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+12.2
+
+
+
+== 자세한 내용을 확인하십시오
+
+http://docs.netapp.com/us-en/hci/docs/concept_hci_storage_maintenance_mode.html["NetApp HCI 스토리지 유지보수 모드의 개념"^]

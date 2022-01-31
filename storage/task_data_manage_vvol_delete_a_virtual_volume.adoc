@@ -1,0 +1,25 @@
+---
+permalink: storage/task_data_manage_vvol_delete_a_virtual_volume.html 
+sidebar: sidebar 
+keywords: virtual volume, delete, vvols, use Element UI to delete a vvol 
+summary: 가상 볼륨은 항상 VMware 관리 계층에서 삭제해야 하지만 가상 볼륨을 삭제하는 기능은 Element UI에서 사용하도록 설정됩니다. vSphere에서 SolidFire 스토리지의 가상 볼륨을 정리하지 못하는 경우와 같이 꼭 필요한 경우에만 Element UI에서 가상 볼륨을 삭제해야 합니다. 
+---
+= 가상 볼륨을 삭제합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+가상 볼륨은 항상 VMware 관리 계층에서 삭제해야 하지만 가상 볼륨을 삭제하는 기능은 Element UI에서 사용하도록 설정됩니다. vSphere에서 SolidFire 스토리지의 가상 볼륨을 정리하지 못하는 경우와 같이 꼭 필요한 경우에만 Element UI에서 가상 볼륨을 삭제해야 합니다.
+
+. VVol * > * Virtual Volumes * 를 선택합니다.
+. 삭제할 가상 볼륨에 대한 작업 아이콘을 클릭합니다.
+. 결과 메뉴에서 * 삭제 * 를 선택합니다.
++
+
+IMPORTANT: 가상 볼륨을 삭제하기 전에 먼저 VMware Management Layer에서 가상 볼륨을 삭제하여 가상 볼륨을 적절히 바인딩 해제해야 합니다. vSphere에서 SolidFire 스토리지의 가상 볼륨을 정리하지 못하는 경우와 같이 꼭 필요한 경우에만 Element UI에서 가상 볼륨을 삭제해야 합니다. Element UI에서 가상 볼륨을 삭제하면 볼륨이 즉시 제거됩니다.
+
+. 작업을 확인합니다.
+. 가상 볼륨 목록을 새로 고쳐 가상 볼륨이 제거되었는지 확인합니다.
+. * 선택 사항 *: * 보고 * > * 이벤트 로그 * 를 선택하여 퍼지가 성공했는지 확인합니다.
+

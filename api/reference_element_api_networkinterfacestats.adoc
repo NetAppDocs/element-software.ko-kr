@@ -1,0 +1,74 @@
+---
+permalink: api/reference_element_api_networkinterfacestats.html 
+sidebar: sidebar 
+keywords: object,objects,stats,statistics,networkInterfacestats 
+summary: networkInterfaceStats 개체에는 스토리지 노드의 개별 네트워크 인터페이스에 대한 네트워크 통계 및 오류 정보가 포함되어 있습니다. 
+---
+= 네트워크 인터페이스 통계
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+networkInterfaceStats 객체에는 네트워크 통계, 전송 및 수신된 총 패킷 수 및 스토리지 노드의 개별 네트워크 인터페이스에 대한 오류 정보가 포함됩니다. "ListNetworkInterfaceStats" API 메소드를 사용하여 스토리지 노드의 네트워크 인터페이스에 대한 정보를 나열할 수 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+| 충돌 | 감지된 충돌 수입니다. | 정수 
+
+
+| 이름 | 네트워크 인터페이스의 이름입니다. | 문자열 
+
+
+| rxBytes를 나타냅니다 | 수신된 총 바이트 수입니다. | 정수 
+
+
+| rxCrcErrors | CRC 오류가 발생한 수신된 패킷 수 | 정수 
+
+
+| RxDropped | drop 된 수신 패킷 수 | 정수 
+
+
+| rxErrors | 수신된 잘못된 패킷 또는 잘못된 형식의 패킷 수입니다. | 정수 
+
+
+| rx피오오류 | 수신된 데이터에 FIFO 오버런 오류 수. | 정수 
+
+
+| rxFrameErrors | 프레임 정렬 오류가 있는 수신 패킷 수. | 정수 
+
+
+| rxLengthErrors | 길이 오류가 있는 수신된 패킷 수입니다. | 정수 
+
+
+| RxMsedErrors를 선택합니다 | 수신기에서 놓친 패킷 수입니다. | 정수 
+
+
+| rxOverErrors | 이 인터페이스에 대한 수신기 링 버퍼 오버플로 오류 수입니다. | 정수 
+
+
+| rxPackets | 수신된 총 패킷 수입니다. | 정수 
+
+
+| txBytes를 나타냅니다 | 전송된 총 바이트 수입니다. | 정수 
+
+
+| txCarrierErrors입니다 | 전송 측의 반송파 오류 수. | 정수 
+
+
+| txErrors | 패킷 전송 오류 수입니다. | 정수 
+
+
+| txt피오오류 | 전송 측의 FIFO 오버런 오류 수. | 정수 
+
+
+| txPackets | 전송된 총 패킷 수입니다. | 정수 
+|===

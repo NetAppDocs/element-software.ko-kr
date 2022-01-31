@@ -1,0 +1,112 @@
+---
+permalink: esds/reference_esds_element_links.html 
+sidebar: sidebar 
+keywords: element, solidfire esds, volumes, accounts, snapshots, virtual volumes, remote replication 
+summary: '스토리지 클러스터에 SolidFire ESDS를 설치한 후 Element UI, Element API 또는 VCP(vCenter Server용 NetApp Element 플러그인)를 사용하여 스토리지 클러스터를 관리할 수 있습니다.' 
+---
+= SolidFire ESDS 스토리지 관리
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스토리지 클러스터에 SolidFire ESDS를 설치한 후 Element UI, Element API 또는 VCP(vCenter Server용 NetApp Element 플러그인)를 사용하여 스토리지 클러스터를 관리할 수 있습니다.
+
+다음은 다양한 스토리지 관리 작업을 위한 콘텐츠에 대한 링크입니다.
+
+* link:../storage/task_intro_use_basic_options_in_the_element_software_ui.html["Element 소프트웨어 UI에서 기본 옵션을 사용합니다"^]
+* link:../storage/task_data_manage_accounts_work_with_accounts_task.html["사용자 계정 작업"^]
+* link:../storage/task_data_manage_volumes_work_with_volumes_task.html["볼륨 작업"^]
++
+QoS 정책을 볼륨에 적용하는 방법에 대한 자세한 내용은 여기 를 참조하십시오.
+
+* link:../storage/concept_data_manage_vvol_work_virtual_volumes.html["가상 볼륨 작업"^]
+* link:../storage/concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html["볼륨 액세스 그룹 및 이니시에이터와 작업합니다"^]
+* link:../storage/task_data_protection_using_volume_snapshots.html["스냅샷 작업"^]
+* link:../storage/concept_system_manage_key_get_started_with_external_key_management.html["외부 키 관리를 시작합니다"^] _신규!_
+* link:../storage/task_system_manage_key_set_up_external_key_management.html["외부 키 관리를 설정합니다"^] _신규!_
+* link:../storage/task_replication_perform_remote_replication_between_element_clusters.html["클러스터 간에 원격 복제를 수행합니다"^]
+* link:../storage/task_data_protection_back_up_and_restore_volumes.html["볼륨 백업 및 복원"^]
+* link:../api/index.html["Element API를 사용하여 스토리지 관리"^]
+* link:../storage/concept_system_monitoring_and_troubleshooting.html["시스템 문제를 해결합니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인 개요"]
++
+개요 페이지에서 특정 작업을 탐색할 수 있습니다.
+
+
+
+
+
+== SolidFire ESDS 클러스터에서 Element API를 사용합니다
+
+* * 저장 시 소프트웨어 암호화 기능 향상 *:요소 12.3에는 SolidFire 엔터프라이즈 SDS 스토리지 클러스터를 생성할 때 기본적으로 활성화되는 저장 시 소프트웨어 암호화 기능에 대한 향상된 기능이 도입되었습니다. 이 기능은 스토리지 노드의 SSD에 저장된 모든 데이터를 암호화하므로 클라이언트 IO에 미치는 성능이 2% 정도로 매우 적습니다. 다음은 저장된 소프트웨어 암호화와 관련된 Element API 메서드입니다(참조) https://docs.netapp.com/us-en/element-software/api/index.html["Element API 설명서"^] 각 방법에 대한 자세한 내용 참조).
++
+** 'CreateCluster'입니다
+** 디시블러세이트
+** EnableEncryptionAtRest
+** GetSoftwareEncryptionAtRestInfo
+** RekeySoftwareEncryptionAtRestMasterKey
+
+
+* * 보존할 최대 스냅샷 수를 정의하는 기능 *: 요소 12.3에는 스냅샷 보존 기능이 향상되었습니다. 이 향상 기능을 지원하도록 다음 API가 수정되었습니다(참조) https://docs.netapp.com/us-en/element-software/api/index.html["Element API 설명서"^] 각 방법에 대한 자세한 내용 참조).
++
+** 'CreateVolume'
+** 수정 볼륨
+** 'CreateSnapshot'을 선택합니다
+** 'CreateSchedule'
+** 수정 그룹 스냅샷
+** 수정 일정
+** 수정 스냅샷
+** 'CreateGroupSnapshot'을 선택합니다
+
+
+* 요소 소프트웨어 패치에 대한 정보 얻기 *:Element 12.3에는 스토리지 노드에 설치된 Element 소프트웨어 패치에 대한 정보를 얻을 수 있는 "GetPatchInfo" 메서드가 도입되었습니다. 를 참조하십시오 https://docs.netapp.com/us-en/element-software/api/index.html["Element API 설명서"^] 를 참조하십시오.
+* * 노드의 각 네트워크 인터페이스에 대한 통계 나열 *:요소 12.3에는 노드의 각 네트워크 인터페이스에 대한 삭제된 패킷 수와 다양한 오류 유형 등의 통계를 나열할 수 있는 "ListNetworkInterfaceStats" 메서드가 도입되었습니다. 이 API 메서드는 개별 노드에 사용하기 위한 것으로, 개별 노드에 액세스하려면 사용자 ID 및 암호 인증이 필요합니다. 하지만 매개 변수 force가 메서드 호출에서 true 값을 지정하면 클러스터에서 이 메서드를 사용할 수 있습니다. 클러스터에서 매개 변수를 사용하면 모든 인터페이스의 네트워크 통계가 나열됩니다. 를 참조하십시오 https://docs.netapp.com/us-en/element-software/api/index.html["Element API 설명서"^] 를 참조하십시오.
+* SolidFire ESDS * 를 지원하기 위해 Element 12.2에 도입되고 업데이트된 * API: SolidFire ESDS 클러스터에서 사용할 수 있는 Element 12.2에 몇 가지 새로운 API가 도입되었습니다.
+
+
+요소 12.2의 새로운 API 목록은 다음과 같습니다.
+
+* link:../api/reference_element_api_getlicensekey.html["게라이센스 키"^]
+* link:../api/reference_element_api_setlicensekey.html["셋라이센스 키"^]
+* link:../api/reference_element_api_enablemaintenancemode.html["Enable유지보수모드"^]
+* link:../api/reference_element_api_disablemaintenancemode.html[""백업 모드"를 선택합니다"^]
+
+
+SolidFire ESDS 클러스터를 지원하기 위해 다음 12.2 API가 업데이트되었습니다.
+
+* link:../api/reference_element_api_addnodes.html["아디노드"^]
+* link:../api/reference_element_api_createcluster.html["'CreateCluster'입니다"^]
++
+
+NOTE: 요소 소프트웨어 12.2의 CreateCluster 메서드에 orderNumber, serialNumber, enableSoftwareEncryptionAtrest 등의 새 매개 변수가 추가되었습니다. SolidFire ESDS를 설치한 후 이 API를 사용하여 클러스터를 생성하는 동안 이러한 매개 변수를 지정해야 합니다.
+
+* SolidFire ESDS 클러스터에서 지원되지 않는 * 요소 12.2 API *: SolidFire ESDS 클러스터에서 지원되지 않는 요소 12.2 API 목록은 다음과 같습니다.
+* "ListClusterInterfacePreferences"를 선택합니다
+* 'ListNodeStats'
+* "소다.
+* 디시스블클러스터 시
+* EnableClusterSsh를 선택합니다
+* "EnableSsh"입니다
+* 'GetIpmiConfig'
+* 게일피미 정보
+* 게GetSshInfo
+* "ListNetworkInterfaces"입니다
+* 'ResetNode'입니다
+* 다시 시작 네트워킹
+* ResetNetworkConfig입니다
+* '셋Config'
+* 셋네트워크 구성
+* "dissableBmcColdReset"을 선택합니다
+* "EnableBmcColdReset"을 선택합니다
+* 세트네tpInfo
+* 테스트주소 가용성
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
+

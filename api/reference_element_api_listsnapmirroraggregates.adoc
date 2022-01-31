@@ -1,0 +1,61 @@
+---
+permalink: api/reference_element_api_listsnapmirroraggregates.html 
+sidebar: sidebar 
+keywords: snapmirror,aggregate,aggregates,list,listing,listsnapmirroraggregates 
+summary: Element 소프트웨어 웹 UI에서는 ListSnapMirrorAggregates 메서드를 사용하여 원격 ONTAP 시스템에서 사용 가능한 모든 SnapMirror 애그리게이트를 나열합니다. Aggregate는 물리적 스토리지 리소스 세트를 설명합니다. 
+---
+= ListSnapMirroregates를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 소프트웨어 웹 UI에서는 'ListSnapMirrorAggregates' 메서드를 사용하여 원격 ONTAP 시스템에서 사용 가능한 모든 SnapMirror 애그리게이트를 나열합니다. Aggregate는 물리적 스토리지 리소스 세트를 설명합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+snapMirrorEndpointID입니다
+ a| 
+지정된 끝점 ID와 연결된 애그리게이트만 반환합니다. 제공된 끝점 ID가 없으면 알려진 모든 SnapMirror 엔드포인트의 애그리게이트가 나열됩니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+snapMirrorAggregates를 참조하십시오
+ a| 
+ONTAP 스토리지 시스템에서 사용 가능한 애그리게이트 목록입니다.
+ a| 
+xref:reference_element_api_snapmirroraggregate.adoc[snapMirrorAggregate] 스토리지
+
+|===
+
+
+== 버전 이후 새로운 기능
+
+10.1

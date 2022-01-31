@@ -1,0 +1,130 @@
+---
+permalink: api/reference_element_api_listvolumestatsbyvirtualvolume.html 
+sidebar: sidebar 
+keywords: volumes,volume,virtual,stats,list,listing,listvolumestatsbyvirtualvolume,activity 
+summary: ListVolumeStatsByVirtualVolume 메서드를 사용하여 가상 볼륨과 연결된 시스템의 모든 볼륨에 대한 볼륨 통계를 나열할 수 있습니다. 통계는 볼륨 생성 시 누적됩니다. 
+---
+= ListVolumeStatsByVirtualVolume
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListVolumeStatsByVirtualVolume" 방법을 사용하여 가상 볼륨과 연결된 시스템의 모든 볼륨에 대한 볼륨 통계를 나열할 수 있습니다. 통계는 볼륨 생성 시 누적됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+가상볼륨 ID
+ a| 
+정보를 검색할 하나 이상의 가상 볼륨 ID 목록입니다. 이 매개 변수를 지정하면 메소드는 이러한 가상 볼륨에 대한 정보만 반환합니다.
+ a| 
+UUID 문자열 배열입니다
+ a| 
+아니요
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+볼륨 통계
+ a| 
+시스템의 각 가상 볼륨에 대한 활동 정보가 포함된 객체 목록입니다.
+ a| 
+xref:reference_element_api_volumestats.adoc[볼륨 통계] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "ListVolumeStatsByVirtualVolume",
+  "params": {},
+  "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeStats": [
+      {
+        "accountID": 17,
+        "actualIOPS": 0,
+        "asyncDelay": null,
+        "averageIOPSize": 1074265444,
+        "burstIOPSCredit": 0,
+        "clientQueueDepth": 0,
+        "desiredMetadataHosts": null,
+        "latencyUSec": 0,
+        "metadataHosts": {
+          "deadSecondaries": [],
+          "liveSecondaries": [
+            26
+          ],
+          "primary": 56
+        },
+        "nonZeroBlocks": 36,
+        "readBytes": 18366464,
+        "readBytesLastSample": 0,
+        "readLatencyUSec": 0,
+        "readOps": 156,
+        "readOpsLastSample": 0,
+        "samplePeriodMSec": 500,
+        "throttle": 0,
+        "timestamp": "2016-10-10T17:46:35.914642Z",
+        "unalignedReads": 156,
+        "unalignedWrites": 185,
+        "virtualVolumeID": "070ac0ba-f344-4f4c-b79c-142efa3642e8",
+        "volumeAccessGroups": [],
+        "volumeID": 12518,
+        "volumeSize": 91271200768,
+        "volumeUtilization": 0,
+        "writeBytes": 23652213248,
+        "writeBytesLastSample": 0,
+        "writeLatencyUSec": 0,
+        "writeOps": 185,
+        "writeOpsLastSample": 0,
+        "zeroBlocks": 22282972
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

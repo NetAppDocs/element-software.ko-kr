@@ -1,0 +1,148 @@
+---
+permalink: api/reference_element_api_listgroupsnapshots.html 
+sidebar: sidebar 
+keywords: snapshot,snapshots,group,list,listing,listgroupsnapshots 
+summary: ListGroupSnapshots 메서드를 사용하여 생성된 모든 그룹 스냅샷에 대한 정보를 반환할 수 있습니다. 
+---
+= ListGroupSnapshots을 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListGroupSnapshots" 메서드를 사용하여 생성된 모든 그룹 스냅샷에 대한 정보를 반환할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+groupSnapshotID입니다
+ a| 
+개별 그룹 스냅샷 ID에 대한 정보를 검색합니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+볼륨
+ a| 
+쿼리할 고유한 볼륨 ID의 배열입니다. 이 매개 변수를 지정하지 않으면 클러스터의 모든 그룹 스냅샷이 포함됩니다.
+ a| 
+볼륨 ID 스토리지
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+그룹 스냅샷
+ a| 
+각 그룹 스냅샷에 대한 정보가 포함된 객체 목록입니다.
+ a| 
+xref:reference_element_api_groupsnapshot.adoc[그룹 스냅샷] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "ListGroupSnapshots",
+  "params": {
+  "volumes": [
+     31,
+     49
+    ]
+  },
+  "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "groupSnapshots": [
+      {
+          "status": "Done",
+          "remoteStatuses": [
+              {
+                "volumePairUUID": "abcdef-1234-5678-90ab-cdef0123",
+                "remoteStatus": "Present"
+              }
+          ],
+          "attributes": {},
+          "groupSnapshotID": 1,
+          "createTime": "2014-06-17T17:35:05Z",
+          "members": [
+              {
+                "snapshotUUID": "abcdef-1234-5678-90ab-cdef0123",
+                "expirationReason": "None",
+                "virtualVolumeID": "abcdef-1234-5678-90ab-cdef0123",
+                "groupID": 1,
+                "createTime": "2014-06-17T17:35:05Z",
+                "totalSize": 1,
+                "snapMirrorLabel": "test1",
+                "volumeName": "test1",
+                "instanceCreateTime": "2014-06-17T17:35:05Z",
+                "volumeID": 1,
+                "checksum": "0x0",
+                "attributes": {},
+                "instanceSnapshotUUID": "abcdef-1234-5678-90ab-cdef0123",
+                "snapshotID": 1,
+                "status": "Done",
+                "groupSnapshotUUID": "abcdef-1234-5678-90ab-cdef0123",
+                "expirationTime": "2014-06-17T17:35:05Z",
+                "enableRemoteReplication": true,
+                "name": "test1",
+                "remoteStatuses": [
+                      {
+                        "volumePairUUID": "abcdef-1234-5678-90ab-cdef0123",
+                        "remoteStatus": "Present"
+                      }
+                  ]
+              }
+          ],
+          "enableRemoteReplication": true,
+          "name": "test1",
+          "groupSnapshotUUID": "abcdef-1234-5678-90ab-cdef0123"
+      }
+	]
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

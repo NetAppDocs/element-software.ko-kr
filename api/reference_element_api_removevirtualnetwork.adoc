@@ -1,0 +1,94 @@
+---
+permalink: api/reference_element_api_removevirtualnetwork.html 
+sidebar: sidebar 
+keywords: virtual,network,networks,remove,removing,removevirtualnetwork 
+summary: RemoveVirtualNetwork 메서드를 사용하여 이전에 추가한 가상 네트워크를 제거할 수 있습니다. 
+---
+= RemoveVirtualNetwork 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RemoveVirtualNetwork 메서드를 사용하여 이전에 추가한 가상 네트워크를 제거할 수 있습니다.
+
+
+NOTE: 이 메서드를 사용하려면 virtualNetworkID 또는 virtualNetworkTag가 매개 변수로 필요하지만 둘 다 필요하지 않습니다.
+
+
+NOTE: 연결된 이니시에이터가 있으면 가상 네트워크를 제거할 수 없습니다. 먼저 이니시에이터 연결을 해제한 다음 가상 네트워크를 제거합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+가상네트워크 ID
+ a| 
+제거할 가상 네트워크를 식별하는 네트워크 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+가상네트워크 태그
+ a| 
+제거할 가상 네트워크를 식별하는 네트워크 태그입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "RemoveVirtualNetwork",
+  "params": {
+     "virtualNetworkID": 5
+    }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

@@ -1,0 +1,41 @@
+---
+permalink: api/reference_element_api_loggingserver.html 
+sidebar: sidebar 
+keywords: object,objects,loggingServer 
+summary: loggingServer 객체에는 스토리지 클러스터에 구성된 로깅 호스트에 대한 정보가 포함되어 있습니다. GetRemoteLoggingHosts 를 사용하여 현재 로깅 호스트가 무엇인지 확인한 다음 SetRemoteLoggingHosts 를 사용하여 원하는 현재 로깅 호스트 및 새 로깅 호스트 목록을 설정할 수 있습니다. 
+---
+= 로그 서버
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+loggingServer 객체에는 스토리지 클러스터에 구성된 로깅 호스트에 대한 정보가 포함되어 있습니다. GetRemoteLoggingHosts 를 사용하여 현재 로깅 호스트가 무엇인지 확인한 다음 SetRemoteLoggingHosts 를 사용하여 현재 로깅 호스트와 새 로깅 호스트의 원하는 목록을 설정할 수 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+호스트
+ a| 
+로그 서버의 IP 주소입니다.
+ a| 
+문자열
+
+
+
+ a| 
+포트
+ a| 
+로그 서버와 통신하는 데 사용되는 포트 번호입니다.
+ a| 
+정수
+
+|===

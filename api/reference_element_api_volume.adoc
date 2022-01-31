@@ -1,0 +1,302 @@
+---
+permalink: api/reference_element_api_volume.html 
+sidebar: sidebar 
+keywords: object,objects,volume 
+summary: 볼륨 개체에는 페어링되지 않았거나 페어링된 볼륨에 대한 구성 정보가 포함되어 있습니다. 여기에는 런타임 또는 사용 정보가 포함되지 않으며 가상 볼륨에 대한 정보가 포함되어 있지 않습니다. 
+---
+= 볼륨
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+볼륨 개체에는 페어링되지 않았거나 페어링된 볼륨에 대한 구성 정보가 포함되어 있습니다. 여기에는 런타임 또는 사용 정보가 포함되지 않으며 가상 볼륨에 대한 정보가 포함되어 있지 않습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+액세스
+ a| 
+볼륨에 허용되는 액세스 유형입니다. 가능한 값:
+
+* "읽기 전용": 읽기 작업만 허용됩니다.
+* 다시 쓰기: 읽기와 쓰기가 허용됩니다.
+* 잠금: 읽기 또는 쓰기가 허용되지 않습니다.
+* ReplicationTarget: 복제된 볼륨 쌍의 타겟 볼륨으로 지정됩니다.
+
+ a| 
+문자열
+
+
+
+ a| 
+계정 ID입니다
+ a| 
+볼륨이 포함된 계정의 계정 ID입니다.
+ a| 
+정수
+
+
+
+ a| 
+속성
+ a| 
+JSON 개체 형식의 이름-값 쌍 목록입니다.
+ a| 
+JSON 개체
+
+
+
+ a| 
+블록 크기
+ a| 
+볼륨의 블록 크기입니다.
+ a| 
+정수
+
+
+
+ a| 
+createTime(createTime)
+ a| 
+볼륨이 생성된 UTC + 0 형식 시간입니다.
+ a| 
+ISO 8601 문자열
+
+
+
+ a| 
+currentProtectionScheme(커런트 보호 제도)
+ a| 
+이 볼륨에 사용 중인 보호 스키마입니다. 볼륨이 한 보호 구성표에서 다른 보호 구성표로 변환되는 경우 이 멤버는 볼륨이 변환되는 보호 체계를 반영합니다.
+ a| 
+문자열
+
+
+
+ a| 
+deleteTime(삭제 시간)
+ a| 
+볼륨이 삭제된 UTC+0 형식 시간.
+ a| 
+ISO 8601 문자열
+
+
+
+ a| 
+enable512e
+ a| 
+TRUE로 설정하면 볼륨이 512바이트 섹터 에뮬레이션을 제공합니다.
+ a| 
+부울
+
+
+
+ a| 
+enableSnapMirrorReplication
+ a| 
+SnapMirror 엔드포인트에서 복제를 위해 볼륨을 사용할 수 있는지 여부를 나타냅니다.
+ a| 
+부울
+
+
+
+| 50 크기 | FIFO(First-In-First-Out) 스냅샷 보존 모드를 사용하는 경우 동시에 유지할 볼륨의 최대 스냅샷 수를 지정합니다. | 정수 
+
+
+ a| 
+IQN을 선택합니다
+ a| 
+볼륨의 iSCSI 정규화된 이름입니다.
+ a| 
+문자열
+
+
+
+ a| 
+마지막 액세스 시간
+ a| 
+볼륨에 대한 마지막 액세스(I/O 포함)가 발생한 시간(UTC + 0으로 포맷됨) 마지막 액세스 시간을 알 수 없는 경우 이 값은 null입니다.
+ a| 
+ISO 8601 문자열
+
+
+
+ a| 
+마지막 액세스 시간 IO
+ a| 
+볼륨에 대한 I/O가 마지막으로 발생한 시간입니다(UTC+0으로 포맷됨). 마지막 액세스 시간을 알 수 없는 경우 이 값은 null입니다.
+ a| 
+ISO 8601 문자열
+
+
+
+| 미니 크기 | FIFO(First-In-First-Out) 스냅샷 보존 모드를 사용하는 경우 볼륨이 동시에 예약된 FIFO(First-In-First-Out) 스냅샷 슬롯의 최소 수를 지정합니다. | 정수 
+
+
+ a| 
+이름
+ a| 
+생성 시 제공된 볼륨의 이름입니다.
+ a| 
+문자열
+
+
+
+ a| 
+미리 보기 보호 제도
+ a| 
+볼륨이 한 보호 구성표에서 다른 보호 구성표로 변환되는 경우 이 멤버는 볼륨이 변환되는 보호 체계를 반영합니다. 이 멤버는 변환이 시작될 때까지 변경되지 않습니다. 볼륨이 변환되지 않은 경우 이 멤버는 null입니다.
+ a| 
+문자열
+
+
+
+ a| 
+PurgeTime(purgeTime)
+ a| 
+시스템에서 볼륨이 삭제된 UTC+0 형식 시간입니다.
+ a| 
+ISO 8601 문자열
+
+
+
+ a| 
+QoS를 참조하십시오
+ a| 
+이 볼륨에 대한 서비스 품질 설정.
+ a| 
+xref:reference_element_api_qos.adoc[QoS를 참조하십시오]
+
+
+
+ a| 
+qosPolicyID입니다
+ a| 
+볼륨과 연결된 QoS 정책 ID입니다. 볼륨이 정책과 연결되어 있지 않으면 이 값은 null입니다.
+ a| 
+정수
+
+
+
+ a| 
+SciEUIDeviceID입니다
+ a| 
+EUI-64 기반 16바이트 형식의 볼륨에 대한 전역적으로 고유한 SCSI 디바이스 식별자입니다.
+ a| 
+문자열
+
+
+
+ a| 
+ScsiNADeviceID입니다
+ a| 
+NAA IEEE 등록 확장 형식의 볼륨에 대한 전역적으로 고유한 SCSI 장치 식별자입니다.
+ a| 
+문자열
+
+
+
+ a| 
+슬라이스 수
+ a| 
+볼륨의 슬라이스 수입니다. 이 값은 항상 "1"입니다.
+ a| 
+정수
+
+
+
+ a| 
+상태
+ a| 
+볼륨의 현재 상태입니다. 가능한 값:
+
+* Init: 초기화되고 있고 연결 준비가 되지 않은 볼륨입니다.
+* Active(활성): 연결 준비가 된 활성 볼륨입니다.
+* Deleted(삭제됨): 삭제되도록 표시되어 있지만 아직 제거되지 않은 볼륨입니다.
+
+ a| 
+문자열
+
+
+
+ a| 
+총 크기
+ a| 
+프로비저닝된 용량의 총 바이트 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+가상볼륨 ID
+ a| 
+볼륨과 연결된 고유한 가상 볼륨 ID(있는 경우)입니다.
+ a| 
+UUID입니다
+
+
+
+ a| 
+볼륨 액세스 그룹
+ a| 
+볼륨이 속한 ID pf 볼륨 액세스 그룹 목록입니다. 볼륨이 볼륨 액세스 그룹에 속하지 않는 경우 이 값은 빈 목록입니다.
+ a| 
+정수 배열
+
+
+
+ a| 
+볼륨은 일관되게그룹 UUID입니다
+ a| 
+볼륨이 속한 볼륨 정합성 보장 그룹의 범용 고유 ID입니다.
+ a| 
+UUID입니다
+
+
+
+ a| 
+볼륨 ID
+ a| 
+볼륨에 대한 고유한 볼륨 ID입니다.
+ a| 
+정수
+
+
+
+ a| 
+볼륨감 있는 이벤트
+ a| 
+페어링된 볼륨에 대한 정보입니다. 볼륨이 페어링된 경우에만 표시됩니다. 볼륨이 페어링되지 않은 경우 이 값은 빈 목록입니다.
+ a| 
+xref:reference_element_api_volumepair.adoc[볼륨페어가 있습니다] 스토리지
+
+
+
+ a| 
+볼륨 UUID
+ a| 
+볼륨의 범용 고유 ID입니다.
+ a| 
+UUID입니다
+
+|===
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_listactivevolumes.adoc[ListActiveVolumes]
+* xref:reference_element_api_listdeletedvolumes.adoc[ListDeletedVolumes 를 클릭합니다]
+* xref:reference_element_api_listvolumes.adoc[목록 볼륨]
+* xref:reference_element_api_listvolumesforaccount.adoc[ListVolumesForAccount]
+* xref:reference_element_api_qos.adoc[QoS를 참조하십시오]
+

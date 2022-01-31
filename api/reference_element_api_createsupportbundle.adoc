@@ -1,0 +1,157 @@
+---
+permalink: api/reference_element_api_createsupportbundle.html 
+sidebar: sidebar 
+keywords: create,creating,support,bundle,CreateSupportBundle 
+summary: CreateSupportBundle 을 사용하여 노드의 디렉터리 아래에 지원 번들 파일을 만들 수 있습니다. 생성된 번들은 노드에 tar.gz 파일로 저장됩니다. 
+---
+= CreateSupportBundle을 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'CreateSupportBundle'을 사용하여 노드의 디렉토리 아래에 지원 번들 파일을 만들 수 있습니다. 생성된 번들은 노드에 tar 파일로 저장됩니다(extraArgs 매개 변수를 통해 gz 압축 옵션을 사용할 수 있음).
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+번집니다
+ a| 
+지원 번들의 고유 이름입니다. 이름이 제공되지 않으면 "supportbundle"과 노드 이름이 파일 이름으로 사용됩니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+인수 외
+ a| 
+'--compress gz'를 사용하여 지원 번들을 tar.gz 파일로 생성합니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+타임아웃Sec
+ a| 
+지원 번들 스크립트가 실행되는 시간(초)입니다.
+ a| 
+정수
+ a| 
+1500
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+세부 정보
+ a| 
+지원 번들의 세부 정보입니다. 가능한 값:
+
+* bundleName : CreateSupportBundleAPI 메서드에 지정된 이름입니다. 이름을 지정하지 않으면 "supportbundle"이 사용됩니다.
+* extraArgs: 이 메서드로 전달된 인수.
+* 파일: 시스템에서 생성한 지원 번들 파일 목록입니다.
+* 출력: 지원 번들을 생성한 스크립트에서 명령줄 출력.
+* timeoutSec: 지원 번들 스크립트가 중지되기 전에 실행되는 시간(초)입니다.
+* URL: 생성된 지원 번들에 대한 URL입니다.
+
+ a| 
+JSON 개체
+
+
+
+ a| 
+기간
+ a| 
+지원 번들을 생성하는 데 사용된 시간(HH:MM:SS.ss 형식)
+ a| 
+문자열
+
+
+
+ a| 
+결과
+ a| 
+지원 번들 작업의 성공 또는 실패
+ a| 
+문자열
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+ "method": "CreateSupportBundle",
+"params": {
+  "extraArgs": "--compress gz"
+ },
+"id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+"id": 1,
+"result": {
+  "details": {
+    "bundleName": "supportbundle",
+    "extraArgs": "--compress gz",
+    "files": [
+         "supportbundle.nodehostname.tar.gz"
+     ],
+     "output": "timeout -s KILL 1500s /sf/scripts/sfsupportbundle --quiet --compress gz /tmp/solidfire-dtemp.1L6bdX/supportbundle<br><br>Moved '/tmp/solidfire-dtemp.1L6bdX/supportbundle.nodehostname.tar.gz' to /tmp/supportbundles",
+      "timeoutSec": 1500,
+      "url": [
+          "https://nodeIP:442/config/supportbundles/supportbundle.nodehostname.tar.gz"
+      ]
+    },
+    "duration": "00:00:43.101627",
+    "result": "Passed"
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

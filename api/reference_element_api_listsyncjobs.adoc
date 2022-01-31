@@ -1,0 +1,115 @@
+---
+permalink: api/reference_element_api_listsyncjobs.html 
+sidebar: sidebar 
+keywords: sync,synchronization,job,jobs,list,get,listing,getting,listsyncjobs 
+summary: ListSyncJobs 메서드를 사용하여 Element 저장소 클러스터에서 실행 중인 동기화 작업에 대한 정보를 가져올 수 있습니다. 이 메서드는 슬라이스, 클론, 블록 및 원격 동기화 작업에 대한 정보를 반환합니다. 
+---
+= ListSyncJobs 를 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListSyncJobs" 메서드를 사용하여 Element 저장소 클러스터에서 실행 중인 동기화 작업에 대한 정보를 가져올 수 있습니다. 이 메서드는 슬라이스, 클론, 블록 및 원격 동기화 작업에 대한 정보를 반환합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+동기화 작업
+ a| 
+시스템에서 현재 실행 중인 동기화 프로세스를 설명하는 개체의 목록입니다.
+ a| 
+xref:reference_element_api_syncjob.adoc[동기화 작업] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "ListSyncJobs",
+   "params": { },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "id":1,
+    "result":{
+      "syncJobs":[
+        {
+           "bytesPerSecond":275314.8834458956,
+           "currentBytes":178257920,
+           "dstServiceID":36,
+           "elapsedTime":289.4568382049871,
+           "percentComplete":8.900523560209423,
+           "remainingTime":2962.675921065957,
+           "sliceID":5,
+           "srcServiceID":16,
+           "stage":"whole",
+           "totalBytes":200278016remote0,
+           "type":"slice"
+       },
+       {
+           "bytesPerSecond":305461.3198607744,
+           "cloneID":1,
+           "currentBytes":81788928,
+           "dstServiceID":16,
+           "dstVolumeID":6,
+           "elapsedTime":291.7847648200743,
+           "nodeID":1,
+           "percentComplete":8.167539267015707,
+           "remainingTime":3280.708270981153,
+           "sliceID":6,
+           "srcServiceID":16,
+           "srcVolumeID":5,
+           "stage":"whole",
+           "totalBytes":1001390080,
+           "type":"clone"
+        },
+        {
+           "blocksPerSecond":0,
+           "branchType": "snapshot",
+           "dstServiceID":8,
+           "dstVolumeID":2,
+           "elapsedTime":0,
+           "percentComplete":0,
+           "remainingTime":0,
+           "sliceID":2,
+           "stage":"metadata",
+           "type":"remote"
+       }
+     ]
+   }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

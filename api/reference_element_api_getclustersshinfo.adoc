@@ -1,0 +1,90 @@
+---
+permalink: api/reference_element_api_getclustersshinfo.html 
+sidebar: sidebar 
+keywords: ssh,service,status,get,getting,cluster,info,getclustersshinfo 
+summary: GetClusterSshInfo 메서드를 사용하여 전체 스토리지 클러스터에 대한 SSH 서비스의 상태를 쿼리할 수 있습니다. 
+---
+= GetClusterSshInfo 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetClusterSInfo" 메서드를 사용하여 전체 스토리지 클러스터에 대한 SSH 서비스 상태를 쿼리할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+결과
+ a| 
+스토리지 클러스터에 대한 SSH 서비스의 상태, SSH가 비활성화될 때까지 남은 시간, 각 노드에 대한 SSH 서비스 상태가 포함된 JSON 개체입니다.
+ a| 
+JSON 개체
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "GetClusterSshInfo",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+	"id": 1,
+	"result" : {
+    “enabled”: “true”,
+    “timeRemaining”: "00:43:21",
+    "nodes": [
+    {
+        "nodeID": 1,
+        "enabled": true
+    },
+    {
+        "nodeID": 2,
+        "enabled": true
+    },
+    {
+        "nodeID": 3,
+        "enabled": false
+    },
+    {
+        "nodeID": 4,
+        "enabled": false
+    } ]
+			}
+	}
+----
+
+
+== 버전 이후 새로운 기능
+
+10.3

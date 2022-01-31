@@ -1,0 +1,121 @@
+---
+permalink: api/reference_element_api_listprotocolendpoints.html 
+sidebar: sidebar 
+keywords: protocol,endpoints,endpoint,list,listing,listprotocolendpoints 
+summary: ListProtocolEndpoints 메서드를 사용하여 클러스터의 모든 프로토콜 끝점에 대한 정보를 검색할 수 있습니다. 프로토콜 엔드포인트는 연결된 가상 볼륨 스토리지 컨테이너에 대한 액세스를 제어합니다. 
+---
+= ListProtocolEndpoints를 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListProtocolEndpoints" 메서드를 사용하여 클러스터의 모든 프로토콜 끝점에 대한 정보를 검색할 수 있습니다. 프로토콜 엔드포인트는 연결된 가상 볼륨 스토리지 컨테이너에 대한 액세스를 제어합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+프로토콜종점 ID
+ a| 
+정보를 검색할 프로토콜 엔드포인트 ID 목록입니다. 이 매개 변수를 생략하면 모든 프로토콜 끝점에 대한 정보가 반환됩니다.
+ a| 
+프로토콜EndpointID UUID 배열입니다
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+프로토콜엔드포인트
+ a| 
+시스템의 각 프로토콜 끝점에 대한 정보가 포함된 개체 목록입니다.
+ a| 
+xref:reference_element_api_protocolendpoint.adoc[ProtocolEndpoint] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "method": "ListProtocolEndpoints",
+  "params": {}
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "protocolEndpoints": [
+      {
+        "primaryProviderID": 1,
+        "protocolEndpointID": "1387e257-d2e3-4446-be6d-39db71583e7b",
+        "protocolEndpointState": "Active",
+        "providerType": "Primary",
+        "scsiNAADeviceID": "6f47acc2000000016970687200000000",
+        "secondaryProviderID": 2
+      },
+      {
+        "primaryProviderID": 2,
+        "protocolEndpointID": "1f16ed86-3f31-4c76-b004-a1251187700b",
+        "protocolEndpointState": "Active",
+        "providerType": "Primary",
+        "scsiNAADeviceID": "6f47acc2000000026970687200000000",
+        "secondaryProviderID": 3
+      },
+      {
+        "primaryProviderID": 4,
+        "protocolEndpointID": "c6458dfe-9803-4350-bb4e-68a3feb7e830",
+        "protocolEndpointState": "Active",
+        "providerType": "Primary",
+        "scsiNAADeviceID": "6f47acc2000000046970687200000000",
+        "secondaryProviderID": 1
+      },
+      {
+        "primaryProviderID": 3,
+        "protocolEndpointID": "f3e7911d-0e86-4776-97db-7468c272213f",
+        "protocolEndpointState": "Active",
+        "providerType": "Primary",
+        "scsiNAADeviceID": "6f47acc2000000036970687200000000",
+        "secondaryProviderID": 4
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

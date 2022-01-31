@@ -1,0 +1,116 @@
+---
+permalink: api/reference_element_api_getfeaturestatus.html 
+sidebar: sidebar 
+keywords: feature,status,cluster,get,getting,getfeaturestatus 
+summary: GetFeatureStatus 메서드를 사용하여 클러스터 기능의 상태를 검색할 수 있습니다. 
+---
+= GetFeatureStatus 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'GetFeatureStatus' 메서드를 사용하여 클러스터 기능의 상태를 검색할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+피처
+ a| 
+클러스터 기능의 상태입니다. 값을 제공하지 않으면 모든 기능의 상태가 반환됩니다. 가능한 값:
+
+* VVol: VVol 클러스터 기능의 상태를 검색합니다.
+* SnapMirror: SnapMirror 복제 클러스터 기능의 상태를 검색합니다.
+* FIPS: HTTPS 통신 기능을 위해 FIPS 140-2 암호화에 대한 상태를 검색합니다.
+* FipsDrives: FIPS 140-2 드라이브 암호화 기능의 상태를 검색합니다.
+
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+피처
+ a| 
+피처 이름과 상태를 나타내는 피처 개체의 배열입니다. 개체 멤버:
+
+* 피처: (string) 피처의 이름입니다.
+* Enabled(사용): (부울) 기능의 활성화 여부를 나타냅니다.
+
+ a| 
+JSON 개체 어레이
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "GetFeatureStatus",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "features": [
+            {
+                "enabled": true,
+                "feature": "Vvols"
+            },
+            {
+                "enabled": true,
+                "feature": "SnapMirror"
+            },
+            {
+                "enabled": true,
+                "feature": "Fips"
+            },
+            {
+                "enabled": true,
+                "feature": "FipsDrives"
+            }
+        ]
+    }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

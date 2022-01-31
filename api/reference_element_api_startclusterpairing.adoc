@@ -1,0 +1,89 @@
+---
+permalink: api/reference_element_api_startclusterpairing.html 
+sidebar: sidebar 
+keywords: cluster,pair,pairing,start,starting,startclusterpairing 
+summary: StartClusterPairing 방법을 사용하여 다른 클러스터와 페어링하는 데 사용되는 클러스터에서 인코딩된 키를 생성할 수 있습니다. 이 API 메서드에서 생성된 키는 CompleteClusterPairing 메서드에서 클러스터 페어링을 설정하는 데 사용됩니다. 클러스터를 최대 4개의 다른 클러스터와 페어링할 수 있습니다. 
+---
+= StartClusterPairing을 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'스타트클러스터 페어링' 방법을 사용하여 다른 클러스터와 페어링하는 데 사용되는 클러스터에서 인코딩된 키를 생성할 수 있습니다. 이 API 메소드에서 생성된 키는 'CompleteClusterPairing' 메소드에서 클러스터 페어링을 설정하는 데 사용됩니다. 클러스터를 최대 4개의 다른 클러스터와 페어링할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+클러스터 퍼링키
+ a| 
+에서 사용하는 문자의 문자열입니다 xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing] API 메소드.
+ a| 
+문자열
+
+
+
+ a| 
+클러스터 airID
+ a| 
+클러스터 쌍의 고유 식별자입니다.
+ a| 
+정수
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "StartClusterPairing",
+   "params": {
+      },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "clusterPairID": 1,
+     "clusterPairingKey": "7b22636c7573746572506169724944223a312c22636c75737465725061697255554944223a2231636561313336322d346338662d343631612d626537322d373435363661393533643266222c22636c7573746572556e697175654944223a2278736d36222c226d766970223a223139322e3136382e3133392e313232222c226e616d65223a224175746f54657374322d63307552222c2270617373776f7264223a22695e59686f20492d64774d7d4c67614b222c22727063436f6e6e656374696f6e4944223a3931333134323634392c22757365726e616d65223a225f5f53465f706169725f50597a796647704c7246564432444a42227d"
+   }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing]

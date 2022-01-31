@@ -1,0 +1,35 @@
+---
+permalink: storage/task_data_manage_vvol_create_a_storage_container.html 
+sidebar: sidebar 
+keywords: storage container, create 
+summary: Element UI에서 스토리지 컨테이너를 생성하고 vCenter에서 검색할 수 있습니다. VVOL 지원 가상 머신 프로비저닝을 시작하려면 하나 이상의 스토리지 컨테이너를 생성해야 합니다. 
+---
+= 스토리지 컨테이너를 생성합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element UI에서 스토리지 컨테이너를 생성하고 vCenter에서 검색할 수 있습니다. VVOL 지원 가상 머신 프로비저닝을 시작하려면 하나 이상의 스토리지 컨테이너를 생성해야 합니다.
+
+클러스터의 Element UI에서 VVOL 기능을 활성화했습니다.
+
+. VVol * > * Storage Containers * 를 선택합니다.
+. Create Storage Containers * 버튼을 클릭합니다.
+. Create a New Storage Container * (새 저장소 컨테이너 생성 *) 대화 상자에 저장소 컨테이너 정보를 입력합니다.
++
+.. 저장소 컨테이너의 이름을 입력합니다.
+.. CHAP에 대한 이니시에이터 및 타겟 암호를 구성합니다.
++
+
+TIP: CHAP 설정 필드를 비워 두면 자동으로 암호가 생성됩니다.
+
+.. Create Storage Container * 버튼을 클릭합니다.
+
+
+. 새 저장소 컨테이너가 * 저장소 컨테이너 * 하위 탭의 목록에 나타나는지 확인합니다.
++
+
+NOTE: NetApp Element 계정 ID는 자동으로 생성되어 저장소 컨테이너에 할당되므로 계정을 수동으로 생성할 필요가 없습니다.
+
+

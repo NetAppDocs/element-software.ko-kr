@@ -1,0 +1,54 @@
+---
+permalink: concepts/concept_intro_product_overview.html 
+sidebar: sidebar 
+keywords:  
+summary: 'SolidFire All-Flash 스토리지 시스템은 단일 스토리지 리소스 풀로 결합된 개별 하드웨어 구성요소\(드라이브 및 노드\)로 구성됩니다. 이 통합 클러스터는 외부 클라이언트에서 사용할 수 있는 단일 스토리지 시스템으로, NetApp Element 소프트웨어로 관리됩니다.' 
+---
+= 제품 개요
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire All-Flash 스토리지 시스템은 단일 스토리지 리소스 풀로 결합된 개별 하드웨어 구성요소(드라이브 및 노드)로 구성됩니다. 이 통합 클러스터는 외부 클라이언트에서 사용할 수 있는 단일 스토리지 시스템으로, NetApp Element 소프트웨어로 관리됩니다.
+
+Element 인터페이스, API 또는 기타 관리 툴을 사용하여 SolidFire 클러스터 스토리지 용량 및 성능을 모니터링하고 멀티 테넌트(multi-tenant) 인프라 전반에서 스토리지 활동을 관리할 수 있습니다.
+
+
+
+== SolidFire 기능
+
+SolidFire 시스템은 다음과 같은 기능을 제공합니다.
+
+* 대규모 프라이빗 클라우드 인프라를 위한 고성능 스토리지 제공
+* 변화하는 스토리지 요구사항을 충족할 수 있는 유연한 확장을 제공합니다
+* API 기반 스토리지 관리 Element 소프트웨어 인터페이스를 사용합니다
+* 서비스 품질 정책을 사용하여 성능을 보장합니다
+* 클러스터의 모든 노드에 걸친 자동 로드 밸런싱 포함
+* 노드가 추가되거나 공제될 때 클러스터가 자동으로 재조정됩니다
+
+
+
+
+== SolidFire 구축 옵션
+
+SolidFire은 다양한 구축 옵션을 제공합니다.
+
+* NetApp에서 제공하고 NetApp Element 소프트웨어와 통합된 스토리지 노드를 사용합니다
++
+link:../concepts/concept_solidfire_concepts_solidfire_architecture_overview.html["SolidFire All-Flash 스토리지 아키텍처 개요"]
+
+* 컨테이너화된 SolidFire 엔터프라이즈 SDS를 사용하여 자체 서버를 사용하여 Element 소프트웨어를 실행합니다
++
+link:../esds/concept_get_started_esds.html["NetApp SolidFire 엔터프라이즈 SDS를 시작하십시오"]
+
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/["SolidFire All-Flash 스토리지 개요"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

@@ -1,0 +1,18 @@
+---
+permalink: storage/concept_data_protection_volume_snapshot_backup_operations.html 
+sidebar: sidebar 
+keywords: volume snapshot, backup operations, back up volume snapshot, cluster, object store 
+summary: 통합 백업 기능을 사용하여 볼륨 스냅샷을 백업할 수 있습니다. SolidFire 클러스터에서 외부 오브젝트 저장소 또는 다른 SolidFire 클러스터로 스냅샷을 백업할 수 있습니다. 외부 개체 저장소에 스냅샷을 백업할 때 읽기/쓰기 작업을 허용하는 개체 저장소에 대한 연결이 있어야 합니다. 
+---
+= 볼륨 스냅샷 백업 작업
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+통합 백업 기능을 사용하여 볼륨 스냅샷을 백업할 수 있습니다. SolidFire 클러스터에서 외부 오브젝트 저장소 또는 다른 SolidFire 클러스터로 스냅샷을 백업할 수 있습니다. 외부 개체 저장소에 스냅샷을 백업할 때 읽기/쓰기 작업을 허용하는 개체 저장소에 대한 연결이 있어야 합니다.
+
+* link:task_data_protection_back_up_a_volume_snapshot_to_an_amazon_s3_object_store["볼륨 스냅샷을 Amazon S3 오브젝트 저장소에 백업합니다"]
+* link:task_data_protection_back_up_a_volume_snapshot_to_openstack_swift["OpenStack Swift 오브젝트 저장소에 볼륨 스냅샷을 백업합니다"]
+* link:task_data_protection_back_up_volume_to_solidfire["볼륨 스냅샷을 SolidFire 클러스터에 백업합니다"]
+

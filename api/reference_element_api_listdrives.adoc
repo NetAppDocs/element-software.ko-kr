@@ -1,0 +1,93 @@
+---
+permalink: api/reference_element_api_listdrives.html 
+sidebar: sidebar 
+keywords: drives,drive,list,listing,listdrives,cluster 
+summary: ListDrives 메서드를 사용하여 클러스터의 활성 노드에 있는 드라이브를 나열할 수 있습니다. 이 메서드는 볼륨 메타데이터 또는 블록 드라이브로 추가된 드라이브는 물론 추가되지 않고 사용 가능한 드라이브를 반환합니다. 
+---
+= ListDrives를 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListDrives" 방법을 사용하여 클러스터의 활성 노드에 있는 드라이브를 나열할 수 있습니다. 이 메서드는 볼륨 메타데이터 또는 블록 드라이브로 추가된 드라이브는 물론 추가되지 않고 사용 가능한 드라이브를 반환합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+드라이브
+ a| 
+클러스터의 드라이브 목록입니다.
+ a| 
+xref:reference_element_api_drive.adoc[드라이브] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "ListDrives",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" : {
+     "drives" : [
+       {
+         "attributes" : {},
+         "capacity" : 299917139968,
+         "driveID" : 35,
+         "nodeID" : 5,
+         "serial" : "scsi-SATA_INTEL_SSDSA2CW6CVPR141502R3600FGN-part2",
+         "slot" : 0,
+         "status" : "active",
+         "type" : "volume"
+       },
+       {
+         "attributes" : {},
+         "capacity" : 600127266816,
+         "driveID" : 36,
+         "nodeID" : 5,
+         "serial" : "scsi-SATA_INTEL_SSDSA2CW6CVPR1415037R600FGN",
+         "slot" : 6,
+         "status" : "active",
+         "type" : "block"
+       }
+     }
+   ]
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

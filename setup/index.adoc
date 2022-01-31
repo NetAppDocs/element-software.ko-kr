@@ -1,0 +1,47 @@
+---
+permalink: setup/index.html 
+sidebar: sidebar 
+keywords: set up storage, storage system, set up, configure node, configuring storage node, add drives, fibre channel, create cluster 
+summary: 환경에 맞게 스토리지 시스템을 설정하는 방법에 대해 알아보십시오. 
+---
+= 스토리지 설정
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+환경에 맞게 스토리지 시스템을 설정하는 방법에 대해 알아보십시오.
+
+* xref:concept_setup_overview.adoc[스토리지 설정]
++
+** xref:task_setup_cluster_with_storage_nodes.adoc[스토리지 노드로 클러스터 설정]
++
+*** xref:concept_setup_configure_a_storage_node.adoc[스토리지 노드를 구성합니다]
+*** xref:task_setup_create_a_storage_cluster.adoc[스토리지 클러스터를 생성합니다]
+*** xref:task_post_deploy_access_the_element_software_user_interface.adoc[Element 소프트웨어 사용자 인터페이스에 로그인합니다]
+*** xref:task_setup_add_drives_to_a_cluster.adoc[클러스터에 드라이브를 추가합니다]
+
+
+** xref:task_setup_cluster_with_fibre_channel_nodes.adoc[파이버 채널 노드를 사용하여 클러스터 설정]항목:
++
+*** xref:concept_setup_fc_configure_a_fibre_channel_node.adoc[Fibre Channel 노드를 구성합니다]
+*** xref:task_setup_fc_add_fibre_channel_nodes_to_a_cluster.adoc[클러스터에 파이버 채널 노드를 추가합니다]
+*** xref:task_setup_fc_create_a_new_cluster_with_fibre_channel_nodes.adoc[파이버 채널 노드를 사용하여 새 클러스터를 생성합니다]
+*** xref:concept_setup_fc_set_up_zones_for_fibre_channel_nodes.adoc[Fibre Channel 노드의 존 설정]
+*** xref:task_setup_create_a_volume_access_group_for_fibre_channel_clients.adoc[Fibre Channel 클라이언트에 대한 볼륨 액세스 그룹을 생성합니다]
+
+
+** xref:task_setup_determine_which_solidfire_components_to_install.adoc[설치할 SolidFire 구성 요소를 확인합니다]
+** xref:/task_setup_gh_redirect_set_up_a_management_node.adoc[관리 노드를 설정합니다]
+** xref:concept_setup_whats_next.adoc[다음 단계]
+
+
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/["SolidFire All-Flash 스토리지 개요"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+

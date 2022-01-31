@@ -1,0 +1,80 @@
+---
+permalink: api/reference_element_api_getloginsessioninfo.html 
+sidebar: sidebar 
+keywords: cluster,get,getting,login,session,info,getloginsessioninfo 
+summary: GetLoginSessionInfo 메서드를 사용하면 로그인 셸과 TUI 모두에 대해 로그인 인증 세션이 유효한 기간을 반환할 수 있습니다. 
+---
+= GetLoginSessionInfo 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetLoginSessionInfo" 메서드를 사용하면 로그인 셸과 TUI 모두에 대해 로그인 인증 세션이 유효한 기간을 반환할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+LoginSessionInfo 를 참조하십시오
+ a| 
+인증 만료 기간이 포함된 개체입니다. 반환된 가능한 개체:
+
+* 시간 초과:
++
+이 세션이 제한 시간 및 만료되는 시간(분)입니다. H:mm:ss 형식으로 포맷되었습니다. 예: 1:30:00, 20:00, 5:00 시간 초과를 입력한 형식과 상관없이 앞에 나오는 0과 콜론이 모두 제거됩니다.
+
+
+ a| 
+JSON 개체
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "GetLoginSessionInfo",
+    "params": {},
+  "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+"id": 1,
+  "result" : {
+    "loginSessionInfo" : {
+      "timeout" : "30:00"
+    }
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

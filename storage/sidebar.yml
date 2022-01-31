@@ -1,0 +1,440 @@
+---
+section: storage
+title: Element 소프트웨어를 사용하여 스토리지 관리
+url: "/storage/index.html"
+entries:
+- title: Element 소프트웨어 사용자 인터페이스에 액세스합니다
+  url: "/storage/task_post_deploy_access_the_element_software_user_interface.html"
+- title: 구축 후 SolidFire 시스템 옵션을 구성합니다
+  url: "/storage/task_post_deploy_configure_system_options.html"
+  entries:
+  - title: NetApp HCI 및 NetApp SolidFire에서 자격 증명을 변경합니다
+    url: "/storage/task_post_deploy_credentials.html"
+  - title: Element 소프트웨어 기본 SSL 인증서를 변경합니다
+    url: "/storage/reference_post_deploy_change_default_ssl_certificate.html"
+  - title: 노드의 IPMI 암호를 변경합니다
+    url: "/storage/task_post_deploy_credential_change_ipmi_password.html"
+- title: Element 소프트웨어 UI에서 기본 옵션을 사용합니다
+  url: "/storage/task_intro_use_basic_options_in_the_element_software_ui.html"
+  entries:
+  - title: API 활동을 봅니다
+    url: "/storage/task_intro_view_api_activity_in_real_time.html"
+    entries:
+    - title: 클러스터 부하의 영향을 받는 인터페이스 새로 고침 비율
+      url: "/storage/concept_basic_interface_refresh_rate_impacted_by_cluster_load.html"
+  - title: Element 인터페이스의 아이콘입니다
+    url: "/storage/reference_intro_icon_reference.html"
+  - title: 피드백을 제공합니다
+    url: "/storage/task_intro_provide_feedback.html"
+- title: 계정 관리
+  url: "/storage/task_data_manage_accounts_work_with_accounts_task.html"
+  entries:
+  - title: 사용자 계정 작업
+    url: "/storage/task_data_manage_accounts_work_with_accounts_task.html"
+  - title: 클러스터 관리자 사용자 계정을 관리합니다
+    url: "/storage/concept_system_manage_manage_cluster_administrator_users.html"
+    entries:
+    - title: LDAP를 관리합니다
+      url: "/storage/concept_system_manage_manage_ldap.html"
+- title: 시스템 관리
+  url: "/storage/concept_system_manage_system_management.html"
+  entries:
+  - title: 다중 요소 인증을 사용합니다
+    url: "/storage/concept_system_manage_mfa_enable_multi_factor_authentication.html"
+    entries:
+    - title: 다중 요소 인증을 설정합니다
+      url: "/storage/task_system_manage_mfa_set_up_multi_factor_authentication.html"
+    - title: 다중 요소 인증에 대한 추가 정보
+      url: "/storage/concept_system_manage_mfa_additional_information_for_multi_factor_authentication.html"
+  - title: 클러스터 설정을 구성합니다
+    url: "/storage/concept_system_manage_cluster_configure_cluster_settings.html"
+    entries:
+    - title: 클러스터에 대한 암호화를 사용하거나 사용하지 않도록 설정합니다
+      url: "/storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html"
+    - title: 클러스터를 최대 임계값으로 설정합니다
+      url: "/storage/task_system_manage_cluster_set_the_cluster_full_threshold.html"
+    - title: 지원 액세스를 설정 및 해제합니다
+      url: "/storage/task_system_manage_cluster_enable_and_disable_support_access.html"
+    - title: 이용 약관 배너를 관리합니다
+      url: "/storage/concept_system_manage_cluster_terms_manage_the_terms_of_use_banner.html"
+    - title: 네트워크 시간 프로토콜을 설정합니다
+      url: "/storage/task_system_manage_cluster_ntp_set_the_network_time_protocol.html"
+      entries:
+      - title: 쿼리할 클러스터에 대한 네트워크 시간 프로토콜 서버를 구성합니다
+        url: "/storage/task_system_manage_cluster_ntp_configure.html"
+      - title: 클러스터가 NTP 브로드캐스트를 수신하도록 구성합니다
+        url: "/storage/task_system_manage_cluster_ntp_configure_to_listen_for_ntp_broadcasts.html"
+    - title: SNMP를 관리합니다
+      url: "/storage/concept_system_manage_snmp_manage_snmp.html"
+      entries:
+      - title: SNMP 세부 정보
+        url: "/storage/reference_system_manage_snmp_snmp_details.html"
+      - title: SNMP 요청자를 구성합니다
+        url: "/storage/task_system_manage_snmp_configure_an_snmp_requestor.html"
+      - title: SNMP USM 사용자를 구성합니다
+        url: "/storage/task_system_manage_snmp_configure_an_snmp_usm_user.html"
+      - title: SNMP 트랩을 구성합니다
+        url: "/storage/task_system_manage_snmp_configure_snmp_traps.html"
+      - title: 관리 정보 기준 파일을 사용하여 관리되는 개체 데이터를 봅니다
+        url: "/storage/task_system_manage_snmp_view_managed_object_data.html"
+    - title: 드라이브 관리
+      url: "/storage/concept_system_manage_drives_managing_drives.html"
+      entries:
+      - title: 드라이브 세부 정보
+        url: "/storage/reference_system_manage_drives_drives_details.html"
+    - title: 노드 관리
+      url: "/storage/concept_system_manage_nodes_manage_nodes.html"
+      entries:
+      - title: 클러스터에 노드를 추가합니다
+        url: "/storage/task_system_manage_nodes_adding_a_node_to_a_cluster.html"
+      - title: 노드 버전 관리 및 호환성
+        url: "/storage/concept_system_manage_nodes_node_versioning_and_compatibility.html"
+      - title: 혼합 노드 환경의 클러스터 용량
+        url: "/storage/concept_system_manage_nodes_cluster_capacity_in_a_mixed_node_environment.html"
+      - title: 개별 노드 세부 정보를 봅니다
+        url: "/storage/task_system_manage_nodes_view_individual_node_details.html"
+    - title: Fibre Channel 포트 세부 정보를 봅니다
+      url: "/storage/task_system_manage_fc_view_fibre_channel_ports_details.html"
+    - title: 가상 네트워크를 관리합니다
+      url: "/storage/concept_system_manage_virtual_manage_virtual_networks.html"
+      entries:
+      - title: 가상 네트워크를 추가합니다
+        url: "/storage/task_system_manage_virtual_add_a_virtual_network.html"
+      - title: 가상 라우팅 및 전달을 활성화합니다
+        url: "/storage/task_system_manage_virtual_enable_virtual_routing_and_forwarding.html"
+      - title: 가상 네트워크를 편집합니다
+        url: "/storage/task_system_manage_virtual_edit_a_virtual_network.html"
+      - title: VRF VLAN을 편집합니다
+        url: "/storage/task_system_manage_virtual_edit_vrf_vlans.html"
+      - title: 가상 네트워크를 삭제합니다
+        url: "/storage/task_system_manage_virtual_delete_a_virtual_network.html"
+  - title: FIPS 드라이브를 지원하는 클러스터를 생성합니다
+    url: "/storage/task_system_manage_fips_create_a_cluster_supporting_fips_drives.html"
+    entries:
+    - title: FIPS 드라이브에 노드를 혼합하지 마십시오
+      url: "/storage/task_system_manage_fips_avoid_mixing_nodes_for_fips_drives.html"
+    - title: 유휴 데이터 암호화 사용
+      url: "/storage/task_system_manage_fips_enable_encryption_at_rest.html"
+    - title: 노드가 FIPS 드라이브 기능을 지원할 수 있는지 확인합니다
+      url: "/storage/task_system_manage_fips_identify_nodes_ready_for_fips_drives.html"
+    - title: FIPS 드라이브 기능을 사용하도록 설정합니다
+      url: "/storage/task_system_manage_fips_enable_the_fips_drives_feature.html"
+    - title: FIPS 드라이브 상태를 확인합니다
+      url: "/storage/task_system_manage_fips_check_the_fips_drive_status.html"
+    - title: FIPS 드라이브 기능 문제를 해결합니다
+      url: "/storage/task_system_manage_fips_troubleshoot_the_fips_drive_feature.html"
+  - title: 클러스터에서 HTTPS에 FIPS 140-2를 사용하도록 설정합니다
+    url: "/storage/task_system_manage_fips_enable_fips_140_2_for_https.html"
+    entries:
+    - title: SSL 암호
+      url: "/storage/reference_system_manage_fips_ssl_cipher_changes.html"
+  - title: 외부 키 관리를 시작합니다
+    url: "/storage/concept_system_manage_key_get_started_with_external_key_management.html"
+    entries:
+    - title: 외부 키 관리를 설정합니다
+      url: "/storage/task_system_manage_key_set_up_external_key_management.html"
+    - title: 소프트웨어 암호화 유휴 마스터 키를 다시 입력하다
+      url: "/storage/task_system_manage_rekey_software_ear_master_key.html"
+    - title: 액세스할 수 없거나 잘못된 인증 키를 복구합니다
+      url: "/storage/concept_system_manage_key_recover_inaccessible_or_invalid_authentication_keys.html"
+    - title: 외부 키 관리 API 명령
+      url: "/storage/concept_system_manage_key_external_key_management_api_commands.html"
+- title: 볼륨 및 가상 볼륨 관리
+  url: "/storage/concept_data_manage_data_management.html"
+  entries:
+  - title: 볼륨 작업
+    url: "/storage/task_data_manage_volumes_work_with_volumes_task.html"
+    entries:
+    - title: 서비스 품질 정책 관리
+      url: "/storage/concept_data_manage_volumes_quality_of_service_policies.html"
+    - title: 볼륨 관리
+      url: "/storage/task_data_manage_volumes.html"
+    - title: Fibre Channel 볼륨에 LUN을 할당합니다
+      url: "/storage/task_data_manage_volumes_assign_luns_to_fibre_channel_volumes.html"
+    - title: 볼륨에 QoS 정책을 적용합니다
+      url: "/storage/task_data_manage_volumes_apply_a_qos_policy.html"
+    - title: 볼륨의 QoS 정책 연결을 제거합니다
+      url: "/storage/task_data_manage_volumes_remove_a_qos_policy_association_of_a_volume.html"
+  - title: 가상 볼륨 작업
+    url: "/storage/concept_data_manage_vvol_work_virtual_volumes.html"
+    entries:
+    - title: 가상 볼륨을 설정합니다
+      url: "/storage/task_data_manage_vvol_enable_virtual_volumes.html"
+    - title: 가상 볼륨 세부 정보를 봅니다
+      url: "/storage/task_data_manage_vvol_view_virtual_volume_details.html"
+    - title: 가상 볼륨을 삭제합니다
+      url: "/storage/task_data_manage_vvol_delete_a_virtual_volume.html"
+    - title: 스토리지 컨테이너 관리
+      url: "/storage/concept_data_manage_vvol_manage_storage_containers.html"
+    - title: 프로토콜 엔드포인트
+      url: "/storage/concept_data_manage_vvol_protocol_endpoints.html"
+      entries:
+      - title: 프로토콜 엔드포인트 세부 정보
+        url: "/storage/reference_data_manage_vvol_protocol_endpoints_details.html"
+    - title: 바인딩
+      url: "/storage/concept_data_manage_vvol_bindings.html"
+      entries:
+      - title: 바인딩 세부 정보
+        url: "/storage/reference_data_manage_vvol_bindings_details.html"
+    - title: 호스트 세부 정보입니다
+      url: "/storage/reference_data_manage_vvol_host_details.html"
+  - title: 볼륨 액세스 그룹 및 이니시에이터와 작업합니다
+    url: "/storage/concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html"
+    entries:
+    - title: 볼륨 액세스 그룹을 생성합니다
+      url: "/storage/task_data_manage_vol_access_group_create_a_volume_access_group.html"
+    - title: 개별 액세스 그룹 세부 정보를 봅니다
+      url: "/storage/task_data_manage_vol_access_group_view_individual_access_group_details.html"
+    - title: 액세스 그룹에 볼륨을 추가합니다
+      url: "/storage/task_data_manage_vol_access_group_add_volumes.html"
+    - title: 액세스 그룹에서 볼륨을 제거합니다
+      url: "/storage/task_data_manage_vol_access_group_remove_volumes.html"
+    - title: 이니시에이터를 생성합니다
+      url: "/storage/task_data_manage_vol_access_group_create_an_initiator.html"
+    - title: 이니시에이터를 편집합니다
+      url: "/storage/task_data_manage_vol_access_group_edit_an_initiator.html"
+    - title: 볼륨 액세스 그룹에 단일 이니시에이터를 추가합니다
+      url: "/storage/task_data_manage_vol_access_group_add_a_single_initiator.html"
+    - title: 볼륨 액세스 그룹에 여러 이니시에이터를 추가합니다
+      url: "/storage/task_data_manage_vol_access_group_add_multiple_initiators.html"
+    - title: 액세스 그룹에서 이니시에이터를 제거합니다
+      url: "/storage/task_data_manage_vol_access_group_remove_initiators_from_an_access_group.html"
+    - title: 액세스 그룹을 삭제합니다
+      url: "/storage/task_data_manage_vol_access_group_delete.html"
+    - title: 이니시에이터를 삭제합니다
+      url: "/storage/task_data_manage_vol_access_group_delete_an_initiator.html"
+- title: 데이터 보호
+  url: "/storage/concept_data_protection.html"
+  entries:
+  - title: 데이터 보호를 위해 볼륨 스냅샷을 사용합니다
+    url: "/storage/task_data_protection_using_volume_snapshots.html"
+    entries:
+    - title: 데이터 보호를 위해 개별 볼륨 스냅샷을 사용합니다
+      url: "/storage/task_data_protection_use_individual_volume_snapshots.html"
+      entries:
+      - title: 볼륨 스냅샷을 생성합니다
+        url: "/storage/task_data_protection_create_a_volume_snapshot.html"
+      - title: 스냅샷 보존 편집
+        url: "/storage/task_data_protection_edit_snapshot_retention.html"
+      - title: 스냅샷을 삭제합니다
+        url: "/storage/task_data_protection_delete_a_snapshot.html"
+      - title: 스냅숏에서 볼륨의 클론을 생성합니다
+        url: "/storage/task_data_protection_clone_a_volume_from_a_snapshot.html"
+      - title: 볼륨을 스냅샷으로 롤백합니다
+        url: "/storage/task_data_protection_roll_back_a_volume_to_a_snapshot.html"
+      - title: 볼륨 스냅샷 백업 작업
+        url: "/storage/concept_data_protection_volume_snapshot_backup_operations.html"
+        entries:
+        - title: 볼륨 스냅샷을 Amazon S3 오브젝트 저장소에 백업합니다
+          url: "/storage/task_data_protection_back_up_a_volume_snapshot_to_an_amazon_s3_object_store.html"
+        - title: OpenStack Swift 오브젝트 저장소에 볼륨 스냅샷을 백업합니다
+          url: "/storage/task_data_protection_back_up_a_volume_snapshot_to_openstack_swift.html"
+        - title: 볼륨 스냅샷을 SolidFire 클러스터에 백업합니다
+          url: "/storage/task_data_protection_back_up_volume_snapshot_to_solidfire.html"
+    - title: 데이터 보호를 위해 그룹 스냅샷을 사용합니다
+      url: "/storage/task_data_protection_use_group_snapshots_for_data_protection.html"
+      entries:
+      - title: 그룹 스냅샷 세부 정보
+        url: "/storage/reference_data_protection_group_snapshot_details.html"
+      - title: 그룹 스냅샷을 생성합니다
+        url: "/storage/task_data_protection_create_a_group_snapshot.html"
+      - title: 그룹 스냅샷을 편집합니다
+        url: "/storage/task_data_protection_edit_group_snapshots.html"
+      - title: 그룹 스냅샷을 삭제합니다
+        url: "/storage/task_data_protection_delete_a_group_snapshot.html"
+      - title: 볼륨을 그룹 스냅샷으로 다시 돌아갑니다
+        url: "/storage/task_data_protection_roll_back_volumes_to_a_group_snapshot.html"
+      - title: 그룹 스냅샷의 구성원을 편집합니다
+        url: "/storage/task_data_protection_edit_members_of_group_snapshot.html"
+      - title: 여러 볼륨의 클론을 생성합니다
+        url: "/storage/task_data_protection_clone_multiple_volumes.html"
+      - title: 그룹 스냅샷에서 여러 볼륨의 클론을 생성합니다
+        url: "/storage/task_data_protection_clone_multiple_volumes_from_a_group_snapshot.html"
+    - title: 스냅샷을 예약합니다
+      url: "/storage/task_data_protection_schedule_a_snapshot_task.html"
+      entries:
+      - title: 스냅샷 스케줄 세부 정보입니다
+        url: "/storage/reference_data_protection_snapshot_schedule_details.html"
+      - title: 스냅샷 스케줄을 생성합니다
+        url: "/storage/task_data_protection_create_a_snapshot_schedule.html"
+      - title: 스냅샷 스케줄을 편집합니다
+        url: "/storage/task_data_protection_edit_a_snapshot_schedule.html"
+      - title: 스냅샷 스케줄을 복제합니다
+        url: "/storage/task_data_protection_copy_a_snapshot_schedule.html"
+      - title: 스냅샷 스케줄을 삭제합니다
+        url: "/storage/task_data_protection_delete_a_snapshot_schedule.html"
+  - title: NetApp Element 소프트웨어를 실행하는 클러스터 간에 원격 복제를 수행합니다
+    url: "/storage/task_replication_perform_remote_replication_between_element_clusters.html"
+    entries:
+    - title: 실시간 복제를 위해 클러스터 및 볼륨 페어링을 계획합니다
+      url: "/storage/task_replication_plan_cluster_and_volume_pairing.html"
+    - title: 복제를 위해 클러스터를 쌍으로 설정합니다
+      url: "/storage/task_replication_pair_clusters.html"
+      entries:
+      - title: MVIP 또는 페어링 키를 사용하여 클러스터를 페어링합니다
+        url: "/storage/task_replication_pair_clusters_using_mvip_or_a_pairing_key.html"
+        entries:
+        - title: MVIP를 사용하여 클러스터를 페어링합니다
+          url: "/storage/task_replication_pair_cluster_using_mvip.html"
+        - title: 페어링 키를 사용하여 클러스터를 페어링합니다
+          url: "/storage/task_replication_pair_cluster_using_pairing_key.html"
+      - title: 클러스터 쌍 연결을 확인합니다
+        url: "/storage/task_replication_validate_the_cluster_pair_connection.html"
+    - title: 볼륨을 페어링합니다
+      url: "/storage/task_replication_pair_volumes.html"
+      entries:
+      - title: 읽기 또는 쓰기 권한이 있는 타겟 볼륨을 생성합니다
+        url: "/storage/task_replication_create_a_target_volume_with_read_write_access.html"
+      - title: 볼륨 ID 또는 페어링 키를 사용하여 볼륨을 페어링합니다
+        url: "/storage/task_replication_pair_volumes_using_volume_id_or_pairing_key.html"
+        entries:
+        - title: 볼륨 ID를 사용하여 볼륨을 페어링합니다
+          url: "/storage/task_replication_pair_volumes_using_a_volume_id.html"
+        - title: 페어링 키를 사용하여 볼륨을 페어링합니다
+          url: "/storage/task_replication_pair_volumes_using_a_pairing_key.html"
+      - title: 복제 소스와 타겟을 페어링된 볼륨에 할당합니다
+        url: "/storage/task_replication_assign_replication_source_and_target_to_paired_volumes.html"
+    - title: 볼륨 복제를 확인합니다
+      url: "/storage/task_replication_validate_volume_replication.html"
+    - title: 복제 후 볼륨 관계를 삭제합니다
+      url: "/storage/task_replication_delete_volume_relationship_after_replication.html"
+    - title: 볼륨 관계 관리
+      url: "/storage/task_replication_manage_volume_relationships.html"
+      entries:
+      - title: 복제를 일시 중지합니다
+        url: "/storage/task_replication_pause_replication.html"
+      - title: 복제 모드를 변경합니다
+        url: "/storage/task_replication_change_the_mode.html"
+      - title: 볼륨 쌍을 삭제합니다
+        url: "/storage/task_replication_delete_volume_pairs.html"
+      - title: 클러스터 쌍을 삭제합니다
+        url: "/storage/task_replication_delete_cluster_pair.html"
+      - title: 클러스터 쌍 세부 정보
+        url: "/storage/reference_replication_cluster_pair_details.html"
+      - title: 볼륨 쌍 세부 정보
+        url: "/storage/reference_replication_volume_pair_details.html"
+        entries:
+        - title: 볼륨 페어링 메시지
+          url: "/storage/reference_replication_volume_pairing_messages.html"
+        - title: 볼륨 페어링 경고
+          url: "/storage/reference_replication_volume_pairing_warnings.html"
+  - title: Element 및 ONTAP 클러스터 간 SnapMirror 복제 사용
+    url: "/storage/task_snapmirror_use_replication_between_element_and_ontap_clusters.html"
+    entries:
+    - title: SnapMirror 개요
+      url: "/storage/concept_snapmirror_overview.html"
+    - title: 클러스터에서 SnapMirror를 활성화합니다
+      url: "/storage/task_snapmirror_enable_on_the_cluster.html"
+    - title: 볼륨에서 SnapMirror를 사용하도록 설정합니다
+      url: "/storage/task_snapmirror_enable_on_the_volume.html"
+    - title: SnapMirror 끝점을 만듭니다
+      url: "/storage/task_snapmirror_create_an_endpoint.html"
+    - title: SnapMirror 관계를 생성합니다
+      url: "/storage/task_snapmirror_create_snapmirror_relationship.html"
+    - title: SnapMirror 관계 동작
+      url: "/storage/reference_snapmirror_relationship_actions.html"
+    - title: SnapMirror 레이블
+      url: "/storage/concept_snapmirror_labels.html"
+      entries:
+      - title: 스냅샷에 SnapMirror 레이블을 추가합니다
+        url: "/storage/task_snapmirror_add_labels_to_snapshots.html"
+      - title: 스냅샷 일정에 SnapMirror 레이블을 추가합니다
+        url: "/storage/task_snapmirror_add_labels_to_snapshot_schedules.html"
+    - title: SnapMirror를 사용한 재해 복구
+      url: "/storage/concept_snapmirror_disaster_recovery.html"
+      entries:
+      - title: Element 클러스터에서 페일오버를 수행합니다
+        url: "/storage/task_snapmirror_perform_failover_from_element_cluster.html"
+      - title: Element에 대한 장애 복구를 수행합니다
+        url: "/storage/task_snapmirror_perform_failback_to_element.html"
+        entries:
+        - title: SnapMirror 페일백 시나리오
+          url: "/storage/concept_snapmirror_failback_scenarios.html"
+        - title: 소스 볼륨이 아직 있을 때 페일백을 수행합니다
+          url: "/storage/task_snapmirror_perform_failback_when_source_volume_exists.html"
+        - title: 소스 볼륨이 더 이상 존재하지 않는 경우 장애 복구를 수행합니다
+          url: "/storage/task_snapmirror_performing_failback_when_source_volume_no_longer_exists.html"
+      - title: ONTAP에서 요소로 전송 또는 1회 마이그레이션을 수행합니다
+        url: "/storage/task_snapmirror_transfer_or_one_time_migration_from_ontap_to_element.html"
+  - title: 볼륨 백업 및 복원
+    url: "/storage/task_data_protection_back_up_and_restore_volumes.html"
+    entries:
+    - title: Amazon S3 오브젝트 저장소에 볼륨을 백업합니다
+      url: "/storage/task_data_protection_back_up_volume_to_amazon_s3.html"
+    - title: OpenStack Swift 오브젝트 저장소에 볼륨을 백업합니다
+      url: "/storage/task_data_protection_back_up_volume_to_openstack_swift.html"
+    - title: SolidFire 스토리지 클러스터에 볼륨을 백업합니다
+      url: "/storage/task_data_protection_back_up_volume_to_solidfire.html"
+    - title: Amazon S3 오브젝트 저장소 의 백업에서 볼륨을 복원합니다
+      url: "/storage/task_data_protection_restore_volume_from_backup_on_amazon_s3.html"
+    - title: OpenStack Swift 오브젝트 저장소 의 백업에서 볼륨을 복원합니다
+      url: "/storage/task_data_protection_restore_volume_from_backup_on_openstack_swift.html"
+    - title: SolidFire 스토리지 클러스터의 백업에서 볼륨을 복원합니다
+      url: "/storage/task_data_protection_restore_volume_from_backup_on_solidfire.html"
+  - title: 사용자 지정 보호 도메인을 구성합니다
+    url: "/storage/task_data_protection_configure_custom_protection_domains.html"
+- title: 시스템 문제를 해결합니다
+  url: "/storage/concept_system_monitoring_and_troubleshooting.html"
+  entries:
+  - title: 시스템 이벤트에 대한 정보를 봅니다
+    url: "/storage/task_monitor_information_about_system_events.html"
+    entries:
+    - title: 이벤트 유형
+      url: "/storage/reference_monitor_event_types.html"
+  - title: 실행 중인 작업의 상태를 봅니다
+    url: "/storage/reference_monitor_status_of_running_tasks.html"
+  - title: 시스템 경고를 봅니다
+    url: "/storage/task_monitor_system_alerts.html"
+    entries:
+    - title: 클러스터 고장 코드
+      url: "/storage/reference_monitor_cluster_fault_codes.html"
+  - title: 노드 성능 작업을 봅니다
+    url: "/storage/task_monitor_node_performance_activity.html"
+  - title: 볼륨 성능을 봅니다
+    url: "/storage/task_monitor_volume_performance.html"
+    entries:
+    - title: 볼륨 성능 세부 정보입니다
+      url: "/storage/reference_monitor_volume_performance_details.html"
+  - title: iSCSI 세션을 봅니다
+    url: "/storage/task_monitor_iscsi_sessions.html"
+    entries:
+    - title: iSCSI 세션 세부 정보입니다
+      url: "/storage/reference_monitor_iscsi_session_details.html"
+  - title: Fibre Channel 세션을 봅니다
+    url: "/storage/task_monitor_fibre_channel_sessions.html"
+    entries:
+    - title: Fibre Channel 세션 세부 정보입니다
+      url: "/storage/reference_monitor_fibre_channel_session_details.html"
+  - title: 드라이브 문제를 해결합니다
+    url: "/storage/concept_troubleshoot_drives.html"
+    entries:
+    - title: 클러스터에서 장애가 발생한 드라이브를 제거합니다
+      url: "/storage/task_troubleshoot_remove_failed_drives.html"
+    - title: 기본 MDSS 드라이브 문제 해결
+      url: "/storage/concept_troubleshoot_basic_mdss_drive_troubleshooting.html"
+    - title: MDSS 드라이브를 추가합니다
+      url: "/storage/task_troubleshoot_add_mdss_drives.html"
+    - title: MDSS 드라이브를 제거합니다
+      url: "/storage/task_troubleshoot_remove_mdss_drives.html"
+  - title: 노드 문제 해결
+    url: "/storage/concept_troubleshoot_nodes.html"
+    entries:
+    - title: 클러스터 전원을 끕니다
+      url: "/storage/task_troubleshoot_power_down_a_cluster.html"
+  - title: 스토리지 노드용 노드별 유틸리티 작업
+    url: "/storage/concept_per_node_work_with_utilities.html"
+    entries:
+    - title: 노드별 UI를 사용하여 노드별 설정에 액세스합니다
+      url: "/storage/task_per_node_access_settings.html"
+    - title: 노드별 UI에서 네트워크 설정 세부 정보
+      url: "/storage/reference_per_node_network_settings_details.html"
+    - title: 노드별 UI에서 클러스터 설정 세부 정보
+      url: "/storage/reference_per_node_cluster_settings_details.html"
+    - title: 노드별 UI를 사용하여 시스템 테스트를 실행합니다
+      url: "/storage/task_per_node_run_system_tests.html"
+    - title: 노드별 UI를 사용하여 시스템 유틸리티를 실행합니다
+      url: "/storage/task_per_node_run_system_utilities.html"
+    - title: 관리 노드와 작업합니다
+      url: "/storage/concept_mnode_work_with_the_management_node.html"
+  - title: 클러스터 전체 수준 이해
+    url: "/storage/concept_monitor_understand_cluster_fullness_levels.html"

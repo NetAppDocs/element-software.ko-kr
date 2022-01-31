@@ -1,0 +1,130 @@
+---
+permalink: api/reference_element_api_listnodefibrechannelportinfo.html 
+sidebar: sidebar 
+keywords: list,listing,node,fibre,channel,port,info,listnodefibrechannelportinfo 
+summary: ListNodeFiberChannelPortInfo 메서드를 사용하여 노드의 파이버 채널 포트에 대한 정보를 나열할 수 있습니다. 
+---
+= ListNodeFiberChannelPortInfo 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListNodeFiberChannelPortInfo" 메서드를 사용하여 노드의 Fibre Channel 포트에 대한 정보를 나열할 수 있습니다.
+
+이 API 메소드는 개별 노드에서 사용하기 위한 것입니다. 개별 파이버 채널 노드에 액세스하려면 사용자 ID와 암호가 필요합니다. 클러스터에서 를 사용하면 모든 파이버 채널 인터페이스가 나열됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+광섬유 채널 포트
+ a| 
+모든 물리적 Fibre Channel 포트 목록 또는 단일 노드의 포트 목록
+ a| 
+xref:reference_element_api_fibrechannelport.adoc[광섬유 채널 포트] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "ListNodeFibreChannelPortInfo",
+   "params": {
+       "nodeID": 5,
+       "force": true
+   },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "fibreChannelPorts": [
+      {
+        "firmware": "7.04.00 (d0d5)",
+        "hbaPort": 1,
+        "model": "QLE2672",
+        "nPortID": "0xc7002c",
+        "pciSlot": 3,
+        "serial": "BFE1335E03500",
+        "speed": "8 Gbit",
+        "state": "Online",
+        "switchWwn": "20:01:00:2a:6a:98:a3:41",
+        "wwnn": "5f:47:ac:c8:35:54:02:00",
+        "wwpn": "5f:47:ac:c0:35:54:02:02"
+      },
+      {
+         "firmware": "7.04.00 (d0d5)",
+         "hbaPort": 2,
+         "model": "QLE2672",
+         "nPortID": "0x06002d",
+         "pciSlot": 3,
+         "serial": "BFE1335E03500",
+         "speed": "8 Gbit",
+         "state": "Online",
+         "switchWwn": "20:01:00:2a:6a:9c:71:01",
+         "wwnn": "5f:47:ac:c8:35:54:02:00",
+         "wwpn": "5f:47:ac:c0:35:54:02:03"
+      },
+      {
+         "firmware": "7.04.00 (d0d5)",
+         "hbaPort": 1,
+         "model": "QLE2672",
+         "nPortID": "0xc7002a",
+         "pciSlot": 2,
+         "serial": "BFE1335E04029",
+         "speed": "8 Gbit",
+         "state": "Online",
+         "switchWwn": "20:01:00:2a:6a:98:a3:41",
+         "wwnn": "5f:47:ac:c8:35:54:02:00",
+         "wwpn": "5f:47:ac:c0:35:54:02:00"
+     },
+     {
+         "firmware": "7.04.00 (d0d5)",
+         "hbaPort": 2,
+         "model": "QLE2672",
+         "nPortID": "0x06002a",
+         "pciSlot": 2,
+         "serial": "BFE1335E04029",
+         "speed": "8 Gbit",
+         "state": "Online",
+         "switchWwn": "20:01:00:2a:6a:9c:71:01",
+         "wwnn": "5f:47:ac:c8:35:54:02:00",
+         "wwpn": "5f:47:ac:c0:35:54:02:01"
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

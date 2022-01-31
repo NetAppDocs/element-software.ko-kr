@@ -1,0 +1,23 @@
+---
+permalink: storage/task_data_protection_copy_a_snapshot_schedule.html 
+sidebar: sidebar 
+keywords: snapshot schedule, copy, maintain, schedule attributes 
+summary: 스케줄을 복사하고 현재 속성을 유지 관리할 수 있습니다. 
+---
+= 스냅샷 스케줄을 복제합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스케줄을 복사하고 현재 속성을 유지 관리할 수 있습니다.
+
+. 데이터 보호 * > * 스케줄 * 을 클릭합니다.
+. 복사할 일정에 대한 작업 아이콘을 클릭합니다.
+. 결과 메뉴에서 * 복사본 만들기 * 를 클릭합니다.
++
+스케줄의 현재 속성이 채워진 * 일정 생성 * 대화 상자가 나타납니다.
+
+. * 선택 사항: * 새 스케줄의 이름과 업데이트된 속성을 입력합니다.
+. Create Schedule * 을 클릭합니다.
+

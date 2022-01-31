@@ -1,0 +1,29 @@
+---
+permalink: storage/task_data_manage_volumes_apply_a_qos_policy.html 
+sidebar: sidebar 
+keywords: qos policy, apply to volumes 
+summary: 하나 이상의 볼륨에 기존 QoS 정책을 일괄 적용할 수 있습니다. 
+---
+= 볼륨에 QoS 정책을 적용합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+하나 이상의 볼륨에 기존 QoS 정책을 일괄 적용할 수 있습니다.
+
+일괄 적용하려는 QoS 정책이 있어야 합니다.
+
+. Management * > * Volumes * 를 선택합니다.
+. 볼륨 목록에서 QoS 정책을 적용할 볼륨 옆의 확인란을 선택합니다.
+. 대량 작업 * 을 클릭합니다.
+. 결과 메뉴에서 * QoS 정책 적용 * 을 클릭합니다.
+. 드롭다운 목록에서 QoS 정책을 선택합니다.
+. 적용 * 을 클릭합니다.
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:concept_data_manage_volumes_quality_of_service_policies.adoc[서비스 품질 정책]

@@ -1,0 +1,76 @@
+---
+permalink: api/reference_element_api_deleteclusterinterfacepreference.html 
+sidebar: sidebar 
+keywords: cluster,interface,preferences,delete,deleting,DeleteClusterInterfacePreference 
+summary: DeleteClusterInterfacePreference 메서드를 사용하면 Element 소프트웨어를 실행하는 스토리지 클러스터와 통합된 시스템에서 기존 클러스터 인터페이스 기본 설정을 삭제할 수 있습니다. 이 방법은 내부용으로 사용됩니다. 
+---
+= DeleteClusterInterfacePreference(삭제 클러스터
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+DeleteClusterInterfacePreference는 Element 소프트웨어를 실행하는 스토리지 클러스터와 통합된 시스템에서 기존 클러스터 인터페이스 기본 설정을 삭제할 수 있도록 합니다. 이 방법은 내부용으로 사용됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+이름
+ a| 
+삭제할 클러스터 인터페이스 기본 설정의 이름입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+	"method": "DeleteClusterInterfacePreference",
+	"params": {
+		"name": "prefname"
+		},
+	"id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+11.0

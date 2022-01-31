@@ -1,0 +1,62 @@
+---
+permalink: hardware/task_sfseries_psurepl.html 
+sidebar: sidebar 
+keywords: solidfire chassis, power supply replacement, sf-series nodes 
+summary: 각 SolidFire 섀시에는 전원 이중화를 위한 2개의 전원 공급 장치가 포함되어 있습니다. 전원 공급 장치에 장애가 발생할 경우 가능한 한 빨리 교체하여 섀시에 중복 전원이 있는지 확인해야 합니다. 
+---
+= 전원 공급 장치를 교체합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+각 SolidFire 섀시에는 전원 이중화를 위한 2개의 전원 공급 장치가 포함되어 있습니다. 전원 공급 장치에 장애가 발생할 경우 가능한 한 빨리 교체하여 섀시에 중복 전원이 있는지 확인해야 합니다.
+
+.무엇을 &#8217;필요로 할거야
+* 전원 공급 장치를 교체해야 한다고 확인했습니다.
+* 교체용 전원 공급 장치가 있습니다.
+* 두 번째 전원 공급 장치가 작동하고 있는지 확인했습니다.
+* 정전기 방전(ESD) 손목 밴드를 가지고 있거나 다른 정전기 방지 예방 조치를 취했습니다.
+
+
+다음 노드가 있는 1랙 장치(1U) 섀시가 있는 경우 지침이 적용됩니다.
+
+* SF2405
+* SF3010
+* SF4805
+* SF6010
+* SF9605
+* SF9608
+* SF9010
+* SF19210
+* SF38410
+* SF-FCN-01
+* FC0025
+
+
+.단계
+. 교체할 전원 공급 장치에서 전원 코드를 뽑습니다.
+. 분리 단추를 눌러 전원 공급 장치를 섀시에서 밀어 꺼냅니다.
++
+
+IMPORTANT: 양손으로 전원 공급 장치의 무게를 지탱해야 합니다.
+
+. 양손으로 교체용 전원 공급 장치의 가장자리를 섀시의 구멍에 맞춘 다음 장치를 섀시에 부드럽게 밀어 넣습니다.
++
+
+IMPORTANT: 전원 공급 장치를 섀시에 밀어 넣을 때 하드웨어 손상을 방지하기 위해 과도한 힘을 가하지 마십시오.
+
+. 전원 코드를 연결합니다.
+. 배송된 상자에 있는 지침에 따라 오류가 발생한 장치를 NetApp으로 반환합니다.
++
+교체 절차에 대한 자세한 내용은 NetApp Support에 문의하십시오.
+
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
+

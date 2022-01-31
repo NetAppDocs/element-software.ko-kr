@@ -1,0 +1,125 @@
+---
+permalink: api/reference_element_api_adddrives.html 
+sidebar: sidebar 
+keywords: drives,adding,cluster,drive,add,adddrives 
+summary: AddDrives 메서드를 사용하여 클러스터에 사용 가능한 드라이브를 하나 이상 추가할 수 있습니다. 그러면 드라이브에서 클러스터에 대한 데이터 일부를 호스팅할 수 있습니다. 
+---
+= 추가 드라이브
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'AddDrives' 메서드를 사용하여 클러스터에 사용 가능한 드라이브를 하나 이상 추가하여 드라이브가 클러스터에 대한 데이터 일부를 호스팅할 수 있습니다.
+
+클러스터에 스토리지 노드를 추가하거나 기존 노드에 새 드라이브를 설치할 때 새 드라이브는 사용 가능한 것으로 표시되며 AddDrives를 통해 추가해야 사용할 수 있습니다. 를 사용합니다 xref:reference_element_api_listdrives.adoc[ListDrives를 선택합니다] 추가할 수 있는 드라이브를 표시하는 방법입니다. 드라이브를 추가하면 시스템이 드라이브 유형을 자동으로 결정합니다.
+
+이 방법은 비동기식으로 수행되며 클러스터의 드라이브 재조정 프로세스가 시작되는 즉시 반환됩니다. 그러나 새로 추가된 드라이브를 사용하여 클러스터의 데이터를 재조정하는 데 더 많은 시간이 걸릴 수 있습니다. 재조정은 AddDrives 메서드 호출이 완료된 후에도 계속됩니다. 를 사용할 수 있습니다 xref:reference_element_api_getasyncresult.adoc[GetAsyncResult 를 참조하십시오] 메서드의 반환된 asyncHandle 을 쿼리하는 메서드입니다. AddDrives 메서드가 반환되면 를 사용할 수 있습니다 xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs 를 선택합니다] 새로운 드라이브에서 데이터의 재조정 진행률을 확인하는 방법입니다.
+
+
+NOTE: 여러 개의 드라이브를 추가하는 경우 각 드라이브가 하나씩 있는 여러 개의 개별 메서드가 아니라 단일 AddDrives 메서드 호출에 드라이브를 추가하는 것이 더 효율적입니다. 따라서 클러스터의 스토리지 로드를 안정화하기 위해 발생하는 데이터 밸런싱의 양이 줄어듭니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+드라이브
+ a| 
+클러스터에 추가할 각 드라이브에 대한 정보입니다. 가능한 값:
+
+* 드라이브 ID: 추가할 드라이브의 ID(정수)입니다.
+* 유형: 추가할 드라이브 유형(string). 유효한 값은 "slice", "block" 또는 "volume"입니다. 이 인수를 생략하면 시스템에서 올바른 형식을 할당합니다.
+
+ a| 
+JSON 개체 어레이
+ a| 
+없음
+ a| 
+예(유형은 선택 사항)
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+asyncHandle
+ a| 
+작업 결과를 얻는 데 사용되는 Handle 값입니다.
+ a| 
+정수
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "method": "AddDrives",
+  "params": {
+    "drives": [
+      {
+        "driveID": 1,
+        "type": "slice"
+      },
+      {
+        "driveID": 2,
+        "type": "block"
+      },
+      {
+        "driveID": 3,
+        "type": "block"
+      }
+    ]
+  }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result" : {
+    "asyncHandle": 1
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult 를 참조하십시오]
+* xref:reference_element_api_listdrives.adoc[ListDrives를 선택합니다]
+* xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs 를 선택합니다]
+

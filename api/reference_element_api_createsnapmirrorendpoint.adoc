@@ -1,0 +1,87 @@
+---
+permalink: api/reference_element_api_createsnapmirrorendpoint.html 
+sidebar: sidebar 
+keywords: SnapMirror,endpoints,endpoint,creating,create,CreateSnapMirrorEndpoint 
+summary: Element 웹 UI에서는 CreateSnapMirrorEndpoint 메서드를 사용하여 원격 SnapMirror 끝점과의 관계를 만듭니다. 
+---
+= CreateSnapMirrorEndpoint
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 웹 UI에서는 'CreateSnapMirrorEndpoint' 메서드를 사용하여 원격 SnapMirror 끝점과 관계를 만듭니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+관리 IP
+ a| 
+원격 SnapMirror 엔드포인트의 관리 IP 주소입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+사용자 이름
+ a| 
+ONTAP 시스템의 관리 사용자 이름입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+암호
+ a| 
+ONTAP 시스템의 관리 암호입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+snapMirrorEndpoint
+ a| 
+새로 생성된 SnapMirror 엔드포인트입니다.
+ a| 
+xref:reference_element_api_snapmirrorendpoint.adoc[snapMirrorEndpoint]
+
+|===
+
+
+== 버전 이후 새로운 기능
+
+10.0

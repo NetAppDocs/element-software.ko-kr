@@ -1,0 +1,21 @@
+---
+permalink: storage/task_system_manage_snmp_configure_an_snmp_usm_user.html 
+sidebar: sidebar 
+keywords: snmp, usm user, config, requests 
+summary: SNMP 버전 3을 설정하는 경우 USM 사용자가 승인된 SNMP 요청을 수신하도록 구성해야 합니다. 
+---
+= SNMP USM 사용자를 구성합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SNMP 버전 3을 설정하는 경우 USM 사용자가 승인된 SNMP 요청을 수신하도록 구성해야 합니다.
+
+. Cluster * > * SNMP * 를 클릭합니다.
+. 일반 SNMP 설정 * 에서 * 예 * 를 클릭하여 SNMP를 활성화합니다.
+. 버전 * 목록에서 * 버전 3 * 을 선택합니다.
+. USM Users * 섹션에서 이름, 암호 및 암호를 입력합니다.
+. * 선택 사항: * 다른 USM 사용자를 추가하려면 * USM 사용자 추가 * 를 클릭하고 이름, 암호 및 암호를 입력합니다.
+. 변경 내용 저장 * 을 클릭합니다.
+

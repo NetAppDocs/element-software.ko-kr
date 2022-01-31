@@ -1,0 +1,18 @@
+---
+permalink: api/reference_element_api_supported_modes_of_replication.html 
+sidebar: sidebar 
+keywords: supported,replication,modes,clusters,paired,pair,pairs 
+summary: 페어링된 클러스터에서는 다음과 같은 복제 모드가 지원됩니다. 
+---
+= 페어링된 클러스터에 지원되는 복제 모드입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+페어링된 클러스터에서는 다음과 같은 복제 모드가 지원됩니다.
+
+* 데이터의 비동기식 복제: 복제 타겟 볼륨으로 전송된 데이터가 비동기식으로 전송됩니다. 시스템은 데이터 쓰기 전에 확인 메시지가 전송되기를 기다리지 않습니다.
+* 데이터의 동기식 복제: 복제 타겟 볼륨으로 전송된 데이터는 동기식으로 전송됩니다. 호스트에서 전송된 입출력 작업이 시스템에서 확인되면 시스템 승인이 호스트로 다시 전송되고 데이터가 복제 타겟 볼륨으로 전송됩니다.
+* 스냅샷 전용 데이터 복제: 볼륨 스냅샷만 타겟 클러스터에 복제됩니다.
+

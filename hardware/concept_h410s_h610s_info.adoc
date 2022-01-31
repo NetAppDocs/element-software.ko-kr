@@ -1,0 +1,30 @@
+---
+permalink: hardware/concept_h410s_h610s_info.html 
+sidebar: sidebar 
+keywords: h410s, h610s, hardware installation, hardware maintenance 
+summary: H 시리즈 스토리지 노드의 설치 및 유지 관리에 대한 정보를 찾을 수 있습니다. 
+---
+= H410S 및 H610S 하드웨어 정보
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+H 시리즈 스토리지 노드의 설치 및 유지 관리에 대한 정보를 찾을 수 있습니다.
+
+설치 및 유지 관리 콘텐츠에 대한 링크는 다음과 같습니다.
+
+* link:task_h410s_h610s_install.html["H 시리즈 스토리지 노드를 설치합니다"^]
+* link:task_h410s_repl.html["H410S 노드를 교체합니다"^]
+* link:task_h610s_repl.html["H610S 노드를 교체합니다"^]
+* link:task_hseries_driverepl.html["드라이브를 교체합니다"^]
+* link:task_psu_repl.html["전원 공급 장치를 교체합니다"^]
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
+

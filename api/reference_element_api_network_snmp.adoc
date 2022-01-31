@@ -1,0 +1,71 @@
+---
+permalink: api/reference_element_api_network_snmp.html 
+sidebar: sidebar 
+keywords: object,objects,network 
+summary: SNMP 네트워크 객체에는 클러스터 노드의 SNMP v3 구성에 대한 정보가 포함되어 있습니다. 
+---
+= 네트워크(SNMP)
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SNMP 네트워크 객체에는 클러스터 노드의 SNMP v3 구성에 대한 정보가 포함되어 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+액세스
+ a| 
+SNMP 정보 요청에 허용되는 액세스 유형입니다. 가능한 값:
+
+* ro: 읽기 전용 액세스.
+* RW: 읽기-쓰기 액세스.
+* rosys: 제한된 시스템 정보 세트에 대한 읽기 전용 액세스.
+
+ a| 
+문자열
+
+
+
+ a| 
+CIDR
+ a| 
+CIDR 네트워크 마스크 이 네트워크 마스크는 0보다 크거나 같고 32보다 작거나 같은 정수여야 합니다. 또한 31과 같을 수 없습니다.
+ a| 
+정수
+
+
+
+ a| 
+커뮤니티
+ a| 
+SNMP 커뮤니티 문자열입니다.
+ a| 
+문자열
+
+
+
+ a| 
+네트워크
+ a| 
+이 멤버는 CIDR 멤버와 함께 액세스 및 커뮤니티 문자열이 적용되는 네트워크를 제어합니다. "기본값"의 특수 값은 모든 네트워크에 적용되는 항목을 지정하는 데 사용됩니다. 이 구성원이 호스트 이름 또는 "기본값"이면 CIDR 마스크가 무시됩니다.
+ a| 
+문자열
+
+|===
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_getsnmpinfo.adoc[GetSnmpInfo 를 참조하십시오]

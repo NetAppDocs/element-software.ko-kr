@@ -1,0 +1,72 @@
+---
+permalink: api/reference_element_api_snmpsendtesttraps.html 
+sidebar: sidebar 
+keywords: snmp,test,send,trap,testing,sending,snmpsendtesttraps 
+summary: SnmpSendTestTraps 클러스터에 대한 SNMP 기능을 테스트할 수 있습니다. 이 방법은 클러스터에서 현재 구성된 SNMP 관리자에게 테스트 SNMP 트랩을 보내도록 지시합니다. 
+---
+= SnmpSendTestTraps를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'snmpSendTestTraps'를 사용하면 클러스터에 대한 SNMP 기능을 테스트할 수 있습니다. 이 방법은 클러스터에서 현재 구성된 SNMP 관리자에게 테스트 SNMP 트랩을 보내도록 지시합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+상태
+ a| 
+테스트의 상태입니다.
+ a| 
+문자열
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+	"method": "SnmpSendTestTraps",
+    "params": {},
+    "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "status": "complete"
+    }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

@@ -1,0 +1,15 @@
+---
+permalink: storage/concept_data_manage_vvol_bindings.html 
+sidebar: sidebar 
+keywords: bindings, vvols, bound virtual volumes 
+summary: 가상 볼륨에서 입출력 작업을 수행하려면 ESXi 호스트가 먼저 가상 볼륨을 바인딩해야 합니다. 
+---
+= 바인딩
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+가상 볼륨에서 입출력 작업을 수행하려면 ESXi 호스트가 먼저 가상 볼륨을 바인딩해야 합니다.
+
+SolidFire 클러스터는 최적의 프로토콜 엔드포인트를 선택하고 ESXi 호스트 및 가상 볼륨을 프로토콜 끝점과 연결하는 바인딩을 생성한 다음 ESXi 호스트에 대한 바인딩을 반환합니다. 바인딩한 후 ESXi 호스트는 바인딩된 가상 볼륨에서 입출력 작업을 수행할 수 있습니다.

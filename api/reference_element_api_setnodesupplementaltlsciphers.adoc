@@ -1,0 +1,117 @@
+---
+permalink: api/reference_element_api_setnodesupplementaltlsciphers.html 
+sidebar: sidebar 
+keywords: tls,cipher,set,setting,list,supplemental,setnodesupplementaltlsciphers,node 
+summary: SetNodeSupplementalTlsCiphers 메서드를 사용하여 보충 TLS 암호화 목록을 지정할 수 있습니다. 관리 노드에서 이 명령을 사용할 수 있습니다. 
+---
+= SetNodeSupplementalTlsCiphers 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'DetNodeSupplementalTlsCiphers' 메서드를 사용하여 보충 TLS 암호화 목록을 지정할 수 있습니다. 관리 노드에서 이 명령을 사용할 수 있습니다.
+
+
+
+== 매개 변수
+
+
+NOTE: 관리 노드에 대해 이 메서드를 호출해야 합니다. 예를 들면 다음과 같습니다.
+
+[listing]
+----
+https://<management node IP>:442/json-rpc/10.0
+----
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+공급업체
+ a| 
+OpenSSL 명명 체계를 사용하는 보조 암호 그룹 이름입니다. 암호화 그룹 이름은 대/소문자를 구분하지 않습니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+필수 암호화
+ a| 
+노드에 대한 필수 TLS 암호 그룹 목록입니다. 노드에서 항상 활성 상태인 Cipherer입니다.
+ a| 
+문자열
+
+
+
+ a| 
+공급업체
+ a| 
+노드에 대한 추가 TLS 암호 그룹 목록입니다.
+ a| 
+문자열
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "SetNodeSupplementalTlsCiphers",
+   "params": {
+        "supplementalCiphers": [
+            "DHE-RSA-AES128-SHA256",
+            "DHE-RSA-AES128-GCM-SHA256",
+            "ECDHE-RSA-AES128-SHA256",
+            "ECDHE-RSA-AES128-GCM-SHA256"
+        ]
+   },
+   "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {
+        "mandatoryCiphers": [
+            "DHE-RSA-AES256-SHA256",
+            "DHE-RSA-AES256-GCM-SHA384",
+            "ECDHE-RSA-AES256-SHA384",
+            "ECDHE-RSA-AES256-GCM-SHA384"
+        ],
+        "supplementalCiphers": [
+            "DHE-RSA-AES128-SHA256",
+            "DHE-RSA-AES128-GCM-SHA256",
+            "ECDHE-RSA-AES128-SHA256",
+            "ECDHE-RSA-AES128-GCM-SHA256"
+        ]
+    }
+}
+----

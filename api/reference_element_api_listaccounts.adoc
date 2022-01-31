@@ -1,0 +1,141 @@
+---
+permalink: api/reference_element_api_listaccounts.html 
+sidebar: sidebar 
+keywords: account,accounts,list,listing,all,listaccounts 
+summary: ListAccounts를 사용하면 선택 사항인 페이징 지원을 통해 스토리지 테넌트 계정의 전체 목록을 가져올 수 있습니다. Element 계정을 사용하면 볼륨에 액세스할 수 있습니다. 
+---
+= 계정 목록
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListAccounts"를 사용하면 페이징 지원 옵션을 통해 스토리지 테넌트 계정의 전체 목록을 가져올 수 있습니다. Element 계정을 사용하면 볼륨에 액세스할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+여기에는 StorageContainers 가 포함됩니다
+ a| 
+가상 볼륨 스토리지 컨테이너는 기본적으로 응답에 포함됩니다. 저장소 컨테이너를 제외하려면 false 로 설정합니다.
+ a| 
+부울
+ a| 
+참
+ a| 
+아니요
+
+
+
+ a| 
+startAccountID입니다
+ a| 
+반환할 계정 ID를 시작하는 중입니다. 이 계정 ID가 있는 계정이 없는 경우 다음 계정 by AccountID 주문이 목록의 시작으로 사용됩니다. 목록을 페이지 이동하려면 이전 응답에서 마지막 계정의 계정 ID + 1을 전달합니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+제한
+ a| 
+반환할 최대 계정 객체 수입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+계정
+ a| 
+계정 목록입니다.
+ a| 
+xref:reference_element_api_account.adoc[계정] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "ListAccounts",
+   "params": {
+     "startAccountID"  : 0,
+     "limit" : 1000
+   },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "result" : {
+    "accounts": [
+	{
+        "attributes": {},
+        "username": "jamesw",
+        "targetSecret": "168#5A757ru268)",
+        "volumes": [],
+        "enableChap": false,
+        "status": "active",
+        "accountID": 16,
+        "storageContainerID": "abcdef01-1234-5678-90ab-cdef01234567",
+        "initiatorSecret": "168#5A757ru268)"
+    },
+    {
+        "attributes": {},
+        "username": "jimmyd",
+        "targetSecret": "targetsecret",
+        "volumes": [],
+        "enableChap": true,
+        "status": "active",
+        "accountID": 5,
+        "storageContainerID": "abcdef01-1234-5678-90ab-cdef01234567",
+        "initiatorSecret": "initiatorsecret"
+    }
+  ]
+}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

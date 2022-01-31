@@ -1,0 +1,27 @@
+---
+permalink: storage/task_system_manage_cluster_set_the_cluster_full_threshold.html 
+sidebar: sidebar 
+keywords: cluster fullness, setting threshold, metadata, warning 
+summary: 아래 단계를 사용하여 시스템에서 블록 클러스터 충만 경고를 생성하는 레벨을 변경할 수 있습니다. 또한 ModifyClusterFullThreshold API 메서드를 사용하여 시스템에서 블록 또는 메타데이터 경고를 생성하는 수준을 변경할 수 있습니다. 
+---
+= 클러스터를 최대 임계값으로 설정합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+아래 단계를 사용하여 시스템에서 블록 클러스터 충만 경고를 생성하는 레벨을 변경할 수 있습니다. 또한 ModifyClusterFullThreshold API 메서드를 사용하여 시스템에서 블록 또는 메타데이터 경고를 생성하는 수준을 변경할 수 있습니다.
+
+클러스터 관리자 권한이 있어야 합니다.
+
+.단계
+. Cluster * > * Settings * 를 클릭합니다.
+. 클러스터 전체 설정 섹션에서 Helix가 노드 장애로부터 복구할 수 없을 때 _ %용량이 남아 있을 때 * 경고 알림 발생에 백분율을 입력합니다 *.
+. 변경 내용 저장 * 을 클릭합니다.
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+https://kb.netapp.com/Advice_and_Troubleshooting/Flash_Storage/SF_Series/How_are_the_blockSpace_thresholds_calculated_for_Element["Element에 대해 블록 공간 임계값이 계산되는 방법"^]

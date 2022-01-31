@@ -1,0 +1,111 @@
+---
+permalink: api/reference_element_api_getdrivehardwareinfo.html 
+sidebar: sidebar 
+keywords: drive,get,getting,hardware,info,getdrivehardwareinfo 
+summary: GetDriveHardwareInfo 메서드를 사용하여 지정된 드라이브에 대한 모든 하드웨어 정보를 가져올 수 있습니다. 여기에는 일반적으로 제조업체, 공급업체, 버전 및 기타 관련 하드웨어 식별 정보가 포함됩니다. 
+---
+= GetDriveHardwareInfo 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetDriveHardwareInfo" 메서드를 사용하여 지정된 드라이브에 대한 모든 하드웨어 정보를 가져올 수 있습니다. 여기에는 일반적으로 제조업체, 공급업체, 버전 및 기타 관련 하드웨어 식별 정보가 포함됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+드라이브 ID입니다
+ a| 
+요청에 대한 드라이브의 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+결과
+ a| 
+지정된 드라이브 ID에 대한 하드웨어 정보를 반환했습니다.
+ a| 
+xref:reference_element_api_hardwareinfo.adoc[하드웨어 정보]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "GetDriveHardwareInfo",
+   "params": {
+     "driveID": 5
+   },
+   "id" : 100
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id" : 100,
+   "result" : {
+     "driveHardwareInfo" : {
+       "description" : "ATA Drive",
+       "dev" : "8:80",
+       "devpath" : "/devices/pci0000:40/0000:40:01.0/0000:41:00.0/host6/port-6:0/expander-6:0/port-6:0:4/end_device-6:0:4/target6:0:4/6:0:4:0/block/sdf",
+       "driveSecurityAtMaximum" : false,
+       "driveSecurityFrozen" : false
+       "driveSecurityLocked" : false,
+       "logicalname" : "/dev/sdf",
+       "product" : "INTEL SSDSA2CW300G3",
+       "securityFeatureEnabled" : false,
+       "securityFeatureSupported" : true,
+       "serial" : "CVPR121400NT300EGN",
+       "size" : "300069052416",
+       "uuid" : "7e1fd5b9-5acc-8991-e2ac-c48f813a3884",
+       "version" : "4PC10362"
+     }
+   }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_listdrives.adoc[ListDrives를 선택합니다]

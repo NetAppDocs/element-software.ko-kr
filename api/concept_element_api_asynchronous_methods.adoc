@@ -1,0 +1,38 @@
+---
+permalink: api/concept_element_api_asynchronous_methods.html 
+sidebar: sidebar 
+keywords: async,asynchronous,methods,API 
+summary: 일부 API 메서드는 비동기식이므로 메서드가 반환될 때 수행하는 작업이 완료되지 않을 수 있습니다. 비동기 메서드는 작업의 상태를 확인하기 위해 쿼리할 수 있는 핸들을 반환합니다. 일부 작업의 상태 정보에는 완료율이 포함될 수 있습니다. 
+---
+= 비동기 메서드
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+일부 API 메서드는 비동기식이므로 메서드가 반환될 때 수행하는 작업이 완료되지 않을 수 있습니다. 비동기 메서드는 작업의 상태를 확인하기 위해 쿼리할 수 있는 핸들을 반환합니다. 일부 작업의 상태 정보에는 완료율이 포함될 수 있습니다.
+
+비동기 작업을 쿼리할 때 그 결과는 다음 형식 중 하나일 수 있습니다.
+
+* 드라이브 추가: 시스템이 클러스터에 드라이브를 추가하고 있습니다.
+* 'BulkVolume': 시스템이 백업이나 복구 같은 볼륨 간에 복제 작업을 수행하고 있습니다.
+* 클론: 시스템이 볼륨을 클론 생성 중입니다.
+* 드라이브 제거: 시스템에서 클러스터에서 데이터를 제거하기 위해 데이터를 복사하는 중입니다.
+* 'RtfiPendingNode': 클러스터에 추가하기 전에 호환되는 소프트웨어를 노드에 설치하고 있습니다.
+
+
+참고 비동기 메서드를 사용하거나 실행 중인 비동기 작업의 상태를 가져올 때는 다음 사항을 유의하십시오.
+
+* 비동기 메서드는 개별 메서드 설명서에 나와 있습니다.
+* 비동기 메서드는 "asyncHandle"을 반환합니다. 이 핸들은 발급하는 API 메서드에서 알려진 핸들입니다. 핸들을 사용하여 비동기 작업의 상태 또는 결과를 폴링할 수 있습니다.
+* GetAsyncResult 메서드를 사용하여 개별 비동기 메서드의 결과를 얻을 수 있습니다. GetAsyncResult 를 사용하여 완료된 작업을 쿼리하면 시스템에서 결과를 반환하고 자동으로 시스템에서 결과를 제거합니다. GetAsyncResult 를 사용하여 완료되지 않은 작업을 쿼리하면 시스템에서 결과를 반환하지만 제거하지는 않습니다.
+* ListAsyncResults 메서드를 사용하여 실행 중이거나 완료된 모든 비동기 메서드의 상태와 결과를 얻을 수 있습니다. 이 경우 시스템은 완료된 작업에 대한 결과를 제거하지 않습니다.
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
+

@@ -1,0 +1,88 @@
+---
+permalink: api/reference_element_api_getloginbanner.html 
+sidebar: sidebar 
+keywords: terms,use,banner,get,getting,getloginbanner,login 
+summary: GetLoginBanner 메서드를 사용하면 사용자가 Element 웹 인터페이스에 로그인할 때 표시되는 현재 활성 사용 약관 배너를 가져올 수 있습니다. 
+---
+= GetLoginBanner 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetLoginBanner 메서드를 사용하면 사용자가 Element 웹 인터페이스에 로그인할 때 표시되는 현재 활성화된 사용 약관 배너를 가져올 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+배너
+ a| 
+이용 약관 배너의 현재 텍스트. 이 값은 배너가 비활성화된 경우에도 텍스트를 포함할 수 있습니다.
+ a| 
+문자열
+
+
+
+ a| 
+활성화됨
+ a| 
+이용 약관 배너의 상태. 가능한 값:
+
+* 참: 웹 인터페이스 로그인 시 사용 약관 배너가 표시됩니다.
+* False: 웹 인터페이스 로그인 시 사용 약관 배너가 표시되지 않습니다.
+
+ a| 
+부울
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "id": 3411,
+  "method": "GetLoginBanner",
+  "params": {}
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 3411,
+  "result": {
+    "loginBanner": {
+      "banner": "Welcome to NetApp!",
+      "enabled": false
+    }
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+10.0

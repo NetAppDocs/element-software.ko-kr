@@ -1,0 +1,36 @@
+---
+permalink: api/reference_element_api_volume_pairing_order_of_operations.html 
+sidebar: sidebar 
+keywords: volume,pairing,order,operations,volumes,pairing,pair,pairs 
+summary: 볼륨을 페어링하기 전에 두 해당 클러스터 간에 클러스터 쌍을 생성해야 합니다. 
+---
+= 볼륨 페어링 작업 순서
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+볼륨을 페어링하기 전에 두 해당 클러스터 간에 클러스터 쌍을 생성해야 합니다.
+
+다음 API 메소드 세트를 사용하여 클러스터 연결을 설정하십시오.
+
+* xref:reference_element_api_startvolumepairing.adoc[StartVolumePairing]:
++
+이 API 메소드는 볼륨 쌍을 생성하는 데 사용되는 볼륨 페어링 키를 생성하고 반환합니다. 이 키에는 볼륨 간의 통신을 설정하는 데 사용되는 정보가 포함되어 있습니다.
+
+* xref:reference_element_api_completevolumepairing.adoc[CompleteVolumePairing]:
++
+이 방법은 로 만든 페어링 키를 사용합니다 xref:reference_element_api_startvolumepairing.adoc[StartVolumePairing] 볼륨 쌍을 생성하는 API 메소드 를 발행합니다 xref:reference_element_api_completevolumepairing.adoc[CompleteVolumePairing] 볼륨 ID 및 볼륨 PairingKey 매개 변수를 사용하여 대상 볼륨에 대한 API 메소드
+
+
+
+페어링된 볼륨 중 하나만 복제 타겟 볼륨으로 식별할 수 있습니다. 를 사용합니다 xref:reference_element_api_modifyvolumepair.adoc[ModifyVolumePair] 타겟 볼륨을 식별하여 볼륨의 데이터 복제 방향을 설정하는 API 방법입니다. 데이터가 소스 볼륨에서 타겟 볼륨으로 복제됩니다.
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_startvolumepairing.adoc[StartVolumePairing]
+* xref:reference_element_api_completevolumepairing.adoc[CompleteVolumePairing]
+* xref:reference_element_api_modifyvolumepair.adoc[ModifyVolumePair]
+

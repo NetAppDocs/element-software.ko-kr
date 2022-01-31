@@ -1,0 +1,78 @@
+---
+permalink: api/reference_element_api_clusteradmin.html 
+sidebar: sidebar 
+keywords: objects,object,clusterAdmin 
+summary: clusterAdmin 객체에는 현재 클러스터 관리자 사용자에 대한 정보가 포함되어 있습니다. GetCurrentClusterAdmin API 메서드를 사용하여 admin 사용자 정보를 검색할 수 있습니다. 
+---
+= 클러스터 관리자
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+clusterAdmin 객체에는 현재 클러스터 관리자 사용자에 대한 정보가 포함되어 있습니다. GetCurrentClusterAdmin API 메서드를 사용하여 admin 사용자 정보를 검색할 수 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+액세스
+ a| 
+이 클러스터 관리자가 사용할 수 있는 방법입니다.
+ a| 
+문자열 배열
+
+
+
+ a| 
+AuthMethod
+ a| 
+클러스터 관리자가 보유한 권한의 유형입니다. 가능한 값:
+
+* LDAP를 지원합니다
+* 클러스터
+* 로컬
+
+ a| 
+문자열
+
+
+
+ a| 
+속성
+ a| 
+JSON 개체 형식의 이름-값 쌍 목록입니다.
+ a| 
+JSON 개체
+
+
+
+ a| 
+클러스터 관리자 ID
+ a| 
+이 클러스터 관리자의 클러스터 관리자 ID입니다.
+ a| 
+정수
+
+
+
+ a| 
+사용자 이름
+ a| 
+이 클러스터 관리자의 사용자 이름입니다.
+ a| 
+문자열
+
+|===
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_getcurrentclusteradmin.adoc[GetCurrentClusterAdmin 을 참조하십시오]

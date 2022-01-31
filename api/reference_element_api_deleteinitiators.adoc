@@ -1,0 +1,99 @@
+---
+permalink: api/reference_element_api_deleteinitiators.html 
+sidebar: sidebar 
+keywords: delete,deleting,initiator,initiators,DeleteInitiators 
+summary: 'DeleteInitiators 를 사용하여 시스템에서 하나 이상의 이니시에이터를 삭제할 수 있습니다. ( 및 연결된 볼륨이나 볼륨 액세스 그룹 \ 에서)' 
+---
+= DeleteInitiators(삭제 초기자
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+DeletInitiators를 사용하여 시스템에서 하나 이상의 이니시에이터(및 연결된 볼륨 또는 볼륨 액세스 그룹)를 삭제할 수 있습니다.
+
+매개 변수에 제공된 이니시에이터 중 하나를 삭제하지 못한 경우 시스템에서 오류를 반환하고 이니시에이터를 삭제하지 않습니다(부분 완료는 불가능).
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+이니시에이터
+ a| 
+삭제할 이니시에이터의 ID 배열입니다.
+ a| 
+정수 배열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 오류
+
+이 메서드는 다음 오류를 반환할 수 있습니다.
+
+|===
+
+
+| 이름 | 설명 
+
+
+ a| 
+xInitialatorDoesNotExist 를 참조하십시오
+ a| 
+선택한 이니시에이터 이름이 없으면 반환됩니다.
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "id": 5101,
+  "method": "DeleteInitiators",
+  "params": {
+    "initiators": [
+      145,
+      147
+    ]
+  }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 5101,
+  "result": {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

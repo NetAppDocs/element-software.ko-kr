@@ -1,0 +1,87 @@
+---
+permalink: api/reference_element_api_updatesnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: SnapMirror,relationship,relationships,update,updating,destination,volume,updatesnapmirrorrelationship 
+summary: Element 소프트웨어 웹 UI에서는 UpdateSnapMirrorRelationship 메서드를 사용하여 SnapMirror 관계의 대상 볼륨을 소스 볼륨의 최신 미러로 만듭니다. 
+---
+= UpdateSnapMirror 관계
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 소프트웨어 웹 UI에서는 'UpdateSnapMirrorRelationship' 메서드를 사용하여 SnapMirror 관계의 대상 볼륨을 소스 볼륨의 최신 미러로 만듭니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+snapMirrorEndpointID입니다
+ a| 
+Element 스토리지 클러스터와 통신하는 원격 ONTAP 스토리지 시스템의 끝점 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+디스테이징 볼륨
+ a| 
+SnapMirror 관계의 대상 볼륨입니다.
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume정보]
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+최대 전송 속도
+ a| 
+볼륨 간 최대 데이터 전송 속도(KB/초)를 지정합니다. 기본값 0은 무제한이며 SnapMirror 관계가 사용 가능한 네트워크 대역폭을 완전히 활용할 수 있도록 허용합니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+snapMirrorRelationship
+ a| 
+업데이트된 SnapMirror 관계에 대한 정보가 포함된 개체입니다.
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationship]
+
+|===
+
+
+== 버전 이후 새로운 기능
+
+10.1

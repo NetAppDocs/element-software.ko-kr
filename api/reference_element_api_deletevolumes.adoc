@@ -1,0 +1,164 @@
+---
+permalink: api/reference_element_api_deletevolumes.html 
+sidebar: sidebar 
+keywords: volumes,volume,delete,deleting,multiple,DeleteVolumes 
+summary: 'DeleteVolumes 메서드를 사용하여 여러 활성 볼륨을 삭제하도록 표시할 수 있습니다. 이 표시가 되면 정리 간격이 경과하면 볼륨이 \(영구적으로 삭제됨\) 제거됩니다.' 
+---
+= DeleteVolumes 를 클릭합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+DeleteVolumes 메서드를 사용하여 여러 활성 볼륨을 삭제하도록 표시할 수 있습니다. 이 옵션을 선택하면 정리 간격이 경과하면 볼륨이 제거(영구 삭제)됩니다.
+
+볼륨 삭제 요청을 한 후 볼륨에 대한 활성 iSCSI 연결이 즉시 종료되고 볼륨이 이 상태에 있는 동안에는 추가 연결이 허용되지 않습니다. 표시된 볼륨은 대상 검색 요청에서 반환되지 않습니다.
+
+삭제하도록 표시된 볼륨의 스냅샷은 영향을 받지 않습니다. 스냅샷은 볼륨이 시스템에서 제거될 때까지 유지됩니다. 볼륨이 삭제하도록 표시되고 대량 볼륨 읽기 또는 대량 볼륨 쓰기 작업이 진행 중인 경우 대량 볼륨 읽기 또는 쓰기 작업이 중지됩니다.
+
+삭제한 볼륨이 볼륨과 페어링되면 페어링된 볼륨 간의 복제가 일시 중단되며 삭제된 상태인 동안 해당 볼륨이나 볼륨에 데이터가 전송되지 않습니다. 삭제된 볼륨이 Enter와 페어링된 원격 볼륨은 PausedMisConfigured 상태가 되었으며 데이터가 더 이상 해당 볼륨이나 삭제된 볼륨으로 전송되지 않습니다. 삭제된 볼륨이 제거될 때까지 해당 볼륨을 복원하고 데이터 전송을 재개할 수 있습니다. 삭제된 볼륨이 시스템에서 제거되면 페어링된 볼륨이 StoppedMisConfigured 상태로 입력되고 볼륨 페어링 상태가 제거됩니다. 제거된 볼륨은 영구적으로 사용할 수 없게 됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+
+NOTE: 다음 매개 변수 중 하나 이상이 필요하며 매개 변수 중 하나만 사용해야 합니다(모두 상호 배타적입니다).
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+볼륨 ID
+ a| 
+시스템에서 삭제할 볼륨의 ID 목록입니다.
+ a| 
+정수 배열
+ a| 
+없음
+ a| 
+참고 를 참조하십시오.
+
+
+
+ a| 
+볼륨 액세스 그룹 ID
+ a| 
+볼륨 액세스 그룹 ID 목록입니다. 이 목록에 지정한 모든 볼륨 액세스 그룹의 모든 볼륨이 시스템에서 삭제됩니다.
+ a| 
+정수 배열
+ a| 
+없음
+ a| 
+참고 를 참조하십시오.
+
+
+
+ a| 
+계정 ID
+ a| 
+계정 ID 목록입니다. 이러한 계정의 모든 볼륨이 시스템에서 삭제됩니다.
+ a| 
+정수 배열
+ a| 
+없음
+ a| 
+참고 를 참조하십시오.
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+볼륨
+ a| 
+새로 삭제된 볼륨에 대한 정보입니다.
+ a| 
+xref:reference_element_api_volume.adoc[볼륨]
+
+
+
+ a| 
+곡선
+ a| 
+곡선은 키 값 쌍의 집합입니다. 키는 입출력 크기(바이트)입니다. 이 값은 특정 입출력 크기에서 IOP를 수행하는 비용을 나타냅니다. 곡선은 100 IOPS로 설정된 4096바이트 작업을 기준으로 계산됩니다.
+ a| 
+JSON 개체
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "DeleteVolumes",
+   "params": {
+      "accountIDs" : [1, 2, 3]
+   },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+
+{
+  "id" : 1,
+  "result": {
+    "volumes" : [ {
+      "access": "readWrite",
+      "accountID": 1,
+      "attributes": {},
+      "blockSize": 4096,
+      "createTime": "2015-03-06T18:50:56Z",
+      "deleteTime": "",
+      "enable512e": False,
+      "iqn": "iqn.2010-01.com.solidfire:pzsr.vclient-030-v00001.1",
+      "name": "vclient-030-v00001",
+      "qos": {
+        "burstIOPS": 15000,
+        "burstTime": 60,
+        "curve": {},
+        "maxIOPS": 15000,
+        "minIOPS": 100
+      },
+      "purgeTime": "",
+      "sliceCount": 1,
+      "scsiEUIDeviceID": "707a737200000001f47acc0100000000",
+      "scsiNAADeviceID": "6f47acc100000000707a737200000001",
+      "status": "active",
+      "totalSize": 10000003072,
+      "virtualVolumeID": 5,
+      "volumeAccessGroups": [],
+      "volumePairs": [],
+      "volumeID": 1
+    } ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

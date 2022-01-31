@@ -1,0 +1,91 @@
+---
+permalink: api/reference_element_api_getpendingoperation.html 
+sidebar: sidebar 
+keywords: get,getting,pending,operation,getpendingoperation 
+summary: GetPendingOperation 메서드를 사용하여 현재 진행 중인 노드의 작업을 검색할 수 있습니다. 이 메서드는 작업이 완료될 때 다시 보고하는 데 사용할 수도 있습니다. 
+---
+= GetPendingOperation 을 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetPendingOperation 메서드를 사용하여 현재 진행 중인 노드의 작업을 검색할 수 있습니다. 이 메서드는 작업이 완료될 때 다시 보고하는 데 사용할 수도 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+보류 중
+ a| 
+가능한 값:
+
+* True: 작업이 아직 진행 중입니다.
+* 거짓:
++
+작업이 더 이상 진행되지 않습니다.
+
+
+ a| 
+부울
+
+
+
+ a| 
+작동
+ a| 
+진행 중이거나 완료된 작업의 이름입니다.
+ a| 
+문자열
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "GetPendingOperation",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" : {
+      "pendingOperation" : {
+         "pending" : "true",
+         "operation" : "TestDrivesInternal",
+      }
+   }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

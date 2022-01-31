@@ -1,0 +1,194 @@
+---
+permalink: api/reference_element_api_getipmiinfo.html 
+sidebar: sidebar 
+keywords: hardware,sensor,info,ipmi,report,get,getting,getipmiinfo 
+summary: 'GetIpmiInfo 메서드를 사용하면 노드 팬, 흡기 및 배기 온도 및 시스템에서 모니터링하는 전원 공급 장치에 대한 자세한 센서 \(objects\)를 표시할 수 있습니다.' 
+---
+= GetIpmiInfo 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetIpmiInfo" 메서드를 사용하면 노드 팬, 흡기 및 배기 온도, 시스템에서 모니터링하는 전원 공급 장치에 대한 자세한 센서(개체) 보고를 표시할 수 있습니다.
+
+
+NOTE: SolidFire 엔터프라이즈 SDS는 이 방법을 지원하지 않습니다. SolidFire ESDS 시스템에서 이 메서드를 사용하면 메서드가 오류를 반환합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+센서
+ a| 
+노드 내 각 센서로부터의 자세한 정보
+ a| 
+JSON 개체 어레이
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "GetIpmiInfo",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 API 메소드에 대해 반환되는 응답 길이로 인해 이 문서에서 의도적으로 응답 부분을 제거했습니다. 시스템에 하드웨어 정보가 포함된 부분은 노드가 최적의 성능으로 실행되도록 하기 위해 시스템에서 모니터링하는 것입니다.
+
+[listing]
+----
+{
+  "id": 1,
+    "result": {
+      "ipmiInfo": {
+          "sensors": [
+            {
+              "entityID": "7.1 (System Board)",
+              "sensorID": "0x72",
+              "sensorName": "SEL",
+              "sensorType": "Event Logging Disabled",
+              "uniqueSensorID": "7.1:0x72"
+            },
+            {
+              "assertionsEnabled": [ "General Chassis intrusion" ],
+              "deassertionsEnabled": [ "General Chassis intrusion" ],
+              "entityID": "7.1 (System Board)", "sensorID": "0x73",
+              "sensorName": "Intrusion",
+              "sensorType": "Physical Security",
+              "uniqueSensorID": "7.1:0x73"
+            },
+            {THIS ENTIRE SECTION IS REPEATED FOR EACH FAN IN THE SYSTEM
+              "assertionEvents": [],
+              "assertionsEnabled": [],
+              "deassertionsEnabled": [],
+              "entityID": "7.1 (System Board)",
+              "eventMessageControl": "Per-threshold",
+              "lowerCritical": "720.000",
+              "lowerNonCritical": "840.000",
+              "maximumSensorRange": "Unspecified",
+              "minimumSensorRange": "Unspecified",
+              "negativeHysteresis": "600.000",
+              "nominalReading": "10080.000",
+              "normalMaximum": "23640.000",
+              "normalMinimum": "16680.000",
+              "positiveHysteresis": "600.000",
+              "readableThresholds": "lcr lnc",
+              "sensorID": "0x30",
+              "sensorName": "Fan1A RPM",
+              "sensorReading": "4440 (+/- 120) RPM",
+              "sensorType": "Fan",
+              "settableThresholds": "",
+              "status": "ok",
+              "thresholdReadMask": "lcr lnc",
+              "uniqueSensorID": "7.1:0x30"
+            },
+            .
+            .
+            .
+            {THIS ENTIRE SECTION IS REPEATED FOR THE EXHAUST TEMPERATURE OF EACH NODE
+              "assertionEvents": [],
+              "assertionsEnabled": [],
+              "entityID": "7.1 (System Board)",
+              "eventMessageControl": "Per-threshold",
+              "lowerCritical": "3.000",
+              "lowerNonCritical": "8.000",
+              "maximumSensorRange": "Unspecified",
+              "minimumSensorRange": "Unspecified",
+              "negativeHysteresis": "1.000",
+              "nominalReading": "23.000",
+              "normalMaximum": "69.000",
+              "normalMinimum": "11.000",
+              "positiveHysteresis": "1.000",
+              "readableThresholds": "lcr lnc unc ucr",
+              "sensorID": "0x1",
+              "sensorName": "Exhaust Temp",
+              "sensorReading": "44 (+/- 1) degrees C",
+              "sensorType": "Temperature",
+              "settableThresholds": "",
+              "status": "ok",
+              "uniqueSensorID": "7.1:0x1",
+              "upperCritical": "75.000",
+              "upperNonCritical": "70.000"
+            },
+            {THIS ENTIRE SECTION IS REPEATED FOR THE INLET TEMPERATURE OF EACH NODE
+              "assertionEvents": [],
+              "assertionsEnabled": [],
+              "deassertionsEnabled": [],
+              "entityID": "7.1 (System Board)",
+              "eventMessageControl": "Per-threshold",
+              "lowerCritical": "-7.000",
+              "lowerNonCritical": "3.000",
+              "maximumSensorRange": "Unspecified",
+              "minimumSensorRange": "Unspecified",
+              "negativeHysteresis": "1.000",
+              "nominalReading": "23.000",
+              "normalMaximum": "69.000",
+              "normalMinimum": "11.000",
+              "positiveHysteresis": "1.000",
+              "readableThresholds": "lcr lnc unc ucr",
+              "sensorID": "0x4",
+              "sensorName": "Inlet Temp",
+              "sensorReading": "20 (+/- 1) degrees C",
+              "sensorType": "Temperature",
+              "settableThresholds": "lcr lnc unc ucr",
+              "status": "ok",
+              "thresholdReadMask": "lcr lnc unc ucr",
+              "uniqueSensorID": "7.1:0x4",
+              "upperCritical": "47.000",
+              "upperNonCritical": "42.000"
+            },
+            {THIS ENTIRE SECTION IS REPEATED FOR EACH POWER SUPPLY ON EACH NODE
+              "assertionEvents": [],
+              "assertionsEnabled": [],
+              "entityID": "10.2 (Power Supply)",
+              "eventMessageControl": "Per-threshold", "maximumSensorRange": "Unspecified",
+              "minimumSensorRange": "Unspecified",
+              "negativeHysteresis": "Unspecified",
+              "nominalReading": "0.000",
+              "normalMaximum": "0.000",
+              "positiveHysteresis": "Unspecified",
+              "readableThresholds": "No Thresholds",
+              "sensorID": "0x6d",
+              "sensorName": "Voltage 2",
+              "sensorReading": "118 (+/- 0) Volts",
+              "sensorType": "Voltage",
+              "settableThresholds": "No Thresholds", "status": "ok", "uniqueSensorID": "10.2:0x6d"
+            },
+              .
+              .
+              .
+            }
+          ]
+        }
+      }
+    }
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

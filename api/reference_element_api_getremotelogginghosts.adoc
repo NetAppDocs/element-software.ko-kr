@@ -1,0 +1,86 @@
+---
+permalink: api/reference_element_api_getremotelogginghosts.html 
+sidebar: sidebar 
+keywords: remote,logging,hosts,host,get,getting,getremotelogginghosts 
+summary: GetRemoteLoggingHosts 메서드를 사용하여 로그 서버의 현재 목록을 가져올 수 있습니다. 
+---
+= GetRemoteLoggingHosts 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetRemoteLoggingHosts 메서드를 사용하여 로그 서버의 현재 목록을 가져올 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+원격 호스트
+ a| 
+전달된 로깅 정보를 수신하도록 구성된 호스트에 대한 IP 주소 및 포트 정보 목록입니다.
+ a| 
+xref:reference_element_api_loggingserver.adoc[로그 서버] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "id": 3386609,
+   "method": "GetRemoteLoggingHosts",
+   "params": {}
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 3386609,
+   "result": {
+      "remoteHosts": [
+         {
+           "host": "172.16.1.20",
+           "port": 10514
+         },
+         {
+           "host": "172.16.1.25"
+         }
+      ]
+   }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_setremotelogginghosts.adoc[SetRemoteLoggingHosts 를 선택합니다]

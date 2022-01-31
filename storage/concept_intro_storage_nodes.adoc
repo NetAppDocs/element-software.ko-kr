@@ -1,0 +1,22 @@
+---
+permalink: storage/concept_intro_storage_nodes.html 
+sidebar: sidebar 
+keywords: storage nodes, management nodes, block space, metadata space, data management, storage management, Bond10G, network interface, network, metadata, data storage, storage, drives, network interfaces 
+summary: SolidFire 스토리지 노드는 Bond10G 네트워크 인터페이스를 통해 서로 통신하는 드라이브 모음이 포함된 서버입니다. 노드의 드라이브에는 데이터 스토리지 및 데이터 관리를 위한 블록 및 메타데이터 공간이 포함되어 있습니다. 
+---
+= 스토리지 노드
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire 스토리지 노드는 Bond10G 네트워크 인터페이스를 통해 서로 통신하는 드라이브 모음이 포함된 서버입니다. 노드의 드라이브에는 데이터 스토리지 및 데이터 관리를 위한 블록 및 메타데이터 공간이 포함되어 있습니다.
+
+스토리지 노드의 특징은 다음과 같습니다.
+
+* 각 노드의 이름은 고유합니다. 관리자가 노드 이름을 지정하지 않은 경우 기본적으로 SF-XXXX가 사용됩니다. 여기서 XXXX는 시스템에서 생성되는 4개의 임의 문자입니다.
+* 각 노드에는 전반적인 시스템 성능을 향상시키고 쓰기 지연 시간을 줄이기 위해 고유한 고성능 비휘발성 랜덤 액세스 메모리(NVRAM) 쓰기 캐시가 있습니다.
+* 각 노드는 이중화 및 성능을 위한 2개의 독립적인 링크가 있는 스토리지 및 관리 라는 2개의 네트워크에 연결됩니다. 각 노드에는 각 네트워크의 IP 주소가 필요합니다.
+* 새 스토리지 노드로 클러스터를 생성하거나 기존 클러스터에 스토리지 노드를 추가하여 스토리지 용량과 성능을 높일 수 있습니다.
+* 서비스를 중단하지 않고 언제든지 클러스터에서 노드를 추가하거나 제거할 수 있습니다.
+

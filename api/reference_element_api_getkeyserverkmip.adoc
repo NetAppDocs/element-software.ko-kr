@@ -1,0 +1,102 @@
+---
+permalink: api/reference_element_api_getkeyserverkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key server,getting information,retrieving 
+summary: 'GetKeyServerKmip 메서드를 사용하여 지정된 키 관리 상호 운용성 프로토콜\(KMIP\) 키 서버에 대한 정보를 반환할 수 있습니다.' 
+---
+= GetKeyServerKmip 을 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetKeyServerKmip" 메서드를 사용하면 지정된 KMIP(Key Management Interoperability Protocol) 키 서버에 대한 정보를 반환할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+KeyServerID를 입력합니다
+ a| 
+정보를 반환할 KMIP 키 서버의 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+KmipKeyServer를 참조하십시오
+ a| 
+요청된 키 서버에 대한 세부 정보가 포함된 개체입니다.
+ a| 
+link:reference_element_api_keyserverkmip.md#["KeyServerKmip"]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "GetKeyServerKmip",
+  "params": {
+     "keyServerID": 15
+  },
+"id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+        "kmipKeyServer": {
+            "kmipCaCertificate":"MIICPDCCAaUCEDyRMcsf9tAbDpq40ES/E...",
+            "kmipKeyServerHostnames":[
+                "server1.hostname.com", "server2.hostname.com"
+            ],
+            "keyProviderID":1,
+            "kmipKeyServerName":"keyserverName",
+            "keyServerID":15
+            "kmipKeyServerPort":1,
+            "kmipClientCertificate":"dKkkirWmnWXbj9T/UWZYB2oK0z5...",
+            "kmipAssignedProviderIsActive":true
+        }
+    }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+11.7

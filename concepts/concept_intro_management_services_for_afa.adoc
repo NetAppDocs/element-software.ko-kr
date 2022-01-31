@@ -1,0 +1,18 @@
+---
+permalink: concepts/concept_intro_management_services_for_afa.html 
+sidebar: sidebar 
+keywords: what is, what are, management services, service, vcp service, plugin service, microservice 
+summary: 관리 서비스는 SolidFire All-Flash 스토리지를 위한 중앙 집중식 및 확장된 관리 기능을 제공합니다. 이러한 서비스에는 Active IQ 시스템 원격 측정, 로깅 및 서비스 업데이트와 vCenter용 Element 플러그인에 대한 QoSSIOC 서비스가 포함됩니다. 
+---
+= SolidFire All-Flash 스토리지를 위한 관리 서비스
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 11.3 릴리스 현재 * 관리 서비스 * 는 에서 호스팅됩니다 link:../concepts/concept_intro_management_node.html["관리 노드"]주요 릴리즈 이외의 특정 소프트웨어 서비스를 빠르게 업데이트할 수 있습니다.
+
+관리 서비스는 SolidFire All-Flash 스토리지를 위한 중앙 집중식 및 확장된 관리 기능을 제공합니다. 이러한 서비스에는 다음이 포함됩니다 link:..concepts/concept_intro_solidfire_software_interfaces.html#netapp-element-plug-in-for-vcenter-server["NetApp 하이브리드 클라우드 제어"]Active IQ 시스템 원격 측정, 로깅 및 서비스 업데이트뿐 아니라 vCenter용 Element 플러그인에 대한 QoSSIOC 서비스도 제공합니다.
+
+
+TIP: 에 대해 자세히 알아보십시오 link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["관리 서비스 릴리스"].

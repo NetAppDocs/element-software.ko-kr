@@ -1,0 +1,73 @@
+---
+permalink: api/reference_element_api_qos.html 
+sidebar: sidebar 
+keywords: object,objects,QoS 
+summary: 'QoS 객체에는 볼륨의 QoS\(서비스 품질) 설정에 대한 정보가 포함되어 있습니다. 지정된 QoS 값 없이 생성된 볼륨은 기본값을 사용하여 생성됩니다. GetDefaultQoS 메서드를 사용하여 기본값을 찾을 수 있습니다.' 
+---
+= QoS를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+QoS 객체에는 볼륨의 QoS(서비스 품질) 설정에 대한 정보가 포함되어 있습니다. 지정된 QoS 값 없이 생성된 볼륨은 기본값을 사용하여 생성됩니다. 'GetDefaultQoS' 메서드를 사용하여 기본값을 찾을 수 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+burstIOPS
+ a| 
+짧은 기간 동안 허용되는 최대 "피크" 4KB IOPS 정상적인 maxIOPS 값을 초과하는 입출력 작업 버스트를 허용합니다.
+ a| 
+정수
+
+
+
+ a| 
+BurstTime(버스트시간)
+ a| 
+burstIOPS가 허용되는 시간입니다. 반환된 값은 초 단위로 표시됩니다. 이 값은 QoS에 설정된 IOPS를 기준으로 시스템에서 계산됩니다.
+ a| 
+정수
+
+
+
+ a| 
+곡선
+ a| 
+곡선은 키 값 쌍의 집합입니다. 키는 입출력 크기(바이트)입니다. 이 값은 특정 입출력 크기에서 1개의 IOP를 수행하는 비용을 나타냅니다. 곡선은 100 IOPS로 설정된 4096바이트 작업을 기준으로 계산됩니다.
+ a| 
+JSON 개체
+
+
+
+ a| 
+최대 IOPS
+ a| 
+원하는 최대 4KB IOPS는 오랜 기간 동안 허용됩니다.
+ a| 
+정수
+
+
+
+ a| 
+최소 IOPS
+ a| 
+보장을 위해 필요한 최소 4KB IOPS가 필요합니다. 모든 볼륨이 최소 IOPS 값으로 제한되었지만 여전히 성능 용량이 부족한 경우 허용 IOPS가 이 수준 아래로 떨어집니다.
+ a| 
+정수
+
+|===
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_getdefaultqos.adoc[GetDefaultQoS를 참조하십시오]

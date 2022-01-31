@@ -1,0 +1,24 @@
+---
+permalink: storage/task_data_manage_vol_access_group_remove_initiators_from_an_access_group.html 
+sidebar: sidebar 
+keywords: initiator, remove from volume access group, access groups, remove initiator 
+summary: 액세스 그룹에서 이니시에이터를 제거하면 해당 볼륨 액세스 그룹의 볼륨에 더 이상 액세스할 수 없습니다. 볼륨에 대한 일반 계정 액세스가 중단되지 않습니다. 
+---
+= 액세스 그룹에서 이니시에이터를 제거합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+액세스 그룹에서 이니시에이터를 제거하면 해당 볼륨 액세스 그룹의 볼륨에 더 이상 액세스할 수 없습니다. 볼륨에 대한 일반 계정 액세스가 중단되지 않습니다.
+
+계정의 CHAP 설정을 수정하거나 액세스 그룹에서 이니시에이터 또는 볼륨을 제거하면 초기자가 예기치 않게 볼륨에 액세스할 수 없게 될 수 있습니다. 볼륨 액세스가 예기치 않게 손실되지 않는지 확인하려면 계정 또는 액세스 그룹 변경의 영향을 받는 iSCSI 세션을 항상 로그아웃하고 이니시에이터 설정 및 클러스터 설정을 변경한 후 초기자가 볼륨에 다시 연결할 수 있는지 확인합니다.
+
+.단계
+. 관리 * > * 액세스 그룹 * 을 클릭합니다.
+. 제거할 액세스 그룹에 대한 * 작업 * 아이콘을 클릭합니다.
+. 결과 메뉴에서 * Edit * 를 선택합니다.
+. Edit Volume Access Group * 대화 상자의 Add Initiators 아래에서 * Initiators * 목록의 화살표를 클릭합니다.
+. 액세스 그룹에서 제거할 각 이니시에이터에 대해 x 아이콘을 선택합니다.
+. 변경 내용 저장 * 을 클릭합니다.
+

@@ -1,0 +1,154 @@
+---
+permalink: api/reference_element_api_addnodes.html 
+sidebar: sidebar 
+keywords: addnodes,node,add,adding,nodes,cluster 
+summary: AddNodes 메서드를 사용하여 클러스터에 하나 이상의 새 노드를 추가할 수 있습니다. 
+---
+= 추가 노드
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"AddNodes" 메서드를 사용하여 클러스터에 하나 이상의 새 노드를 추가할 수 있습니다.
+
+구성되지 않은 노드가 처음 시작될 때 노드를 구성하라는 메시지가 표시됩니다. 노드를 구성하면 노드를 클러스터에 "보류 중인 노드"로 등록됩니다. Element 소프트웨어를 실행하는 스토리지 클러스터는 자동으로 클러스터의 버전에 노드 이미지를 지정합니다. 보류 중인 노드를 추가할 때 메서드 응답에는 자동 이미징 프로세스의 상태를 쿼리하기 위해 "GetAsyncResult" 메서드와 함께 사용할 수 있는 asyncHandle 값이 포함됩니다.
+
+Fibre Channel 노드를 추가하는 프로세스는 클러스터에 Element iSCSI 스토리지 노드를 추가하는 프로세스와 동일합니다. Fibre Channel 노드는 노드 ID로 시스템에 등록됩니다. 액세스할 수 있게 되면 "대기 중 노드" 상태가 됩니다. "ListAllNodes" 메서드는 iSCSI 노드의 펜딩노드 ID와 클러스터에 추가할 수 있는 모든 Fibre Channel 노드를 반환합니다.
+
+가상 네트워킹용으로 구성한 클러스터에 노드를 추가할 경우 새 노드에 가상 IP를 할당하기 위해 시스템에 충분한 수의 가상 스토리지 IP 주소가 필요합니다. 새 노드에 사용할 수 있는 가상 IP 주소가 없으면 AddNode 작업이 실패합니다. ModifyVirtualNetwork 메서드를 사용하여 가상 네트워크에 스토리지 IP 주소를 더 추가합니다.
+
+노드를 추가하면 노드의 모든 드라이브를 사용할 수 있게 되며, 클러스터의 스토리지 용량을 늘리기 위해 'AddDrives' 메서드를 사용하여 노드를 추가할 수 있습니다.
+
+
+NOTE: 새 노드를 추가하고 드라이브를 사용 가능한 것으로 등록하려면 몇 초 정도 걸릴 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+자동 설치
+ a| 
+TRUE이면 추가 시 노드에서 RTFI(Return to factory image)가 수행됩니다. 기본 동작은 RTFI를 수행하는 것입니다. cEnableAutoInstall 클러스터 상수가 false 이면 이 매개 변수보다 우선 순위가 높습니다. 업그레이드가 진행 중인 경우 이 매개 변수의 값에 관계없이 RTFI 프로세스가 발생하지 않습니다.
+ a| 
+부울
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+펜딩노드
+ a| 
+추가할 노드에 대해 보류 중인 NodeID입니다. ListPendingNodes 메서드를 사용하여 보류 중인 모든 노드를 나열할 수 있습니다.
+ a| 
+정수 배열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+자동 설치
+ a| 
+추가된 노드가 출하 시 이미지로 반환되는지 여부
+ a| 
+부울
+
+
+
+ a| 
+노드
+ a| 
+이전 "pendingNodeID"를 "nodeid"에 매핑하는 개체의 배열입니다. 호환되지 않는 소프트웨어 버전을 실행하는 보류 중인 노드를 추가하면 이 배열에는 GetAsyncResult 메서드와 함께 사용하여 자동 이미징 프로세스의 상태를 쿼리할 수 있는 asyncHandle 값이 포함됩니다.
+ a| 
+JSON 개체 어레이
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "AddNodes",
+   "params": {
+     "autoInstall" : true,
+     "pendingNodes" : [1]
+   },
+   "id":1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  id: null,
+  result: {
+    autoInstall: true,
+    nodes: [
+      {
+        activeNodeKey: "giAm2ep1hA",
+        assignedNodeID: 6,
+        asyncHandle: 3,
+        cip: "10.10.5.106",
+        mip: "192.168.133.106",
+        pendingNodeID: 2,
+        platformInfo: {
+          chassisType: "R620",
+          cpuModel: "Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz",
+          nodeMemoryGB: 72,
+          nodeType: "SF3010"
+        },
+        sip: "10.10.5.106",
+        softwareVersion: "9.0.0.1077"
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_adddrives.adoc[추가 드라이브]
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult 를 참조하십시오]
+* xref:reference_element_api_listallnodes.adoc[목록노드]
+* xref:reference_element_api_modifyvirtualnetwork.adoc[ModifyVirtualNetwork의 약어입니다]
+

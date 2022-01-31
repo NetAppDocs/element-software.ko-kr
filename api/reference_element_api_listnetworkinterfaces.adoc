@@ -1,0 +1,157 @@
+---
+permalink: api/reference_element_api_listnetworkinterfaces.html 
+sidebar: sidebar 
+keywords: network,interface,interfaces,list,listing,listnetworkinterfaces 
+summary: ListNetworkInterfaces 메서드를 사용하여 노드의 각 네트워크 인터페이스에 대한 정보를 나열할 수 있습니다. 이 API 메서드는 개별 노드에 사용하기 위한 것으로, 개별 노드에 액세스하려면 사용자 ID 및 암호 인증이 필요합니다. 하지만 매개 변수 force가 메서드 호출에서 true 값을 지정하면 클러스터에서 이 메서드를 사용할 수 있습니다. 매개 변수를 클러스터에 사용하면 모든 인터페이스가 나열됩니다. 
+---
+= ListNetworkInterfaces 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListNetworkInterfaces" 메서드를 사용하여 노드의 각 네트워크 인터페이스에 대한 정보를 나열할 수 있습니다. 이 API 메서드는 개별 노드에 사용하기 위한 것으로, 개별 노드에 액세스하려면 사용자 ID 및 암호 인증이 필요합니다. 하지만 매개 변수 force가 메서드 호출에서 true 값을 지정하면 클러스터에서 이 메서드를 사용할 수 있습니다. 매개 변수를 클러스터에 사용하면 모든 인터페이스가 나열됩니다.
+
+
+NOTE: SolidFire 엔터프라이즈 SDS는 이 방법을 지원하지 않습니다. SolidFire ESDS 시스템에서 이 메서드를 사용하면 메서드가 오류를 반환합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+하중
+ a| 
+가능한 값:
+
+* 참: 클러스터의 모든 네트워크 인터페이스에 대한 정보가 반환됩니다.
+* False: 반환된 정보가 없습니다.
+
+ a| 
+부울
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+인터페이스
+ a| 
+스토리지 노드의 각 네트워크 인터페이스(또는 force = "true"인 경우 전체 스토리지 클러스터)에 대한 구성 정보 목록입니다.
+ a| 
+xref:reference_element_api_networkinterface.adoc[네트워크 인터페이스] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+"method": "ListNetworkInterfaces",
+"params": {},
+"id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"nodes": [
+			{
+				"nodeID": 1,
+				"result": {
+					"interfaces": [
+						{
+							"address": "10.117.80.32",
+							"addressV6": "::",
+							"broadcast": "10.117.95.255",
+							"macAddress": "90:b1:1c:42:e0:1a",
+							"mtu": 9000,
+							"name": "Bond10G",
+							"namespace": false,
+							"netmask": "255.255.240.0",
+							"status": "UpAndRunning",
+							"type": "BondMaster",
+							"virtualNetworkTag": 0
+						},
+						{
+							"address": "10.117.64.32",
+							"addressV6": "::",
+							"broadcast": "10.117.79.255",
+							"macAddress": "90:b1:1c:42:e0:1e",
+							"mtu": 1500,
+							"name": "Bond1G",
+							"namespace": false,
+							"netmask": "255.255.240.0",
+							"status": "UpAndRunning",
+							"type": "BondMaster",
+							"virtualNetworkTag": 0
+						},
+						{
+							"address": "0.0.0.0",
+							"addressV6": "::",
+							"broadcast": "0.0.0.0",
+							"macAddress": "90:b1:1c:42:e0:1a",
+							"mtu": 9000,
+							"name": "eth0",
+							"namespace": false,
+							"netmask": "0.0.0.0",
+							"status": "UpAndRunning",
+							"type": "BondSlave",
+							"virtualNetworkTag": 0
+						},
+						{
+							"address": "127.0.0.1",
+							"addressV6": "::",
+							"broadcast": "0.0.0.0",
+							"macAddress": "00:00:00:00:00:00",
+							"mtu": 0,
+							"name": "lo",
+							"namespace": false,
+							"netmask": "0.0.0.0",
+							"status": "UpAndRunning",
+							"type": "Loopback",
+							"virtualNetworkTag": 0
+						}
+					]
+				}
+			}
+		]
+	}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

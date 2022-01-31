@@ -1,0 +1,171 @@
+---
+permalink: api/reference_element_api_addaccount.html 
+sidebar: sidebar 
+keywords: addaccount,add,adding,account,accounts 
+summary: 'AddAccount를 사용하여 시스템에 새 계정을 추가할 수 있습니다. 이 방법을 사용하여 계정이 생성될 때 새 계정 아래에 새 볼륨을 생성할 수도 있습니다. 계정에 대해 지정한 CHAP(Challenge-Handshake Authentication Protocol) 설정은 계정이 소유한 모든 볼륨에 적용됩니다.' 
+---
+= 추가 계정
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AddAccount를 사용하여 시스템에 새 계정을 추가할 수 있습니다. 이 방법을 사용하여 계정이 생성될 때 새 계정 아래에 새 볼륨을 생성할 수도 있습니다. 계정에 대해 지정한 CHAP(Challenge-Handshake Authentication Protocol) 설정은 계정이 소유한 모든 볼륨에 적용됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+'속성'
+ a| 
+JSON 개체 형식의 이름-값 쌍 목록입니다.
+ a| 
+JSON 개체
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+'인ableChop'입니다
+ a| 
+초기자가 CHAP 계정 자격 증명을 사용하여 볼륨에 액세스할 수 있는지 여부를 지정합니다.
+ a| 
+부울
+ a| 
+참
+ a| 
+아니요
+
+
+
+ a| 
+이니토시크입니다
+ a| 
+이니시에이터에 사용할 CHAP 암호입니다. 이 비밀은 길이가 12-16자여야 하며 꿰뚫을 수 없습니다. 이니시에이터 CHAP 암호는 고유해야 하며 대상 CHAP 암호와 같을 수 없습니다. 지정하지 않으면 임의의 암호가 만들어집니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+'targetSecret'입니다
+ a| 
+대상에 사용할 CHAP 암호(상호 CHAP 인증) 이 비밀은 길이가 12-16자여야 하며 꿰뚫을 수 없습니다. 타겟 CHAP 암호는 고유해야 하며 이니시에이터 CHAP 암호와 같을 수 없습니다. 지정하지 않으면 임의의 암호가 만들어집니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+'사용자 이름'
+ a| 
+이 계정의 고유한 사용자 이름입니다. (1-64자 길이여야 함).
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+계정
+ a| 
+새로 만든 계정에 대한 정보가 포함된 개체입니다.
+ a| 
+xref:reference_element_api_account.adoc[계정]
+
+
+
+ a| 
+계정 ID입니다
+ a| 
+새로 생성된 계정 개체의 ID입니다.
+ a| 
+정수
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+	"method": "AddAccount",
+    "params": {
+     "username"  : "bobsmith",
+     "initiatorSecret" : "168[#5A757ru268)",
+     "targetSecret" : "tlt&lt;,8TUYa7bC",
+     "attributes" : {
+       "billingcode" : 2345
+     }
+   },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "account": {
+      "accountID": 90,
+      "attributes": {
+        "billingcode": 2345
+      },
+      "initiatorSecret": "168[#5A757ru268)",
+      "status": "active",
+      "storageContainerID": "00000000-0000-0000-0000-000000000000",
+      "targetSecret": "tlt&lt;,8TUYa7bC",
+      "username": "bobsmith",
+      "volumes": [],
+      "enableChap": true
+    },
+    "accountID": 90
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

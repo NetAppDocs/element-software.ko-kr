@@ -1,0 +1,194 @@
+---
+permalink: api/reference_element_api_listvirtualvolumes.html 
+sidebar: sidebar 
+keywords: virtual,volume,volumes,vvol,list,listing,listvirtualvolumes 
+summary: ListVirtualVolumes 메서드를 사용하여 현재 시스템에 있는 가상 볼륨을 나열할 수 있습니다. 이 방법을 사용하여 모든 가상 볼륨을 나열하거나 하위 집합만 나열할 수 있습니다. 
+---
+= 목록 가상볼륨
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListVirtualVolumes" 메서드를 사용하여 현재 시스템에 있는 가상 볼륨을 나열할 수 있습니다. 이 방법을 사용하여 모든 가상 볼륨을 나열하거나 하위 집합만 나열할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+세부 정보
+ a| 
+응답의 세부 레벨. 가능한 값:
+
+* True: 응답에 각 VVol에 대한 자세한 내용을 포함합니다.
+* False: 응답에 각 VVol에 대한 표준 수준의 세부 정보를 포함합니다.
+
+ a| 
+부울
+ a| 
+거짓
+ a| 
+아니요
+
+
+
+ a| 
+제한
+ a| 
+나열할 최대 가상 볼륨 수입니다.
+ a| 
+정수
+ a| 
+10000입니다
+ a| 
+아니요
+
+
+
+ a| 
+반복
+ a| 
+각 VVol의 자손 관련 정보를 응답에 포함할지 여부를 지정합니다. 가능한 값:
+
+* True: 각 VVol의 자손 관련 정보를 응답에 포함합니다.
+* False: 각 VVol의 자손 관련 정보를 응답에 포함하지 마십시오.
+
+ a| 
+부울
+ a| 
+거짓
+ a| 
+아니요
+
+
+
+ a| 
+startVirtualVolumeID입니다
+ a| 
+응답에서 목록을 시작할 가상 볼륨의 ID입니다.
+ a| 
+UUIDType입니다
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+가상볼륨 ID
+ a| 
+정보를 검색할 가상 볼륨 ID 목록입니다. 이 매개 변수를 생략하면 메소드는 이러한 가상 볼륨에 대한 정보만 반환합니다.
+ a| 
+virtualVolumeID UUID 배열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+nextVirtualVolumeID입니다
+ a| 
+목록에서 다음 가상 볼륨의 ID입니다.
+ a| 
+UUID입니다
+
+
+
+ a| 
+가상볼륨
+ a| 
+현재 시스템에 있는 가상 볼륨을 설명하는 객체 목록입니다.
+ a| 
+xref:reference_element_api_virtualvolume.adoc[가상볼륨] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "ListVirtualVolumes",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "nextVirtualVolumeID": "00000000-0000-0000-0000-000000000000",
+    "virtualVolumes": [
+      {
+        "bindings": [
+          177
+        ],
+        "children": [],
+        "metadata": {
+          "SFProfileId": "f4e5bade-15a2-4805-bf8e-52318c4ce443",
+          "SFgenerationId": "0",
+          "VMW_ContainerId": "abaab415-bedc-44cd-98b8-f37495884db0",
+          "VMW_VVolName": "asdf",
+          "VMW_VVolType": "Config",
+          "VMW_VmID": "502e0676-e510-ccdd-394c-667f6867fcdf",
+          "VMW_VvolProfile": "f4e5bade-15a2-4805-bf8e-52318c4ce443:0"
+        },
+        "parentVirtualVolumeID": "00000000-0000-0000-0000-000000000000",
+        "snapshotID": 0,
+        "snapshotInfo": null,
+        "status": "done",
+        "storageContainer": {
+          "accountID": 1,
+          "initiatorSecret": "B5)D1y10K)8IDN58",
+          "name": "test",
+          "protocolEndpointType": "SCSI",
+          "status": "active",
+          "storageContainerID": "abaab415-bedc-44cd-98b8-f37495884db0",
+          "targetSecret": "qgae@{o{~8\"2U)U^"
+        },
+        "virtualVolumeID": "269d3378-1ca6-4175-a18f-6d4839e5c746",
+        "virtualVolumeType": "config",
+        "volumeID": 166,
+        "volumeInfo": null
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

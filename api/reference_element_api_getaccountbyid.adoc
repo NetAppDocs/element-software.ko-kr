@@ -1,0 +1,97 @@
+---
+permalink: api/reference_element_api_getaccountbyid.html 
+sidebar: sidebar 
+keywords: accounts,account,get,getting,GetAccountByID,ID 
+summary: GetAccountByID 를 사용하면 계정 ID가 지정된 특정 계정에 대한 세부 정보를 가져올 수 있습니다. 
+---
+= GetAccountByID입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+GetAccountByID를 사용하면 계정 ID를 기준으로 특정 계정에 대한 세부 정보를 얻을 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+계정 ID입니다
+ a| 
+정보를 가져올 계정의 계정 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+계정
+ a| 
+계정 세부 정보.
+ a| 
+xref:reference_element_api_account.adoc[계정]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "GetAccountByID",
+   "params": {
+     "accountID"  : 3
+   },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "account": {
+        "attributes": {},
+        "username": "account3",
+        "targetSecret": "targetsecret",
+        "volumes": [],
+        "enableChap": true,
+        "status": "active",
+        "accountID": 3,
+        "storageContainerID": "abcdef01-1234-5678-90ab-cdef01234567",
+        "initiatorSecret": "initiatorsecret"
+    }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

@@ -1,0 +1,45 @@
+---
+section: esds
+title: SolidFire 엔터프라이즈 SDS 설치 및 사용
+url: "/esds/index.html"
+entries:
+- title: SolidFire ESDS를 시작하십시오
+  url: "/esds/concept_get_started_esds.html"
+- title: 설치를 위한 필수 작업을 수행합니다
+  url: "/esds/concept_esds_prerequisite_tasks.html"
+  entries:
+  - title: 네트워크 구성을 위한 고려 사항
+    url: "/esds/concept_esds_networking_best_practices.html"
+  - title: 호스트 네트워킹을 구성합니다
+    url: "/esds/task_esds_configure_the_interface_config_files.html"
+- title: SolidFire ESDS를 설치합니다
+  url: "/esds/task_esds_install_using_ansible.html"
+- title: 설치 후 작업을 수행합니다
+  url: "/esds/task_esds_postinstallation.html"
+- title: 클러스터를 업그레이드합니다
+  url: "/esds/task_esds_upgrade_cluster.html"
+- title: 클러스터를 모니터링합니다
+  url: "/esds/concept_esds_monitor_clusters.html"
+- title: SolidFire ESDS 스토리지 관리
+  url: "/esds/reference_esds_element_links.html"
+- title: SolidFire ESDS를 제거합니다
+  url: "/esds/task_esds_uninstall.html"
+- title: SolidFire ESDS 유지 관리
+  url: "/esds/concept_esds_maintain.html"
+  entries:
+  - title: 라이센스 키를 받습니다
+    url: "/esds/task_esds_get_license_key.html"
+  - title: SolidFire ESDS 클러스터에서 유지보수 모드를 사용합니다
+    url: "/esds/reference_esds_use_maintenance_mode.html"
+  - title: HPE DL380의 드라이브를 교체합니다
+    url: "/esds/task_esds_dl380_drive_repl.html"
+  - title: HPE DL360의 드라이브를 교체합니다
+    url: "/esds/task_esds_dl360_drive_repl.html"
+  - title: Dell R640용 드라이브를 교체합니다
+    url: "/esds/task_esds_r640_drive_repl.html"
+  - title: 컨테이너 로그를 수집합니다
+    url: "/esds/reference_esds_containerlogs.html"
+  - title: KB 문서 문제 해결 링크
+    url: "/esds/reference_esds_troubleshoot_links.html"
+  - title: SF_SDS_config.YAML 파일의 내용입니다
+    url: "/esds/reference_esds_sf_sds_config_file.html"

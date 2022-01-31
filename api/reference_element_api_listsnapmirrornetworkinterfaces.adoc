@@ -1,0 +1,72 @@
+---
+permalink: api/reference_element_api_listsnapmirrornetworkinterfaces.html 
+sidebar: sidebar 
+keywords: snapmirror,interface,interfaces,list,listing,listsnapmirrornetworkinterfaces,ontap 
+summary: Element 소프트웨어 웹 UI는 ListSnapMirrorNetworkInterfaces 메서드를 사용하여 원격 ONTAP 시스템에서 사용 가능한 모든 SnapMirror 인터페이스를 나열합니다. 
+---
+= ListSnapMirrorNetworkInterfaces 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 소프트웨어 웹 UI에서는 'ListSnapMirrorNetworkInterfaces' 메서드를 사용하여 원격 ONTAP 시스템에서 사용 가능한 모든 SnapMirror 인터페이스를 나열합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+snapMirrorEndpointID입니다
+ a| 
+지정된 끝점 ID와 연결된 네트워크 인터페이스만 반환합니다. 제공된 끝점 ID가 없으면 알려진 모든 SnapMirror 끝점의 인터페이스가 표시됩니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+인터페이스 역할
+ a| 
+지정된 역할을 수행하는 네트워크 인터페이스만 나열합니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+snapMirrorNetworkInterfaces를 참조하십시오
+ a| 
+원격 ONTAP 스토리지 시스템에서 사용할 수 있는 SnapMirror 네트워크 인터페이스 목록입니다.
+ a| 
+xref:reference_element_api_snapmirrornetworkinterface.adoc[snapMirrornetworkInterface를 참조하십시오] 스토리지
+
+|===
+
+
+== 버전 이후 새로운 기능
+
+10.1

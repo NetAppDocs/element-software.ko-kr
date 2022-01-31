@@ -1,0 +1,97 @@
+---
+permalink: api/reference_element_api_getclusterstats.html 
+sidebar: sidebar 
+keywords: cluster,stats,statistics,get,getting,getclusterstats 
+summary: GetClusterStats 메서드를 사용하여 클러스터에 대한 상위 수준의 활동 측정을 검색할 수 있습니다. 반환되는 값은 클러스터를 생성한 후 누적됩니다. 
+---
+= GetClusterStats 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetClusterStats" 메서드를 사용하여 클러스터에 대한 높은 수준의 활동 측정을 검색할 수 있습니다. 반환되는 값은 클러스터를 생성한 후 누적됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+클러스터 통계
+ a| 
+클러스터 활동 정보
+ a| 
+xref:reference_element_api_clusterstats.adoc[클러스터 통계]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "GetClusterStats",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "clusterStats": {
+      "actualIOPS": 9376,
+      "averageIOPSize": 4198,
+      "clientQueueDepth": 8,
+      "clusterUtilization": 0.09998933225870132,
+      "latencyUSec": 52,
+      "normalizedIOPS": 15000,
+      "readBytes": 31949074432,
+      "readBytesLastSample": 30883840,
+      "readLatencyUSec": 27,
+      "readLatencyUSecTotal": 182269319,
+      "readOps": 1383161,
+      "readOpsLastSample": 3770,
+      "samplePeriodMsec": 500,
+      "servicesCount": 3,
+      "servicesTotal": 3,
+      "timestamp": "2017-09-09T21:15:39.809332Z",
+      "unalignedReads": 0,
+      "unalignedWrites": 0,
+      "writeBytes": 8002002944,
+      "writeBytesLastSample": 7520256,
+      "writeLatencyUSec": 156,
+      "writeLatencyUSecTotal": 231848965,
+      "writeOps": 346383,
+      "writeOpsLastSample": 918
+    }
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

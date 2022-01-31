@@ -1,0 +1,51 @@
+---
+permalink: api/index.html 
+sidebar: sidebar 
+keywords: element, api, storage, manage, cluster, volumes, json, rpc, https 
+summary: Element API를 사용하여 NetApp Element 스토리지 클러스터를 관리하는 방법에 대해 알아보십시오. 
+---
+= Element API를 사용하여 스토리지 관리
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 소프트웨어 API를 사용하여 Element 스토리지 클러스터를 관리할 수 있습니다.
+
+Element API는 HTTPS를 통한 JSON-RPC 프로토콜을 기반으로 합니다. JSON-RPC는 경량 JSON 데이터 교환 형식을 기반으로 하는 간단한 텍스트 기반 RPC 프로토콜입니다. 클라이언트 라이브러리는 모든 주요 프로그래밍 언어에 사용할 수 있습니다.
+
+* xref:concept_element_api_about_the_api.adoc[Element 소프트웨어 API 정보]
+* xref:concept_element_api_common_objects.adoc[공통 개체]
+* xref:concept_element_api_common_methods.adoc[일반적인 방법]
+* xref:concept_element_api_account_api_methods.adoc[계정 API 메소드]
+* xref:concept_element_api_administrator_api_methods.adoc[관리자 API 메소드]
+* xref:concept_element_api_cluster_api_methods.adoc[클러스터 API 메소드]
+* xref:concept_element_api_create_cluster_api_methods.adoc[클러스터 생성 API 메소드]
+* xref:concept_element_api_drive_api_methods.adoc[드라이브 API 메소드]
+* xref:concept_element_api_fibre_channel_api_methods.adoc[Fibre Channel API 메소드]
+* xref:concept_element_api_initiator_api_methods.adoc[이니시에이터 API 메소드]
+* xref:concept_element_api_ldap_api_methods.adoc[LDAP API 메소드]
+* xref:concept_element_api_multi_factor_authentication_api_methods.adoc[다중 요소 인증 API 메서드]
+* xref:concept_element_api_session_authentication_api_methods.adoc[세션 인증 API 메서드]
+* xref:concept_element_api_node_api_methods.adoc[노드 API 메소드]
+* xref:concept_element_api_replication_api_methods.adoc[복제 API 메소드]
+* xref:concept_element_api_security_api_methods.adoc[보안 API 메서드]
+* xref:concept_element_api_snapmirror_api_methods.adoc[SnapMirror API 메소드]
+* xref:concept_element_api_system_configuration_api_methods.adoc[시스템 구성 API 메소드]
+* xref:concept_element_api_multitenant_networking_api_methods.adoc[멀티 테넌트 네트워킹 API 메소드]
+* xref:concept_element_api_volume_api_methods.adoc[볼륨 API 메소드]
+* xref:concept_element_api_volume_access_group_api_methods.adoc[볼륨 액세스 그룹 API 메소드]
+* xref:concept_element_api_volume_snapshot_api_methods.adoc[볼륨 스냅샷 API 메소드]
+* xref:concept_element_api_vvols_api_methods.adoc[가상 볼륨 API 메소드]
+* xref:reference_element_api_app_a_cluster_fault_codes.adoc[클러스터 고장 코드]
+* xref:reference_element_api_app_b_access_control.adoc[액세스 제어]
+* xref:concept_element_api_response_examples.adoc[답변 예]
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["SolidFire All-Flash 스토리지 리소스 페이지를 참조하십시오"^]
+* http://docs.netapp.com/sfe-122/index.jsp["SolidFire 및 Element 소프트웨어 설명서 센터"^]
+

@@ -1,0 +1,30 @@
+---
+permalink: storage/task_system_manage_snmp_view_managed_object_data.html 
+sidebar: sidebar 
+keywords: snmp, view, management information base files, download, mib, statistics, oids 
+summary: '관리되는 각 개체를 정의하는 데 사용되는 MIB(Management Information Base) 파일을 보고 다운로드할 수 있습니다. SNMP 기능은 SolidFire-StorageCluster-MIB에 정의된 객체에 대한 읽기 전용 액세스를 지원합니다.' 
+---
+= 관리 정보 기준 파일을 사용하여 관리되는 개체 데이터를 봅니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+관리되는 각 개체를 정의하는 데 사용되는 MIB(Management Information Base) 파일을 보고 다운로드할 수 있습니다. SNMP 기능은 SolidFire-StorageCluster-MIB에 정의된 객체에 대한 읽기 전용 액세스를 지원합니다.
+
+MIB에 제공된 통계 데이터는 다음에 대한 시스템 활동을 보여줍니다.
+
+* 클러스터 통계
+* 볼륨 통계
+* 계정 통계별 볼륨
+* 노드 통계
+* 보고서, 오류 및 시스템 이벤트와 같은 기타 데이터
+
+
+또한 이 시스템은 SF 시리즈 제품에 대한 상위 수준의 액세스 포인트(OID)가 포함된 MIB 파일에 대한 액세스를 지원합니다.
+
+.단계
+. Cluster * > * SNMP * 를 클릭합니다.
+. SNMP MIB * 에서 다운로드할 MIB 파일을 클릭합니다.
+. 다운로드 창이 나타나면 MIB 파일을 열거나 저장합니다.
+

@@ -1,0 +1,27 @@
+---
+permalink: storage/reference_system_manage_snmp_snmp_details.html 
+sidebar: sidebar 
+keywords: snmp, overview, reference, mib, settings, trap 
+summary: Cluster 탭의 SNMP 페이지에서 다음 정보를 볼 수 있습니다. 
+---
+= SNMP 세부 정보
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cluster 탭의 SNMP 페이지에서 다음 정보를 볼 수 있습니다.
+
+* SNMP MIB *
++
+보거나 다운로드할 수 있는 MIB 파일입니다.
+
+* * 일반 SNMP 설정 *
++
+SNMP를 설정하거나 해제할 수 있습니다. SNMP를 활성화한 후 사용할 버전을 선택할 수 있습니다. 버전 2를 사용하는 경우 요청자를 추가할 수 있고 버전 3을 사용하는 경우 USM 사용자를 설정할 수 있습니다.
+
+* * SNMP 트랩 설정 *
++
+캡처할 트랩을 식별할 수 있습니다. 각 트랩 수신자에 대해 호스트, 포트 및 커뮤니티 문자열을 설정할 수 있습니다.
+
+

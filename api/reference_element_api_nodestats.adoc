@@ -1,0 +1,192 @@
+---
+permalink: api/reference_element_api_nodestats.html 
+sidebar: sidebar 
+keywords: object,objects,nodestats 
+summary: nodeStats 개체에는 노드에 대한 높은 수준의 작업 측정값이 포함되어 있습니다. GetNodeStats 및 ListNodeStats API 메서드를 사용하여 nodeStats 개체의 일부 또는 전체를 가져올 수 있습니다. 
+---
+= 노드 통계
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+nodeStats 개체에는 노드에 대한 높은 수준의 작업 측정값이 포함되어 있습니다. GetNodeStats 및 ListNodeStats API 메서드를 사용하여 nodeStats 개체의 일부 또는 전체를 가져올 수 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+카운트
+ a| 
+nodeStats 개체의 총 샘플 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+CPU
+ a| 
+CPU 사용량, %.
+ a| 
+정수
+
+
+
+ a| 
+cpuTotal
+ a| 
+CPU 활용률의 가치 증가.
+ a| 
+정수
+
+
+
+ a| 
+cBytesIn
+ a| 
+클러스터 인터페이스의 바이트 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+cBytesOut
+ a| 
+클러스터 인터페이스에서 바이트를 로그아웃합니다.
+ a| 
+정수
+
+
+
+ a| 
+SBytesIn
+ a| 
+스토리지 인터페이스의 바이트 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+SBytesOut
+ a| 
+스토리지 인터페이스의 바이트 아웃입니다.
+ a| 
+정수
+
+
+
+ a| 
+MBytesIn
+ a| 
+관리 인터페이스의 바이트 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+MBytesOut
+ a| 
+관리 인터페이스에서 바이트 아웃입니다.
+ a| 
+정수
+
+
+
+ a| 
+networkUtilizationCluster를 참조하십시오
+ a| 
+클러스터 네트워크 인터페이스의 네트워크 인터페이스 활용률(단위: %)
+ a| 
+정수
+
+
+
+ a| 
+네트워크 유틸리티스토리지
+ a| 
+스토리지 네트워크 인터페이스의 네트워크 인터페이스 활용률(단위: %)
+ a| 
+정수
+
+
+
+ a| 
+ReadLatencyUSecTotal 을 참조하십시오
+ a| 
+노드에 대한 읽기 작업을 수행하는 데 소비되는 총 시간의 값을 지속적으로 증가시킵니다.
+ a| 
+정수
+
+
+
+ a| 
+readOps를 참조하십시오
+ a| 
+노드에 대한 총 읽기 작업의 값을 지속적으로 증가시킵니다.
+ a| 
+정수
+
+
+
+ a| 
+SSLoadHistogram
+ a| 
+시간 경과에 따른 슬라이스 서비스 부하를 보여주는 히스토그램 데이터
+ a| 
+JSON 개체
+
+
+
+ a| 
+타임 스탬프입니다
+ a| 
+UTC + 0 형식의 현재 시간입니다.
+ a| 
+ISO 8601 날짜 문자열
+
+
+
+ a| 
+사용메모리
+ a| 
+총 메모리 사용량(바이트)
+ a| 
+정수
+
+
+
+ a| 
+쓰기 LatencyUSecTotal
+ a| 
+노드에 대한 쓰기 작업을 수행하는 데 소비되는 총 시간의 값을 지속적으로 증가시킵니다.
+ a| 
+정수
+
+
+
+ a| 
+쓰기 작업
+ a| 
+노드에 대한 총 쓰기 작업의 가치를 지속적으로 증가시킵니다.
+ a| 
+정수
+
+|===
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_getnodestats.adoc[GetNodeStats 를 참조하십시오]
+* xref:reference_element_api_listnodestats.adoc[ListNodeStats 를 참조하십시오]
+

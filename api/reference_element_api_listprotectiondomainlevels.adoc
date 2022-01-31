@@ -1,0 +1,121 @@
+---
+permalink: api/reference_element_api_listprotectiondomainlevels.html 
+sidebar: sidebar 
+keywords: list,listing,protection,domain,levels,level,listprotectiondomainlevels 
+summary: ListProtectionDomainLevels 메서드를 사용하여 스토리지 클러스터의 허용 수준과 복구 수준을 나열할 수 있습니다. 허용 오차 수준은 장애 발생 시 데이터 읽기 및 쓰기 작업을 계속할 수 있는 클러스터의 능력을 나타내며, 복구 수준은 하나 이상의 장애 시 스토리지 클러스터의 자동 복구 기능을 나타냅니다. 
+---
+= ListProtectionDomainLevels 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListProtectionDomainLevels" 메서드를 사용하여 스토리지 클러스터의 허용 수준과 복구 수준을 나열할 수 있습니다. 허용 오차 수준은 장애가 발생한 경우에도 계속해서 데이터를 읽고 쓸 수 있는 클러스터의 능력을 나타내며, 복구 수준은 하나 이상의 장애에서 자동으로 자신을 복구할 수 있는 스토리지 클러스터의 능력을 나타냅니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+보호무역도메인레바
+ a| 
+스토리지 클러스터의 허용 범위 및 복구 정보를 각각 제공하는 다양한 보호 도메인 레벨 목록입니다.
+ a| 
+xref:reference_element_api_protectiondomainlevel.adoc[보호도메인레벨]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "ListProtectionDomainLevels",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"protectionDomainLevels": [
+			{
+				"protectionDomainType": "node",
+				"resiliency": {
+					"protectionSchemeResiliencies": [
+							{
+								"protectionScheme": "doubleHelix",
+								"sustainableFailuresForBlockData": 0,
+								"sustainableFailuresForMetadata": 1
+							}
+					],
+					"singleFailureThresholdBytesForBlockData": 0,
+					"sustainableFailuresForEnsemble": 1
+				},
+				"tolerance": {
+					"protectionSchemeTolerances": [
+							{
+								"protectionScheme": "doubleHelix",
+								"sustainableFailuresForBlockData": 0,
+								"sustainableFailuresForMetadata": 1
+							}
+					],
+					"sustainableFailuresForEnsemble": 1
+				}
+			},
+			{
+				"protectionDomainType": "chassis",
+				"resiliency": {
+					"protectionSchemeResiliencies": [
+							{
+								"protectionScheme": "doubleHelix",
+								"sustainableFailuresForBlockData": 0,
+								"sustainableFailuresForMetadata": 1
+							}
+					],
+					"singleFailureThresholdBytesForBlockData": 0,
+					"sustainableFailuresForEnsemble": 1
+				},
+				"tolerance": {
+					"protectionSchemeTolerances": [
+							{
+								"protectionScheme": "doubleHelix",
+								"sustainableFailuresForBlockData": 0,
+								"sustainableFailuresForMetadata": 1
+							}
+					],
+					"sustainableFailuresForEnsemble": 1
+				}
+			}
+		]
+	}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+11.0

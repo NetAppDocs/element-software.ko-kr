@@ -1,0 +1,33 @@
+---
+permalink: storage/task_system_manage_fips_troubleshoot_the_fips_drive_feature.html 
+sidebar: sidebar 
+keywords: fips, security, federal information processing standards, 140-2 
+summary: NetApp Element 소프트웨어 UI를 사용하면 FIPS 드라이브 기능과 관련된 시스템의 클러스터 장애 또는 오류에 대한 알림을 볼 수 있습니다. 
+---
+= FIPS 드라이브 기능 문제를 해결합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element 소프트웨어 UI를 사용하면 FIPS 드라이브 기능과 관련된 시스템의 클러스터 장애 또는 오류에 대한 알림을 볼 수 있습니다.
+
+. Element UI를 사용하여 * Reporting * > * Alerts * 를 선택합니다.
+. 다음을 비롯한 클러스터 장애를 찾습니다.
++
+** FIPS 드라이브가 일치하지 않습니다
+** FIPS는 규정 준수를 위반합니다
+
+
+. 해결 방법은 클러스터 오류 코드 정보를 참조하십시오.
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_monitor_cluster_fault_codes.adoc[클러스터 고장 코드]
+* link:../api/index.html["Element API를 사용하여 스토리지를 관리합니다"]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

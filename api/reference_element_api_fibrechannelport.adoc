@@ -1,0 +1,140 @@
+---
+permalink: api/reference_element_api_fibrechannelport.html 
+sidebar: sidebar 
+keywords: object,objects,fibreChannelPort 
+summary: 광섬유 ChannelPort 개체에는 노드의 개별 포트 또는 클러스터의 전체 노드에 대한 정보가 들어 있습니다. ListNodeFiberChannelPortInfo 메서드를 사용하여 이 정보를 검색할 수 있습니다. 
+---
+= 광섬유 채널 포트
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+광섬유 ChannelPort 개체에는 노드의 개별 포트 또는 클러스터의 전체 노드에 대한 정보가 들어 있습니다. 'ListNodeFiberChannelPortInfo' 메서드를 사용하여 이 정보를 검색할 수 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+펌웨어
+ a| 
+Fibre Channel 포트에 설치된 펌웨어 버전입니다.
+ a| 
+정수
+
+
+
+ a| 
+hbaPort를 선택합니다
+ a| 
+개별 호스트 버스 어댑터(HBA) 포트의 ID입니다.
+ a| 
+정수
+
+
+
+ a| 
+모델
+ a| 
+포트에 있는 HBA의 모델입니다.
+ a| 
+문자열
+
+
+
+ a| 
+nPortID입니다
+ a| 
+고유한 포트 노드 ID입니다.
+ a| 
+문자열
+
+
+
+ a| 
+pciSlot
+ a| 
+파이버 채널 노드 섀시의 PCI 카드가 들어 있는 슬롯입니다.
+ a| 
+정수
+
+
+
+ a| 
+일련 번호
+ a| 
+Fibre Channel 포트의 일련 번호입니다.
+ a| 
+문자열
+
+
+
+ a| 
+속도
+ a| 
+포트의 HBA 속도입니다.
+ a| 
+문자열
+
+
+
+ a| 
+상태
+ a| 
+가능한 값:
+
+* 알 수 없음
+* NotPresent(발표되지 않음)
+* 온라인
+* 오프라인
+* 차단됨
+* 무시됨
+* 진단
+* 링크 다운
+* 오류
+* 루프백
+* 삭제됨
+
+ a| 
+문자열
+
+
+
+ a| 
+스위치 WN
+ a| 
+Fibre Channel 스위치 포트의 World Wide Name입니다.
+ a| 
+문자열
+
+
+
+ a| 
+WWNN입니다
+ a| 
+HBA 노드의 World Wide Node 이름입니다.
+ a| 
+문자열
+
+
+
+ a| 
+WWPN입니다
+ a| 
+HBA의 물리적 포트에 할당된 World Wide Port 이름입니다.
+ a| 
+문자열
+
+|===
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_listnodefibrechannelportinfo.adoc[ListNodeFiberChannelPortInfo 를 참조하십시오]

@@ -1,0 +1,27 @@
+---
+permalink: api/reference_element_api_getcompletestats.html 
+sidebar: sidebar 
+keywords:  
+summary: NetApp 엔지니어링은 GetCompleteStats API 메서드를 사용하여 새로운 기능을 테스트합니다. GetCompleteStats 에서 반환된 데이터는 문서화되지 않으며 자주 변경되며 정확하다는 보장은 없습니다. GetCompleteStats 를 사용하여 성능 데이터를 수집하거나 Element 소프트웨어를 실행하는 스토리지 클러스터와의 기타 관리 통합을 수행해서는 안 됩니다. 
+---
+= GetCompleteStats 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp 엔지니어링은 'GetCompleteStats' API 메소드를 사용하여 새로운 기능을 테스트합니다. GetCompleteStats에서 반환된 데이터는 문서화되지 않고 자주 변경되며 정확성은 보장되지 않습니다. 성능 데이터를 수집하거나 Element 소프트웨어를 실행하는 스토리지 클러스터와의 기타 관리 통합을 위해 GetCompleteStats를 사용해서는 안 됩니다.
+
+지원되는 다음 API 메소드를 사용하여 통계 정보를 검색합니다.
+
+* xref:reference_element_api_getvolumestats.adoc[GetVolumeStats 를 참조하십시오]
+* xref:reference_element_api_getclusterstats.adoc[GetClusterStats 를 참조하십시오]
+* xref:reference_element_api_getnodestats.adoc[GetNodeStats 를 참조하십시오]
+* xref:reference_element_api_getdrivestats.adoc[GetDriveStats 를 참조하십시오]
+
+
+
+
+== 버전 이후 새로운 기능
+
+9.6

@@ -1,0 +1,157 @@
+---
+permalink: api/reference_element_api_createpublicprivatekeypair.html 
+sidebar: sidebar 
+keywords: SSL keys,public and private keys,certificate signing request,creating key pair 
+summary: CreatePublicPrivateKeyPair 메서드를 사용하여 공용 및 개인 SSL 키를 만들 수 있습니다. 이러한 키를 사용하여 인증서 서명 요청을 생성할 수 있습니다. 각 스토리지 클러스터마다 하나의 키 쌍만 사용할 수 있습니다. 이 방법을 사용하여 기존 키를 교체하기 전에 모든 공급자가 키를 더 이상 사용하지 않는지 확인합니다. 
+---
+= CreatePublicPrivateKeyPair 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+CreatePublicPrivateKeyPair 메서드를 사용하여 공용 및 개인 SSL 키를 만들 수 있습니다. 이러한 키를 사용하여 인증서 서명 요청을 생성할 수 있습니다. 각 스토리지 클러스터마다 하나의 키 쌍만 사용할 수 있습니다. 이 방법을 사용하여 기존 키를 교체하기 전에 모든 공급자가 키를 더 이상 사용하지 않는지 확인합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+공통 이름
+ a| 
+X.509 고유 이름 * 일반 이름 * 필드(CN)입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+국가
+ a| 
+X.509 고유 이름 * Country * 필드(C).
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+이메일 주소
+ a| 
+X.509 고유 이름 * 전자 메일 주소 * 필드(메일)
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+지역성
+ a| 
+X.509 고유 이름 * Locality Name * 필드(L)입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+조직
+ a| 
+X.509 고유 이름 * 조직 이름 * 필드(O).
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+조직 구성 단위
+ a| 
+X.509 고유 이름 * 조직 단위 이름 * 필드(OU).
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+상태
+ a| 
+X.509 고유 이름 * State * 또는 * Province Name * 필드(ST 또는 SP 또는 S)
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다. 오류가 없으면 키 생성이 성공한 것으로 간주됩니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "CreatePublicPrivateKeyPair",
+  "params": {
+    "commonName": "Name",
+    "country": "US",
+    "emailAddress" : "email@domain.com"
+   },
+"id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+11.7

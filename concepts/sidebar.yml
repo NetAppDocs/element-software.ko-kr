@@ -1,0 +1,40 @@
+---
+section: concepts
+title: 개념
+url: "/concepts/index.html"
+entries:
+- title: 제품 개요
+  url: "/concepts/concept_intro_product_overview.html"
+- title: 아키텍처 및 구성 요소
+  url: "/concepts/concept_solidfire_concepts_solidfire_architecture_overview.html"
+  entries:
+  - title: SolidFire 소프트웨어 인터페이스
+    url: "/concepts/concept_intro_solidfire_software_interfaces.html"
+  - title: SolidFire Active IQ
+    url: "/concepts/concept_intro_solidfire_active_iq.html"
+  - title: Element 소프트웨어의 관리 노드입니다
+    url: "/concepts/concept_intro_management_node.html"
+  - title: SolidFire All-Flash 스토리지를 위한 관리 서비스
+    url: "/concepts/concept_intro_management_services_for_afa.html"
+- title: 노드
+  url: "/concepts/concept_solidfire_concepts_nodes.html"
+- title: 클러스터
+  url: "/concepts/concept_intro_clusters.html"
+- title: 보안
+  url: "/concepts/concept_solidfire_concepts_security.html"
+- title: 계정 및 권한
+  url: "/concepts/concept_solidfire_concepts_accounts_and_permissions.html"
+- title: 스토리지
+  entries:
+  - title: 볼륨
+    url: "/concepts/concept_solidfire_concepts_volumes.html"
+  - title: 가상 볼륨(VVOL)
+    url: "/concepts/concept_solidfire_concepts_vvols.html"
+  - title: 볼륨 액세스 그룹
+    url: "/concepts/concept_solidfire_concepts_volume_access_groups.html"
+  - title: 이니시에이터
+    url: "/concepts/concept_solidfire_concepts_initiators.html"
+- title: 데이터 보호
+  url: "/concepts/concept_solidfire_concepts_data_protection.html"
+- title: 성능 및 서비스 품질
+  url: "/concepts/concept_data_manage_volumes_solidfire_quality_of_service.html"

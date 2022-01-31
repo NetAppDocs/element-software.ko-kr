@@ -1,0 +1,103 @@
+---
+permalink: api/reference_element_api_setsnmpacl.html 
+sidebar: sidebar 
+keywords: setsnmpACL,set,setting,snmp,acl,permissions,access,control,list 
+summary: SetSnmpACL 메서드를 사용하여 클러스터 노드에서 SNMP 액세스 권한을 구성할 수 있습니다. 이 인터페이스로 설정한 값은 클러스터의 모든 노드에 적용되며 전달된 값은 SetSnmpACL에 대한 이전 호출에서 설정한 모든 값을 대체합니다. 또한 이 인터페이스로 설정된 값은 모든 네트워크 또는 usmUsers 값을 SetSnmpInfo 로 대체합니다. 
+---
+= SetSnmpACL
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'setup snmpacl' 방법을 사용하여 클러스터 노드에서 SNMP 액세스 권한을 구성할 수 있습니다. 이 인터페이스로 설정한 값은 클러스터의 모든 노드에 적용되며 전달된 값은 이전 호출에서 설정한 'set snmpacl'을 모두 대체합니다. 또한 이 인터페이스로 설정된 값은 모든 네트워크 또는 usmUsers 값을 'DetSnmpInfo' 메서드로 바꿉니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+네트워크
+ a| 
+클러스터 노드에서 실행 중인 SNMP 서버에 대한 네트워크 및 액세스 유형 목록입니다. 가능한 네트워크 값은 SNMP 네트워크 개체를 참조하십시오. SNMP v3이 비활성화된 경우 이 매개 변수가 필요합니다.
+ a| 
+xref:reference_element_api_network_snmp.adoc[네트워크]
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+usmUsers(사용자)
+ a| 
+사용자 목록 및 클러스터 노드에서 실행 중인 SNMP 서버에 대한 액세스 유형입니다. SNMP v3이 활성화된 경우 이 매개 변수가 필요합니다.
+ a| 
+xref:reference_element_api_usmuser.adoc[usmUser(사용자)]
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "SetSnmpACL",
+  "params": {
+    "usmUsers"  : [
+      {
+         "name": "jdoe",
+         "access": "rouser",
+         "secLevel": "priv",
+         "password": "mypassword",
+         "passphrase": "mypassphrase",
+      }
+    ]
+  },
+  "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_setsnmpinfo.adoc[SetSnmpInfo 를 선택합니다]

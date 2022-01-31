@@ -1,0 +1,104 @@
+---
+permalink: api/reference_element_api_getvolumeaccessgrouplunassignments.html 
+sidebar: sidebar 
+keywords: volume,access,group,groups,LUN,mapping,assignment,get,getting,GetVolumeAccessGroupLunAssignments 
+summary: GetVolumeAccessGroupLunAssignments 메서드를 사용하여 지정된 볼륨 액세스 그룹의 LUN 매핑에 대한 세부 정보를 검색할 수 있습니다. 
+---
+= GetVolumeAccessGroupLunAssignments 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetVolumeAccessGroupLunAssignments" 메서드를 사용하여 지정된 볼륨 액세스 그룹의 LUN 매핑에 대한 세부 정보를 검색할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+볼륨 액세스 그룹 ID입니다
+ a| 
+정보를 반환하는 데 사용되는 고유한 볼륨 액세스 그룹 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+볼륨 그룹 루네팅
+ a| 
+모든 물리적 Fibre Channel 포트 목록 또는 단일 노드의 포트 목록
+ a| 
+JSON 개체
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "GetVolumeAccessGroupLunAssignments",
+   "params": {
+      "volumeAccessGroupID": 5
+    },
+  "id" : 1
+   }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {
+    "volumeAccessGroupLunAssignments" : {
+       "volumeAccessGroupID" : 5,
+       "lunAssignments" : [
+          {"volumeID" : 5, "lun" : 0},
+          {"volumeID" : 6, "lun" : 1},
+          {"volumeID" : 7, "lun" : 2},
+          {"volumeID" : 8, "lun" : 3}
+       ],
+       "deletedLunAssignments" : [
+           {"volumeID" : 44, "lun" : 44}
+       ]
+    }
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

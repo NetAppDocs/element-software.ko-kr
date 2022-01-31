@@ -1,0 +1,122 @@
+---
+permalink: api/reference_element_api_getbackuptarget.html 
+sidebar: sidebar 
+keywords: backup,target,targets,get,getting,GetBackupTarget 
+summary: GetBackupTarget 메서드를 사용하여 만든 특정 백업 대상에 대한 정보를 반환할 수 있습니다. 
+---
+= GetBackupTarget 을 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetBackupTarget" 메서드를 사용하여 만든 특정 백업 대상에 대한 정보를 반환할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+속성
+ a| 
+JSON 개체 형식의 이름-값 쌍 목록입니다.
+ a| 
+JSON 개체
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+backupTargetID입니다
+ a| 
+백업 타겟에 할당된 고유 식별자입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+이름
+ a| 
+백업 타겟의 이름입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+백업 대상
+ a| 
+JSON 개체 형식의 이름-값 쌍 목록입니다.
+ a| 
+JSON 개체
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "method": "GetBackupTarget",
+  "params": {
+      "backupTargetID": 1
+  }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "backupTarget": {
+     "attributes" : {
+        "size" : 100
+     },
+     "backupTargetID" : 1,
+     "name" : "mytargetbackup"
+    }
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

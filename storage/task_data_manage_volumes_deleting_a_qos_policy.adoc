@@ -1,0 +1,28 @@
+---
+permalink: storage/task_data_manage_volumes_deleting_a_qos_policy.html 
+sidebar: sidebar 
+keywords: qos policy, delete, volumes 
+summary: QoS 정책이 더 이상 필요하지 않은 경우 삭제할 수 있습니다. QoS 정책을 삭제할 경우 정책에 연결된 모든 볼륨은 QoS 설정을 유지하지만 정책과 연결되지 않습니다. 
+---
+= QoS 정책을 삭제합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+QoS 정책이 더 이상 필요하지 않은 경우 삭제할 수 있습니다. QoS 정책을 삭제할 경우 정책에 연결된 모든 볼륨은 QoS 설정을 유지하지만 정책과 연결되지 않습니다.
+
+
+NOTE: 대신 QoS 정책에서 볼륨을 연결 해제하려는 경우 해당 볼륨의 QoS 설정을 사용자 지정으로 변경할 수 있습니다.
+
+. Management * > * QoS Policies * 를 선택합니다.
+. 삭제할 QoS 정책에 대한 작업 아이콘을 클릭합니다.
+. 결과 메뉴에서 * 삭제 * 를 선택합니다.
+. 작업을 확인합니다.
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:task_data_manage_volumes_remove_a_qos_policy_association_of_a_volume.adoc[볼륨의 QoS 정책 연결을 제거합니다]

@@ -1,0 +1,135 @@
+---
+settings:
+  name: Element Software
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: ko-kr,us-en,ja-jp,zh-cn
+sidebar:
+  entries:
+  - title: SolidFire 및 Element 소프트웨어 12.3.x 문서
+    url: "/index.html"
+  - title: 릴리스 정보
+    url: "/concepts/concept_rn_relatedrn_element.html"
+    entries:
+    - title: 새로운 소식
+      url: "/concepts/concept_rn_whats_new_element.html"
+  - section: concepts
+  - title: 요구 사항
+    url: "/setup/concept_requirements_overview.html"
+    entries:
+    - title: 네트워킹 요구 사항
+      url: "/storage/concept_prereq_networking.html"
+    - title: Element 소프트웨어를 실행하는 클러스터의 스위치 구성
+      url: "/storage/concept_prereq_switch_configuration_for_solidfire_clusters.html"
+    - title: 네트워크 포트 요구 사항
+      url: "/storage/reference_prereq_network_port_requirements.html"
+  - section: try
+  - section: hardware
+  - section: esds
+  - section: setup
+  - section: storage
+  - section: hccstorage
+  - section: api
+  - title: vCenter Server용 Element 플러그인을 사용하여 스토리지 관리(링크)
+    url: https://docs.netapp.com/us-en/vcp/
+  - section: mnode
+  - section: upgrade
+  - title: 이전 버전
+    url: "/element-earlierversions.html"
+  - title: 법적 고지
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: 제품 개요
+      url: "/concepts/concept_intro_product_overview.html"
+    - title: 릴리스 정보
+      url: "/concepts/concept_rn_relatedrn_element.html"
+    - title: 새로운 소식
+      url: "/concepts/concept_rn_whats_new_element.html"
+    - title: 요구 사항
+      url: "/setup/concept_requirements_overview.html"
+    - title: 설정 개요
+      url: "/setup/concept_setup_overview.html"
+  - title: 유지보수 하드웨어를 설치합니다
+    links:
+    - title: H410S 및 H610S 하드웨어 정보
+      url: "/hardware/concept_h410s_h610s_info.html"
+    - title: SF-시리즈 하드웨어 정보
+      url: "/hardware/concept_sfseries_info.html"
+  - title: 스토리지 관리
+    links:
+    - title: Element 소프트웨어 UI를 사용합니다
+      url: "/storage/index.html"
+    - title: NetApp 하이브리드 클라우드 제어권 사용
+      url: "/hccstorage/index.html"
+    - title: Element 소프트웨어 API를 사용합니다
+      url: "/api/index.html"
+    - title: vCenter Server용 Element 플러그인을 사용합니다
+      url: https://docs.netapp.com/us-en/vcp/
+    - title: 관리 노드와 작업합니다
+      url: "/mnode/task_mnode_work_overview.html"
+  - title: SolidFire 엔터프라이즈 SDS 설치 및 사용
+    links:
+    - title: SolidFire ESDS 개요
+      url: "/esds/concept_get_started_esds.html"
+    - title: 빠른 시작
+      url: https://review.docs.netapp.com/us-en/element-software_element_tile_restructure_doc-3473/media/SDS_Quick_Start_Guide.pdf
+    - title: 설치 요구 사항
+      url: "/esds/concept_esds_prerequisite_tasks.html"
+    - title: 스토리지 관리
+      url: "/esds/reference_esds_element_links.html"
+    - title: SolidFire ESDS 유지 관리
+      url: "/esds/concept_esds_maintain.html"
+  - title: 통합 툴 사용(로그인 필요)
+    links:
+    - title: Element CLI를 참조하십시오
+      url: https://mysupport.netapp.com/site/tools/tool-eula/elem-cli
+    - title: Element PowerShell 툴
+      url: https://mysupport.netapp.com/site/tools/tool-eula/elem-powershell-tools
+    - title: Element SDK(Java, .NET, Python)
+      url: https://mysupport.netapp.com/site/products/all/details/netapphci-solidfire-elementsoftware/tools-tab
+    - title: SolidFire Postman API 테스트 제품군
+      url: https://github.com/solidfire/postman
+    - title: SolidFire 스토리지 복제 어댑터
+      url: https://mysupport.netapp.com/site/products/all/details/elementsra/downloads-tab
+    - title: SolidFire vRO를 참조하십시오
+      url: https://mysupport.netapp.com/site/products/all/details/solidfire-vro/downloads-tab
+    - title: SolidFire VSS 공급자
+      url: https://mysupport.netapp.com/site/products/all/details/solidfire-vss-provider/downloads-tab
+  - title: 해결하세요
+    links:
+    - title: SolidFire 리소스 페이지를 참조하십시오
+      url: https://www.netapp.com/data-storage/solidfire/documentation/
+    - title: NetApp 솔루션
+      url: https://docs.netapp.com/us-en/netapp-solutions/index.html
+  - title: 데모 자습서
+    links:
+    - title: NetApp University SolidFire 교육(로그인 필요)
+      url: https://netapp.sabacloud.com/Saba/Web_spf/NA1PRD0047/common/searchresults/solidfire/LEARNINGEVENT%2COFFERINGTEMPLATE%2CCERTIFICATION%2CCURRICULUM%2COFFERING%2CPACKAGE
+    - title: NetApp SolidFire 클러스터의 설치 및 확장 방법(비디오)
+      url: http://tv.netapp.com/detail/video/5778540099001?autoStart=true&page=1&q=solidfire
+    - title: NetApp SolidFire 설치(비디오)
+      url: https://youtu.be/YKGK5nNSL68
+  - title: 블로그 커뮤니티
+    links:
+    - title: NetApp 커뮤니티
+      url: https://community.netapp.com/t5/AFF-NVMe-EF-Series-and-SolidFire-Discussions/bd-p/flash-storage-systems-discussions
+    - title: 도움을 받을 수 있는 곳
+      url: https://mysupport.netapp.com/site/products/all/details/element-software/guideme-tab
+  - title: 이전 버전
+    links:
+    - title: 요소 12.2 문서
+      url: https://docs.netapp.com/sfe-122/index.jsp
+    - title: Element 12.0 문서
+      url: https://docs.netapp.com/sfe-120/index.jsp
+    - title: Element 11.8 문서
+      url: https://docs.netapp.com/sfe-118/index.jsp
+    - title: Element 11.5 문서
+      url: https://docs.netapp.com/sfe-115/index.jsp
+    - title: Element 11.3 문서
+      url: https://docs.netapp.com/sfe-113/index.jsp

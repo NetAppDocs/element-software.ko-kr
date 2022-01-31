@@ -1,0 +1,133 @@
+---
+permalink: api/reference_element_api_createsnapmirrorvolume.html 
+sidebar: sidebar 
+keywords: SnapMirror,endpoints,create,creating,volume,volumes,CreateSnapMirrorVolume 
+summary: Element 웹 UI에서는 CreateSnapMirrorVolume 메서드를 사용하여 원격 ONTAP 시스템에 볼륨을 만듭니다. 
+---
+= CreateSnapMirror 볼륨
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 웹 UI에서는 'CreateSnapMirrorVolume' 메서드를 사용하여 원격 ONTAP 시스템에 볼륨을 만듭니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+snapMirrorEndpointID입니다
+ a| 
+Element 스토리지 클러스터와 통신하는 원격 ONTAP 스토리지 시스템의 끝점 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+SVM
+ a| 
+SVM의 이름입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+이름
+ a| 
+대상 ONTAP 볼륨 이름입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+유형
+ a| 
+볼륨 유형입니다. 가능한 값:
+
+* RW: 읽기-쓰기 볼륨
+* LS: 로드 공유 볼륨
+* DP: 데이터 보호 볼륨
+
+
+유형이 제공되지 않으면 기본 유형은 DP입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+집계
+ a| 
+볼륨을 생성할 포함된 ONTAP Aggregate입니다. ListSnapMirrorAggregates를 사용하여 사용 가능한 ONTAP 애그리게이트에 대한 정보를 얻을 수 있습니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+크기
+ a| 
+볼륨의 크기(바이트)입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+snapMirrorVolume(스냅 볼륨)
+ a| 
+SnapMirror 볼륨에 대한 정보.
+ a| 
+xref:reference_element_api_snapmirrorvolume.adoc[snapMirrorVolume(스냅 볼륨)]
+
+|===
+
+
+== 버전 이후 새로운 기능
+
+10.1

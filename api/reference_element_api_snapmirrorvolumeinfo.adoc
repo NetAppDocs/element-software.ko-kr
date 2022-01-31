@@ -1,0 +1,63 @@
+---
+permalink: api/reference_element_api_snapmirrorvolumeinfo.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorVolumeInfo 
+summary: snapMirrorVolumeInfo 개체에는 이름 및 유형과 같은 SnapMirror 관계의 볼륨 위치에 대한 정보가 들어 있습니다. 
+---
+= snapMirrorVolumeInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorVolumeInfo 개체에는 이름 및 유형과 같은 SnapMirror 관계의 볼륨 위치에 대한 정보가 들어 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+유형
+ a| 
+볼륨 유형입니다. 가능한 값:
+
+* SolidFire: Element 소프트웨어를 실행하는 스토리지 클러스터에 볼륨이 상주합니다.
+* ONTAP: 볼륨은 원격 ONTAP 클러스터에 상주합니다.
+
+ a| 
+문자열
+
+
+
+ a| 
+볼륨 ID
+ a| 
+볼륨의 ID입니다. "type"이 SolidFire인 경우에만 유효합니다.
+ a| 
+정수
+
+
+
+ a| 
+SVM
+ a| 
+이 볼륨을 소유하는 SVM의 이름입니다. "type"이 ONTAP인 경우에만 유효합니다.
+ a| 
+문자열
+
+
+
+ a| 
+이름
+ a| 
+볼륨의 이름입니다.
+ a| 
+문자열
+
+|===

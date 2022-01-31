@@ -1,0 +1,32 @@
+---
+permalink: concepts/index.html 
+sidebar: sidebar 
+keywords: element, security, clusters, protection, qos 
+summary: Element 소프트웨어와 관련된 기본 개념을 배웁니다. 
+---
+= 개념
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 소프트웨어와 관련된 기본 개념을 배웁니다.
+
+* link:concept_intro_product_overview.html["제품 개요"]
+* xref:concept_solidfire_concepts_solidfire_architecture_overview.adoc[SolidFire 아키텍처 개요]
+* xref:concept_solidfire_concepts_nodes.adoc[노드]
+* xref:concept_intro_clusters.adoc[클러스터]
+* link:concept_solidfire_concepts_security.html["보안"]
+* xref:concept_solidfire_concepts_accounts_and_permissions.adoc[계정 및 권한]
+* link:concept_solidfire_concepts_volumes.html["볼륨"]
+* xref:concept_solidfire_concepts_data_protection.adoc[데이터 보호]
+* xref:concept_data_manage_volumes_solidfire_quality_of_service.adoc[성능 및 서비스 품질]
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/["SolidFire All-Flash 스토리지 개요"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+

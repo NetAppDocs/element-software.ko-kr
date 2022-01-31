@@ -1,0 +1,45 @@
+---
+permalink: storage/task_post_deploy_access_the_element_software_user_interface.html 
+sidebar: sidebar 
+keywords: Element UI, accessing, using MVIP, blockers, host name, certificate, messages 
+summary: '기본 클러스터 노드의 관리 가상 IP\(MVIP\) 주소를 사용하여 Element UI에 액세스할 수 있습니다.' 
+---
+= Element 소프트웨어 사용자 인터페이스에 액세스합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기본 클러스터 노드의 관리 가상 IP(MVIP) 주소를 사용하여 Element UI에 액세스할 수 있습니다.
+
+브라우저에서 팝업 차단기와 NoScript 설정이 비활성화되어 있는지 확인해야 합니다.
+
+클러스터 생성 중 구성에 따라 IPv4 또는 IPv6 주소 지정을 사용하여 UI에 액세스할 수 있습니다.
+
+. 다음 중 하나를 선택합니다.
++
+** IPv6: https://[IPv6 MVIP 주소 입력] 예:
++
+[listing]
+----
+https://[fd20:8b1e:b256:45a::1234]/
+----
+** IPv4: https://[IPv4 MVIP 주소 입력] 예:
++
+[listing]
+----
+https://10.123.456.789/
+----
+
+
+. DNS의 경우 호스트 이름을 입력합니다.
+. 인증 인증서 메시지를 클릭합니다.
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

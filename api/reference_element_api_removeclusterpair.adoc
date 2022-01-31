@@ -1,0 +1,79 @@
+---
+permalink: api/reference_element_api_removeclusterpair.html 
+sidebar: sidebar 
+keywords: cluster,clusters,pair,remove,removing,removeclusterpair 
+summary: RemoveClusterPair 메서드를 사용하여 두 페어링된 클러스터 간의 열린 연결을 닫을 수 있습니다. 
+---
+= RemoveClusterPair(클러스터 쌍 제거)
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"RemoveClusterPair" 메서드를 사용하여 두 개의 페어링된 클러스터 간의 열린 연결을 닫을 수 있습니다.
+
+
+
+== 매개 변수
+
+
+NOTE: 클러스터 쌍을 제거하기 전에 먼저 RemoveVolumePair API 방법을 사용하여 클러스터에 대한 모든 볼륨 페어링을 제거해야 합니다.
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+클러스터 airID
+ a| 
+두 클러스터를 페어링하는 데 사용되는 고유 식별자입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "RemoveClusterPair",
+   "params": {
+              "clusterPairID": 1
+      },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

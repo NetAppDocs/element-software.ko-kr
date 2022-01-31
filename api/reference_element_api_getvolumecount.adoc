@@ -1,0 +1,73 @@
+---
+permalink: api/reference_element_api_getvolumecount.html 
+sidebar: sidebar 
+keywords: volume,volumes,get,getting,count,measurements,getvolumecount 
+summary: GetVolumeCount 메서드를 사용하여 현재 시스템에 있는 볼륨의 수를 가져올 수 있습니다. 
+---
+= GetVolumeCount
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetVolumeCount" 메서드를 사용하여 현재 시스템에 있는 볼륨의 수를 가져올 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+카운트
+ a| 
+현재 시스템에 있는 볼륨의 수입니다.
+ a| 
+정수
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "GetVolumeCount",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "count": 7
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

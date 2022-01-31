@@ -1,0 +1,27 @@
+---
+permalink: storage/task_data_protection_use_individual_volume_snapshots.html 
+sidebar: sidebar 
+keywords: individual volume snapshots, use, volume, snapshot 
+summary: 볼륨 스냅샷은 볼륨의 시점 복제본입니다. 스냅샷에 대한 볼륨 그룹 대신 개별 볼륨을 사용할 수 있습니다. 
+---
+= 데이터 보호를 위해 개별 볼륨 스냅샷을 사용합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+볼륨 스냅샷은 볼륨의 시점 복제본입니다. 스냅샷에 대한 볼륨 그룹 대신 개별 볼륨을 사용할 수 있습니다.
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:task_data_protection_create_a_volume_snapshot.adoc[볼륨 스냅샷을 생성합니다]
+* xref:task_data_protection_edit_snapshot_retention.adoc[스냅샷 보존 편집]
+* xref:task_data_protection_delete_a_snapshot.adoc[스냅샷을 삭제하는 중입니다]
+* xref:task_data_protection_clone_a_volume_from_a_snapshot.adoc[스냅숏에서 볼륨 클론 생성]
+* xref:task_data_protection_roll_back_a_volume_to_a_snapshot.adoc[볼륨을 스냅샷으로 롤백하는 중입니다]
+* xref:task_data_protection_back_up_a_volume_snapshot_to_an_amazon_s3_object_store.adoc[볼륨 스냅샷을 Amazon S3 오브젝트 저장소에 백업]
+* xref:task_data_protection_back_up_a_volume_snapshot_to_openstack_swift.adoc[OpenStack Swift 오브젝트 저장소에 볼륨 스냅샷 백업]
+* xref:task_data_protection_back_up_volume_snapshot_to_solidfire.adoc[SolidFire 클러스터에 볼륨 스냅샷 백업]
+

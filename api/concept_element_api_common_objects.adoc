@@ -1,0 +1,105 @@
+---
+permalink: api/concept_element_api_common_objects.html 
+sidebar: sidebar 
+keywords: common,objects 
+summary: Element 소프트웨어 API는 JSON 개체를 사용하여 조직화된 데이터 개념을 나타냅니다. 이러한 API 메서드 중 다수는 데이터 입력 및 출력에 이러한 객체를 사용합니다. 이 단원에서는 일반적으로 사용되는 이러한 개체를 설명합니다. 단일 메서드에서만 사용되는 개체는 이 섹션 대신 해당 메서드로 문서화됩니다. 
+---
+= 공통 개체
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 소프트웨어 API는 JSON 개체를 사용하여 조직화된 데이터 개념을 나타냅니다. 이러한 API 메서드 중 다수는 데이터 입력 및 출력에 이러한 객체를 사용합니다. 이 단원에서는 일반적으로 사용되는 이러한 개체를 설명합니다. 단일 메서드에서만 사용되는 개체는 이 섹션 대신 해당 메서드로 문서화됩니다.
+
+* xref:reference_element_api_account.adoc[계정]
+* xref:reference_element_api_authsessioninfo.adoc[AuthSessionInfo 를 참조하십시오]
+* xref:reference_element_api_bulkvolumejob.adoc[벌크 볼륨 작업]
+* xref:reference_element_api_binding_vvols.adoc[바인딩(가상 볼륨)]
+* xref:reference_element_api_certificatedetails.adoc[인증서 세부 정보]
+* xref:reference_element_api_cluster.adoc[클러스터]
+* xref:reference_element_api_clusteradmin.adoc[클러스터 관리자]
+* xref:reference_element_api_clustercapacity.adoc[클러스터 용량]
+* xref:reference_element_api_clusterconfig.adoc[클러스터 구성]
+* xref:reference_element_api_clusterinfo.adoc[클러스터 정보]
+* xref:reference_element_api_clusterpair.adoc[클러스터 쌍]
+* xref:reference_element_api_clusterstats.adoc[클러스터 통계]
+* xref:reference_element_api_clusterstructure.adoc[클러스터 구조]
+* xref:reference_element_api_drive.adoc[드라이브]
+* xref:reference_element_api_drivestats.adoc[드라이브 통계]
+* xref:reference_element_api_error.adoc[오류]
+* xref:reference_element_api_event.adoc[이벤트]
+* xref:reference_element_api_fault.adoc[오류]
+* xref:reference_element_api_fibrechannelport.adoc[광섬유 채널 포트]
+* xref:reference_element_api_fipserrornodereport.adoc[fipsErrorNodeReport를 참조하십시오]
+* xref:reference_element_api_fipsnodereport.adoc[FipsNodeReport를 참조하십시오]
+* xref:reference_element_api_fipsreport.adoc[fipsReport를 참조하십시오]
+* xref:reference_element_api_groupsnapshot.adoc[그룹 스냅샷]
+* xref:reference_element_api_hardwareinfo.adoc[하드웨어 정보]
+* xref:reference_element_api_host.adoc[호스트(가상 볼륨)]
+* xref:reference_element_api_idpconfiginfo.adoc[idpConfigInfo]
+* xref:reference_element_api_initiator.adoc[이니시에이터]
+* xref:reference_element_api_keyproviderkmip.adoc[KeyProviderKmip 을 참조하십시오]
+* xref:reference_element_api_keyserverkmip.adoc[KeyServerKmip]
+* xref:reference_element_api_ldapconfiguration.adoc[ldapConfiguration 을 선택합니다]
+* xref:reference_element_api_loggingserver.adoc[로그 서버]
+* xref:reference_element_api_network_bonded_interfaces.adoc[네트워크(연결된 인터페이스)]
+* xref:reference_element_api_network_all_interfaces.adoc[네트워크(모든 인터페이스)]
+* xref:reference_element_api_network_ethernet_interfaces.adoc[네트워크(이더넷 인터페이스)]
+* xref:reference_element_api_network_local_interfaces.adoc[네트워크(로컬 인터페이스)]
+* xref:reference_element_api_network_snmp.adoc[네트워크(SNMP)]
+* xref:reference_element_api_networkinterface.adoc[네트워크 인터페이스]
+* xref:reference_element_api_node.adoc[노드]
+* xref:reference_element_api_nodeprotectiondomains.adoc[노드 보호도메인]
+* xref:reference_element_api_nodestats.adoc[노드 통계]
+* xref:reference_element_api_ontapversioninfo.adoc[ontapVersionInfo]
+* xref:reference_element_api_pendingactivenode.adoc[활성 노드]
+* xref:reference_element_api_pendingnode.adoc[펜던트 노드]
+* xref:reference_element_api_protectiondomain.adoc[보호 도메인]
+* xref:reference_element_api_protectiondomainlevel.adoc[보호도메인레벨]
+* xref:reference_element_api_protectiondomainresiliency.adoc[보호무역도메인복원력]
+* xref:reference_element_api_protectiondomaintolerance.adoc[보호무역도메인허용치]
+* xref:reference_element_api_protectionschemeresiliency.adoc[보호무역회로복원력]
+* xref:reference_element_api_protectionschemetolerance.adoc[보호무역계통허용치]
+* xref:reference_element_api_protocolendpoint.adoc[ProtocolEndpoint]
+* xref:reference_element_api_qos.adoc[QoS를 참조하십시오]
+* xref:reference_element_api_qospolicy.adoc[QoSPolicy를 참조하십시오]
+* xref:reference_element_api_remoteclustersnapshotstatus.adoc[원격 클러스터 스냅샷상태]
+* xref:reference_element_api_schedule.adoc[스케줄]
+* xref:reference_element_api_session_fibre_channel.adoc[세션(Fibre Channel)]
+* xref:reference_element_api_session_iscsi.adoc[세션(iSCSI)]
+* xref:reference_element_api_snapmirroraggregate.adoc[snapMirrorAggregate]
+* xref:reference_element_api_snapmirrorclusteridentity.adoc[snapMirrorClusterIdentity를 선택합니다]
+* xref:reference_element_api_snapmirrorendpoint.adoc[snapMirrorEndpoint]
+* xref:reference_element_api_snapmirrorjobschedulecroninfo.adoc[snapMirrorJobScheduleCronInfo를 참조하십시오]
+* xref:reference_element_api_snapmirrorluninfo.adoc[snapMirrorLunInfo]
+* xref:reference_element_api_snapmirrornetworkinterface.adoc[snapMirrorNetworkInterface를 참조하십시오]
+* xref:reference_element_api_snapmirrornode.adoc[snapMirrorNode를 선택합니다]
+* xref:reference_element_api_snapmirrorpolicy.adoc[snapMirrorPolicy를 참조하십시오]
+* xref:reference_element_api_snapmirrorpolicyrule.adoc[snapMirrorPolicyRule 을 참조하십시오]
+* xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationship]
+* xref:reference_element_api_snapmirrorvolume.adoc[snapMirrorVolume(스냅 볼륨)]
+* xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+* xref:reference_element_api_snapmirrorvserver.adoc[snapMirrorVserver]
+* xref:reference_element_api_snapmirrorvserveraggregateinfo.adoc[snapMirrorVserverAggregateInfo를 참조하십시오]
+* xref:reference_element_api_snapshot.adoc[스냅샷]
+* xref:reference_element_api_snmptraprecipient.adoc[snmpTrapRecipient를 선택합니다]
+* xref:reference_element_api_storagecontainer.adoc[storageContainer 를 선택합니다]
+* xref:reference_element_api_syncjob.adoc[동기화 작업]
+* xref:reference_element_api_task_virtual_volumes.adoc[작업(가상 볼륨)]
+* xref:reference_element_api_usmuser.adoc[usmUser(사용자)]
+* xref:reference_element_api_virtualnetwork.adoc[가상네트워크]
+* xref:reference_element_api_virtualvolume.adoc[가상볼륨]
+* xref:reference_element_api_volume.adoc[볼륨]
+* xref:reference_element_api_volumeaccessgroup.adoc[볼륨 액세스 그룹]
+* xref:reference_element_api_volumepair.adoc[볼륨페어가 있습니다]
+* xref:reference_element_api_volumestats.adoc[볼륨 통계]
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
+

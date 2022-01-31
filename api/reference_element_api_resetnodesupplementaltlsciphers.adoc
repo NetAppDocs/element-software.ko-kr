@@ -1,0 +1,60 @@
+---
+permalink: api/reference_element_api_resetnodesupplementaltlsciphers.html 
+sidebar: sidebar 
+keywords: tls,cipher,reset,supplemental,resetnodesupplementaltlsciphers,restore,restoring,node,supplemental 
+summary: ResetNodeSupplementalTlsCiphers 메서드를 사용하여 보충 TLS 암호 목록을 기본값으로 복원할 수 있습니다. 관리 노드에서 이 명령을 사용할 수 있습니다. 
+---
+= ResetNodeSupplementalTlsCiphers 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'ResetNodeSupplementalTlsCiphers' 메서드를 사용하여 보충 TLS 암호화 목록을 기본값으로 복원할 수 있습니다. 관리 노드에서 이 명령을 사용할 수 있습니다.
+
+
+
+== 매개 변수
+
+
+NOTE: 관리 노드에 대해 이 메서드를 호출해야 합니다. 예를 들면 다음과 같습니다.
+
+[listing]
+----
+https://<management node IP>:442/json-rpc/10.0
+----
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "ResetNodeSupplementalTlsCiphers",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {}
+}
+----

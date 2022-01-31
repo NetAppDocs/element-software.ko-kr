@@ -1,0 +1,25 @@
+---
+permalink: storage/task_data_manage_vol_access_group_add_volumes.html 
+sidebar: sidebar 
+keywords: access group, add volumes to 
+summary: 볼륨 액세스 그룹에 볼륨을 추가할 수 있습니다. 각 볼륨은 둘 이상의 볼륨 액세스 그룹에 속할 수 있습니다. 각 볼륨이 속한 그룹은 활성 볼륨 페이지에서 볼 수 있습니다. 
+---
+= 액세스 그룹에 볼륨을 추가합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+볼륨 액세스 그룹에 볼륨을 추가할 수 있습니다. 각 볼륨은 둘 이상의 볼륨 액세스 그룹에 속할 수 있습니다. 각 볼륨이 속한 그룹은 * Active * 볼륨 페이지에서 볼 수 있습니다.
+
+이 절차를 사용하여 Fibre Channel 볼륨 액세스 그룹에 볼륨을 추가할 수도 있습니다.
+
+. 관리 * > * 액세스 그룹 * 을 클릭합니다.
+. 볼륨을 추가할 액세스 그룹의 작업 아이콘을 클릭합니다.
+. 편집 * 버튼을 클릭합니다.
+. Add Volumes 아래의 * Volumes * 목록에서 볼륨을 선택합니다.
++
+이 단계를 반복하여 볼륨을 더 추가할 수 있습니다.
+
+. 변경 내용 저장 * 을 클릭합니다.
+

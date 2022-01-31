@@ -1,0 +1,68 @@
+---
+permalink: api/reference_element_api_network_all_interfaces.html 
+sidebar: sidebar 
+keywords: object,objects,network 
+summary: 'network\(모든 인터페이스\) 객체는 스토리지 노드의 네트워크 인터페이스 구성에 대한 정보를 수집합니다. getconfig 및 GetNetworkConfig 메서드를 사용하여 스토리지 노드에 대한 이 정보를 가져올 수 있습니다.' 
+---
+= 네트워크(모든 인터페이스)
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+네트워크(모든 인터페이스) 개체는 스토리지 노드의 네트워크 인터페이스 구성에 대한 정보를 수집합니다. "getconfig" 및 "GetNetworkConfig" 메서드를 사용하여 스토리지 노드에 대한 정보를 가져올 수 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+봉드10G
+ a| 
+Bond10G Bond10G Bondded 인터페이스의 구성 정보입니다.
+ a| 
+xref:reference_element_api_network_bonded_interfaces.adoc[네트워크(연결된 인터페이스)]
+
+
+
+ a| 
+봉디1G
+ a| 
+Bond1G 본드 결합 인터페이스의 구성 정보
+ a| 
+xref:reference_element_api_network_bonded_interfaces.adoc[네트워크(연결된 인터페이스)]
+
+
+
+ a| 
+eth0-5
+ a| 
+스토리지 노드의 각 이더넷 인터페이스에 대해 인터페이스 구성 정보를 설명하는 하나의 객체입니다. 이러한 개체에는 인터페이스 이름과 일치하도록 0부터 5까지의 번호가 지정됩니다.
+ a| 
+xref:reference_element_api_network_ethernet_interfaces.adoc[네트워크(이더넷 인터페이스)]
+
+
+
+ a| 
+낮음
+ a| 
+루프백 인터페이스에 대한 구성 정보입니다.
+ a| 
+xref:reference_element_api_network_local_interfaces.adoc[네트워크(로컬 인터페이스)]
+
+|===
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_getconfig.adoc[getconfig를 참조하십시오]
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetworkConfig 를 참조하십시오]
+

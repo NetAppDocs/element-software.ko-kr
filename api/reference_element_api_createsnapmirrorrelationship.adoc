@@ -1,0 +1,139 @@
+---
+permalink: api/reference_element_api_createsnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: SnapMirror,relationship,relationships,create,creating,CreateSnapMirrorRelationship 
+summary: Element 웹 UI에서는 CreateSnapMirrorRelationship 메서드를 사용하여 소스 끝점과 대상 끝점 간에 SnapMirror 확장 데이터 보호 관계를 만듭니다. 
+---
+= CreateSnapMirrorRelationship을 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 웹 UI에서는 'CreateSnapMirrorRelationship' 메서드를 사용하여 소스 끝점과 대상 끝점 간에 SnapMirror 확장 데이터 보호 관계를 만듭니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+snapMirrorEndpointID입니다
+ a| 
+Element 스토리지 클러스터와 통신하는 원격 ONTAP 스토리지 시스템의 끝점 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+소스 볼륨
+ a| 
+관계의 소스 볼륨입니다.
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+디스테이징 볼륨
+ a| 
+관계의 대상 볼륨입니다.
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+관계 유형
+ a| 
+관계의 유형입니다. Element 소프트웨어를 실행하는 스토리지 시스템에서 이 값은 항상 ""extended_data_protection""입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+정책 이름
+ a| 
+관계에 대한 ONTAP SnapMirror 정책의 이름을 지정합니다. 지정하지 않으면 기본 정책 이름은 MirrorLatest입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+예약 이름
+ a| 
+ONTAP 시스템에서 SnapMirror 관계를 업데이트하는 데 사용되는 기존 cron 일정 이름입니다. 지정된 일정이 없으면 SnapMirror 업데이트가 예약되지 않으므로 수동으로 업데이트해야 합니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+최대 전송 속도
+ a| 
+볼륨 간 최대 데이터 전송 속도(KB/초)를 지정합니다. 기본값 0은 무제한이며 SnapMirror 관계가 사용 가능한 네트워크 대역폭을 완전히 활용할 수 있도록 허용합니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+snapMirrorRelationship
+ a| 
+새로 생성한 SnapMirror 관계에 대한 정보입니다.
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationship]
+
+|===
+
+
+== 버전 이후 새로운 기능
+
+10.1

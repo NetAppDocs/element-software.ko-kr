@@ -1,0 +1,99 @@
+---
+permalink: api/reference_element_api_getclusterhardwareinfo.html 
+sidebar: sidebar 
+keywords: get,getting,cluster,hardware,getclusterhardwareinfo 
+summary: GetClusterHardwareInfo 메서드를 사용하여 클러스터의 모든 Fibre Channel 노드, iSCSI 노드 및 드라이브에 대한 하드웨어 상태 및 정보를 검색할 수 있습니다. 여기에는 일반적으로 제조업체, 공급업체, 버전 및 기타 관련 하드웨어 식별 정보가 포함됩니다. 
+---
+= GetClusterHardwareInfo 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetClusterHardwareInfo" 메서드를 사용하여 클러스터의 모든 Fibre Channel 노드, iSCSI 노드 및 드라이브에 대한 하드웨어 상태 및 정보를 검색할 수 있습니다. 여기에는 일반적으로 제조업체, 공급업체, 버전 및 기타 관련 하드웨어 식별 정보가 포함됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+유형
+ a| 
+응답에 다음 유형의 하드웨어 정보 중 하나만 포함합니다. 가능한 값:
+
+* 드라이브:
++
+응답에 드라이브 정보만 열거합니다.
+
+* 노드: 응답에 노드 정보만 나열합니다.
+* All(모두): 응답에 드라이브 및 노드 정보를 모두 포함합니다.
+
+
+이 매개 변수를 생략하면 All 형식으로 간주됩니다.
+ a| 
+문자열
+ a| 
+모두
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+클러스터하드웨어 정보
+ a| 
+클러스터의 모든 노드 및 드라이브에 대한 하드웨어 정보 이 출력의 각 개체는 지정된 노드의 노드 ID로 레이블이 지정됩니다.
+ a| 
+xref:reference_element_api_hardwareinfo.adoc[하드웨어 정보]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "GetClusterHardwareInfo",
+    "params": {
+        "type": "all"
+    },
+    "id": 1
+}
+----
+
+
+== 응답 예
+
+이 응답 예제의 길이로 인해 보충 토픽에 문서화됩니다.
+
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_response_example_getclusterhardwareinfo.adoc[GetClusterHardwareInfo 를 참조하십시오]

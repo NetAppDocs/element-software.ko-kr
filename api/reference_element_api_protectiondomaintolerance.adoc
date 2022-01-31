@@ -1,0 +1,41 @@
+---
+permalink: api/reference_element_api_protectiondomaintolerance.html 
+sidebar: sidebar 
+keywords: object,objects,protectionDomainTolerance 
+summary: protectionDomainTolerance 개체에는 관련 보호 도메인 유형의 단일 보호 도메인 내에서 하나 이상의 장애가 발생하더라도 스토리지 클러스터에서 데이터를 계속 읽고 쓸 수 있는 기능에 대한 정보가 포함되어 있습니다. 
+---
+= 보호무역도메인허용치
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionDomainTolerance 개체에는 관련 보호 도메인 유형의 단일 보호 도메인 내에서 하나 이상의 장애가 발생하더라도 스토리지 클러스터에서 데이터를 계속 읽고 쓸 수 있는 기능에 대한 정보가 포함되어 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+보호무역은\n\n\n 내약입니다
+ a| 
+관련 보호 도메인 유형에 대한 오류 허용 정보를 포함하는 객체 목록(각 보호 구성표마다 하나씩)
+ a| 
+xref:reference_element_api_protectionschemetolerance.adoc[보호무역계통허용치] 스토리지
+
+
+
+ a| 
+sustainableFailuresForEnsemble 을 참조하십시오
+ a| 
+연결된 보호 도메인 유형 내에서 앙상블 쿼럼을 잃지 않고 동시에 발생할 수 있는 동시 장애 수입니다.
+ a| 
+정수
+
+|===

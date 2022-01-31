@@ -1,0 +1,93 @@
+---
+permalink: api/reference_element_api_enablebmccoldreset.html 
+sidebar: sidebar 
+keywords: BMC cold reset,BMC reset,enable BMC 
+summary: 'EnableBmcColdReset 메서드를 사용하면 클러스터의 모든 노드에 대해 베이스보드 관리 컨트롤러(BMC\)를 주기적으로 재설정하는 백그라운드 작업을 활성화할 수 있습니다.' 
+---
+= EnableBmcColdReset 을 클릭합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"EnableBmcColdReset" 메서드를 사용하면 클러스터의 모든 노드에 대해 주기적으로 베이스보드 관리 컨트롤러(BMC)를 재설정하는 백그라운드 작업을 활성화할 수 있습니다.
+
+
+NOTE: SolidFire 엔터프라이즈 SDS는 이 방법을 지원하지 않습니다. SolidFire ESDS 시스템에서 이 메서드를 사용하면 메서드가 오류를 반환합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+시간 초과
+ a| 
+BMC 재설정 작업 사이의 시간(분).
+ a| 
+정수
+ a| 
+20160분
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+cBmResetDurationMinutes를 참조하십시오
+ a| 
+재설정 간격 사이의 시간을 반환합니다. 이 간격은 명령이 완료된 후 항상 0이어야 합니다.
+ a| 
+정수
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+    "method": "EnableBmcColdReset",
+    "params": {
+                "timeout": 36000
+    },
+    "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "cBmcResetDurationMinutes": 36000
+    }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+12.0

@@ -1,0 +1,117 @@
+---
+permalink: api/reference_element_api_modifyvolumepair.html 
+sidebar: sidebar 
+keywords: volume,pair,pairs,modify,modifying,edit,editing,changing,change,modifyvolumepair,paired 
+summary: 'ModifyVolumePair 메서드를 사용하여 볼륨 쌍 간의 복제를 일시 중지하거나 다시 시작할 수 있습니다. 이 방법은 소스 볼륨\(읽기/쓰기 액세스 권한이 있는 볼륨\)에서 설정됩니다.' 
+---
+= ModifyVolumePair
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ModifyVolumePair 방법을 사용하여 한 쌍의 볼륨 간 복제를 일시 중지하거나 다시 시작할 수 있습니다. 이 방법은 소스 볼륨(읽기/쓰기 액세스 권한이 있는 볼륨)에 설정됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+볼륨 ID
+ a| 
+수정할 볼륨의 식별 번호입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+사용설명서
+ a| 
+소스(읽기/쓰기) 볼륨에서 원격 복제를 일시 중지하거나 다시 시작할 수 있습니다. 가능한 값:
+
+* True: 볼륨 복제 일시 중지
+* False: 볼륨 복제를 다시 시작합니다.
+
+
+값을 지정하지 않으면 복제 변경이 수행되지 않습니다.
+ a| 
+부울
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+모드를 선택합니다
+ a| 
+볼륨 복제 모드입니다. 가능한 값:
+
+* 비동기식: 쓰기가 로컬에서 완료될 때 인식됩니다. 클러스터는 타겟 클러스터에 쓰기가 복제되기를 기다리지 않습니다.
+* 동기화: 데이터가 로컬 및 원격 클러스터에 저장될 때 소스에서 쓰기를 확인합니다.
+* SnapshotsOnly: 소스 클러스터에서 생성된 스냅샷만 복제됩니다. 소스 볼륨의 활성 쓰기는 복제되지 않습니다.
+
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "ModifyVolumePair",
+  "params": {
+    "pausedManual": false,
+    "volumeID": 5,
+    "mode": "sync"
+   },
+  "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" : {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

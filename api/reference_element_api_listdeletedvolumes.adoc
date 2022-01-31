@@ -1,0 +1,127 @@
+---
+permalink: api/reference_element_api_listdeletedvolumes.html 
+sidebar: sidebar 
+keywords: volume,volumes,marked,delete,deleted,deletion,list,listing,listdeletedvolumes 
+summary: ListDeletedVolumes 메서드를 사용하여 삭제 및 삭제된 것으로 표시된 볼륨 목록을 시스템에서 검색할 수 있습니다. 
+---
+= ListDeletedVolumes 를 클릭합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListDeletedVolumes" 메서드를 사용하여 삭제 및 삭제된 것으로 표시된 볼륨 목록을 시스템에서 검색할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+여기에는 VirtualVolumes가 포함됩니다
+ a| 
+가상 볼륨은 기본적으로 응답에 포함됩니다. 가상 볼륨을 제외하려면 FALSE로 설정합니다.
+ a| 
+부울
+ a| 
+참
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+볼륨
+ a| 
+삭제된 볼륨 목록입니다.
+ a| 
+xref:reference_element_api_volume.adoc[볼륨] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "ListDeletedVolumes",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드에 대한 응답은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "volumes": [
+            {
+                "access": "readWrite",
+                "accountID": 2,
+                "attributes": {},
+                "blockSize": 4096,
+                "createTime": "2018-06-24T03:13:13Z",
+                "deleteTime": "2018-07-22T16:12:39Z",
+                "enable512e": true,
+                "iqn": "iqn.2010-01.com.solidfire:0oto.deletethis.23",
+                "name": "deleteThis",
+                "purgeTime": "2016-07-23T00:12:39Z",
+                "qos": {
+                    "burstIOPS": 15000,
+                    "burstTime": 60,
+                    "curve": {
+                        "4096": 100,
+                        "8192": 160,
+                        "16384": 270,
+                        "32768": 500,
+                        "65536": 1000,
+                        "131072": 1950,
+                        "262144": 3900,
+                        "524288": 7600,
+                        "1048576": 15000
+                    },
+                    "maxIOPS": 15000,
+                    "minIOPS": 50
+                },
+                "scsiEUIDeviceID": "306f746f00000017f47acc0100000000",
+                "scsiNAADeviceID": "6f47acc100000000306f746f00000017",
+                "sliceCount": 1,
+                "status": "deleted",
+                "totalSize": 1396703232,
+                "virtualVolumeID": null,
+                "volumeAccessGroups": [],
+                "volumeID": 23,
+                "volumePairs": []
+            }
+        ]
+    }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

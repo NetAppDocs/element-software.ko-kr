@@ -1,0 +1,44 @@
+---
+permalink: storage/task_system_manage_fips_enable_fips_140_2_for_https.html 
+sidebar: sidebar 
+keywords: FIPS 140-2, enable fips, federal information processing standards, ncsm 
+summary: EnableFeature API 메소드를 사용하여 HTTPS 통신에 FIPS 140-2 작동 모드를 활성화할 수 있습니다. 
+---
+= 클러스터에서 HTTPS에 FIPS 140-2를 사용하도록 설정합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EnableFeature API 메소드를 사용하여 HTTPS 통신에 FIPS 140-2 작동 모드를 활성화할 수 있습니다.
+
+NetApp Element 소프트웨어를 사용하면 클러스터에서 FIPS(Federal Information Processing Standards) 140-2 운영 모드를 사용하도록 선택할 수 있습니다. 이 모드를 활성화하면 NetApp CSM(Cryptographic Security Module)이 활성화되고 HTTPS를 통해 NetAppElement UI 및 API에 대한 모든 통신에 FIPS 140-2 Level 1 인증 암호화를 활용합니다.
+
+
+IMPORTANT: FIPS 140-2 모드를 활성화한 후에는 비활성화할 수 없습니다. FIPS 140-2 모드를 사용하도록 설정하면 클러스터의 각 노드가 재부팅되고 자체 테스트를 통해 실행되므로 NCSM이 FIPS 140-2 인증 모드에서 올바르게 설정 및 작동할 수 있습니다. 이로 인해 클러스터의 관리 및 스토리지 연결이 모두 중단됩니다. 환경에 암호화 메커니즘이 필요한 경우에만 신중하게 계획하고 이 모드를 활성화해야 합니다.
+
+자세한 내용은 Element API 정보를 참조하십시오.
+
+다음은 FIPS를 사용하도록 설정하는 API 요청의 예입니다.
+
+[listing]
+----
+{
+  "method": "EnableFeature",
+    "params": {
+        "feature" : "fips"
+    },
+    "id": 1
+}
+----
+이 작동 모드가 활성화된 후 모든 HTTPS 통신은 FIPS 140-2 승인 암호를 사용합니다.
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_system_manage_fips_ssl_cipher_changes.adoc[SSL 암호]
+* link:../api/index.html["Element API를 사용하여 스토리지를 관리합니다"]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

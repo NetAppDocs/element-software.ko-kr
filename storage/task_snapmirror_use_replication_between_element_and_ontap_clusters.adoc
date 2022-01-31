@@ -1,0 +1,29 @@
+---
+permalink: storage/task_snapmirror_use_replication_between_element_and_ontap_clusters.html 
+sidebar: sidebar 
+keywords: replication, snapmirror, data protection 
+summary: NetApp Element UI의 데이터 보호 탭에서 SnapMirror 관계를 생성할 수 있습니다. 사용자 인터페이스에서 이를 보려면 SnapMirror 기능이 활성화되어 있어야 합니다. 
+---
+= Element 및 ONTAP 클러스터 간 SnapMirror 복제 사용
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element UI의 데이터 보호 탭에서 SnapMirror 관계를 생성할 수 있습니다. 사용자 인터페이스에서 이를 보려면 SnapMirror 기능이 활성화되어 있어야 합니다.
+
+IPv6은 NetApp Element 소프트웨어와 ONTAP 클러스터 간의 SnapMirror 복제에 지원되지 않습니다.
+
+https://www.youtube.com/embed/kerGI1ZtnZQ?rel=0["NetApp 비디오: NetApp HCI용 SnapMirror 및 Element 소프트웨어"^]
+
+NetApp Element 소프트웨어를 실행하는 시스템에서는 SnapMirror 기능을 지원하여 NetApp ONTAP 시스템에서 스냅샷 복사본을 복사 및 복원할 수 있습니다. 이 기술을 사용하는 가장 큰 이유는 NetApp HCI에서 ONTAP로 재해 복구 때문입니다. 엔드포인트에는 ONTAP, ONTAP Select 및 Cloud Volumes ONTAP가 포함됩니다. TR-4641 NetApp HCI 데이터 보호 를 참조하십시오.
+
+http://www.netapp.com/us/media/tr-4641.pdf["NetApp 기술 보고서 4641: NetApp HCI 데이터 보호"^]
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/us/media/tr-4748.pdf["NetApp HCI, ONTAP 및 통합 인프라를 통해 데이터 패브릭 구축"^]
+* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-sdbak/home.html["NetApp Element 소프트웨어와 ONTAP 간의 복제"^]
+

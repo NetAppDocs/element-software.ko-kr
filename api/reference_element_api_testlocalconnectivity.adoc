@@ -1,0 +1,146 @@
+---
+permalink: api/reference_element_api_testlocalconnectivity.html 
+sidebar: sidebar 
+keywords: test,testing,local,connectivity,TestLocalConnectivity 
+summary: 'TestLocalConnectivity 메서드를 사용하여 활성 클러스터에 있는 각 노드의 CIP(Cluster IP\)를 Ping할 수 있습니다.' 
+---
+= TestLocalConnectivity를 클릭합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"TestLocalConnectivity" 메서드를 사용하여 활성 클러스터에 있는 각 노드의 CIP(Cluster IP)를 Ping할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+세부 정보
+ a| 
+로컬 액티브 클러스터의 각 노드에 대한 개별 Ping 응답 시간입니다.
+ a| 
+JSON 개체
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+    "method": "TestLocalConnectivity",
+    "params": {},
+    "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "id": null,
+   "result": {
+      "details": {
+                 "10.26.86.17": {
+                    individualResponseTimes: [
+                         "00:00:00.006868",
+                         "00:00:00.005933",
+                         "00:00:00.006655",
+                         "00:00:00.006584",
+                         "00:00:00.006334"
+                    ],
+                    individualStatus: [
+                          true,
+                          true,
+                          true,
+                          true,
+                          true
+                    ],
+                    responseTime: "00:00:00.006475",
+                    successful: true
+                       },
+                       "10.26.86.18": {
+                    individualResponseTimes: [
+                         "00:00:00.006201",
+                         "00:00:00.006187",
+                         "00:00:00.005990",
+                         "00:00:00.006029",
+                         "00:00:00.005917"],
+                    individualStatus: [
+                          true,
+                          true,
+                          true,
+                          true,
+                          true
+                     ],
+                     "responseTime": "00:00:00.006065",
+                     "successful": true
+     },
+                       "10.26.86.19": {
+                     individualResponseTimes: [
+                         "00:00:00.005988",
+                         "00:00:00.006948",
+                         "00:00:00.005981",
+                         "00:00:00.005964",
+                         "00:00:00.005942"
+                      ],
+                    individualStatus: [
+                                "true",
+                                "true",
+                          true,
+                          true,
+                          true
+                      ],
+                      responseTime: "00:00:00.006165",
+                      successful: true,
+               },
+                          "10.26.86.20": {
+                    individualResponseTimes: [
+                         "00:00:00.005926",
+                         "00:00:00.006072",
+                         "00:00:00.005675",
+                         "00:00:00.009904",
+                         "00:00:00.006225"
+                      ],
+                              "individualStatus": [
+                          true,
+                          true,
+                          true,
+                          true,
+                          true
+                     ],
+                      responseTime: "00:00:00.006760",
+                      successful: true
+                   }
+             },
+     "duration": "00:00:00.595982",
+     "result": "Passed"
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

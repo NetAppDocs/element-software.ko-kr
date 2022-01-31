@@ -1,0 +1,226 @@
+---
+permalink: api/reference_element_api_clustercapacity.html 
+sidebar: sidebar 
+keywords: objects,object,clusterCapacity 
+summary: clusterCapacity 객체에는 클러스터에 대한 상위 레벨 용량 측정이 포함되어 있습니다. GetClusterCapacity API 메서드를 사용하여 클러스터 용량 정보를 가져올 수 있습니다. 오브젝트 멤버의 공간 측정값은 바이트 단위로 계산됩니다. 
+---
+= 클러스터 용량
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+clusterCapacity 객체에는 클러스터에 대한 상위 레벨 용량 측정이 포함되어 있습니다. GetClusterCapacity API 메서드를 사용하여 클러스터 용량 정보를 가져올 수 있습니다. 오브젝트 멤버의 공간 측정값은 바이트 단위로 계산됩니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+활성 BlockSpace
+ a| 
+블록 드라이브의 공간입니다. 여기에는 정리할 수 있는 메타데이터 항목 및 공간과 같은 추가 정보가 포함됩니다.
+ a| 
+정수
+
+
+
+ a| 
+활성 세션
+ a| 
+클러스터와 통신하는 활성 iSCSI 세션 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+평균 IOPS
+ a| 
+자정 UTC(협정 세계시) 이후 클러스터의 평균 IOPS
+ a| 
+정수
+
+
+
+ a| 
+클러스터\n\n이 크기를 선택합니다
+ a| 
+클러스터의 모든 볼륨에 대한 IOPS의 평균 크기입니다.
+ a| 
+정수
+
+
+
+ a| 
+현재 IOPS
+ a| 
+지난 5초 동안 클러스터의 모든 볼륨에 대한 평균 IOPS
+ a| 
+정수
+
+
+
+ a| 
+최대 IOPS
+ a| 
+현재 클러스터의 예상 최대 IOPS 용량
+ a| 
+정수
+
+
+
+ a| 
+maxOverProvisionableSpace 를 선택합니다
+ a| 
+프로비저닝 가능한 최대 공간입니다. 계산된 값입니다. 현재 프로비저닝된 공간과 새 볼륨 크기가 이 수를 초과할 경우 새 볼륨을 생성할 수 없습니다. 값은 maxOverProvisionableSpace = maxProvisionSpace * maxMetadataOverProvisionFactor로 계산됩니다
+ a| 
+정수
+
+
+
+ a| 
+maxProvisionedSpace 를 선택합니다
+ a| 
+모든 볼륨이 100% 채워지면 프로비저닝 가능한 총 공간(씬 프로비저닝 메타데이터 없음)
+ a| 
+정수
+
+
+
+ a| 
+maxUsedMetadataSpace 를 선택합니다
+ a| 
+메타데이터를 저장하는 데 사용되는 볼륨 드라이브의 바이트 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+maxUsedSpace 를 선택합니다
+ a| 
+모든 활성 블록 드라이브의 총 공간 크기입니다.
+ a| 
+정수
+
+
+
+ a| 
+ZeroBlock 이외
+ a| 
+마지막 가비지 수집 작업이 완료된 후 데이터가 포함된 총 4KiB 블록 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+peakActiveSessions입니다
+ a| 
+자정 UTC 이후 최대 iSCSI 연결 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+peakIOPS입니다
+ a| 
+자정 UTC 이후 currentIOPS에 대한 가장 높은 값입니다.
+ a| 
+정수
+
+
+
+ a| 
+프로비저닝됨 공간
+ a| 
+클러스터의 모든 볼륨에서 프로비저닝된 총 공간 크기입니다.
+ a| 
+정수
+
+
+
+ a| 
+타임 스탬프입니다
+ a| 
+이 클러스터 용량 샘플을 가져온 날짜 및 시간(UTC+0 형식)
+ a| 
+ISO 8601 문자열
+
+
+
+ a| 
+토털Ops
+ a| 
+클러스터의 전체 수명 동안 수행된 총 I/O 작업 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+유니크블록
+ a| 
+블록 드라이브에 저장된 총 블록 수입니다. 값에 복제된 블록이 포함됩니다.
+ a| 
+정수
+
+
+
+ a| 
+UniqueBlocksUsedSpace 를 참조하십시오
+ a| 
+단일 블록이 블록 드라이브에서 차지하는 총 데이터 양입니다. 이 숫자가 uniqueBlocks 값과 어떤 관련이 있는지 알아보려면 GetclusterCapacity 메서드를 참조하십시오.
+ a| 
+정수
+
+
+
+ a| 
+usedMetadataSpace를 참조하십시오
+ a| 
+메타데이터를 저장하는 데 사용되는 볼륨 드라이브의 총 바이트 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+usedMetadataSpaceInSnapshots을 참조하십시오
+ a| 
+고유한 데이터를 스냅샷에 저장하는 데 사용되는 볼륨 드라이브의 바이트 수입니다. 이 수치는 시스템의 모든 스냅샷을 삭제하여 메타데이터 공간을 얼마나 되찾을 수 있는지 추정합니다.
+ a| 
+정수
+
+
+
+ a| 
+usedSpace(사용 공간)
+ a| 
+시스템의 모든 블록 드라이브에서 사용하는 총 공간입니다.
+ a| 
+정수
+
+
+
+ a| 
+ZeroBlocks입니다
+ a| 
+마지막 가비지 수집 작업이 완료된 후 데이터가 없는 총 4KiB 블록 수입니다.
+ a| 
+정수
+
+|===
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_getclustercapacity.adoc[GetClusterCapacity 를 선택합니다]

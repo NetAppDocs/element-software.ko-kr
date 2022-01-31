@@ -1,0 +1,103 @@
+---
+permalink: api/reference_element_api_liststoragecontainers.html 
+sidebar: sidebar 
+keywords: virtual,volume,storage,container,containers,list,listing,liststoragecontainers 
+summary: ListStorageContainers 메서드를 사용하여 시스템에 알려진 모든 가상 볼륨 저장소 컨테이너에 대한 정보를 검색할 수 있습니다. 
+---
+= ListStorageContainers 를 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListStorageContainers" 메서드를 사용하여 시스템에 알려진 모든 가상 볼륨 저장소 컨테이너에 대한 정보를 검색할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+storageContainerID입니다
+ a| 
+정보를 검색할 스토리지 컨테이너 ID 목록입니다. 이 매개 변수를 생략하면 메소드는 시스템의 모든 스토리지 컨테이너에 대한 정보를 반환합니다.
+ a| 
+UUID 배열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+스토리지 컨테이너
+ a| 
+시스템의 모든 스토리지 컨테이너에 대한 정보가 포함된 객체 목록입니다.
+ a| 
+xref:reference_element_api_storagecontainer.adoc[storageContainer 를 선택합니다] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "ListStorageContainers",
+   "params": {
+      "storageContainerIDs": ["efda8307-b916-4424-979e-658a3f16894d"]
+   },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 6395,
+  "result": {
+    "storageContainers": [
+      {
+        "accountID": 64,
+        "initiatorSecret": "EJ:08An1MyNQmL!7",
+        "name": "VvolContainer",
+        "protocolEndpointType": "SCSI",
+        "status": "active",
+        "storageContainerID": "efda8307-b916-4424-979e-658a3f16894d",
+        "targetSecret": "g38}zWBK%206jQr~",
+        "virtualVolumes": []
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

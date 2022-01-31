@@ -1,0 +1,32 @@
+---
+permalink: storage/task_system_manage_virtual_enable_virtual_routing_and_forwarding.html 
+sidebar: sidebar 
+keywords: virtual routing, forwarding, enable, vrf, storage networks, create a vlan 
+summary: '가상 라우팅 및 포워딩\(VRF\)을 활성화할 수 있습니다. 이 기능을 사용하면 라우팅 테이블의 여러 인스턴스가 라우터에 존재하고 동시에 작동할 수 있습니다. 이 기능은 스토리지 네트워크에서만 사용할 수 있습니다.' 
+---
+= 가상 라우팅 및 전달을 활성화합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VRF(Virtual Routing and Forwarding)를 활성화하면 라우팅 테이블의 여러 인스턴스가 라우터에 존재하고 동시에 작동할 수 있습니다. 이 기능은 스토리지 네트워크에서만 사용할 수 있습니다.
+
+VLAN을 생성할 때만 VRF를 활성화할 수 있습니다. 비 VRF로 다시 전환하려면 VLAN을 삭제하고 다시 생성해야 합니다.
+
+. Cluster * > * Network * 를 클릭합니다.
+. 새 VLAN에서 VRF를 활성화하려면 * VLAN 생성 * 을 선택합니다.
++
+.. 새 VRF/VLAN에 대한 관련 정보를 입력합니다. 가상 네트워크 추가 를 참조하십시오.
+.. VRF * 활성화 확인란을 선택합니다.
+.. * 선택 사항 *: 게이트웨이를 입력합니다.
+
+
+. VLAN 만들기 * 를 클릭합니다.
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:task_system_manage_virtual_add_a_virtual_network.adoc[가상 네트워크를 추가합니다]

@@ -1,0 +1,90 @@
+---
+permalink: api/reference_element_api_setremotelogginghosts.html 
+sidebar: sidebar 
+keywords: remote,logging,host,hosts,set,setting,setremotelogginghosts 
+summary: SetRemoteLoggingHosts 메서드를 사용하여 스토리지 클러스터의 노드에서 중앙 집중식 로그 서버 또는 서버로 원격 로깅을 구성할 수 있습니다. 원격 로깅은 기본 포트 514를 사용하여 TCP를 통해 수행됩니다. 이 API는 기존 로깅 호스트에 추가되지 않습니다. 이 API 메서드는 현재 존재하는 값을 이 API 메서드에서 지정한 새 값으로 바꿉니다. GetRemoteLoggingHosts 를 사용하여 현재 로깅 호스트가 무엇인지 확인한 다음 SetRemoteLoggingHosts 를 사용하여 원하는 현재 로깅 호스트 및 새 로깅 호스트 목록을 설정할 수 있습니다. 
+---
+= SetRemoteLoggingHosts 를 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'setup RemoteLoggingHosts' 방법을 사용하여 스토리지 클러스터의 노드에서 중앙 집중식 로그 서버 또는 서버로 원격 로깅을 구성할 수 있습니다. 원격 로깅은 기본 포트 514를 사용하여 TCP를 통해 수행됩니다. 이 API는 기존 로깅 호스트에 추가되지 않습니다. 이 API 메서드는 현재 존재하는 값을 이 API 메서드에서 지정한 새 값으로 바꿉니다. GetRemoteLoggingHosts 를 사용하여 현재 로깅 호스트가 무엇인지 확인한 다음 SetRemoteLoggingHosts 를 사용하여 현재 로깅 호스트와 새 로깅 호스트의 원하는 목록을 설정할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+원격 호스트
+ a| 
+로그 메시지 수신자인 호스트 목록입니다.
+ a| 
+xref:reference_element_api_loggingserver.adoc[로그 서버] 스토리지
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "method": "SetRemoteLoggingHosts",
+   "params": {
+     "remoteHosts": [
+        {
+          "host": "172.16.1.20",
+          "port": 10514
+        },
+        {
+          "host": "172.16.1.25"
+        }
+      ]
+   }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "id" : 1,
+    "result" : {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+xref:reference_element_api_getremotelogginghosts.adoc[GetRemoteLoggingHosts 를 참조하십시오]

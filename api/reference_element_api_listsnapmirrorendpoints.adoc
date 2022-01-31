@@ -1,0 +1,61 @@
+---
+permalink: api/reference_element_api_listsnapmirrorendpoints.html 
+sidebar: sidebar 
+keywords: snapmirror,endpoint,endpoints,list,listing,listsnapmirrorendpoints 
+summary: Element 소프트웨어 웹 UI에서는 ListSnapMirrorEndpoints 메서드를 사용하여 Element 스토리지 클러스터가 통신하는 모든 SnapMirror 끝점을 나열합니다. 
+---
+= ListSnapMirrorEndpoints를 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 소프트웨어 웹 UI에서는 'ListSnapMirrorEndpoints' 메서드를 사용하여 Element 스토리지 클러스터가 통신하는 모든 SnapMirror 끝점을 나열합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+snapMirrorEndpointID입니다
+ a| 
+이러한 ID와 연결된 개체만 반환합니다. ID가 제공되지 않거나 배열이 비어 있으면 이 메서드는 모든 SnapMirror 끝점 ID를 반환합니다.
+ a| 
+정수 배열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+snapMirrorEndpoints를 선택합니다
+ a| 
+기존 SnapMirror 엔드포인트 목록
+ a| 
+xref:reference_element_api_snapmirrorendpoint.adoc[snapMirrorEndpoint] 스토리지
+
+|===
+
+
+== 버전 이후 새로운 기능
+
+10.0

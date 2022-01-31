@@ -1,0 +1,26 @@
+---
+permalink: storage/concept_contact_netapp_support.html 
+sidebar: sidebar 
+keywords: contact,support 
+summary: NetApp 제품에 대한 도움이 필요하거나 문의 사항이나 의견이 있으면 NetApp 지원에 문의하십시오. 
+---
+= NetApp 지원에 문의하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp 제품에 대한 도움이 필요하거나 문의 사항이나 의견이 있으면 NetApp 지원에 문의하십시오.
+
+* 웹:
++
+http://mysupport.netapp.com["mysupport.netapp.com"]
+
+* 전화:
++
+** 888.4.NETAPP (888.463.8277)(미국 및 캐나다)
+** 00.800.44.638277(EMEA/유럽)
+** +800.800.80.800(아시아/태평양)
+
+
+

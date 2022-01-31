@@ -1,0 +1,88 @@
+---
+permalink: api/reference_element_api_deleteidpconfiguration.html 
+sidebar: sidebar 
+keywords: IdP,idp,configuration,delete 
+summary: DeleteIdpConfiguration 메서드를 사용하여 클러스터에 대한 타사 IDP의 기존 구성을 삭제할 수 있습니다. 마지막 IDP 구성을 삭제하면 SAML 서비스 공급자 인증서가 클러스터에서 제거됩니다. 
+---
+= DeleteIdpConfiguration 을 클릭합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+DeleteIdpConfiguration 메서드를 사용하여 클러스터에 대한 타사 IDP의 기존 구성을 삭제할 수 있습니다. 마지막 IDP 구성을 삭제하면 SAML 서비스 공급자 인증서가 클러스터에서 제거됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+idpConfigurationID입니다
+ a| 
+타사 IDP 구성의 UUID입니다.
+ a| 
+UUID입니다
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+idpName입니다
+ a| 
+SAML 2.0 SSO(Single Sign-On)에 대한 IDP 공급자를 식별하고 검색하는 데 사용되는 이름입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "DeleteIdpConfiguration",
+  "params": {
+    "idpConfigurationID": "f983c602-12f9-4c67-b214-bf505185cfed",
+    "idpName": "https://provider.name.url.com"
+  }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "result":{}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+12.0

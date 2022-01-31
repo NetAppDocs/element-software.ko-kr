@@ -1,0 +1,132 @@
+---
+permalink: api/reference_element_api_getvolumeefficiency.html 
+sidebar: sidebar 
+keywords: volume,volumes,get,getting,stats,measurements,efficiency,GetVolumeEfficiency 
+summary: GetVolumeEffiency 메서드를 사용하여 볼륨에 대한 정보를 얻을 수 있습니다. 이 API 메소드에서 매개 변수로 제공하는 볼륨만 용량을 계산하는 데 사용됩니다. 
+---
+= GetVolumeEffiency(볼륨 효율성)
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'GetVolumeEffiency' 메서드를 사용하여 볼륨에 대한 정보를 얻을 수 있습니다. 이 API 메소드에서 매개 변수로 제공하는 볼륨만 용량을 계산하는 데 사용됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+볼륨 ID
+ a| 
+용량을 계산할 볼륨을 지정합니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+압축
+ a| 
+단일 볼륨에서 데이터를 압축하여 절약되는 공간의 크기입니다. 비율로 명시되며, 여기서 1은 데이터가 압축되지 않은 상태로 저장되었음을 의미합니다.
+ a| 
+부동
+
+
+
+ a| 
+중복 제거
+ a| 
+데이터를 복제하지 않고 단일 볼륨에 저장되는 공간입니다. 비율로 명시되었습니다.
+ a| 
+부동
+
+
+
+ a| 
+놓칠 수 없습니다
+ a| 
+효율성 데이터를 쿼리할 수 없는 볼륨입니다. GC 주기 이후 가비지 수집(GC)이 1시간 미만, 일시적인 네트워크 손실 또는 서비스 재시작으로 인해 볼륨이 누락될 수 있습니다.
+ a| 
+정수 배열
+
+
+
+ a| 
+씬 프로비저닝
+ a| 
+데이터 저장에 할당된 공간 크기에 사용되는 공간의 비율입니다. 비율로 명시되었습니다.
+ a| 
+부동
+
+
+
+ a| 
+타임 스탬프입니다
+ a| 
+GC 이후에 마지막으로 효율성 데이터를 수집했습니다.
+ a| 
+ISO 8601 데이터 문자열
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "GetVolumeEfficiency",
+   "params": {
+      "volumeID": 606
+   },
+   "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+       "compression": 2.001591240821456,
+       "deduplication": 1,
+       "missingVolumes": [],
+       "thinProvisioning": 1.009861932938856,
+       "timestamp": "2014-03-10T16:06:33Z"
+   }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

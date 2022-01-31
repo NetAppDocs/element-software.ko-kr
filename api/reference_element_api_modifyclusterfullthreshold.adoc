@@ -1,0 +1,342 @@
+---
+permalink: api/reference_element_api_modifyclusterfullthreshold.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,cluster,full,fullness,threshold,modifyclusterfullthreshold 
+summary: ModifyClusterFullThreshold 메서드를 사용하면 스토리지 클러스터가 특정 용량 활용도에 접근할 때 시스템에서 이벤트를 생성하는 수준을 변경할 수 있습니다. 임계값 설정을 사용하여 시스템에서 경고를 생성하기 전에 허용되는 사용 블록 스토리지 양을 나타낼 수 있습니다. 
+---
+= ModifyClusterFullThreshold를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ModfyClusterFullThreshold 메서드를 사용하면 스토리지 클러스터가 특정 용량 활용도에 접근할 때 시스템에서 이벤트를 생성하는 수준을 변경할 수 있습니다. 임계값 설정을 사용하여 시스템에서 경고를 생성하기 전에 허용되는 사용 블록 스토리지 양을 나타낼 수 있습니다.
+
+예를 들어 시스템이 "오류" 레벨 블록 스토리지 사용률보다 3%에 도달할 때 알림을 받으려면 stage3BlockThresholdPercent 매개 변수에 대해 "3" 값을 입력합니다. 이 수준에 도달하면 시스템은 클러스터 관리 콘솔의 이벤트 로그에 경고를 보냅니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+
+NOTE: 매개 변수를 하나 이상 선택해야 합니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+maxMetadataOverProvisionFactor입니다
+ a| 
+메타데이터 공간을 사용 가능한 공간에 비례하여 프로비저닝할 수 있는 횟수를 나타내는 값입니다. 예를 들어, 100TiB의 볼륨을 저장할 충분한 메타데이터 공간이 있고 이 숫자를 5로 설정한 경우 500TiB 크기의 볼륨을 생성할 수 있습니다.
+ a| 
+정수
+ a| 
+5
+ a| 
+아니요
+
+
+
+ a| 
+Stage2AwareThreshold를 참조하십시오
+ a| 
+시스템에서 용량 알림을 트리거하기 전에 클러스터에 남아 있는 용량 노드의 수입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+Stage3BlockThresholdPercent를 참조하십시오
+ a| 
+시스템이 클러스터 "경고" 경고를 트리거하도록 하는 블록 스토리지 사용률이 "오류" 임계값 미만임
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+Stage3MetadataThresholdPercent를 참조하십시오
+ a| 
+시스템이 클러스터 ""경고"" 경고를 트리거하도록 하는 ""오류"" 임계값 미만의 메타데이터 스토리지 사용률.
+ a| 
+정수
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+BLOCKNness(블록형
+ a| 
+클러스터의 블록 충만도에 대해 현재 계산된 레벨입니다.
+
+* Stage1Hpy: 경고 또는 오류 조건이 없습니다. 웹 UI의 * 정상 * 상태에 해당합니다.
+* stage2Aware: 경고 또는 오류 조건이 없습니다. 웹 UI의 * 정상 * 상태에 해당합니다.
+* stage3Low: 시스템이 2개의 비동시 노드 장애로부터 중복 데이터 보호를 제공할 수 없습니다. 웹 UI의 * 경고 * 상태에 해당합니다. 웹 UI에서 이 수준을 구성할 수 있습니다(기본적으로 시스템은 오류 상태보다 3% 낮은 용량으로 이 경고를 트리거합니다).
+* stage4Critical: 시스템이 단일 노드 장애로부터 중복 데이터 보호를 제공할 수 없습니다. 새 볼륨 또는 클론을 생성할 수 없습니다. Element UI의 * Error * 상태에 해당합니다.
+* stage5CompletyConsumered: 완전히 소모되었습니다. 클러스터가 읽기 전용이고 iSCSI 연결이 유지되지만 모든 쓰기가 일시 중단됩니다. Element UI의 * Critical * 상태에 해당합니다.
+
+ a| 
+문자열
+
+
+
+ a| 
+충만함
+ a| 
+"BLOCKFullness"와 "MetadataFullness" 사이의 최고 수준의 충만함을 반영합니다.
+ a| 
+문자열
+
+
+
+ a| 
+maxMetadataOverProvisionFactor입니다
+ a| 
+메타데이터 공간을 사용 가능한 공간에 비례하여 프로비저닝할 수 있는 횟수를 나타내는 값입니다. 예를 들어, 100TiB의 볼륨을 저장할 충분한 메타데이터 공간이 있고 이 숫자를 5로 설정한 경우 500TiB 크기의 볼륨을 생성할 수 있습니다.
+ a| 
+정수
+
+
+
+ a| 
+메타다테아풀함
+ a| 
+클러스터의 현재 계산된 메타데이터 풀니스 수준입니다.
+
+* Stage1Hpy: 경고 또는 오류 조건이 없습니다. 웹 UI의 * 정상 * 상태에 해당합니다.
+* stage2Aware: 경고 또는 오류 조건이 없습니다. 웹 UI의 * 정상 * 상태에 해당합니다.
+* stage3Low: 시스템이 2개의 비동시 노드 장애로부터 중복 데이터 보호를 제공할 수 없습니다. 웹 UI의 * 경고 * 상태에 해당합니다. 웹 UI에서 이 수준을 구성할 수 있습니다(기본적으로 시스템은 오류 상태보다 3% 낮은 용량으로 이 경고를 트리거합니다).
+* stage4Critical: 시스템이 단일 노드 장애로부터 중복 데이터 보호를 제공할 수 없습니다. 새 볼륨 또는 클론을 생성할 수 없습니다. Element UI의 * Error * 상태에 해당합니다.
+* stage5CompletyConsumered: 완전히 소모되었습니다. 클러스터가 읽기 전용이고 iSCSI 연결이 유지되지만 모든 쓰기가 일시 중단됩니다. Element UI의 * Critical * 상태에 해당합니다.
+
+ a| 
+문자열
+
+
+
+ a| 
+슬라이리예비 UsedThresholdPct
+ a| 
+오류 상태입니다. 예약된 슬라이스 사용률이 반환된 슬라이리예비 UsedThresholdPct 값보다 크면 시스템 경고가 트리거됩니다.
+ a| 
+정수
+
+
+
+ a| 
+Stage2AwareThreshold를 참조하십시오
+ a| 
+인지 조건. "2단계" 클러스터 임계값 레벨에 설정된 값
+ a| 
+정수
+
+
+
+ a| 
+Stage2BlockThresholdytes를 나타냅니다
+ a| 
+2단계 충만 조건이 존재할 클러스터에서 사용 중인 바이트 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+Stage2MetadataThresholdytes
+ a| 
+2단계 충만 조건이 존재할 클러스터에서 사용 중인 메타데이터 바이트 수입니다.
+ a| 
+
+
+
+ a| 
+Stage3BlockThresholdytes
+ a| 
+3단계 전체 상태 조건이 존재할 클러스터에서 사용 중인 스토리지 바이트 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+Stage3BlockThresholdPercent를 참조하십시오
+ a| 
+3단계에 설정된 백분율 값입니다. 이 % 찼을 때 경고 로그에 경고가 표시됩니다.
+ a| 
+정수
+
+
+
+ a| 
+stage3LowThreshold를 참조하십시오
+ a| 
+오류 상태입니다. 클러스터의 낮은 용량으로 인해 시스템 경고가 생성되는 임계값입니다.
+ a| 
+정수
+
+
+
+ a| 
+3메트타다임계 임계성바이트
+ a| 
+3단계 전체 상태 조건이 존재할 클러스터에서 사용하는 메타데이터 바이트 수입니다.
+ a| 
+
+
+
+ a| 
+stage4BlockThresholdytes
+ a| 
+4단계 전체 상태 조건이 존재할 클러스터에서 사용 중인 스토리지 바이트 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+stage4CriticalThreshold를 나타냅니다
+ a| 
+오류 상태입니다. 클러스터의 심각한 용량 부족을 경고하기 위해 시스템 경고가 생성되는 임계값입니다.
+ a| 
+정수
+
+
+
+ a| 
+Stage4MetadataThresholdytes
+ a| 
+4단계 완전성 조건이 존재할 클러스터에서 사용하는 메타데이터 바이트 수입니다.
+ a| 
+
+
+
+ a| 
+stage5BlockThresholdytes
+ a| 
+5단계 충만 조건이 존재할 클러스터에서 사용하는 저장소 바이트 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+stage5MetadataThresholdytes
+ a| 
+5단계 충만 조건이 존재할 클러스터에서 사용하는 메타데이터 바이트 수입니다.
+ a| 
+
+
+
+ a| 
+sumTotalClusterBytes를 선택합니다
+ a| 
+클러스터의 물리적 용량(바이트 단위)
+ a| 
+정수
+
+
+
+ a| 
+요약 메타다ataClusterBytes입니다
+ a| 
+메타데이터를 저장하는 데 사용할 수 있는 총 공간입니다.
+ a| 
+정수
+
+
+
+ a| 
+sumUsedClusterBytes를 선택합니다
+ a| 
+클러스터에서 사용된 스토리지 바이트 수입니다.
+ a| 
+정수
+
+
+
+ a| 
+sumUsedMetadataClusterBytes를 나타냅니다
+ a| 
+메타데이터를 저장하기 위해 볼륨 드라이브에서 사용되는 공간입니다.
+ a| 
+정수
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method" : "ModifyClusterFullThreshold",
+   "params" : {
+              "stage3BlockThresholdPercent" : 3
+              },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "blockFullness": "stage1Happy",
+    "fullness": "stage3Low",
+    "maxMetadataOverProvisionFactor": 5,
+    "metadataFullness": "stage3Low",
+    "sliceReserveUsedThresholdPct": 5,
+    "stage2AwareThreshold": 3,
+    "stage2BlockThresholdBytes": 2640607661261,
+    "stage3BlockThresholdBytes": 8281905846682,
+    "stage3BlockThresholdPercent": 3,
+    "stage3LowThreshold": 2,
+    "stage4BlockThresholdBytes": 8641988709581,
+    "stage4CriticalThreshold": 1,
+    "stage5BlockThresholdBytes": 12002762096640,
+    "sumTotalClusterBytes": 12002762096640,
+    "sumTotalMetadataClusterBytes": 404849531289,
+    "sumUsedClusterBytes": 45553617581,
+    "sumUsedMetadataClusterBytes": 31703113728
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

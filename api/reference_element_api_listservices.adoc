@@ -1,0 +1,150 @@
+---
+permalink: api/reference_element_api_listservices.html 
+sidebar: sidebar 
+keywords: storage,cluster,services,list,listing,listservices 
+summary: ListServices 메서드를 사용하여 클러스터에서 실행 중인 노드, 드라이브, 현재 소프트웨어 및 기타 서비스에 대한 서비스 정보를 나열할 수 있습니다. 
+---
+= ListServices 를 클릭합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListServices" 방법을 사용하여 클러스터에서 실행 중인 노드, 드라이브, 현재 소프트웨어 및 기타 서비스에 대한 서비스 정보를 나열할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+서비스
+ a| 
+드라이브 및 노드에서 실행되는 서비스.
+ a| 
+JSON 개체
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "ListServices",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+"id": 1,
+"result": {
+	"services": [
+		{
+			"drive": {
+				"assignedService": 22,
+				"asyncResultIDs": [],
+				"attributes": {},
+				"capacity": 300069052416,
+				"customerSliceFileCapacity": 0,
+				"driveID": 5,
+				"driveStatus": "assigned",
+				"driveType": "block",
+				"failCount": 0,
+				"nodeID": 4,
+				"reservedSliceFileCapacity": 0,
+				"serial": "scsi-SATA_INTEL_SSDSC2",
+				"slot": 3
+			},
+			"drives": [
+				{
+					"assignedService": 22,
+					"asyncResultIDs": [],
+					"attributes": {},
+					"capacity": 300069052416,
+					"customerSliceFileCapacity": 0,
+					"driveID": 5,
+					"driveStatus": "assigned",
+					"driveType": "Block",
+					"failCount": 0,
+					"nodeID": 4,
+					"reservedSliceFileCapacity": 0,
+					"serial": "scsi-SATA_INTEL_SSDSC2",
+					"slot": 3
+				}
+			],
+			"node": {
+				"associatedFServiceID": 0,
+				"associatedMasterServiceID": 1,
+				"attributes": {},
+				"cip": "10.117.63.18",
+				"cipi": "Bond10G",
+				"fibreChannelTargetPortGroup": null,
+				"mip": "10.117.61.18",
+				"mipi": "Bond1G",
+				"name": "node4",
+				"nodeID": 4,
+				"nodeSlot": "",
+				"platformInfo": {
+					"chassisType": "R620",
+					"cpuModel": "Intel(R) Xeon(R) CPU",
+					"nodeMemoryGB": 72,
+					"nodeType": "SF3010",
+					"platformConfigVersion": "10.0"
+				},
+				"sip": "10.117.63.18",
+				"sipi": "Bond10G",
+				"softwareVersion": "10.0",
+				"uuid": "4C4C4544-0053",
+				"virtualNetworks": []
+			},
+			"service": {
+				"associatedBV": 0,
+				"associatedTS": 0,
+				"associatedVS": 0,
+				"asyncResultIDs": [
+					1
+				],
+				"driveID": 5,
+				"driveIDs": [
+					5
+				],
+				"firstTimeStartup": true,
+				"ipcPort": 4008,
+				"iscsiPort": 0,
+				"nodeID": 4,
+				"serviceID": 22,
+				"serviceType": "block",
+				"startedDriveIDs": [],
+				"status": "healthy"
+			}
+		}
+	]
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

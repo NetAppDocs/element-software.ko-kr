@@ -1,0 +1,41 @@
+---
+permalink: api/reference_element_api_nodeprotectiondomains.html 
+sidebar: sidebar 
+keywords: object,objects,node,protection domains 
+summary: nodeProtectionDomains 개체에는 노드를 식별하는 정보와 해당 노드와 연결된 보호 도메인에 대한 정보가 들어 있습니다. 
+---
+= 노드 보호도메인
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+nodeProtectionDomains 개체에는 노드를 식별하는 정보와 해당 노드와 연결된 보호 도메인에 대한 정보가 들어 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+노드 ID입니다
+ a| 
+노드의 고유 식별자입니다.
+ a| 
+정수
+
+
+
+ a| 
+보호도메인
+ a| 
+노드가 구성원인 보호 도메인의 목록입니다.
+ a| 
+link:reference_element_api_protectiondomain.md#GUID-96388C5C-ACA2-44D9-86CE-19FEF0825A11["보호 도메인"]
+
+|===

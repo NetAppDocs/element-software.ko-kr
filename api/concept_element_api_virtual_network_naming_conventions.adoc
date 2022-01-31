@@ -1,0 +1,25 @@
+---
+permalink: api/concept_element_api_virtual_network_naming_conventions.html 
+sidebar: sidebar 
+keywords: storage,system,naming,convention,virtual,network 
+summary: NetApp Element 스토리지 시스템은 시스템의 모든 오브젝트에 대한 고유한 식별자로 점점 더 많은 숫자를 사용합니다. 
+---
+= 가상 네트워크 명명 규칙
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element 스토리지 시스템은 시스템의 모든 오브젝트에 대한 고유한 식별자로 점점 더 많은 숫자를 사용합니다.
+
+새 볼륨을 생성할 때 새 볼륨 ID는 정확히 1의 증가입니다. 이 규칙은 Element 소프트웨어를 실행하는 스토리지 클러스터의 가상 네트워크에 적용됩니다. Element 클러스터에서 생성한 첫 번째 가상 네트워크의 VirtualNetworkID는 1입니다. 이 ID는 VLAN 태그 번호와 동일하지 않습니다.
+
+API 메서드에서 언급한 대로 VirtualNetworkID 및 VirtualNetworkTag(VLAN 태그)를 서로 바꿔서 사용할 수 있습니다.
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
+

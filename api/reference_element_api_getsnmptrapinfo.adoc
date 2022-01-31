@@ -1,0 +1,118 @@
+---
+permalink: api/reference_element_api_getsnmptrapinfo.html 
+sidebar: sidebar 
+keywords: snmp,trap,get,getting,info,getsnmptrapinfo 
+summary: GetSnmpTrapInfo 메서드를 사용하여 현재 SNMP 트랩 구성 정보를 가져올 수 있습니다. 
+---
+= GetSnmpTrapInfo 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetSnmpTrapInfo" 메서드를 사용하여 현재 SNMP 트랩 구성 정보를 가져올 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+TrapRecipients(수신자)
+ a| 
+클러스터에서 생성한 트랩을 수신할 호스트 목록입니다.
+ a| 
+xref:reference_element_api_snmptraprecipient.adoc[snmpTrapRecipient를 선택합니다] 스토리지
+
+
+
+ a| 
+클러스터포트트라파ssEnabled
+ a| 
+true 값은 클러스터 장애가 기록될 때 트랩 수신자 목록으로 전송되도록 solidFireClusterFaultNotification 이 구성되었음을 나타냅니다.
+ a| 
+부울
+
+
+
+ a| 
+클러스터\n\n\n\n\n\n시스템\n및\n\n
+ a| 
+true 값은 클러스터 장애가 해결될 때 트랩 수신자 목록으로 전송되도록 solidFireClusterFaultResolvedNotification 이 구성되었음을 나타냅니다.
+ a| 
+부울
+
+
+
+ a| 
+클러스터 EventTrapsEnabled
+ a| 
+true 값은 클러스터 이벤트가 기록될 때 트랩 수신자 목록으로 solidFireClusterEventNotification이 전송되도록 구성되었음을 나타냅니다.
+ a| 
+부울
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method":"GetSnmpTrapInfo"
+   "params":{},
+   "id":1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "clusterEventTrapsEnabled": true,
+    "clusterFaultResolvedTrapsEnabled": true,
+    "clusterFaultTrapsEnabled": true,
+    "trapRecipients": [
+     {
+      "community": "public",
+      "host": "192.168.151.60",
+      "port": 162
+     },
+     {
+      "community": "solidfireAlerts",
+      "host": "NetworkMonitor",
+      "port": 162
+     },
+     {
+      "community": "wakeup",
+      "host": "PhoneHomeAlerter",
+      "port": 1008
+     }
+   ]
+ }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

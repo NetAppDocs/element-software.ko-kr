@@ -1,0 +1,41 @@
+---
+permalink: api/reference_element_api_fipsreport.html 
+sidebar: sidebar 
+keywords: object,objects,fipsReport,FIPS,140-2 
+summary: fipsReport 객체에는 스토리지 클러스터의 모든 노드에 대한 FIPS 140-2 지원에 대한 정보가 포함되어 있습니다. GetFipsReport 메서드를 사용하여 이 정보를 검색할 수 있습니다. 
+---
+= fipsReport를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+fipsReport 객체에는 스토리지 클러스터의 모든 노드에 대한 FIPS 140-2 지원에 대한 정보가 포함되어 있습니다. GetFipsReport 메서드를 사용하여 이 정보를 검색할 수 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+노드
+ a| 
+스토리지 클러스터의 각 노드에 대해 FIPS 140-2 지원 상태에 대한 보고서
+ a| 
+FipsNodeReport를 참조하십시오
+
+
+
+ a| 
+오류 노드
+ a| 
+FIPS 140-2 지원 상태로 응답하지 않은 각 노드의 오류 정보
+ a| 
+fipsErrorNodeReport를 참조하십시오
+
+|===

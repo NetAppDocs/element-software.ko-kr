@@ -1,0 +1,129 @@
+---
+permalink: api/reference_element_api_listvolumestatsbyvolume.html 
+sidebar: sidebar 
+keywords: volumes,volume,stats,list,listing,listvolumestatsbyvolume,activity 
+summary: ListVolumeStatsByVolume 메서드를 사용하여 볼륨별로 모든 볼륨에 대한 상위 수준의 활동 측정을 나열할 수 있습니다. 값은 볼륨을 생성한 후 누적됩니다. 
+---
+= ListVolumeStatsByVolume
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'ListVolumeStatsByVolume' 방법을 사용하여 볼륨별로 모든 볼륨에 대한 상위 수준의 활동 측정을 나열할 수 있습니다. 값은 볼륨을 생성한 후 누적됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+여기에는 VirtualVolumes가 포함됩니다
+ a| 
+가상 볼륨은 기본적으로 응답에 포함됩니다. 가상 볼륨을 제외하려면 FALSE로 설정합니다.
+ a| 
+부울
+ a| 
+참
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+볼륨 통계
+ a| 
+볼륨 활동 정보 목록입니다.
+ a| 
+xref:reference_element_api_volumestats.adoc[볼륨 통계] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "ListVolumeStatsByVolume",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeStats": [
+      {
+        "accountID": 3,
+        "actualIOPS": 0,
+        "asyncDelay": null,
+        "averageIOPSize": 4096,
+        "burstIOPSCredit": 30000,
+        "clientQueueDepth": 0,
+        "desiredMetadataHosts": null,
+        "latencyUSec": 0,
+        "metadataHosts": {
+          "deadSecondaries": [],
+          "liveSecondaries": [
+              16
+          ],
+          "primary": 12
+        },
+        "nonZeroBlocks": 7499205,
+        "readBytes": 159012818944,
+        "readBytesLastSample": 0,
+        "readLatencyUSec": 0,
+        "readOps": 38821489,
+        "readOpsLastSample": 0,
+        "samplePeriodMSec": 500,
+        "throttle": 0,
+        "timestamp": "2016-10-17T20:55:31.087537Z",
+        "unalignedReads": 0,
+        "unalignedWrites": 0,
+        "volumeAccessGroups": [
+          1
+        ],
+        "volumeID": 1,
+        "volumeSize": 53687091200,
+        "volumeUtilization": 0,
+        "writeBytes": 52992585728,
+        "writeBytesLastSample": 0,
+        "writeLatencyUSec": 0,
+        "writeOps": 12937643,
+        "writeOpsLastSample": 0,
+        "zeroBlocks": 5607995
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

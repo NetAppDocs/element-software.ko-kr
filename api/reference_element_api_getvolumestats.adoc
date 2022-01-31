@@ -1,0 +1,129 @@
+---
+permalink: api/reference_element_api_getvolumestats.html 
+sidebar: sidebar 
+keywords: volume,volumes,get,getting,stats,measurements,activity,getvolumestats 
+summary: GetVolumeStats 메서드를 사용하면 단일 볼륨의 높은 수준의 활동 측정을 얻을 수 있습니다. 값은 볼륨을 생성한 후 누적됩니다. 
+---
+= GetVolumeStats 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'GetVolumeStats' 메서드를 사용하면 단일 볼륨에 대한 높은 수준의 활동 측정을 얻을 수 있습니다. 값은 볼륨을 생성한 후 누적됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+볼륨 ID
+ a| 
+통계를 수집할 볼륨을 지정합니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+볼륨 통계
+ a| 
+볼륨 활동 정보.
+ a| 
+xref:reference_element_api_volumestats.adoc[볼륨 통계]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "GetVolumeStats",
+   "params": {
+      "volumeID": 32
+   },
+   "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeStats": {
+      "accountID": 1,
+      "actualIOPS": 0,
+      "asyncDelay": null,
+      "averageIOPSize": 0,
+      "burstIOPSCredit": 0,
+      "clientQueueDepth": 0,
+      "desiredMetadataHosts": null,
+      "latencyUSec": 0,
+      "metadataHosts": {
+        "deadSecondaries": [],
+        "liveSecondaries": [
+          32
+        ],
+        "primary": 60
+      },
+      "nonZeroBlocks": 0,
+      "readBytes": 0,
+      "readBytesLastSample": 0,
+      "readLatencyUSec": 0,
+      "readOps": 0,
+      "readOpsLastSample": 0,
+      "samplePeriodMSec": 0,
+      "throttle": 0,
+      "timestamp": "2016-04-01T21:01:39.130840Z",
+      "unalignedReads": 0,
+      "unalignedWrites": 0,
+      "volumeAccessGroups": [],
+      "volumeID": 1,
+      "volumeSize": 5000658944,
+      "volumeUtilization": 0,
+      "writeBytes": 0,
+      "writeBytesLastSample": 0,
+      "writeLatencyUSec": 0,
+      "writeOps": 0,
+      "writeOpsLastSample": 0,
+      "zeroBlocks": 1220864
+    }
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

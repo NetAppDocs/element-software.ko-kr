@@ -1,0 +1,76 @@
+---
+permalink: concepts/concept_solidfire_concepts_solidfire_architecture_overview.html 
+sidebar: sidebar 
+keywords: solidfire, element, aiq, cluster, active iq, vcenter plugin, vcp, storage, what is 
+summary: 'SolidFire All-Flash 스토리지 시스템은 각 노드에서 독립적으로 실행되는 NetApp Element 소프트웨어를 통해 단일 스토리지 리소스 풀로 결합된 개별 하드웨어 구성요소\(드라이브 및 노드\)로 구성됩니다. 이 통합 클러스터는 외부 클라이언트에서 사용할 수 있는 단일 스토리지 시스템으로, Element 소프트웨어 UI, API 및 기타 관리 툴을 통해 단일 엔터티로 관리됩니다.' 
+---
+= SolidFire 아키텍처 개요
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire All-Flash 스토리지 시스템은 스토리지 리소스 풀에 결합되어 각 노드에서 독립적으로 실행되는 NetApp Element 소프트웨어가 포함된 개별 하드웨어 구성요소(드라이브 및 노드)로 구성됩니다. 이 단일 스토리지 시스템은 Element 소프트웨어 UI, API 및 기타 관리 툴을 사용하여 단일 엔터티로 관리됩니다.
+
+SolidFire 스토리지 시스템에는 다음과 같은 하드웨어 구성 요소가 포함되어 있습니다.
+
+* * 클러스터 *: 노드 모음인 SolidFire 스토리지 시스템의 허브입니다.
+* * 노드 *: 클러스터로 그룹화된 하드웨어 구성요소 노드 유형에는 두 가지가 있습니다.
++
+** 스토리지 노드: 드라이브 컬렉션을 포함하는 서버입니다
+** FC(Fibre Channel) 노드로, FC 클라이언트에 연결하는 데 사용됩니다
+
+
+* * 드라이브 *: 스토리지 노드에서 클러스터의 데이터를 저장하는 데 사용됩니다. 스토리지 노드에는 두 가지 유형의 드라이브가 있습니다.
++
+** 볼륨 메타데이터 드라이브는 클러스터 내의 볼륨 및 기타 오브젝트를 정의하는 정보를 저장합니다.
+** 블록 드라이브는 볼륨의 데이터 블록을 저장합니다.
+
+
+
+
+image::../media/solidfire_concepts_guide_architecture_image.gif[Element 소프트웨어 아키텍처 다이어그램]
+
+Element 웹 UI 및 기타 호환 도구를 사용하여 시스템을 관리, 모니터링 및 업데이트할 수 있습니다.
+
+* link:../concepts/concept_intro_solidfire_software_interfaces.html["SolidFire 소프트웨어 인터페이스"]
+* link:../concepts/concept_intro_solidfire_active_iq.html["SolidFire Active IQ"]
+* link:../concepts/concept_intro_management_node.html["Element 소프트웨어의 관리 노드입니다"]
+* link:../concepts/concept_intro_management_services_for_afa.html["관리 서비스"]
+
+
+
+
+== 공통 URL
+
+SolidFire All-Flash 스토리지 시스템에서 사용하는 일반적인 URL은 다음과 같습니다.
+
+[cols="2*"]
+|===
+| URL | 설명 
+
+
+| "https://[storage cluster mVIP address]" | NetApp Element 소프트웨어 UI에 액세스합니다. 
+
+
+| "https://activeiq.solidfire.com` | 데이터를 모니터링하고 성능 병목 현상 또는 잠재적인 시스템 문제에 대한 경고를 받습니다. 
+
+
+| 'https://[management node ip address]'를 선택합니다 | NetApp 하이브리드 클라우드 제어에 액세스하여 스토리지 설치 및 업데이트 관리 서비스를 업그레이드하십시오. 
+
+
+| https://[IP 주소 : 442 | 노드별 UI에서 네트워크 및 클러스터 설정에 액세스하고 시스템 테스트 및 유틸리티를 활용합니다. link:../storage/task_per_node_access_settings.html["자세한 정보."] 
+
+
+| 'https://[management node ip address]/mnode' | 관리 서비스 REST API 및 관리 노드의 기타 기능을 사용합니다.link:../mnode/task_mnode_work_overview.html["자세한 정보."] 
+
+
+| https://[management 노드 IP 주소]:9443 | vSphere Web Client에 vCenter 플러그인 패키지를 등록합니다.link:https://docs.netapp.com/us-en/vcp/vcp_task_getstarted.html["자세한 정보."^] 
+|===
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

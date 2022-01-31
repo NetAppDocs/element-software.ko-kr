@@ -1,0 +1,126 @@
+---
+permalink: api/reference_element_api_listkeyproviderskmip.html 
+sidebar: sidebar 
+keywords: KMIP,key providers,key,provider,retrieving,listing,list,retrieve,listkeyproviderskmip 
+summary: 'ListKeyProvidersKmip 메서드를 사용하여 기존의 모든 키 관리 상호 운용성 프로토콜\(KMIP\) 키 공급자 목록을 검색할 수 있습니다. 추가 매개 변수를 지정하여 목록을 필터링할 수 있습니다.' 
+---
+= ListKeyProvidersKmip 을 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListKeyProvidersKmip" 방법을 사용하여 기존의 모든 KMIP(Key Management Interoperability Protocol) 키 공급자 목록을 검색할 수 있습니다. 추가 매개 변수를 지정하여 목록을 필터링할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+KeyProviderIsActive 를 참조하십시오
+ a| 
+필터가 활성 여부에 따라 KMIP 주요 서버 객체를 반환했습니다. 가능한 값:
+
+* 참: KMIP 키 공급자만 사용(현재 사용 중인 키 제공)합니다.
+* False: 비활성화된 KMIP 키 공급자만 반환합니다(키를 제공하지 않고 삭제할 수 있음).
+
+
+이 인수를 생략하면 KMIP 키 공급자가 활성 상태인지 여부를 기준으로 필터링되지 않습니다.
+ a| 
+부울
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+KmipKeyProviderHasServerAsSigned 를 참조하십시오
+ a| 
+필터가 KMIP 키 서버가 할당되었는지 여부를 기준으로 KMIP 키 공급자를 반환했습니다. 가능한 값:
+
+* 참: KMIP 키 서버가 할당된 KMIP 키 공급자만 반환합니다.
+* False: KMIP 키 서버가 할당되지 않은 KMIP 키 공급자만 반환합니다.
+
+
+이 인수를 생략하면 KMIP 키 서버가 할당되었는지 여부를 기준으로 KMIP 키 공급자가 반환되었습니다.
+ a| 
+부울
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+KmipKeyProviders 를 참조하십시오
+ a| 
+KMIP 키 공급자 목록이 생성되었습니다.
+ a| 
+link:reference_element_api_keyproviderkmip.md#["키ProviderKmip 을 참조하십시오"] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "ListKeyProvidersKmip",
+  "params": {},
+"id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+    {
+    "kmipKeyProviders": [
+        {
+            "keyProviderID": 15,
+            "kmipCapabilities": "SSL",
+            "keyProviderIsActive": true,
+            "keyServerIDs": [
+                1
+            ],
+            "keyProviderName": "KeyProvider1"
+        }
+    ]
+}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+11.7

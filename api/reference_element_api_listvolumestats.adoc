@@ -1,0 +1,146 @@
+---
+permalink: api/reference_element_api_listvolumestats.html 
+sidebar: sidebar 
+keywords: volumes,volume,stats,list,listing,listvolumestats,activity 
+summary: 'ListVolumeStats 메서드를 사용하여 단일 볼륨, 볼륨 목록 또는 모든 볼륨에 대한 높은 수준의 활동 측정을 가져올 수 있습니다\(volumeIDs 매개 변수 \ 를 생략한 경우). 측정 값은 체적을 생성한 후 누적됩니다.' 
+---
+= ListVolumeStats
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListVolumeStats" 방법을 사용하면 단일 볼륨, 볼륨 목록 또는 모든 볼륨에 대한 높은 수준의 활동 측정을 얻을 수 있습니다(volumeIDs 매개 변수를 생략한 경우). 측정 값은 체적을 생성한 후 누적됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+여기에는 VirtualVolumes가 포함됩니다
+ a| 
+가상 볼륨은 기본적으로 응답에 포함됩니다. 가상 볼륨을 제외하려면 FALSE로 설정합니다.
+ a| 
+부울
+ a| 
+참
+ a| 
+아니요
+
+
+
+ a| 
+볼륨 ID
+ a| 
+활동 정보를 검색할 볼륨 목록입니다.
+ a| 
+정수 배열
+ a| 
+아니요
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+볼륨 통계
+ a| 
+볼륨 활동 정보 목록입니다.
+ a| 
+xref:reference_element_api_volumestats.adoc[볼륨 통계] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "ListVolumeStats",
+    "params": {
+        "volumeIDs": [1]
+    },
+    "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeStats": [
+      {
+        "accountID": 1,
+        "actualIOPS": 0,
+        "asyncDelay": null,
+        "averageIOPSize": 0,
+        "burstIOPSCredit": 30000,
+        "clientQueueDepth": 0,
+        "desiredMetadataHosts": null,
+        "latencyUSec": 0,
+        "metadataHosts": {
+          "deadSecondaries": [],
+          "liveSecondaries": [
+            47
+          ],
+          "primary": 33
+        },
+        "nonZeroBlocks": 22080699,
+        "readBytes": 657262370816,
+        "readBytesLastSample": 0,
+        "readLatencyUSec": 0,
+        "readOps": 160464446,
+        "readOpsLastSample": 0,
+        "samplePeriodMSec": 500,
+        "throttle": 0,
+        "timestamp": "2016-03-09T19:39:15.771697Z",
+        "unalignedReads": 0,
+        "unalignedWrites": 0,
+        "volumeAccessGroups": [
+          1
+        ],
+        "volumeID": 1,
+        "volumeSize": 107374182400,
+        "volumeUtilization": 0,
+        "writeBytes": 219117547520,
+        "writeBytesLastSample": 0,
+        "writeLatencyUSec": 0,
+        "writeOps": 53495495,
+        "writeOpsLastSample": 0,
+        "zeroBlocks": 4133701
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

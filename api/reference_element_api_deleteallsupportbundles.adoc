@@ -1,0 +1,60 @@
+---
+permalink: api/reference_element_api_deleteallsupportbundles.html 
+sidebar: sidebar 
+keywords: support,bundle,delete,deleting,DeleteAllSupportBundles 
+summary: DeleteAllSupportBundles 메서드를 사용하여 CreateSupportBundle API 메서드로 생성된 모든 지원 번들을 삭제할 수 있습니다. 
+---
+= DeleteAllSupportBundles 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+DeleteAllSupportBundles 메서드를 사용하면 'CreateSupportBundle' API 메서드로 생성된 모든 지원 번들을 삭제할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "DeleteAllSupportBundles",
+   "params": {}
+  },
+  "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {}
+ }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

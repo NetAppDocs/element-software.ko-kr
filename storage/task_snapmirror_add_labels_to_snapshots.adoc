@@ -1,0 +1,30 @@
+---
+permalink: storage/task_snapmirror_add_labels_to_snapshots.html 
+sidebar: sidebar 
+keywords: snapmirror labels, add labels to snapshots, specify retention policies, group snapshots 
+summary: SnapMirror 레이블은 SnapMirror 엔드포인트에 대한 스냅샷 보존 정책을 지정합니다. 스냅샷 및 그룹 스냅샷에 레이블을 추가할 수 있습니다. 
+---
+= 스냅샷에 SnapMirror 레이블을 추가합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror 레이블은 SnapMirror 엔드포인트에 대한 스냅샷 보존 정책을 지정합니다. 스냅샷 및 그룹 스냅샷에 레이블을 추가할 수 있습니다.
+
+기존 SnapMirror 관계 대화 상자 또는 NetApp ONTAP System Manager에서 사용 가능한 레이블을 볼 수 있습니다.
+
+
+IMPORTANT: 그룹 스냅샷에 레이블을 추가하면 개별 스냅샷에 대한 기존 레이블이 덮어쓰여집니다.
+
+.무엇을 &#8217;필요로 할거야
+* SnapMirror가 클러스터에서 활성화되어 있습니다.
+* 추가하려는 레이블이 ONTAP에 이미 있습니다.
+
+
+.단계
+. 데이터 보호 * > * 스냅샷 * 또는 * 그룹 스냅샷 * 페이지를 클릭합니다.
+. SnapMirror 레이블을 추가할 스냅숏 또는 그룹 스냅숏에 대한 * 작업 * 아이콘을 클릭합니다.
+. 스냅샷 편집 * 대화 상자에서 * SnapMirror 레이블 * 필드에 텍스트를 입력합니다. 레이블은 SnapMirror 관계에 적용되는 정책의 규칙 레이블과 일치해야 합니다.
+. 변경 내용 저장 * 을 클릭합니다.
+

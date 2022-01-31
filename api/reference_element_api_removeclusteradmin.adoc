@@ -1,0 +1,78 @@
+---
+permalink: api/reference_element_api_removeclusteradmin.html 
+sidebar: sidebar 
+keywords: cluster,admin,remove,removing,removeclusteradmin 
+summary: 'RemoveClusterAdmin 메서드를 사용하여 클러스터 관리자, LDAP 클러스터 관리자 또는 타사 ID 공급자\(IDP\) 클러스터 관리자를 제거할 수 있습니다. "admin" 클러스터 관리자 계정은 제거할 수 없습니다.' 
+---
+= RemoveClusterAdmin
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"RemoveClusterAdmin" 방법을 사용하여 클러스터 관리자, LDAP 클러스터 관리자 또는 타사 ID 공급자(IDP) 클러스터 관리자를 제거할 수 있습니다. "admin" 클러스터 관리자 계정은 제거할 수 없습니다.
+
+
+
+== 매개 변수
+
+타사 ID 공급자 IDP와 연결된 인증된 세션이 있는 IDP 클러스터 관리자를 제거하면 해당 세션에서 로그아웃되거나 현재 세션 내에서 액세스 권한이 손실될 수 있습니다. 액세스 권한 손실은 제거된 IDP 클러스터 관리자가 지정된 사용자의 SAML 속성에서 여러 IDP 클러스터 관리자 중 하나와 일치했는지 여부에 따라 달라집니다. 나머지 일치하는 IDP 클러스터 관리자 집합은 집계 액세스 권한 집합을 줄입니다. 다른 클러스터 관리자 사용자 유형은 클러스터 관리자가 제거될 때 로그아웃됩니다.
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+클러스터 관리자 ID
+ a| 
+제거할 클러스터 관리자의 ClusterAdminID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "RemoveClusterAdmin",
+   "params": {
+     "clusterAdminID"  : 2
+   },
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+ "id" : 1
+ "result" : { }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

@@ -1,0 +1,83 @@
+---
+permalink: api/reference_element_api_rekeysoftwareencryptionatrestmasterkey.html 
+sidebar: sidebar 
+keywords: system, api, element, security, rekey, software encryption at rest 
+summary: 'RekeySoftwareEncryptionAtRestMasterKey 메서드를 사용하여 DEK(데이터 암호화 키)를 암호화하는 데 사용되는 소프트웨어 암호화 유휴 마스터 키를 다시 설정할 수 있습니다.' 
+---
+= RekeySoftwareEncryptionAtRestMasterKey를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"RekeySoftwareEncryptionAtRestMasterKey" 메서드를 사용하여 DEK(데이터 암호화 키)를 암호화하는 데 사용되는 소프트웨어 암호화 유휴 마스터 키를 다시 설정할 수 있습니다. 클러스터를 생성하는 동안 저장된 소프트웨어 암호화는 IKM(내부 키 관리)을 사용하도록 구성됩니다. 이 키를 다시 입력하다 IKM 또는 EKM(외부 키 관리)을 사용하려면 클러스터를 생성한 후 이 방법을 사용할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다. keyManagementType 매개 변수가 지정되지 않은 경우 기존 키 관리 구성을 사용하여 키를 다시 입력하다 keyManagementType을 지정하고 key provider가 external인 경우 keyProviderID 매개 변수도 사용해야 합니다.
+
+[cols="4*"]
+|===
+| 매개 변수 | 설명 | 유형 | 선택 사항 
+
+
+| 키 관리유형 | 마스터 키를 관리하는 데 사용되는 키 관리 유형입니다. 가능한 값은 '내부': 내부 키 관리를 사용하여 키를 다시 입력합니다. 외부 키 관리 기능을 사용하여 키를 다시 누릅니다. 이 매개 변수를 지정하지 않으면 기존 키 관리 구성을 사용하여 키를 다시 입력하다 | 문자열 | 참 
+
+
+| KeyProviderID를 입력합니다 | 사용할 키 공급자의 ID입니다. 이 값은 CreateKeyProvider 메서드 중 하나로 반환되는 고유 값입니다. keyManagementType이 External인 경우에만 ID가 필요하며, 그렇지 않으면 유효하지 않습니다. | 정수 | 참 
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+[cols="4*"]
+|===
+| 매개 변수 | 설명 | 유형 | 선택 사항 
+
+
+| asyncHandle | GetAsyncResult 로 이 asyncHandle 값을 사용하여 키를 다시 입력하다 GetAsyncResult 출력에는 새 마스터 키에 대한 정보가 들어 있는 newKey 필드와 이전 키에 대한 정보가 들어 있는 keyToDecommission 필드가 포함됩니다. | 정수 | 거짓 
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+ "method": "rekeysoftwareencryptionatrestmasterkey",
+ "params": {
+   "keyManagementType": "external",
+   "keyProviderID": "<ID number>"
+ }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "asyncHandle": 1
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+12.3
+
+[discrete]
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
+

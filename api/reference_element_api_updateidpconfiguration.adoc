@@ -1,0 +1,158 @@
+---
+permalink: api/reference_element_api_updateidpconfiguration.html 
+sidebar: sidebar 
+keywords: IdP,idp,configuration,update 
+summary: UpdateIdpConfiguration 메서드를 사용하여 클러스터에 대한 타사 IDP로 기존 구성을 업데이트할 수 있습니다. 
+---
+= UpdateIdpConfiguration 을 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"UpdateIdpConfiguration" 메서드를 사용하여 클러스터에 대한 타사 IDP로 기존 구성을 업데이트할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+genateNewCertificate를 선택합니다
+ a| 
+TRUE로 지정하면 새 SAML 키와 인증서가 생성되고 기존 쌍이 교체됩니다. 참고: 기존 인증서를 교체하면 클러스터의 서비스 공급자 메타데이터가 IDP에서 다시 로드될 때까지 클러스터와 IDP 사이의 기존 신뢰가 중단됩니다. 제공되지 않거나 false로 설정되지 않은 경우 SAML 인증서와 키는 변경되지 않습니다.
+ a| 
+부울
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+idpConfigurationID입니다
+ a| 
+타사 IDP 구성의 UUID입니다.
+ a| 
+UUID입니다
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+idpMetadata
+ a| 
+SAML 2.0 SSO(Single Sign-On)에 대한 구성 및 통합 세부 정보에 대한 IDP 메타데이터.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+idpName입니다
+ a| 
+SAML 2.0 SSO(Single Sign-On)에 대한 IDP 공급자를 식별하고 검색하는 데 사용되는 이름입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+newIdpName입니다
+ a| 
+지정된 경우 이 이름은 이전 IDP 이름을 대체합니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+idpConfigInfo
+ a| 
+타사 IDP 구성에 대한 정보입니다.
+ a| 
+link:reference_element_api_idpconfiginfo.md#GUID-7DAF8B5D-7803-417F-822B-F5B1A4E3EA93["idpConfigInfo"]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+"method": "UpdateIdpConfiguration",
+"params": {
+        "idpConfigurationID": "f983c602-12f9-4c67-b214-bf505185cfed",
+        "generateNewCertificate": true
+    }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+    "result": {
+        "idpConfigInfo": {
+        "enabled": true,
+        "idpConfigurationID": "f983c602-12f9-4c67-b214-bf505185cfed",
+        "idpMetadata": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n
+        <EntityDescriptor xmlns=\"urn:oasis:names:tc:SAML:2.0:metadata\"\r\n
+        xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\"\r\n
+        xmlns:shibmd=\"urn:mace:shibboleth:metadata:1.0\"\r\n
+        xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\r\n
+        ...</Organization>\r\n
+        </EntityDescriptor>",
+        "idpName": "https://privider.name.url.com",
+        "serviceProviderCertificate": "-----BEGIN CERTIFICATE-----\n
+        MI...BHi\n
+        -----END CERTIFICATE-----\n",
+        "spMetadataUrl": "https://10.193.100.100/auth/ui/saml2"
+        }
+    }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+12.0

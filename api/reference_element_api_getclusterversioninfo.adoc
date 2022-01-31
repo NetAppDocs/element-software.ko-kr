@@ -1,0 +1,184 @@
+---
+permalink: api/reference_element_api_getclusterversioninfo.html 
+sidebar: sidebar 
+keywords: cluster,version,info,get,getting,getclusterversioninfo 
+summary: GetClusterVersionInfo 메서드를 사용하면 클러스터의 각 노드에서 실행되는 Element 소프트웨어 버전에 대한 정보를 검색할 수 있습니다. 또한 이 메서드는 현재 소프트웨어를 업그레이드하는 중인 노드에 대한 정보도 반환합니다. 
+---
+= GetClusterVersionInfo 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"GetClusterVersionInfo" 메서드를 사용하면 클러스터의 각 노드에서 실행되는 Element 소프트웨어 버전에 대한 정보를 검색할 수 있습니다. 또한 이 메서드는 현재 소프트웨어를 업그레이드하는 중인 노드에 대한 정보도 반환합니다.
+
+
+
+== 클러스터 버전 정보 객체 멤버
+
+이 메서드에는 다음과 같은 개체 멤버가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+노드 ID입니다
+ a| 
+노드의 ID입니다.
+ a| 
+정수
+
+
+
+ a| 
+노드 내부 수정본
+ a| 
+노드의 내부 소프트웨어 버전입니다.
+ a| 
+문자열
+
+
+
+ a| 
+노드 버전입니다
+ a| 
+노드의 소프트웨어 버전입니다.
+ a| 
+문자열
+
+|===
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+클러스터 APIVersion
+ a| 
+클러스터의 현재 API 버전입니다.
+ a| 
+문자열
+
+
+
+ a| 
+클러스터 버전
+ a| 
+클러스터에서 현재 실행 중인 Element 소프트웨어의 버전입니다.
+ a| 
+문자열
+
+
+
+ a| 
+클러스터 버전 정보
+ a| 
+클러스터의 노드 목록과 각 노드의 버전 정보
+ a| 
+JSON 개체 어레이
+
+
+
+ a| 
+펜딩클러스터 버전
+ a| 
+이 버전이 있는 경우 클러스터 소프트웨어가 현재 업그레이드 중이거나 되돌려진 버전입니다.
+ a| 
+문자열
+
+
+
+ a| 
+소프트웨어버전 정보
+ a| 
+업그레이드 상태입니다. 개체 멤버:
+
+* 현재 버전:
++
+노드의 현재 소프트웨어 버전입니다.
+
+* nodeid: CurrentVersion 에서 pendingVersion 으로 업그레이드 중인 노드의 ID입니다. 진행 중인 업그레이드가 없는 경우 이 필드는 0(영)입니다.
+* PackageName: 설치할 소프트웨어 패키지의 이름입니다.
+* 펜딩버전: 설치할 소프트웨어의 버전입니다.
+* 시작 시간: 설치가 시작된 날짜 및 시간(UTC + 0 형식)입니다.
+
+ a| 
+JSON 개체
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "GetClusterVersionInfo",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+ "id": 1,
+ "result": {
+   "clusterAPIVersion": "6.0",
+   "clusterVersion": "6.1382",
+   "clusterVersionInfo": [
+   {
+      "nodeID": 1,
+      "nodeInternalRevision": "BuildType=Release Element=carbon Release=carbon ReleaseShort=carbon Version=6.1382 sfdev=6.28 Repository=dev Revision=061511b1e7fb BuildDate=2014-05-28T18:26:45MDT",
+      "nodeVersion": "6.1382"
+   },
+   {
+      "nodeID": 2,
+      "nodeInternalRevision": "BuildType=Release Element=carbon Release=carbon ReleaseShort=carbon Version=6.1382 sfdev=6.28 Repository=dev Revision=061511b1e7fb BuildDate=2014-05-28T18:26:45MDT",
+      "nodeVersion": "6.1382"
+   },
+   {
+      "nodeID": 3,
+      "nodeInternalRevision": "BuildType=Release Element=carbon Release=carbon ReleaseShort=carbon Version=6.1382 sfdev=6.28 Repository=dev Revision=061511b1e7fb BuildDate=2014-05-28T18:26:45MDT",
+      "nodeVersion": "6.1382"
+   },
+   {
+      "nodeID": 4,
+      "nodeInternalRevision": "BuildType=Release Element=carbon Release=carbon ReleaseShort=carbon Version=6.1382 sfdev=6.28 Repository=dev Revision=061511b1e7fb BuildDate=2014-05-28T18:26:45MDT",
+      "nodeVersion": "6.1382"
+   }
+ ],
+   "softwareVersionInfo": {
+      "currentVersion": "6.1382",
+      "nodeID": 0,
+      "packageName": "",
+      "pendingVersion": "6.1382",
+      "startTime": ""
+    }
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

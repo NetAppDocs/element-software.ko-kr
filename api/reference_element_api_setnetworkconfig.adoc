@@ -1,0 +1,108 @@
+---
+permalink: api/reference_element_api_setnetworkconfig.html 
+sidebar: sidebar 
+keywords: network,config,configuration,set,setting,node,setnetworkconfig 
+summary: SetNetworkConfig 메서드를 사용하여 노드의 네트워크 구성을 설정할 수 있습니다. 노드의 현재 네트워크 설정을 표시하려면 GetNetworkConfig API 메서드를 실행합니다. 
+---
+= SetNetworkConfig
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+'셋NetworkConfig' 메서드를 사용하여 노드의 네트워크 구성을 설정할 수 있습니다. 노드의 현재 네트워크 설정을 표시하려면 GetNetworkConfig API 메서드를 실행합니다.
+
+
+NOTE: SolidFire 엔터프라이즈 SDS는 이 방법을 지원하지 않습니다. SolidFire ESDS 시스템에서 이 메서드를 사용하면 메서드가 오류를 반환합니다.
+
+
+
+== 매개 변수
+
+주의:
+
+노드에서 연결 모드를 변경하면 네트워크 연결이 일시적으로 끊어질 수 있습니다.
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+네트워크
+ a| 
+수정할 노드 네트워크 설정이 포함된 개체. 이 매개 변수의 특성으로 이 메서드로 변경할 필드만 추가하면 됩니다.
+ a| 
+xref:reference_element_api_network_all_interfaces.adoc[네트워크(모든 인터페이스)]
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+네트워크
+ a| 
+노드에 대한 새 네트워크 구성 및 현재 네트워크 구성입니다.
+ a| 
+xref:reference_element_api_network_all_interfaces.adoc[네트워크(모든 인터페이스)]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+	"method": "SetNetworkConfig",
+		"params": {
+			"network": {
+				"Bond10G": {
+					"bond-mode": "ALB"
+				},
+				"Bond1G": {
+					"netmask": "255.255.224.0"
+				},
+				"eth0": {
+					"method": "bond"
+				},
+				"lo": {
+					"method": "loopback"
+				}
+			}
+		}
+}
+----
+
+
+== 응답 예
+
+이 메서드의 응답은 GetNetworkConfig 메서드의 응답과 같습니다. 이 메서드는 각 개체의 모든 멤버를 표시하고 변경된 멤버에 대한 새 값을 포함합니다.
+
+
+
+== 버전 이후 새로운 기능
+
+9.6
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetworkConfig 를 참조하십시오]
+* xref:reference_element_api_response_example_getnetworkconfig.adoc[GetNetworkConfig 를 참조하십시오]
+

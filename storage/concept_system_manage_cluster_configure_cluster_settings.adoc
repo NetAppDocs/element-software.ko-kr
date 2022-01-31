@@ -1,0 +1,39 @@
+---
+permalink: storage/concept_system_manage_cluster_configure_cluster_settings.html 
+sidebar: sidebar 
+keywords: configure, cluster, threshold, support access, encryption at rest, virtual volumes, ntp broadcast, client, snapmirror 
+summary: Element UI의 Cluster 탭에서 클러스터 전체 설정을 확인 및 변경하고 클러스터별 작업을 수행할 수 있습니다. 
+---
+= 클러스터 설정을 구성합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element UI의 Cluster 탭에서 클러스터 전체 설정을 확인 및 변경하고 클러스터별 작업을 수행할 수 있습니다.
+
+클러스터 충만 임계값, 액세스 지원, 유휴 암호화, 가상 볼륨, SnapMirror, NTP 브로드캐스트 클라이언트도 있습니다.
+
+.옵션
+* xref:concept_data_manage_vvol_work_virtual_volumes.adoc[가상 볼륨 작업]
+* xref:task_snapmirror_use_replication_between_element_and_ontap_clusters.adoc[Element 및 ONTAP 클러스터 간 SnapMirror 복제 사용]
+* xref:task_system_manage_cluster_set_the_cluster_full_threshold.adoc[클러스터를 최대 임계값으로 설정합니다]
+* xref:task_system_manage_cluster_enable_and_disable_support_access.adoc[지원 액세스를 설정 및 해제합니다]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Flash_Storage/SF_Series/How_are_the_blockSpace_thresholds_calculated_for_Element["Element에 대해 블록 공간 임계값이 계산되는 방법"]
+* xref:task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.adoc[클러스터에 대한 암호화를 사용하거나 사용하지 않도록 설정합니다]
+* xref:concept_system_manage_cluster_terms_manage_the_terms_of_use_banner.adoc[이용 약관 배너를 관리합니다]
+* xref:task_system_manage_cluster_ntp_configure.adoc[쿼리할 클러스터에 대한 네트워크 시간 프로토콜 서버를 구성합니다]
+* xref:concept_system_manage_snmp_manage_snmp.adoc[SNMP를 관리합니다]
+* xref:concept_system_manage_drives_managing_drives.adoc[드라이브 관리]
+* xref:concept_system_manage_nodes_manage_nodes.adoc[노드 관리]
+* xref:concept_system_manage_virtual_manage_virtual_networks.adoc[가상 네트워크를 관리합니다]
+* xref:task_system_manage_fc_view_fibre_channel_ports_details.adoc[Fibre Channel 포트 세부 정보를 봅니다]
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

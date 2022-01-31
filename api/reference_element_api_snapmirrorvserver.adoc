@@ -1,0 +1,129 @@
+---
+permalink: api/reference_element_api_snapmirrorvserver.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorVserver 
+summary: snapMirrorVserver 객체에는 대상 ONTAP 클러스터의 스토리지 가상 머신 또는 vservers\ 에 대한 정보가 들어 있습니다. 
+---
+= snapMirrorVserver
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorVserver 객체에는 대상 ONTAP 클러스터의 스토리지 가상 머신(또는 vserver)에 대한 정보가 포함되어 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+snapMirrorEndpointID입니다
+ a| 
+대상 ONTAP 시스템의 ID입니다.
+ a| 
+정수
+
+
+
+ a| 
+vserverName입니다
+ a| 
+SVM의 이름입니다.
+ a| 
+문자열
+
+
+
+ a| 
+vserverType입니다
+ a| 
+SVM의 유형 가능한 값:
+
+* 데이터
+* 관리자
+* 시스템
+* 노드
+
+ a| 
+문자열
+
+
+
+ a| 
+vserverSubtype입니다
+ a| 
+SVM의 하위 유형입니다. 가능한 값:
+
+* 기본값
+* dp_destination
+* 데이터
+* SYNC_SOURCE
+* sync_destination을 선택합니다
+
+ a| 
+문자열
+
+
+
+ a| 
+루트볼륨
+ a| 
+SVM의 루트 볼륨
+ a| 
+문자열
+
+
+
+ a| 
+루트VolumeAggregate
+ a| 
+루트 볼륨을 생성할 Aggregate입니다.
+ a| 
+문자열
+
+
+
+ a| 
+vserverAggregateInfo를 참조하십시오
+ a| 
+snapMirrorVserverAggregateInfo 개체의 배열입니다.
+ a| 
+JSON 개체
+
+
+
+ a| 
+관리자 상태
+ a| 
+SVM의 상세한 관리 상태 가능한 값:
+
+* 실행 중입니다
+* 중지되었습니다
+* 시작
+* 중지 중
+* 초기화 중입니다
+* 삭제 중
+
+ a| 
+문자열
+
+
+
+ a| 
+운영 상태
+ a| 
+SVM의 기본 운영 상태입니다. 가능한 값:
+
+* 실행 중입니다
+* 중지되었습니다
+
+ a| 
+문자열
+
+|===

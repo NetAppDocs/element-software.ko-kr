@@ -1,0 +1,76 @@
+---
+permalink: api/reference_element_api_enablesnmp.html 
+sidebar: sidebar 
+keywords: SNMP,enable,enabling,EnableSNMP 
+summary: EnableSnmp 메서드를 사용하여 클러스터 노드에서 SNMP를 활성화할 수 있습니다. SNMP를 설정하면 작업이 클러스터의 모든 노드에 적용되고 전달된 값은 EnableSnmp에 대한 이전 호출에서 설정한 모든 값을 대체합니다. 
+---
+= EnableSnmp
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"EnableSnmp" 방법을 사용하여 클러스터 노드에서 SNMP를 활성화할 수 있습니다. SNMP를 설정하면 클러스터의 모든 노드에 작업이 적용되고 전달된 값은 이전에 호출했던 "EnableSnmp"에 설정된 모든 값을 대체합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+snmpV3이 활성화되었습니다
+ a| 
+TRUE로 설정하면 클러스터의 각 노드에서 SNMP v3이 활성화됩니다. false로 설정하면 SNMP v2가 활성화됩니다.
+ a| 
+부울
+ a| 
+거짓
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "EnableSnmp",
+  "params": {
+      "snmpV3Enabled"  : "true"
+  },
+  "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

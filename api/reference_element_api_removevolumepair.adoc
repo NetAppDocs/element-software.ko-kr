@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_removevolumepair.html 
+sidebar: sidebar 
+keywords: volume,pair,volumes,remove,removing,removevolumepair 
+summary: RemoveVolumePair 메서드를 사용하여 두 볼륨 간의 원격 페어링을 제거할 수 있습니다. 함께 페어링된 소스 볼륨과 타겟 볼륨 모두에 이 방법을 사용합니다. 볼륨 페어링 정보를 제거하면 데이터가 더 이상 볼륨에 복제되지 않습니다. 
+---
+= RemoveVolumePair
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"RemoveVolumePair" 방법을 사용하여 두 볼륨 간의 원격 페어링을 제거할 수 있습니다. 함께 페어링된 소스 볼륨과 타겟 볼륨 모두에 이 방법을 사용합니다. 볼륨 페어링 정보를 제거하면 데이터가 더 이상 볼륨에 복제되지 않습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+볼륨 ID
+ a| 
+복제 프로세스를 중지할 볼륨의 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "RemoveVolumePair",
+   "params": {
+      "volumeID": 5
+   "id" : 1
+   }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+   }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

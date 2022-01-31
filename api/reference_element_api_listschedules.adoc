@@ -1,0 +1,127 @@
+---
+permalink: api/reference_element_api_listschedules.html 
+sidebar: sidebar 
+keywords: snapshot,snapshots,list,listing,information,schedule,schedules,listschedules 
+summary: ListSchedules 를 사용하여 생성된 모든 예약된 스냅샷에 대한 정보를 가져올 수 있습니다. 
+---
+= ListSchedules(일정 목록
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListSchedules"를 사용하여 생성된 모든 예약된 스냅샷에 대한 정보를 가져올 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+스케줄
+ a| 
+현재 클러스터에 있는 일정 목록입니다.
+ a| 
+xref:reference_element_api_schedule.adoc[스케줄] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "ListSchedules",
+    "params": {},
+"id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "schedules": [
+      {
+       "attributes": {
+         "frequency": "Days Of Week"
+       },
+       "hasError": false,
+       "hours": 0,
+       "lastRunStatus": "Success",
+       "lastRunTimeStarted": null,
+       "minutes": 1,
+       "monthdays": [],
+       "paused": false,
+       "recurring": false,
+       "runNextInterval": false,
+       "scheduleID": 3,
+       "scheduleInfo": {
+            "name": "Wednesday Schedule",
+            "retention": "00:02:00",
+            "volumeID": "2"
+      },
+      "scheduleName": "Vol2Schedule",
+      "scheduleType": "Snapshot",
+      "startingDate": "2015-03-23T20:08:33Z",
+      "toBeDeleted": false,
+      "weekdays": [
+          {
+            "day": 3,
+            "offset": 1
+          }
+     ]
+   },
+   {
+      "attributes": {
+          "frequency": "Time Interval"
+      },
+       "hasError": false,
+       "hours": 0,
+       "lastRunStatus": "Success",
+       "lastRunTimeStarted": "2015-03-23T21:40:00Z",
+       "minutes": 2,
+       "monthdays": [],
+       "paused": false,
+       "recurring": true,
+       "runNextInterval": false,
+       "scheduleID": 2,
+       "scheduleInfo": {
+            "name": "MCA2",
+            "volumeID": "3"
+       },
+       "scheduleName": "MCAsnapshot2",
+       "scheduleType": "Snapshot",
+       "startingDate": "2015-03-23T19:28:57Z",
+       "toBeDeleted": false,
+       "weekdays": []
+       }
+     ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

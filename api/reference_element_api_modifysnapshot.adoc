@@ -1,0 +1,168 @@
+---
+permalink: api/reference_element_api_modifysnapshot.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,snapshot,attributes,attribute 
+summary: 'ModifySnapshot을 사용하여 현재 스냅샷에 할당된 속성을 변경할 수 있습니다. 또한 이 방법을 사용하여 읽기/쓰기\(소스\) 볼륨에서 생성된 스냅샷을 Element 소프트웨어를 실행하는 타겟 스토리지 클러스터에 원격으로 복제할 수 있습니다.' 
+---
+= ModifySnapshot을 선택합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ModifySnapshot을 사용하여 스냅샷에 현재 할당된 속성을 변경할 수 있습니다. 또한 이 방법을 사용하여 읽기/쓰기(소스) 볼륨에서 생성된 스냅샷을 Element 소프트웨어를 실행하는 타겟 스토리지 클러스터에 원격으로 복제할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+enableRemoteReplication
+ a| 
+생성된 스냅샷을 원격 스토리지 클러스터에 복제할 수 있도록 설정하는 데 사용합니다. 가능한 값:
+
+* "참": 스냅샷이 원격 스토리지에 복제됩니다.
+* "거짓": 스냅샷은 원격 스토리지에 복제되지 않습니다.
+
+ a| 
+부울
+ a| 
+거짓
+ a| 
+아니요
+
+
+
+ a| 
+만료 시간
+ a| 
+스냅샷을 제거할 수 있는 시간을 지정합니다. 보존과 함께 사용할 수 없습니다. 만료 시간 또는 원래 스냅샷에 대한 보존을 지정하지 않으면 스냅샷이 만료되지 않습니다. 시간 형식은 시간 기반 만료에 대한 ISO 8601 날짜 문자열이며, 그렇지 않으면 만료되지 않습니다. 값이 null이면 스냅샷이 영구적으로 유지됩니다. fifo 값을 지정하면 볼륨의 다른 FIFO 스냅숏에 상대적인 선입선출(FIFO) 기준으로 스냅샷이 보존됩니다. 사용할 수 있는 FIFO 공간이 없으면 API가 실패합니다.
+ a| 
+ISO 8601 날짜 문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+이름
+ a| 
+스냅샷의 이름입니다. 이름을 입력하지 않으면 스냅샷이 생성된 날짜와 시간이 사용됩니다. 허용되는 최대 이름 길이는 255자입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+snapMirrorLabel
+ a| 
+SnapMirror 소프트웨어에서 SnapMirror 엔드포인트에 대한 스냅샷 보존 정책을 지정하는 데 사용되는 레이블입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+스냅샷 ID입니다
+ a| 
+스냅샷의 식별자입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+스냅샷
+ a| 
+새로 수정된 스냅샷에 대한 정보가 포함된 객체입니다.
+ a| 
+xref:reference_element_api_snapshot.adoc[스냅샷]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "ModifySnapshot",
+  "params": {
+    "snapshotID": 3114,
+    "enableRemoteReplication": "true",
+    "name" : "Chicago"
+  },
+  "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "snapshot": {
+      "attributes": {},
+      "checksum": "0x0",
+      "createTime": "2016-04-04T17:26:20Z",
+      "enableRemoteReplication": true,
+      "expirationReason": "None",
+      "expirationTime": null,
+      "groupID": 0,
+      "groupSnapshotUUID": "00000000-0000-0000-0000-000000000000",
+      "name": "test1",
+      "snapshotID": 3114,
+      "snapshotUUID": "5809a671-4ad0-4a76-9bf6-01cccf1e65eb",
+      "status": "done",
+      "totalSize": 5000658944,
+      "virtualVolumeID": null,
+      "volumeID": 1
+    }
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

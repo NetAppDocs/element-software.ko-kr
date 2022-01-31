@@ -1,0 +1,131 @@
+---
+permalink: api/reference_element_api_createqospolicy.html 
+sidebar: sidebar 
+keywords: QoS,policy,policies,create,creating 
+summary: CreateQoSPolicy 메서드를 사용하여 나중에 생성 또는 수정 시 볼륨에 적용할 수 있는 QoSPolicy 개체를 만들 수 있습니다. QoS 정책에는 고유한 ID, 이름 및 QoS 설정이 있습니다. 
+---
+= CreateQoSPolicy 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"CreateQoSPolicy" 메서드를 사용하여 나중에 생성 또는 수정 시 볼륨에 적용할 수 있는 QoSPolicy 개체를 만들 수 있습니다. QoS 정책에는 고유한 ID, 이름 및 QoS 설정이 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+이름
+ a| 
+QoS 정책의 이름(예: 골드, 플래티넘 또는 실버)
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+QoS를 참조하십시오
+ a| 
+이 정책이 나타내는 QoS 설정입니다.
+ a| 
+xref:reference_element_api_qos.adoc[QoS를 참조하십시오]
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+qosPolicy를 참조하십시오
+ a| 
+새로 생성된 QoSPolicy 개체입니다.
+ a| 
+xref:reference_element_api_qospolicy.adoc[QoSPolicy를 참조하십시오]
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "id": 68,
+  "method": "CreateQoSPolicy",
+  "params": {
+    "name": "bronze",
+    "qos": {
+      "minIOPS": 50,
+      "maxIOPS": 15000,
+      "burstIOPS": 15000
+    }
+  }
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 68,
+  "result": {
+    "qosPolicy": {
+      "name": "bronze",
+      "qos": {
+        "burstIOPS": 15000,
+        "burstTime": 60,
+        "curve": {
+          "4096": 100,
+          "8192": 160,
+          "16384": 270,
+          "32768": 500,
+          "65536": 1000,
+          "131072": 1950,
+          "262144": 3900,
+          "524288": 7600,
+          "1048576": 15000
+        },
+        "maxIOPS": 15000,
+        "minIOPS": 50
+      },
+      "qosPolicyID": 2,
+      "volumeIDs": []
+    }
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+10.0

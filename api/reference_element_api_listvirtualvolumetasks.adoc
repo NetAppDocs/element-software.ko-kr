@@ -1,0 +1,115 @@
+---
+permalink: api/reference_element_api_listvirtualvolumetasks.html 
+sidebar: sidebar 
+keywords: virtual,volume,hosts,host,cluster,list,listing,listvirtualvolumetasks 
+summary: ListVirtualVolumeTasks 메서드를 사용하여 시스템의 가상 볼륨 작업 목록을 가져올 수 있습니다. 
+---
+= ListVirtualVolumeTasks를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListVirtualVolumeTasks" 방법을 사용하여 시스템의 가상 볼륨 작업 목록을 가져올 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+가상볼륨 태스크ID
+ a| 
+정보를 검색할 가상 볼륨 작업 ID 목록입니다. 이 매개 변수를 생략하면 모든 가상 볼륨 작업에 대한 정보가 반환됩니다.
+ a| 
+UUID 배열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+작업
+ a| 
+클러스터의 가상 볼륨 작업을 설명하는 객체 목록입니다.
+ a| 
+xref:reference_element_api_task_virtual_volumes.adoc[작업] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "ListVirtualVolumeTasks",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "tasks": [
+      {
+        "cancelled": false,
+        "cloneVirtualVolumeID": "fafeb3a0-7dd9-4c9f-8a07-80e0bbf6f4d0",
+        "operation": "clone",
+        "parentMetadata": {
+          "SFProfileId": "f4e5bade-15a2-4805-bf8e-52318c4ce443",
+          "SFgenerationId": "0",
+          "VMW_ContainerId": "abaab415-bedc-44cd-98b8-f37495884db0",
+          "VMW_GosType": "windows7Server64Guest",
+          "VMW_VVolName": "asdf.vmdk",
+          "VMW_VVolNamespace": "/vmfs/volumes/vvol:abaab415bedc44cd-98b8f37495884db0/rfc4122.269d3378-1ca6-4175-a18f-6d4839e5c746",
+          "VMW_VVolType": "Data",
+          "VMW_VmID": "502e0676-e510-ccdd-394c-667f6867fcdf",
+          "VMW_VvolAllocationType": "4",
+          "VMW_VvolProfile": "f4e5bade-15a2-4805-bf8e-52318c4ce443:0"
+        },
+        "parentTotalSize": 42949672960,
+        "parentUsedSize": 0,
+        "status": "success",
+        "virtualVolumeHostID": "564de1a4-9a99-da0f-8b7c-3a41dfd64bf1",
+        "virtualVolumeTaskID": "a1b72df7-66a6-489a-86e4-538d0dbe05bf",
+        "virtualvolumeID": "fafeb3a0-7dd9-4c9f-8a07-80e0bbf6f4d0"
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

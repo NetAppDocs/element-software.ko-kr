@@ -1,0 +1,109 @@
+---
+permalink: api/reference_element_api_authsessioninfo.html 
+sidebar: sidebar 
+keywords: objects,object,authSessionInfo 
+summary: authSessionInfo 개체에는 인증 세션에 대한 정보가 들어 있습니다. 
+---
+= AuthSessionInfo 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+authSessionInfo 개체에는 인증 세션에 대한 정보가 들어 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+액세스 그룹 목록
+ a| 
+사용자의 액세스 그룹 목록입니다.
+ a| 
+문자열 배열
+
+
+
+ a| 
+AuthMethod
+ a| 
+클러스터 관리자가 보유한 권한의 유형입니다. 가능한 값:
+
+* LDAP - LDAP를 통해 인증됩니다.
+* 클러스터 - 클러스터 데이터베이스에 저장된 사용자 이름 및 암호를 통해 인증됩니다.
+* IDP - 타사 ID 공급자를 통해 인증되었습니다.
+
+ a| 
+문자열
+
+
+
+ a| 
+클러스터 관리자
+ a| 
+이 세션과 연결된 클러스터 관리자 ID의 목록입니다. LDAP 또는 타사 ID 공급자(IDP)와 관련된 세션의 경우 이 세션과 연결된 일치하는 클러스터 관리자 ID의 집계 목록이 됩니다.
+ a| 
+정수 배열
+
+
+
+ a| 
+최종시간 초과
+ a| 
+세션이 유효하지 않게 되는 시간. 세션이 생성될 때 설정되며 변경할 수 없습니다.
+ a| 
+문자열
+
+
+
+ a| 
+idpConfigVersion
+ a| 
+세션이 생성되었을 때의 IDP 구성 버전입니다.
+ a| 
+정수
+
+
+
+ a| 
+lastAccessTimeout
+ a| 
+비활성 상태로 인해 세션이 유효하지 않게 되는 시간이며, 세션 액세스 시 finalTimeout에 도달하여 세션이 유효하지 않게 되는 시간까지 새로운 값으로 설정됩니다.
+ a| 
+문자열
+
+
+
+ a| 
+세션 생성 시간
+ a| 
+세션이 생성되는 시간입니다.
+ a| 
+문자열
+
+
+
+ a| 
+세션 ID입니다
+ a| 
+이 세션의 UUID입니다.
+ a| 
+UUID입니다
+
+
+
+ a| 
+사용자 이름
+ a| 
+이 세션과 연결된 사용자 이름입니다. LDAP와 관련된 세션의 경우 사용자의 LDAP DN입니다. 타사 IDP와 관련된 세션의 경우 세션 내의 작업을 감사하는 데 사용되는 임의의 이름 값 쌍이 됩니다. 클러스터의 클러스터 관리자 이름과 같을 필요는 없습니다. 예를 들어 SAML 주체 이름 ID는 SAML 어설션(SAML 어설션)의 IDP 구성 및 결과 콘텐츠에 의해 결정됩니다.
+ a| 
+문자열
+
+|===

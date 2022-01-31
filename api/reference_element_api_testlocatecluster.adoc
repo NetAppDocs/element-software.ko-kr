@@ -1,0 +1,93 @@
+---
+permalink: api/reference_element_api_testlocatecluster.html 
+sidebar: sidebar 
+keywords: test,testing,cluster,locate,configuration,TestLocateCluster 
+summary: TestLocateCluster 메서드를 사용하여 노드가 클러스터 구성에 지정된 클러스터를 찾을 수 있는지 확인할 수 있습니다. 출력은 클러스터가 생성되었는지 확인하고 클러스터 앙상블의 노드를 나열합니다. 
+---
+= TestLocateCluster를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"TestLocateCluster" 방법을 사용하여 노드가 클러스터 구성에 지정된 클러스터를 찾을 수 있는지 확인할 수 있습니다. 출력은 클러스터가 생성되었는지 확인하고 클러스터 앙상블의 노드를 나열합니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 입력 매개 변수가 없습니다.
+
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+세부 정보
+ a| 
+테스트 작업 성공 또는 실패에 대한 정보
+ a| 
+JSON 개체
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+   "method": "TestLocateCluster",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+      "details": {
+         "complete": true,
+         "ensemble": {
+            "nodes": [
+               {
+                 "IP": "10.10.5.94",
+                 "nodeID": 1
+               },
+               {
+                 "IP": "10.10.5.107",
+                 "nodeID": 2
+               },
+               {
+                 "IP": "10.10.5.108",
+                 "nodeID": 3
+               }
+            ]
+         },
+         "version": "5.749"
+      },
+      "duration": "0.0384478sec",
+      "result": "Passed"
+   }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

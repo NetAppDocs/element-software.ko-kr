@@ -1,0 +1,56 @@
+---
+permalink: api/reference_element_api_request_object_members.html 
+sidebar: sidebar 
+keywords: request,object,members 
+summary: 각 Element 소프트웨어 API 요청에는 다음과 같은 기본 부품이 있습니다. 
+---
+= 객체 구성원 요청
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+각 Element 소프트웨어 API 요청에는 다음과 같은 기본 부품이 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+방법
+ a| 
+호출할 메서드의 이름입니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+매개 변수
+ a| 
+호출되는 메서드에 대한 매개 변수가 포함된 개체입니다. 명명된 매개 변수가 필요합니다. 위치 매개 변수(배열로 전달)는 허용되지 않습니다.
+ a| 
+JSON 개체
+ a| 
+{}
+ a| 
+아니요
+
+
+
+ a| 
+ID입니다
+ a| 
+요청과 응답을 일치시키는 데 사용되는 식별자로, 결과에 반환됩니다.
+ a| 
+문자열 또는 정수입니다
+ a| 
+{}
+ a| 
+아니요
+
+|===

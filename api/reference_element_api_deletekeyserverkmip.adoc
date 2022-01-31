@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_deletekeyserverkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key server,deleting,delete 
+summary: 'DeleteKeyServerKmip 메서드를 사용하여 기존 키 관리 상호 운용성 프로토콜\(KMIP\) 키 서버를 삭제할 수 있습니다. 키 서버가 해당 공급자에 마지막으로 할당된 서버가 아닌 경우 해당 공급자가 현재 사용 중인 키를 제공하는 경우를 제외하고 키 서버를 삭제할 수 있습니다.' 
+---
+= DeleteKeyServerKmip 를 클릭합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+DeleteKeyServerKmip' 방법을 사용하여 기존 KMIP(Key Management Interoperability Protocol) 키 서버를 삭제할 수 있습니다. 키 서버가 해당 공급자에 마지막으로 할당된 서버가 아닌 경우 해당 공급자가 현재 사용 중인 키를 제공하는 경우를 제외하고 키 서버를 삭제할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+KeyServerID를 입력합니다
+ a| 
+삭제할 KMIP 키 서버의 ID입니다.
+ a| 
+정수
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다. 오류가 없으면 삭제 작업이 성공한 것으로 간주됩니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "DeleteKeyServerKmip",
+  "params": {
+     "keyServerID": 15
+  },
+"id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+11.7

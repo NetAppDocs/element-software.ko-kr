@@ -1,0 +1,47 @@
+---
+permalink: api/reference_element_api_clusterstructure.html 
+sidebar: sidebar 
+keywords: objects,cluster,structure,clusterStructure,object 
+summary: clusterStructure 개체에는 GetClusterStructure 메서드에서 만든 클러스터 구성 백업 정보가 들어 있습니다. SetClusterStructure 메서드를 사용하면 재구성하는 스토리지 클러스터에 이 정보를 복구할 수 있습니다. 
+---
+= 클러스터 구조
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+clusterStructure 개체에는 GetClusterStructure 메서드에서 만든 클러스터 구성 백업 정보가 들어 있습니다. SetClusterStructure 메서드를 사용하면 재구성하는 스토리지 클러스터에 이 정보를 복구할 수 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 메서드의 결합된 반환 정보가 들어 있습니다.
+
+* xref:reference_element_api_getclusterinfo.adoc[GetClusterInfo 를 참조하십시오]
+* xref:reference_element_api_listaccounts.adoc[계정 목록]
+* xref:reference_element_api_listinitiators.adoc[ListInitiators(목록 초기자]
+* xref:reference_element_api_listvolumes.adoc[목록 볼륨] (includeVirtualVolumes = false)
+* xref:reference_element_api_listvolumeaccessgroups.adoc[ListVolumeAccessGroups 를 선택합니다]
+* xref:reference_element_api_liststoragecontainers.adoc[ListStorageContainers 를 선택합니다]
+* xref:reference_element_api_listqospolicies.adoc[목록\n관리 정책]
+* xref:reference_element_api_getsnmpinfo.adoc[GetSnmpInfo 를 참조하십시오]
+* xref:reference_element_api_getntpinfo.adoc[GetNtpInfo 를 참조하십시오]
+* xref:reference_element_api_listvirtualnetworks.adoc[목록가상네트워크]
+* xref:reference_element_api_listclusteradmins.adoc[ListClusterAdmins입니다]
+* xref:reference_element_api_listschedules.adoc[ListSchedules(일정 목록]
+* xref:reference_element_api_listsnapmirrorendpoints.adoc[ListSnapMirrorEndpoints를 선택합니다]
+* xref:reference_element_api_getfeaturestatus.adoc[GetFeatureStatus 를 참조하십시오]
+* xref:reference_element_api_getldapconfiguration.adoc[GetLdapConfiguration 을 참조하십시오]
+* xref:reference_element_api_getremotelogginghosts.adoc[GetRemoteLoggingHosts 를 참조하십시오]
+* xref:reference_element_api_getdefaultqos.adoc[GetDefaultQoS를 참조하십시오]
+* xref:reference_element_api_getvolumeaccessgrouplunassignments.adoc[GetVolumeAccessGroupLunAssignments 를 참조하십시오]
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:reference_element_api_getclusterstructure.adoc[GetClusterStructure 를 참조하십시오]
+* xref:reference_element_api_setclusterstructure.adoc[SetClusterStructure 를 선택합니다]
+

@@ -1,0 +1,124 @@
+---
+permalink: api/reference_element_api_listvolumestatsbyaccount.html 
+sidebar: sidebar 
+keywords: volumes,volume,stats,list,listing,account,listvolumestatsbyaccount,activity 
+summary: ListVolumeStatsByAccount 메서드를 사용하여 모든 계정에 대한 상위 수준의 볼륨 활동 측정을 나열할 수 있습니다. 값은 계정이 소유한 모든 볼륨에서 합산됩니다. 
+---
+= ListVolumeStatsByAccount
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"ListVolumeStatsByAccount" 방법을 사용하여 모든 계정에 대한 상위 수준의 볼륨 활동 측정을 나열할 수 있습니다. 값은 계정이 소유한 모든 볼륨에서 합산됩니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+여기에는 VirtualVolumes가 포함됩니다
+ a| 
+가상 볼륨은 기본적으로 응답에 포함됩니다. 가상 볼륨을 제외하려면 FALSE로 설정합니다.
+ a| 
+부울
+ a| 
+참
+ a| 
+아니요
+
+
+
+ a| 
+계정
+ a| 
+볼륨 통계를 반환할 계정 ID 목록입니다. 이 인수를 생략하면 모든 계정의 통계가 반환됩니다.
+ a| 
+정수 배열
+ a| 
+없음
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+
+
+| 이름 | 설명 | 유형 
+
+
+ a| 
+볼륨 통계
+ a| 
+각 계정에 대한 볼륨 활동 정보 목록입니다. * 참고: * 볼륨 ID 멤버는 각 항목에 대해 0입니다. 값은 해당 계정이 소유한 모든 볼륨의 합계를 나타냅니다.
+ a| 
+xref:reference_element_api_volumestats.adoc[볼륨 통계] 스토리지
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+"method": "ListVolumeStatsByAccount",
+  "params": {"accounts": [3]},
+  "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeStats": [
+      {
+        "accountID": 3,
+        "nonZeroBlocks": 155040175,
+        "readBytes": 3156273328128,
+        "readBytesLastSample": 0,
+        "readOps": 770574543,
+        "readOpsLastSample": 0,
+        "samplePeriodMSec": 500,
+        "timestamp": "2016-10-17T20:42:26.231661Z",
+        "unalignedReads": 0,
+        "unalignedWrites": 0,
+        "volumeAccessGroups": [],
+        "volumeID": 0,
+        "volumeSize": 1127428915200,
+        "writeBytes": 1051988406272,
+        "writeBytesLastSample": 0,
+        "writeOps": 256833107,
+        "writeOpsLastSample": 0,
+        "zeroBlocks": 120211025
+      }
+    ]
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

@@ -1,0 +1,25 @@
+---
+permalink: api/concept_element_api_snapshots_overview.html 
+sidebar: sidebar 
+keywords: snapshot,overview 
+summary: 볼륨 스냅샷은 볼륨의 시점 복제본입니다. 스냅샷을 사용하여 스냅샷을 생성한 시점의 상태로 볼륨을 롤백할 수 있습니다. 
+---
+= 스냅샷 개요
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+볼륨 스냅샷은 볼륨의 시점 복제본입니다. 스냅샷을 사용하여 스냅샷을 생성한 시점의 상태로 볼륨을 롤백할 수 있습니다.
+
+볼륨 스냅샷을 함께 그룹화하여 관련 볼륨을 일관된 방식으로 백업하거나 롤백할 수 있습니다. 그룹 스냅샷은 모든 볼륨 슬라이스 파일의 시점 이미지를 캡처합니다. 그런 다음 이미지를 사용하여 볼륨 그룹을 특정 시점 상태로 롤백하고 그룹의 모든 볼륨에서 모든 데이터가 일관되도록 할 수 있습니다.
+
+볼륨 스냅숏이 정의된 간격으로 자동 실행되도록 예약할 수 있습니다. 시간, 요일 또는 월을 기준으로 간격을 정의할 수 있습니다. 또한 예약된 스냅샷을 사용하여 스냅샷을 원격 스토리지에 백업하여 보관할 수 있습니다.
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
+

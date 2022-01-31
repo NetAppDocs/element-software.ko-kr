@@ -1,0 +1,45 @@
+---
+permalink: storage/reference_data_manage_vvol_bindings_details.html 
+sidebar: sidebar 
+keywords: bindings details, vvols, for each virtual volume, endpoints, 
+summary: VVol 탭의 바인딩 페이지에서는 각 가상 볼륨에 대한 바인딩 정보를 제공합니다. 
+---
+= 바인딩 세부 정보
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VVol 탭의 바인딩 페이지에서는 각 가상 볼륨에 대한 바인딩 정보를 제공합니다.
+
+다음 정보가 표시됩니다.
+
+* * 호스트 ID *
++
+가상 볼륨을 호스팅하고 클러스터에 알려진 ESXi 호스트의 UUID입니다.
+
+* * 프로토콜 엔드포인트 ID *
++
+SolidFire 클러스터의 각 노드에 해당하는 프로토콜 엔드포인트 ID입니다.
+
+* * 대역 ID * 의 프로토콜 엔드포인트
++
+프로토콜 끝점의 SCSI NAA 장치 ID입니다.
+
+* * 프로토콜 엔드포인트 유형 *
++
+프로토콜 엔드포인트 유형입니다.
+
+* * VVol Binding ID *
++
+가상 볼륨의 바인딩 UUID입니다.
+
+* * VVol ID *
++
+가상 볼륨의 UUID(Universally Unique Identifier)입니다.
+
+* * VVOL 보조 ID *
++
+SCSI 2차 레벨 LUN ID인 가상 볼륨의 2차 ID입니다.
+
+

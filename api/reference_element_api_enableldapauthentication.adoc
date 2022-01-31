@@ -1,0 +1,214 @@
+---
+permalink: api/reference_element_api_enableldapauthentication.html 
+sidebar: sidebar 
+keywords: LDAP,auth,authentication,enable,enabling,EnableLdapAuthentication 
+summary: EnableLdapAuthentication 메서드를 사용하여 클러스터에 대한 LDAP 인증을 위한 LDAP 디렉토리 연결을 구성할 수 있습니다. LDAP 디렉토리의 구성원인 사용자는 LDAP 자격 증명을 사용하여 스토리지 시스템에 로그인할 수 있습니다. 
+---
+= EnableLdapAuthentication 을 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"EnableLdapAuthentication" 메서드를 사용하여 클러스터에 대한 LDAP 인증을 위한 LDAP 디렉토리 연결을 구성할 수 있습니다. LDAP 디렉토리의 구성원인 사용자는 LDAP 자격 증명을 사용하여 스토리지 시스템에 로그인할 수 있습니다.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+AuthType
+ a| 
+사용할 사용자 인증 방법을 식별합니다. 가능한 값:
+
+* '직접 바인딩'을 선택합니다
+* '슈안바인드'
+
+ a| 
+문자열
+ a| 
+검색 안바인드
+ a| 
+아니요
+
+
+
+ a| 
+groupSearchBaseDN
+ a| 
+트리의 기본 DN으로 그룹 하위 트리 검색을 시작합니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+그룹 검색 유형
+ a| 
+사용되는 기본 그룹 검색 필터를 제어합니다. 가능한 값:
+
+* NoGroups(참고 그룹): 그룹 지원이 없습니다.
+* ActiveDirectory: 사용자의 모든 Active Directory 그룹의 중첩된 구성원
+* MemberDN: MemberDN 스타일 그룹(단일 수준).
+
+ a| 
+문자열
+ a| 
+ActiveDirectory 를 클릭합니다
+ a| 
+아니요
+
+
+
+ a| 
+서버 URI입니다
+ a| 
+LDAP 또는 LDAPS 서버 URI의 쉼표로 구분된 목록입니다. 콜론 다음에 포트 번호를 사용하여 LDAP 또는 LDAPS URI의 끝에 사용자 지정 포트를 추가할 수 있습니다. 예를 들어 URI "LDAP://1.2.3.4"는 기본 포트를 사용하고 URI "LDAPS://1.2.3.4:123"은 사용자 지정 포트 123을 사용합니다.
+ a| 
+문자열 배열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+userSearchBaseDN입니다
+ a| 
+하위 트리 검색을 시작할 트리의 기본 DN입니다. 이 매개 변수는 SearchAndBind의 AuthType을 사용할 때 필요합니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+아니요
+
+
+
+ a| 
+searchBindDN
+ a| 
+사용자에 대한 LDAP 검색을 수행하기 위해 로그인할 정규화된 DN입니다. DN을 사용하려면 LDAP 디렉토리에 대한 읽기 권한이 필요합니다. 이 매개 변수는 SearchAndBind의 AuthType을 사용할 때 필요합니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+searchBindPassword를 입력합니다
+ a| 
+검색에 사용되는 searchBindDN 계정의 암호입니다. 이 매개 변수는 SearchAndBind의 AuthType을 사용할 때 필요합니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+userSearchFilter 를 선택합니다
+ a| 
+LDAP 서버를 쿼리할 때 사용할 LDAP 검색 필터입니다. 문자열에는 인증 사용자의 사용자 이름으로 대체되는 자리 표시자 텍스트 "%username%"이(가) 있어야 합니다. 예를 들어, (&(objectClass=Person)(sAMAccountName=%username%))은 Active Directory의 sAMAccountName 필드를 사용하여 클러스터 로그인 시 입력한 사용자 이름과 일치시킵니다. 이 매개 변수는 SearchAndBind의 AuthType을 사용할 때 필요합니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+사용자 NTemplate
+ a| 
+전체 사용자 DN(고유 이름)을 구성하는 패턴을 정의하는 데 사용되는 문자열 템플릿입니다. 문자열에는 인증 사용자의 사용자 이름으로 대체되는 자리 표시자 텍스트 "%username%"이(가) 있어야 합니다. DirectBind의 AuthType을 사용하는 경우 이 매개 변수가 필요합니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+
+
+ a| 
+groupSearchCustomFilter를 선택합니다
+ a| 
+CustomFilter 검색 유형과 함께 사용하기 위해 사용자 그룹의 DNS를 반환하는 데 사용할 LDAP 필터입니다. 문자열은 %username% 및 %userDN% 자리 표시자 텍스트를 필요에 따라 사용자 이름 및 전체 userDN으로 대체할 수 있습니다.
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "EnableLdapAuthentication",
+  "params": {
+     "authType": "SearchAndBind",
+     "groupSearchBaseDN": "dc=prodtest,dc=solidfire,dc=net",
+     "groupSearchType": "ActiveDirectory",
+     "searchBindDN": "SFReadOnly@prodtest.solidfire.net",
+     "searchBindPassword": "zsw@#edcASD12",
+     "sslCert": "",
+     "userSearchBaseDN": "dc=prodtest,dc=solidfire,dc=net",
+     "userSearchFilter": "(&(objectClass=person)(sAMAccountName=%USERNAME%))",
+     "serverURIs":[
+           "ldaps://111.22.333.444",
+           "ldap://555.66.777.888"
+           ]
+       },
+  "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+"id": 1,
+"result": {
+  }
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+9.6

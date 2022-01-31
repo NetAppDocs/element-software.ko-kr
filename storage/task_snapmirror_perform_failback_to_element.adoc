@@ -1,0 +1,22 @@
+---
+permalink: storage/task_snapmirror_perform_failback_to_element.html 
+sidebar: sidebar 
+keywords: failback, perform a failbacl, Element, snapmirror 
+summary: 기본 측의 문제가 완화되면 원본 소스 볼륨을 재동기화하여 NetApp Element 소프트웨어로 페일백해야 합니다. 수행하는 단계는 원래 소스 볼륨이 여전히 있는지 또는 새로 생성된 볼륨으로 페일백해야 하는지 여부에 따라 달라집니다. 
+---
+= Element에 대한 장애 복구를 수행합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기본 측의 문제가 완화되면 원본 소스 볼륨을 재동기화하여 NetApp Element 소프트웨어로 페일백해야 합니다. 수행하는 단계는 원래 소스 볼륨이 여전히 있는지 또는 새로 생성된 볼륨으로 페일백해야 하는지 여부에 따라 달라집니다.
+
+
+
+== 자세한 내용을 확인하십시오
+
+* xref:task_snapmirror_perform_failback_when_source_volume_exists.adoc[소스 볼륨이 아직 있을 때 페일백을 수행합니다]
+* xref:task_snapmirror_performing_failback_when_source_volume_no_longer_exists.adoc[소스 볼륨이 더 이상 존재하지 않는 경우 장애 복구를 수행합니다]
+* xref:concept_snapmirror_failback_scenarios.adoc[SnapMirror 페일백 시나리오]
+
