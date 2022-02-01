@@ -674,7 +674,6 @@
   <block id="494eeb741723e2c166dc5864c7da1e64" category="paragraph">관리 네트워크</block>
   <block id="2fd83b2ce9b49bb4adb1828a92a6cc82" category="list-text">모든 관리 트래픽을 포함합니다.</block>
   <block id="d2d3d320feed9dd5e52ec24dd6095045" category="list-text">다른 계층 3 네트워크에서 클러스터 API 또는 UI에 액세스하려는 경우 라우팅될 수 있습니다.</block>
-  <block id="f01015a4df43fc3a8244df818269f074" category="admonition">호스트 네트워크 구성에 대한 예제 및 팁은 를 참조하십시오 <block ref="b45abff0cd326e9aaefb14fb0711236e" category="inline-link-macro-rx"></block>.</block>
   <block id="13309b41efb95010d6093bd1a4e36b99" category="list-text">드라이브의 일련 번호를 기록해 둡니다. 이렇게 하면 iDRAC(Integrated Dell Remote Access Controller)에서 해당 드라이브 슬롯 번호를 찾는 데 도움이 됩니다.</block>
   <block id="d3891f1db1e7793c3b75220c0916ad18" category="list-text">노드의 IPMI 인터페이스에 로그인합니다(이 경우 iDRAC).</block>
   <block id="f5d799f75df9d16023fe1b4affa31424" category="list-text">메뉴에서 * Storage * 를 선택한 다음 * Physical Disks * 를 선택합니다.</block>
@@ -12433,4 +12432,6 @@
   <block id="f3ef8562bc46b3fd5d64fc8a88bab6f9" category="sidebar">H410S 및 H610S 노드를 설치합니다</block>
   <block id="e558a93d8af634916bae37b7136be1d2" category="sidebar">GetSoftwareEncryptionatRestInfo 를 참조하십시오</block>
   <block id="a9cb6e2851847a4da1710748fa322b75" category="list-text">3000IOPS의 일관된 클러스터 제한을 지원합니다.</block>
+  <block id="dcd50d347195658baa61d9ec50d87c54" category="list-text">MTU가 1500바이트 이상인 네트워크 인터페이스 카드로 구성해야 합니다.</block>
+  <block id="66eb697af36258704e589ddaa8b1f423" category="admonition">호스트 네트워크 구성에 대한 예제 및 팁은 를 참조하십시오 <block ref="75f8e7b74dfe828e63d762ff8e0c66a1" category="inline-link-macro-rx"></block>.</block>
 </blocks>
