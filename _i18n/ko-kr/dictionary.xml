@@ -12432,4 +12432,5 @@
   <block id="9282ad3aef7e124a3b2b9c7eab52b33d" category="sidebar">아키텍처 및 구성 요소</block>
   <block id="f3ef8562bc46b3fd5d64fc8a88bab6f9" category="sidebar">H410S 및 H610S 노드를 설치합니다</block>
   <block id="e558a93d8af634916bae37b7136be1d2" category="sidebar">GetSoftwareEncryptionatRestInfo 를 참조하십시오</block>
+  <block id="a9cb6e2851847a4da1710748fa322b75" category="list-text">3000IOPS의 일관된 클러스터 제한을 지원합니다.</block>
 </blocks>

@@ -2,7 +2,7 @@
 permalink: esds/task_esds_upgrade_cluster.html 
 sidebar: sidebar 
 keywords: solidfire esds, upgrading solidfire esds clusters, ansible role, clusters, upgrade clusters, esds upgrade 
-summary: Ansible을 사용하여 SolidFire ESDS 클러스터에서 무중단 롤링 업그레이드를 수행할 수 있습니다. Ansible은 NetApp에서 제공하는 'NAR_solidfire_SDS_UPGRADE' 역할을 사용하여 모든 볼륨의 데이터 가용성을 유지하는 동시에 한 번에 하나의 노드를 롤링 업그레이드를 수행합니다. 
+summary: 'Ansible을 사용하여 SolidFire ESDS 클러스터에서 무중단 롤링 업그레이드를 수행할 수 있습니다. Ansible은 NetApp에서 제공하는 "NAR_solidfire_SDS_UPGRADE" 역할을 사용하여 모든 볼륨의 데이터 가용성을 유지하는 동시에 한 번에 하나의 노드를 롤링 업그레이드를 수행합니다.' 
 ---
 = 클러스터를 업그레이드합니다
 :icons: font
