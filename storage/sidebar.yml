@@ -371,8 +371,6 @@ entries:
       url: "/storage/task_data_protection_restore_volume_from_backup_on_openstack_swift.html"
     - title: SolidFire 스토리지 클러스터의 백업에서 볼륨을 복원합니다
       url: "/storage/task_data_protection_restore_volume_from_backup_on_solidfire.html"
-  - title: 사용자 지정 보호 도메인을 구성합니다
-    url: "/storage/task_data_protection_configure_custom_protection_domains.html"
 - title: 시스템 문제를 해결합니다
   url: "/storage/concept_system_monitoring_and_troubleshooting.html"
   entries:

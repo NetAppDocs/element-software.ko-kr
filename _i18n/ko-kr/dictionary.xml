@@ -2297,31 +2297,9 @@
   <block id="42936e9310cd9893aac9639db8c188e5" category="list-text"><block ref="42936e9310cd9893aac9639db8c188e5" category="inline-link-rx"></block></block>
   <block id="dc5d9b72bb1d6136171426bc40800ca1" category="inline-link-macro">사용 중인 VLAN IP와 해당 IP가 Element에 할당된 노드를 확인하는 방법</block>
   <block id="89e0e9ac99d01ab5c5825cd14a39bf16" category="list-text"><block ref="89e0e9ac99d01ab5c5825cd14a39bf16" category="inline-link-macro-rx"></block></block>
-  <block id="4d88773c43d7dbc5020c091c9bfeae49" category="summary">사용자 지정 보호 도메인을 구성하여 클러스터의 복원력을 향상시킬 수 있습니다.</block>
-  <block id="831136d74ae0649d6294c33fa3ad531e" category="doc">사용자 지정 보호 도메인을 구성합니다</block>
-  <block id="9dbeef114139177da982e36d70b1d7ba" category="paragraph">두 개 이상의 스토리지 노드가 포함된 Element 클러스터의 경우 각 노드에 대해 사용자 지정 보호 도메인을 구성할 수 있습니다. 사용자 지정 보호 도메인을 구성할 때는 클러스터의 모든 노드를 도메인에 할당해야 합니다.</block>
-  <block id="624ad082406eef004f913cf9be11f14c" category="inline-link-macro">보호 도메인 설명서</block>
-  <block id="867d0856d989388741998c80121faf8b" category="admonition">보호 도메인을 할당하면 노드 간 데이터 동기화가 시작되고 데이터 동기화가 완료될 때까지 일부 클러스터 작업을 사용할 수 없습니다. 클러스터에 대해 사용자 지정 보호 도메인을 구성한 후 새 스토리지 노드를 추가할 때 노드에 대해 보호 도메인을 할당하고 데이터 동기화를 완료할 때까지 새 노드에 대한 드라이브를 추가할 수 없습니다. 를 방문하십시오 <block ref="f3ad5bc790d9605231c6b7fe5dcc44e4" category="inline-link-macro-rx"></block> 보호 도메인에 대해 자세히 알아보십시오.</block>
-  <block id="a502c101a850887b30441d5f8db8a505" category="admonition">사용자 지정 보호 도메인 구성표를 클러스터에 사용하려면 각 섀시 내의 모든 스토리지 노드를 동일한 사용자 지정 보호 도메인에 할당해야 합니다. 이를 위해 필요한 만큼 사용자 지정 보호 도메인을 생성해야 합니다(가장 작은 사용자 지정 보호 도메인 구성표는 3개 도메인임). 모범 사례로서 도메인당 동일한 수의 노드를 구성하고 특정 도메인에 할당된 각 노드의 유형이 동일한지 확인합니다.</block>
   <block id="357c452008dbd35f759f62102d0f6d48" category="list-text">클러스터 * &gt; * 노드 * 를 클릭합니다.</block>
-  <block id="0ee231af8a749d4f6fe93657d92e8266" category="list-text">보호 도메인 구성 * 을 클릭합니다.</block>
-  <block id="947cc3c1147f094f5cfe3fc868e27a8d" category="paragraph">사용자 지정 보호 도메인 구성* 창에서 현재 구성된 보호 도메인(있는 경우)과 개별 노드에 대한 보호 도메인 할당을 볼 수 있습니다.</block>
-  <block id="077028c5045f4bacfddea76b9b5acd52" category="list-text">새 사용자 지정 보호 도메인의 이름을 입력하고 * Create * 를 클릭합니다.</block>
-  <block id="35b73afa49d3e8bed3d471f48691ec32" category="paragraph">생성해야 하는 모든 새 보호 도메인에 대해 이 단계를 반복합니다.</block>
-  <block id="4034133a53f1cdb2195216eab2ca21a3" category="list-text">노드 할당 * 목록의 각 노드에 대해 * 보호 도메인 * 열의 드롭다운을 클릭하고 해당 노드에 할당할 보호 도메인을 선택합니다.</block>
-  <block id="e207eef9c092e71d9b7f81916b0b647e" category="admonition">변경 사항을 적용하기 전에 노드 및 섀시 레이아웃, 구성한 사용자 지정 보호 도메인 스키마 및 데이터 보호에 대한 스키마의 영향을 이해해야 합니다. 보호 도메인 구성표를 적용하고 즉시 변경해야 하는 경우 구성이 적용된 후 데이터 동기화가 수행되므로 변경이 가능한 한 시간이 될 수 있습니다.</block>
-  <block id="c45c269988b0fdbfa5d0bfba39824f73" category="paragraph">클러스터 크기에 따라 도메인 간 데이터 동기화 시간이 다소 걸릴 수 있습니다. 데이터 동기화가 완료되면 * Cluster * &gt; * Nodes * 페이지에서 사용자 지정 보호 도메인 할당을 볼 수 있으며, Element 웹 UI 대시보드는 * Custom Protection Domain Health * 창에 클러스터의 보호 상태를 표시합니다.</block>
-  <block id="8ad6c7199b3e216cbd7f9fecdbeb98fc" category="paragraph">사용자 지정 보호 도메인 구성을 적용한 후 다음과 같은 오류가 나타날 수 있습니다.</block>
   <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="cell">오류</block>
-  <block id="960246db47f2dd869bb94da50c55385f" category="cell">SetProtectionDomainLayout 실패: ProtectionDomainLayout 노드 ID를 {9}사용할 수 없습니다. 기본 이름과 기본 이름이 아닌 이름은 함께 사용할 수 없습니다.</block>
-  <block id="b93b7f9e659ceb09e8ca7491f23f3b2c" category="cell">노드에 보호 도메인이 할당되어 있지 않습니다.</block>
-  <block id="419cf1435cb163d8b5d03fbeb1d6bee3" category="cell">노드에 보호 도메인을 할당합니다.</block>
-  <block id="07cf8fd6e47576d971bbe1a1f3791d23" category="cell">SetProtectionDomainLayout 실패: 보호 도메인 유형 'custom'이 보호 도메인 유형 'chassis'를 분할합니다.</block>
-  <block id="74edc88174dceefbbbb11b9aba21d425" category="cell">다중 노드 섀시의 노드에는 섀시의 다른 노드와 다른 보호 도메인이 할당됩니다.</block>
-  <block id="49c71a7c59d3ffac02af2e11f20c6903" category="cell">섀시의 모든 노드에 동일한 보호 도메인이 할당되었는지 확인합니다.</block>
   <block id="44667d134b93fff726fba8690e829f49" category="inline-link-macro">사용자 지정 보호 도메인</block>
-  <block id="29a6f38cbca29e0f3bdeecf96eb0b27a" category="paragraph"><block ref="b58e8d039996e87c7075e998e2dbe5e4" category="inline-link-macro-rx"></block>
-<block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
   <block id="bd1a8b28ce248817457b44e3d5b63766" category="summary">기존 그룹 스냅샷에 대한 복제 및 보존 설정을 편집할 수 있습니다.</block>
   <block id="56b261156604a66efaeed016c6e06f03" category="doc">그룹 스냅샷 편집</block>
   <block id="f00dc19b0e27166b41842484d55efe42" category="list-text">편집할 그룹 스냅숏의 작업 아이콘을 클릭합니다.</block>
@@ -4871,8 +4849,6 @@
   <block id="96ba39f59d895d814d38db0ef8c583fd" category="list-text">내결함성: 스토리지 클러스터에 사용자 지정 보호 도메인 중 하나에 장애가 발생한 후 데이터 손실을 방지할 수 있는 충분한 가용 용량이 있습니다.</block>
   <block id="e453e93ae1af3155f2774b6b529f8ed9" category="list-text">장애 복구: 스토리지 클러스터는 사용자 지정 보호 도메인 중 하나에 장애가 발생한 후 자가 복구가 가능한 충분한 가용 용량을 제공합니다. 복구 프로세스가 완료된 후 추가 도메인에 장애가 발생하면 클러스터가 데이터 손실로부터 보호됩니다.</block>
   <block id="2d50fad3ab9a441a87882c17c13f0bae" category="paragraph">사용자 지정 보호 도메인이 두 개 이상 할당된 경우 각 하위 시스템은 개별 사용자 지정 보호 도메인에 중복된 항목을 할당합니다. 이것이 가능하지 않으면 중복 항목을 별도의 노드에 할당하는 것으로 되돌아갑니다. 각 하위 시스템(예: 투출구, 슬라이스, 프로토콜 엔드포인트 공급자 및 앙상블)은 이를 독립적으로 수행합니다.</block>
-  <block id="d37f0270ef1cdc666fe669356e1a4f75" category="inline-link-macro">사용자 지정 보호 도메인을 구성합니다</block>
-  <block id="6e599ec445b85acc8e9d5e5e62c0612c" category="paragraph">Element UI를 사용하여 에 대한 작업을 수행할 수 있습니다 <block ref="207ccb2cb37becc35a7f5fde670b328f" category="inline-link-macro-rx"></block>또는 다음 API 메소드를 사용할 수 있습니다.</block>
   <block id="10763b97bd843488da2bf7ea3d301a99" category="inline-link-macro">GetProtectionDomainLayout 을 참조하십시오</block>
   <block id="bd77f2754e5c1c371ba7793ef5fe29b4" category="list-text"><block ref="6702e5c49e3601276668962e5917edde" category="inline-link-macro-rx"></block> - 각 노드가 속한 섀시와 사용자 지정 보호 도메인을 표시합니다.</block>
   <block id="76e41f0c5158a7d3c39e70b930570854" category="inline-link-macro">SetProtectionDomainLayout 을 참조하십시오</block>
@@ -4883,36 +4859,8 @@
   <block id="fd48f2b5f1262bafaf795df0d40757c2" category="list-text">데이터 보호 * &gt; * 클러스터 쌍 * 을 클릭합니다.</block>
   <block id="f2a4b3c20ccabbbccf2737b97022680d" category="list-text">클러스터 쌍의 작업 아이콘을 클릭합니다.</block>
   <block id="5c4aa786c8d6a929d49bc23c9378ff6a" category="list-text">클러스터 페어링의 두 번째 클러스터에서 단계를 다시 수행합니다.</block>
-  <block id="24de7fb76a6fea6efcddad69b0d1251a" category="summary">NetApp Element 소프트웨어 인터페이스 및 통합 유틸리티를 사용하여 SolidFire 스토리지 시스템을 관리할 수 있습니다.</block>
   <block id="8899b6ed5385e8973e5fe00da2101ccd" category="doc">SolidFire 소프트웨어 인터페이스</block>
-  <block id="8052aa25778d879aba958528a9ec1dea" category="list-text">* NetApp Element 소프트웨어 사용자 인터페이스 *</block>
-  <block id="5522c539437a90fd82777546ba2534ea" category="paragraph">멀티 테넌트(multi-tenant) 인프라에서 SolidFire 스토리지를 설정하고, 클러스터 용량과 성능을 모니터링하고, 스토리지 작업을 관리할 수 있습니다. 요소는 SolidFire 클러스터의 중심에 있는 스토리지 운영 체제입니다. Element 소프트웨어는 클러스터의 모든 노드에서 독립적으로 실행되며 클러스터 노드가 리소스를 결합하여 단일 스토리지 시스템으로 외부 클라이언트에 제공할 수 있도록 합니다. Element 소프트웨어는 시스템 전체의 모든 클러스터 조정, 확장 및 관리를 책임집니다. 소프트웨어 인터페이스는 Element API를 기반으로 구축됩니다.</block>
-  <block id="5f6d997d610a8179818a527d5ba72f7d" category="list-text">* vCenter Server * 용 NetApp Element 플러그인</block>
-  <block id="e968ed74e2d833a7d578bcffa2857f2e" category="paragraph">Element 소프트웨어를 실행하는 스토리지 클러스터를 구성하고 관리할 수 있습니다. 이 플러그인은 VMware vSphere 내의 Element UI에 대한 대체 인터페이스를 제공합니다.</block>
-  <block id="3353dec73c0c7012530a36c60188e522" category="list-text">* NetApp Element 소프트웨어 API *</block>
-  <block id="b16c2282138fa4c68f35ed3d92178f4a" category="paragraph">일련의 오브젝트, 방법 및 루틴을 사용하여 SolidFire 스토리지를 관리할 수 있습니다. Element API는 HTTPS를 통한 JSON-RPC 프로토콜을 기반으로 합니다. API 로그를 활성화하여 Element UI에서 API 작업을 모니터링할 수 있습니다. 이렇게 하면 시스템에 실행 중인 메서드를 볼 수 있습니다. 요청과 응답을 모두 활성화하여 시스템이 실행된 메서드에 응답하는 방법을 확인할 수 있습니다.</block>
-  <block id="41847ce8e56f2a9d4d2b0403ab7b7e2a" category="list-text">* 관리 노드 UI *</block>
-  <block id="60bda7dbf3a1f5304e1e70fc24eab12f" category="paragraph">관리 노드에는 REST 기반 서비스를 관리하기 위한 UI와 네트워크 및 클러스터 설정과 운영 체제 테스트 및 유틸리티를 관리하기 위한 노드별 UI의 두 가지 UI가 포함되어 있습니다. REST API UI에서 관리 노드의 관리 서비스를 제어하는 서비스 관련 API 메뉴에 액세스할 수 있습니다.</block>
   <block id="70489b8d2c3a8e276f930ccd1b7d6450" category="section-title">추가 통합 유틸리티 및 툴</block>
-  <block id="725415e8ab734694f1d47832a6f422f3" category="paragraph">일반적으로 NetApp Element, NetApp Element API 및 vCenter Server용 NetApp Element 플러그인을 사용하여 스토리지를 관리하지만 추가 유틸리티 및 툴을 사용할 수 있습니다.</block>
-  <block id="dbf6f352b4daf642804af7debd41517d" category="inline-link">NetApp 다운로드: SolidFire vRO</block>
-  <block id="80bbae962c855ff1f5f8c8cd55804aa8" category="list-text"><block ref="80bbae962c855ff1f5f8c8cd55804aa8" category="inline-link-rx"></block></block>
-  <block id="edc921a5b836cb96bbc5ea21aa662f8e" category="paragraph">SolidFire API를 사용하여 VMware vRealize Orchestrator ™ 를 사용하여 SolidFire 스토리지 시스템을 관리하는 편리한 방법을 제공합니다.</block>
-  <block id="9a476ba32d68d93dea29603fb409b628" category="inline-link">NetApp 다운로드: Element SDK</block>
-  <block id="c18c72d8eba1eee0b73ac77bc9ee6f67" category="list-text"><block ref="c18c72d8eba1eee0b73ac77bc9ee6f67" category="inline-link-rx"></block></block>
-  <block id="c814245d23679477feeb7f595fbeb900" category="paragraph">다음 툴을 사용하여 SolidFire 클러스터를 관리할 수 있습니다.</block>
-  <block id="c04e6e1e364cf14195ef802fe3f6a035" category="list-text">SolidFire 명령줄</block>
-  <block id="ad87bca9ea394cf6b416453368a21592" category="list-text">SolidFire Postman API 테스트 제품군: 프로그래머가 SolidFire API 호출을 테스트하는 Postman 함수의 컬렉션을 사용할 수 있습니다.</block>
-  <block id="5f874dbe078480520791744c862cd38c" category="list-text">SolidFire PowerShell: 프로그래머가 SolidFire API를 사용하여 SolidFire 스토리지 시스템을 관리하는 Microsoft ® Windows ® PowerShell ® 기능의 컬렉션을 사용할 수 있습니다.</block>
-  <block id="c3449aa3bcb2873c3772278a5bca59b9" category="list-text">SolidFire SDK Java: 프로그래머가 SolidFire API를 Java 프로그래밍 언어와 통합할 수 있습니다.</block>
-  <block id="987cc6b9855789c2ccda259866a67d5f" category="list-text">SolidFire SDK .NET: 프로그래머가 SolidFire API를 .NET 프로그래밍 플랫폼과 통합할 수 있습니다.</block>
-  <block id="d044e13d1391e6da759cd9459ae89e95" category="list-text">SolidFire SDK Python: 프로그래머가 SolidFire API를 Python™ 프로그래밍 언어와 통합할 수 있습니다.</block>
-  <block id="d352a4b1a18ea276f4281015259de96c" category="inline-link">NetApp 다운로드: SolidFire 스토리지 복제 어댑터</block>
-  <block id="0433f7f4e51b36398d5e0a6632587114" category="list-text"><block ref="0433f7f4e51b36398d5e0a6632587114" category="inline-link-rx"></block></block>
-  <block id="09a110334cd15062a80cffc905ea11c1" category="paragraph">VMware® Site Recovery Manager™(SRM)와 통합하여 복제된 SolidFire 스토리지 클러스터(어레이)와의 통신을 지원하고 지원되는 워크플로우를 실행합니다.</block>
-  <block id="743eac4f44fa62c264513e7d109751c1" category="inline-link">NetApp 다운로드: SolidFire VSS 공급자</block>
-  <block id="c254d50c9afa3dc2f1a4d4e14c5cb01a" category="list-text"><block ref="c254d50c9afa3dc2f1a4d4e14c5cb01a" category="inline-link-rx"></block></block>
-  <block id="5308472e77fde153d5cc5a74275d7a7a" category="paragraph">VSS 섀도우 복제본을 SolidFire 스냅샷 및 클론과 통합합니다.</block>
   <block id="4cf5f18e32ae2a3ab791ffc90b0c71b8" category="summary">진단 목적으로 시스템을 모니터링하고 다양한 시스템 작업의 성능 추세 및 상태에 대한 정보를 확인해야 합니다. 유지보수를 위해 노드 또는 SSD를 교체해야 할 수 있습니다.</block>
   <block id="5d275af03802c344792a6765e974ac03" category="list-text"><block ref="5d275af03802c344792a6765e974ac03" category="inline-link-macro-rx"></block></block>
   <block id="b1c9ca707156f02819d3d0e1cc8278ee" category="list-text"><block ref="b1c9ca707156f02819d3d0e1cc8278ee" category="inline-link-macro-rx"></block></block>
@@ -5378,8 +5326,6 @@
   <block id="b8cff0b41605e83e8a12999dd0a4ca92" category="list-text"><block ref="bd241c643056b4027f18f8f059752b73" category="inline-xref-macro-rx"></block></block>
   <block id="a312c7f516ce1d78e2fb8c261a270383" category="section-title">NetApp 하이브리드 클라우드 제어 UI를 사용하여 스토리지 펌웨어를 업그레이드하십시오</block>
   <block id="f650a00f1e40f26bd9259f0a248e5104" category="paragraph">NetApp 하이브리드 클라우드 제어 UI를 사용하여 클러스터에 있는 스토리지 노드의 펌웨어를 업그레이드할 수 있습니다.</block>
-  <block id="938ddcb01ec68dc1fc8dad09ace7e9e9" category="inline-link">Element 소프트웨어를 실행하는 SolidFire 스토리지 클러스터용 스토리지 펌웨어 패키지입니다</block>
-  <block id="50513643afe65606b9ac298f01eb6a9e" category="paragraph"><block ref="50513643afe65606b9ac298f01eb6a9e" category="inline-link-rx"></block></block>
   <block id="021194ed35c1ca85c5ddd9daaf8630c3" category="admonition">업그레이드 프로세스는 스토리지 노드당 약 30분이 소요됩니다. Element 스토리지 클러스터를 버전 2.76 이상의 스토리지 펌웨어로 업그레이드하는 경우, 개별 스토리지 노드는 새 펌웨어가 노드에 기록된 경우에만 업그레이드 중에 재부팅됩니다.</block>
   <block id="41248545ed2949a832d88f9ea8c00917" category="admonition">Storage * 탭에는 설치에 포함된 스토리지 클러스터가 나열됩니다. NetApp Hybrid Cloud Control에서 클러스터에 액세스할 수 없는 경우 * 업그레이드 * 페이지에 표시되지 않습니다. Element 12.0 이상을 실행하는 클러스터가 있는 경우 이러한 클러스터에 대해 현재 펌웨어 번들 버전이 나열됩니다. 단일 클러스터의 노드가 서로 다른 펌웨어 버전을 가지고 있거나 업그레이드가 진행되는 동안 * Current Firmware Bundle Version * (현재 펌웨어 번들 버전 *) 열에 * Multiple * (다중 *)이 표시됩니다. 여러 * 를 선택하여 * 노드 * 페이지로 이동하여 펌웨어 버전을 비교할 수 있습니다. 모든 클러스터가 12.0 이전 버전의 Element를 실행하는 경우 펌웨어 번들 버전 번호에 대한 정보가 표시되지 않습니다. 클러스터가 최신 버전이거나 사용 가능한 업그레이드 패키지가 없는 경우 * Element * 및 * Firmware Only * 탭이 표시되지 않습니다. 이 탭은 업그레이드가 진행 중일 때도 표시되지 않습니다. Element * 탭이 표시되지만 * Firmware Only * 탭이 표시되지 않으면 사용 가능한 펌웨어 패키지가 없습니다.</block>
   <block id="c2478fbc134086873c832f9086152247" category="list-text">업그레이드할 클러스터 옆에 있는 드롭다운 화살표를 선택합니다.</block>
@@ -12421,7 +12367,6 @@
   <block id="9958041ee70a2259278a77d924dd17fb" category="sidebar">외부 키 관리 API 명령</block>
   <block id="27f2e04c96b5ac3b10c4de8069658227" category="sidebar">데이터 보호를 위해 그룹 스냅샷을 사용합니다</block>
   <block id="cf35d1bd4f63afd1c731729075f91d65" category="sidebar">볼륨을 그룹 스냅샷으로 다시 돌아갑니다</block>
-  <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">사용자 지정 보호 도메인을 구성합니다</block>
   <block id="27d8cd692aeb03225d292fe0d69c19c0" category="sidebar">SolidFire 시스템을 업그레이드합니다</block>
   <block id="b837bae0f441ebacd86887d737939282" category="sidebar">시스템 업그레이드 절차</block>
   <block id="19d0a846033170bad30679c08c8ddf47" category="sidebar">관리 노드를 설치 또는 복구합니다</block>
@@ -12434,4 +12379,7 @@
   <block id="a9cb6e2851847a4da1710748fa322b75" category="list-text">3000IOPS의 일관된 클러스터 제한을 지원합니다.</block>
   <block id="dcd50d347195658baa61d9ec50d87c54" category="list-text">MTU가 1500바이트 이상인 네트워크 인터페이스 카드로 구성해야 합니다.</block>
   <block id="66eb697af36258704e589ddaa8b1f423" category="admonition">호스트 네트워크 구성에 대한 예제 및 팁은 를 참조하십시오 <block ref="75f8e7b74dfe828e63d762ff8e0c66a1" category="inline-link-macro-rx"></block>.</block>
+  <block id="84de930499d735c9f8f12a7a5abd09e2" category="paragraph">다음 API 메소드를 사용하여 사용자 지정 보호 도메인을 구성할 수 있습니다.</block>
+  <block id="0b012f0f130a45a29cb100381b8d8a18" category="inline-link">스토리지 펌웨어 번들을 다운로드했습니다</block>
+  <block id="2860f82003378d24e87a2b07d470efff" category="list-text">관리 노드가 인터넷에 연결되어 있지 않은 경우 이 있는 것입니다<block ref="91eecee6b4dd8708a7b3c9904156a5c7" category="inline-link-rx"></block>.</block>
 </blocks>
