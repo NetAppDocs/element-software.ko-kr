@@ -12369,7 +12369,6 @@
   <block id="eeaa8c18b8187d8aa70fe2be2070cd8e" category="paragraph">여러 노드 시스템에 대한 스토리지 정보를 볼 수 있습니다. If(경우 <block ref="7abc9b197257f801951edc3be4066a26" category="inline-link-macro-rx"></block> 할당되면 특정 노드에 할당된 보호 도메인을 확인할 수 있습니다.</block>
   <block id="ce901b945342cdd0d7ba447214c227f7" category="summary">데이터 보호 기능에는 원격 복제, 볼륨 스냅샷, 볼륨 클론 복제, 보호 도메인, 이중 Helix 기술을 통한 고가용성 등이 있습니다.</block>
   <block id="ac57cbf4f51794a3a62f6ab5dde63e38" category="list-text"><block ref="9f7efed5e63ef5c9e0640c875716b07a" category="inline-xref-macro-rx"></block></block>
-  <block id="6ac1619fc98de9128467937d386c0dd2" category="list-text"><block ref="88e3b967e3c729325322529e164d36b2" category="inline-xref-macro-rx"></block></block>
   <block id="9077d0c626c6abe8e5c94e742b66762a" category="section-title">보호 도메인</block>
   <block id="5c29df895fc14c6447f1c7b70cab7080" category="paragraph">보호 도메인은 데이터 가용성을 유지하면서 일부 또는 전부에 장애가 발생할 수 있도록 함께 그룹화된 노드 또는 노드 집합입니다. 보호 도메인을 사용하면 스토리지 클러스터가 섀시(섀시 선호도) 또는 전체 도메인(섀시 그룹)의 손실로부터 자동으로 치유됩니다.</block>
   <block id="18e1abcee55f350140acb0013eddc20b" category="paragraph">vCenter Server용 NetApp Element 플러그인의 NetApp Element 구성 확장 지점을 사용하여 보호 도메인 모니터링을 수동으로 설정할 수 있습니다. 노드 또는 섀시 도메인에 따라 보호 도메인 임계값을 선택할 수 있습니다. Element API 또는 웹 UI를 사용하여 보호 도메인 모니터링을 활성화할 수도 있습니다.</block>
@@ -12379,4 +12378,5 @@
   <block id="e0aa3d55a5969b10ddedc6eeb6027dd5" category="list-text">섀시 레벨에서는 섀시를 공유하는 노드만 동일한 보호 도메인에 있습니다.</block>
   <block id="24c0657cc5d2d7b53518905f246af2be" category="paragraph">새 클러스터를 생성할 때 공유 섀시에 있는 스토리지 노드를 사용하는 경우 보호 도메인 기능을 사용하여 섀시 수준의 장애 보호 설계를 고려할 수 있습니다.</block>
   <block id="dffa7774e7868ad62921ad5e0618ff6f" category="paragraph">특정 섀시 및 노드 레이아웃과 일치하는 사용자 지정 보호 도메인 레이아웃을 정의할 수 있으며 각 노드가 1개 및 1개의 사용자 지정 보호 도메인과 연결되는 위치를 정의할 수 있습니다. 기본적으로 각 노드는 동일한 기본 사용자 지정 보호 도메인에 할당됩니다.</block>
+  <block id="da8f75460055661317175529ad22e459" category="list-text"><block ref="df090c4e5f2ab56fd22fc14848bb611c" category="inline-xref-macro-rx"></block></block>
 </blocks>

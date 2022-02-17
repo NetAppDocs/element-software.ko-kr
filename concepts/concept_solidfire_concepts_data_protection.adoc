@@ -19,7 +19,7 @@ Element 스토리지 데이터 보호에는 다음 개념이 포함됩니다.
 * <<Volume clones>>
 * <<Backup and restore process overview for Element storage>>
 * <<Protection Domains>>
-* <<Custom Protection Domains>>
+* <<custom_pd,사용자 지정 보호 도메인>>
 * <<Double Helix high availability>>
 
 
