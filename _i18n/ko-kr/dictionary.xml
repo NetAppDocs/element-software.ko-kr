@@ -1153,7 +1153,6 @@
   <block id="1905fad06cd2d678f65488599a009f2a" category="summary">하이브리드 클라우드 제어 노드 페이지를 사용하여 시스템의 스토리지 자산을 볼 수 있습니다.</block>
   <block id="4abf133407ea4fa2eda3059f56e2940f" category="paragraph">시스템에서 스토리지 자산을 확인하고 해당 IP 주소, 이름 및 소프트웨어 버전을 확인할 수 있습니다.</block>
   <block id="f0a87811e8be55bf94672bdc19729182" category="inline-link-macro">사용자 지정 보호 도메인</block>
-  <block id="8878bca1837d19741db0f2ca4d2fcd17" category="paragraph">여러 노드 시스템에 대한 스토리지 정보를 볼 수 있습니다. If(경우 <block ref="057a38bb36aa6e1dcaf6f6415a6c21ab" category="inline-link-macro-rx"></block> 할당되면 특정 노드에 할당된 보호 도메인을 확인할 수 있습니다.</block>
   <block id="9985a6faeb51ef9840d329f5a5454de1" category="paragraph">SolidFire 엔터프라이즈 SDS 노드의 경우 스토리지 탭에서 인벤토리를 모니터링할 수 있습니다.</block>
   <block id="f7b8cd7786f2f0ba8b3271684ef8f6ff" category="list-text">왼쪽 탐색 창에서 * 노드 * 를 선택합니다.</block>
   <block id="8b5d2fc18afcde2525a65fcaae38a752" category="image-alt">하이브리드 클라우드 제어 노드 페이지 이미지</block>
@@ -4839,8 +4838,6 @@
   <block id="1759b9c79a173bf71c901a3ed149de04" category="summary">VLAN 이름, 넷마스크, 게이트웨이 및 IP 주소 블록과 같은 VRF VLAN 속성을 변경할 수 있습니다.</block>
   <block id="e0b6eb04fa359d623e4beb3876a1dec1" category="list-text">편집할 VLAN의 작업 아이콘을 클릭합니다.</block>
   <block id="ab138ce67ca0eb8deaa4642ac6b555c4" category="list-text">VLAN 편집 * 대화 상자에 VRF VLAN에 대한 새 속성을 입력합니다.</block>
-  <block id="1c99ab1d6f1bd835e71ce34f57021bf2" category="summary">사용자 지정 보호 도메인 레이아웃을 정의할 수 있습니다. 여기서 각 노드는 1개 및 1개의 사용자 지정 보호 도메인에만 연결됩니다. 기본적으로 각 노드는 동일한 기본 사용자 지정 보호 도메인에 할당됩니다.</block>
-  <block id="5973fb594f77dc8b3479a7d06ec53911" category="paragraph">특정 섀시 및 노드 레이아웃과 일치하는 사용자 지정 보호 도메인 레이아웃을 정의할 수 있습니다.</block>
   <block id="76f4b8308924515694d00b6e67394b63" category="paragraph">사용자 지정 보호 도메인이 할당되지 않은 경우:</block>
   <block id="b6dd1183963dd2c5522f37e316c9da3d" category="list-text">클러스터 작업은 영향을 받지 않습니다.</block>
   <block id="d4c6cec7f90a7cb2bffbf0f7badcf4a8" category="list-text">사용자 지정 수준은 허용 또는 회복성이 없습니다.</block>
@@ -4853,7 +4850,6 @@
   <block id="bd77f2754e5c1c371ba7793ef5fe29b4" category="list-text"><block ref="6702e5c49e3601276668962e5917edde" category="inline-link-macro-rx"></block> - 각 노드가 속한 섀시와 사용자 지정 보호 도메인을 표시합니다.</block>
   <block id="76e41f0c5158a7d3c39e70b930570854" category="inline-link-macro">SetProtectionDomainLayout 을 참조하십시오</block>
   <block id="1508ab090b8072419802560c24117082" category="list-text"><block ref="c488c3c5d50768a853ca2b4d12fca704" category="inline-link-macro-rx"></block> - 각 노드에 사용자 지정 보호 도메인을 할당할 수 있습니다.</block>
-  <block id="da55ae5c0f3e2b8fbec3529ced565e0a" category="paragraph"><block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
   <block id="413c564d0245479b08e6b318875493c1" category="summary">쌍에 있는 클러스터 중 하나의 Element UI에서 클러스터 쌍을 삭제할 수 있습니다.</block>
   <block id="642a63a1ee8516e28aa532adf19ae408" category="doc">클러스터 쌍을 삭제합니다</block>
   <block id="fd48f2b5f1262bafaf795df0d40757c2" category="list-text">데이터 보호 * &gt; * 클러스터 쌍 * 을 클릭합니다.</block>
@@ -6503,14 +6499,12 @@
   <block id="6f2ac1cf1da8ec34232c651d4bba0149" category="paragraph"><block ref="6f2ac1cf1da8ec34232c651d4bba0149" category="inline-link-macro-rx"></block></block>
   <block id="394e1ee42fe49c664653cce821c59bc2" category="inline-link-macro">관리 서비스 공지 2.19</block>
   <block id="54bd6026e83ef252dbfce1e3b805d9c1" category="list-text"><block ref="54bd6026e83ef252dbfce1e3b805d9c1" category="inline-link-macro-rx"></block></block>
-  <block id="859f5ebe453f3b784a507b4d3183a0f7" category="summary">데이터 보호 기능에는 원격 복제, 볼륨 스냅샷, 볼륨 클론 복제, 보호 도메인, 이중 Helix 기술을 통한 고가용성 등이 있습니다.</block>
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="doc">데이터 보호</block>
   <block id="4fcbbf46c76894b32e527dee3ace85d8" category="paragraph">Element 스토리지 데이터 보호에는 다음 개념이 포함됩니다.</block>
   <block id="6c475b6accd823d482c613521889419e" category="list-text"><block ref="95e714e28ad34f47d4347ab1ee96f11e" category="inline-xref-macro-rx"></block></block>
   <block id="6bcd515030aaab5fe75977e20f29a033" category="list-text"><block ref="a37b1887a46fcb243108c291db21c711" category="inline-xref-macro-rx"></block></block>
   <block id="de4ac7bb688f4ca011e20adb677d9497" category="list-text"><block ref="80d71af12585dfa981bf965dd16ec8a2" category="inline-xref-macro-rx"></block></block>
   <block id="216d01067e38abd2d602d08d41b1d7f9" category="list-text"><block ref="c365b7e67fe4aa18b0963a4d429acf59" category="inline-xref-macro-rx"></block></block>
-  <block id="9b0afd4925041d098c4c8723bd75e68f" category="list-text"><block ref="68d4a725c570718d5f33d73ff7777f66" category="inline-xref-macro-rx"></block></block>
   <block id="0e58f474dfb6f5ab7c71af0b57bd1fa2" category="list-text"><block ref="0f2b1255ed3c8740bcacb3e22e6759b2" category="inline-xref-macro-rx"></block></block>
   <block id="558f7ca74859e811e1602cabb542219f" category="section-title">원격 복제 유형입니다</block>
   <block id="8df4a1464712c3d455a74fb0a723967a" category="paragraph">데이터의 원격 복제에는 다음과 같은 형태가 있습니다.</block>
@@ -6565,18 +6559,8 @@
   <block id="2374f2751f53d5e073d8531825d46d99" category="list-text">SolidFire 스토리지 클러스터입니다</block>
   <block id="53ab57ac469b317e4ca572df8797e132" category="list-text">Amazon S3 오브젝트 저장소</block>
   <block id="bde027a7a0e31e167b9e69407e438af0" category="list-text">OpenStack Swift 오브젝트 저장소</block>
-  <block id="3fc23f34e36d05f9e3d062c71bacd2f0" category="section-title">보호 도메인</block>
-  <block id="1336fc0fd6356b267cac8ff67639cab7" category="paragraph">보호 도메인은 데이터 가용성을 유지하면서 일부 또는 전부에 장애가 발생할 수 있도록 그룹화된 노드 또는 노드 세트입니다. 보호 도메인을 사용하면 스토리지 클러스터가 섀시(섀시 선호도) 또는 전체 도메인(섀시 그룹)의 손실로부터 자동으로 치유됩니다.</block>
-  <block id="7b9eb7f0ea5f54558e422ae2773566fc" category="paragraph">vCenter Server용 NetApp Element 플러그인의 NetApp Element 구성 확장 지점을 사용하여 보호 도메인 모니터링을 수동으로 설정할 수 있습니다. 노드 또는 섀시 도메인에 따라 보호 도메인 임계값을 선택할 수 있습니다. Element API 또는 웹 UI를 사용하여 보호 도메인 모니터링을 활성화할 수도 있습니다.</block>
-  <block id="bee912c2703817c56cd91c0739ab04f3" category="paragraph">보호 도메인 레이아웃은 각 노드를 특정 보호 도메인에 할당합니다.</block>
-  <block id="bfd0cf529ced32aeb58ef87164fd6f7b" category="paragraph">보호 도메인 수준이라는 두 가지 보호 도메인 레이아웃이 지원됩니다.</block>
-  <block id="3a87586679ff9e67f084a5afcd817ce0" category="list-text">노드 레벨에서 각 노드는 고유한 보호 도메인에 있습니다.</block>
-  <block id="3a97f43eb6eef8c815e5cb3a8736c3d6" category="list-text">섀시 레벨에서는 섀시를 공유하는 노드만 동일한 보호 도메인에 있습니다.</block>
   <block id="245dea9ce6077b2fa1c519f4e82b0774" category="list-text">섀시 레벨 레이아웃은 노드가 클러스터에 추가될 때 하드웨어에서 자동으로 결정됩니다.</block>
   <block id="4955b339c381c3355161ea5b7c1af363" category="list-text">각 노드가 별도의 섀시에 있는 클러스터에서는 이 두 레벨이 기능적으로 동일합니다.</block>
-  <block id="6cb03c98c76534df27d193a6f33f65b1" category="paragraph">새 클러스터를 생성할 때 공유 섀시에 있는 스토리지 노드를 사용하는 경우 보호 도메인 기능을 사용하여 섀시 레벨 장애 보호를 설계할 수 있습니다.</block>
-  <block id="8f467f2f73a2f03837ba577c12b0bb94" category="inline-link-macro">사용자 지정 보호 도메인 설명서</block>
-  <block id="3c45efdb8d1c533e78702704c9e1eadb" category="paragraph">각 노드가 1개 및 1개의 사용자 지정 보호 도메인과 연결되는 사용자 지정 보호 도메인 레이아웃을 정의할 수 있습니다. 기본적으로 각 노드는 동일한 기본 사용자 지정 보호 도메인에 할당됩니다. 자세한 내용은 을 참조하십시오 <block ref="80492064a95c042e9c388ee5f725985c" category="inline-link-macro-rx"></block>.</block>
   <block id="980179142e595d55f1d5d1281611417d" category="section-title">이중 Helix 고가용성</block>
   <block id="53ec645d7f176e7648a168024a6c6662" category="paragraph">이중 Helix 데이터 보호는 시스템 내 모든 드라이브에 두 개 이상의 중복 데이터 복사본을 배포하는 복제 방법입니다. “RAID-less” 접근 방식을 통해 시스템은 스토리지 시스템의 모든 레벨에서 동시에 여러 건의 장애를 흡수하고 신속하게 복구할 수 있습니다.</block>
   <block id="04b17abba7ea5ab35fcee00206d57cac" category="summary">vSphere Virtual Volumes는 VMware의 스토리지 패러다임으로, 스토리지 시스템에서 VMware vCenter로 vSphere에 대한 스토리지 관리의 대부분을 이동합니다. 가상 볼륨\(VVol\)을 사용하면 개별 가상 머신의 요구사항에 따라 스토리지를 할당할 수 있습니다.</block>
@@ -12382,4 +12366,17 @@
   <block id="84de930499d735c9f8f12a7a5abd09e2" category="paragraph">다음 API 메소드를 사용하여 사용자 지정 보호 도메인을 구성할 수 있습니다.</block>
   <block id="0b012f0f130a45a29cb100381b8d8a18" category="inline-link">스토리지 펌웨어 번들을 다운로드했습니다</block>
   <block id="2860f82003378d24e87a2b07d470efff" category="list-text">관리 노드가 인터넷에 연결되어 있지 않은 경우 이 있는 것입니다<block ref="91eecee6b4dd8708a7b3c9904156a5c7" category="inline-link-rx"></block>.</block>
+  <block id="eeaa8c18b8187d8aa70fe2be2070cd8e" category="paragraph">여러 노드 시스템에 대한 스토리지 정보를 볼 수 있습니다. If(경우 <block ref="7abc9b197257f801951edc3be4066a26" category="inline-link-macro-rx"></block> 할당되면 특정 노드에 할당된 보호 도메인을 확인할 수 있습니다.</block>
+  <block id="ce901b945342cdd0d7ba447214c227f7" category="summary">데이터 보호 기능에는 원격 복제, 볼륨 스냅샷, 볼륨 클론 복제, 보호 도메인, 이중 Helix 기술을 통한 고가용성 등이 있습니다.</block>
+  <block id="ac57cbf4f51794a3a62f6ab5dde63e38" category="list-text"><block ref="9f7efed5e63ef5c9e0640c875716b07a" category="inline-xref-macro-rx"></block></block>
+  <block id="6ac1619fc98de9128467937d386c0dd2" category="list-text"><block ref="88e3b967e3c729325322529e164d36b2" category="inline-xref-macro-rx"></block></block>
+  <block id="9077d0c626c6abe8e5c94e742b66762a" category="section-title">보호 도메인</block>
+  <block id="5c29df895fc14c6447f1c7b70cab7080" category="paragraph">보호 도메인은 데이터 가용성을 유지하면서 일부 또는 전부에 장애가 발생할 수 있도록 함께 그룹화된 노드 또는 노드 집합입니다. 보호 도메인을 사용하면 스토리지 클러스터가 섀시(섀시 선호도) 또는 전체 도메인(섀시 그룹)의 손실로부터 자동으로 치유됩니다.</block>
+  <block id="18e1abcee55f350140acb0013eddc20b" category="paragraph">vCenter Server용 NetApp Element 플러그인의 NetApp Element 구성 확장 지점을 사용하여 보호 도메인 모니터링을 수동으로 설정할 수 있습니다. 노드 또는 섀시 도메인에 따라 보호 도메인 임계값을 선택할 수 있습니다. Element API 또는 웹 UI를 사용하여 보호 도메인 모니터링을 활성화할 수도 있습니다.</block>
+  <block id="dba802ba43f82abaa07bf96fdb2af6d4" category="paragraph">보호 도메인 레이아웃은 각 노드를 특정 보호 도메인에 할당합니다.</block>
+  <block id="5840ebc65ea6274b299d2e293854fb3a" category="paragraph">보호 도메인 수준이라는 두 가지 다른 보호 도메인 레이아웃이 지원됩니다.</block>
+  <block id="cffb96292124888803b5a99c04eb25a0" category="list-text">노드 레벨에서 각 노드는 고유한 보호 도메인에 있습니다.</block>
+  <block id="e0aa3d55a5969b10ddedc6eeb6027dd5" category="list-text">섀시 레벨에서는 섀시를 공유하는 노드만 동일한 보호 도메인에 있습니다.</block>
+  <block id="24c0657cc5d2d7b53518905f246af2be" category="paragraph">새 클러스터를 생성할 때 공유 섀시에 있는 스토리지 노드를 사용하는 경우 보호 도메인 기능을 사용하여 섀시 수준의 장애 보호 설계를 고려할 수 있습니다.</block>
+  <block id="dffa7774e7868ad62921ad5e0618ff6f" category="paragraph">특정 섀시 및 노드 레이아웃과 일치하는 사용자 지정 보호 도메인 레이아웃을 정의할 수 있으며 각 노드가 1개 및 1개의 사용자 지정 보호 도메인과 연결되는 위치를 정의할 수 있습니다. 기본적으로 각 노드는 동일한 기본 사용자 지정 보호 도메인에 할당됩니다.</block>
 </blocks>
