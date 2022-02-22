@@ -4950,8 +4950,6 @@
   <block id="bd91bfdcf4a916f6b8c00c25da13251b" category="list-text">REST API UI에서 * GET/packages * 를 선택한다.</block>
   <block id="92c655ce479b4404b3a51afa0527fd9b" category="list-text">응답에서 패키지 ID를 복사하여 나중에 사용할 수 있도록 저장합니다.</block>
   <block id="1ed5061d3b76fa0c219c1f1d3b386470" category="list-text">스토리지 업그레이드 패키지를 관리 노드에서 액세스할 수 있는 디바이스로 다운로드합니다.</block>
-  <block id="4876c936414c8b50876cdff810c036bd" category="inline-link">다운로드 페이지</block>
-  <block id="7ee2de3b0e43f349c3fe9cb7ad971f81" category="paragraph">SolidFire 스토리지 시스템의 경우 Element 소프트웨어로 이동하십시오<block ref="ad89077eafc4eb6d60327946d6a23ef9" category="inline-link-rx"></block> 최신 스토리지 노드 이미지를 다운로드합니다.</block>
   <block id="ca9b271bda1fd83c0839a53fe115bfdb" category="list-text">스토리지 업그레이드 패키지를 관리 노드에 업로드합니다.</block>
   <block id="382035476e13882c8f8e0dcfdc354d1b" category="list-text">REST API UI에서 * POST/packages * 를 선택합니다.</block>
   <block id="8a125bba55a89fe2c1f9771882004ba9" category="list-text">Browse * 를 선택하고 업그레이드 패키지를 선택합니다.</block>
@@ -5002,7 +5000,6 @@
   <block id="59176eee36815639c56b916d1ee6d2b9" category="list-text">NetApp 지원에 따라 3시간 이내에 수정 조치를 취하려면 업그레이드를 일시적으로 중단해야 한다고 판단했습니다. 지원 부서에서 API를 사용하여 업그레이드를 중단합니다.</block>
   <block id="e0cac02c93ade1b7ecc2eb64907171a8" category="admonition">노드가 업데이트되는 동안 클러스터 업그레이드를 중단하면 드라이브가 노드에서 올바르게 제거되지 않을 수 있습니다. 드라이브가 올바르게 제거되지 않은 경우 업그레이드 중에 드라이브를 다시 추가하려면 NetApp Support에서 수동으로 개입해야 합니다. 노드가 펌웨어 업데이트 또는 업데이트 동기화 후 작업을 수행하는 데 시간이 더 오래 걸릴 수 있습니다. 업그레이드 진행이 멈춘 것 같다면 NetApp Support에 지원을 문의하십시오.</block>
   <block id="f7cb949e38e4d529492a7a05aae8a9db" category="section-title">HealthTools를 사용하여 연결된 사이트에서 Element 소프트웨어를 업그레이드합니다</block>
-  <block id="052f51df453585f756b6da91bdefeca1" category="list-text">스토리지 업그레이드 패키지를 다운로드합니다. SolidFire 스토리지 시스템의 경우 Element 소프트웨어로 이동하십시오<block ref="ad89077eafc4eb6d60327946d6a23ef9" category="inline-link-rx"></block> 최신 스토리지 노드 이미지를 관리 노드가 아닌 디바이스로 다운로드합니다.</block>
   <block id="2d95a5cefb4bb26e6c4f585e36b7dd0a" category="admonition">Element 스토리지 소프트웨어를 업그레이드하려면 최신 버전의 HealthTools가 필요합니다.</block>
   <block id="0ec4573ec12f9825d509316cd1dca61c" category="list-text">ISO 파일을 /tmp와 같은 액세스 가능한 위치의 관리 노드에 복사합니다.</block>
   <block id="f2c453451cde52ee9d2593c6e63274eb" category="paragraph">ISO 파일을 업로드할 때 파일 이름이 변경되지 않는지 확인합니다. 그렇지 않으면 이후 단계가 실패합니다.</block>
@@ -5023,7 +5020,6 @@
   <block id="d91b070c7f8d6b290722e056d7aff9ce" category="paragraph">성공적인 업그레이드에서 다음 샘플 발췌 부분을 참조하십시오. 업그레이드 이벤트를 사용하여 업그레이드 진행률을 모니터링할 수 있습니다.</block>
   <block id="503d85929978f593abfff70c30d833a9" category="section-title">HealthTools를 사용하여 다크 사이트에 Element 소프트웨어를 업그레이드합니다</block>
   <block id="dda57880ebc4e427f14795d16b1ee0ad" category="paragraph">HealthTools 도구 제품군을 사용하면 외부 연결이 없는 어두운 사이트에서 NetApp Element 소프트웨어를 업데이트할 수 있습니다.</block>
-  <block id="d11d8f1cb0c9c5bc31a696e290c533d4" category="list-text">SolidFire 스토리지 시스템의 경우 Element 소프트웨어로 이동하십시오<block ref="ad89077eafc4eb6d60327946d6a23ef9" category="inline-link-rx"></block>.</block>
   <block id="33ff5a5d635fbe38905932dd4b045967" category="list-text">올바른 소프트웨어 릴리즈를 선택하고 최신 스토리지 노드 이미지를 관리 노드가 아닌 컴퓨터에 다운로드합니다.</block>
   <block id="a6c9e3a7671c1fd9d7328c3be5d107b5" category="inline-link">JSON 파일</block>
   <block id="cabc168d31fc4c314cb500b86813e131" category="list-text">이 파일을 다운로드하십시오<block ref="747556e0149f6188670059abaeb4fd3e" category="inline-link-rx"></block> <block ref="53034c8197fc6f1049d26569a56db918" category="inline-link-rx"></block> 관리 노드가 아닌 컴퓨터의 NetApp 지원 사이트에서 'metadata.json'으로 이름을 바꿉니다.</block>
@@ -5059,15 +5055,12 @@
   <block id="d11f8cc6c1645d770c8cdaa2a8979e5b" category="admonition">클러스터에 비 H610S 노드가 있는 경우 이러한 비 H610S 노드는 2단계에서 제외되며 시스템을 종료하거나 전원을 분리하지 않아도 됩니다.</block>
   <block id="933f74a3885353a5d5a55ba2720e3434" category="list-text">지원 및 업그레이드 예약을 위해 NetApp Support에 문의하십시오.</block>
   <block id="370ad5e096ae3a6d595b48d9baa50889" category="list-text">이 단계의 2단계 업그레이드 절차를 따릅니다<block ref="30b30908e7d32799d6c615b58aa4901f" category="inline-link-rx"></block> 각 H610S 노드의 업그레이드를 완료하는 데 필요합니다.</block>
-  <block id="0efaf95d5aed3c0eeb8ac846a92855dc" category="summary">NetApp SolidFire All-Flash 스토리지 시스템과 모든 구성 요소를 업그레이드할 수 있습니다.</block>
   <block id="0156654ae4dc6b09e871c56632755132" category="doc">Element 12.3.x를 위해 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드하십시오</block>
   <block id="ce90f7229835d74f781e9e0252243716" category="paragraph">모든 NetApp 스토리지 구성요소를 순차적으로 업그레이드하여 구축 후 SolidFire Element 스토리지 시스템을 최신 상태로 유지할 수 있습니다.</block>
-  <block id="0faf4f6bf1f4423ea9871139e1ce2c70" category="paragraph">이러한 구성요소는 관리 서비스, HealthTools, NetApp 하이브리드 클라우드 제어(HCC), Element 소프트웨어, 관리 노드 및 (설치에 따라 다름) vCenter Server용 Element 플러그인을 포함합니다.</block>
   <block id="05384005cf99c46ea432f9d7696f56e1" category="list-text">관리 노드 11.3 이상을 실행하고 있습니다. 최신 버전의 관리 노드에는 개별 서비스를 제공하는 모듈식 아키텍처가 있습니다.</block>
   <block id="ffa0fe3bc6da6c9b920ff8ce89a0609f" category="inline-link-macro">관리 노드를 업그레이드합니다</block>
   <block id="ee04baa2ee228c73a80bcb76420c3f83" category="admonition">버전을 확인하려면 관리 노드에 로그인하고 로그인 배너에서 Element 버전 번호를 확인합니다. 11.3이 없는 경우 를 참조하십시오 <block ref="298642ffea6db0968793883313b436ff" category="inline-link-macro-rx"></block>.</block>
   <block id="dc80874f9d06173050949a80fc641cfc" category="list-text">관리 서비스를 버전 2.1.326으로 업그레이드했습니다.</block>
-  <block id="dbfccf960551b08a68ecfc6a6b7d7b65" category="paragraph">HCC를 사용한 업그레이드는 이전 서비스 번들 버전에서 사용할 수 없습니다.</block>
   <block id="ced99676ffdce11db0cf7ce2a4a812b8" category="list-text">모든 노드의 시스템 시간이 동기화되고 스토리지 클러스터 및 노드에 대해 NTP가 올바르게 구성되었는지 확인했습니다. 각 노드는 시간편중과 관련된 해결되지 않은 클러스터 장애가 없는 노드별 웹 UI('https://[IP address]:442')에서 DNS 이름 서버로 구성되어야 합니다.</block>
   <block id="524813e84d210a04a3c005022becca08" category="inline-link-macro">하이브리드 클라우드 제어에서 관리 서비스를 업데이트합니다</block>
   <block id="c43409e402c491faff614694ff49b45b" category="list-text"><block ref="d96c5e393dc7f7cfcba5644a67a6ff8a" category="inline-link-macro-rx"></block>.</block>
@@ -5093,14 +5086,12 @@
   <block id="1b4d7862ca62ac0691b197c1c4e48017" category="admonition">Element 소프트웨어를 업그레이드하기 전에 최신 관리 서비스 번들로 업그레이드해야 합니다.</block>
   <block id="d843290a4f160eb5d302fe442b7b62f9" category="list-text">관리 노드 11.3 이상을 실행하고 있습니다.</block>
   <block id="fc78a25a814125bdaeb01b28be02a19d" category="list-text">클러스터 버전이 NetApp Element 소프트웨어 11.3 이상을 실행 중입니다.</block>
-  <block id="a42a5f062307c65656fb022b1bc38224" category="paragraph">NetApp HCC(하이브리드 클라우드 제어) UI, HCC API 또는 HealthTools 제품군을 사용하여 상태 점검을 실행할 수 있습니다.</block>
   <block id="0096c254c62197f713da16cbb8cf17bf" category="list-text"><block ref="43e2712ac16e77262f42113e91f41bfc" category="inline-xref-macro-rx"></block> (선호 방법)</block>
   <block id="c0ce03ffdb1b2eaf2997d4b003a6c398" category="list-text"><block ref="33b5a46d5ad547c7160d2877495cd388" category="inline-xref-macro-rx"></block></block>
   <block id="2321e5c974e77f58ee923d1e00e01167" category="list-text"><block ref="2afbc4735288b232693d6654f053bf83" category="inline-xref-macro-rx"></block></block>
   <block id="d9072e37167baf145bc5655975039b9c" category="paragraph">서비스에서 실행되는 스토리지 상태 점검에 대한 자세한 내용을 확인할 수도 있습니다.</block>
   <block id="62a5effb348b201359f9288178063353" category="list-text"><block ref="b9c91f9aab75a470a42dbb291a17df8d" category="inline-xref-macro-rx"></block></block>
   <block id="dd2a5a4091be5700ab6001e60a9a6483" category="section-title">스토리지를 업그레이드하기 전에 NetApp 하이브리드 클라우드 제어를 사용하여 Element 스토리지 상태 점검을 실행하십시오</block>
-  <block id="f5c8d254cb62d36b2cfba42c5866a02a" category="paragraph">NetApp 하이브리드 클라우드 제어(HCC)를 사용하여 스토리지 클러스터를 업그레이드할 준비가 되었는지 확인할 수 있습니다.</block>
   <block id="1f7790ed35a0ab861da3622b15bd9e8a" category="list-text">업그레이드 * 페이지에서 * 스토리지 * 탭을 선택합니다.</block>
   <block id="baec6461b0d69dde1b861aefbe375d8a" category="inline-image-macro">아이콘을 클릭합니다</block>
   <block id="6f2c388bfbd8977b6fbfc3a23a18b5c1" category="list-text">상태 점검을 선택합니다 <block ref="121ad3230a694a5231762b0ae438963f" category="inline-image-macro-rx" type="image"></block> 업그레이드 준비 상태를 확인하려는 클러스터의 경우</block>
@@ -5198,15 +5189,12 @@
   <block id="ec29698b029ebdc0e8d965b404b70339" category="list-text">관리 노드 VM의 RAM은 24GB입니다.</block>
   <block id="8546c62730d8cfcda5a49868756174b8" category="list-text">업그레이드하려는 관리 노드는 버전 12.0이며 IPv4 네트워킹을 사용합니다. 관리 노드 버전 12.3.x는 IPv6을 지원하지 않습니다.</block>
   <block id="d6db6ab6b83c4d33fe8d22d8155fd5df" category="admonition">관리 노드의 버전을 확인하려면 관리 노드에 로그인하고 로그인 배너에서 Element 버전 번호를 확인합니다.</block>
-  <block id="36f00ec8099ee24ce7cf9f89e0d6f7ac" category="list-text">NetApp 하이브리드 클라우드 제어(HCC)를 사용하여 관리 서비스 번들을 최신 버전으로 업데이트했습니다. 다음 IP에서 HCC에 액세스할 수 있습니다: `\https://&lt;ManagementNodeIP&gt;`</block>
   <block id="af893cd5d7f5dc057af51cccbf8db284" category="list-text">관리 노드를 버전 12.3.x로 업데이트하는 경우 계속하려면 관리 서비스 2.14.60 이상이 필요합니다.</block>
   <block id="580c35d1b4dc1d63073ae537ce0f28ab" category="inline-link-macro">추가 스토리지 NIC 구성</block>
   <block id="4733d6f93dbca188e79e25900eaeacb7" category="list-text">에 대한 지침을 사용하여 추가 네트워크 어댑터를 구성했습니다(필요한 경우) <block ref="1f5ebd4d6fe6b214007c2692b1a22cfb" category="inline-link-macro-rx"></block>.</block>
   <block id="97badad042e3a18dd496d204994f3a2f" category="admonition">eth0을 SVIP로 라우팅할 수 없는 경우 영구 볼륨에는 추가 네트워크 어댑터가 필요할 수 있습니다. 영구 볼륨의 구성을 허용하도록 iSCSI 스토리지 네트워크에서 새 네트워크 어댑터를 구성합니다.</block>
   <block id="2759cbca8a5572fe6fdc10d347df91c2" category="list-text">스토리지 노드가 Element 11.3 이상을 실행하고 있습니다.</block>
   <block id="1a6ffd97834fd7495156f52f3058e50b" category="list-text">SSH 또는 콘솔 액세스를 사용하여 관리 노드 가상 머신에 로그인합니다.</block>
-  <block id="231afe47f3f37d3808096b36c28b4ded" category="inline-link">요소</block>
-  <block id="735d094ea474aeeda5cb987742446180" category="list-text">에 대한 관리 노드 ISO를 다운로드합니다<block ref="f69204473ef391e6243daff2874afa29" category="inline-link-rx"></block> NetApp Support 사이트에서 관리 노드 가상 시스템으로 소프트웨어 구성</block>
   <block id="e097e26564fa470c938b5aa9cb375497" category="admonition">ISO의 이름은 'olidfire-fdva-&lt;Element release&gt;-patchX-XX.X.XXXX.iso'와 비슷합니다</block>
   <block id="7af3e8bcf74bc743e6d42428a1ef8e84" category="list-text">다운로드한 파일에 md5sum을 실행하여 다운로드의 무결성을 확인하고 다음 예제와 같이 Element 소프트웨어에 대해 NetApp Support 사이트에서 제공되는 것과 출력을 비교합니다.</block>
   <block id="4e82f8cfbdbaab82d0c8c7e65d59b756" category="paragraph">'SUDO md5sum -b &lt;ISO&gt;/solidfire-fdva-&lt;Element release&gt;-patchX-XX.X.XXXX.iso'</block>
@@ -5331,7 +5319,6 @@
   <block id="5d1b774bcdd716279a4e1f6c45c21ae4" category="cell">NetApp 하이브리드 클라우드 제어에는 온라인 소프트웨어 리포지토리에 연결할 수 있는 외부 연결이 없을 때 * 사용 가능한 버전 * 대신 * 이 상태가 표시됩니다. 스토리지 서비스 API가 가능한 업그레이드 상태의 열거 목록에 없는 업그레이드 상태를 반환하는 경우에도 이 상태가 표시됩니다.</block>
   <block id="3aff5fc3a8e8d7210a56cf227b42a6e8" category="section-title">NetApp 하이브리드 클라우드 제어 API를 사용하여 스토리지 펌웨어를 업그레이드하십시오</block>
   <block id="fa296e9495ac8602647feef1c1f92880" category="list-text">응답에서 펌웨어 패키지 ID를 복사하여 나중에 사용할 수 있도록 저장합니다.</block>
-  <block id="dcce2f519bbe6d7772a0dbf0aac7a943" category="list-text">스토리지 펌웨어 업그레이드 패키지를 관리 노드에서 액세스할 수 있는 장치로 다운로드합니다. SolidFire 스토리지 시스템의 경우 Element 소프트웨어로 이동하십시오<block ref="ad89077eafc4eb6d60327946d6a23ef9" category="inline-link-rx"></block> 최신 스토리지 펌웨어 이미지를 다운로드합니다.</block>
   <block id="3d849e77fb6435c594cb34aff5254c7a" category="list-text">스토리지 펌웨어 업그레이드 패키지를 관리 노드에 업로드합니다.</block>
   <block id="cbba2755a405305c04008eba28b81066" category="list-text">이전 단계에서 복사한 펌웨어 패키지 ID를 * id * 에 입력합니다.</block>
   <block id="3982b15a7d8608c803ba0fea915a806a" category="list-text">설치 자산 ID를 찾습니다.</block>
@@ -5380,31 +5367,18 @@
   <block id="b9e50e6a339819ad9d12906b29e978ca" category="list-text">플러그인의 * NetApp Element 구성 * 확장 지점의 * 정보 * 탭에서 버전 변경을 확인합니다.</block>
   <block id="a2b39afbde860c9c0fc759f3772e2dd2" category="paragraph">최신 버전의 다음 버전 세부 정보 또는 세부 정보가 표시됩니다.</block>
   <block id="4715e0cc20eb79c52c1f181ce0f6afb0" category="admonition">vCenter 플러그인에는 온라인 도움말 콘텐츠가 포함되어 있습니다. 도움말에 최신 콘텐츠가 포함되어 있는지 확인하려면 플러그인을 업그레이드한 후 브라우저 캐시를 지웁니다.</block>
-  <block id="e9777d19bdbe46329cd6d019014e06f5" category="summary">이 섹션에서는 NetApp SolidFire All-Flash 스토리지 시스템의 구성 요소에 대한 권장 업그레이드 순서를 소개합니다.</block>
-  <block id="73937695a7909fb754787fd36d659ac1" category="doc">업그레이드 개요</block>
-  <block id="ccc420b652b5625973223c9a1ff6c73d" category="paragraph">이 섹션에서는 NetApp SolidFire All-Flash 스토리지 시스템의 구성 요소에 대한 권장 업그레이드 순서를 소개합니다. ​</block>
   <block id="6ea7f8d4483b20144d2c82f1ed99c07a" category="section-title">시스템 업그레이드 순서</block>
-  <block id="31ca97489f7ece65495f2b7febcd4b54" category="paragraph">시스템 업그레이드 순서 내용에서는 SolidFire All-Flash 스토리지 시스템의 업그레이드를 완료하는 데 필요한 작업에 대해 설명합니다. 이러한 절차는 격리가 아닌 더 큰 업그레이드 순서의 일부로 수행하는 것이 이상적입니다. 구성 요소 기반 업그레이드 또는 업데이트가 필요한 경우 추가 복잡성을 해결하기 위한 절차 필수 구성 요소를 참조하십시오.</block>
-  <block id="46ec2391e9110784c0ae0691c567ad15" category="paragraph">Element 12.3.x용 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드하려면 다음 순서를 사용하십시오.</block>
-  <block id="0cd7e8b16b69d0465d0cd555180471ad" category="list-text"><block ref="9ab4f30420c80d4c6870d42a969c945d" category="inline-link-macro-rx"></block>.</block>
-  <block id="d249f69727f1f2d48b0dab7bd856ed7c" category="section-title">vCenter Server용 Element 플러그인을 포함한 vSphere 업그레이드 시퀀스</block>
-  <block id="b0c690633a2f05229420ba898d01dbe6" category="paragraph">vCenter Server용 Element Plug-in 컨텐츠를 포함한 vSphere 업그레이드 시퀀스에서는 vCenter Server용 Element 플러그인을 다시 설치하는 데 필요한 추가 사전 및 사후 업그레이드 단계에 대해 설명합니다.</block>
-  <block id="1dca9e07f94d868e592e1c557b46fb1b" category="paragraph">vCenter Server용 Element 플러그인을 사용하여 NetApp SolidFire All-Flash 스토리지 시스템에서 vSphere 구성요소를 업그레이드하려면 다음 단계를 따르십시오.</block>
   <block id="ae39d371b28f32c0d2467b06b77ffdc4" category="inline-link-macro">vCenter Server용 Element 플러그인을 사용하여 NetApp SolidFire 스토리지 시스템용 vSphere 구성요소를 업그레이드하십시오</block>
-  <block id="3e382c500eb4957fbcfd912b8b3b3f10" category="list-text"><block ref="cfac6e060c52f472293e00df8517db42" category="inline-link-macro-rx"></block>.</block>
   <block id="36f546dcaf82a7b3487c4002a3c6d1ed" category="summary">NetApp SolidFire 스토리지 시스템 업그레이드의 일환으로 관리 서비스를 업데이트해야 합니다.</block>
   <block id="2fdf7cb371995103b459c97e897b87ee" category="doc">관리 서비스를 업데이트합니다</block>
   <block id="79775a85ecd792fca2ed73286c1313cf" category="paragraph">관리 노드 11.3 이상을 설치한 후 관리 서비스를 최신 번들 버전으로 업데이트할 수 있습니다.</block>
-  <block id="9d896625607ec2ce2f7a1559c4bdcd1d" category="paragraph">Element 11.3 관리 노드 릴리즈부터 개별 서비스를 제공하는 새로운 모듈식 아키텍처에 따라 관리 노드 설계가 변경되었습니다. 이러한 모듈식 서비스는 SolidFire All-Flash 스토리지 시스템을 위한 중앙 집중식 및 확장된 관리 기능을 제공합니다. 관리 서비스에는 시스템 원격 측정, 로깅 및 업데이트 서비스, vCenter Server용 Element Plug-in용 QoSSIOC 서비스, NetApp 하이브리드 클라우드 제어(HCC) 등이 포함됩니다.</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">이 작업에 대해</block>
   <block id="a443497b41405480f6755e35166556e7" category="inline-link">관리 서비스 릴리즈 노트</block>
   <block id="b142e9d9b67c7c4504bd1ab09fd15db2" category="admonition">주요 서비스, 새로운 기능, 버그 수정 사항 및 각 서비스 번들에 대한 대안을 설명하는 최신 관리 서비스 릴리즈 노트는 를 참조하십시오<block ref="51c56ce961e981301a44342800a6fcbd" category="inline-link-rx"></block></block>
-  <block id="884a5edae007e6d3e774a912317f61ca" category="paragraph">NetApp HCC(하이브리드 클라우드 제어) UI 또는 관리 노드 REST API를 사용하여 관리 서비스를 업데이트할 수 있습니다.</block>
   <block id="7d6cae0c176b060b3eb918e8fc3a8a88" category="list-text"><block ref="8b810af37d36ecef3e8ce0cfd28cc60b" category="inline-xref-macro-rx"></block> (권장 방법)</block>
   <block id="45d5739efe933eabe3dda4a4ba6b61b1" category="list-text"><block ref="b795f7048c0a3127327e392f4c115728" category="inline-xref-macro-rx"></block></block>
   <block id="610172e2b0e7d4051f0d0b230bd8c722" category="list-text"><block ref="79f95b99cf6c6dc511dd13bb08f1454f" category="inline-xref-macro-rx"></block></block>
   <block id="2325934efda1befa076510008b0f7646" category="section-title">하이브리드 클라우드 제어를 사용하여 관리 서비스를 업데이트합니다</block>
-  <block id="6812fbe299c3076c40d64e3555fb0f6e" category="paragraph">NetApp 하이브리드 클라우드 제어(HCC)를 사용하여 NetApp 관리 서비스를 업데이트할 수 있습니다.</block>
   <block id="c3e2bcb5601498c3470bd272236342a3" category="paragraph">관리 서비스 번들은 주요 릴리스 이외의 설치 시 향상된 기능과 수정 사항을 제공합니다.</block>
   <block id="d0d4d24acea2b29c2079bdc9f046795d" category="list-text">관리 서비스를 버전 2.16 이상으로 업데이트하고 관리 노드 11.3에서 11.8을 실행 중인 경우 관리 서비스를 업데이트하기 전에 관리 노드 VM의 RAM을 늘려야 합니다.</block>
   <block id="291b81212712dc828fee9037f0662499" category="list-text">관리 서비스를 버전 2.1.326으로 업그레이드했습니다. NetApp 하이브리드 클라우드 제어 업그레이드는 이전 서비스 번들에서 사용할 수 없습니다.</block>
@@ -6647,8 +6621,6 @@
   <block id="e6f04bc267aa8b790e8358fbcafd13da" category="inline-link">vCenter Plug-in 4.3 릴리즈 노트</block>
   <block id="b2a1b69fb08bccdb5677884b0a061505" category="list-text"><block ref="b2a1b69fb08bccdb5677884b0a061505" category="inline-link-rx"></block></block>
   <block id="002e74c06881f6eef90f201bb310bbfa" category="section-title">스토리지 펌웨어</block>
-  <block id="e2b165ab46734aee4acaaada05a4c247" category="inline-link">스토리지 펌웨어 번들 2.99.2 릴리스 정보(최신)</block>
-  <block id="f1de80703dd5c9a1cd53931752c56274" category="list-text"><block ref="f1de80703dd5c9a1cd53931752c56274" category="inline-link-rx"></block></block>
   <block id="826ed2a2fd875eeb127f73e48856de14" category="inline-link">스토리지 펌웨어 번들 2.76 릴리스 정보</block>
   <block id="c8de9bc8a027f0e5864fb603489b44fd" category="list-text"><block ref="c8de9bc8a027f0e5864fb603489b44fd" category="inline-link-rx"></block></block>
   <block id="a0b768ade98ef6cf3df956008c966806" category="list-text"><block ref="a0b768ade98ef6cf3df956008c966806" category="inline-link-rx"></block></block>
@@ -12349,7 +12321,6 @@
   <block id="9958041ee70a2259278a77d924dd17fb" category="sidebar">외부 키 관리 API 명령</block>
   <block id="27f2e04c96b5ac3b10c4de8069658227" category="sidebar">데이터 보호를 위해 그룹 스냅샷을 사용합니다</block>
   <block id="cf35d1bd4f63afd1c731729075f91d65" category="sidebar">볼륨을 그룹 스냅샷으로 다시 돌아갑니다</block>
-  <block id="27d8cd692aeb03225d292fe0d69c19c0" category="sidebar">SolidFire 시스템을 업그레이드합니다</block>
   <block id="b837bae0f441ebacd86887d737939282" category="sidebar">시스템 업그레이드 절차</block>
   <block id="19d0a846033170bad30679c08c8ddf47" category="sidebar">관리 노드를 설치 또는 복구합니다</block>
   <block id="01f85930b405f5ff6ea401b95fb623af" category="sidebar">관리 노드 UI를 사용합니다</block>
@@ -12393,4 +12364,34 @@
   <block id="46b7076883c5472e769e88f9cf3495c2" category="admonition">RMA의 전원 공급 장치 와트가 제거된 전원 공급 장치의 와트와트가 일치하지 않는 경우 전원 공급 장치를 교체하지 마십시오. 다음 단계에 대해서는 NetApp Support에 문의하십시오.</block>
   <block id="5728f0317e6dafcb81e2d7025632bf5e" category="list-text">하나 또는 두 개의 전원 코드를 연결합니다.</block>
   <block id="8650e9e71e38ae9e93eb5c72f21a25ea" category="list-text">두 전원 공급 장치를 모두 교체한 경우 노드 전면으로 이동하고 전원 단추를 눌러 노드의 전원을 켭니다. 전원을 켜면 전원 단추 LED가 파란색으로 켜집니다. 드라이브의 파란색 LED와 확인 단추가 깜박이기 시작합니다.</block>
+  <block id="b7fe022e3d13a1a7248fb1583851f437" category="inline-link">NetApp Element 소프트웨어 11.8.2 릴리스 정보</block>
+  <block id="96a6137975cbcfe6dbff95b85cf1b6bf" category="list-text"><block ref="5ed2b0be7714cf9bfe94c6d0660549bb" category="inline-link-rx"></block> _신규 _</block>
+  <block id="78f6798eb036b3dd12c871ca38087892" category="inline-link">스토리지 펌웨어 번들 2.146 릴리스 정보(최신)</block>
+  <block id="cb459c9e82b22fbd72cf1986df403b4c" category="list-text"><block ref="cb459c9e82b22fbd72cf1986df403b4c" category="inline-link-rx"></block></block>
+  <block id="176d9ae1b8e18dc2cedc534e1da45e7c" category="inline-link">스토리지 펌웨어 번들 2.99.2 릴리스 정보</block>
+  <block id="7a90185243c33f6e26c13fa828aa78ae" category="list-text"><block ref="7a90185243c33f6e26c13fa828aa78ae" category="inline-link-rx"></block></block>
+  <block id="e8feae6554a0416e918615cc5ee78661" category="paragraph">NetApp 하이브리드 클라우드 제어 UI, NetApp 하이브리드 클라우드 제어 API 또는 HealthTools 제품군을 사용하여 상태 점검을 실행할 수 있습니다.</block>
+  <block id="ecf6e9bfc923a11b6b64f4916efd1def" category="paragraph">NetApp 하이브리드 클라우드 제어를 사용하면 스토리지 클러스터를 업그레이드할 준비가 되었는지 확인할 수 있습니다.</block>
+  <block id="814733d416c95bcc389df46e42881e26" category="inline-link">다운로드 페이지</block>
+  <block id="9b8271bf8ee401fbab82cfd673a6efe7" category="list-text">스토리지 펌웨어 업그레이드 패키지를 관리 노드에서 액세스할 수 있는 장치로 다운로드하고 Element 소프트웨어로 이동합니다<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> 최신 스토리지 펌웨어 이미지를 다운로드합니다.</block>
+  <block id="592247e1218ecdf894b0dc3bf1e2b0c6" category="paragraph">Element 소프트웨어로 이동합니다<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> 최신 스토리지 노드 이미지를 다운로드합니다.</block>
+  <block id="a4a2ed7ca284633b8f6f40c70d9f2816" category="list-text">스토리지 업그레이드 패키지를 다운로드합니다. Element 소프트웨어로 이동합니다<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> 최신 스토리지 노드 이미지를 관리 노드가 아닌 디바이스로 다운로드합니다.</block>
+  <block id="66605290f00669ae460e8d4ed9f22626" category="list-text">Element 소프트웨어로 이동합니다<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block>.</block>
+  <block id="37a42081cc0d0c72d69723b5792a6c73" category="list-text">NetApp 하이브리드 클라우드 제어를 사용하여 관리 서비스 번들을 최신 버전으로 업데이트했습니다. 다음 IP 주소로 NetApp 하이브리드 클라우드 제어에 액세스할 수 있습니다. '\https://&lt;ManagementNodeIP&gt;`</block>
+  <block id="303c7d52b5c18e714947ecd4996594a2" category="inline-link">관리 노드 ISO</block>
+  <block id="bc6733dc102d98376848617102ed0352" category="list-text">를 다운로드합니다<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block> NetApp Support 사이트에서 관리 노드 가상 시스템까지 Element 소프트웨어의 경우.</block>
+  <block id="9ec21c21d51558c2c4720284cc8e9f10" category="summary">모든 NetApp 스토리지 구성요소를 업그레이드하여 구축 후 SolidFire Element 스토리지 시스템을 최신 상태로 유지할 수 있습니다.</block>
+  <block id="59a003ce49b82fe00de09fe03510553f" category="doc">업그레이드 순서 개요</block>
+  <block id="95f9414b6ac8911d498b5b4173c859c7" category="paragraph">이러한 구성 요소에는 관리 서비스, HealthTools, NetApp 하이브리드 클라우드 제어, Element 소프트웨어, 관리 노드 및 vCenter Server용 Element 플러그인(설치에 따라 다름)이 포함됩니다.</block>
+  <block id="d38f48e8e196e92a833076faf76e21bc" category="inline-xref">시스템 업그레이드 순서</block>
+  <block id="fb54f95f1b973757c205d87e6c954cbc" category="paragraph">를 클릭합니다 <block ref="c0f289a1ce14070fe1c9e60f6416d18d" category="inline-xref-macro-rx"></block> 내용 은 SolidFire All-Flash 스토리지 시스템 업그레이드를 완료하는 데 필요한 작업에 대해 설명합니다. 이러한 절차는 격리가 아닌 더 큰 업그레이드 순서의 일부로 수행하는 것이 이상적입니다. 구성 요소 기반 업그레이드 또는 업데이트가 필요한 경우 추가 복잡성을 해결하기 위한 절차 필수 구성 요소를 참조하십시오.</block>
+  <block id="7ce03284a3322764084b916532f7b97d" category="inline-link-macro">vSphere 업그레이드 시퀀스</block>
+  <block id="8bc00ddcdd87294898356c5ea82fd0f8" category="paragraph">를 클릭합니다 <block ref="a73406aeab7e054da6bf77ce7414f310" category="inline-link-macro-rx"></block> vCenter Server용 Element 플러그인 포함 에서는 vCenter Server용 Element 플러그인을 다시 설치하는 데 필요한 추가 사전 및 사후 업그레이드 단계에 대해 설명합니다.</block>
+  <block id="df3748edc080e7a8ed49863460584cdd" category="paragraph">NetApp 하이브리드 클라우드 제어를 사용하는 업그레이드는 이전 서비스 번들 버전에서 사용할 수 없습니다.</block>
+  <block id="2ddcbbcdd4f972f2c02a9a2fe92ff535" category="paragraph">Element 12.3.x의 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드할 때 다음 순서를 사용할 수 있습니다</block>
+  <block id="d87d94fb7beccdf03c401aa9b2c29f59" category="paragraph">Element 11.3 관리 노드 릴리즈부터 개별 서비스를 제공하는 새로운 모듈식 아키텍처에 따라 관리 노드 설계가 변경되었습니다. 이러한 모듈식 서비스는 SolidFire All-Flash 스토리지 시스템을 위한 중앙 집중식 및 확장된 관리 기능을 제공합니다. 관리 서비스에는 시스템 원격 측정, 로깅 및 업데이트 서비스, vCenter Server용 Element Plug-in용 QoSSIOC 서비스, NetApp 하이브리드 클라우드 제어 등이 포함됩니다.</block>
+  <block id="a5237c2b3436db5dc67ab53b053d3ec9" category="paragraph">NetApp 하이브리드 클라우드 제어 UI 또는 관리 노드 REST API를 사용하여 관리 서비스를 업데이트할 수 있습니다.</block>
+  <block id="6dd42a6a80b9ea41a3c15d5cbf5c3528" category="paragraph">NetApp 하이브리드 클라우드 제어를 사용하여 NetApp 관리 서비스를 업데이트할 수 있습니다.</block>
+  <block id="a4f0b4cd8ed43da899bf23d0cc006ec8" category="inline-link-macro">스토리지 펌웨어 번들 2.146에 대한 고지 사항</block>
+  <block id="7a0a6b8351b186d782f2b5b12a09f9d1" category="list-text"><block ref="7a0a6b8351b186d782f2b5b12a09f9d1" category="inline-link-macro-rx"></block></block>
 </blocks>
