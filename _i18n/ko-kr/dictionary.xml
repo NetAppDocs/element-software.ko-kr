@@ -12394,5 +12394,5 @@
   <block id="6dd42a6a80b9ea41a3c15d5cbf5c3528" category="paragraph">NetApp 하이브리드 클라우드 제어를 사용하여 NetApp 관리 서비스를 업데이트할 수 있습니다.</block>
   <block id="a4f0b4cd8ed43da899bf23d0cc006ec8" category="inline-link-macro">스토리지 펌웨어 번들 2.146에 대한 고지 사항</block>
   <block id="7a0a6b8351b186d782f2b5b12a09f9d1" category="list-text"><block ref="7a0a6b8351b186d782f2b5b12a09f9d1" category="inline-link-macro-rx"></block></block>
-  <block id="329461104609d2ece68f1910799e2db0" category="list-text">NetApp 하이브리드 클라우드 제어를 사용하여 관리 서비스 번들을 최신 버전으로 업데이트했습니다. NetApp 하이브리드 클라우드 제어는 다음 IP:'https://&lt;ManagementNodeIP&gt;` 에서 액세스할 수 있습니다</block>
+  <block id="38be14292d8d278a5d7b04a84bab839d" category="admonition">VMware vCenter Server 7.0 U3으로 업그레이드하면 vCenter Server용 NetApp Element 플러그인의 모든 버전이 배포되지 않습니다. 이 문제를 해결하려면 을 참조하십시오<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>.</block>
 </blocks>
