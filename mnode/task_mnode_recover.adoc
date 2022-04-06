@@ -237,7 +237,7 @@ NOTE: 보안 프롬프트에 암호를 입력하라는 메시지가 표시됩니
 NOTE: 사용자 이름을 추가하거나 스크립트에서 정보를 묻는 메시지를 표시하도록 허용할 수 있습니다.
 
 .. redeploy-mnode 명령을 실행합니다. 재구축이 완료되면 스크립트에 성공 메시지가 표시됩니다.
-.. 시스템의 FQDN(정규화된 도메인 이름)을 사용하여 관리 노드 또는 NetApp 하이브리드 클라우드 제어와 같은 Element 웹 인터페이스에 액세스하는 경우 link:upgrade/task_hcc_upgrade_management_node.html#reconfigure-authentication-using-the-management-node-rest-api["관리 노드에 대한 인증을 다시 구성하십시오"^].
+.. 시스템의 FQDN(정규화된 도메인 이름)을 사용하여 관리 노드 또는 NetApp 하이브리드 클라우드 제어와 같은 Element 웹 인터페이스에 액세스하는 경우 link:../upgrade/task_hcc_upgrade_management_node.html#reconfigure-authentication-using-the-management-node-rest-api["관리 노드에 대한 인증을 다시 구성하십시오"].
 
 
 

@@ -5997,7 +5997,6 @@
   <block id="447a2c77b25a29c4b95502c7ce068a00" category="admonition">사용자 이름을 추가하거나 스크립트에서 정보를 묻는 메시지를 표시하도록 허용할 수 있습니다.</block>
   <block id="cad0c5c8ceda74235801d01a1f9fd1c9" category="list-text">redeploy-mnode 명령을 실행합니다. 재구축이 완료되면 스크립트에 성공 메시지가 표시됩니다.</block>
   <block id="1ca15a17f59b2f41a1d0fa788065de9d" category="inline-link-macro">관리 노드에 대한 인증을 다시 구성하십시오</block>
-  <block id="cfeda7152469f5af9bf12e191eb35e22" category="list-text">시스템의 FQDN(정규화된 도메인 이름)을 사용하여 관리 노드 또는 NetApp 하이브리드 클라우드 제어와 같은 Element 웹 인터페이스에 액세스하는 경우 <block ref="1426c5f10479a8dee24e34881e37d95f" category="inline-link-macro-rx"></block>.</block>
   <block id="24260d30caec4399226e019ec2a8a7d4" category="admonition">SSH 기능을 통해 제공됩니다 <block ref="6bb28df38aa0844e287b2e23fc581879" category="inline-link-macro-rx"></block> 관리 서비스 2.18 이상을 실행하는 관리 노드에서 기본적으로 이 비활성화됩니다. 이전에 관리 노드에서 SSH 기능을 활성화한 경우 가 필요할 수 있습니다 <block ref="5b81c87a44b075e9194cc26f66c2b99f" category="inline-link-macro-rx"></block> 복구된 관리 노드에서</block>
   <block id="6d8cb4a54a58f9923479d4340b28d71c" category="floating-title">자세한 내용을 확인하십시오</block>
   <block id="6cc910c0977361227d631be0efac7242" category="list-text"><block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block></block>
@@ -12312,4 +12311,5 @@
   <block id="5e790f023d6f269f25709b2372d8cef2" category="list-text">TUI를 사용하여 MTU가 1500바이트보다 크거나 같은 관리 네트워크에서 올바른 IP를 구성합니다.</block>
   <block id="8c79dbfa1dd86948b37af21a8d7639d5" category="list-text">올바른 VM 네트워크를 VM에 다시 할당합니다.</block>
   <block id="85708c896a2da121ac4eee4307002bd9" category="admonition">MTU가 1500바이트 미만인 IP를 할당하는 DHCP를 사용하면 관리 노드 네트워크를 구성하거나 관리 노드 UI를 사용할 수 없습니다.</block>
+  <block id="1b8210afec8bf22eaf6aeec2c734fa6c" category="list-text">시스템의 FQDN(정규화된 도메인 이름)을 사용하여 관리 노드 또는 NetApp 하이브리드 클라우드 제어와 같은 Element 웹 인터페이스에 액세스하는 경우 <block ref="3bef977fd72a25456136a30f2d648743" category="inline-link-macro-rx"></block>.</block>
 </blocks>
