@@ -28,12 +28,12 @@ summary: 다음 단계를 수행하고 나열된 Element API 메소드를 사용
 +
 .. 다음 API 메서드를 호출하여 키 서버 세부 정보가 있는 키 공급자를 만듭니다. link:../api/reference_element_api_createkeyproviderkmip.html["CreateKeyProviderKmip 을 참조하십시오"]
 .. 다음 API 메소드를 호출하여 인증 기관의 서명된 인증서와 공개 키 인증서를 제공하는 키 서버를 생성합니다. link:../api/reference_element_api_createkeyserverkmip.html["CreateKeyServerKmip 을 참조하십시오"]
-
+link:../api/reference_element_api_testkeyserverkmip.html["TestKeyServerKmip"]
 +
 테스트에 실패한 경우 서버 연결 및 구성을 확인합니다. 그런 다음 테스트를 반복합니다.
 
 .. 다음 API 메서드를 호출하여 키 서버를 키 공급자 컨테이너에 추가합니다.link:../api/reference_element_api_addkeyservertoproviderkmip.html["AddKeyServerToProviderKmip 를 참조하십시오"]
-
+link:../api/reference_element_api_testkeyproviderkmip.html["TestKeyProviderKmip 을 참조하십시오"]
 +
 테스트에 실패한 경우 서버 연결 및 구성을 확인합니다. 그런 다음 테스트를 반복합니다.
 
@@ -41,12 +41,12 @@ summary: 다음 단계를 수행하고 나열된 Element API 메소드를 사용
 
 . 다음 단계 중 하나를 수행하여 유휴 데이터 암호화를 수행합니다.
 +
-.. (저장된 하드웨어 암호화의 경우) 활성화 link:../concepts/concept_solidfire_concepts_security.html["유휴 하드웨어 암호화"] 를 호출하여 키를 저장하는 데 사용되는 키 서버가 포함된 키 공급자의 ID를 제공합니다  API 메소드.
+.. (저장된 하드웨어 암호화의 경우) 활성화 link:../concepts/concept_solidfire_concepts_security.html["유휴 하드웨어 암호화"] 를 호출하여 키를 저장하는 데 사용되는 키 서버가 포함된 키 공급자의 ID를 제공합니다 link:../api/reference_element_api_enableencryptionatrest.html["EnableEncryptionAtRest 를 참조하십시오"] API 메소드.
 +
 
 NOTE: 를 통해 유휴 상태에서 암호화를 활성화해야 합니다 link:../api/reference_element_api_enableencryptionatrest.html["API를 참조하십시오"]. 기존 Element UI 버튼을 사용하여 유휴 상태에서 암호화를 활성화하면 기능이 내부적으로 생성된 키를 사용하여 되돌아갑니다.
 
-.. (저장된 소프트웨어 암호화용) link:../concepts/concept_solidfire_concepts_security.html["유휴 소프트웨어 암호화"] 새로 만든 키 공급자를 사용하려면 키 공급자 ID를 에 전달합니다  API 메소드.
+.. (저장된 소프트웨어 암호화용) link:../concepts/concept_solidfire_concepts_security.html["유휴 소프트웨어 암호화"] 새로 만든 키 공급자를 사용하려면 키 공급자 ID를 에 전달합니다 link:../api/reference_element_api_rekeysoftwareencryptionatrestmasterkey.html["RekeySoftwareEncryptionAtRestMasterKey를 참조하십시오"] API 메소드.
 
 
 

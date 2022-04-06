@@ -37,7 +37,6 @@ Element API는 HTTPS를 통한 JSON-RPC 프로토콜을 기반으로 합니다. 
 * xref:concept_element_api_volume_access_group_api_methods.adoc[볼륨 액세스 그룹 API 메소드]
 * xref:concept_element_api_volume_snapshot_api_methods.adoc[볼륨 스냅샷 API 메소드]
 * xref:concept_element_api_vvols_api_methods.adoc[가상 볼륨 API 메소드]
-* xref:reference_element_api_app_a_cluster_fault_codes.adoc[클러스터 고장 코드]
 * xref:reference_element_api_app_b_access_control.adoc[액세스 제어]
 * xref:concept_element_api_response_examples.adoc[답변 예]
 

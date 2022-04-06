@@ -902,8 +902,6 @@ entries:
     url: "/api/reference_element_api_listvirtualvolumetasks.html"
   - title: ModifyStorageContainer 를 참조하십시오
     url: "/api/reference_element_api_modifystoragecontainer.html"
-- title: 클러스터 고장 코드
-  url: "/api/reference_element_api_app_a_cluster_fault_codes.html"
 - title: 액세스 제어
   url: "/api/reference_element_api_app_b_access_control.html"
 - title: 답변 예
