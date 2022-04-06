@@ -5,6 +5,7 @@ keywords: restore,active,restoring,deleted,volume,volumes,restoredeletedvolume
 summary: RestoreDeletedVolume 메서드를 사용하여 삭제된 볼륨을 다시 활성 상태로 표시할 수 있습니다. 이 작업을 수행하면 iSCSI 연결에 볼륨을 즉시 사용할 수 있습니다. 
 ---
 = RestoreDeletedVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: create,volume,volumes,creating,CreateVolume
 summary: CreateVolume 메서드를 사용하여 클러스터에 빈 새 볼륨을 만들 수 있습니다. 볼륨 생성이 완료되면 iSCSI를 통해 볼륨을 연결할 수 있습니다. 
 ---
 = CreateVolume(생성 볼륨)
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

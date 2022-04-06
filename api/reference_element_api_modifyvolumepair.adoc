@@ -5,6 +5,7 @@ keywords: volume,pair,pairs,modify,modifying,edit,editing,changing,change,modify
 summary: 'ModifyVolumePair 메서드를 사용하여 볼륨 쌍 간의 복제를 일시 중지하거나 다시 시작할 수 있습니다. 이 방법은 소스 볼륨\(읽기/쓰기 액세스 권한이 있는 볼륨\)에서 설정됩니다.' 
 ---
 = ModifyVolumePair
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

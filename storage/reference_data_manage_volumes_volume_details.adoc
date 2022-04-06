@@ -5,6 +5,7 @@ keywords: volume, size of volume
 summary: 관리 탭의 볼륨 페이지에는 이름, 계정, 볼륨과 연결된 액세스 그룹 및 볼륨 크기와 같은 활성 볼륨에 대한 정보가 제공됩니다. 
 ---
 = 볼륨 세부 정보
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

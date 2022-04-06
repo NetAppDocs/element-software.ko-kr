@@ -5,6 +5,7 @@ keywords: cluster,list,listing,fault,faults,listclusterfaults,error,errors
 summary: ListClusterFats 메서드를 사용하여 클러스터에서 감지된 모든 오류에 대한 정보를 나열할 수 있습니다. 이 방법을 사용하면 해결된 결함뿐 아니라 현재 결함도 모두 나열할 수 있습니다. 시스템은 30초마다 장애를 캐싱합니다. 
 ---
 = ListClusterFats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: replication, pause, volume pairs
 summary: 짧은 시간 동안 입출력 처리를 중지해야 하는 경우 복제를 수동으로 일시 중지할 수 있습니다. 입출력 처리 시 과부하가 발생할 경우 복제를 일시 중지하고 처리 부하를 줄일 수 있습니다. 
 ---
 = 복제를 일시 중지합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

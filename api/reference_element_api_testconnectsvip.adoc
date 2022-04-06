@@ -5,6 +5,7 @@ keywords: storage,connection,svip,test,testing,testconnectsvip
 summary: TestConnectSvip 메서드를 사용하여 스토리지 클러스터에 대한 스토리지 접속을 테스트할 수 있습니다. 이 테스트에서는 ICMP 패킷을 사용하여 SVIP에 ping을 하고, 성공하면 iSCSI 초기자로 연결합니다. 
 ---
 = 테스트 ConnectSvip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

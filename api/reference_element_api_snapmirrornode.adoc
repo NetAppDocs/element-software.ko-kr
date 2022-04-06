@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorNode
 summary: snapMirrorNode 개체에는 SnapMirror 관계에서 대상 ONTAP 클러스터의 노드에 대한 정보가 들어 있습니다. 
 ---
 = snapMirrorNode를 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: virtual network, edit, ip address block, vlan attributes
 summary: VLAN 이름, 넷마스크, IP 주소 블록의 크기 등과 같은 VLAN 특성을 변경할 수 있습니다. VLAN 태그 및 SVIP는 VLAN에 대해 수정할 수 없습니다. 게이트웨이 속성은 비 VRF VLAN에 대해 유효한 매개 변수가 아닙니다. 
 ---
 = 가상 네트워크를 편집합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

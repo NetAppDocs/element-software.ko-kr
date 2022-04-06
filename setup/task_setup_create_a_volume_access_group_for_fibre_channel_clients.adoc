@@ -5,6 +5,7 @@ keywords:
 summary: '볼륨 액세스 그룹은 SolidFire 스토리지 시스템의 Fibre Channel 클라이언트와 볼륨 간의 통신을 지원합니다. 볼륨 액세스 그룹의 볼륨에 파이버 채널 클라이언트 이니시에이터\(WWPN\)를 매핑하면 파이버 채널 네트워크와 SolidFire 볼륨 간의 데이터 I/O 보안을 유지할 수 있습니다.' 
 ---
 = Fibre Channel 클라이언트에 대한 볼륨 액세스 그룹을 생성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

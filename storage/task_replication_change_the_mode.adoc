@@ -5,6 +5,7 @@ keywords: volume pairings, replication mode, change, volume pair properties
 summary: 볼륨 쌍 속성을 편집하여 볼륨 쌍 관계의 복제 모드를 변경할 수 있습니다. 
 ---
 = 복제 모드를 변경합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

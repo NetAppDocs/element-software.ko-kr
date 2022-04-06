@@ -5,6 +5,7 @@ keywords: element, solidfire, install, setup, node, cluster
 summary: 스토리지 노드를 사용하여 클러스터를 설정하는 순서를 이해합니다. 
 ---
 = Element 스토리지 노드를 사용하여 클러스터 설정
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

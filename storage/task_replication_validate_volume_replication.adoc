@@ -5,6 +5,7 @@ keywords: volume pairings, replication, validate volume replication
 summary: 볼륨이 복제된 후에는 소스 볼륨과 타겟 볼륨이 활성 상태인지 확인해야 합니다. 활성 상태에서 볼륨이 페어링되면 데이터가 소스에서 타겟 볼륨으로 전송되고 데이터가 동기화됩니다. 
 ---
 = 볼륨 복제를 확인합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

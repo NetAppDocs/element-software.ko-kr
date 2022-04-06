@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,snapmirror,endpoint,modi
 summary: Element 소프트웨어 웹 UI에서는 ModifySnapMirrorEndpoint 메서드를 사용하여 SnapMirror 끝점의 이름 및 관리 특성을 변경합니다. 
 ---
 = ModifySnapMirrorEndpoint입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

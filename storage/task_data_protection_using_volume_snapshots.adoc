@@ -5,6 +5,7 @@ keywords: data protection, volume snapshots, roll back volume, replicate snapsho
 summary: 볼륨 스냅샷은 볼륨의 시점 복제본입니다. 볼륨을 스냅샷이 생성된 시점의 상태로 롤백해야 하는 경우 볼륨의 스냅샷을 생성한 후 나중에 스냅샷을 사용할 수 있습니다. 
 ---
 = 데이터 보호를 위해 볼륨 스냅샷을 사용합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

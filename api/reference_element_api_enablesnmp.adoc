@@ -5,6 +5,7 @@ keywords: SNMP,enable,enabling,EnableSNMP
 summary: EnableSnmp 메서드를 사용하여 클러스터 노드에서 SNMP를 활성화할 수 있습니다. SNMP를 설정하면 작업이 클러스터의 모든 노드에 적용되고 전달된 값은 EnableSnmp에 대한 이전 호출에서 설정한 모든 값을 대체합니다. 
 ---
 = EnableSnmp
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: QoS,policy,policies,create,creating
 summary: CreateQoSPolicy 메서드를 사용하여 나중에 생성 또는 수정 시 볼륨에 적용할 수 있는 QoSPolicy 개체를 만들 수 있습니다. QoS 정책에는 고유한 ID, 이름 및 QoS 설정이 있습니다. 
 ---
 = CreateQoSPolicy 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

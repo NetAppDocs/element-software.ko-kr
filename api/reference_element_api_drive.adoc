@@ -5,6 +5,7 @@ keywords: objects,object,drive
 summary: 드라이브 개체에는 클러스터의 활성 노드에 있는 개별 드라이브에 대한 정보가 들어 있습니다. 이 오브젝트에는 볼륨 메타데이터 또는 블록 드라이브로 추가된 드라이브에 대한 세부 정보와 아직 추가되지 않았으며 사용 가능한 드라이브가 포함되어 있습니다. ListDrives API 메서드를 사용하여 이 정보를 검색할 수 있습니다. 
 ---
 = 드라이브
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

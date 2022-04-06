@@ -5,6 +5,7 @@ keywords: virtual network, add, cluster configuration, cluster nodes, svip, vlan
 summary: 새 가상 네트워크를 클러스터 구성에 추가하여 Element 소프트웨어를 실행하는 클러스터에 멀티 테넌트 환경 연결을 설정할 수 있습니다. 
 ---
 = 가상 네트워크를 추가합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

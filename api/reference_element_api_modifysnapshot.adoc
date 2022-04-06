@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,snapshot,attributes,attr
 summary: 'ModifySnapshot을 사용하여 현재 스냅샷에 할당된 속성을 변경할 수 있습니다. 또한 이 방법을 사용하여 읽기/쓰기\(소스\) 볼륨에서 생성된 스냅샷을 Element 소프트웨어를 실행하는 타겟 스토리지 클러스터에 원격으로 복제할 수 있습니다.' 
 ---
 = ModifySnapshot을 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

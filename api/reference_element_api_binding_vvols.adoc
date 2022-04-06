@@ -5,6 +5,7 @@ keywords: binding,object,objects,volume,volumes,virtual
 summary: 바인딩 개체에는 가상 볼륨의 바인딩에 대한 정보가 들어 있습니다. ListVirtualVolumeBindings API 메소드를 사용하여 모든 가상 볼륨에 대한 이 정보 목록을 검색할 수 있습니다. 
 ---
 = 바인딩(가상 볼륨)
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

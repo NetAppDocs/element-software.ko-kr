@@ -5,6 +5,7 @@ keywords: object,objects,event
 summary: 이벤트 개체에는 API 메서드 호출 중 또는 시스템이 작업을 수행하는 동안 발생하는 이벤트에 대한 세부 정보가 들어 있습니다. 
 ---
 = 이벤트
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

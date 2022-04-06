@@ -5,6 +5,7 @@ keywords: SnapMirror,volume,volumes,break,breaking,relationship,ONTAP,source,sna
 summary: Element 웹 UI에서는 BreakSnapMirrorVolume 메서드를 사용하여 ONTAP 소스 컨테이너와 Element 타겟 볼륨 간의 SnapMirror 관계를 중단합니다. Element SnapMirror 볼륨을 분할하면 데이터를 Element 볼륨으로 복제하는 동안 ONTAP 시스템을 사용할 수 없게 되는 경우에 유용합니다. 스토리지 관리자는 이 기능을 사용하여 Element SnapMirror 볼륨을 제어하고 원격 ONTAP 시스템과의 관계를 끊은 다음 볼륨을 이전 스냅샷으로 되돌릴 수 있습니다. 
 ---
 = BreakSnapMirrorVolume을 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: ssl certificate, SSL, private key, self-signed, cluster, nodes, user-d
 summary: NetApp Element API를 사용하여 클러스터에 있는 스토리지 노드의 기본 SSL 인증서 및 개인 키를 변경할 수 있습니다. 
 ---
 = Element 소프트웨어 기본 SSL 인증서를 변경합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

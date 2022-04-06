@@ -5,6 +5,7 @@ summary: NetApp 하이브리드 클라우드 제어 대시보드에서 스토리
 keywords: netapp, element, hcc, hybrid cloud control, storage, storage performance, capacity 
 ---
 = 하이브리드 클라우드 제어 대시보드에서 스토리지 리소스를 모니터링합니다
+:allow-uri-read: 
 
 
 [role="lead"]

@@ -5,6 +5,7 @@ keywords: session auth
 summary: 세션 기반 인증을 사용하여 사용자 세션을 관리할 수 있습니다. 
 ---
 = 세션 인증 API 메서드
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

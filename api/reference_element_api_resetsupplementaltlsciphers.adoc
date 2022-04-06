@@ -5,6 +5,7 @@ keywords: tls,cipher,reset,supplemental,resetsupplementaltlsciphers,restore,rest
 summary: ResetSupplementalTlsCiphers 메서드를 사용하여 보충 TLS 암호 목록을 기본값으로 복원할 수 있습니다. 전체 클러스터에서 이 방법을 사용할 수 있습니다. 
 ---
 = ResetSupplementalTlsCiphers 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

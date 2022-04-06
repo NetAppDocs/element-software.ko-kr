@@ -5,6 +5,7 @@ keywords: slice drive error, cluster fault, authentication keys
 summary: 경우에 따라 사용자 개입이 필요한 오류가 발생할 수 있습니다. 오류가 발생하면 클러스터 장애가 생성됩니다. 이 슬라이드에는 가장 가능성이 높은 두 가지 사례가 나와 있습니다. 
 ---
 = 액세스할 수 없거나 잘못된 인증 키를 복구합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

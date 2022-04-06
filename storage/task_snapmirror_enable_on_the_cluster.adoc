@@ -5,6 +5,7 @@ keywords: snapmirror, enable, cluster, ui, manually enable
 summary: NetAppElement UI를 통해 클러스터 수준에서 SnapMirror 기능을 수동으로 활성화해야 합니다. 시스템에는 SnapMirror 기능이 기본적으로 비활성화되어 있으며, 새로운 설치 또는 업그레이드의 일부로 자동 활성화되지 않습니다. SnapMirror 기능을 설정하는 것은 일회성 구성 작업입니다. 
 ---
 = 클러스터에서 SnapMirror를 활성화합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

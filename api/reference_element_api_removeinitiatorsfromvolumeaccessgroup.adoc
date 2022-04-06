@@ -5,6 +5,7 @@ keywords: initiators,initiator,volume,access,group,remove,removing,removeinitiat
 summary: RemoveInitialatorsFromVolumeAccessGroup 메서드를 사용하여 지정된 볼륨 액세스 그룹에서 이니시에이터를 제거할 수 있습니다. 
 ---
 = RemoveInitialatorsFromVolumeAccessGroup 을 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: updatebulkvolumestatus,update,updating,bulk,volume,status,job
 summary: UpdateBulkVolumeStatus 메서드를 사용하여 StartBulkVolumeRead 또는 StartBulkVolumeWrite 메서드로 시작한 대량 볼륨 작업의 상태를 업데이트할 수 있습니다. 
 ---
 = UpdateBulkVolumeStatus 를 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

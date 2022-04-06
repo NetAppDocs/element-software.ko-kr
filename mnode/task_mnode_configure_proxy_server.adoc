@@ -5,6 +5,7 @@ summary: 클러스터가 프록시 서버 뒤에 있는 경우 공용 네트워�
 keywords: netapp, Element, mnode, api, management node, add proxy, proxy server 
 ---
 = 프록시 서버를 구성합니다
+:allow-uri-read: 
 
 
 [role="lead"]

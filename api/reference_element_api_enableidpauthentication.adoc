@@ -5,6 +5,7 @@ keywords: IdP,idp,authentication,enable
 summary: EnableIdpAuthentication 메서드를 사용하여 클러스터에 대한 타사 IdP를 사용한 인증 지원을 설정할 수 있습니다. IDP 인증이 활성화되면 LDAP 및 클러스터 관리자가 지원되는 UI를 통해 클러스터에 더 이상 액세스할 수 없으며 활성화된 인증된 세션이 무효화되거나 연결이 해제됩니다. 타사 IdP에서 인증된 사용자만 지원되는 UI를 통해 클러스터에 액세스할 수 있습니다. 
 ---
 = EnableIdpAuthentication 을 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

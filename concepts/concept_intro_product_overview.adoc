@@ -5,6 +5,7 @@ keywords:
 summary: 'SolidFire All-Flash 스토리지 시스템은 단일 스토리지 리소스 풀로 결합된 개별 하드웨어 구성요소\(드라이브 및 노드\)로 구성됩니다. 이 통합 클러스터는 외부 클라이언트에서 사용할 수 있는 단일 스토리지 시스템으로, NetApp Element 소프트웨어로 관리됩니다.' 
 ---
 = 제품 개요
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

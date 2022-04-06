@@ -5,6 +5,7 @@ keywords: fibre channel nodes, fibre channel switch, clients, protcols, iSCSi pr
 summary: SolidFire 파이버 채널 노드는 파이버 채널 클라이언트에 연결할 수 있는 파이버 채널 스위치에 대한 연결을 제공합니다. 파이버 채널 노드는 파이버 채널과 iSCSI 프로토콜 간 프로토콜 변환기 역할을 합니다. 이를 통해 새로운 또는 기존 SolidFire 클러스터에 파이버 채널 연결을 추가할 수 있습니다. 
 ---
 = 파이버 채널 노드
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

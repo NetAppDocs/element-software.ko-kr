@@ -5,6 +5,7 @@ keywords: volumes, fc, luns, access group, assign
 summary: 볼륨 액세스 그룹에서 파이버 채널 볼륨의 LUN 할당을 변경할 수 있습니다. 볼륨 액세스 그룹을 생성할 때 파이버 채널 볼륨 LUN을 할당할 수도 있습니다. 
 ---
 = Fibre Channel 볼륨에 LUN을 할당합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

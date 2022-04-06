@@ -5,6 +5,7 @@ keywords: fibre channel sessions, fc, FC, sessions
 summary: '클러스터에 연결된 파이버 채널\(FC\) 세션을 볼 수 있습니다. 창에 표시할 연결만 포함하도록 정보를 필터링할 수 있습니다.' 
 ---
 = Fibre Channel 세션을 봅니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

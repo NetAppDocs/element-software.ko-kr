@@ -5,6 +5,7 @@ keywords: disable,maintenance,mode
 summary: DisableMaintenanceMode 메서드를 사용하여 스토리지 노드를 유지 관리 모드에서 가져올 수 있습니다. 유지 관리를 완료하고 노드가 온라인 상태가 된 후에만 유지보수 모드를 해제해야 합니다. 
 ---
 = Disable유지보수모드
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,syncjob
 summary: syncJob 개체에는 클러스터에서 실행 중인 클론, 원격 복제 또는 슬라이스 동기화 작업에 대한 정보가 들어 있습니다. 
 ---
 = 동기화 작업
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

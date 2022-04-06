@@ -5,6 +5,7 @@ keywords: volume performance
 summary: 'Element UI의 Reporting(보고) 탭에 있는 Volume Performance(볼륨 성능) 페이지에서 볼륨의 성능 통계를 볼 수 있습니다.' 
 ---
 = 볼륨 성능 세부 정보입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

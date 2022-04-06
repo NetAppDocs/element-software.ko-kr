@@ -5,6 +5,7 @@ keywords: h410s, h610s, hardware installation, hardware maintenance
 summary: All-Flash 스토리지 시스템을 시작하기 전에 스토리지 노드를 올바르게 설치 및 설정해야 합니다. 
 ---
 = H 시리즈 스토리지 노드를 설치합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

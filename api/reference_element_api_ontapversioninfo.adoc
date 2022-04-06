@@ -5,6 +5,7 @@ keywords: object,objects,ontapVersionInfo
 summary: ontapVersionInfo 개체에는 SnapMirror 관계에 있는 ONTAP 클러스터의 API 버전에 대한 정보가 포함되어 있습니다. 요소 웹 UI에서는 GetOntapVersionInfo API 메서드를 사용하여 이 정보를 가져옵니다. 
 ---
 = ontapVersionInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

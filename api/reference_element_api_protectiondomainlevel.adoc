@@ -5,6 +5,7 @@ keywords: object,objects,protectionDomainLevel
 summary: protectionDomainLevel 개체에는 스토리지 클러스터의 현재 허용 범위 및 복구 수준에 대한 정보가 들어 있습니다. 허용 한도 수준은 장애가 발생한 경우 클러스터에서 데이터를 계속 읽고 쓸 수 있는 능력을 나타내며, 복구 수준은 연결된 보호 도메인 유형 내에서 하나 이상의 장애를 자동으로 해결할 수 있는 클러스터의 능력을 나타냅니다. 
 ---
 = 보호도메인레벨
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: user types, account, cluster, access active nodes, per-node UI
 summary: NetApp Element 소프트웨어를 실행하는 스토리지 클러스터에 존재할 수 있는 관리자 계정은 운영 클러스터 관리자 계정과 클러스터 관리자 계정 두 가지입니다. 
 ---
 = 스토리지 클러스터 관리자 계정 유형입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

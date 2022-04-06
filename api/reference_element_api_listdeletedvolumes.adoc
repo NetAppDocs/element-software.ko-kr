@@ -5,6 +5,7 @@ keywords: volume,volumes,marked,delete,deleted,deletion,list,listing,listdeleted
 summary: ListDeletedVolumes 메서드를 사용하여 삭제 및 삭제된 것으로 표시된 볼륨 목록을 시스템에서 검색할 수 있습니다. 
 ---
 = ListDeletedVolumes 를 클릭합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

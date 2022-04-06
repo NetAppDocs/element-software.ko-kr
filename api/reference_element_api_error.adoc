@@ -5,6 +5,7 @@ keywords: objects,object,error
 summary: 메서드 호출 중에 오류가 발생하면 오류 개체에 오류 코드 및 메시지가 포함됩니다. 시스템에서 생성된 모든 오류의 오류 코드는 500입니다. 
 ---
 = 오류
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: system, api, security, get, getting, software encryption at rest
 summary: GetSoftwareEncryptionAtRestInfo 메서드를 사용하면 클러스터에서 유휴 데이터를 암호화하는 데 사용하는 정보를 가져올 수 있습니다. 
 ---
 = GetSoftwareEncryptionAtRestInfo 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

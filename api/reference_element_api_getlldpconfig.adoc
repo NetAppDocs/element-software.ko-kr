@@ -5,6 +5,7 @@ keywords: lldp,config,configuration,get,getting,getlldpinfo,storage
 summary: 'GetLldpConfig 메서드를 사용하여 스토리지 클러스터의 각 노드에 대해 LLDP\(Link Layer Discovery Protocol) 구성을 가져올 수 있습니다.' 
 ---
 = GetLldpConfig 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

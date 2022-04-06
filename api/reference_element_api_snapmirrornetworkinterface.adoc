@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorNetworkInterface
 summary: 'snapMirrorNetworkInterface 개체에는 인터클러스터 논리 인터페이스 \(LIF\)에 대한 정보가 들어 있습니다.' 
 ---
 = snapMirrorNetworkInterface를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

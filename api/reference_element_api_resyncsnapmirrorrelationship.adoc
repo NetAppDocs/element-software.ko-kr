@@ -5,6 +5,7 @@ keywords: SnapMirror,relationship,resync,resyncing,ResyncSnapMirrorRelationship
 summary: Element 소프트웨어 웹 UI에서는 ResyncSnapMirrorRelationship 메서드를 사용하여 소스와 대상 끝점 간의 미러 관계를 설정하거나 다시 설정합니다. 관계를 다시 동기화하면 시스템은 일반 스냅샷 복사본보다 최신 버전인 타겟 볼륨에서 스냅샷을 제거한 다음, 내보낸 스냅샷 복사본으로 공통 스냅샷 복사본을 사용하여 타겟 볼륨을 데이터 보호 볼륨으로 마운트합니다. 
 ---
 = 재동기화 SnapMirror 관계
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

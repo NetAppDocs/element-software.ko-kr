@@ -5,6 +5,7 @@ keywords: cluster pairs, delete
 summary: 쌍에 있는 클러스터 중 하나의 Element UI에서 클러스터 쌍을 삭제할 수 있습니다. 
 ---
 = 클러스터 쌍을 삭제합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

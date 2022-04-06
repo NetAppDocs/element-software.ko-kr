@@ -5,6 +5,7 @@ keywords: volume,volumes,snapshot,snapshots,CreateGroupSnapshot,group,create,cre
 summary: CreateGroupSnapshot 을 사용하여 볼륨 그룹의 시점 복사본을 만들 수 있습니다. 
 ---
 = CreateGroupSnapshot 을 클릭합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

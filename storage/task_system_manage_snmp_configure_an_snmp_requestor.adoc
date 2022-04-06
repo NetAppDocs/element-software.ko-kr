@@ -5,6 +5,7 @@ keywords: SNMP requestor, config, enable, disable, snmp requests
 summary: SNMP 버전 2가 활성화되면 요청자를 활성화 또는 비활성화하고 요청자가 승인된 SNMP 요청을 받도록 구성할 수 있습니다. 
 ---
 = SNMP 요청자를 구성합니다
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

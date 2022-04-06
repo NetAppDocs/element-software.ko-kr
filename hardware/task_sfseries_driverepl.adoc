@@ -5,6 +5,7 @@ keywords: SSDs, drives, replacement, sf-series, nodes
 summary: 장애가 발생한 솔리드 스테이트 드라이브를 교체 드라이브로 핫 스왑할 수 있습니다. 
 ---
 = SF-시리즈 스토리지 노드의 드라이브를 교체합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

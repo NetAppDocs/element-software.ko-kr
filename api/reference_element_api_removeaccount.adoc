@@ -5,6 +5,7 @@ keywords: account,accounts,remove,removing,deleting,delete,purge,volume,volumes,
 summary: RemoveAccount 메서드를 사용하여 기존 계정을 제거할 수 있습니다. 계정을 제거하려면 먼저 DeleteVolume 을 사용하여 계정과 연결된 모든 볼륨을 삭제하고 제거해야 합니다. 계정의 볼륨이 여전히 삭제 보류 중인 경우 RemoveAccount 를 사용하여 계정을 제거할 수 없습니다. 
 ---
 = 계정 제거
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

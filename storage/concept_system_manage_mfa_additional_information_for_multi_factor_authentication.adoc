@@ -5,6 +5,7 @@ keywords: mfa, idp, certificates, api method
 summary: 다중 요소 인증과 관련하여 다음과 같은 주의사항을 염두에 두어야 합니다. 
 ---
 = 다중 요소 인증에 대한 추가 정보
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

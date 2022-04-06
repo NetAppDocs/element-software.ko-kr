@@ -5,6 +5,7 @@ keywords: contact,support
 summary: NetApp 제품에 대한 도움이 필요하거나 문의 사항이나 의견이 있으면 NetApp 지원에 문의하십시오. 
 ---
 = NetApp 지원에 문의하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

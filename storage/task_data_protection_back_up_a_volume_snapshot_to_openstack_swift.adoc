@@ -5,6 +5,7 @@ keywords: volume snapshot, backup, openstack swift S3 object store
 summary: SolidFire 스냅샷을 OpenStack Swift와 호환되는 2차 오브젝트 저장소에 백업할 수 있습니다. 
 ---
 = OpenStack Swift 오브젝트 저장소에 볼륨 스냅샷을 백업합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

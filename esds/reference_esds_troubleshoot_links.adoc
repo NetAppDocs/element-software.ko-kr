@@ -5,6 +5,7 @@ keywords: element, solidfire esds, troubleshooting, KB articles, knowledge base
 summary: SolidFire ESDS 시스템 문제 해결에 도움이 되는 기술 자료 문서 링크를 찾습니다. 
 ---
 = KB 문서 문제 해결 링크
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

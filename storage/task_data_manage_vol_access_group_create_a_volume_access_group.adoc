@@ -5,6 +5,7 @@ keywords: volume access group, create, initiators
 summary: 보안 액세스를 위해 이니시에이터를 볼륨 컬렉션에 매핑하여 볼륨 액세스 그룹을 생성할 수 있습니다. 그런 다음 계정 CHAP 이니시에이터 암호 및 대상 암호를 사용하여 그룹의 볼륨에 대한 액세스 권한을 부여할 수 있습니다. 
 ---
 = 볼륨 액세스 그룹을 생성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

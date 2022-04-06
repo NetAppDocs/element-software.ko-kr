@@ -5,6 +5,7 @@ keywords: solidfire chassis, power supply replacement, sf-series nodes
 summary: 각 SolidFire 섀시에는 전원 이중화를 위한 2개의 전원 공급 장치가 포함되어 있습니다. 전원 공급 장치에 장애가 발생할 경우 가능한 한 빨리 교체하여 섀시에 중복 전원이 있는지 확인해야 합니다. 
 ---
 = 전원 공급 장치를 교체합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

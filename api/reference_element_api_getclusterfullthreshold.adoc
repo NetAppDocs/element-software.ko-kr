@@ -5,6 +5,7 @@ keywords: cluster,get,getting,full,threshold,level,fullness,storage,capacity,get
 summary: GetClusterFullThreshold 메서드를 사용하면 클러스터 전체 수준에 대해 설정된 단계를 볼 수 있습니다. 이 메서드는 클러스터에 대한 모든 충만 메트릭을 반환합니다. 
 ---
 = GetClusterFullThreshold 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volumes, rollback, group snapshot, purge
 summary: 언제든지 볼륨 그룹을 그룹 스냅샷으로 롤백할 수 있습니다. 
 ---
 = 볼륨을 그룹 스냅샷으로 롤백합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

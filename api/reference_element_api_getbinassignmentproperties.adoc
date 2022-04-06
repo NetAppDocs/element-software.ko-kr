@@ -5,6 +5,7 @@ keywords: bin assignment,assignment properties,retrieve assignment properties
 summary: GetBinAssignmentProperties 메서드를 사용하여 데이터베이스에서 bin 할당 속성을 검색할 수 있습니다. 
 ---
 = GetBinAssignmentProperties 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

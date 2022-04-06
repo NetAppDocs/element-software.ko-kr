@@ -5,6 +5,7 @@ keywords: storage,cluster,structure,config,configuration,info,get,getting,getclu
 summary: GetClusterStructure 메서드를 사용하여 현재 스토리지 클러스터 구성 정보를 백업할 수 있습니다. 이 방법을 실행하는 동안 스토리지 클러스터 구성이 변경되면 구성 백업의 내용을 예측할 수 없게 됩니다. 이 데이터를 텍스트 파일에 저장하고 재해 발생 시 다른 클러스터 또는 동일한 클러스터에서 복원할 수 있습니다. 
 ---
 = GetClusterStructure 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

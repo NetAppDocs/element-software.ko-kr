@@ -5,6 +5,7 @@ keywords: cluster,stats,statistics,get,getting,getclusterstats
 summary: GetClusterStats 메서드를 사용하여 클러스터에 대한 상위 수준의 활동 측정을 검색할 수 있습니다. 반환되는 값은 클러스터를 생성한 후 누적됩니다. 
 ---
 = GetClusterStats 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

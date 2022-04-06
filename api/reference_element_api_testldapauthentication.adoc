@@ -5,6 +5,7 @@ keywords: ldap,auth,authentication,test,testing,testldapauthentication
 summary: TestLdapAuthentication 메서드를 사용하여 현재 활성화된 LDAP 인증 설정의 유효성을 검사할 수 있습니다. 구성이 올바른 경우 API 호출은 테스트된 사용자의 그룹 구성원 자격을 반환합니다. 
 ---
 = TestLdapAuthentication을 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

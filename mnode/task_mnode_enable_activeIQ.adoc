@@ -5,6 +5,7 @@ summary: '관리 노드(mNode)를 사용하여 SolidFire All-Flash 스토리지�
 keywords: netapp, Element, api, enable, active iq, activeiq 
 ---
 = Active IQ 및 NetApp 모니터링 활성화
+:allow-uri-read: 
 
 
 [role="lead"]

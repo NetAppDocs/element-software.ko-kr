@@ -5,6 +5,7 @@ keywords: storage nodes, running system utilities, system utilities, network set
 summary: 스토리지 노드의 노드별 UI를 사용하여 지원 번들을 생성 또는 삭제하고, 드라이브의 구성 설정을 재설정하고, 네트워크 또는 클러스터 서비스를 다시 시작할 수 있습니다. 
 ---
 = 노드별 UI를 사용하여 시스템 유틸리티를 실행합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

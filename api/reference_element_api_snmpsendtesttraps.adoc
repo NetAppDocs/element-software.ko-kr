@@ -5,6 +5,7 @@ keywords: snmp,test,send,trap,testing,sending,snmpsendtesttraps
 summary: SnmpSendTestTraps 클러스터에 대한 SNMP 기능을 테스트할 수 있습니다. 이 방법은 클러스터에서 현재 구성된 SNMP 관리자에게 테스트 SNMP 트랩을 보내도록 지시합니다. 
 ---
 = SnmpSendTestTraps를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

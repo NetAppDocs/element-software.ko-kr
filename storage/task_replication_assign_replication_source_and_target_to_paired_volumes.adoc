@@ -5,6 +5,7 @@ keywords: volume pairings, paired volumes, replication source, assign
 summary: 볼륨이 페어링된 후에는 소스 볼륨과 해당 복제 타겟 볼륨을 할당해야 합니다. 복제 소스 또는 타겟은 볼륨 쌍의 볼륨일 수 있습니다. 소스 볼륨을 사용할 수 없는 경우 소스 볼륨으로 전송된 데이터를 원격 타겟 볼륨으로 리디렉션하는 경우에도 이 절차를 사용할 수 있습니다. 
 ---
 = 복제 소스와 타겟을 페어링된 볼륨에 할당합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

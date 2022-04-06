@@ -5,6 +5,7 @@ keywords: individual,fips,feature,support,info,report,get,getting,getnodefipsdri
 summary: GetNodeFipsDrivesReport 메서드를 사용하여 스토리지 클러스터에 있는 단일 노드의 FIPS 140-2 드라이브 암호화 기능 상태를 확인할 수 있습니다. 개별 스토리지 노드에 대해 이 메서드를 실행해야 합니다. 
 ---
 = GetNodeFipsDrivesReport 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

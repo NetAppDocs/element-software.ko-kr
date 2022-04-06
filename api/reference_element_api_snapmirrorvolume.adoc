@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorVolume
 summary: snapMirrorVolume 객체에는 ONTAP 볼륨에 대한 정보가 들어 있습니다. 
 ---
 = snapMirrorVolume(스냅 볼륨)
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

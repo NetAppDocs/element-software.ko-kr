@@ -5,6 +5,7 @@ keywords: fips, security, federal information processing standards, 140-2, nodes
 summary: FIPS 드라이브 기능을 사용하도록 준비하기 위해 일부 드라이브는 FIPS 드라이브를 사용할 수 있고 일부 드라이브는 사용할 수 없는 노드를 혼합하지 말아야 합니다. 
 ---
 = FIPS 드라이브에 노드를 혼합하지 마십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

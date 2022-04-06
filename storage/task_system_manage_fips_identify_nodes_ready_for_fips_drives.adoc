@@ -5,6 +5,7 @@ keywords: fips, security, federal information processing standards, 140-2
 summary: NetApp Element 소프트웨어 GetFipsReport API 메서드를 사용하여 스토리지 클러스터의 모든 노드가 FIPS 드라이브를 지원할 준비가 되었는지 확인해야 합니다. 
 ---
 = 노드가 FIPS 드라이브 기능을 지원할 수 있는지 확인합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

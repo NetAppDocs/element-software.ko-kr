@@ -5,6 +5,7 @@ keywords: backup,target,targets,get,getting,GetBackupTarget
 summary: GetBackupTarget 메서드를 사용하여 만든 특정 백업 대상에 대한 정보를 반환할 수 있습니다. 
 ---
 = GetBackupTarget 을 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

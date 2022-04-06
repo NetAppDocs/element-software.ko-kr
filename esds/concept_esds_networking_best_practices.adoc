@@ -5,6 +5,7 @@ keywords: solidfire esds, software-defined storage, networks, linux host routing
 summary: SolidFire ESDS를 설치하기 전에 RHEL을 실행하는 스토리지 노드에 필요한 네트워크를 설정해야 합니다. 사용자 환경의 네트워크 라우팅에 대한 책임은 사용자에게 있습니다. 프레임워크로 제공되는 모범 사례를 사용할 수 있습니다. 
 ---
 = 네트워크 구성을 위한 고려 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

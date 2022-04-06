@@ -5,6 +5,7 @@ keywords:
 summary: Active IQ는 클러스터 전체 데이터의 기간별 뷰를 지속적으로 업데이트하는 웹 기반 툴입니다. 특정 이벤트, 임계값 또는 메트릭에 대한 알림을 설정할 수 있습니다. Active IQ를 사용하면 시스템 성능과 용량을 모니터링할 수 있을 뿐만 아니라 클러스터 상태에 대한 최신 정보를 유지할 수 있습니다. 
 ---
 = SolidFire Active IQ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

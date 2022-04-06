@@ -5,6 +5,7 @@ keywords: active,sessions,authentication session,list
 summary: ListActiveAuthSessions 메서드를 사용하여 모든 활성 인증된 세션을 나열할 수 있습니다. 관리 액세스 권한이 있는 사용자만 이 메서드를 호출할 수 있습니다. 
 ---
 = ListActiveAuthSessions
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume access groups, initiators, working with, chap, fc, iscsi
 summary: iSCSI 이니시에이터 또는 Fibre Channel 이니시에이터를 사용하여 볼륨 액세스 그룹 내에 정의된 볼륨에 액세스할 수 있습니다. 
 ---
 = 볼륨 액세스 그룹 및 이니시에이터와 작업합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

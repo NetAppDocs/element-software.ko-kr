@@ -5,6 +5,7 @@ keywords: ontap,version,info,information,get,getting,api,support,getontapversion
 summary: 요소 웹 UI에서는 GetOntapVersionInfo 를 사용하여 ONTAP 클러스터에서 SnapMirror 관계에 있는 API 버전 지원에 대한 정보를 가져옵니다. 
 ---
 = GetOntapVersionInfo 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

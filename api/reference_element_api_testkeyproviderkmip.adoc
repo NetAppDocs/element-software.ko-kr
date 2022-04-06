@@ -5,6 +5,7 @@ keywords: KMIP,key provider,testing,test
 summary: 'TestKeyProviderKmip 메서드를 사용하여 지정된 키 관리 상호 운용성 프로토콜\(KMIP\) 키 공급자에 연결할 수 있고 정상적으로 작동하는지 테스트할 수 있습니다.' 
 ---
 = TestKeyProviderKmip 을 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

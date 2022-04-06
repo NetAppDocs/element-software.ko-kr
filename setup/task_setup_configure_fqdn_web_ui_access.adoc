@@ -5,6 +5,7 @@ keywords: netapp, element, fqdn, ui, access, web, administration
 summary: 시스템 FQDN 웹 UI 액세스를 구성, 제거 및 해결하는 방법에 대해 알아봅니다. 
 ---
 = 정규화된 도메인 이름 웹 UI 액세스를 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

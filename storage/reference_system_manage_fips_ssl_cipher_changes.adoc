@@ -5,6 +5,7 @@ keywords: fips, ssl ciphers, 140-2, encryption algorithms
 summary: SSL 암호화는 호스트가 보안 통신을 설정하는 데 사용하는 암호화 알고리즘입니다. FIPS 140-2 모드가 활성화된 경우 Element 소프트웨어가 지원하는 표준 암호와 비표준 암호가 있습니다. 
 ---
 = SSL 암호
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

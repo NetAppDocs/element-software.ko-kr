@@ -5,6 +5,7 @@ keywords: volume,volumes,purging,purge,deleted,purgedeletedvolume
 summary: PurgeDeletedVolume 메서드를 사용하여 삭제된 볼륨을 즉시 영구적으로 제거할 수 있습니다. 삭제하기 전에 DeleteVolume 을 사용하여 볼륨을 삭제해야 합니다. 
 ---
 = PurgeDeletedVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

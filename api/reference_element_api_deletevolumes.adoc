@@ -5,6 +5,7 @@ keywords: volumes,volume,delete,deleting,multiple,DeleteVolumes
 summary: 'DeleteVolumes 메서드를 사용하여 여러 활성 볼륨을 삭제하도록 표시할 수 있습니다. 이 표시가 되면 정리 간격이 경과하면 볼륨이 \(영구적으로 삭제됨\) 제거됩니다.' 
 ---
 = DeleteVolumes 를 클릭합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

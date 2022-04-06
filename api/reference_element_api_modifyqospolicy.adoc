@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,qos,policy,policies,modi
 summary: ModifyQoSPolicy 메서드를 사용하여 시스템의 기존 QoS 정책을 수정할 수 있습니다. 
 ---
 = 수정 서비스 정책
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: failback scenarios, snapmirror, dr, disaster recovery
 summary: 'SnapMirror 재해 복구 기능은 두 가지 장애 복구 시나리오에서 설명됩니다. 이 경우 원래 관계가 \(중단됨\)에 페일오버되었다고 가정합니다.' 
 ---
 = SnapMirror 페일백 시나리오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

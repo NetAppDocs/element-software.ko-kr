@@ -5,6 +5,7 @@ keywords: 'network setup, setup network, switch requirements, port requirements,
 summary: SolidFire 시스템에 대한 네트워크 설정은 스위치 및 포트 요구 사항으로 구성됩니다. 이러한 구현 방법은 시스템에 따라 다릅니다. 
 ---
 = 네트워킹
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

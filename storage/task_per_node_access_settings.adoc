@@ -5,6 +5,7 @@ keywords: nodes, accessing node settings, accessing node settings with per-node 
 summary: 관리 노드 IP를 입력하고 인증한 후 노드별 사용자 인터페이스에서 네트워크 설정, 클러스터 설정, 시스템 테스트 및 유틸리티에 액세스할 수 있습니다. 
 ---
 = 노드별 UI를 사용하여 노드별 설정에 액세스합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

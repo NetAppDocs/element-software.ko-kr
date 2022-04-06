@@ -5,6 +5,7 @@ keywords: SnapMirror,endpoints,create,creating,volume,volumes,CreateSnapMirrorVo
 summary: Element 웹 UI에서는 CreateSnapMirrorVolume 메서드를 사용하여 원격 ONTAP 시스템에 볼륨을 만듭니다. 
 ---
 = CreateSnapMirror 볼륨
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

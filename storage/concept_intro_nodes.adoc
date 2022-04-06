@@ -5,6 +5,7 @@ keywords: sf-series nodes, nodes, block storage, storage nodes, fibre channel no
 summary: 노드는 블록 스토리지로 액세스할 클러스터로 그룹화된 개별 하드웨어 구성 요소입니다. SolidFire 스토리지 시스템에는 스토리지 노드와 Fibre Channel 노드의 두 가지 노드 유형이 있습니다. 
 ---
 = 노드
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

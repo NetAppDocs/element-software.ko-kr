@@ -5,6 +5,7 @@ keywords: data protection, protect your data, snapshots, replication, back up
 summary: NetApp Element 소프트웨어를 사용하면 개별 볼륨 또는 볼륨 그룹에 대한 스냅샷, Element에서 실행되는 클러스터와 볼륨 간 복제, ONTAP 시스템에 복제 등과 같은 기능을 사용하여 데이터를 다양한 방법으로 보호할 수 있습니다. 
 ---
 = 데이터 보호
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

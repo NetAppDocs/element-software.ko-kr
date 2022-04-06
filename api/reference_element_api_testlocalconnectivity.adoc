@@ -5,6 +5,7 @@ keywords: test,testing,local,connectivity,TestLocalConnectivity
 summary: 'TestLocalConnectivity 메서드를 사용하여 활성 클러스터에 있는 각 노드의 CIP(Cluster IP\)를 Ping할 수 있습니다.' 
 ---
 = TestLocalConnectivity를 클릭합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

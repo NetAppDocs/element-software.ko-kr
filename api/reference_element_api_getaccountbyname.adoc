@@ -5,6 +5,7 @@ keywords: accounts,account,name,username,GetAccountByName
 summary: GetAccountByName 을 사용하여 사용자 이름을 지정하여 특정 계정에 대한 세부 정보를 가져올 수 있습니다. 
 ---
 = GetAccountByName입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

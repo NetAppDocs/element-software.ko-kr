@@ -5,6 +5,7 @@ keywords: storage container, create
 summary: Element UI에서 스토리지 컨테이너를 생성하고 vCenter에서 검색할 수 있습니다. VVOL 지원 가상 머신 프로비저닝을 시작하려면 하나 이상의 스토리지 컨테이너를 생성해야 합니다. 
 ---
 = 스토리지 컨테이너를 생성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

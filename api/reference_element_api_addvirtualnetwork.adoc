@@ -5,6 +5,7 @@ keywords: addvirtualnetwork,cluster,add,adding,virtual,network
 summary: AddVirtualNetwork 메서드를 사용하여 새 가상 네트워크를 클러스터 구성에 추가할 수 있습니다. 
 ---
 = AddVirtualNetwork 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

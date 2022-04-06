@@ -5,6 +5,7 @@ keywords: network,config,configuration,get,getting,getnetworkconfig
 summary: GetNetworkConfig 메서드를 사용하여 노드의 네트워크 구성 정보를 표시할 수 있습니다. 
 ---
 = GetNetworkConfig 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

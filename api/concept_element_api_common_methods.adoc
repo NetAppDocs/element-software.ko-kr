@@ -5,6 +5,7 @@ keywords: common,methods
 summary: 일반적인 방법은 스토리지 클러스터, API 자체 또는 지속적인 API 작업에 대한 정보를 검색하는 데 사용되는 방법입니다. 
 ---
 = 일반적인 방법
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

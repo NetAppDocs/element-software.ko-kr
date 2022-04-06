@@ -5,6 +5,7 @@ keywords: virtual,network,networks,listing,list,listvirtualnetworks
 summary: ListVirtualNetworks 메서드를 사용하여 클러스터에 대해 구성된 모든 가상 네트워크를 나열할 수 있습니다. 
 ---
 = 목록가상네트워크
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

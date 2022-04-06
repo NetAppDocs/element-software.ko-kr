@@ -5,6 +5,7 @@ keywords: solidfire esds, host network, networking
 summary: SolidFire ESDS를 설치하기 전에 제공된 예와 팁을 사용하여 호스트 네트워킹을 구성합니다. 
 ---
 = 호스트 네트워킹을 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

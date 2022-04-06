@@ -5,6 +5,7 @@ keywords: object,objects,volume
 summary: 볼륨 개체에는 페어링되지 않았거나 페어링된 볼륨에 대한 구성 정보가 포함되어 있습니다. 여기에는 런타임 또는 사용 정보가 포함되지 않으며 가상 볼륨에 대한 정보가 포함되어 있지 않습니다. 
 ---
 = 볼륨
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

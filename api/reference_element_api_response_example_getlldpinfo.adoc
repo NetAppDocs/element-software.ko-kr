@@ -5,6 +5,7 @@ keywords: response,example,getlldpinfo
 summary: GetLldpInfo 메서드는 다음 예제와 유사한 응답을 반환합니다. 
 ---
 = GetLldpInfo 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

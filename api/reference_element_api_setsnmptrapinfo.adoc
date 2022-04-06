@@ -5,6 +5,7 @@ keywords: snmp,trap,information,info,setting,set,setsnmptrapinfo
 summary: 'SetSnmpTrapInfo 메서드를 사용하여 클러스터 SNMP 알림 \(트랩\)의 생성을 설정 및 해제하고 알림을 수신하는 호스트 세트를 지정할 수 있습니다. 각 SetSnmpTrapInfo 메서드 호출로 전달하는 값은 이전 호출에 설정된 모든 값을 대체합니다.' 
 ---
 = SetSnmpTrapInfo 를 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

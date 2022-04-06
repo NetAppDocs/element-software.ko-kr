@@ -5,6 +5,7 @@ keywords: KMIP,key server,modifying,modify,change,edit
 summary: 'ModifyKeyServerKmip 메서드를 사용하여 기존 키 관리 상호 운용성 프로토콜\(KMIP\) 키 서버를 지정된 특성으로 수정할 수 있습니다. 유일하게 필요한 매개 변수는 keyServerID이지만 keyServerID만 포함하는 요청은 아무런 조치를 취하지 않고 오류가 발생하지 않습니다. 지정하는 다른 모든 매개 변수는 키 서버의 기존 값을 지정된 keyServerID로 바꿉니다. 작동 중에 키 서버가 제대로 작동하는지 확인하기 위해 키 서버에 접촉합니다. kmipKeyServerHostnames 매개 변수를 사용하여 호스트 이름 또는 IP 주소를 여러 개 제공할 수 있지만 키 서버가 클러스터 구성에 있는 경우에만 가능합니다.' 
 ---
 = ModifyKeyServerKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

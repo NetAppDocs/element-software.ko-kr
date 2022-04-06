@@ -5,6 +5,7 @@ keywords: set up storage, storage system, set up, configure node, configuring st
 summary: 환경에 맞게 스토리지 시스템을 설정하는 방법에 대해 알아보십시오. 
 ---
 = 스토리지 설정
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

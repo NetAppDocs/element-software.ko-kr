@@ -5,6 +5,7 @@ keywords: rollbacktosnapshot,snapshot,creating,create,roll,back,rollback,roll ba
 summary: RollbackToSnapshot 메서드를 사용하여 활성 볼륨 이미지의 기존 스냅샷을 만들 수 있습니다. 이 방법은 기존 스냅샷에서 새 스냅샷을 생성합니다. 
 ---
 = RollbackToSnapshot 을 클릭합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

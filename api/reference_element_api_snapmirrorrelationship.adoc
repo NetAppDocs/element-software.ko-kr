@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorRelationship
 summary: snapMirrorRelationship 개체에는 Element 볼륨과 ONTAP 볼륨 간의 SnapMirror 관계에 대한 정보가 들어 있습니다. 
 ---
 = snapMirrorRelationship
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: network,config,configuration,reset,restetting,factory,default,resetnet
 summary: ResetNetworkConfig 메서드를 사용하면 개별 노드의 네트워크 구성 문제를 해결할 수 있습니다. 이 방법은 개별 노드의 네트워크 구성을 공장 출하시 기본 설정으로 재설정합니다. 
 ---
 = ResetNetworkConfig 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

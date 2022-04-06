@@ -5,6 +5,7 @@ keywords: virtual volumes, enable, functionality on the cluster, vvols
 summary: 'NetApp Element 소프트웨어를 통해 VVol(vSphere Virtual Volumes) 기능을 수동으로 활성화해야 합니다. Element 소프트웨어 시스템에는 기본적으로 VVOL 기능이 비활성화되어 있으며 새 설치 또는 업그레이드의 일부로 자동 활성화되지 않습니다. VVOL 기능을 활성화하는 것은 일회성 구성 작업입니다.' 
 ---
 = 가상 볼륨을 설정합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

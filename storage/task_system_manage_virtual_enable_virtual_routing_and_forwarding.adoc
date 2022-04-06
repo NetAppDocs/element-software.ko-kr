@@ -5,6 +5,7 @@ keywords: virtual routing, forwarding, enable, vrf, storage networks, create a v
 summary: '가상 라우팅 및 포워딩\(VRF\)을 활성화할 수 있습니다. 이 기능을 사용하면 라우팅 테이블의 여러 인스턴스가 라우터에 존재하고 동시에 작동할 수 있습니다. 이 기능은 스토리지 네트워크에서만 사용할 수 있습니다.' 
 ---
 = 가상 라우팅 및 전달을 활성화합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: NetApp 엔지니어링에서는 GetRawStats API 메서드를 사용하여 새로운 기능을 테스트합니다. GetRawStats 에서 반환된 데이터는 문서화되지 않으며 자주 변경되며 정확하다는 보장은 없습니다. 성능 데이터를 수집하거나 Element 소프트웨어를 실행하는 스토리지 클러스터와 기타 관리 통합을 위해 GetRawStats를 사용해서는 안 됩니다. 
 ---
 = GetRawStats 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

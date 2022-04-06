@@ -5,6 +5,7 @@ keywords: volume,volumes,virtual,get,getting,count,GetVirtualVolumeCount
 summary: GetVirtualVolumeCount 메서드를 사용하여 현재 시스템에 있는 가상 볼륨의 수를 검색할 수 있습니다. 
 ---
 = GetVirtualVolumeCount
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

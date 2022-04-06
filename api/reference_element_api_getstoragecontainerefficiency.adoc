@@ -5,6 +5,7 @@ keywords: volume,virtual,container,volumes,get,getting,efficiency,vvol,GetStorag
 summary: GetStorageContainerEfficiency 메서드를 사용하여 가상 볼륨 저장소 컨테이너에 대한 효율성 정보를 검색할 수 있습니다. 
 ---
 = GetStorageContainerEfficiency
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

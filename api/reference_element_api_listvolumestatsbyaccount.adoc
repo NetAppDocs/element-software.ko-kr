@@ -5,6 +5,7 @@ keywords: volumes,volume,stats,list,listing,account,listvolumestatsbyaccount,act
 summary: ListVolumeStatsByAccount 메서드를 사용하여 모든 계정에 대한 상위 수준의 볼륨 활동 측정을 나열할 수 있습니다. 값은 계정이 소유한 모든 볼륨에서 합산됩니다. 
 ---
 = ListVolumeStatsByAccount
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

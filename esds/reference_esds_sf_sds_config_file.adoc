@@ -5,6 +5,7 @@ keywords: element, solidfire esds, hardware components, configuration file
 summary: 모든 노드에는 SF_SDS_config.YAML 파일이 있으며, 여기에는 SolidFire ESDS 서비스에서 사용하도록 지정한 하드웨어 목록이 포함됩니다. 드라이브를 교체한 후 드라이브를 교체한 노드에 대해 이 파일에 교체 드라이브 정보를 추가해야 합니다. 이 파일은 /opt/sf/에 저장됩니다. 이 파일에는 노드의 드라이브에 대한 모든 정보가 포함됩니다. 새 드라이브를 추가할 때마다 이 파일에 새 드라이브의 세부 정보를 입력해야 합니다. 
 ---
 = SF_SDS_config.YAML 파일의 내용입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

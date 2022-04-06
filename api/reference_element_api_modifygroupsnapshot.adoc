@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,group,snapshot,modifygro
 summary: 'ModifyGroupSnapshot 을 사용하여 스냅샷 그룹의 속성을 변경할 수 있습니다. 이 방법을 사용하여 읽기/쓰기\(소스\) 볼륨에서 생성된 스냅샷을 타겟 스토리지 시스템에 원격으로 복제할 수도 있습니다.' 
 ---
 = ModifyGroupSnapshot 을 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

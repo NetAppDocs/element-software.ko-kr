@@ -5,6 +5,7 @@ keywords: virtual networks, manage, traffic, clients, vlan tagging
 summary: SolidFire 스토리지의 가상 네트워킹을 사용하면 별도의 논리 네트워크에 있는 여러 클라이언트 간의 트래픽을 하나의 클러스터에 연결할 수 있습니다. 클러스터에 대한 연결은 VLAN 태그 지정을 사용하여 네트워킹 스택에서 분리됩니다. 
 ---
 = 가상 네트워크를 관리합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

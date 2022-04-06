@@ -5,6 +5,7 @@ keywords: volume,volumes,delete,deleting,DeleteVolume
 summary: 'DeleteVolume 메서드를 사용하여 삭제할 활성 볼륨을 표시할 수 있습니다. 이 표시가 되면 정리 간격이 경과하면 볼륨이 \(영구적으로 삭제됨\) 제거됩니다.' 
 ---
 = DeleteVolume(삭제 볼륨
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

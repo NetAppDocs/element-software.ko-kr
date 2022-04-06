@@ -5,6 +5,7 @@ keywords: hardware,sensor,config,configuration,get,getting,getipmiconfig
 summary: GetIpmiConfig 메서드를 사용하여 노드에 있는 센서에서 하드웨어 센서 정보를 검색할 수 있습니다. 
 ---
 = GetIpmiConfig 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

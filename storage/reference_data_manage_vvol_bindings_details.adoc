@@ -5,6 +5,7 @@ keywords: bindings details, vvols, for each virtual volume, endpoints,
 summary: VVol 탭의 바인딩 페이지에서는 각 가상 볼륨에 대한 바인딩 정보를 제공합니다. 
 ---
 = 바인딩 세부 정보
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

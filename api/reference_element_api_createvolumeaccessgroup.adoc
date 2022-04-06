@@ -5,6 +5,7 @@ keywords: volume,access,groups,group,create,creating,CreateVolumeAccessGroup
 summary: CreateVolumeAccessGroup을 사용하여 새 볼륨 액세스 그룹을 생성할 수 있습니다. 볼륨 액세스 그룹을 생성할 때 이름을 지정하고 이니시에이터 및 볼륨을 선택적으로 입력할 수 있습니다. 
 ---
 = CreateVolumeAccessGroup 을 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

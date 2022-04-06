@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,cluster,full,fullness,th
 summary: ModifyClusterFullThreshold 메서드를 사용하면 스토리지 클러스터가 특정 용량 활용도에 접근할 때 시스템에서 이벤트를 생성하는 수준을 변경할 수 있습니다. 임계값 설정을 사용하여 시스템에서 경고를 생성하기 전에 허용되는 사용 블록 스토리지 양을 나타낼 수 있습니다. 
 ---
 = ModifyClusterFullThreshold를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

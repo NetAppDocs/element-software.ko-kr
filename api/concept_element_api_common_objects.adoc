@@ -5,6 +5,7 @@ keywords: common,objects
 summary: Element 소프트웨어 API는 JSON 개체를 사용하여 조직화된 데이터 개념을 나타냅니다. 이러한 API 메서드 중 다수는 데이터 입력 및 출력에 이러한 객체를 사용합니다. 이 단원에서는 일반적으로 사용되는 이러한 개체를 설명합니다. 단일 메서드에서만 사용되는 개체는 이 섹션 대신 해당 메서드로 문서화됩니다. 
 ---
 = 공통 개체
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: request,endpoints
 summary: 'API\(스토리지 클러스터, 스토리지 클러스터 생성 및 노드당\)에는 세 가지 유형의 요청 엔드포인트가 사용됩니다. 항상 Element 소프트웨어 버전에서 지원하는 최신 끝점을 사용해야 합니다.' 
 ---
 = 엔드포인트 요청
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

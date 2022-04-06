@@ -5,6 +5,7 @@ keywords: objects,object,clusterConfig
 summary: clusterconfig 개체는 노드가 클러스터와 통신하는 데 사용하는 정보를 반환합니다. 
 ---
 = 클러스터 구성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

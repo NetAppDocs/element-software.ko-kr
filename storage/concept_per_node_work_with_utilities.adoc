@@ -5,6 +5,7 @@ keywords: troubleshooting network issues, using per-node utilities, storage node
 summary: NetApp Element 소프트웨어 UI의 표준 모니터링 도구가 문제 해결을 위한 충분한 정보를 제공하지 않는 경우 노드별 유틸리티를 사용하여 네트워크 문제를 해결할 수 있습니다. 노드별 유틸리티는 노드 간 또는 관리 노드와의 네트워크 문제를 해결하는 데 도움이 되는 특정 정보와 도구를 제공합니다. 
 ---
 = 스토리지 노드용 노드별 유틸리티 작업
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

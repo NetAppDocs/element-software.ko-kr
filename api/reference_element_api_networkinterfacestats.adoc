@@ -5,6 +5,7 @@ keywords: object,objects,stats,statistics,networkInterfacestats
 summary: networkInterfaceStats 개체에는 스토리지 노드의 개별 네트워크 인터페이스에 대한 네트워크 통계 및 오류 정보가 포함되어 있습니다. 
 ---
 = 네트워크 인터페이스 통계
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

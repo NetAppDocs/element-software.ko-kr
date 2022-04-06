@@ -5,6 +5,7 @@ keywords: QoS,policy,policies,delete,deleting,DeleteQoSPolicy
 summary: DeleteQoSPolicy 메서드를 사용하여 시스템에서 QoS 정책을 삭제할 수 있습니다. 이 정책으로 생성 또는 수정된 모든 볼륨의 QoS 설정은 영향을 받지 않습니다. 
 ---
 = 삭제 QoS 정책
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

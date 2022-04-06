@@ -5,6 +5,7 @@ keywords: ssl,cert,certificate,get,getting,getnodesslcertificate,active
 summary: GetNodeSSLCertificate 메서드를 사용하여 관리 노드에서 현재 활성 상태인 SSL 인증서를 검색할 수 있습니다. 
 ---
 = GetNodeSSLCertificate를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

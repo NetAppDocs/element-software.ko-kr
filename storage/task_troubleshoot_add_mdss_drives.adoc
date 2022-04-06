@@ -5,6 +5,7 @@ keywords: mdss, add, multi-drive slice service
 summary: '슬롯 2의 블록 드라이브를 슬라이스 드라이브로 변환하여 SolidFire 노드에 두 번째 메타데이터 드라이브를 추가할 수 있습니다. 이 작업은 다중 드라이브 슬라이스 서비스\(MDSS\) 기능을 활성화하여 수행합니다. 이 기능을 활성화하려면 NetApp 지원 팀에 문의해야 합니다.' 
 ---
 = MDSS 드라이브를 추가합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

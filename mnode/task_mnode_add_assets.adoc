@@ -5,6 +5,7 @@ summary: REST API UI를 사용하여 관리 노드 구성에 컨트롤러 자산
 keywords: netapp, mnode, management node, rest api, Element 
 ---
 = 관리 노드에 컨트롤러 자산을 추가합니다
+:allow-uri-read: 
 
 
 [role="lead"]

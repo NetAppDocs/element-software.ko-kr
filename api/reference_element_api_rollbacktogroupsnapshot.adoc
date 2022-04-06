@@ -5,6 +5,7 @@ keywords: rollbacktogroupsnapshot,snapshot,group,individual,creating,create,roll
 summary: RollbackToGroupSnapshot을 사용하여 스냅샷 그룹의 모든 개별 볼륨을 각 볼륨의 개별 스냅샷으로 롤백할 수 있습니다. 
 ---
 = RollbackToGroupSnapshot 을 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

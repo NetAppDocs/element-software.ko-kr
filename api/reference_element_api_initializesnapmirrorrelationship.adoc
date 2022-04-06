@@ -5,6 +5,7 @@ keywords: snapmirror,relationship,relationships,initialize,initializing,initiali
 summary: Element 소프트웨어 웹 UI에서는 InitializeSnapMirrorRelationship 메서드를 사용하여 클러스터 간에 초기 기본 전송을 수행하여 SnapMirror 관계의 대상 볼륨을 초기화합니다. 
 ---
 = InitializeSnapMirrorRelationship 을 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

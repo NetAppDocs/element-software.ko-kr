@@ -5,6 +5,7 @@ keywords: access group details, view, view details, initiators
 summary: 연결된 볼륨 및 이니시에이터와 같은 개별 액세스 그룹의 세부 정보를 그래픽 형식으로 볼 수 있습니다. 
 ---
 = 개별 액세스 그룹 세부 정보를 봅니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

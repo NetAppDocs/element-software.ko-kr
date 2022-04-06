@@ -5,6 +5,7 @@ keywords: solidfire esds, installing solidfire esds, ansible role
 summary: Ansible과 같은 자동화 툴을 사용하여 SolidFire ESDS를 설치할 수 있습니다. Ansible에 대해 잘 알고 있다면 SolidFire ESDS 설치 및 클러스터 생성과 같은 여러 작업이 결합된 Ansible 플레이북을 하나 만들 수 있습니다. 
 ---
 = Ansible을 사용하여 SolidFire ESDS를 설치합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

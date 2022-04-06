@@ -5,6 +5,7 @@ keywords: target volume, create, read, write access
 summary: 복제 프로세스에는 소스 볼륨과 타겟 볼륨의 두 엔드포인트가 포함됩니다. 타겟 볼륨을 생성할 때 볼륨이 복제 중에 데이터를 수락하도록 읽기/쓰기 모드로 자동 설정됩니다. 
 ---
 = 읽기 또는 쓰기 권한이 있는 타겟 볼륨을 생성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

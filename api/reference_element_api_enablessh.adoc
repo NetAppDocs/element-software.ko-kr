@@ -5,6 +5,7 @@ keywords: SSH,enable,enabling,single,node,EnableSSH
 summary: EnableSsh 메서드를 사용하여 단일 노드에 대해 SSH 서비스를 활성화할 수 있습니다. 이 방법은 클러스터 전체의 SSH 시간 제한 기간에 영향을 주지 않으며 글로벌 SSH 시간 초과로 인해 SSH를 사용하지 않도록 설정한 노드도 제외하지 않습니다. 
 ---
 = 서버
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

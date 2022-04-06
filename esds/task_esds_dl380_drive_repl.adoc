@@ -5,6 +5,7 @@ keywords: solidfire esds, replace drive, proactive drive replacement, cache driv
 summary: SolidFire ESDS 클러스터의 메타데이터 드라이브 또는 블록 드라이브를 사전에 교체하려면 이 절차를 수행하십시오. Element UI Cluster > Drives 페이지에는 드라이브 마모 정보가 표시됩니다. 
 ---
 = HPE DL380의 드라이브를 교체합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

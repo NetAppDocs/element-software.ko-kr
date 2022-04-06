@@ -5,6 +5,7 @@ keywords: CreateSchedule,create,creating,schedule,schedules,snapshot,snapshots,s
 summary: CreateSchedule 을 사용하여 정의된 간격으로 볼륨의 자동 스냅샷을 예약할 수 있습니다. 
 ---
 = 생성 일정 을 클릭합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

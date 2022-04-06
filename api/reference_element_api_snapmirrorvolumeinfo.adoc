@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorVolumeInfo
 summary: snapMirrorVolumeInfo 개체에는 이름 및 유형과 같은 SnapMirror 관계의 볼륨 위치에 대한 정보가 들어 있습니다. 
 ---
 = snapMirrorVolumeInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

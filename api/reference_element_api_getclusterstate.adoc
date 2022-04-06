@@ -5,6 +5,7 @@ keywords: cluster,state,getting,get,getclusterstate
 summary: GetClusterState API 메서드를 사용하여 노드가 클러스터의 일부인지 여부를 나타낼 수 있습니다. 
 ---
 = GetClusterState 를 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

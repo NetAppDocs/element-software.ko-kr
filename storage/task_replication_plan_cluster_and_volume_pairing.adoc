@@ -5,6 +5,7 @@ keywords: cluster, volume pairing, plan for, real-time replication
 summary: 실시간 원격 복제를 수행하려면 Element 소프트웨어를 실행하는 두 스토리지 클러스터를 페어링하고, 각 클러스터에서 볼륨을 페어링하고, 복제를 확인해야 합니다. 복제가 완료되면 볼륨 관계를 삭제해야 합니다. 
 ---
 = 실시간 복제를 위해 클러스터 및 볼륨 페어링을 계획합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

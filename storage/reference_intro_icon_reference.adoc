@@ -5,6 +5,7 @@ keywords: icons, element interface, actions, system resources, quick reference
 summary: NetApp Element 소프트웨어 인터페이스에는 시스템 리소스에 대해 수행할 수 있는 작업을 나타내는 아이콘이 표시됩니다. 
 ---
 = Element 인터페이스의 아이콘입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

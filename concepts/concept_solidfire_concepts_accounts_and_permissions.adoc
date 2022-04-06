@@ -5,6 +5,7 @@ keywords: solidfire, element, cluster admin, storage, account, authoritative clu
 summary: 시스템의 스토리지 리소스를 관리하고 액세스할 수 있도록 하려면 시스템 리소스에 대한 계정을 설정해야 합니다. 
 ---
 = 계정 및 권한
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

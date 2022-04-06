@@ -5,6 +5,7 @@ keywords: IdP,idp,cluster,admin,add,adding,addIdpclusteradmin
 summary: 'AddIpdClusterAdmin 메서드를 사용하여 타사 ID 공급자\(IDP\)에서 인증한 클러스터 관리자 사용자를 추가할 수 있습니다. IDP 클러스터 관리자 계정은 사용자와 연결된 IDP의 SAML 어설션 내에 제공된 SAML 속성 값 정보를 기반으로 구성됩니다. 사용자가 IdP를 사용하여 성공적으로 인증했으며 SAML 어설션 내에 SAML 속성 문이 여러 IDP 클러스터 관리자 계정과 일치하는 경우 사용자는 해당 IDP 클러스터 관리자 계정의 결합된 액세스 레벨을 갖게 됩니다.' 
 ---
 = AddIdpClusterAdmin 을 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

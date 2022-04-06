@@ -5,6 +5,7 @@ keywords: object,objects,QoSPolicy,QoS,policy,policies
 summary: QoSPolicy 객체에는 Element 소프트웨어를 실행하는 스토리지 클러스터의 QoS 정책에 대한 정보가 포함되어 있습니다. 
 ---
 = QoSPolicy를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

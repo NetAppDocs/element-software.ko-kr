@@ -5,6 +5,7 @@ keywords: cluster,getting,bootstrap,information,node,GetBootstrapConfig
 summary: GetBootstrapConfig 메서드를 사용하여 부트스트랩 구성 파일에서 클러스터 및 노드 정보를 가져올 수 있습니다. 개별 노드에 대해 이 API 메소드를 사용하여 클러스터에 가입합니다. 이 메서드가 반환하는 정보는 클러스터를 생성할 때 클러스터 구성 인터페이스에서 사용됩니다. 
 ---
 = GetBootstrapConfig 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

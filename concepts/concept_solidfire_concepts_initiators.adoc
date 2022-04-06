@@ -5,6 +5,7 @@ keywords: netapp, element, initiator, storage volume, element volume, access gro
 summary: 이니시에이터에 대한 정보와 이러한 이니시에이터를 사용하여 볼륨 액세스 그룹의 스토리지에 대한 액세스를 허용하는 방법에 대해 알아봅니다. 
 ---
 = 이니시에이터
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

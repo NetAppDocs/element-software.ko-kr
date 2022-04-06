@@ -5,6 +5,7 @@ keywords: nodes, manage, cluster, capacity rule, pairs, stranded nodes
 summary: 클러스터 탭의 노드 페이지에서 SolidFire 스토리지 및 파이버 채널 노드를 관리할 수 있습니다. 
 ---
 = 노드 관리
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: cluster switch configuration, best practices for switch configuration,
 summary: NetApp Element 소프트웨어 시스템에는 최적의 스토리지 성능을 위한 특정 스위치 요구사항 및 모범 사례가 있습니다. 
 ---
 = Element 소프트웨어를 실행하는 클러스터의 스위치 구성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

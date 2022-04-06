@@ -5,6 +5,7 @@ keywords: element, security, clusters, protection, qos
 summary: Element 소프트웨어와 관련된 기본 개념을 배웁니다. 
 ---
 = 개념
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

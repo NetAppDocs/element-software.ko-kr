@@ -5,6 +5,7 @@ keywords: lldp,config,configure,set,setting,setlldpconfig
 summary: 'SetLldpConfig 메서드를 사용하여 스토리지 클러스터에 대한 LLDP(Link Layer Discovery Protocol) 설정을 구성할 수 있습니다.' 
 ---
 = SetLldpConfig 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

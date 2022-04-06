@@ -5,6 +5,7 @@ keywords: virtual,network,modify,modifying,change,changing,edit,editing,modifyvi
 summary: ModifyVirtualNetwork 메서드를 사용하여 기존 가상 네트워크의 특성을 변경할 수 있습니다. 
 ---
 = ModifyVirtualNetwork의 약어입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

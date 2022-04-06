@@ -5,6 +5,7 @@ keywords: drive,config,configuration,get,getting,getdriveconfig
 summary: GetDriveConfig 메서드를 사용하여 예상 슬라이스 및 블록 드라이브 수에 대한 드라이브 정보와 현재 노드에 연결된 슬라이스 및 블록 드라이브의 수를 확인할 수 있습니다. 
 ---
 = GetDriveConfig 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

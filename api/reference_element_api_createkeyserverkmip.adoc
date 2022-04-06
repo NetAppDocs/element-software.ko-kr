@@ -5,6 +5,7 @@ keywords: KMIP,key server,creating,create
 summary: 'CreateKeyServerKmip 메서드를 사용하여 지정된 속성으로 키 관리 상호 운용성 프로토콜\(KMIP\) 키 서버를 생성할 수 있습니다. 만드는 동안 서버에 연결되지 않으므로 이 방법을 사용하기 전에 이 서버가 존재하지 않아도 됩니다. 클러스터된 키 서버 구성의 경우 kmipKeyServerHostnames 매개 변수에 모든 서버 노드의 호스트 이름 또는 IP 주소를 제공해야 합니다. TestKeyServerKmip 메서드를 사용하여 키 서버를 테스트할 수 있습니다.' 
 ---
 = CreateKeyServerKmip 을 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

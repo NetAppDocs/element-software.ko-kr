@@ -5,6 +5,7 @@ keywords: response,example
 summary: 여기에 전체 응답 예가 나와 있습니다. 
 ---
 = 답변 예
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

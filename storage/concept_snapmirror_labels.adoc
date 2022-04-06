@@ -5,6 +5,7 @@ keywords: labels, snapmirror, retention rules
 summary: SnapMirror 레이블은 관계의 보존 규칙에 따라 지정된 스냅샷을 전송하기 위한 마커로 사용됩니다. 
 ---
 = SnapMirror 레이블
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

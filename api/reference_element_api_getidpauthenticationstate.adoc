@@ -5,6 +5,7 @@ keywords: IdP,idp,authentication,retrieve get,idp state
 summary: GetIdpAuthenticationState 메서드를 사용하면 타사 IdP를 사용하여 인증 상태에 대한 정보를 반환할 수 있습니다. 
 ---
 = GetIdpAuthenticationState 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

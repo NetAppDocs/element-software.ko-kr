@@ -5,6 +5,7 @@ keywords: sds, install sds, use sds, solidfire enterprise sds, upgrade sds, moni
 summary: SolidFire 엔터프라이즈 SDS를 설치하고 사용하는 방법에 대해 알아보십시오. 
 ---
 = SolidFire 엔터프라이즈 SDS 설치 및 사용
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

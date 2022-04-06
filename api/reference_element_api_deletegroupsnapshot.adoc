@@ -5,6 +5,7 @@ keywords: volume,volumes,group,snapshot,snapshots,delete,deleting,DeleteGroupSna
 summary: DeleteGroupSnapshot 을 사용하여 그룹 스냅숏을 삭제할 수 있습니다. 
 ---
 = DeleteGroupSnapshot 을 클릭합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

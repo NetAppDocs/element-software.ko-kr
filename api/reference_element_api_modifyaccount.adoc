@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,accounts,settings,modify
 summary: ModifyAccount 메서드를 사용하여 기존 계정을 수정할 수 있습니다. 
 ---
 = ModifyAccount(수정 계정)
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

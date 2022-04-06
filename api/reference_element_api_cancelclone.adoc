@@ -5,6 +5,7 @@ keywords:
 summary: CancelClone 메서드를 사용하여 진행 중인 볼륨 클론 또는 볼륨 복사본 프로세스를 중지할 수 있습니다. 그룹 클론 작업을 취소하면 시스템에서 작업이 완료되고 관련 asyncHandle 이 제거됩니다. 
 ---
 = CancelClone을 클릭합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

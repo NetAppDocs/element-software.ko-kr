@@ -5,6 +5,7 @@ keywords: account, volumes
 summary: 관리 탭의 계정 페이지에는 각 계정에 할당된 볼륨에 대한 ID, 사용자 이름 및 효율성 세부 정보와 같은 시스템의 각 계정에 대한 정보가 제공됩니다. 
 ---
 = 계정 세부 정보
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

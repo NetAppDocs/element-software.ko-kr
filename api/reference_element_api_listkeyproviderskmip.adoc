@@ -5,6 +5,7 @@ keywords: KMIP,key providers,key,provider,retrieving,listing,list,retrieve,listk
 summary: 'ListKeyProvidersKmip 메서드를 사용하여 기존의 모든 키 관리 상호 운용성 프로토콜\(KMIP\) 키 공급자 목록을 검색할 수 있습니다. 추가 매개 변수를 지정하여 목록을 필터링할 수 있습니다.' 
 ---
 = ListKeyProvidersKmip 을 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

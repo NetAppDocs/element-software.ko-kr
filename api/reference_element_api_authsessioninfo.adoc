@@ -5,6 +5,7 @@ keywords: objects,object,authSessionInfo
 summary: authSessionInfo 개체에는 인증 세션에 대한 정보가 들어 있습니다. 
 ---
 = AuthSessionInfo 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

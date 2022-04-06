@@ -5,6 +5,7 @@ keywords: initiator, remove from volume access group, access groups, remove init
 summary: 액세스 그룹에서 이니시에이터를 제거하면 해당 볼륨 액세스 그룹의 볼륨에 더 이상 액세스할 수 없습니다. 볼륨에 대한 일반 계정 액세스가 중단되지 않습니다. 
 ---
 = 액세스 그룹에서 이니시에이터를 제거합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: multi-factor,MFA,idp,authentication,methods
 summary: '멀티팩터 인증\(MFA\)을 사용하여 SAML\(Security Assertion Markup Language)을 통해 타사 ID 공급자\(IDP\)를 사용하여 사용자 세션을 관리할 수 있습니다.' 
 ---
 = 다중 요소 인증 API 메서드
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: cluster,get,getting,login,session,info,getloginsessioninfo
 summary: GetLoginSessionInfo 메서드를 사용하면 로그인 셸과 TUI 모두에 대해 로그인 인증 세션이 유효한 기간을 반환할 수 있습니다. 
 ---
 = GetLoginSessionInfo 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: '파이버 채널 노드 및 SolidFire 스토리지 노드로 새 클러스터를 생성할 경우 노드의 WWPN\(Worldwide Port Name\) 주소를 웹 UI에서 사용할 수 있습니다. WWPN 주소를 사용하여 파이버 채널 스위치를 조닝(Zoning)할 수 있습니다.' 
 ---
 = Fibre Channel 노드의 존 설정
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

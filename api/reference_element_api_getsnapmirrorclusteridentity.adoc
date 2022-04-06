@@ -5,6 +5,7 @@ keywords: get,getting,SnapMirror,cluster,identity,GetSnapMirrorClusterIdentity
 summary: Element 소프트웨어 웹 UI에서는 GetSnapMirrorClusterIdentity 를 사용하여 ONTAP 클러스터에 대한 ID 정보를 가져옵니다. 
 ---
 = GetSnapMirrorClusterIdentity 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

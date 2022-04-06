@@ -5,6 +5,7 @@ keywords: object,objects,host
 summary: 호스트 객체에는 가상 볼륨 호스트에 대한 정보가 포함되어 있습니다. ListVirtualVolumeHosts 메서드를 사용하여 모든 가상 볼륨 호스트에 대해 이 정보를 가져올 수 있습니다. 
 ---
 = 호스트(가상 볼륨)
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

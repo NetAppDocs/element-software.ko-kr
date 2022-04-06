@@ -5,6 +5,7 @@ keywords: setsnmpACL,set,setting,snmp,acl,permissions,access,control,list
 summary: SetSnmpACL 메서드를 사용하여 클러스터 노드에서 SNMP 액세스 권한을 구성할 수 있습니다. 이 인터페이스로 설정한 값은 클러스터의 모든 노드에 적용되며 전달된 값은 SetSnmpACL에 대한 이전 호출에서 설정한 모든 값을 대체합니다. 또한 이 인터페이스로 설정된 값은 모든 네트워크 또는 usmUsers 값을 SetSnmpInfo 로 대체합니다. 
 ---
 = SetSnmpACL
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

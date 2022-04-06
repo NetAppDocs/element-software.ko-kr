@@ -5,6 +5,7 @@ keywords: proposed,node,additions,CheckProposedNodeAdditions,storage,checking
 summary: ProposedNodeAdditions 메서드를 사용하여 스토리지 노드 세트를 테스트하여 오류 또는 모범 사례 위반 없이 스토리지 클러스터에 추가할 수 있는지 확인할 수 있습니다. 
 ---
 = ProposedNodeAdveditions를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: KMIP,key server,unassigning,removing,remove,unassign,removekeyserverfr
 summary: 'RemoveKeyServerFromProviderKmip 메서드를 사용하여 지정된 공급자가 할당한 키 관리 상호 운용성 프로토콜\(KMIP\) 키 서버의 할당을 취소할 수 있습니다. 마지막 서버가 되고 해당 공급자가 활성 상태가 아닌 경우 해당 공급자에서 키 서버의 할당을 취소할 수 있습니다.\(현재 사용 중인 키가 제공됨\) 지정된 키 서버가 공급자에 할당되지 않은 경우 아무런 작업도 수행되지 않으며 오류가 반환되지 않습니다.' 
 ---
 = RemoveKeyServerFromProviderKmip 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: system, api, element, security, rekey, software encryption at rest
 summary: 'RekeySoftwareEncryptionAtRestMasterKey 메서드를 사용하여 DEK(데이터 암호화 키)를 암호화하는 데 사용되는 소프트웨어 암호화 유휴 마스터 키를 다시 설정할 수 있습니다.' 
 ---
 = RekeySoftwareEncryptionAtRestMasterKey를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume,volumes,purge,purging,multiple,deleted,purgedeletedvolumes
 summary: PurgeDeletedVolumes 메서드를 사용하여 삭제된 볼륨을 즉시 영구적으로 제거할 수 있습니다. 이 방법을 사용하여 한 번에 최대 500개의 볼륨을 제거할 수 있습니다. 
 ---
 = PurgeDeletedVolumes를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

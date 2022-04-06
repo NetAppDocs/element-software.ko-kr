@@ -5,6 +5,7 @@ keywords: kmip, master key, key management, encryption at rest, software encrypt
 summary: '외부 키 관리\(EKM\)는 외부 클러스터 외부 키 서버\(EKS\)와 함께 보안 인증 키\(AK\) 관리를 제공합니다. AK는 클러스터에서 저장된 암호화(Encryption at Rest)가 활성화된 경우 SED(자체 암호화 드라이브)를 잠그거나 잠금 해제하는 데 사용됩니다.' 
 ---
 = 외부 키 관리를 시작합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

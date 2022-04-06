@@ -5,6 +5,7 @@ keywords: KMIP,key provider,retrieving,get,retrieve
 summary: 'GetKeyProviderKmip 메서드를 사용하여 지정된 키 관리 상호 운용성 프로토콜\(KMIP\) 키 공급자에 대한 정보를 검색할 수 있습니다.' 
 ---
 = GetKeyProviderKmip 을 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

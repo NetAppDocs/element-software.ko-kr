@@ -5,6 +5,7 @@ keywords: snapmirror labels, add labels to snapshot schedules, snapmirror polici
 summary: SnapMirror 정책이 적용되도록 스냅샷 일정에 SnapMirror 레이블을 추가할 수 있습니다. 기존 SnapMirror 관계 대화 상자 또는 NetAppONTAP System Manager에서 사용 가능한 레이블을 볼 수 있습니다. 
 ---
 = 스냅샷 일정에 SnapMirror 레이블을 추가합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

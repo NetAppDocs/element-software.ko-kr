@@ -5,6 +5,7 @@ keywords: what is, node, management node, storage node, fibre channel, state, pe
 summary: 노드는 블록 스토리지 또는 컴퓨팅 리소스로 액세스할 수 있도록 클러스터로 그룹화된 하드웨어입니다. 
 ---
 = 노드
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,cluster,admin,settings,m
 summary: 'ModifyClusterAdmin 메서드를 사용하여 클러스터 관리자, LDAP 클러스터 관리자 또는 타사 ID 공급자\(IDP\) 클러스터 관리자에 대한 설정을 변경할 수 있습니다. 관리자 클러스터 관리자 계정에 대한 액세스 권한은 변경할 수 없습니다.' 
 ---
 = ModifyClusterAdmin 을 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

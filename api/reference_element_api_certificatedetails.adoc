@@ -5,6 +5,7 @@ keywords: security,certificate,SSL,get,getting,certificateDetails,object,objects
 summary: certificateDetails 개체에는 보안 인증서에 대한 디코딩된 정보가 들어 있습니다. 
 ---
 = 인증서 세부 정보
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

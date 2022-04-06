@@ -5,6 +5,7 @@ keywords: element demo node, virtual machine, element software, element api, vmw
 summary: Element Demo Node는 Element 소프트웨어의 VMware 가상 머신 버전으로, NetApp HCI 및 SolidFire 제품의 주요 스토리지 기능을 쉽게 시연할 수 있습니다. 
 ---
 = Element Demo Node를 사용하여 스토리지 기능을 사용해 보십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

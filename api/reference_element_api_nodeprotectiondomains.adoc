@@ -5,6 +5,7 @@ keywords: object,objects,node,protection domains
 summary: nodeProtectionDomains 개체에는 노드를 식별하는 정보와 해당 노드와 연결된 보호 도메인에 대한 정보가 들어 있습니다. 
 ---
 = 노드 보호도메인
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

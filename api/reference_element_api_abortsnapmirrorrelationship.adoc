@@ -5,6 +5,7 @@ keywords:
 summary: Element 소프트웨어 웹 UI에서는 AbortSnapMirrorRelationship 메서드를 사용하여 시작되었지만 아직 완료되지 않은 SnapMirror 전송을 중지합니다. 
 ---
 = AbortSnapMirror 관계
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorVserverAggregateInfo
 summary: 'snapMirrorVserverAggregateInfo 객체에는 대상 ONTAP 클러스터에서 사용 가능한 데이터 스토리지 가상 머신\(또는 vservers\)에 대한 정보가 들어 있습니다.' 
 ---
 = snapMirrorVserverAggregateInfo를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

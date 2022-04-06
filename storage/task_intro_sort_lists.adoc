@@ -5,6 +5,7 @@ keywords: sort lists, sorting on a single column, sorting on multiple columns, s
 summary: 요소 UI의 특정 페이지에서 하나 이상의 기준에 따라 목록 정보를 정렬할 수 있습니다. 이렇게 하면 화면에 필요한 정보를 쉽게 정렬할 수 있습니다. 
 ---
 = 목록 정렬
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

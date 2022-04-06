@@ -5,6 +5,7 @@ keywords: object,objects,virtualNetwork
 summary: virtualNetwork 개체에는 특정 가상 네트워크에 대한 정보가 들어 있습니다. ListVirtualNetworks API 메소드를 사용하여 시스템의 모든 가상 네트워크에 대한 이 정보 목록을 검색할 수 있습니다. 
 ---
 = 가상네트워크
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

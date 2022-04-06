@@ -5,6 +5,7 @@ keywords: API,authentication,auth,SolidFire
 summary: API를 사용할 때 모든 API 요청에 HTTP Basic 인증 헤더를 포함시켜 시스템에서 인증할 수 있습니다. 인증 정보를 생략하면 HTTP 401 응답으로 인증되지 않은 요청이 거부됩니다. 시스템은 TLS를 통한 HTTP Basic 인증을 지원합니다. 
 ---
 = API 인증
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

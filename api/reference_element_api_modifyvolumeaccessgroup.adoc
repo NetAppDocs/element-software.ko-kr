@@ -5,6 +5,7 @@ keywords: volume,access,group,modify,modifying,updating,changing,change,update,e
 summary: ModifyVolumeAccessGroup 메서드를 사용하여 초기자를 업데이트하고 볼륨 액세스 그룹에서 볼륨을 추가 또는 제거할 수 있습니다. 
 ---
 = ModifyVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

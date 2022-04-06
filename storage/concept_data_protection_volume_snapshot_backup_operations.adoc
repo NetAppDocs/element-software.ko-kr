@@ -5,6 +5,7 @@ keywords: volume snapshot, backup operations, back up volume snapshot, cluster, 
 summary: 통합 백업 기능을 사용하여 볼륨 스냅샷을 백업할 수 있습니다. SolidFire 클러스터에서 외부 오브젝트 저장소 또는 다른 SolidFire 클러스터로 스냅샷을 백업할 수 있습니다. 외부 개체 저장소에 스냅샷을 백업할 때 읽기/쓰기 작업을 허용하는 개체 저장소에 대한 연결이 있어야 합니다. 
 ---
 = 볼륨 스냅샷 백업 작업
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

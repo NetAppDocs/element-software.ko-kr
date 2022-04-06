@@ -5,6 +5,7 @@ keywords: transfer, perform, source volume, snapmirror, dr, disaster recovery, o
 summary: 일반적으로 NetApp Element 소프트웨어를 실행하는 SolidFire 스토리지 클러스터에서 ONTAP 소프트웨어로 재해 복구를 위해 SnapMirror를 사용하는 경우, Element가 소스이고 ONTAP가 타겟입니다. 하지만 경우에 따라 ONTAP 스토리지 시스템이 소스 및 Element를 타겟으로 사용할 수 있습니다. 
 ---
 = ONTAP에서 요소로 전송 또는 1회 마이그레이션을 수행합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: qos policies, iops
 summary: 'SolidFire 스토리지 클러스터에는 볼륨별로 QoS\(서비스 품질) 매개 변수를 제공할 수 있는 기능이 있습니다. QoS를 정의하는 세 가지 구성 가능한 매개 변수(최소 IOPS, 최대 IOPS 및 버스트 IOPS)를 사용하여 초당 입력 및 출력(IOPS\)으로 측정한 클러스터 성능을 보장할 수 있습니다.' 
 ---
 = 서비스 품질
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: running tasks, view progress of
 summary: ListSyncJobs 및 ListBulkVolumeJobs API 메서드가 보고하는 웹 UI에서 실행 중인 작업의 진행 상태와 완료 상태를 볼 수 있습니다. 요소 UI의 보고 탭에서 실행 중인 작업 페이지에 액세스할 수 있습니다. 
 ---
 = 실행 중인 작업의 상태를 봅니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

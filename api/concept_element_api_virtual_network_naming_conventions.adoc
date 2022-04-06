@@ -5,6 +5,7 @@ keywords: storage,system,naming,convention,virtual,network
 summary: NetApp Element 스토리지 시스템은 시스템의 모든 오브젝트에 대한 고유한 식별자로 점점 더 많은 숫자를 사용합니다. 
 ---
 = 가상 네트워크 명명 규칙
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

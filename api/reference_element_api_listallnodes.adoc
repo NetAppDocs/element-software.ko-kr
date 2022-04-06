@@ -5,6 +5,7 @@ keywords: cluster,list,listing,node,nodes,all,listallnodes
 summary: ListAllNodes 메서드를 사용하여 클러스터에 활성 노드 및 보류 중인 노드를 나열할 수 있습니다. 
 ---
 = 목록노드
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

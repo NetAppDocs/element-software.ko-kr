@@ -5,6 +5,7 @@ keywords: snmp, usm user, config, requests
 summary: SNMP 버전 3을 설정하는 경우 USM 사용자가 승인된 SNMP 요청을 수신하도록 구성해야 합니다. 
 ---
 = SNMP USM 사용자를 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

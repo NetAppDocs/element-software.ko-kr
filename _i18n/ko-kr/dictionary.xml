@@ -6464,8 +6464,6 @@
   <block id="b96897a2164001e55b7cb0f0b7883d94" category="list-text"><block ref="b96897a2164001e55b7cb0f0b7883d94" category="inline-link-macro-rx"></block></block>
   <block id="2e5993f9d970daebf225967bb1e45acc" category="inline-link-macro">스토리지 펌웨어 번들 2.99.2에 대한 고지 사항</block>
   <block id="96d39df4d07a61aada740f0716155f51" category="list-text"><block ref="96d39df4d07a61aada740f0716155f51" category="inline-link-macro-rx"></block></block>
-  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
-  <block id="6f2ac1cf1da8ec34232c651d4bba0149" category="paragraph"><block ref="6f2ac1cf1da8ec34232c651d4bba0149" category="inline-link-macro-rx"></block></block>
   <block id="394e1ee42fe49c664653cce821c59bc2" category="inline-link-macro">관리 서비스 공지 2.19</block>
   <block id="54bd6026e83ef252dbfce1e3b805d9c1" category="list-text"><block ref="54bd6026e83ef252dbfce1e3b805d9c1" category="inline-link-macro-rx"></block></block>
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="doc">데이터 보호</block>
@@ -12312,4 +12310,5 @@
   <block id="8c79dbfa1dd86948b37af21a8d7639d5" category="list-text">올바른 VM 네트워크를 VM에 다시 할당합니다.</block>
   <block id="85708c896a2da121ac4eee4307002bd9" category="admonition">MTU가 1500바이트 미만인 IP를 할당하는 DHCP를 사용하면 관리 노드 네트워크를 구성하거나 관리 노드 UI를 사용할 수 없습니다.</block>
   <block id="1b8210afec8bf22eaf6aeec2c734fa6c" category="list-text">시스템의 FQDN(정규화된 도메인 이름)을 사용하여 관리 노드 또는 NetApp 하이브리드 클라우드 제어와 같은 Element 웹 인터페이스에 액세스하는 경우 <block ref="3bef977fd72a25456136a30f2d648743" category="inline-link-macro-rx"></block>.</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
 </blocks>

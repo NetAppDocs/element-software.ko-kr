@@ -5,6 +5,7 @@ keywords: iscsi sessions, monitor
 summary: 클러스터에 연결된 iSCSI 세션에 대한 정보를 볼 수 있습니다. 
 ---
 = iSCSI 세션 세부 정보입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

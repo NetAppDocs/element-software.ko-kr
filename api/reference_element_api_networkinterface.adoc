@@ -5,6 +5,7 @@ keywords: object,objects,networkInterface
 summary: NetworkInterface 개체에는 스토리지 노드의 개별 네트워크 인터페이스에 대한 구성 정보가 들어 있습니다. 
 ---
 = 네트워크 인터페이스
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

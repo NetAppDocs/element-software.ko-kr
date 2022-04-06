@@ -5,6 +5,7 @@ keywords: response,object,member
 summary: 각 Element 소프트웨어 API 응답 본체에는 다음과 같은 기본 부품이 있습니다. 
 ---
 = 응답 객체 멤버
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: access,control,type
 summary: 사용할 수 있는 Element API 메서드는 사용자가 설정한 액세스 유형에 따라 달라집니다. 
 ---
 = 액세스 제어
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snapmirror,endpoint,endpoints,list,listing,listsnapmirrorendpoints
 summary: Element 소프트웨어 웹 UI에서는 ListSnapMirrorEndpoints 메서드를 사용하여 Element 스토리지 클러스터가 통신하는 모든 SnapMirror 끝점을 나열합니다. 
 ---
 = ListSnapMirrorEndpoints를 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

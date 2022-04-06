@@ -5,6 +5,7 @@ keywords: element, solidfire, volume, create, edit, delete, purge, restore, clon
 summary: SolidFire 시스템은 볼륨을 사용하여 스토리지를 프로비저닝합니다. 볼륨은 iSCSI 또는 파이버 채널 클라이언트가 네트워크를 통해 액세스하는 블록 디바이스입니다. 
 ---
 = 볼륨 관리
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

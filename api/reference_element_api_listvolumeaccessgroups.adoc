@@ -5,6 +5,7 @@ keywords: volume,access,group,groups,list,listing,listvolumeaccessgroups
 summary: ListVolumeAccessGroups 메서드를 사용하여 현재 시스템에 있는 볼륨 액세스 그룹에 대한 정보를 가져올 수 있습니다. 
 ---
 = ListVolumeAccessGroups 를 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

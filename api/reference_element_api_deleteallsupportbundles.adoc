@@ -5,6 +5,7 @@ keywords: support,bundle,delete,deleting,DeleteAllSupportBundles
 summary: DeleteAllSupportBundles 메서드를 사용하여 CreateSupportBundle API 메서드로 생성된 모든 지원 번들을 삭제할 수 있습니다. 
 ---
 = DeleteAllSupportBundles 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

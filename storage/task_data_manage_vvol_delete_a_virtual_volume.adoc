@@ -5,6 +5,7 @@ keywords: virtual volume, delete, vvols, use Element UI to delete a vvol
 summary: 가상 볼륨은 항상 VMware 관리 계층에서 삭제해야 하지만 가상 볼륨을 삭제하는 기능은 Element UI에서 사용하도록 설정됩니다. vSphere에서 SolidFire 스토리지의 가상 볼륨을 정리하지 못하는 경우와 같이 꼭 필요한 경우에만 Element UI에서 가상 볼륨을 삭제해야 합니다. 
 ---
 = 가상 볼륨을 삭제합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

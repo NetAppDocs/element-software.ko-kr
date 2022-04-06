@@ -5,6 +5,7 @@ keywords: volume,pair,pairing,start,starting,startvolumepairing
 summary: StartVolumePairing 메서드를 사용하여 다른 볼륨과 페어링하는 데 사용되는 볼륨에서 인코딩된 키를 생성할 수 있습니다. 이 메소드가 생성하는 키는 CompleteVolumePairing 메소드에서 볼륨 페어링을 설정하는 데 사용됩니다. 
 ---
 = StartVolumePairing
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

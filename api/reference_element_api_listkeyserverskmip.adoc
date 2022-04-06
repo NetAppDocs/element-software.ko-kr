@@ -5,6 +5,7 @@ keywords: KMIP,key server,key,server,listing,list,listkeyserverskmip
 summary: 'ListKeyServersKmip 메서드를 사용하여 생성된 모든 키 관리 상호 운용성 프로토콜(KMIP\) 키 서버를 나열할 수 있습니다. 추가 매개 변수를 지정하여 결과를 필터링할 수 있습니다.' 
 ---
 = ListKeyServersKmip 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

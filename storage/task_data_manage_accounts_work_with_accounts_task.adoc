@@ -5,6 +5,7 @@ keywords: element, solidfire, accounts, create, delete, change, chap, view, edit
 summary: SolidFire 스토리지 시스템에서 사용자 계정을 사용하면 클라이언트가 노드의 볼륨에 연결할 수 있습니다. 볼륨을 생성하면 특정 사용자 계정에 할당됩니다. 
 ---
 = 사용자 계정 작업
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

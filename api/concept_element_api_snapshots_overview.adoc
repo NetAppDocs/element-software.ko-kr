@@ -5,6 +5,7 @@ keywords: snapshot,overview
 summary: 볼륨 스냅샷은 볼륨의 시점 복제본입니다. 스냅샷을 사용하여 스냅샷을 생성한 시점의 상태로 볼륨을 롤백할 수 있습니다. 
 ---
 = 스냅샷 개요
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

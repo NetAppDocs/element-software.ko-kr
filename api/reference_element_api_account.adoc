@@ -5,6 +5,7 @@ keywords: account,object,accounts
 summary: '계정 개체에는 계정에 대한 정보가 들어 있습니다. 이 개체에는 계정에 대한 "구성된" 정보만 포함되며 런타임 또는 사용 정보는 포함되지 않습니다.' 
 ---
 = 계정
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

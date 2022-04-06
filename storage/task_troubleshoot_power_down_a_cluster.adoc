@@ -5,6 +5,7 @@ keywords: cluster, power down, mvip
 summary: NetApp Support에 문의하여 예비 단계를 완료한 후 전체 클러스터의 전원을 끕니다. 
 ---
 = 클러스터 전원을 끕니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume,access,group,groups,LUN,mapping,assignment,get,getting,GetVolum
 summary: GetVolumeAccessGroupLunAssignments 메서드를 사용하여 지정된 볼륨 액세스 그룹의 LUN 매핑에 대한 세부 정보를 검색할 수 있습니다. 
 ---
 = GetVolumeAccessGroupLunAssignments 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

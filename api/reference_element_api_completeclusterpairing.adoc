@@ -5,6 +5,7 @@ keywords: CompleteClusterPairing,cluster,pair,pairing,complete,completing
 summary: CompleteClusterPairing 메서드는 클러스터 페어링 프로세스의 두 번째 단계입니다. StartClusterPairing 방법에서 받은 인코딩된 키와 함께 이 방법을 사용하여 클러스터 페어링 프로세스를 완료합니다. 
 ---
 = CompleteClusterPairing
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

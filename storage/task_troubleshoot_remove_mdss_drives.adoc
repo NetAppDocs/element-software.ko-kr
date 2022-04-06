@@ -5,6 +5,7 @@ keywords: mdss, remove, multi-drive slice service
 summary: '다중 드라이브 슬라이스 서비스\(MDSS\) 드라이브를 제거할 수 있습니다. 이 절차는 노드에 여러 개의 슬라이스 드라이브가 있는 경우에만 적용됩니다.' 
 ---
 = MDSS 드라이브를 제거합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

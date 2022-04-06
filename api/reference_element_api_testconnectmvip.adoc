@@ -5,6 +5,7 @@ keywords: management,connection,test,testing,mvip,testconnectmvip
 summary: TestConnectMvip 메서드를 사용하여 스토리지 클러스터에 대한 관리 접속을 테스트할 수 있습니다. 이 테스트에서는 MVIP를 ping하여 간단한 API 메소드를 실행하여 접속 상태를 확인합니다. 
 ---
 = 테스트 ConnectMvip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

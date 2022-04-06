@@ -6,6 +6,7 @@ summary: 'vSphere Virtual Volumes는 VMware의 스토리지 패러다임으로, 
 ---
 = 가상 볼륨(VVOL)
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

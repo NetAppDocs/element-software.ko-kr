@@ -5,6 +5,7 @@ keywords: what is, element, solidfire, replication, clone, snapshot, protection 
 summary: 데이터 보호 기능에는 원격 복제, 볼륨 스냅샷, 볼륨 클론 복제, 보호 도메인, 이중 Helix 기술을 통한 고가용성 등이 있습니다. 
 ---
 = 데이터 보호
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: element, api, storage, manage, cluster, volumes, json, rpc, https
 summary: Element API를 사용하여 NetApp Element 스토리지 클러스터를 관리하는 방법에 대해 알아보십시오. 
 ---
 = Element API를 사용하여 스토리지 관리
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

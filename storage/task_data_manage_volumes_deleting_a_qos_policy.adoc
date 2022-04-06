@@ -5,6 +5,7 @@ keywords: qos policy, delete, volumes
 summary: QoS 정책이 더 이상 필요하지 않은 경우 삭제할 수 있습니다. QoS 정책을 삭제할 경우 정책에 연결된 모든 볼륨은 QoS 설정을 유지하지만 정책과 연결되지 않습니다. 
 ---
 = QoS 정책을 삭제합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume snapshot, backup, amazon S3 object store
 summary: SolidFire S3와 호환되는 외부 오브젝트 저장소에 스냅샷을 백업할 수 있습니다. 
 ---
 = 볼륨 스냅샷을 Amazon S3 오브젝트 저장소에 백업합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

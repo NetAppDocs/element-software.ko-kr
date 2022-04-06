@@ -5,6 +5,7 @@ keywords: remote,logging,host,hosts,set,setting,setremotelogginghosts
 summary: SetRemoteLoggingHosts 메서드를 사용하여 스토리지 클러스터의 노드에서 중앙 집중식 로그 서버 또는 서버로 원격 로깅을 구성할 수 있습니다. 원격 로깅은 기본 포트 514를 사용하여 TCP를 통해 수행됩니다. 이 API는 기존 로깅 호스트에 추가되지 않습니다. 이 API 메서드는 현재 존재하는 값을 이 API 메서드에서 지정한 새 값으로 바꿉니다. GetRemoteLoggingHosts 를 사용하여 현재 로깅 호스트가 무엇인지 확인한 다음 SetRemoteLoggingHosts 를 사용하여 원하는 현재 로깅 호스트 및 새 로깅 호스트 목록을 설정할 수 있습니다. 
 ---
 = SetRemoteLoggingHosts 를 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

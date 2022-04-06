@@ -5,6 +5,7 @@ keywords: snapshot retention, edit, set a retention period, edit retention perio
 summary: '스냅샷의 보존 기간을 변경하여 스냅샷이 삭제되는 시기와 시기를 제어할 수 있습니다. 지정한 보존 기간은 새 간격을 입력할 때 시작됩니다. 보존 기간을 설정할 때 현재 시간에 시작하는 기간을 선택할 수 있습니다.\(스냅샷 생성 시간으로부터 보존이 계산되지 않음\). 분, 시간 및 일 단위로 간격을 지정할 수 있습니다.' 
 ---
 = 스냅샷 보존 편집
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

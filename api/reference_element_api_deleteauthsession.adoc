@@ -5,6 +5,7 @@ keywords: authentication sessions,delete
 summary: DeleteAuthSession 메서드를 사용하여 개별 인증 세션을 삭제할 수 있습니다. 호출하는 사용자가 ClusterAdmins/Administrator AccessGroup에 없으면 호출 사용자에 속하는 인증 세션만 삭제할 수 있습니다. 
 ---
 = DeleteAuthSession
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

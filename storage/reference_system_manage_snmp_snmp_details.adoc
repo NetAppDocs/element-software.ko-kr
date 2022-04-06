@@ -5,6 +5,7 @@ keywords: snmp, overview, reference, mib, settings, trap
 summary: Cluster 탭의 SNMP 페이지에서 다음 정보를 볼 수 있습니다. 
 ---
 = SNMP 세부 정보
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: management services, aff
 summary: 관리 서비스는 SolidFire All-Flash 스토리지를 위한 중앙 집중식 및 확장된 관리 기능을 제공합니다. 이러한 서비스에는 Active IQ 시스템 원격 측정, 로깅 및 서비스 업데이트와 vCenter용 Element 플러그인에 대한 QoSSIOC 서비스가 포함됩니다. 
 ---
 = SolidFire All-Flash 스토리지를 위한 관리 서비스
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

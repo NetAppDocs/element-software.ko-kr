@@ -5,6 +5,7 @@ keywords: volume,pair,volumes,remove,removing,removevolumepair
 summary: RemoveVolumePair 메서드를 사용하여 두 볼륨 간의 원격 페어링을 제거할 수 있습니다. 함께 페어링된 소스 볼륨과 타겟 볼륨 모두에 이 방법을 사용합니다. 볼륨 페어링 정보를 제거하면 데이터가 더 이상 볼륨에 복제되지 않습니다. 
 ---
 = RemoveVolumePair
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: backup,target,targets,remove,delete,removing,deleting,removebackuptarg
 summary: RemoveBackupTarget 메서드를 사용하여 백업 대상을 제거할 수 있습니다. 
 ---
 = RemoveBackupTarget 을 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

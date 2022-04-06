@@ -5,6 +5,7 @@ keywords: create,creating,backup,target,CreateBackupTarget
 summary: CreateBackupTarget 을 사용하여 백업 대상 정보를 생성 및 저장할 수 있으므로 백업이 생성될 때마다 다시 입력할 필요가 없습니다. 
 ---
 = CreateBackupTarget 을 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

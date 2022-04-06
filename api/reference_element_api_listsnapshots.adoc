@@ -5,6 +5,7 @@ keywords: snapshot,snapshots,list,listing,attributes,listsnapshots
 summary: ListSnapshots을 사용하여 볼륨에서 생성된 각 스냅샷의 속성을 반환할 수 있습니다. 
 ---
 = 목록\n\n 스냅샷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

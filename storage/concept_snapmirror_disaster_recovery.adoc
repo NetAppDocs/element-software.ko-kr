@@ -5,6 +5,7 @@ keywords: dr, disaster recovery, snapmirror
 summary: NetApp Element 소프트웨어를 실행하는 볼륨 또는 클러스터에 문제가 있는 경우 SnapMirror 기능을 사용하여 관계를 중단시키고 대상 볼륨에 대한 페일오버를 수행합니다. 
 ---
 = SnapMirror를 사용한 재해 복구
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

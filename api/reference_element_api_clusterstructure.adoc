@@ -5,6 +5,7 @@ keywords: objects,cluster,structure,clusterStructure,object
 summary: clusterStructure 개체에는 GetClusterStructure 메서드에서 만든 클러스터 구성 백업 정보가 들어 있습니다. SetClusterStructure 메서드를 사용하면 재구성하는 스토리지 클러스터에 이 정보를 복구할 수 있습니다. 
 ---
 = 클러스터 구조
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

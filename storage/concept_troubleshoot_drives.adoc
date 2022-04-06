@@ -5,6 +5,7 @@ keywords: troubleshoot, drives, ssd, swappable, solid-state drives
 summary: '장애가 발생한 SSD\(Solid State Drive)를 교체 드라이브로 교체할 수 있습니다. SolidFire 스토리지 노드용 SSD는 핫 스왑이 가능합니다. SSD에 장애가 발생했다고 의심되는 경우 NetApp 지원 팀에 문의하여 장애를 확인하고 적절한 해결 절차를 안내합니다. NetApp Support는 또한 귀사와 협력하여 서비스 수준 계약에 따라 교체 드라이브를 제공합니다.' 
 ---
 = 드라이브 문제를 해결합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

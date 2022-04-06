@@ -5,6 +5,7 @@ keywords: volume warnings, messages, replication, data protection
 summary: '데이터 보호 탭의 볼륨 쌍 페이지에는 볼륨을 페어링한 후 이러한 메시지가 표시됩니다. 이러한 메시지는 Replicating Volumes(볼륨 복제) 목록 보기에서 \ (달리 지정하지 않는 한)쌍의 소스 및 타겟 끝에 모두 표시될 수 있습니다.' 
 ---
 = 볼륨 페어링 경고
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

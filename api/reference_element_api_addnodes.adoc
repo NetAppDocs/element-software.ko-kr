@@ -5,6 +5,7 @@ keywords: addnodes,node,add,adding,nodes,cluster
 summary: AddNodes 메서드를 사용하여 클러스터에 하나 이상의 새 노드를 추가할 수 있습니다. 
 ---
 = 추가 노드
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: supported,replication,modes,clusters,paired,pair,pairs
 summary: 페어링된 클러스터에서는 다음과 같은 복제 모드가 지원됩니다. 
 ---
 = 페어링된 클러스터에 지원되는 복제 모드입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,ldapConfiguration
 summary: ldapConfiguration 개체에는 스토리지 시스템의 LDAP 구성에 대한 정보가 포함되어 있습니다. GetLdapConfiguration API 메서드를 사용하여 LDAP 정보를 검색할 수 있습니다. 
 ---
 = ldapConfiguration 을 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

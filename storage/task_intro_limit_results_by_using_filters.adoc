@@ -5,6 +5,7 @@ keywords: filter, filtering, sorting information, viewing lists, unfiltered list
 summary: 'Element UI에서 페이지의 목록 정보를 필터링할 수 있습니다. 목록(예: 볼륨 및 스냅샷\)을 볼 때 하나 이상의 필터를 추가하여 정보에 초점을 맞추고 페이지에 보다 쉽게 맞출 수 있습니다.' 
 ---
 = 필터를 사용하여 결과를 제한합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

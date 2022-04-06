@@ -5,6 +5,7 @@ keywords: configure, cluster, threshold, support access, encryption at rest, vir
 summary: Element UI의 Cluster 탭에서 클러스터 전체 설정을 확인 및 변경하고 클러스터별 작업을 수행할 수 있습니다. 
 ---
 = 클러스터 설정을 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

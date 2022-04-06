@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorJobScheduleCronInfo
 summary: snapMirrorJobScheduleCronInfo 개체에는 ONTAP 시스템의 cron 작업 일정에 대한 정보가 들어 있습니다. 
 ---
 = snapMirrorJobScheduleCronInfo를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

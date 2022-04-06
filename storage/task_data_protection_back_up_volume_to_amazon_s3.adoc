@@ -5,6 +5,7 @@ keywords: volume backup, amazon s3 object store
 summary: Amazon S3와 호환되는 외부 오브젝트 저장소에 볼륨을 백업할 수 있습니다. 
 ---
 = Amazon S3 오브젝트 저장소에 볼륨을 백업합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

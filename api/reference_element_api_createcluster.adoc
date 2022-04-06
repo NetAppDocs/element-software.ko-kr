@@ -5,6 +5,7 @@ keywords: CreateCluster,cluster,create,creating,initialize,initializing
 summary: 'CreateCluster 메서드를 사용하여 "mvip" 및 "svip" 주소의 소유권이 있는 클러스터의 노드를 초기화할 수 있습니다. 각 새 클러스터는 클러스터의 첫 번째 노드의 관리 IP\(MIP\)를 사용하여 초기화됩니다. 이 방법은 또한 클러스터에 구성되어 있는 모든 노드를 자동으로 추가합니다. 새 클러스터가 초기화될 때마다 이 방법을 한 번만 사용하면 됩니다.' 
 ---
 = 클러스터 생성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

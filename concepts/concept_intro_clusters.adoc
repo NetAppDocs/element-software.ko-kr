@@ -5,6 +5,7 @@ keywords: element, solidfire, cluster, what is, authoritative  cluster, rule of 
 summary: 클러스터는 SolidFire 스토리지 시스템의 허브이며 노드 모음으로 구성됩니다. SolidFire 스토리지 효율성을 실현하려면 하나의 클러스터에 최소 4개의 노드가 있어야 합니다. 클러스터는 네트워크에 단일 논리 그룹으로 표시되며, 블록 스토리지로 액세스할 수 있습니다. 
 ---
 = 클러스터
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

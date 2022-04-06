@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorClusterIdentity
 summary: snapMirrorClusterIdentity 개체에는 SnapMirror 관계의 원격 ONTAP 클러스터에 대한 식별 정보가 들어 있습니다. 
 ---
 = snapMirrorClusterIdentity를 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

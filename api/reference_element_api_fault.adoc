@@ -5,6 +5,7 @@ keywords: object,objects,fault
 summary: 장애 객체에는 클러스터에서 감지된 고장에 대한 정보가 포함되어 있습니다. ListClusterFats 메서드는 클러스터 오류 정보를 반환합니다. 
 ---
 = 오류
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

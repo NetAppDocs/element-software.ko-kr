@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorPolicyRule
 summary: snapMirrorPolicyRule 개체에는 SnapMirror 정책의 규칙에 대한 정보가 들어 있습니다. 
 ---
 = snapMirrorPolicyRule 을 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

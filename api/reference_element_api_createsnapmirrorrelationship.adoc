@@ -5,6 +5,7 @@ keywords: SnapMirror,relationship,relationships,create,creating,CreateSnapMirror
 summary: Element 웹 UI에서는 CreateSnapMirrorRelationship 메서드를 사용하여 소스 끝점과 대상 끝점 간에 SnapMirror 확장 데이터 보호 관계를 만듭니다. 
 ---
 = CreateSnapMirrorRelationship을 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

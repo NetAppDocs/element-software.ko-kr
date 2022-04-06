@@ -5,6 +5,7 @@ keywords: object,objects,protectionSchemeTolerance
 summary: protectionSchemeTolerance 개체에는 특정 보호 체계의 경우 장애가 발생한 후에도 스토리지 클러스터가 계속해서 데이터를 읽고 쓸 수 있는지 여부에 대한 정보가 포함되어 있습니다. 
 ---
 = 보호무역계통허용치
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

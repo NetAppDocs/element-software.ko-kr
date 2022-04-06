@@ -5,6 +5,7 @@ keywords: initiator, add to volume access group, access groups, add single initi
 summary: 기존 볼륨 액세스 그룹에 이니시에이터를 추가할 수 있습니다. 
 ---
 = 볼륨 액세스 그룹에 단일 이니시에이터를 추가합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

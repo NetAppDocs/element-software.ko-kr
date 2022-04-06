@@ -5,6 +5,7 @@ keywords: node,get,getting,stats,getnodestats
 summary: GetNodeStats 메서드를 사용하여 단일 노드에 대한 높은 수준의 작업 측정값을 검색할 수 있습니다. 
 ---
 = GetNodeStats 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

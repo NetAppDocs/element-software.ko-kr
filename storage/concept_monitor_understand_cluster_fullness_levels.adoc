@@ -5,6 +5,7 @@ keywords: cluster fullness levels, understanding, fullness levels
 summary: 'Element 소프트웨어를 실행하는 클러스터는 클러스터 장애를 생성하여 클러스터 용량이 부족해지면 스토리지 관리자에게 경고합니다. 세 가지 수준의 클러스터 충만도가 있으며 모두 NetApp Element UI에 표시됩니다(경고, 오류 및 위험).' 
 ---
 = 클러스터 전체 수준 이해
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

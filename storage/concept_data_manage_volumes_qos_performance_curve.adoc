@@ -5,6 +5,7 @@ keywords: qos, performance curve, block size, iops
 summary: '서비스 품질\(QoS\) 성능 곡선은 블록 크기와 IOPS 백분율 간의 관계를 보여줍니다.' 
 ---
 = QoS 성능 곡선
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

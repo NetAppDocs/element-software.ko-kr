@@ -5,6 +5,7 @@ keywords: relationships, snapmirror, actions, configure relationships
 summary: 데이터 보호 탭의 SnapMirror 관계 페이지에서 관계를 구성할 수 있습니다. 작업 아이콘의 옵션은 여기에 설명되어 있습니다. 
 ---
 = SnapMirror 관계 동작
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

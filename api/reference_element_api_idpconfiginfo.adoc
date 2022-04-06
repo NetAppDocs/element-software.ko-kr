@@ -5,6 +5,7 @@ keywords: objects,object,idpConfigInfo
 summary: 'idpConfigInfo 개체에는 타사 ID 공급자\(IDP\)에 대한 구성 및 통합 세부 정보가 포함되어 있습니다.' 
 ---
 = idpConfigInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

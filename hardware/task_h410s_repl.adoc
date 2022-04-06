@@ -5,6 +5,7 @@ keywords: h410s, replacement, node replacement, maintenance
 summary: CPU 장애, 무선 카드 문제, 기타 마더보드 문제 또는 전원이 켜지지 않는 경우 스토리지 노드를 교체해야 합니다. 이 지침은 H410S 스토리지 노드에 적용됩니다. 
 ---
 = H410S 노드를 교체합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

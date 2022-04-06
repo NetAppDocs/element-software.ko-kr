@@ -5,6 +5,7 @@ keywords: IdP,idp,configuration,update
 summary: UpdateIdpConfiguration 메서드를 사용하여 클러스터에 대한 타사 IDP로 기존 구성을 업데이트할 수 있습니다. 
 ---
 = UpdateIdpConfiguration 을 선택합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: persistent volumes, what are persistent volumes
 summary: 영구 볼륨을 사용하면 관리 노드 구성 데이터를 VM이 로컬로 저장되지 않고 지정된 스토리지 클러스터에 저장할 수 있으므로 관리 노드가 손실되거나 제거된 경우에도 데이터를 보존할 수 있습니다. 영구 볼륨은 선택 사항이지만 권장되는 관리 노드 구성입니다. 
 ---
 = 영구 볼륨
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

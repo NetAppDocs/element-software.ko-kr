@@ -5,6 +5,7 @@ keywords: volumes,volume,cloning,clone,CloneVolume
 summary: CloneVolume 메서드를 사용하여 볼륨의 복사본을 만들 수 있습니다. 이 메서드는 비동기식이며 완료하는 데 시간이 걸릴 수 있습니다. 
 ---
 = CloneVolume(볼륨)
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

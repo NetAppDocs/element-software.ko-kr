@@ -5,6 +5,7 @@ keywords: object,objects,network
 summary: SNMP 네트워크 객체에는 클러스터 노드의 SNMP v3 구성에 대한 정보가 포함되어 있습니다. 
 ---
 = 네트워크(SNMP)
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

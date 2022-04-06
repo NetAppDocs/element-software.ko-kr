@@ -5,6 +5,7 @@ keywords: cluster,admin,remove,removing,removeclusteradmin
 summary: 'RemoveClusterAdmin 메서드를 사용하여 클러스터 관리자, LDAP 클러스터 관리자 또는 타사 ID 공급자\(IDP\) 클러스터 관리자를 제거할 수 있습니다. "admin" 클러스터 관리자 계정은 제거할 수 없습니다.' 
 ---
 = RemoveClusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: objects,object,fipsErrorNodeReport
 summary: fipsErrorNodeReport 개체에는 GetFipsReport 메서드를 사용하여 쿼리할 때 FIPS 140-2 지원에 대한 정보로 응답하지 않는 각 노드에 대한 오류 정보가 포함되어 있습니다. 
 ---
 = fipsErrorNodeReport를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: access group, remove volumes from, initiators, chap
 summary: 액세스 그룹에서 볼륨을 제거하면 해당 그룹은 더 이상 해당 볼륨에 액세스할 수 없습니다. 
 ---
 = 액세스 그룹에서 볼륨을 제거합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,pendingActiveNode
 summary: pendingActiveNode 개체에는 보류 중인 상태와 활성 상태 사이의 현재 활성 상태인 노드에 대한 정보가 포함되어 있습니다. 현재 출하 시 소프트웨어 이미지로 반환되는 노드입니다. ListPendingActiveNodes API 메서드를 사용하여 모든 펜딩활성 노드에 대해 이 정보 목록을 반환합니다. 
 ---
 = 활성 노드
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

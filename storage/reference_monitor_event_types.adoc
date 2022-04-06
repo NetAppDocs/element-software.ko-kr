@@ -5,6 +5,7 @@ keywords: event types, monitor, event log
 summary: 시스템은 여러 유형의 이벤트를 보고합니다. 각 이벤트는 시스템이 완료한 작업입니다. 이벤트는 일상적인 이벤트, 정상적인 이벤트 또는 관리자 주의가 필요한 이벤트일 수 있습니다. 이벤트 로그 페이지의 이벤트 유형 열은 이벤트가 발생한 시스템의 일부를 나타냅니다. 
 ---
 = 이벤트 유형
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

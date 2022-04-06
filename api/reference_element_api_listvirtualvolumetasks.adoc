@@ -5,6 +5,7 @@ keywords: virtual,volume,hosts,host,cluster,list,listing,listvirtualvolumetasks
 summary: ListVirtualVolumeTasks 메서드를 사용하여 시스템의 가상 볼륨 작업 목록을 가져올 수 있습니다. 
 ---
 = ListVirtualVolumeTasks를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

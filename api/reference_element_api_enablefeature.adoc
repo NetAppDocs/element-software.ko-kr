@@ -5,6 +5,7 @@ keywords: SNMP,enable,enabling,EnableFeature,vvols,virtual volumes,FIPS,140-2,Sn
 summary: EnableFeature 메서드를 사용하면 기본적으로 사용되지 않는 VVOL과 같은 클러스터 기능을 활성화할 수 있습니다. 
 ---
 = 공급 기능
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: LDAP,auth,authentication,enable,enabling,EnableLdapAuthentication
 summary: EnableLdapAuthentication 메서드를 사용하여 클러스터에 대한 LDAP 인증을 위한 LDAP 디렉토리 연결을 구성할 수 있습니다. LDAP 디렉토리의 구성원인 사용자는 LDAP 자격 증명을 사용하여 스토리지 시스템에 로그인할 수 있습니다. 
 ---
 = EnableLdapAuthentication 을 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

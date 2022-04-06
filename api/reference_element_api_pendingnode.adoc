@@ -5,6 +5,7 @@ keywords: object,objects,pendingNode
 summary: 펜딩노드 개체에는 클러스터에 추가할 수 있는 노드에 대한 정보가 포함되어 있습니다. ListPendingNodes API 메서드를 사용하여 보류 중인 모든 노드에 대해 이 정보 목록을 반환합니다. AddNodes API 메서드를 사용하여 나열된 노드를 클러스터에 추가할 수 있습니다. 
 ---
 = 펜던트 노드
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: KMIP,key server,keys
 summary: 'keyServerKmip 객체는 키 관리 상호 운용성 프로토콜\(KMIP\) 키 서버를 설명합니다. KMIP는 저장된 암호화 등의 클러스터 기능에 사용할 인증 키를 검색하는 위치입니다.' 
 ---
 = KeyServerKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
