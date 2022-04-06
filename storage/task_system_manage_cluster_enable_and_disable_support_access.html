@@ -45,12 +45,52 @@
   <link rel="stylesheet" href='/ko-kr/element-software/css/na-utility.css' type='text/css'>
   <link rel="stylesheet" href='/ko-kr/element-software/css/na-sidebar.css' type='text/css'>
   <link rel='stylesheet' href='/ko-kr/element-software/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/ko-kr/element-software/css/custom-dropdown.css' type='text/css'>
   <link rel='stylesheet' href='/ko-kr/element-software/css/na-pagenav.css' type='text/css'>
 
   
   <link rel="stylesheet" href="/ko-kr/element-software/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/ko-kr/element-software/css/tabbed-blocks.css" type="text/css">
-  <link rel='stylesheet' href='/ko-kr/element-software/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/ko-kr/element-software/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
+
+    function OptanonWrapper() { }
+
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
@@ -60,15 +100,6 @@
 
   <script src='/ko-kr/element-software/js/na-utility.js'></script>
   <script src='/ko-kr/element-software/js/clouddocs.js'></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    var head = document.getElementsByTagName('head')[0];
-    var adobe = document.createElement("script");
-    adobe.type = "text/javascript";
-    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
-    head.appendChild(adobe);
-  }
-  </script>
   <script src='/ko-kr/element-software/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/ko-kr/element-software/js/toc.js'></script>
@@ -121,16 +152,8 @@
               $("#tg-sb-icon").toggleClass('fa-toggle-off');
           });
       });
-  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-81697994-3');
-  }
   </script>
-  <script src='/ko-kr/element-software/js/version-dropdown.js'></script>
+  <script src='/ko-kr/element-software/js/custom-dropdown.js'></script>
   <script src='/ko-kr/element-software/js/FileSaver.min.js'></script>
   <script src='/ko-kr/element-software/js/jszip-utils.min.js'></script>
   <script src='/ko-kr/element-software/js/jszip.min.js'></script>
@@ -138,20 +161,15 @@
 </head>
 
 
-  <body class role="document">
+  <body class role="document" data-flavor="">
     <div id="page" class="n-off-canvas-menu">
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
   <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/element-software/issues/new?body=Page%3A%20[지원 액세스를 설정 및 해제합니다](https://docs.netapp.com/ko-kr/element-software/storage/task_system_manage_cluster_enable_and_disable_support_access.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/element-software/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/element-software/blob/main/storage/task_system_manage_cluster_enable_and_disable_support_access.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/element-software/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/element-software/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a>
-    </div>
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/element-software/issues/new?body=Page%3A%20[지원 액세스를 설정 및 해제합니다](https://docs.netapp.com/ko-kr/element-software/storage/task_system_manage_cluster_enable_and_disable_support_access.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/element-software/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a><a target="_blank" href="https://github.com/NetAppDocs/element-software/blob/main/storage/task_system_manage_cluster_enable_and_disable_support_access.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/element-software/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/element-software/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">이 페이지의 내용</div>
@@ -161,6 +179,7 @@
       </nav>
     </div>
   </div>
+  
   
   <!-- Start top_hat -->
   <div class="n-top-hat">
@@ -244,7 +263,8 @@
           data-did-you-mean="{suggestion}을(를) 검색해보십시오." 
           data-no-results-found-did-you-mean="{query}에 대한 결과를 찾을 수 없습니다. {suggestion}을(를) 검색하려 하셨습니까?" 
           data-results-found="{hitCount}개의 결과를 찾음"  
-          data-sk-es-pf-indexes=""></div>
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -333,6 +353,9 @@
 </div>
 <div class="n-pdf-body-container">
   <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
         <a target="_blank" href="/ko-kr/element-software/pdfs/fullsite-sidebar/SolidFire_및_Element_소프트웨어_12_3_x_문서.pdf" >
           <img src="/ko-kr/element-software/images/pdf.png" width="16" height="16"/>이 문서 사이트의 PDF</a>
 
@@ -341,6 +364,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/릴리스_정보.pdf" 
@@ -365,6 +391,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/개념.pdf" 
@@ -380,6 +409,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/아키텍처_및_구성_요소.pdf" 
@@ -418,6 +450,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/스토리지.pdf" 
@@ -461,6 +496,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/요구_사항.pdf" 
@@ -489,6 +527,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/시도해_보십시오.pdf" 
@@ -513,6 +554,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/하드웨어_설치_및_유지_관리.pdf" 
@@ -526,6 +570,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/H410S_및_H610S_하드웨어_정보.pdf" 
@@ -558,6 +605,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/SF_시리즈_하드웨어_정보.pdf" 
@@ -595,6 +645,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/SolidFire_엔터프라이즈_SDS_설치_및_사용.pdf" 
@@ -610,6 +663,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/설치를_위한_필수_작업을_수행합니다.pdf" 
@@ -648,6 +704,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/SolidFire_ESDS_유지_관리.pdf" 
@@ -695,6 +754,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/스토리지_설정.pdf" 
@@ -708,6 +770,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/스토리지_노드로_클러스터_설정.pdf" 
@@ -738,6 +803,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/파이버_채널_노드를_사용하여_클러스터_설정.pdf" 
@@ -787,6 +855,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/Element_소프트웨어를_사용하여_스토리지_관리.pdf" 
@@ -802,6 +873,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/구축_후_SolidFire_시스템_옵션을_구성합니다.pdf" 
@@ -830,6 +904,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/Element_소프트웨어_UI에서_기본_옵션을_사용합니다.pdf" 
@@ -843,6 +920,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/API_활동을_봅니다.pdf" 
@@ -880,6 +960,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/계정_관리.pdf" 
@@ -895,6 +978,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/클러스터_관리자_사용자_계정을_관리합니다.pdf" 
@@ -928,6 +1014,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/시스템_관리.pdf" 
@@ -941,6 +1030,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/다중_요소_인증을_사용합니다.pdf" 
@@ -967,6 +1059,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/클러스터_설정을_구성합니다.pdf" 
@@ -997,6 +1092,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/네트워크_시간_프로토콜을_설정합니다.pdf" 
@@ -1023,6 +1121,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/SNMP를_관리합니다.pdf" 
@@ -1055,6 +1156,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/드라이브_관리.pdf" 
@@ -1079,6 +1183,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/노드_관리.pdf" 
@@ -1111,6 +1218,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/가상_네트워크를_관리합니다.pdf" 
@@ -1152,6 +1262,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/FIPS_드라이브를_지원하는_클러스터를_생성합니다.pdf" 
@@ -1186,6 +1299,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/클러스터에서_HTTPS에_FIPS_140_2를_사용하도록_설정합니다.pdf" 
@@ -1210,6 +1326,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/외부_키_관리를_시작합니다.pdf" 
@@ -1249,6 +1368,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/볼륨_및_가상_볼륨_관리.pdf" 
@@ -1262,6 +1384,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/볼륨_작업.pdf" 
@@ -1294,6 +1419,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/가상_볼륨_작업.pdf" 
@@ -1315,6 +1443,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/프로토콜_엔드포인트.pdf" 
@@ -1339,6 +1470,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/바인딩.pdf" 
@@ -1374,6 +1508,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/볼륨_액세스_그룹_및_이니시에이터와_작업합니다.pdf" 
@@ -1427,6 +1564,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/데이터_보호.pdf" 
@@ -1440,6 +1580,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/데이터_보호를_위해_볼륨_스냅샷을_사용합니다.pdf" 
@@ -1453,6 +1596,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/데이터_보호를_위해_개별_볼륨_스냅샷을_사용합니다.pdf" 
@@ -1476,6 +1622,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/볼륨_스냅샷_백업_작업.pdf" 
@@ -1513,6 +1662,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/데이터_보호를_위해_그룹_스냅샷을_사용합니다.pdf" 
@@ -1551,6 +1703,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/스냅샷을_예약합니다.pdf" 
@@ -1592,6 +1747,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/NetApp_Element_소프트웨어를_실행하는_클러스터_간에_원격_복제를_수행합니다.pdf" 
@@ -1607,6 +1765,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/복제를_위해_클러스터를_쌍으로_설정합니다.pdf" 
@@ -1620,6 +1781,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/MVIP_또는_페어링_키를_사용하여_클러스터를_페어링합니다.pdf" 
@@ -1657,6 +1821,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/볼륨을_페어링합니다.pdf" 
@@ -1672,6 +1839,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/볼륨_ID_또는_페어링_키를_사용하여_볼륨을_페어링합니다.pdf" 
@@ -1713,6 +1883,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/볼륨_관계_관리.pdf" 
@@ -1736,6 +1909,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/볼륨_쌍_세부_정보.pdf" 
@@ -1780,6 +1956,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/Element_및_ONTAP_클러스터_간_SnapMirror_복제_사용.pdf" 
@@ -1805,6 +1984,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/SnapMirror_레이블.pdf" 
@@ -1831,6 +2013,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/SnapMirror를_사용한_재해_복구.pdf" 
@@ -1846,6 +2031,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/Element에_대한_장애_복구를_수행합니다.pdf" 
@@ -1894,6 +2082,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/볼륨_백업_및_복원.pdf" 
@@ -1937,6 +2128,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/시스템_문제를_해결합니다.pdf" 
@@ -1950,6 +2144,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/시스템_이벤트에_대한_정보를_봅니다.pdf" 
@@ -1976,6 +2173,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/시스템_경고를_봅니다.pdf" 
@@ -2002,6 +2202,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/볼륨_성능을_봅니다.pdf" 
@@ -2026,6 +2229,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/iSCSI_세션을_봅니다.pdf" 
@@ -2050,6 +2256,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/Fibre_Channel_세션을_봅니다.pdf" 
@@ -2074,6 +2283,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/드라이브_문제를_해결합니다.pdf" 
@@ -2104,6 +2316,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/노드_문제_해결.pdf" 
@@ -2128,6 +2343,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/스토리지_노드용_노드별_유틸리티_작업.pdf" 
@@ -2182,6 +2400,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/NetApp_하이브리드_클라우드_제어로_스토리지를_관리_및_모니터링합니다.pdf" 
@@ -2209,6 +2430,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/NetApp_하이브리드_클라우드_제어로_SolidFire_시스템을_모니터링합니다.pdf" 
@@ -2248,6 +2472,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/Element_API를_사용하여_스토리지_관리.pdf" 
@@ -2261,6 +2488,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/Element_소프트웨어_API_정보.pdf" 
@@ -2295,6 +2525,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/공통_개체.pdf" 
@@ -2483,6 +2716,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/일반적인_방법.pdf" 
@@ -2519,6 +2755,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/계정_API_메소드.pdf" 
@@ -2555,6 +2794,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/관리자_API_메소드.pdf" 
@@ -2591,6 +2833,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/클러스터_API_메소드.pdf" 
@@ -2681,6 +2926,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/클러스터_생성_API_메소드.pdf" 
@@ -2709,6 +2957,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/드라이브_API_메소드.pdf" 
@@ -2745,6 +2996,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/Fibre_Channel_API_메소드.pdf" 
@@ -2777,6 +3031,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/이니시에이터_API_메소드.pdf" 
@@ -2807,6 +3064,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/LDAP_API_메소드.pdf" 
@@ -2839,6 +3099,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/다중_요소_인증_API_메서드.pdf" 
@@ -2885,6 +3148,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/세션_인증_API_메서드.pdf" 
@@ -2911,6 +3177,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/노드_API_메소드.pdf" 
@@ -3039,6 +3308,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/복제_API_메소드.pdf" 
@@ -3085,6 +3357,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/보안_API_메서드.pdf" 
@@ -3145,6 +3420,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/SnapMirror_API_메소드.pdf" 
@@ -3225,6 +3503,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/시스템_구성_API_메소드.pdf" 
@@ -3321,6 +3602,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/멀티_테넌트_네트워킹_API_메소드.pdf" 
@@ -3353,6 +3637,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/볼륨_API_메소드.pdf" 
@@ -3461,6 +3748,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/볼륨_액세스_그룹_API_메소드.pdf" 
@@ -3501,6 +3791,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/볼륨_스냅샷_API_메소드.pdf" 
@@ -3553,6 +3846,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/가상_볼륨_API_메소드.pdf" 
@@ -3596,11 +3892,12 @@
 
 
 
-
-
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/답변_예.pdf" 
@@ -3654,6 +3951,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/관리_노드와_작업합니다.pdf" 
@@ -3669,6 +3969,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/관리_노드를_설치_또는_복구합니다.pdf" 
@@ -3701,6 +4004,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/관리_노드_UI를_사용합니다.pdf" 
@@ -3731,6 +4037,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/관리_노드_REST_API를_사용합니다.pdf" 
@@ -3773,6 +4082,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/지원_연결을_관리합니다.pdf" 
@@ -3808,6 +4120,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/Element_12_3_x를_위해_NetApp_SolidFire_All_Flash_스토리지_시스템을_업그레이드하십시오.pdf" 
@@ -3823,6 +4138,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/element-software/pdfs/sidebar/시스템_업그레이드_절차.pdf" 
@@ -5436,9 +5754,7 @@
         ListVirtualVolumeTasks를 참조하십시오
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/element-software/api/reference_element_api_modifystoragecontainer.html">
         ModifyStorageContainer 를 참조하십시오
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/element-software/api/reference_element_api_app_a_cluster_fault_codes.html">
-        클러스터 고장 코드
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/element-software/api/reference_element_api_app_b_access_control.html">
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/element-software/api/reference_element_api_app_b_access_control.html">
         액세스 제어
       </a></li><li class="subfolders "><a href="/ko-kr/element-software/api/concept_element_api_response_examples.html">
         <div class="na-navbar-padding"> 답변 예</div>
@@ -5564,6 +5880,7 @@
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
+
   </div>
   
 
@@ -5612,20 +5929,9 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-11 16:06:50 +0000">03/11/2022</time>
+    <time datetime="2022-01-31 21:12:18 +0000">01/31/2022</time>
     
   
-
-<span>기여자
-  <a target="_blank" href="https://github.com/amgrissino">
-    <img  class="avatar avatar-small"
-          alt="amgrissino"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/36450105?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
-</span>
 
 
 </p>
@@ -5677,98 +5983,122 @@ SolidFire 엔터프라이즈 SDS 클러스터에서는 이 기능을 사용할 �
   <div class="n-footer__bottom">
     <div class="n-container">
       <div class="n-footer__bottom-left">
-
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
-
-</ul>
-</div>
-<div class="n-footer__social-links">
-<ul class="n-footer__social-link-list">
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
-<span class="n-footer__social-link-text">blog</span>
-<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
-  <title>blog@</title>
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/element-software/common/svg/sprite.svg#blog"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
-<span class="n-footer__social-link-text">community</span>
-<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
-<title>community@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/element-software/common/svg/sprite.svg#comments"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
-<span class="n-footer__social-link-text">twitter</span>
-<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
-<title>twitter@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/element-software/common/svg/sprite.svg#twitter"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
-<span class="n-footer__social-link-text">facebook</span>
-<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
-<title>facebook@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/element-software/common/svg/sprite.svg#facebook"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
-<span class="n-footer__social-link-text">linkedin</span>
-<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
-<title>linkedin@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/element-software/common/svg/sprite.svg#linkedin"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
-<span class="n-footer__social-link-text">youtube</span>
-<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
-<title>youtube@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/element-software/common/svg/sprite.svg#youtube"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
-<span class="n-footer__social-link-text">slideshare</span>
-<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
-<title>slideshare@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/element-software/common/svg/sprite.svg#slideshare"></use>
-</svg>
-
-</a>
-</li>
-</ul>
-</div>
-
-</div>
-<div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">웹 사이트에 대한 피드백이 있으십니까?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">의견을 공유해 주십시오</a>
-  <a href="https://docs.netapp.com/ko-kr/announcements/" class="n-footer__copyright">공지 사항</a>
-  </p>
-</div>
-</div>
-</div>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">이용 약관</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">개인 정보 보호 정책</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">쿠키 정책</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">쿠키 설정</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">웹 사이트에 대한 피드백이 있으십니까?</span>
+              <a target="_self" href="javascript:netapp_mailto()">의견을 공유해 주십시오</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/ko-kr/announcements/">공지 사항</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ko-kr/element-software/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ko-kr/element-software/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ko-kr/element-software/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ko-kr/element-software/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ko-kr/element-software/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ko-kr/element-software/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ko-kr/element-software/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
       </div><!-- Elasticsearch JS -->
