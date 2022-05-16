@@ -20,14 +20,15 @@ NOTE: NetApp 지원 자격 증명을 사용하여 로그인하라는 메시지�
 
 == NetApp Element 소프트웨어
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2881056["NetApp Element 소프트웨어 12.3.2 릴리스 정보"^] _신규 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882193["NetApp Element 소프트웨어 12.5 릴리스 정보"^] _신규 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2881056["NetApp Element 소프트웨어 12.3.2 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2878089["NetApp Element 소프트웨어 12.3.1 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2876498["NetApp Element 소프트웨어 12.3 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2877210["NetApp Element 소프트웨어 12.2.1 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2873789["NetApp Element 소프트웨어 12.2 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2877208["NetApp Element 소프트웨어 12.0.1 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2865022["NetApp Element 소프트웨어 12.0 릴리스 정보"^]
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2880259["NetApp Element 소프트웨어 11.8.2 릴리스 정보"^] _신규 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2880259["NetApp Element 소프트웨어 11.8.2 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2877206["NetApp Element 소프트웨어 11.8.1 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2864256["NetApp Element 소프트웨어 11.8 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2861225["NetApp Element 소프트웨어 11.7 릴리스 정보"^]
@@ -59,7 +60,7 @@ NOTE: NetApp 지원 자격 증명을 사용하여 로그인하라는 메시지�
 
 == 스토리지 펌웨어
 
-* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.146.html["스토리지 펌웨어 번들 2.146 릴리스 정보(최신)"^]
+* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.146.html["스토리지 펌웨어 번들 2.146 릴리스 정보"^] _신규 _
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.99.2.html["스토리지 펌웨어 번들 2.99.2 릴리스 정보"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.76.html["스토리지 펌웨어 번들 2.76 릴리스 정보"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.27.html["스토리지 펌웨어 번들 2.27 릴리스 정보"^]

@@ -1,0 +1,234 @@
+---
+sidebar: sidebar 
+permalink: mnode/task_mnode_enable_node_troubleshooting_sessions.html 
+summary: Element 12.5 이상의 경우 관리 노드에서 sfreadonly 사용자 계정을 설정하여 NetApp Support의 도움 없이 시스템 구성요소 문제를 해결할 수 있습니다. 고급 문제 해결을 위해 NetApp 지원에 대한 원격 지원 터널 액세스를 활성화 및 열 수도 있습니다. 
+keywords: netapp, sfreadonly, connect to support, support tunnel, rst, mnode, management node 
+---
+= 기본 문제 해결을 위해 SSH를 사용하여 스토리지 노드 액세스
+:allow-uri-read: 
+
+
+[role="lead"]
+Element 12.5부터 기본 문제 해결을 위해 스토리지 노드에서 sfreadonly 시스템 계정을 사용할 수 있습니다. 고급 문제 해결을 위해 NetApp 지원에 대한 원격 지원 터널 액세스를 활성화 및 열 수도 있습니다.
+
+sfreadonly 시스템 계정은 기본 Linux 시스템 및 "ping"을 포함한 네트워크 문제 해결 명령을 실행할 수 있도록 액세스를 활성화합니다.
+
+
+WARNING: NetApp Support에서 통보하지 않는 한, 이 시스템에 대한 모든 변경 사항은 지원되지 않으며 지원 계약을 무효로 하고 데이터의 불안정이나 액세스 불가능성을 초래할 수 있습니다.
+
+.시작하기 전에
+* * 쓰기 권한 *: 현재 작업 디렉터리에 대한 쓰기 권한이 있는지 확인합니다.
+* * (선택 사항) 자체 키 쌍 생성 *: Windows 10, MacOS 또는 Linux 배포에서 ssh-keygen을 실행합니다. 이 작업은 사용자 키 쌍을 생성하는 일회성 작업으로, 향후 문제 해결 세션에 다시 사용할 수 있습니다. 이 모델에서도 작동하는 직원 계정과 연결된 인증서를 사용할 수 있습니다.
+* * 관리 노드에서 SSH 기능 활성화 *: 관리 모드에서 원격 액세스 기능을 활성화하려면 를 참조하십시오 link:task_mnode_ssh_management.html["이 주제"]. 관리 서비스 2.18 이상의 경우 관리 노드에서 원격 액세스 기능이 기본적으로 해제되어 있습니다.
+* * 스토리지 클러스터에서 SSH 기능 활성화 *: 스토리지 클러스터 노드에서 원격 액세스 기능을 활성화하려면 를 참조하십시오 link:https://docs.netapp.com/us-en/element-software/storage/task_system_manage_cluster_enable_and_disable_support_access.html["이 주제"].
+* * 방화벽 구성 *: 관리 노드가 프록시 서버 뒤에 있는 경우 sshd.config 파일에 다음 TCP 포트가 필요합니다.
++
+[cols="15,25,60"]
+|===
+| TCP 포트 | 설명 | 연결 방향 
+
+
+| 443 | 개방형 지원 터널을 통해 웹 UI로 역포트 포워딩을 위한 API 호출/HTTPS | 관리 노드에서 스토리지 노드로 
+
+
+| 22 | SSH 로그인 액세스 | 관리 노드에서 스토리지 노드 또는 스토리지 노드에서 관리 노드로 
+|===
+
+
+.문제 해결 옵션
+* <<Troubleshoot a cluster node>>
+* <<Troubleshoot a cluster node with NetApp Support>>
+* <<Troubleshoot a node that is not part of cluster>>
+
+
+
+
+== 클러스터 노드의 문제를 해결합니다
+
+sfreadonly 시스템 계정을 사용하여 기본 문제 해결을 수행할 수 있습니다.
+
+.단계
+. 관리 노드 VM을 설치할 때 선택한 계정 로그인 자격 증명을 사용하여 관리 노드에 SSH를 연결합니다.
+. 관리 노드에서 '/sf/bin'으로 이동합니다.
+. 시스템에 맞는 스크립트를 찾습니다.
++
+** SignSshKeys.PS1
+** SignSshKeys.py
+** SignSshKeys.sh
++
+[NOTE]
+====
+SignSshKeys.PS1은 PowerShell 7 이상에 종속되며 SignSshKeys.py 은 Python 3.6.0 이상 및 에 종속됩니다 https://docs.python-requests.org/["요청 모듈"^].
+
+이 스크립트는 user, user.pub, user-certt.pub 파일을 나중에 ssh 명령이 사용하는 현재 작업 디렉토리에 씁니다. 그러나 스크립트에 공개 키 파일이 제공되면 '<public_key>' 파일('public_key>'가 스크립트에 전달된 공개 키 파일의 접두사로 바뀐 파일)만 디렉토리에 기록됩니다.
+
+====
+
+
+. 관리 노드에서 스크립트를 실행하여 SSH 키 체인을 생성합니다. 이 스크립트는 클러스터의 모든 노드에서 sfreadonly 시스템 계정을 사용하여 SSH 액세스를 설정합니다.
++
+[listing]
+----
+SignSshKeys --ip [ip address] --user [username] --duration [hours] --publickey [public key path]
+----
++
+.. 다음 각 매개 변수에 대해 [ ] 대괄호(대괄호 포함)의 값을 바꿉니다.
++
+
+NOTE: 축약형 또는 전형 매개변수를 사용할 수 있습니다.
+
++
+*** * -- IP| - i [IP 주소] *: API를 실행할 대상 노드의 IP 주소입니다.
+*** * -- user|-u [username] *: API 호출을 실행하는 데 사용되는 클러스터 사용자입니다.
+*** * (선택 사항) -- duration|-d [hours] *: 서명된 키의 지속 시간은 시간 단위로 정수로 유효해야 합니다. 기본값은 24시간입니다.
+*** * (선택 사항) -- publickey | -k [공개 키 경로] *: 사용자가 공개 키를 제공하기로 선택한 경우, 공개 키에 대한 경로입니다.
+
+
+.. 입력한 내용과 다음 샘플 명령을 비교합니다. 이 예에서 스토리지 노드의 IP는 10.116.139.195이고 admin은 클러스터 사용자 이름이며 키 유효 기간은 2시간입니다.
++
+[listing]
+----
+sh /sf/bin/SignSshKeys.sh --ip 10.116.139.195 --user admin --duration 2
+----
+.. 명령을 실행합니다.
+
+
+. 노드 IP에 대한 SSH:
++
+[listing]
+----
+ssh -i user sfreadonly@[node_ip]
+----
++
+기본적인 Linux 시스템과 "ping" 같은 네트워크 문제 해결 명령 및 기타 읽기 전용 명령을 실행할 수 있습니다.
+
+. (선택 사항) 비활성화 link:task_mnode_ssh_management.html["원격 액세스 기능"] 문제 해결이 완료된 후 다시 수행합니다.
++
+
+NOTE: SSH를 해제하지 않으면 관리 노드에서 SSH가 활성화된 상태로 유지됩니다. SSH 지원 구성은 수동으로 비활성화할 때까지 업데이트 및 업그레이드를 통해 관리 노드에서 유지됩니다.
+
+
+
+
+
+== NetApp Support를 통해 클러스터 노드 문제 해결
+
+NetApp Support에서는 기술자가 보다 심화된 요소 진단을 실행할 수 있는 시스템 계정으로 고급 문제 해결을 수행할 수 있습니다.
+
+.단계
+. 관리 노드 VM을 설치할 때 선택한 계정 로그인 자격 증명을 사용하여 관리 노드에 SSH를 연결합니다.
+. NetApp Support에서 보낸 포트 번호로 RST 명령을 실행하여 지원 터널을 엽니다.
++
+'rst-r sfsupport.solidfire.com -u element -p <port_number>'
+
++
+NetApp Support는 지원 터널을 통해 관리 노드에 로그인합니다.
+
+. 관리 노드에서 '/sf/bin'으로 이동합니다.
+. 시스템에 맞는 스크립트를 찾습니다.
++
+** SignSshKeys.PS1
+** SignSshKeys.py
+** SignSshKeys.sh
++
+[NOTE]
+====
+SignSshKeys.PS1은 PowerShell 7 이상에 종속되며 SignSshKeys.py 은 Python 3.6.0 이상 및 에 종속됩니다 https://docs.python-requests.org/["요청 모듈"^].
+
+이 스크립트는 user, user.pub, user-certt.pub 파일을 나중에 ssh 명령이 사용하는 현재 작업 디렉토리에 씁니다. 그러나 스크립트에 공개 키 파일이 제공되면 '<public_key>' 파일('public_key>'가 스크립트에 전달된 공개 키 파일의 접두사로 바뀐 파일)만 디렉토리에 기록됩니다.
+
+====
+
+
+. 스크립트를 실행하여 '-sfadmin' 플래그를 사용하여 SSH 키 체인을 생성합니다. 이 스크립트는 모든 노드에서 SSH를 사용하도록 설정합니다.
++
+[listing]
+----
+SignSshKeys --ip [ip address] --user [username] --duration [hours] --sfadmin
+----
++
+[NOTE]
+====
+클러스터 노드에 대한 SSH를 '-sfadmin'으로 사용하려면 클러스터에서 'supportAdmin' 액세스를 통해 '--user'를 사용하여 SSH 키 체인을 생성해야 합니다.
+
+클러스터 관리자 계정에 대한 'upportAdmin' 액세스를 구성하려면 Element UI 또는 API를 사용합니다.
+
+** link:../storage/concept_system_manage_manage_cluster_administrator_users.html#view-cluster-admin-details["Element UI를 사용하여 "supportAdmin" 액세스를 구성합니다"]
+** API를 사용하고 API 요청에 "supportAdmin"을 "access" 유형으로 추가하여 'upportAdmin' 액세스를 구성합니다.
++
+*** link:../api/reference_element_api_addclusteradmin.html["새 계정에 대해 "supportAdmin" 액세스를 구성합니다"]
+*** link:../api/reference_element_api_modifyclusteradmin.html["기존 계정에 대해 "supportAdmin" 액세스를 구성합니다"]
++
+'clusterAdminID'를 얻기 위해 을 사용할 수 있습니다 link:../api/reference_element_api_listclusteradmins.html["ListClusterAdmins입니다"] API를 참조하십시오.
+
+
+
+
+
+'upportAdmin' 액세스를 추가하려면 클러스터 관리자 또는 관리자 권한이 있어야 합니다.
+
+====
++
+.. 다음 각 매개 변수에 대해 [ ] 대괄호(대괄호 포함)의 값을 바꿉니다.
++
+
+NOTE: 축약형 또는 전형 매개변수를 사용할 수 있습니다.
+
++
+*** * -- IP| - i [IP 주소] *: API를 실행할 대상 노드의 IP 주소입니다.
+*** * -- user|-u [username] *: API 호출을 실행하는 데 사용되는 클러스터 사용자입니다.
+*** * (선택 사항) -- duration|-d [hours] *: 서명된 키의 지속 시간은 시간 단위로 정수로 유효해야 합니다. 기본값은 24시간입니다.
+
+
+.. 입력한 내용과 다음 샘플 명령을 비교합니다. 이 예에서는 스토리지 노드의 IP가 192.168.0.1이고, admin은 클러스터 사용자 이름이고, 키 유효 기간은 2시간이며, '-sfadmin'은 문제 해결을 위해 NetApp 지원 노드에 액세스할 수 있도록 허용합니다.
++
+[listing]
+----
+sh /sf/bin/SignSshKeys.sh --ip 192.168.0.1 --user admin --duration 2 --sfadmin
+----
+.. 명령을 실행합니다.
+
+
+. 노드 IP에 대한 SSH:
++
+[listing]
+----
+ssh -i user sfadmin@[node_ip]
+----
+. 원격 지원 터널을 닫으려면 다음을 입력합니다.
++
+'rst-killall'입니다
+
+. (선택 사항) 비활성화 link:task_mnode_ssh_management.html["원격 액세스 기능"] 문제 해결이 완료된 후 다시 수행합니다.
++
+
+NOTE: SSH를 해제하지 않으면 관리 노드에서 SSH가 활성화된 상태로 유지됩니다. SSH 지원 구성은 수동으로 비활성화할 때까지 업데이트 및 업그레이드를 통해 관리 노드에서 유지됩니다.
+
+
+
+
+
+== 클러스터에 속하지 않는 노드의 문제를 해결합니다
+
+아직 클러스터에 추가되지 않은 노드의 기본 문제 해결을 수행할 수 있습니다. NetApp Support의 도움을 받거나 지원을 받지 않고 이 용도로 sfreadonly 시스템 계정을 사용할 수 있습니다. 관리 노드를 설정한 경우 SSH에 사용하고 이 작업에 대해 제공된 스크립트를 실행할 수 있습니다.
+
+. SSH 클라이언트가 설치된 Windows, Linux 또는 Mac 시스템에서 NetApp Support에서 제공하는 시스템에 적합한 스크립트를 실행합니다.
+. 노드 IP에 SSH:
++
+[listing]
+----
+ssh -i user sfreadonly@[node_ip]
+----
+. (선택 사항) 비활성화 link:task_mnode_ssh_management.html["원격 액세스 기능"] 문제 해결이 완료된 후 다시 수행합니다.
++
+
+NOTE: SSH를 해제하지 않으면 관리 노드에서 SSH가 활성화된 상태로 유지됩니다. SSH 지원 구성은 수동으로 비활성화할 때까지 업데이트 및 업그레이드를 통해 관리 노드에서 유지됩니다.
+
+
+
+[discrete]
+== 자세한 내용을 확인하십시오
+
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+* https://www.netapp.com/hybrid-cloud/hci-documentation/["NetApp HCI 리소스 페이지 를 참조하십시오"^]
+

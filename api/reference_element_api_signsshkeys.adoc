@@ -1,0 +1,172 @@
+---
+permalink: api/reference_element_api_signsshkeys.html 
+sidebar: sidebar 
+keywords: ssh, sign key 
+summary: 노드나 클러스터에서 ssh를 사용하도록 설정한 후에는 SignSshKeys 메서드를 사용하여 sfadmin 또는 sfreadonly 로 노드의 셸에 액세스할 수 있습니다. sfreadonly 는 Element 12.5의 새로운 사용자 계정으로서 노드에서 초기 문제 해결을 허용하지만 상승된 명령을 만들 수 있는 권한이 없습니다. 
+---
+= SignSshKeys 를 참조하십시오
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+를 사용하여 클러스터에서 SSH를 활성화한 후 link:../api/reference_element_api_enablessh.html["EnableSSH 메서드"]'SignSshKeys' 메서드를 사용하여 노드의 셸에 액세스할 수 있습니다.
+
+'읽기 전용'은 Element 12.5의 새로운 시스템 계정으로, 노드에 대한 기본적인 문제 해결이 가능합니다. 이 API를 사용하면 클러스터의 모든 노드에서 'readonly' 시스템 계정을 사용하여 SSH에 액세스할 수 있습니다.
+
+
+WARNING: NetApp Support에서 통보하지 않는 한, 시스템에 대한 모든 변경 사항은 지원되지 않으며 지원 계약을 무효로 하고 데이터의 불안정이나 액세스 불가능성을 초래할 수 있습니다.
+
+메소드를 사용한 후에는 응답에서 키 체인을 복사하여 SSH 연결을 시작할 시스템에 저장한 후 다음 명령을 실행해야 합니다.
+
+[listing]
+----
+ssh -i <identity_file> sfreadonly@<node_ip>
+----
+identity_file은 공개 키 인증을 위한 identity(private key)를 읽고 node_ip를 노드의 IP 주소로 하는 파일입니다. identity_file에 대한 자세한 내용은 SSH man 페이지를 참조하십시오.
+
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+기간
+ a| 
+서명된 키의 유효 시간을 나타내는 1에서 24 사이의 정수. 기간을 지정하지 않으면 기본값이 사용됩니다.
+ a| 
+정수
+ a| 
+1
+ a| 
+아니요
+
+
+
+ a| 
+PublicKey를 클릭합니다
+ a| 
+제공된 경우 이 매개 변수는 사용자에게 전체 키 체인을 만드는 대신 signed_public_key 만 반환합니다.
+
+
+NOTE: '+'가 있는 브라우저에서 URL 표시줄을 사용하여 제출된 공개 키는 공백 및 파단 서명으로 해석됩니다.
+ a| 
+문자열
+ a| 
+null입니다
+ a| 
+아니요
+
+
+
+ a| 
+sfadmin
+ a| 
+supportAdmin 클러스터 액세스를 사용하여 API 호출을 수행하거나 노드가 클러스터에 없는 경우 sfadmin 셸 계정에 액세스할 수 있습니다.
+ a| 
+부울
+ a| 
+거짓
+ a| 
+아니요
+
+|===
+
+
+== 반환 값
+
+이 메서드의 반환 값은 다음과 같습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+keygen_status입니다
+ a| 
+서명된 키의 ID, 허용된 보안 주체 및 키의 유효한 시작 날짜와 종료 날짜가 포함됩니다.
+ a| 
+문자열
+
+
+
+ a| 
+개인 키
+ a| 
+전용 SSH 키 값은 API가 최종 사용자를 위한 전체 키 체인을 생성하는 경우에만 반환됩니다.
+
+
+NOTE: 이 값은 Base64로 인코딩됩니다. 파일에 값을 쓸 때 유효한 개인 키로 읽도록 하려면 값을 디코딩해야 합니다.
+ a| 
+문자열
+
+
+
+ a| 
+public_key 를 선택합니다
+ a| 
+공용 SSH 키 값은 API가 최종 사용자에 대한 전체 키 체인을 생성하는 경우에만 반환됩니다.
+
+
+NOTE: public_key 매개 변수를 API 메서드에 전달하면 응답에 'signed_public_key' 값만 반환됩니다.
+ a| 
+문자열
+
+
+
+ a| 
+signed_public_key입니다
+ a| 
+사용자가 API에서 제공하거나 생성한 공개 키에 서명함으로써 생성되는 SSH 공개 키입니다.
+ a| 
+문자열
+
+|===
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+    "method": "SignSshKeys",
+    "params": {
+        "duration": 2,
+        "publicKey":<string>
+    },
+    "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": null,
+  "result": {
+    "signedKeys": {
+      "keygen_status": <keygen_status>,
+      "signed_public_key": <signed_public_key>
+    }
+  }
+}
+----
+이 예제에서는 1-24시간 동안 유효한 공개 키가 서명되고 반환됩니다.
+
+
+
+== 버전 이후 새로운 기능
+
+12.5

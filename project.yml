@@ -9,7 +9,7 @@ settings:
   langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: SolidFire 및 Element 소프트웨어 12.3.x 문서
+  - title: SolidFire 및 Element 소프트웨어 12.5 문서
     url: "/index.html"
   - title: 릴리스 정보
     url: "/concepts/concept_rn_relatedrn_element.html"
@@ -123,6 +123,8 @@ homepage:
       url: https://mysupport.netapp.com/site/products/all/details/element-software/guideme-tab
   - title: 이전 버전
     links:
+    - title: Element 12.5 문서
+      url: https://docs.netapp.com/us-en/element-software-123/
     - title: 요소 12.2 문서
       url: https://docs.netapp.com/sfe-122/index.jsp
     - title: Element 12.0 문서

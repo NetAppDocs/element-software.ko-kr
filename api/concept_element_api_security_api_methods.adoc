@@ -28,6 +28,7 @@ Element 소프트웨어를 외부 키 관리 서버와 같은 외부 보안 관�
 * xref:reference_element_api_listkeyserverskmip.adoc[ListKeyServersKmip 를 참조하십시오]
 * xref:reference_element_api_modifykeyserverkmip.adoc[ModifyKeyServerKmip]
 * xref:reference_element_api_removekeyserverfromproviderkmip.adoc[RemoveKeyServerFromProviderKmip 를 참조하십시오]
+* xref:reference_element_api_signsshkeys.adoc[SignSshKeys 를 참조하십시오]
 * xref:reference_element_api_testkeyproviderkmip.adoc[TestKeyProviderKmip 을 참조하십시오]
 * xref:reference_element_api_testkeyserverkmip.adoc[TestKeyServerKmip]
 

@@ -50,7 +50,6 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 * link:./media/Ember_12.3.pdf["Ember OS 12.3.1에 대한 고지 사항"^]
 * link:./media/Ember_12.3.pdf["Ember OS 12.3에 대한 고지 사항"^]
-* link:./media/HealthTools_12.3.pdf["HealthTools에 대한 고지 사항"^]
 * link:./media/mNode_12.3.pdf["관리 노드 12.3.1 공지"^]
 * link:./media/mNode_12.3.pdf["관리 노드 12.3에 대한 고지 사항"^]
 * link:./media/mgmt_svcs_2.18.pdf["관리 서비스 공지 2.18"^]

@@ -1,6 +1,6 @@
 ---
 section: upgrade
-title: Element 12.3.x를 위해 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드하십시오
+title: Element 소프트웨어 12.5를 위해 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드하십시오
 entries:
 - title: 업그레이드 순서 개요
   url: "/upgrade/concept_element_upgrade_overview.html"
@@ -8,8 +8,6 @@ entries:
   entries:
   - title: 관리 서비스를 업데이트합니다
     url: "/upgrade/task_hcc_update_management_services.html"
-  - title: 최신 HealthTools로 업그레이드하십시오
-    url: "/upgrade/task_upgrade_element_latest_healthtools.html"
   - title: 스토리지를 업그레이드하기 전에 Element 스토리지 상태 점검을 실행합니다
     url: "/upgrade/task_hcc_upgrade_element_prechecks.html"
   - title: Element 소프트웨어 업그레이드

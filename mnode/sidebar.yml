@@ -50,7 +50,9 @@ entries:
     url: "/mnode/task_mnode_logs.html"
 - title: 지원 연결을 관리합니다
   entries:
-  - title: 원격 NetApp 지원 세션을 시작합니다
+  - title: 기본 문제 해결을 위해 SSH를 사용하여 스토리지 노드 액세스
+    url: "/mnode/task_mnode_enable_node_troubleshooting_sessions.html"
+  - title: 원격 NetApp 지원 세션 시작(Element 12.3 및 이전)
     url: "/mnode/task_mnode_enable_remote_support_connections.html"
   - title: 관리 노드에서 SSH 기능을 관리합니다
     url: "/mnode/task_mnode_ssh_management.html"
