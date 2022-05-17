@@ -200,12 +200,10 @@
   <block id="cf01dc47ed79267872b62a626969809c" category="paragraph">개요 페이지에서 특정 작업을 탐색할 수 있습니다.</block>
   <block id="b6da6eab87d65c4c9297f872afd87022" category="section-title">SolidFire ESDS 클러스터에서 Element API를 사용합니다</block>
   <block id="c08a6bc5249e5f81c4e136382fe69500" category="inline-link">Element API 설명서</block>
-  <block id="15f0b4f62899bf3b9a8787207a388277" category="list-text">* 저장 시 소프트웨어 암호화 기능 향상 *:요소 12.3에는 SolidFire 엔터프라이즈 SDS 스토리지 클러스터를 생성할 때 기본적으로 활성화되는 저장 시 소프트웨어 암호화 기능에 대한 향상된 기능이 도입되었습니다. 이 기능은 스토리지 노드의 SSD에 저장된 모든 데이터를 암호화하므로 클라이언트 IO에 미치는 성능이 2% 정도로 매우 적습니다. 다음은 저장된 소프트웨어 암호화와 관련된 Element API 메서드입니다(참조)<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 각 방법에 대한 자세한 내용 참조).</block>
   <block id="389945c09cdda9d478adbb3a47413d5c" category="list-text">디시블러세이트</block>
   <block id="a3c5dec02de1b4c52f4ef9ce2d7e0b2a" category="list-text">EnableEncryptionAtRest</block>
   <block id="9474d63d23a163955eb222057663ae5f" category="list-text">GetSoftwareEncryptionAtRestInfo</block>
   <block id="c68a2d9b7e85236a7846e8479df5eb22" category="list-text">RekeySoftwareEncryptionAtRestMasterKey</block>
-  <block id="f273afdfc9c8da85f2aa65a9f2472291" category="list-text">* 보존할 최대 스냅샷 수를 정의하는 기능 *: 요소 12.3에는 스냅샷 보존 기능이 향상되었습니다. 이 향상 기능을 지원하도록 다음 API가 수정되었습니다(참조)<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 각 방법에 대한 자세한 내용 참조).</block>
   <block id="05e99937dbfca39a8e79ec1345dc0caf" category="list-text">'CreateVolume'</block>
   <block id="71a673e3e44f3d66064abf107eecd41b" category="list-text">수정 볼륨</block>
   <block id="16668f69631e97f6454595916b95763c" category="list-text">'CreateSnapshot'을 선택합니다</block>
@@ -214,8 +212,6 @@
   <block id="17527882eae9d5d0fe85324be1ab5b68" category="list-text">수정 일정</block>
   <block id="971735603f1c15fa2aefaf1cdcffcf38" category="list-text">수정 스냅샷</block>
   <block id="b4d38d2cfe8361b4706ee65b48cd47e7" category="list-text">'CreateGroupSnapshot'을 선택합니다</block>
-  <block id="110268879887fb27d1a8394d4bc2030a" category="list-text">요소 소프트웨어 패치에 대한 정보 얻기 *:Element 12.3에는 스토리지 노드에 설치된 Element 소프트웨어 패치에 대한 정보를 얻을 수 있는 "GetPatchInfo" 메서드가 도입되었습니다. 를 참조하십시오<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 를 참조하십시오.</block>
-  <block id="ebcdf1544f3d1837d74ac7935921840f" category="list-text">* 노드의 각 네트워크 인터페이스에 대한 통계 나열 *:요소 12.3에는 노드의 각 네트워크 인터페이스에 대한 삭제된 패킷 수와 다양한 오류 유형 등의 통계를 나열할 수 있는 "ListNetworkInterfaceStats" 메서드가 도입되었습니다. 이 API 메서드는 개별 노드에 사용하기 위한 것으로, 개별 노드에 액세스하려면 사용자 ID 및 암호 인증이 필요합니다. 하지만 매개 변수 force가 메서드 호출에서 true 값을 지정하면 클러스터에서 이 메서드를 사용할 수 있습니다. 클러스터에서 매개 변수를 사용하면 모든 인터페이스의 네트워크 통계가 나열됩니다. 를 참조하십시오<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="b39b4f606b587cbb01f67a7e70186eea" category="list-text">SolidFire ESDS * 를 지원하기 위해 Element 12.2에 도입되고 업데이트된 * API: SolidFire ESDS 클러스터에서 사용할 수 있는 Element 12.2에 몇 가지 새로운 API가 도입되었습니다.</block>
   <block id="463224af5ebc7979ed09e40e54613a35" category="paragraph">요소 12.2의 새로운 API 목록은 다음과 같습니다.</block>
   <block id="41773f0138486ec234a35d7b9f9a9fbd" category="inline-link-macro">게라이센스 키</block>
@@ -12132,10 +12128,7 @@
   <block id="dce49007d1d10ccadf332bd86146cba7" category="list-text"><block ref="dce49007d1d10ccadf332bd86146cba7" category="inline-link-macro-rx"></block></block>
   <block id="fcfc8ec29a85e264572757cf7ff41339" category="inline-link-macro">원격 NetApp 지원 연결 활성화(Element 12.3 및 이전)</block>
   <block id="5bda78d943ecf4022539ccee32c6682a" category="list-text"><block ref="5bda78d943ecf4022539ccee32c6682a" category="inline-link-macro-rx"></block></block>
-  <block id="6404341fecbf08f79cd2d05c9800fd53" category="doc">원격 NetApp 지원 세션 시작(Element 12.3 및 이전)</block>
-  <block id="5dc24222e8b8a9148a6bfcbd2707e07e" category="paragraph">Element 12.3 이하를 실행 중이고 SolidFire All-Flash 스토리지 시스템에 대한 기술 지원이 필요한 경우 NetApp Support를 사용하여 시스템을 원격으로 연결할 수 있습니다. 세션을 시작하고 원격 액세스를 위해 NetApp Support는 사용자 환경에 대한 역방향 SSH(Secure Shell) 연결을 열 수 있습니다.</block>
   <block id="1cf342de8aa31250addb30092adae2c5" category="section-title">동적 노드 등급</block>
-  <block id="f413d4f1d8e95d29f50c5e04149a3882" category="paragraph">동적 노드 등급을 통해 현재 플랫폼당 단일 CPU 모델이 아닌 ESDS 플랫폼당 24개의 지원되는 CPU를 활용할 수 있습니다.</block>
   <block id="d15380f01867fb0f66a13165a708bf5c" category="inline-link-macro">Element 소프트웨어 12.5에 대한 고지 사항</block>
   <block id="666d0726b52e2f2825f461badc8414a8" category="list-text"><block ref="666d0726b52e2f2825f461badc8414a8" category="inline-link-macro-rx"></block></block>
   <block id="fe69a3287756ee47fc4650a84806448a" category="inline-link-macro">NetApp SolidFire 엔터프라이즈 SDS 12.5에 대한 고지 사항</block>
@@ -12204,7 +12197,6 @@
   <block id="7fdc03d82c29eba6b61c702a58fd28ba" category="paragraph">이러한 구성 요소에는 관리 서비스, NetApp 하이브리드 클라우드 제어, Element 소프트웨어, 관리 노드 및 설치에 따라 vCenter Server용 Element 플러그인이 포함됩니다.</block>
   <block id="85aed6fa173952d69db4c99c1290921b" category="inline-link-macro">스토리지 펌웨어</block>
   <block id="a8c7f4c70c59120de0b33efda8af8aa5" category="list-text">에 대해 충분한 시간을 예약했습니다 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 및 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 업그레이드. Element 소프트웨어 12.5로 업그레이드할 경우 업그레이드 프로세스 시간은 Element 소프트웨어 버전 및 펌웨어 업데이트에 따라 달라집니다.</block>
-  <block id="e13d74c2ca8c4f1748afca2eda1fa20f" category="paragraph">다음 순서를 사용하여 Element 소프트웨어 12.5용 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드할 수 있습니다.</block>
   <block id="2fa7dfb88e1cb5cf745edc36604f73fd" category="paragraph">NetApp 하이브리드 클라우드 제어 UI 또는 NetApp 하이브리드 클라우드 제어 API를 사용하여 상태 점검을 실행할 수 있습니다.</block>
   <block id="d37f0270ef1cdc666fe669356e1a4f75" category="inline-link-macro">사용자 지정 보호 도메인을 구성합니다</block>
   <block id="5425a332a34a92102aeaad92cb1cfd47" category="paragraph">Element UI를 사용하여 에 대한 작업을 수행할 수 있습니다 <block ref="6aad22cf2ff364471fbadae1f249e90f" category="inline-link-macro-rx"></block>또는 다음 API 메소드를 사용할 수 있습니다.</block>
@@ -12287,4 +12279,12 @@
   <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">Element 소프트웨어 12.5를 위해 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드하십시오</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">사용자 지정 보호 도메인을 구성합니다</block>
   <block id="7d0538a19432cbf213b589c89bb6b819" category="admonition">Element 12.3의 경우 지원되는 Podman 버전은 1.6.4입니다.</block>
+  <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">원격 NetApp 지원 세션을 시작합니다</block>
+  <block id="6d76b07dcfce8c041eb64f1886c69449" category="paragraph">SolidFire All-Flash 스토리지 시스템에 대한 기술 지원이 필요한 경우 NetApp Support를 통해 시스템과 원격으로 연결할 수 있습니다. 세션을 시작하고 원격 액세스를 위해 NetApp Support는 사용자 환경에 대한 역방향 SSH(Secure Shell) 연결을 열 수 있습니다.</block>
+  <block id="22e8c0119e5a615de3153bd0cf6157f1" category="list-text">* 저장된 소프트웨어 암호화 기능 향상 *: SolidFire 엔터프라이즈 SDS 스토리지 클러스터를 생성할 때 기본적으로 사용되는 유휴 소프트웨어 암호화 기능에 대한 향상된 기능은 Element 12.3에 도입되었습니다. 이 기능은 스토리지 노드의 SSD에 저장된 모든 데이터를 암호화하므로 클라이언트 IO에 미치는 성능이 2% 정도로 매우 적습니다. 다음은 저장된 소프트웨어 암호화와 관련된 Element API 메서드입니다(참조)<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 각 방법에 대한 자세한 내용 참조).</block>
+  <block id="a22ab525bece28b87773c244a6f1b3a0" category="list-text">* 보존할 최대 스냅샷 수를 정의하는 기능 *: 스냅샷 보존 기능에 대한 개선 사항이 Element 12.3에 도입되었습니다. 이 향상 기능을 지원하도록 다음 API가 수정되었습니다(참조)<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 각 방법에 대한 자세한 내용 참조).</block>
+  <block id="77f50366e209065f549206394239dd15" category="list-text">요소 소프트웨어 패치에 대한 정보 얻기 *: Element 12.3에 도입된 'GetPatchInfo' 메서드를 사용하면 스토리지 노드에 설치된 Element 소프트웨어 패치에 대한 정보를 얻을 수 있습니다. 를 참조하십시오<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 를 참조하십시오.</block>
+  <block id="285252df34d924e87378e352c6c16dc4" category="list-text">* 노드의 각 네트워크 인터페이스에 대한 통계 나열 *: Element 12.3에 도입된 "ListNetworkInterfaceStats" 메서드를 사용하면 노드의 각 네트워크 인터페이스에 대해 삭제된 패킷 수와 다양한 유형의 오류 등 통계를 나열할 수 있습니다. 이 API 메서드는 개별 노드에 사용하기 위한 것으로, 개별 노드에 액세스하려면 사용자 ID 및 암호 인증이 필요합니다. 하지만 매개 변수 force가 메서드 호출에서 true 값을 지정하면 클러스터에서 이 메서드를 사용할 수 있습니다. 클러스터에서 매개 변수를 사용하면 모든 인터페이스의 네트워크 통계가 나열됩니다. 를 참조하십시오<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 를 참조하십시오.</block>
+  <block id="7133445de6da05a38825bf323f4a59dd" category="paragraph">Element 12.3.1에서 도입된 동적 노드 등급을 통해 현재 플랫폼당 단일 CPU 모델이 아닌 ESDS 플랫폼당 24개의 지원되는 CPU를 활용할 수 있습니다.</block>
+  <block id="7e567302f5ef9349d96e39bff1919742" category="paragraph">다음 순서를 사용하여 Element 12.5용 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드할 수 있습니다.</block>
 </blocks>

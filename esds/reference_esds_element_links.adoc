@@ -40,7 +40,7 @@ QoS 정책을 볼륨에 적용하는 방법에 대한 자세한 내용은 여기
 
 == SolidFire ESDS 클러스터에서 Element API를 사용합니다
 
-* * 저장 시 소프트웨어 암호화 기능 향상 *:요소 12.3에는 SolidFire 엔터프라이즈 SDS 스토리지 클러스터를 생성할 때 기본적으로 활성화되는 저장 시 소프트웨어 암호화 기능에 대한 향상된 기능이 도입되었습니다. 이 기능은 스토리지 노드의 SSD에 저장된 모든 데이터를 암호화하므로 클라이언트 IO에 미치는 성능이 2% 정도로 매우 적습니다. 다음은 저장된 소프트웨어 암호화와 관련된 Element API 메서드입니다(참조) https://docs.netapp.com/us-en/element-software/api/index.html["Element API 설명서"^] 각 방법에 대한 자세한 내용 참조).
+* * 저장된 소프트웨어 암호화 기능 향상 *: SolidFire 엔터프라이즈 SDS 스토리지 클러스터를 생성할 때 기본적으로 사용되는 유휴 소프트웨어 암호화 기능에 대한 향상된 기능은 Element 12.3에 도입되었습니다. 이 기능은 스토리지 노드의 SSD에 저장된 모든 데이터를 암호화하므로 클라이언트 IO에 미치는 성능이 2% 정도로 매우 적습니다. 다음은 저장된 소프트웨어 암호화와 관련된 Element API 메서드입니다(참조) https://docs.netapp.com/us-en/element-software/api/index.html["Element API 설명서"^] 각 방법에 대한 자세한 내용 참조).
 +
 ** 'CreateCluster'입니다
 ** 디시블러세이트
@@ -49,7 +49,7 @@ QoS 정책을 볼륨에 적용하는 방법에 대한 자세한 내용은 여기
 ** RekeySoftwareEncryptionAtRestMasterKey
 
 
-* * 보존할 최대 스냅샷 수를 정의하는 기능 *: 요소 12.3에는 스냅샷 보존 기능이 향상되었습니다. 이 향상 기능을 지원하도록 다음 API가 수정되었습니다(참조) https://docs.netapp.com/us-en/element-software/api/index.html["Element API 설명서"^] 각 방법에 대한 자세한 내용 참조).
+* * 보존할 최대 스냅샷 수를 정의하는 기능 *: 스냅샷 보존 기능에 대한 개선 사항이 Element 12.3에 도입되었습니다. 이 향상 기능을 지원하도록 다음 API가 수정되었습니다(참조) https://docs.netapp.com/us-en/element-software/api/index.html["Element API 설명서"^] 각 방법에 대한 자세한 내용 참조).
 +
 ** 'CreateVolume'
 ** 수정 볼륨
@@ -61,8 +61,8 @@ QoS 정책을 볼륨에 적용하는 방법에 대한 자세한 내용은 여기
 ** 'CreateGroupSnapshot'을 선택합니다
 
 
-* 요소 소프트웨어 패치에 대한 정보 얻기 *:Element 12.3에는 스토리지 노드에 설치된 Element 소프트웨어 패치에 대한 정보를 얻을 수 있는 "GetPatchInfo" 메서드가 도입되었습니다. 를 참조하십시오 https://docs.netapp.com/us-en/element-software/api/index.html["Element API 설명서"^] 를 참조하십시오.
-* * 노드의 각 네트워크 인터페이스에 대한 통계 나열 *:요소 12.3에는 노드의 각 네트워크 인터페이스에 대한 삭제된 패킷 수와 다양한 오류 유형 등의 통계를 나열할 수 있는 "ListNetworkInterfaceStats" 메서드가 도입되었습니다. 이 API 메서드는 개별 노드에 사용하기 위한 것으로, 개별 노드에 액세스하려면 사용자 ID 및 암호 인증이 필요합니다. 하지만 매개 변수 force가 메서드 호출에서 true 값을 지정하면 클러스터에서 이 메서드를 사용할 수 있습니다. 클러스터에서 매개 변수를 사용하면 모든 인터페이스의 네트워크 통계가 나열됩니다. 를 참조하십시오 https://docs.netapp.com/us-en/element-software/api/index.html["Element API 설명서"^] 를 참조하십시오.
+* 요소 소프트웨어 패치에 대한 정보 얻기 *: Element 12.3에 도입된 'GetPatchInfo' 메서드를 사용하면 스토리지 노드에 설치된 Element 소프트웨어 패치에 대한 정보를 얻을 수 있습니다. 를 참조하십시오 https://docs.netapp.com/us-en/element-software/api/index.html["Element API 설명서"^] 를 참조하십시오.
+* * 노드의 각 네트워크 인터페이스에 대한 통계 나열 *: Element 12.3에 도입된 "ListNetworkInterfaceStats" 메서드를 사용하면 노드의 각 네트워크 인터페이스에 대해 삭제된 패킷 수와 다양한 유형의 오류 등 통계를 나열할 수 있습니다. 이 API 메서드는 개별 노드에 사용하기 위한 것으로, 개별 노드에 액세스하려면 사용자 ID 및 암호 인증이 필요합니다. 하지만 매개 변수 force가 메서드 호출에서 true 값을 지정하면 클러스터에서 이 메서드를 사용할 수 있습니다. 클러스터에서 매개 변수를 사용하면 모든 인터페이스의 네트워크 통계가 나열됩니다. 를 참조하십시오 https://docs.netapp.com/us-en/element-software/api/index.html["Element API 설명서"^] 를 참조하십시오.
 * SolidFire ESDS * 를 지원하기 위해 Element 12.2에 도입되고 업데이트된 * API: SolidFire ESDS 클러스터에서 사용할 수 있는 Element 12.2에 몇 가지 새로운 API가 도입되었습니다.
 
 
