@@ -11958,7 +11958,6 @@
   <block id="a4f0b4cd8ed43da899bf23d0cc006ec8" category="inline-link-macro">스토리지 펌웨어 번들 2.146에 대한 고지 사항</block>
   <block id="7a0a6b8351b186d782f2b5b12a09f9d1" category="list-text"><block ref="7a0a6b8351b186d782f2b5b12a09f9d1" category="inline-link-macro-rx"></block></block>
   <block id="38be14292d8d278a5d7b04a84bab839d" category="admonition">VMware vCenter Server 7.0 U3으로 업그레이드하면 vCenter Server용 NetApp Element 플러그인의 모든 버전이 배포되지 않습니다. 이 문제를 해결하려면 을 참조하십시오<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>.</block>
-  <block id="72da0f32a8783a5cb119cddae9f955bb" category="admonition">단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.</block>
   <block id="fde51f20c5d4f2642518536389dc9ca9" category="list-text"><block ref="fde51f20c5d4f2642518536389dc9ca9" category="inline-link-macro-rx"></block></block>
   <block id="3ab5d74afdff3156333304ac18ad1977" category="paragraph">이 절차를 수행하기 전에 에 대해 잘 알고 있어야 합니다 <block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block> 그리고 사용 여부를 결정합니다. 영구 볼륨은 선택 사항이지만 가상 머신(VM)이 손실된 경우 관리 노드 구성 데이터 복구에 권장됩니다.</block>
   <block id="2ef294393b47ae9f1c9dee1f319efb0d" category="list-text"><block ref="bf7a9c417954187cdc8487e05cd6fa32" category="inline-xref-macro-rx"></block></block>
@@ -12287,4 +12286,5 @@
   <block id="763c55956ad9c66895ee6e099d610ff4" category="list-text">요소 소프트웨어 패치에 대한 정보 얻기 *: Element 12.3에 도입된 "GetPatchInfo" 메서드를 사용하면 스토리지 노드에 설치된 Element 소프트웨어 패치에 대한 정보를 얻을 수 있습니다. 를 참조하십시오<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="7b6627460723fe1128ae2566dade0d76" category="list-text">* 노드의 각 네트워크 인터페이스에 대한 통계 나열 *: Element 12.3에 도입된 "ListNetworkInterfaceStats" 메서드를 사용하면 노드의 각 네트워크 인터페이스에 대해 삭제된 패킷 수와 다양한 유형의 오류 등 통계를 나열할 수 있습니다. 이 API 메서드는 개별 노드에 사용하기 위한 것으로, 개별 노드에 액세스하려면 사용자 ID 및 암호 인증이 필요합니다. 하지만 매개 변수 force가 메서드 호출에서 true 값을 지정하면 클러스터에서 이 메서드를 사용할 수 있습니다. 클러스터에서 매개 변수를 사용하면 모든 인터페이스의 네트워크 통계가 나열됩니다. 를 참조하십시오<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">Element 12.3.1에 도입된 동적 노드 등급을 통해 현재 플랫폼당 단일 CPU 모델이 아닌 ESDS 플랫폼당 24개의 지원되는 CPU를 활용할 수 있습니다.</block>
+  <block id="234a1430825055fe25203429facd267e" category="admonition">단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.</block>
 </blocks>
