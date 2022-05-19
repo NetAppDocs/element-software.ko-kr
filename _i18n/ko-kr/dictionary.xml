@@ -12124,8 +12124,6 @@
   <block id="efb3497df51898324a04d1329dc9b9ae" category="list-text"><block ref="efb3497df51898324a04d1329dc9b9ae" category="inline-link-rx"></block></block>
   <block id="b727b29e2e84d57f6040d22db60d4f2e" category="admonition">요소 12.3.1부터 하위 단계(a)에서 (e)까지 자동으로 수행됩니다. 관리 노드 12.3.1 이상의 경우 로 이동합니다 <block ref="e7aead760c231b389589c93842d555c1" category="inline-xref-macro-rx"></block> 를 눌러 시간 동기화 구성을 완료합니다.</block>
   <block id="dce49007d1d10ccadf332bd86146cba7" category="list-text"><block ref="dce49007d1d10ccadf332bd86146cba7" category="inline-link-macro-rx"></block></block>
-  <block id="fcfc8ec29a85e264572757cf7ff41339" category="inline-link-macro">원격 NetApp 지원 연결 활성화(Element 12.3 및 이전)</block>
-  <block id="5bda78d943ecf4022539ccee32c6682a" category="list-text"><block ref="5bda78d943ecf4022539ccee32c6682a" category="inline-link-macro-rx"></block></block>
   <block id="1cf342de8aa31250addb30092adae2c5" category="section-title">동적 노드 등급</block>
   <block id="d15380f01867fb0f66a13165a708bf5c" category="inline-link-macro">Element 소프트웨어 12.5에 대한 고지 사항</block>
   <block id="666d0726b52e2f2825f461badc8414a8" category="list-text"><block ref="666d0726b52e2f2825f461badc8414a8" category="inline-link-macro-rx"></block></block>
@@ -12287,4 +12285,6 @@
   <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">Element 12.3.1에 도입된 동적 노드 등급을 통해 현재 플랫폼당 단일 CPU 모델이 아닌 ESDS 플랫폼당 24개의 지원되는 CPU를 활용할 수 있습니다.</block>
   <block id="234a1430825055fe25203429facd267e" category="admonition">단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.</block>
   <block id="3f28cad21e73645ec84c4a70033925a4" category="doc">Element 소프트웨어 12.5의 새로운 기능</block>
+  <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">원격 NetApp Support 연결을 설정합니다</block>
+  <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
 </blocks>

@@ -51,7 +51,7 @@ Element 소프트웨어 버전 11.3 이상을 실행하는 클러스터의 경�
 
 * link:task_mnode_enable_node_troubleshooting_sessions.html["기본 문제 해결을 위해 SSH를 사용하여 스토리지 노드 액세스"]
 +
-** link:task_mnode_enable_remote_support_connections.html["원격 NetApp 지원 연결 활성화(Element 12.3 및 이전)"]
+** link:task_mnode_enable_remote_support_connections.html["원격 NetApp Support 연결을 설정합니다"]
 ** link:task_mnode_ssh_management.html["관리 노드에서 SSH 기능을 관리합니다"]
 
 
