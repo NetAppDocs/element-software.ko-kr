@@ -57,7 +57,7 @@ NOTE: 기타 모든 Element 소프트웨어 제한 사항이 적용됩니다. �
 
 * Element Demo Node 11.7 VM용 ESXi 6.0 또는 6.5
 * Element Demo Node 12.0 및 12.2개의 VM용 ESXi 6.5
-* Element Demo Node 12.3 VM용 ESXi 6.7 및 7.0
+* Element Demo Node 12.5 VM용 ESXi 6.7 및 7.0
 * 멀티코어 64비트 인텔 ® 아키텍처
 
 
