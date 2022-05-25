@@ -463,10 +463,8 @@
   <block id="dd76252ea7a50def2a98f218cb1505b4" category="inline-link">KB 문서를 참조하십시오</block>
   <block id="fa5b69222b994a8a596eef2320a99a75" category="list-text">하드웨어 구성이 균형 조정되고 모든 채널이 채워졌는지 확인합니다. 대역폭 최대화에 대한 자세한 내용은 을 참조하십시오<block ref="404eae9bc7c2264c66c1f2a9c06f066b" category="inline-link-rx"></block> (로그인 필요).</block>
   <block id="2a97471ec199242556431779bd30838a" category="list-title">strong&gt;호스트(노드) 구성&lt;/strong&gt;</block>
-  <block id="dfda84dd73a63b7698fcd71a1a191bb4" category="list-text">에 나열된 지원되는 버전을 기반으로 RHEL을 설치합니다<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block>.</block>
   <block id="6fa70406f47786b02c8769bd1b178120" category="list-text">네트워크의 모든 호스트에서 사용할 NTP(Network Time Protocol) 서버를 구성합니다.</block>
   <block id="0ce895e38ab4717417ddcc44e6cf4e1c" category="list-text">설치 대상을 선택할 때 라디오 버튼을 선택하여 파일 시스템 파티션을 수동으로 구성합니다. 수동 분할 * 페이지에서 * + * 및 * - * 버튼을 사용하여 기존 파티션을 제거하고 새 파티션을 만들고 여기에 나열된 권장 사항에 따라 크기를 조정합니다. 기본 LVM 파티셔닝 스키마를 사용하여 필요한 경우 나중에 쉽게 크기를 조정할 수 있습니다.</block>
-  <block id="7cf307b4cbb4dc37df69fb730f71704e" category="admonition">기본적으로 RHEL은 사용자가 수동으로 생성하는 파티션의 기본 파일 시스템으로 xfs를 선택합니다. /boot와 'sap' 파티션을 제외하고 ext4 로 변경해야 합니다. /boot 파티션은 ext2를 사용해야 합니다.</block>
   <block id="17535771fae0ee390ce31ef42ebc5155" category="paragraph">SATA 디스크가 250GB인 경우 아래의 권장 파티션을 따르십시오. SATA 디스크의 공간이 더 많은 경우 /opt 및 /var 파티션 크기를 늘릴 수 있습니다.</block>
   <block id="3349300356cb3141ea939dcbdf749789" category="cell">파티션</block>
   <block id="6f6cb72d544962fa333e2e34ce64f719" category="cell">크기</block>
@@ -484,7 +482,6 @@
   <block id="7d8fdfd7c15a233be456f2a7a7f5337a" category="paragraph">/usr</block>
   <block id="876bd0b5b542dbc543a61dd69f527ceb" category="admonition">어떤 프로세스도 /dev/sdb 디스크를 사용하지 않습니다.</block>
   <block id="09942c4da908193c21f2c641c4c45cd7" category="list-text">/boot에 대해 RAID를 비활성화합니다.</block>
-  <block id="d0c957516dbabedfe88742b9e4a4cfdc" category="list-text">설치할 특정 패키지를 선택하는 Software Selection(소프트웨어 선택) 화면에서 RHEL 버전에 따라 * Server * 또는 * Infrastructure Server * 를 선택합니다.</block>
   <block id="303f5963e3ea829928dcbe2a9317331c" category="list-text">첫 번째 부팅 후 다음을 수행합니다.</block>
   <block id="583f03cc8d89c265cfb974e74e052cc2" category="list-text">Red Hat Subscription Manager를 설치하고 다음 리포지토리를 활성화합니다.</block>
   <block id="68c4b5c87d48a6c6ca4cc14cfacaab03" category="list-text">노드에서 SSH를 사용하도록 설정합니다.</block>
@@ -502,8 +499,6 @@
   <block id="e7b21406c191f4c1bb269d3ffee0368d" category="list-text">다음 예에 표시된 대로 규정 준수 확인 플레이북을 실행합니다.</block>
   <block id="37ea6b2cb8a75db09428d93d9a0416d0" category="admonition">SolidFire ESDS 시스템을 사용한 후에도 시스템이 규정을 준수하는지 확인하기 위해 정기적으로 규정 준수 검사를 실행해야 합니다. 경우에 따라 NetApp Support에서 문제 진단 및 해결을 위해 규정 준수 확인을 실행하도록 요청합니다.</block>
   <block id="09acbcc09d76195cfde55a1522db4644" category="list-title">strong&gt;네트워크 및 IP 주소 요구 사항 이해&lt;/strong&gt;</block>
-  <block id="c8bd9bfc4e58f0125e3130b5e3b58307" category="inline-link">RedHat 설명서</block>
-  <block id="36a4a4fa850be7aa4008ba57334d681b" category="list-text">RHEL에서 네트워크 및 네트워크 인터페이스를 구성하고 관리하는 방법을 숙지하십시오. 를 참조하십시오<block ref="a5d07f73933f9c55909e31f1ce2ee464" category="inline-link-rx"></block>.</block>
   <block id="1c39f346a9b7cd529f0e7deeee5ce177" category="list-text">여기에 설명된 IP 요구 사항에 따라 네트워크를 구성합니다.</block>
   <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">구성 요소</block>
   <block id="265df7cdddd316ce979aa017f0753e25" category="cell">스토리지 네트워크 IP 주소입니다</block>
@@ -529,7 +524,6 @@
   <block id="ebff118a006e94651da911d800279c44" category="admonition">여기에 제시된 그림은 예시용입니다. 실제 하드웨어는 사용 중인 서버에 따라 다를 수 있습니다.</block>
   <block id="7300079506cb737ad309140b1f56eeda" category="list-text">스위치 포트 MTU를 9216바이트로 변경합니다.</block>
   <block id="4b7ef9f74fc5d5abcae07ceee277787a" category="list-title">strong&gt;데이터 센터 및 #8217;s 방화벽을 통해 특정 포트 허용&lt;/strong&gt;</block>
-  <block id="2c87e2d0f38577f9f5bdce1dc171ae67" category="list-text">RHEL을 실행하는 스토리지 노드에서 "firewalld"가 활성화되어 있는 경우 시스템을 원격으로 관리하고, 데이터 센터 외부의 클라이언트가 리소스에 연결하도록 하고, 내부 서비스가 제대로 작동할 수 있도록 다음 포트가 열려 있는지 확인하십시오.</block>
   <block id="f31bbdd1b3e85bccd652680e16935819" category="cell">출처</block>
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">목적지</block>
   <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">포트</block>
@@ -12193,7 +12187,6 @@
   <block id="a8c7f4c70c59120de0b33efda8af8aa5" category="list-text">에 대해 충분한 시간을 예약했습니다 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 및 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 업그레이드. Element 소프트웨어 12.5로 업그레이드할 경우 업그레이드 프로세스 시간은 Element 소프트웨어 버전 및 펌웨어 업데이트에 따라 달라집니다.</block>
   <block id="2fa7dfb88e1cb5cf745edc36604f73fd" category="paragraph">NetApp 하이브리드 클라우드 제어 UI 또는 NetApp 하이브리드 클라우드 제어 API를 사용하여 상태 점검을 실행할 수 있습니다.</block>
   <block id="d37f0270ef1cdc666fe669356e1a4f75" category="inline-link-macro">사용자 지정 보호 도메인을 구성합니다</block>
-  <block id="5425a332a34a92102aeaad92cb1cfd47" category="paragraph">Element UI를 사용하여 에 대한 작업을 수행할 수 있습니다 <block ref="6aad22cf2ff364471fbadae1f249e90f" category="inline-link-macro-rx"></block>또는 다음 API 메소드를 사용할 수 있습니다.</block>
   <block id="b9d7f7d96ba0d7f9fb0ebbfdd76705d5" category="list-text"><block ref="a92b076f4c042891d554c076d8d2ec26" category="inline-link-macro-rx"></block> - 각 노드가 속한 섀시와 사용자 지정 보호 도메인을 표시합니다.</block>
   <block id="ed4cb7ef9d0074dd188232c212f3131c" category="list-text"><block ref="79208a7b3d3c86443da0ca3bafbef925" category="inline-link-macro-rx"></block> - 각 노드에 사용자 지정 보호 도메인을 할당할 수 있습니다.</block>
   <block id="61b35a1ffe9df32c3c0e2e4a7969de4b" category="paragraph">NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 SolidFire 및 Element 소프트웨어를 정기적으로 업데이트합니다. Element 12.5에는 향상된 스토리지 노드 액세스, 향상된 맞춤형 보호 도메인 관리, 새롭고 개선된 클러스터 장애 및 이벤트, 향상된 클러스터 UI 생성 기능, 향상된 보안 및 Ansible을 사용한 자동 업그레이드가 도입되었습니다.</block>
@@ -12272,7 +12265,6 @@
   <block id="30486cdfdde2444e4151845599ac5bf5" category="sidebar">Element 12.5 문서</block>
   <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">Element 소프트웨어 12.5를 위해 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드하십시오</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">사용자 지정 보호 도메인을 구성합니다</block>
-  <block id="7d0538a19432cbf213b589c89bb6b819" category="admonition">Element 12.3의 경우 지원되는 Podman 버전은 1.6.4입니다.</block>
   <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">원격 NetApp 지원 세션을 시작합니다</block>
   <block id="6d76b07dcfce8c041eb64f1886c69449" category="paragraph">SolidFire All-Flash 스토리지 시스템에 대한 기술 지원이 필요한 경우 NetApp Support를 통해 시스템과 원격으로 연결할 수 있습니다. 세션을 시작하고 원격 액세스를 위해 NetApp Support는 사용자 환경에 대한 역방향 SSH(Secure Shell) 연결을 열 수 있습니다.</block>
   <block id="22e8c0119e5a615de3153bd0cf6157f1" category="list-text">* 저장된 소프트웨어 암호화 기능 향상 *: SolidFire 엔터프라이즈 SDS 스토리지 클러스터를 생성할 때 기본적으로 사용되는 유휴 소프트웨어 암호화 기능에 대한 향상된 기능은 Element 12.3에 도입되었습니다. 이 기능은 스토리지 노드의 SSD에 저장된 모든 데이터를 암호화하므로 클라이언트 IO에 미치는 성능이 2% 정도로 매우 적습니다. 다음은 저장된 소프트웨어 암호화와 관련된 Element API 메서드입니다(참조)<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 각 방법에 대한 자세한 내용 참조).</block>
@@ -12288,4 +12280,19 @@
   <block id="36d8d20d969c93e2ea2538dca80bb707" category="list-text">Element Demo Node 12.5 VM용 ESXi 6.7 및 7.0</block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">CHAP를 사용하여 계정 작업</block>
   <block id="5f93174c2b6fa00ee106be4342b5fae5" category="paragraph">SolidFire 스토리지 시스템에서 테넌트는 계정을 사용하여 클라이언트가 클러스터의 볼륨에 연결할 수 있도록 설정할 수 있습니다. 계정에는 할당된 볼륨에 액세스하는 데 필요한 CHAP(Challenge-Handshake Authentication Protocol) 인증이 포함되어 있습니다. 볼륨을 생성하면 특정 계정에 할당됩니다.</block>
+  <block id="f5c6f9835df083f9a7848584832ffe51" category="list-text">에 나열된 지원되는 버전을 기반으로 Red Hat Package Manager를 설치합니다<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block>.</block>
+  <block id="8297e8d8235ab4d403ff5275f7488f0e" category="admonition">기본적으로 Red Hat Package Manager는 수동으로 생성한 파티션의 기본 파일 시스템으로 xfs를 선택합니다. /boot와 'sap' 파티션을 제외하고 ext4 로 변경해야 합니다. /boot 파티션은 ext2를 사용해야 합니다.</block>
+  <block id="e39438a68fb3f711253e9a7370ff67d2" category="list-text">설치할 특정 패키지를 선택하는 소프트웨어 선택 화면에서 Red Hat 패키지 관리자 버전에 따라 * 서버 * 또는 * 인프라 서버 * 를 선택합니다.</block>
+  <block id="94f57e8fc8a5e98d0aadd2f3fd717077" category="paragraph">Element 12.5의 경우 지원되는 Podman 버전은 Red Hat 패키지 관리자 버전에 따라 다릅니다.</block>
+  <block id="111f3cbd261a94954f796bd076317101" category="cell">Red Hat 패키지 관리자 버전</block>
+  <block id="89c0c976c84a0dc5ae614e09b4cc1c8e" category="cell">Podman 버전입니다</block>
+  <block id="b1db54564fe54a4c74a975b18a791532" category="cell">7.x</block>
+  <block id="029b1c7f4aeae9b0d7440388e1b6b30b" category="cell">1.6.4</block>
+  <block id="9b894f3cda522ff568508c500c301f16" category="cell">8.1, 8.2, 8.3 및 8.4</block>
+  <block id="f991179eef81959ca4ec71aa86a4df76" category="paragraph">3.1.x, 3.2.x, 3.3.x, 3.4.1 및 3.4.2</block>
+  <block id="23e29da41b25c9d2df2b9c3e88b4f7e0" category="admonition">가능한 경우 Podman 버전에 대한 보안 업데이트를 수락하는 것이 좋습니다.</block>
+  <block id="cd9179614936afe6f50612f0cf8c5615" category="inline-link">RedHat 설명서</block>
+  <block id="f82fbefaef1108fe81a739d7c43f6e9f" category="list-text">Red Hat Package Manager에서 네트워크 및 네트워크 인터페이스를 구성하고 관리하는 방법에 대해 자세히 알아보십시오. 를 참조하십시오<block ref="a661302e878d4f2065d4f48e5679440c" category="inline-link-rx"></block>.</block>
+  <block id="5cfb8e81e0263340cb87df666ea52280" category="list-text">Red Hat Package Manager를 실행하는 스토리지 노드에서 'firewalld'가 활성화된 경우, 시스템을 원격으로 관리하고, 데이터 센터 외부의 클라이언트가 리소스에 연결하도록 하고, 내부 서비스가 제대로 작동할 수 있도록 다음 포트가 열려 있는지 확인하십시오.</block>
+  <block id="da098b5086ce4e5936074c04efe5aa87" category="paragraph">Element UI를 사용하여 에 대한 작업을 수행할 수 있습니다 <block ref="cbef8289b7bcb52ca0b9a41f4d962912" category="inline-link-macro-rx"></block>또는 다음 API 메소드를 사용할 수 있습니다.</block>
 </blocks>
