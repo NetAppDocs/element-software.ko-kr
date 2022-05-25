@@ -59,4 +59,7 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 * link:./media/mgmt-214.pdf["관리 서비스 서비스 공지 2.14(VCP 4.5.42)"^]
 * link:./media/mgmt-213.pdf["관리 서비스 참고 사항 2.13(VCP 4.5.42)"^]
 * link:./media/storage_firmware_bundle_2.146_notices.pdf["스토리지 펌웨어 번들 2.146에 대한 고지 사항"^]
+* link:./media/storage_firmware_bundle_2.99_notices.pdf["스토리지 펌웨어 번들 2.99.2에 대한 고지 사항"^]
+* link:./media/storage_firmware_bundle_2.76_notices.pdf["스토리지 펌웨어 번들 2.76에 대한 고지 사항"^]
+* link:./media/storage_firmware_bundle_2.27_notices.pdf["스토리지 펌웨어 번들 2.27에 대한 고지 사항"^]
 
