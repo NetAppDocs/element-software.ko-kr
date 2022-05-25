@@ -5939,7 +5939,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-16 17:44:27 +0000">05/16/2022</time>
+    <time datetime="2022-05-25 16:25:57 +0000">05/25/2022</time>
     
   
 
@@ -5966,7 +5966,7 @@
 <div class="title">strong&gt;호스트(노드) 구성&lt;/strong&gt;</div>
 <ul>
 <li>
-<p>에 나열된 지원되는 버전을 기반으로 RHEL을 설치합니다 <a href="https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&amp;solution=1757&amp;isHWU#welcome" target="_blank" rel="noopener">"NetApp 상호 운용성 매트릭스(로그인 필요)"</a>.</p>
+<p>에 나열된 지원되는 버전을 기반으로 Red Hat Package Manager를 설치합니다 <a href="https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&amp;solution=1757&amp;isHWU#welcome" target="_blank" rel="noopener">"NetApp 상호 운용성 매트릭스(로그인 필요)"</a>.</p>
 </li>
 <li>
 <p>네트워크의 모든 호스트에서 사용할 NTP(Network Time Protocol) 서버를 구성합니다.</p>
@@ -5980,7 +5980,7 @@
 <img src="/us-en/element-software/images/note.svg" alt="참고">
 </td>
 <td class="content">
-기본적으로 RHEL은 사용자가 수동으로 생성하는 파티션의 기본 파일 시스템으로 xfs를 선택합니다. /boot와 'sap' 파티션을 제외하고 ext4 로 변경해야 합니다. /boot 파티션은 ext2를 사용해야 합니다.
+기본적으로 Red Hat Package Manager는 수동으로 생성한 파티션의 기본 파일 시스템으로 xfs를 선택합니다. /boot와 'sap' 파티션을 제외하고 ext4 로 변경해야 합니다. /boot 파티션은 ext2를 사용해야 합니다.
 </td>
 </tr>
 </table>
@@ -6075,7 +6075,7 @@
 <p>/boot에 대해 RAID를 비활성화합니다.</p>
 </li>
 <li>
-<p>설치할 특정 패키지를 선택하는 Software Selection(소프트웨어 선택) 화면에서 RHEL 버전에 따라 * Server * 또는 * Infrastructure Server * 를 선택합니다.</p>
+<p>설치할 특정 패키지를 선택하는 소프트웨어 선택 화면에서 Red Hat 패키지 관리자 버전에 따라 * 서버 * 또는 * 인프라 서버 * 를 선택합니다.</p>
 </li>
 <li>
 <p>첫 번째 부팅 후 다음을 수행합니다.</p>
@@ -6114,7 +6114,45 @@ rhel-7-server-extras-rpms</pre>
 <img src="/us-en/element-software/images/note.svg" alt="참고">
 </td>
 <td class="content">
-Element 12.3의 경우 지원되는 Podman 버전은 1.6.4입니다.
+<div class="paragraph">
+<p>Element 12.5의 경우 지원되는 Podman 버전은 Red Hat 패키지 관리자 버전에 따라 다릅니다.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 35%;">
+<col style="width: 65%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Red Hat 패키지 관리자 버전</th>
+<th class="tableblock halign-left valign-top">Podman 버전입니다</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7.x</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.6.4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8.1, 8.2, 8.3 및 8.4</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>3.1.x, 3.2.x, 3.3.x, 3.4.1 및 3.4.2</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/element-software/images/note.svg" alt="참고">
+</td>
+<td class="content">
+가능한 경우 Podman 버전에 대한 보안 업데이트를 수락하는 것이 좋습니다.
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </td>
 </tr>
 </table>
@@ -6220,7 +6258,7 @@ SolidFire ESDS 시스템을 사용한 후에도 시스템이 규정을 준수하
 <div class="title">strong&gt;네트워크 및 IP 주소 요구 사항 이해&lt;/strong&gt;</div>
 <ul>
 <li>
-<p>RHEL에서 네트워크 및 네트워크 인터페이스를 구성하고 관리하는 방법을 숙지하십시오. 를 참조하십시오 <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index" target="_blank" rel="noopener">"RedHat 설명서"</a>.</p>
+<p>Red Hat Package Manager에서 네트워크 및 네트워크 인터페이스를 구성하고 관리하는 방법에 대해 자세히 알아보십시오. 를 참조하십시오 <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index" target="_blank" rel="noopener">"RedHat 설명서"</a>.</p>
 </li>
 <li>
 <p>여기에 설명된 IP 요구 사항에 따라 네트워크를 구성합니다.</p>
@@ -6354,7 +6392,7 @@ SolidFire ESDS 시스템을 사용한 후에도 시스템이 규정을 준수하
 <div class="title">strong&gt;데이터 센터 및 #8217;s 방화벽을 통해 특정 포트 허용&lt;/strong&gt;</div>
 <ul>
 <li>
-<p>RHEL을 실행하는 스토리지 노드에서 "firewalld"가 활성화되어 있는 경우 시스템을 원격으로 관리하고, 데이터 센터 외부의 클라이언트가 리소스에 연결하도록 하고, 내부 서비스가 제대로 작동할 수 있도록 다음 포트가 열려 있는지 확인하십시오.</p>
+<p>Red Hat Package Manager를 실행하는 스토리지 노드에서 'firewalld&#8217;가 활성화된 경우, 시스템을 원격으로 관리하고, 데이터 센터 외부의 클라이언트가 리소스에 연결하도록 하고, 내부 서비스가 제대로 작동할 수 있도록 다음 포트가 열려 있는지 확인하십시오.</p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
