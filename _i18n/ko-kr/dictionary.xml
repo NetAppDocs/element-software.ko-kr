@@ -12215,7 +12215,6 @@
   <block id="9de5606ae9b23ff6651244b85bd5dae8" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block></block>
   <block id="5ed2b0be7714cf9bfe94c6d0660549bb" category="list-text"><block ref="5ed2b0be7714cf9bfe94c6d0660549bb" category="inline-link-rx"></block></block>
   <block id="ad6795e432521efb065caaec447cfa77" category="inline-link">스토리지 펌웨어 번들 2.146 릴리스 정보</block>
-  <block id="9f873554ab661acde4027ab646c5aa79" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block> _신규 _</block>
   <block id="357bc0086b99b12d4411a85cc4c0c8a2" category="admonition">모든 SolidFire 엔터프라이즈 SDS 노드에서 유휴 소프트웨어 암호화가 기본적으로 설정됩니다. 저장 시 소프트웨어 암호화는 SED(자체 암호화 드라이브)가 포함되지 않은 SolidFire 엔터프라이즈 SDS 노드에서 데이터 보안 암호화의 기본 소프트웨어 계층을 제공합니다.</block>
   <block id="efe7c0d4ed04341756689674a3fb46c4" category="list-text">* BmcSelfTestFailed *</block>
   <block id="e14ad5a8fd8d67543e771552b5287d65" category="paragraph">베이스보드 관리 컨트롤러(BMC)가 자체 테스트에 실패했습니다.</block>
@@ -12299,4 +12298,9 @@
   <block id="656e3f29cbe522931c455a5e233d1c6f" category="list-text"><block ref="656e3f29cbe522931c455a5e233d1c6f" category="inline-link-macro-rx"></block></block>
   <block id="65475fb8d204c527f117e51b4e025657" category="sidebar">Element 12.3 문서</block>
   <block id="612f97930662fc3cd831ed7bc5ae322c" category="list-text">Element Demo Node 12.3 및 12.5용 ESXi 6.7 및 7.0 VM</block>
+  <block id="f73f11dc118d0773193fe38ff975e133" category="inline-link">스토리지 펌웨어 번들 2.150 릴리스 정보</block>
+  <block id="4ed157f2adee50f00ed14eca30c23284" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block> _신규 _</block>
+  <block id="e8158506d71c28d8d821c3acbeb0f97d" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block></block>
+  <block id="831b7fafcb48c5cdc3232392066936d8" category="inline-link-macro">스토리지 펌웨어 번들 2.150에 대한 고지 사항</block>
+  <block id="24918f39116096f98dc92e1125b8a780" category="list-text"><block ref="24918f39116096f98dc92e1125b8a780" category="inline-link-macro-rx"></block></block>
 </blocks>
