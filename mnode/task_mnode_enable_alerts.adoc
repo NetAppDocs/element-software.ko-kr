@@ -5,7 +5,12 @@ summary: SolidFire All-Flash 스토리지 시스템에 대한 알림을 모니�
 keywords: netapp, Element, management node, mnode, ui, alerts, alert monitoring 
 ---
 = 경고 모니터링을 구성합니다
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

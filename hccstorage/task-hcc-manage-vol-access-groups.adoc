@@ -5,7 +5,12 @@ summary: SolidFire All-Flash 스토리지 볼륨에서 작업하기 위해 새 �
 keywords: netapp, element, cluster, volume, access 
 ---
 = 볼륨 액세스 그룹을 생성하고 관리합니다
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

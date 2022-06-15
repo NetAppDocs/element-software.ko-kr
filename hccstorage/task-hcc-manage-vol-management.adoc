@@ -5,7 +5,12 @@ summary: 볼륨을 생성하고 해당 볼륨을 지정된 계정에 연결하�
 keywords: netapp, element, cluster, element, volume 
 ---
 = NetApp 하이브리드 클라우드 제어를 사용하여 볼륨 생성 및 관리
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -5,7 +5,12 @@ summary: 하이브리드 클라우드 제어 노드 페이지를 사용하여 �
 keywords: netapp, element, cluster, inventory, nodes, storage 
 ---
 = 노드 페이지에서 재고를 확인합니다
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

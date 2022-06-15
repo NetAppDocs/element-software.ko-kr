@@ -5,7 +5,12 @@ summary: NetApp SolidFire All-Flash 스토리지를 사용하면 NetApp 하이�
 keywords: netapp, element, cluster, element, account, user, volume, hybrid cloud control, hcc 
 ---
 = NetApp 하이브리드 클라우드 제어로 스토리지를 관리 및 모니터링합니다
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

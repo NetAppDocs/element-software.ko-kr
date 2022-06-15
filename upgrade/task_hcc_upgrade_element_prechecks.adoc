@@ -5,7 +5,12 @@ summary: NetApp SolidFire 스토리지 시스템 업그레이드의 일환으로
 keywords: netapp, storage prechecks, element upgrade, sfupgradecheck 
 ---
 = 스토리지를 업그레이드하기 전에 Element 스토리지 상태 점검을 실행합니다
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]
