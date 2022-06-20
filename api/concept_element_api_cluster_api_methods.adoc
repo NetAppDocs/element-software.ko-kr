@@ -48,7 +48,7 @@ Element 소프트웨어 클러스터 API 메서드를 사용하면 스토리지 
 * xref:reference_element_api_removenodes.adoc[노드 제거]
 * xref:reference_element_api_setlicensekey.adoc[SetLicenseKey를 선택합니다]
 * xref:reference_element_api_setloginsessioninfo.adoc[SetLoginSessionInfo 를 참조하십시오]
-* xref:reference_element_api_shutdown.adoc[종료]
+* xref:reference_element_api_cluster_shutdown.adoc[종료]
 
 
 

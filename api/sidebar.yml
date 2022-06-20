@@ -308,7 +308,7 @@ entries:
   - title: SetLoginSessionInfo 를 참조하십시오
     url: "/api/reference_element_api_setloginsessioninfo.html"
   - title: 종료
-    url: "/api/reference_element_api_shutdown.html"
+    url: "/api/reference_element_api_cluster_shutdown.html"
 - title: 클러스터 생성 API 메소드
   url: "/api/concept_element_api_create_cluster_api_methods.html"
   entries:
@@ -450,7 +450,7 @@ entries:
   - title: GetNodeActiveTlsCiphers 를 참조하십시오
     url: "/api/reference_element_api_getnodeactivetlsciphers.html"
   - title: GetNodeFipsDrivesReport 를 참조하십시오
-    url: "/api/reference_element_api_getnodefipsdrivesreport.html"
+    url: "/api/reference_element_api_node_getnodefipsdrivesreport.html"
   - title: GetNodeSSLCertificate를 참조하십시오
     url: "/api/reference_element_api_getnodesslcertificate.html"
   - title: GetNodeSupportedTlsCiphers 를 참조하십시오
@@ -494,7 +494,7 @@ entries:
   - title: SetNodeSupplementalTlsCiphers 를 참조하십시오
     url: "/api/reference_element_api_setnodesupplementaltlsciphers.html"
   - title: 종료
-    url: "/api/reference_element_api_shutdown.html"
+    url: "/api/reference_element_api_node_shutdown.html"
   - title: TestConnectEnsemble을 참조하십시오
     url: "/api/reference_element_api_testconnectensemble.html"
   - title: 테스트 ConnectMvip
@@ -674,7 +674,7 @@ entries:
   - title: GetLldpInfo 를 참조하십시오
     url: "/api/reference_element_api_getlldpinfo.html"
   - title: GetNodeFipsDrivesReport 를 참조하십시오
-    url: "/api/reference_element_api_getnodefipsdrivesreport.html"
+    url: "/api/reference_element_api_system_configuration_getnodefipsdrivesreport.html"
   - title: GetNtpInfo 를 참조하십시오
     url: "/api/reference_element_api_getntpinfo.html"
   - title: GetNvramInfo 를 참조하십시오

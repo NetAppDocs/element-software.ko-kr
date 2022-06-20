@@ -196,7 +196,7 @@ NOTE: 관리 서비스와 연결된 영구 볼륨은 설치 또는 업그레이�
 == 자세한 내용을 확인하십시오
 
 * link:../concepts/concept_solidfire_concepts_accounts_and_permissions.html["어카운트에 대해 알아보십시오"]
-* link:../storage/task_data_manage_accounts_work_with_accounts_task.html["사용자 계정 작업"]
+* link:../storage/task_data_manage_accounts_work_with_accounts_task.html["CHAP를 사용하여 계정 작업"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
 * https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
 

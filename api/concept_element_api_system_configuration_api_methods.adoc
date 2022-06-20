@@ -25,7 +25,7 @@ summary: 시스템 구성 API 메소드를 사용하여 클러스터의 모든 �
 * xref:reference_element_api_getfipsreport.adoc[GetFipsReport 를 참조하십시오]
 * xref:reference_element_api_getlldpconfig.adoc[GetLldpConfig 를 참조하십시오]
 * xref:reference_element_api_getlldpinfo.adoc[GetLldpInfo 를 참조하십시오]
-* xref:reference_element_api_getnodefipsdrivesreport.adoc[GetNodeFipsDrivesReport 를 참조하십시오]
+* xref:reference_element_api_system_configuration_getnodefipsdrivesreport.adoc[GetNodeFipsDrivesReport 를 참조하십시오]
 * xref:reference_element_api_getntpinfo.adoc[GetNtpInfo 를 참조하십시오]
 * xref:reference_element_api_getnvraminfo.adoc[GetNvramInfo 를 참조하십시오]
 * xref:reference_element_api_getprotectiondomainlayout.adoc[GetProtectionDomainLayout 을 참조하십시오]

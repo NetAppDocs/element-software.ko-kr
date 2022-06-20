@@ -1,0 +1,26 @@
+---
+permalink: storage/concept_system_manage_account_management.html 
+sidebar: sidebar 
+keywords: element, chap, cluster, accounts, administrator 
+summary: Element UI에서 계정을 관리할 수 있습니다. 여기에는 CHAP를 사용하는 계정 작업 및 클러스터 관리자 사용자 계정 관리가 포함됩니다. 
+---
+= 계정 관리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element UI에서 시스템 계정을 관리할 수 있습니다. 여기에는 CHAP(Challenge-Handshake Authentication Protocol)를 사용하는 계정 작업 및 클러스터 관리자 사용자 계정 관리가 포함됩니다.
+
+* link:task_data_manage_accounts_work_with_accounts_task.html["CHAP를 사용하여 계정 작업"]
+* link:concept_system_manage_manage_cluster_administrator_users.html["클러스터 관리자 사용자 계정을 관리합니다"]
+
+
+
+
+== 를 참조하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
+

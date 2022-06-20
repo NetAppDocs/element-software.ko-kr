@@ -173,30 +173,18 @@
   <block id="cef2ee48106a0a7790ec9a773798ee14" category="inline-link-macro">Element 소프트웨어 UI에서 기본 옵션을 사용합니다</block>
   <block id="0dafc18315b2055ca29f9f5395b46078" category="list-text"><block ref="0dafc18315b2055ca29f9f5395b46078" category="inline-link-macro-rx"></block></block>
   <block id="7e5784de66821e5068bc24c9a5c6d1d6" category="inline-link-macro">사용자 계정 작업</block>
-  <block id="ee345e37fd89921fbb54a89b2fefa229" category="list-text"><block ref="ee345e37fd89921fbb54a89b2fefa229" category="inline-link-macro-rx"></block></block>
   <block id="feabbbf9b5afb31194daf0d8e3ff75dc" category="inline-link-macro">볼륨 작업</block>
-  <block id="74ebf8ab5e798d0fa568bcd8a71aa242" category="list-text"><block ref="74ebf8ab5e798d0fa568bcd8a71aa242" category="inline-link-macro-rx"></block></block>
   <block id="7b3b3440fb0f7016b1525de95db91e45" category="paragraph">QoS 정책을 볼륨에 적용하는 방법에 대한 자세한 내용은 여기 를 참조하십시오.</block>
   <block id="661a6e0397d4dd97cf4921386753f84c" category="inline-link-macro">가상 볼륨 작업</block>
-  <block id="6bb10b8c2ec44ff96150cda3829a141f" category="list-text"><block ref="6bb10b8c2ec44ff96150cda3829a141f" category="inline-link-macro-rx"></block></block>
   <block id="ed91772e4e459c956ac7c32367490acf" category="inline-link-macro">볼륨 액세스 그룹 및 이니시에이터와 작업합니다</block>
-  <block id="016c10d0f18079b72acb6524c57aaee2" category="list-text"><block ref="016c10d0f18079b72acb6524c57aaee2" category="inline-link-macro-rx"></block></block>
   <block id="e5879288a130fbd8d0b8682cfc375c4f" category="inline-link-macro">스냅샷 작업</block>
-  <block id="ca94cd46c5b91d8dd88b38cadc1857cd" category="list-text"><block ref="ca94cd46c5b91d8dd88b38cadc1857cd" category="inline-link-macro-rx"></block></block>
   <block id="0c7383db5ca3f34e6352575ba2cbe22c" category="inline-link-macro">외부 키 관리를 시작합니다</block>
-  <block id="f4a74b3b076b1d462ffa0172857a69aa" category="list-text"><block ref="ca9fbc25825ab8d777cc58150f281e73" category="inline-link-macro-rx"></block> _신규!_</block>
   <block id="7ab27d3dd83b6b8225315ec0073d2ab7" category="inline-link-macro">외부 키 관리를 설정합니다</block>
-  <block id="abccea51172d10762d66aadd72d745d4" category="list-text"><block ref="560be90d6081a2a9ff1b510f5605605b" category="inline-link-macro-rx"></block> _신규!_</block>
   <block id="2dac088d1b366882d185fe8aedb97392" category="inline-link-macro">클러스터 간에 원격 복제를 수행합니다</block>
-  <block id="fdf730847afa2142fb1e4ccfa7075c34" category="list-text"><block ref="fdf730847afa2142fb1e4ccfa7075c34" category="inline-link-macro-rx"></block></block>
   <block id="85471e9e15ba31abb79b76ec9e5f23d6" category="inline-link-macro">볼륨 백업 및 복원</block>
-  <block id="8fd4f5c1d16d7d08b2d74e6e3d77e80f" category="list-text"><block ref="8fd4f5c1d16d7d08b2d74e6e3d77e80f" category="inline-link-macro-rx"></block></block>
   <block id="12f6af3a2ee487909bf552aa36903b29" category="inline-link-macro">Element API를 사용하여 스토리지 관리</block>
-  <block id="56a5432cb1558dea6f6c8ec0507a8a93" category="list-text"><block ref="56a5432cb1558dea6f6c8ec0507a8a93" category="inline-link-macro-rx"></block></block>
   <block id="f24d37c25de8d6b117bf209733e23fff" category="inline-link-macro">시스템 문제를 해결합니다</block>
-  <block id="c487b4619a6c8cbd207c9a3f233e0681" category="list-text"><block ref="c487b4619a6c8cbd207c9a3f233e0681" category="inline-link-macro-rx"></block></block>
   <block id="19c63df81b4a931980753ca5b4f349e8" category="inline-link">vCenter Server용 NetApp Element 플러그인 개요</block>
-  <block id="c6051cfa3c7828a4f0a2532c70333d32" category="list-text"><block ref="c6051cfa3c7828a4f0a2532c70333d32" category="inline-link-rx"></block></block>
   <block id="cf01dc47ed79267872b62a626969809c" category="paragraph">개요 페이지에서 특정 작업을 탐색할 수 있습니다.</block>
   <block id="b6da6eab87d65c4c9297f872afd87022" category="section-title">SolidFire ESDS 클러스터에서 Element API를 사용합니다</block>
   <block id="c08a6bc5249e5f81c4e136382fe69500" category="inline-link">Element API 설명서</block>
@@ -1452,7 +1440,6 @@
   <block id="b12641981b1007fecfaf498bd16ae5d5" category="list-text">테이블의 * Actions * 열에서 계정 메뉴를 확장하고 * Delete * 를 선택합니다.</block>
   <block id="1326a41ad4b26f3395b0f54dd9172b2b" category="inline-link-macro">어카운트에 대해 알아보십시오</block>
   <block id="f25165465224e736bc3801bbad7eb5f8" category="list-text"><block ref="f25165465224e736bc3801bbad7eb5f8" category="inline-link-macro-rx"></block></block>
-  <block id="fe0d0db1949183b4fc769561ae8c3f8a" category="list-text"><block ref="fe0d0db1949183b4fc769561ae8c3f8a" category="inline-link-macro-rx"></block></block>
   <block id="ad0f932992d2cc4e5625eff1aacb4b17" category="summary">데이터 보호 탭의 SnapMirror 관계 페이지에서 관계를 구성할 수 있습니다. 작업 아이콘의 옵션은 여기에 설명되어 있습니다.</block>
   <block id="3c164f8b61bdc5e222ac7c26e82175a0" category="doc">SnapMirror 관계 동작</block>
   <block id="8c2cdaa7dfa9f034435644ffc91f53ce" category="list-text">* 편집 *: 관계에 사용되는 정책이나 일정을 편집합니다.</block>
@@ -2962,7 +2949,6 @@
   <block id="d3daac97e8c69781f73bcc5512cb5c2a" category="inline-link-macro">스토리지 시스템 구성 요소 업그레이드</block>
   <block id="ecb20e3ca51440136d042527b042c2ee" category="list-text"><block ref="ecb20e3ca51440136d042527b042c2ee" category="inline-link-macro-rx"></block></block>
   <block id="6038a645307a76874f058ffe322fc4f6" category="list-text"><block ref="6038a645307a76874f058ffe322fc4f6" category="inline-link-macro-rx"></block></block>
-  <block id="4fbd159c0ffeaa8174ace6e07db12ddd" category="list-text"><block ref="4fbd159c0ffeaa8174ace6e07db12ddd" category="inline-link-macro-rx"></block></block>
   <block id="734272fbe72b7eacb11bd1d45ed8d64d" category="inline-link-macro">시스템 관리</block>
   <block id="78b427ddfeadab92101bce0e26d2af15" category="list-text"><block ref="78b427ddfeadab92101bce0e26d2af15" category="inline-link-macro-rx"></block></block>
   <block id="d6615555ed8cd4ed3dcba9b13d892dc3" category="inline-link-macro">볼륨 및 가상 볼륨 관리</block>
@@ -5458,7 +5444,6 @@
   <block id="0a20c90d5270bed19fcaf851778c663b" category="doc">다음 단계</block>
   <block id="bbde1cda5233ef3e90656a8c516591d1" category="paragraph">Element 소프트웨어를 설정한 후 다음 옵션 중 일부를 완료하여 스토리지를 관리합니다.</block>
   <block id="40fbcf5a102757324058f7fa79b9f9b7" category="list-text"><block ref="40fbcf5a102757324058f7fa79b9f9b7" category="inline-link-macro-rx"></block></block>
-  <block id="17c7bc4d0c6040d40f372c983e2ebdfa" category="list-text"><block ref="17c7bc4d0c6040d40f372c983e2ebdfa" category="inline-link-macro-rx"></block></block>
   <block id="7d3ef918a12e578d9fde14c32bffb81d" category="list-text"><block ref="7d3ef918a12e578d9fde14c32bffb81d" category="inline-link-macro-rx"></block></block>
   <block id="7b899c0575eff5699d0108e9f4fc03d6" category="list-text"><block ref="7b899c0575eff5699d0108e9f4fc03d6" category="inline-link-macro-rx"></block></block>
   <block id="90a3faa61b9abab56e4855567afc95b1" category="list-text"><block ref="90a3faa61b9abab56e4855567afc95b1" category="inline-link-macro-rx"></block></block>
@@ -7397,7 +7382,6 @@
   <block id="f27af64bb32c058c815e5a6546bdb08e" category="inline-xref-macro">SetLoginSessionInfo 를 참조하십시오</block>
   <block id="bb691212fb55b0514079cc2d0ea324cb" category="list-text"><block ref="bb691212fb55b0514079cc2d0ea324cb" category="inline-xref-macro-rx"></block></block>
   <block id="1a4ebb180ba59b067782515ffee6e975" category="inline-xref-macro">종료</block>
-  <block id="144d36f45c4e2cbb636347c94accc2c5" category="list-text"><block ref="144d36f45c4e2cbb636347c94accc2c5" category="inline-xref-macro-rx"></block></block>
   <block id="48d049c0f953cbabb98ae7e94ad21b47" category="summary">Shutdown 메서드를 사용하여 클러스터의 노드를 다시 시작하거나 종료할 수 있습니다. 이 방법을 사용하여 클러스터의 단일 노드, 다중 노드 또는 모든 노드를 종료할 수 있습니다.</block>
   <block id="1df087dc7a34eab407c5cf522961330b" category="paragraph">'shutdown' 방법을 사용하여 클러스터의 노드를 재시작하거나 종료할 수 있습니다. 이 방법을 사용하여 클러스터의 단일 노드, 다중 노드 또는 모든 노드를 종료할 수 있습니다.</block>
   <block id="f89ab5f3e762382a17a370e3a67bdd6b" category="paragraph">재시작하거나 종료할 노드의 NodeID 목록입니다.</block>
@@ -7534,7 +7518,6 @@
   <block id="c2126f3a9b17d5a8211c213e94697128" category="list-text"><block ref="c2126f3a9b17d5a8211c213e94697128" category="inline-xref-macro-rx"></block></block>
   <block id="98ecf5db953c09128ce471996891aeaa" category="inline-xref-macro">GetNodeActiveTlsCiphers 를 참조하십시오</block>
   <block id="c94ac8cbe93bf449753f9e8ed6033da3" category="list-text"><block ref="c94ac8cbe93bf449753f9e8ed6033da3" category="inline-xref-macro-rx"></block></block>
-  <block id="aabd1801541ead1bcd1e57ea9a0dc288" category="list-text"><block ref="aabd1801541ead1bcd1e57ea9a0dc288" category="inline-xref-macro-rx"></block></block>
   <block id="c9e9ad5ae5d8e698a9da86cccc39c84c" category="inline-xref-macro">GetNodeSSLCertificate를 참조하십시오</block>
   <block id="1db0564047982a8703c9d6bcb0d8300d" category="list-text"><block ref="1db0564047982a8703c9d6bcb0d8300d" category="inline-xref-macro-rx"></block></block>
   <block id="f0f30fb5fcf8bce884f79cd5f7a9b3e3" category="inline-xref-macro">GetNodeSupportedTlsCiphers 를 참조하십시오</block>
@@ -12303,4 +12286,25 @@
   <block id="e8158506d71c28d8d821c3acbeb0f97d" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block></block>
   <block id="831b7fafcb48c5cdc3232392066936d8" category="inline-link-macro">스토리지 펌웨어 번들 2.150에 대한 고지 사항</block>
   <block id="24918f39116096f98dc92e1125b8a780" category="list-text"><block ref="24918f39116096f98dc92e1125b8a780" category="inline-link-macro-rx"></block></block>
+  <block id="372092ac59d2946fc3d092b0e44df82a" category="list-text"><block ref="372092ac59d2946fc3d092b0e44df82a" category="inline-link-macro-rx"></block></block>
+  <block id="26bde7cf1d647a00812ba293427f218c" category="summary">Element UI에서 계정을 관리할 수 있습니다. 여기에는 CHAP를 사용하는 계정 작업 및 클러스터 관리자 사용자 계정 관리가 포함됩니다.</block>
+  <block id="cb7c12b1424a0e6b1be1defaded53de8" category="paragraph">Element UI에서 시스템 계정을 관리할 수 있습니다. 여기에는 CHAP(Challenge-Handshake Authentication Protocol)를 사용하는 계정 작업 및 클러스터 관리자 사용자 계정 관리가 포함됩니다.</block>
+  <block id="0de8022e52b232dc0912129174158b7b" category="list-text"><block ref="0de8022e52b232dc0912129174158b7b" category="inline-link-macro-rx"></block></block>
+  <block id="93b99f5d3cef7af59adc0f899dddf1e1" category="list-text"><block ref="93b99f5d3cef7af59adc0f899dddf1e1" category="inline-link-macro-rx"></block></block>
+  <block id="5ca104d2b413ecd234583f40c3a808b8" category="list-text"><block ref="5ca104d2b413ecd234583f40c3a808b8" category="inline-link-macro-rx"></block></block>
+  <block id="7e33105c99e1040a1b09764052c96bf6" category="list-text"><block ref="7e33105c99e1040a1b09764052c96bf6" category="inline-xref-macro-rx"></block></block>
+  <block id="b9d025f755210db0c30935ae2494f820" category="list-text"><block ref="b9d025f755210db0c30935ae2494f820" category="inline-xref-macro-rx"></block></block>
+  <block id="9eecd7c0744f77d1f15658bd0a02f1b2" category="list-text"><block ref="9eecd7c0744f77d1f15658bd0a02f1b2" category="inline-xref-macro-rx"></block></block>
+  <block id="482c5ad7089a563e0fe0fbc1a8647e77" category="list-text"><block ref="482c5ad7089a563e0fe0fbc1a8647e77" category="inline-xref-macro-rx"></block></block>
+  <block id="ec0b9fb2fa43e46443eb0f7087291fb5" category="list-text"><block ref="ec0b9fb2fa43e46443eb0f7087291fb5" category="inline-link-macro-rx"></block></block>
+  <block id="11df4da923543977db2ff7d6c2b87b7c" category="list-text"><block ref="11df4da923543977db2ff7d6c2b87b7c" category="inline-link-macro-rx"></block></block>
+  <block id="2e437e291facb9c9920734e7632e62ad" category="list-text"><block ref="2e437e291facb9c9920734e7632e62ad" category="inline-link-macro-rx"></block></block>
+  <block id="d39f23e3f84c1bd1e144f6fed629b1e4" category="list-text"><block ref="d39f23e3f84c1bd1e144f6fed629b1e4" category="inline-link-macro-rx"></block></block>
+  <block id="b4d3d7a7f19bcfb9d4bcfeca430cfbef" category="list-text"><block ref="b4d3d7a7f19bcfb9d4bcfeca430cfbef" category="inline-link-macro-rx"></block></block>
+  <block id="fb8145a478a8837082d05d97d87dbde5" category="list-text"><block ref="b16f2946d1eb3dd465deb7a9462fd76d" category="inline-link-macro-rx"></block> _신규!_</block>
+  <block id="1f5d8ae290c85b66ea7ecdfae46d7188" category="list-text"><block ref="8393824aba7fe138051cb03400ca7bb6" category="inline-link-macro-rx"></block> _신규!_</block>
+  <block id="fac8ed8d82b59cb855583050cee9cd34" category="list-text"><block ref="fac8ed8d82b59cb855583050cee9cd34" category="inline-link-macro-rx"></block></block>
+  <block id="dcfa4d00c50a08c56e2319fa3f3d1288" category="list-text"><block ref="dcfa4d00c50a08c56e2319fa3f3d1288" category="inline-link-macro-rx"></block></block>
+  <block id="e12535c6360c5dad15589e14aca41e3a" category="list-text"><block ref="e12535c6360c5dad15589e14aca41e3a" category="inline-link-macro-rx"></block></block>
+  <block id="7661478d2706b156c56055536f2e93da" category="list-text"><block ref="7661478d2706b156c56055536f2e93da" category="inline-link-rx"></block></block>
 </blocks>
