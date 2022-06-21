@@ -2745,7 +2745,6 @@
   <block id="66c36c8b05fe85645ac29ef19ef65fec" category="paragraph">관리 노드(mNode)는 하나 이상의 Element 소프트웨어 기반 스토리지 클러스터와 병렬로 실행되는 가상 머신입니다. 이 툴을 사용하면 모니터링 및 원격 측정을 포함하여 시스템 서비스를 업그레이드 및 제공하고, 클러스터 자산 및 설정을 관리하고, 시스템 테스트 및 유틸리티를 실행하고, 문제 해결을 위해 NetApp Support 액세스를 지원할 수 있습니다.</block>
   <block id="e9065488ba04db892848ac25fd8592aa" category="admonition">모범 사례로서, 하나의 관리 노드만 하나의 VMware vCenter 인스턴스와 연결하고 여러 관리 노드에서 동일한 스토리지 및 컴퓨팅 리소스 또는 vCenter 인스턴스를 정의하지 않는 것이 좋습니다.</block>
   <block id="c790184773e8ef26c5af49a38611a471" category="summary">통합 백업 기능을 사용하여 볼륨 스냅샷을 백업할 수 있습니다. SolidFire 클러스터에서 외부 오브젝트 저장소 또는 다른 SolidFire 클러스터로 스냅샷을 백업할 수 있습니다. 외부 개체 저장소에 스냅샷을 백업할 때 읽기/쓰기 작업을 허용하는 개체 저장소에 대한 연결이 있어야 합니다.</block>
-  <block id="c967cc149224958942b374673d02980e" category="doc">볼륨 스냅샷 백업 작업</block>
   <block id="6e589b33a7a384693052e3d15301e081" category="inline-link-macro">볼륨 스냅샷을 Amazon S3 오브젝트 저장소에 백업합니다</block>
   <block id="4e385daedad4a81e3776afbca9ea07a7" category="list-text"><block ref="4e385daedad4a81e3776afbca9ea07a7" category="inline-link-macro-rx"></block></block>
   <block id="3a50ce5f4085bd0f74405eb1c25f6cc9" category="list-text"><block ref="3a50ce5f4085bd0f74405eb1c25f6cc9" category="inline-link-macro-rx"></block></block>
@@ -12307,4 +12306,5 @@
   <block id="dcfa4d00c50a08c56e2319fa3f3d1288" category="list-text"><block ref="dcfa4d00c50a08c56e2319fa3f3d1288" category="inline-link-macro-rx"></block></block>
   <block id="e12535c6360c5dad15589e14aca41e3a" category="list-text"><block ref="e12535c6360c5dad15589e14aca41e3a" category="inline-link-macro-rx"></block></block>
   <block id="7661478d2706b156c56055536f2e93da" category="list-text"><block ref="7661478d2706b156c56055536f2e93da" category="inline-link-rx"></block></block>
+  <block id="324fcb27182f60b1051fad39c080b193" category="doc">볼륨 스냅샷을 백업합니다</block>
 </blocks>

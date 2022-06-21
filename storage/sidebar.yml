@@ -222,7 +222,7 @@ entries:
         url: "/storage/task_data_protection_clone_a_volume_from_a_snapshot.html"
       - title: 볼륨을 스냅샷으로 롤백합니다
         url: "/storage/task_data_protection_roll_back_a_volume_to_a_snapshot.html"
-      - title: 볼륨 스냅샷 백업 작업
+      - title: 볼륨 스냅샷을 백업합니다
         url: "/storage/concept_data_protection_volume_snapshot_backup_operations.html"
         entries:
         - title: 볼륨 스냅샷을 Amazon S3 오브젝트 저장소에 백업합니다
