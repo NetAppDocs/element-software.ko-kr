@@ -568,7 +568,7 @@
     <url>
       <loc>https://docs.netapp.com/ko-kr/element-software/setup/concept_setup_whats_next.html</loc>
       
-      <lastmod>2022-06-20T11:39:35+00:00</lastmod>
+      <lastmod>2022-06-23T11:47:22+00:00</lastmod>
       
     </url>
   
@@ -671,9 +671,9 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/ko-kr/element-software/storage/concept_system_manage_account_management.html</loc>
+      <loc>https://docs.netapp.com/ko-kr/element-software/storage/concept_system_manage_accounts_overview.html</loc>
       
-      <lastmod>2022-06-20T11:39:35+00:00</lastmod>
+      <lastmod>2022-06-23T11:47:22+00:00</lastmod>
       
     </url>
   
@@ -848,7 +848,7 @@
     <url>
       <loc>https://docs.netapp.com/ko-kr/element-software/storage/</loc>
       
-      <lastmod>2022-06-20T11:39:35+00:00</lastmod>
+      <lastmod>2022-06-23T11:47:22+00:00</lastmod>
       
     </url>
   
@@ -4152,7 +4152,7 @@
     <url>
       <loc>https://docs.netapp.com/ko-kr/element-software//search.html</loc>
       
-      <lastmod>2022-06-21T12:05:01+00:00</lastmod>
+      <lastmod>2022-06-23T11:47:59+00:00</lastmod>
       
     </url>
   
@@ -4223,13 +4223,6 @@
       <loc>https://docs.netapp.com/ko-kr/element-software/hccstorage/task-hcc-volumes.html</loc>
       
       <lastmod>2022-06-15T12:29:31+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/ko-kr/element-software/storage/task_data_manage_accounts_overview.html</loc>
-      
-      <lastmod>2022-04-18T06:35:45+00:00</lastmod>
       
     </url>
   
