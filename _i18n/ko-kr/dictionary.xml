@@ -172,7 +172,6 @@
   <block id="b708fcb66d2fb4281601a54f0e59184f" category="paragraph">다음은 다양한 스토리지 관리 작업을 위한 콘텐츠에 대한 링크입니다.</block>
   <block id="cef2ee48106a0a7790ec9a773798ee14" category="inline-link-macro">Element 소프트웨어 UI에서 기본 옵션을 사용합니다</block>
   <block id="0dafc18315b2055ca29f9f5395b46078" category="list-text"><block ref="0dafc18315b2055ca29f9f5395b46078" category="inline-link-macro-rx"></block></block>
-  <block id="7e5784de66821e5068bc24c9a5c6d1d6" category="inline-link-macro">사용자 계정 작업</block>
   <block id="feabbbf9b5afb31194daf0d8e3ff75dc" category="inline-link-macro">볼륨 작업</block>
   <block id="7b3b3440fb0f7016b1525de95db91e45" category="paragraph">QoS 정책을 볼륨에 적용하는 방법에 대한 자세한 내용은 여기 를 참조하십시오.</block>
   <block id="661a6e0397d4dd97cf4921386753f84c" category="inline-link-macro">가상 볼륨 작업</block>
@@ -2008,11 +2007,7 @@
   <block id="31f0fdcbbaee9ac6da7a8b5b44e21dcb" category="paragraph">시스템이 목록 정보를 정렬합니다.</block>
   <block id="853b1eac4060e7c140286659e26c08d7" category="list-text">단일 정렬 기준을 제거하려면 정렬 기준 이름 옆에 있는 * 제거 * 아이콘을 클릭합니다.</block>
   <block id="28389062c258d4333bf4655ac8c0d4e5" category="list-text">모든 정렬 기준을 제거하려면 * 모두 지우기 * 를 클릭합니다.</block>
-  <block id="34fa21de6cec673be30516d925b1ef0a" category="summary">SolidFire 스토리지 시스템에서 사용자 계정을 사용하면 클라이언트가 노드의 볼륨에 연결할 수 있습니다. SolidFire 스토리지 시스템의 클러스터 관리자 계정을 관리할 수도 있습니다.</block>
   <block id="afa76abc4566eab1fcb19c24508a45f6" category="doc">계정 관리</block>
-  <block id="4dc056b77b799b07e73a3c822af00828" category="paragraph">SolidFire 스토리지 시스템에서 사용자 계정을 사용하면 클라이언트가 노드의 볼륨에 연결할 수 있습니다. 볼륨을 생성하면 특정 사용자 계정에 할당됩니다. SolidFire 스토리지 시스템의 클러스터 관리자 계정을 관리할 수도 있습니다.</block>
-  <block id="f5b0d24b7d0469f0116c13fb8bcbb772" category="list-text"><block ref="f5b0d24b7d0469f0116c13fb8bcbb772" category="inline-link-macro-rx"></block></block>
-  <block id="093667bda42279d43524628d34f5580a" category="list-text"><block ref="093667bda42279d43524628d34f5580a" category="inline-link-macro-rx"></block></block>
   <block id="edf215cf7dcc80e510681324260fd737" category="summary">시스템에서 감지된 다양한 이벤트에 대한 정보를 볼 수 있습니다. 30초마다 이벤트 메시지가 새로 고쳐집니다. 이벤트 로그에는 클러스터의 주요 이벤트가 표시됩니다.</block>
   <block id="8cec4b9b9cebbbcffea18b0d7ecce9d4" category="doc">시스템 이벤트에 대한 정보를 봅니다</block>
   <block id="93794a44adda318bbc0fa9f88ca7464b" category="list-text">Element UI에서 * Reporting * &gt; * Event Log * 를 선택합니다.</block>
@@ -12285,12 +12280,8 @@
   <block id="e8158506d71c28d8d821c3acbeb0f97d" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block></block>
   <block id="831b7fafcb48c5cdc3232392066936d8" category="inline-link-macro">스토리지 펌웨어 번들 2.150에 대한 고지 사항</block>
   <block id="24918f39116096f98dc92e1125b8a780" category="list-text"><block ref="24918f39116096f98dc92e1125b8a780" category="inline-link-macro-rx"></block></block>
-  <block id="372092ac59d2946fc3d092b0e44df82a" category="list-text"><block ref="372092ac59d2946fc3d092b0e44df82a" category="inline-link-macro-rx"></block></block>
-  <block id="26bde7cf1d647a00812ba293427f218c" category="summary">Element UI에서 계정을 관리할 수 있습니다. 여기에는 CHAP를 사용하는 계정 작업 및 클러스터 관리자 사용자 계정 관리가 포함됩니다.</block>
-  <block id="cb7c12b1424a0e6b1be1defaded53de8" category="paragraph">Element UI에서 시스템 계정을 관리할 수 있습니다. 여기에는 CHAP(Challenge-Handshake Authentication Protocol)를 사용하는 계정 작업 및 클러스터 관리자 사용자 계정 관리가 포함됩니다.</block>
   <block id="0de8022e52b232dc0912129174158b7b" category="list-text"><block ref="0de8022e52b232dc0912129174158b7b" category="inline-link-macro-rx"></block></block>
   <block id="93b99f5d3cef7af59adc0f899dddf1e1" category="list-text"><block ref="93b99f5d3cef7af59adc0f899dddf1e1" category="inline-link-macro-rx"></block></block>
-  <block id="5ca104d2b413ecd234583f40c3a808b8" category="list-text"><block ref="5ca104d2b413ecd234583f40c3a808b8" category="inline-link-macro-rx"></block></block>
   <block id="7e33105c99e1040a1b09764052c96bf6" category="list-text"><block ref="7e33105c99e1040a1b09764052c96bf6" category="inline-xref-macro-rx"></block></block>
   <block id="b9d025f755210db0c30935ae2494f820" category="list-text"><block ref="b9d025f755210db0c30935ae2494f820" category="inline-xref-macro-rx"></block></block>
   <block id="9eecd7c0744f77d1f15658bd0a02f1b2" category="list-text"><block ref="9eecd7c0744f77d1f15658bd0a02f1b2" category="inline-xref-macro-rx"></block></block>
@@ -12307,4 +12298,8 @@
   <block id="e12535c6360c5dad15589e14aca41e3a" category="list-text"><block ref="e12535c6360c5dad15589e14aca41e3a" category="inline-link-macro-rx"></block></block>
   <block id="7661478d2706b156c56055536f2e93da" category="list-text"><block ref="7661478d2706b156c56055536f2e93da" category="inline-link-rx"></block></block>
   <block id="324fcb27182f60b1051fad39c080b193" category="doc">볼륨 스냅샷을 백업합니다</block>
+  <block id="cd7c96dd340046e8b1a1ed84b73227c0" category="summary">SolidFire 스토리지 시스템에서 테넌트는 계정을 사용하여 클라이언트가 클러스터의 볼륨에 연결할 수 있도록 설정할 수 있습니다. SolidFire 스토리지 시스템의 클러스터 관리자 계정을 관리할 수도 있습니다.</block>
+  <block id="d69a8eaf0dfea73cf60506f2c945b71e" category="paragraph">SolidFire 스토리지 시스템에서 테넌트는 계정을 사용하여 클라이언트가 클러스터의 볼륨에 연결할 수 있도록 설정할 수 있습니다. 볼륨을 생성하면 특정 계정에 할당됩니다. SolidFire 스토리지 시스템의 클러스터 관리자 계정을 관리할 수도 있습니다.</block>
+  <block id="f22f8c5563a22eebf5e40a4e6776b17e" category="list-text"><block ref="f22f8c5563a22eebf5e40a4e6776b17e" category="inline-link-macro-rx"></block></block>
+  <block id="270743fb35c053386e4a4cdf6792cc48" category="list-text"><block ref="270743fb35c053386e4a4cdf6792cc48" category="inline-link-macro-rx"></block></block>
 </blocks>

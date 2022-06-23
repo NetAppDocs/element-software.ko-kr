@@ -15,7 +15,7 @@ Element 소프트웨어를 설정한 후 다음 옵션 중 일부를 완료하�
 
 * link:task_post_deploy_access_the_element_software_user_interface.html["Element 소프트웨어 사용자 인터페이스에 액세스합니다"]
 * link:../storage/task_post_deploy_configure_system_options.html["구축 후 SolidFire 시스템 옵션을 구성합니다"]
-* link:../storage/concept_system_manage_account_management.html["계정 관리"]
+* link:../storage/concept_system_manage_accounts_overview.html["계정 관리"]
 * link:../storage/concept_system_manage_system_management.html["시스템 관리"]
 * link:../storage/concept_data_manage_data_management.html["볼륨 및 가상 볼륨 관리"]
 * link:../storage/concept_data_protection.html["데이터 보호"]

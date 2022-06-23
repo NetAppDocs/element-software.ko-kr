@@ -27,7 +27,7 @@ entries:
   - title: 피드백을 제공합니다
     url: "/storage/task_intro_provide_feedback.html"
 - title: 계정 관리
-  url: "/storage/concept_system_manage_account_management.html"
+  url: "/storage/concept_system_manage_accounts_overview.html"
   entries:
   - title: CHAP를 사용하여 계정 작업
     url: "/storage/task_data_manage_accounts_work_with_accounts_task.html"
