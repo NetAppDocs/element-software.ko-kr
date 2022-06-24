@@ -4793,9 +4793,7 @@
   <block id="e453e93ae1af3155f2774b6b529f8ed9" category="list-text">장애 복구: 스토리지 클러스터는 사용자 지정 보호 도메인 중 하나에 장애가 발생한 후 자가 복구가 가능한 충분한 가용 용량을 제공합니다. 복구 프로세스가 완료된 후 추가 도메인에 장애가 발생하면 클러스터가 데이터 손실로부터 보호됩니다.</block>
   <block id="2d50fad3ab9a441a87882c17c13f0bae" category="paragraph">사용자 지정 보호 도메인이 두 개 이상 할당된 경우 각 하위 시스템은 개별 사용자 지정 보호 도메인에 중복된 항목을 할당합니다. 이것이 가능하지 않으면 중복 항목을 별도의 노드에 할당하는 것으로 되돌아갑니다. 각 하위 시스템(예: 투출구, 슬라이스, 프로토콜 엔드포인트 공급자 및 앙상블)은 이를 독립적으로 수행합니다.</block>
   <block id="10763b97bd843488da2bf7ea3d301a99" category="inline-link-macro">GetProtectionDomainLayout 을 참조하십시오</block>
-  <block id="bd77f2754e5c1c371ba7793ef5fe29b4" category="list-text"><block ref="6702e5c49e3601276668962e5917edde" category="inline-link-macro-rx"></block> - 각 노드가 속한 섀시와 사용자 지정 보호 도메인을 표시합니다.</block>
   <block id="76e41f0c5158a7d3c39e70b930570854" category="inline-link-macro">SetProtectionDomainLayout 을 참조하십시오</block>
-  <block id="1508ab090b8072419802560c24117082" category="list-text"><block ref="c488c3c5d50768a853ca2b4d12fca704" category="inline-link-macro-rx"></block> - 각 노드에 사용자 지정 보호 도메인을 할당할 수 있습니다.</block>
   <block id="413c564d0245479b08e6b318875493c1" category="summary">쌍에 있는 클러스터 중 하나의 Element UI에서 클러스터 쌍을 삭제할 수 있습니다.</block>
   <block id="642a63a1ee8516e28aa532adf19ae408" category="doc">클러스터 쌍을 삭제합니다</block>
   <block id="fd48f2b5f1262bafaf795df0d40757c2" category="list-text">데이터 보호 * &gt; * 클러스터 쌍 * 을 클릭합니다.</block>
@@ -6146,29 +6144,6 @@
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인 정보 보호 정책</block>
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
-  <block id="eb3c130e264688a3a29d73ad802f6f63" category="paragraph">알림 파일은 타사 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
-  <block id="24e9da091f15f10b8da793e19b340302" category="inline-link-macro">Ember OS 12.3.1에 대한 고지 사항</block>
-  <block id="53b5781a15ca0bf5e3350b448255d082" category="list-text"><block ref="53b5781a15ca0bf5e3350b448255d082" category="inline-link-macro-rx"></block></block>
-  <block id="fbcc1cb0e2a70eff701965a5f3e0d76b" category="inline-link-macro">Ember OS 12.3에 대한 고지 사항</block>
-  <block id="fd9a4be3d806a4349b944f9bfba66d2f" category="list-text"><block ref="fd9a4be3d806a4349b944f9bfba66d2f" category="inline-link-macro-rx"></block></block>
-  <block id="26c74f7a8ac6a7c8cdb0def0e876263d" category="inline-link-macro">관리 노드 12.3.1 공지</block>
-  <block id="047152327178a19c354a2a92281da90f" category="list-text"><block ref="047152327178a19c354a2a92281da90f" category="inline-link-macro-rx"></block></block>
-  <block id="43551c29e9ac231743a69c265f5ef85c" category="inline-link-macro">관리 노드 12.3에 대한 고지 사항</block>
-  <block id="75a6ef9f6db80c36c759ab0d75ce6a00" category="list-text"><block ref="75a6ef9f6db80c36c759ab0d75ce6a00" category="inline-link-macro-rx"></block></block>
-  <block id="61cd5267ad49d97d8c6a8799b4590b34" category="inline-link-macro">관리 서비스 공지 2.18</block>
-  <block id="a32fc98c3fcd85bfbaec869e06369054" category="list-text"><block ref="a32fc98c3fcd85bfbaec869e06369054" category="inline-link-macro-rx"></block></block>
-  <block id="6a277dcdcf3e292a520228548566382d" category="inline-link-macro">관리 서비스 공지 2.17.56</block>
-  <block id="a13f8370935ba66df60b71ed88c770a4" category="list-text"><block ref="a13f8370935ba66df60b71ed88c770a4" category="inline-link-macro-rx"></block></block>
-  <block id="a7f3524da37a8fea65e29d2411b8d139" category="inline-link-macro">관리 서비스 공지 2.17.52</block>
-  <block id="c4b0c1a013a1ecb5b81326f9c346a81a" category="list-text"><block ref="c4b0c1a013a1ecb5b81326f9c346a81a" category="inline-link-macro-rx"></block></block>
-  <block id="0ee51fae49898e7b795797b58419f657" category="inline-link-macro">관리 서비스 공지 2.16</block>
-  <block id="72f5ccb1ed4b7e177d8ae3b465eef55a" category="list-text"><block ref="72f5ccb1ed4b7e177d8ae3b465eef55a" category="inline-link-macro-rx"></block></block>
-  <block id="1dfa4a8c715814e4b02560de4804ce2d" category="inline-link-macro">관리 서비스 공지 2.14</block>
-  <block id="508fdda0cae73a3702d387c360f820fa" category="list-text"><block ref="508fdda0cae73a3702d387c360f820fa" category="inline-link-macro-rx"></block></block>
-  <block id="b299d2f02ed62ade4c836e18fedda400" category="inline-link-macro">관리 서비스 공지 2.13</block>
-  <block id="4c906abe4e1aa56f6ecc4fc5bb0dac85" category="list-text"><block ref="4c906abe4e1aa56f6ecc4fc5bb0dac85" category="inline-link-macro-rx"></block></block>
-  <block id="a6e60f5446d407aa42b1293e56f2cb42" category="inline-link-macro">NetApp SolidFire 엔터프라이즈 SDS에 대한 고지 사항</block>
-  <block id="b96897a2164001e55b7cb0f0b7883d94" category="list-text"><block ref="b96897a2164001e55b7cb0f0b7883d94" category="inline-link-macro-rx"></block></block>
   <block id="2e5993f9d970daebf225967bb1e45acc" category="inline-link-macro">스토리지 펌웨어 번들 2.99.2에 대한 고지 사항</block>
   <block id="96d39df4d07a61aada740f0716155f51" category="list-text"><block ref="96d39df4d07a61aada740f0716155f51" category="inline-link-macro-rx"></block></block>
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="doc">데이터 보호</block>
@@ -12206,9 +12181,6 @@
   <block id="5c2dfac41e0fdae2b2af5a185bd13a44" category="list-text">* 보조 노드 ID *: 이 볼륨의 보조 노드 목록입니다. 보조 노드의 변경과 같이 일시적인 상태 동안 여러 값이 될 수 있지만 일반적으로 단일 값이 있습니다.</block>
   <block id="92cbb89e687486d046f0af2031e1de69" category="list-text">* QoS 스로틀 *: 운영 스토리지 노드의 높은 부하로 인해 볼륨이 조절되고 있는지 여부를 식별합니다.</block>
   <block id="16deeb1542b48d5c3cc48574bd812c77" category="list-text">지원관리자</block>
-  <block id="1c99ab1d6f1bd835e71ce34f57021bf2" category="summary">사용자 지정 보호 도메인 레이아웃을 정의할 수 있습니다. 여기서 각 노드는 1개 및 1개의 사용자 지정 보호 도메인에만 연결됩니다. 기본적으로 각 노드는 동일한 기본 사용자 지정 보호 도메인에 할당됩니다.</block>
-  <block id="5973fb594f77dc8b3479a7d06ec53911" category="paragraph">특정 섀시 및 노드 레이아웃과 일치하는 사용자 지정 보호 도메인 레이아웃을 정의할 수 있습니다.</block>
-  <block id="6e599ec445b85acc8e9d5e5e62c0612c" category="paragraph">Element UI를 사용하여 에 대한 작업을 수행할 수 있습니다 <block ref="207ccb2cb37becc35a7f5fde670b328f" category="inline-link-macro-rx"></block>또는 다음 API 메소드를 사용할 수 있습니다.</block>
   <block id="da55ae5c0f3e2b8fbec3529ced565e0a" category="paragraph"><block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
   <block id="74fdf94991a3d3c1590a208535b101cc" category="list-text">[[csum_event]] * cSumEvent *</block>
   <block id="2c33c7444ec9022ae43511db98615b15" category="paragraph">전체 체크섬 검증 중에 체크섬 불일치를 감지하는 것과 관련된 이벤트입니다.</block>
@@ -12236,8 +12208,6 @@
   <block id="07cf8fd6e47576d971bbe1a1f3791d23" category="cell">SetProtectionDomainLayout 실패: 보호 도메인 유형 'custom'이 보호 도메인 유형 'chassis'를 분할합니다.</block>
   <block id="74edc88174dceefbbbb11b9aba21d425" category="cell">다중 노드 섀시의 노드에는 섀시의 다른 노드와 다른 보호 도메인이 할당됩니다.</block>
   <block id="49c71a7c59d3ffac02af2e11f20c6903" category="cell">섀시의 모든 노드에 동일한 보호 도메인이 할당되었는지 확인합니다.</block>
-  <block id="29a6f38cbca29e0f3bdeecf96eb0b27a" category="paragraph"><block ref="b58e8d039996e87c7075e998e2dbe5e4" category="inline-link-macro-rx"></block>
-<block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
   <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">Element 소프트웨어 12.5를 위해 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드하십시오</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">사용자 지정 보호 도메인을 구성합니다</block>
   <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">원격 NetApp 지원 세션을 시작합니다</block>
@@ -12302,4 +12272,5 @@
   <block id="d69a8eaf0dfea73cf60506f2c945b71e" category="paragraph">SolidFire 스토리지 시스템에서 테넌트는 계정을 사용하여 클라이언트가 클러스터의 볼륨에 연결할 수 있도록 설정할 수 있습니다. 볼륨을 생성하면 특정 계정에 할당됩니다. SolidFire 스토리지 시스템의 클러스터 관리자 계정을 관리할 수도 있습니다.</block>
   <block id="f22f8c5563a22eebf5e40a4e6776b17e" category="list-text"><block ref="f22f8c5563a22eebf5e40a4e6776b17e" category="inline-link-macro-rx"></block></block>
   <block id="270743fb35c053386e4a4cdf6792cc48" category="list-text"><block ref="270743fb35c053386e4a4cdf6792cc48" category="inline-link-macro-rx"></block></block>
+  <block id="d42c0305f510d1b93b9961f158db9d17" category="list-text"><block ref="d42c0305f510d1b93b9961f158db9d17" category="inline-link-macro-rx"></block></block>
 </blocks>
