@@ -2,7 +2,7 @@
 permalink: storage/task_snapmirror_create_an_endpoint.html 
 sidebar: sidebar 
 keywords: endpoints, create, snapmirror, ui 
-summary: 관계를 만들려면 NetAppElement UI에서 SnapMirror 끝점을 만들어야 합니다. 
+summary: 관계를 만들려면 NetApp Element UI에서 SnapMirror 끝점을 만들어야 합니다. 
 ---
 = SnapMirror 끝점을 만듭니다
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 관계를 만들려면 NetAppElement UI에서 SnapMirror 끝점을 만�
 
 
 [role="lead"]
-관계를 만들려면 NetAppElement UI에서 SnapMirror 끝점을 만들어야 합니다.
+관계를 만들려면 NetApp Element UI에서 SnapMirror 끝점을 만들어야 합니다.
 
 SnapMirror 엔드포인트는 Element 소프트웨어를 실행하는 클러스터의 복제 타겟 역할을 하는 ONTAP 클러스터입니다. SnapMirror 관계를 생성하기 전에 먼저 SnapMirror 끝점을 만듭니다.
 

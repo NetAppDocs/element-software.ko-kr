@@ -2,7 +2,7 @@
 permalink: storage/task_snapmirror_create_snapmirror_relationship.html 
 sidebar: sidebar 
 keywords: relationships, create, snapmirror, ui 
-summary: NetAppElement UI에서 SnapMirror 관계를 생성해야 합니다. 
+summary: NetApp Element UI에서 SnapMirror 관계를 만들어야 합니다. 
 ---
 = SnapMirror 관계를 생성합니다
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: NetAppElement UI에서 SnapMirror 관계를 생성해야 합니다.
 
 
 [role="lead"]
-NetAppElement UI에서 SnapMirror 관계를 생성해야 합니다.
+NetApp Element UI에서 SnapMirror 관계를 만들어야 합니다.
 
 
 NOTE: SnapMirror에 대해 볼륨이 아직 활성화되어 있지 않고 Element UI에서 관계를 생성하도록 선택하면 해당 볼륨에서 SnapMirror가 자동으로 활성화됩니다.
