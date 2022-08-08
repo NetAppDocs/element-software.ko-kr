@@ -6,6 +6,7 @@ summary: VLAN 이름, 넷마스크, IP 주소 블록의 크기 등과 같은 VLA
 ---
 = 가상 네트워크를 편집합니다
 :allow-uri-read: 
+:url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_determine_which_VLAN_IP%27s_are_in_use_and_which_nodes_those_IP%27s_are_assigned_to_in_Element
 :icons: font
 :imagesdir: ../media/
 
@@ -35,6 +36,6 @@ VLAN IP 주소 범위의 크기를 관리할 때 다음과 같은 제한 사항�
 
 VLAN IP 주소 범위 관리와 관련된 문제를 해결하는 데 도움이 되는 기술 문서 링크
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Duplicate_IP_warning_after_adding_a_storage_node_in_VLAN_on_Element_cluster["Element 클러스터의 VLAN에 스토리지 노드를 추가한 후 중복 IP 경고가 발생합니다"]
-* link:++https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_determine_which_VLAN_IP's_are_in_use_and_which_nodes_those_IP's_are_assigned_to_in_Element++["사용 중인 VLAN IP와 해당 IP가 Element에 할당된 노드를 확인하는 방법"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Duplicate_IP_warning_after_adding_a_storage_node_in_VLAN_on_Element_cluster["Element 클러스터의 VLAN에 스토리지 노드를 추가한 후 중복 IP 경고가 발생합니다"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_determine_which_VLAN_IP%27s_are_in_use_and_which_nodes_those_IP%27s_are_assigned_to_in_Element["사용 중인 VLAN IP와 해당 IP가 Element에 할당된 노드를 확인하는 방법"^]
 
