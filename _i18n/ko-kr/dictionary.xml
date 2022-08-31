@@ -6291,7 +6291,6 @@
   <block id="7d640bfdd148f102df423b6e94b11571" category="paragraph"><block ref="15098cd863d8945571eb3fa1cb63a7fe" category="inline-link-rx"></block> 는 클러스터 전체 데이터의 기간별 뷰를 지속적으로 업데이트하는 웹 기반 툴입니다. 특정 이벤트, 임계값 또는 메트릭에 대한 알림을 설정할 수 있습니다. SolidFire Active IQ를 사용하면 시스템 성능과 용량을 모니터링할 수 있을 뿐만 아니라 클러스터 상태에 대한 최신 정보를 유지할 수 있습니다.</block>
   <block id="841b3da78955b4e942c8bd5ffddca29e" category="paragraph">SolidFire Active IQ에서 시스템에 대한 다음 정보를 찾을 수 있습니다.</block>
   <block id="8f7f4baec8aa05a765ec83446ad7d0c6" category="inline-link">NetApp Support 사이트 및 GT, Active IQ용 툴</block>
-  <block id="a93cab242c29bc1f7ed010aedb157dab" category="list-text"><block ref="1a3a02f863c93340fc1be395cd8c98c0" category="inline-link-rx"></block></block>
   <block id="90b829ded7efd204b562b06bf2e6f0a8" category="summary">NetApp SolidFire 스토리지 시스템은 볼륨을 사용하여 스토리지를 프로비저닝합니다. 볼륨은 iSCSI 또는 파이버 채널 클라이언트가 네트워크를 통해 액세스하는 블록 디바이스입니다.</block>
   <block id="c6f01c78bfe0a0a495cb5d3ed77824a9" category="doc">볼륨</block>
   <block id="cf199f5d0d7153679fbded97f2959b77" category="paragraph">NetApp Element 스토리지 시스템은 볼륨을 사용하여 스토리지를 프로비저닝합니다. 볼륨은 iSCSI 또는 파이버 채널 클라이언트가 네트워크를 통해 액세스하는 블록 디바이스입니다.</block>
@@ -12280,4 +12279,12 @@
   <block id="3c508c424a766cdd354ff2b5f471ceb9" category="list-text">* 선택 사항: * FIFO(선입선출) * 확인란을 선택하여 일치하는 수의 최신 스냅샷을 유지합니다.</block>
   <block id="3905d1636a9d67ee561424a8bc5551a7" category="list-text">시스템에 스냅샷을 무한정 유지하려면 * 영구 보존 * 을 선택합니다.</block>
   <block id="627fb665998dc47f162df6850e3bb211" category="list-text">보존 기간 설정 * 을 선택하고 날짜 스핀 상자를 사용하여 시스템에서 스냅샷을 보존할 기간을 선택합니다.</block>
+  <block id="ef9cbe434b5f28c847ba96be9c26f253" category="list-text">CPU, 메모리 사용량 및 노드 임계치 조절에 대한 그래픽 표현입니다</block>
+  <block id="7aa85da92a1cd23b2981568643e3da1c" category="inline-link">SolidFire Active IQ 설명서</block>
+  <block id="f02632134f46548247abd92a38e5f73e" category="paragraph">SolidFire Active IQ에 대한 자세한 내용은 를 참조하십시오<block ref="3422f40bd7bba6370d69142070e812b4" category="inline-link-rx"></block>.</block>
+  <block id="1a1a6c5ed33ecaf055e3e38150525306" category="list-text"><block ref="11e28499cd7c9c7d408304fbab2a1320" category="inline-link-rx"></block></block>
+  <block id="56ee8203bf76c58f39596dab101d98d5" category="list-text">Active IQ의 일부 기능(예: QoS)에서는 Element 11.3 이상이 올바르게 작동해야 합니다. 모든 Active IQ 기능을 사용할 수 있는지 확인하려면 다음 단계를 수행하는 것이 좋습니다.</block>
+  <block id="469eaba8a7048afa0ba6f8eb91801de9" category="doc">SolidFire Active IQ를 사용하여 스토리지를 모니터링합니다</block>
+  <block id="45f40a7365f71f3eafc4489e01e9aa82" category="sidebar">NetApp SolidFire Active IQ를 사용하여 스토리지를 모니터링합니다</block>
+  <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">NetApp SolidFire Active IQ 사용</block>
 </blocks>
