@@ -33,8 +33,8 @@ sidebar:
   - section: storage
   - section: hccstorage
   - section: api
-  - title: vCenter Server용 Element 플러그인을 사용하여 스토리지 관리(링크)
-    url: https://docs.netapp.com/us-en/vcp/
+  - title: vCenter Server용 Element 플러그인을 사용하여 스토리지를 관리합니다
+    url: "/element-plug-in-index.html"
   - title: NetApp SolidFire Active IQ를 사용하여 스토리지를 모니터링합니다
     url: "/monitor-storage-active-iq.html"
   - section: mnode
