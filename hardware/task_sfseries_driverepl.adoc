@@ -62,9 +62,9 @@ NOTE: 위의 그림은 예입니다. SF9608은 왼쪽에서 오른쪽으로 1부
 ====
 이 단계는 다음과 같습니다.
 
-* <<Remove the drive from the cluster>>
-* <<Replace the drive from the chassis>>
-* <<Add the drive to the cluster>>
+*  the drive from the cluster
+*  the drive from the chassis
+*  the drive to the cluster
 
 
 

@@ -36,9 +36,9 @@ WARNING: SolidFire All-Flash 스토리지 클러스터의 경우, 클러스터 �
 NOTE: https://<MVIP>/` 의 Element 소프트웨어 UI 대시보드는 현재 하드웨어 기반 암호화에 대한 저장된 암호화 상태만 표시합니다.
 
 .옵션
-* <<Enable hardware-based encryption at rest>>
-* <<Enable software-based encryption at rest>>
-* <<Disable hardware-based encryption at rest>>
+*  hardware-based encryption at rest
+*  software-based encryption at rest
+*  hardware-based encryption at rest
 
 
 

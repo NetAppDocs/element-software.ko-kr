@@ -13,9 +13,9 @@ summary: SolidFire ESDS 클러스터의 메타데이터 드라이브 또는 블�
 [role="lead"]
 여기에 나열된 절차 중 하나를 선택하여 드라이브를 사전에 교체하고 장애가 발생한 드라이브를 교체한 후 캐시 드라이브를 교체합니다. SolidFire ESDS 클러스터에서 메타데이터 드라이브 또는 블록 드라이브를 교체합니다. Element UI * Cluster > Drives * 페이지에는 드라이브 마모 정보가 표시됩니다.
 
-* <<Replace a drive proactively>>
-* <<Replace a faulty drive>>
-* <<Replace a cache drive>>
+*  a drive proactively
+*  a faulty drive
+*  a cache drive
 
 
 

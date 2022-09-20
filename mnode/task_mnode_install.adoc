@@ -55,11 +55,11 @@ Element 12.2 관리 노드는 선택적 업그레이드입니다. 기존 배포�
 이 절차를 수행하기 전에 에 대해 잘 알고 있어야 합니다 link:../concepts/concept_solidfire_concepts_volumes.html#persistent-volumes["영구 볼륨"] 그리고 사용 여부를 결정합니다. 영구 볼륨은 선택 사항이지만 가상 머신(VM)이 손실된 경우 관리 노드 구성 데이터 복구에 권장됩니다.
 
 .단계
-. <<Download ISO or OVA and deploy the VM>>
-. <<create_mnode_admin,관리 노드 admin을 생성하고 네트워크를 구성합니다>>
-. <<Configure time sync>>
-. <<Set up the management node>>
-. <<Configure controller assets>>
+.  ISO or OVA and deploy the VM
+. ,관리 노드 admin을 생성하고 네트워크를 구성합니다
+.  time sync
+.  up the management node
+.  controller assets
 
 
 
@@ -144,7 +144,7 @@ NOTE: 스토리지 트래픽을 격리하기 위해 추가 NIC가 필요한 경�
 
 
 
-NOTE: 요소 12.3.1부터 하위 단계(a)에서 (e)까지 자동으로 수행됩니다. 관리 노드 12.3.1의 경우 로 이동합니다 <<substep_f_install_config_time_sync,하위 단계 (f)>> 를 눌러 시간 동기화 구성을 완료합니다.
+NOTE: 요소 12.3.1부터 하위 단계(a)에서 (e)까지 자동으로 수행됩니다. 관리 노드 12.3.1의 경우 로 이동합니다 ,하위 단계 (f) 를 눌러 시간 동기화 구성을 완료합니다.
 
 . SSH 또는 하이퍼바이저에서 제공하는 콘솔을 사용하여 관리 노드에 로그인합니다.
 . NTPD 중지:

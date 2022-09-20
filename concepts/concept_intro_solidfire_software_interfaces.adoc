@@ -14,12 +14,12 @@ summary: NetApp Element 소프트웨어 인터페이스 및 통합 유틸리티�
 다양한 NetApp Element 소프트웨어 인터페이스 및 통합 유틸리티를 사용하여 SolidFire 스토리지 시스템을 관리할 수 있습니다.
 
 .옵션
-* <<NetApp Element software user interface>>
-* <<NetApp Element software API>>
-* <<NetApp Element Plug-in for vCenter Server>>
-* <<NetApp Hybrid Cloud Control>>
-* <<Management node UIs>>
-* <<Additional integration utilities and tools>>
+*  Element software user interface
+*  Element software API
+*  Element Plug-in for vCenter Server
+*  Hybrid Cloud Control
+*  node UIs
+*  integration utilities and tools
 
 
 

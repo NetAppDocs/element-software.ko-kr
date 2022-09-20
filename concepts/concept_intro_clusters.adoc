@@ -23,11 +23,11 @@ summary: 클러스터는 SolidFire 스토리지 시스템의 허브이며 노드
 NOTE: Element 버전 11.0부터는 노드의 관리 네트워크에 대해 IPv4, IPv6 또는 두 주소를 모두 사용하여 노드를 구성할 수 있습니다. IPv6을 지원하지 않는 관리 노드 11.3 이상을 제외하고 스토리지 노드와 관리 노드 모두에 적용됩니다. 클러스터를 생성할 때 단일 IPv4 또는 IPv6 주소만 MVIP에 사용할 수 있으며 모든 노드에서 해당 주소 유형을 구성해야 합니다.
 
 .클러스터에 추가 정보
-* <<Authoritative storage clusters>>
-* <<Rule of thirds>>
-* <<Stranded capacity>>
-* <<Storage efficiency>>
-* <<Storage cluster quorum>>
+*  storage clusters
+*  of thirds
+*  capacity
+*  efficiency
+*  cluster quorum
 
 
 

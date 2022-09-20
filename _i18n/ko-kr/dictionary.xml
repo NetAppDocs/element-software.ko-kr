@@ -5017,7 +5017,6 @@
   <block id="26db8374256abd97a337e0f9af2f21c8" category="admonition">스토리지 노드의 펌웨어를 업그레이드하기 전에 최신 관리 서비스 번들로 업그레이드해야 합니다. Element 소프트웨어를 버전 12.2 이상으로 업데이트하는 경우 계속하려면 관리 서비스 2.14.60 이상이 필요합니다.</block>
   <block id="736c409b380383ee8843715d26079c63" category="list-text">* 클러스터 상태 *: 상태 점검을 실행하였습니다. 을 참조하십시오 <block ref="bdcf6db43efb3c82b174a0c4c0a65c66" category="inline-link-macro-rx"></block>.</block>
   <block id="7389b01d5fe0e17f5523a7fb85295f91" category="inline-link">이 KB 문서를 참조하십시오</block>
-  <block id="b24f3db75077a578765967e0b8ffa295" category="admonition">하드웨어의 펌웨어 및 드라이버 펌웨어의 전체 매트릭스는 을 참조하십시오<block ref="54a79ab153742147d13ffd4ac16bf6ba" category="inline-link-rx"></block> (로그인 필요).</block>
   <block id="5212e4232f93722ce70d3ed042cd25c1" category="paragraph">다음 스토리지 펌웨어 업그레이드 옵션 중 하나를 선택합니다.</block>
   <block id="71894c0623112f371e3598666af16695" category="list-text"><block ref="c67f607f0c5a6b98a7e28e151694a09a" category="inline-xref-macro-rx"></block></block>
   <block id="b8cff0b41605e83e8a12999dd0a4ca92" category="list-text"><block ref="bd241c643056b4027f18f8f059752b73" category="inline-xref-macro-rx"></block></block>
@@ -11941,7 +11940,6 @@
   <block id="a0fc274442d4c69dfe575d357ce015e2" category="cell">40분에서 70분</block>
   <block id="9b2b1e8f398acbac5493461c590118f6" category="inline-link">전체 노드 종료 및 전원 차단을 수행합니다</block>
   <block id="2233d6c0637a0dd985141fefd60451a0" category="cell">130-160분 정도 소요됩니다<block ref="b75cb1417453c96f34f9e695ad57b88f" category="inline-link-rx"></block> 각 H610S 노드에 대해 적용됩니다.</block>
-  <block id="6ed1151a1c81c87309cd82c96457f044" category="paragraph">^1^ 하드웨어의 펌웨어 및 드라이버 펌웨어의 전체 매트릭스는 이 부분을 참조하십시오<block ref="919d0da258d2c9346bfb11f078cfd474" category="inline-link-rx"></block> (로그인 필요).</block>
   <block id="0fe84530e14d6cb77f51c3d2cc85aa18" category="paragraph">^2^ 펌웨어를 업데이트하는 데 시간이 오래 걸리는 쓰기 IOPS 로드가 많은 클러스터를 결합할 경우 데이터 동기화 시간이 증가합니다.</block>
   <block id="eb05636c0d5a8e35fae14ecd37584ea8" category="doc">SolidFire 및 Element 소프트웨어 12.5 문서</block>
   <block id="7275696d9abdd4848d9921861f886410" category="inline-link">요소 12.3.x 문서</block>
@@ -12274,4 +12272,7 @@
   <block id="c557278939ddfc5c37a8606a5b8bc3d8" category="paragraph">vCenter Server용 Element 플러그인에 대한 자세한 내용은 를 참조하십시오<block ref="4a40fe421733073daff96e428d226590" category="inline-link-rx"></block>.</block>
   <block id="fd0b9b1500c5983ac27a332210ebfe29" category="paragraph">많은 NetApp 하이브리드 클라우드 제어 기능은 여러 스토리지 클러스터에서 작동하도록 설계되었지만 인증과 권한 부여에는 제한이 있습니다. 인증 및 권한 부여에 대한 제한 사항은 권한 있는 클러스터의 사용자가 다른 스토리지 클러스터의 사용자가 아니더라도 NetApp 하이브리드 클라우드 제어에 연결된 다른 클러스터에 대한 작업을 실행할 수 있다는 것입니다.</block>
   <block id="f0e8a2f025f562374fa58233f9f7cd01" category="sidebar">vCenter Server용 Element 플러그인을 사용하여 스토리지를 관리합니다</block>
+  <block id="4b8861a11346d673205d074f862db70a" category="inline-link">지원되는 펌웨어 및 ESXi 드라이버 버전</block>
+  <block id="7f6c7867ac3c62c136dad288b3e3298e" category="paragraph">^1^ 하드웨어의 펌웨어 및 드라이버 펌웨어의 전체 매트릭스는 을 참조하십시오<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>.</block>
+  <block id="3c22f77849e3b66d2e0c9c63419afb53" category="admonition">하드웨어의 펌웨어 및 드라이버 펌웨어의 전체 매트릭스는 을 참조하십시오<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>.</block>
 </blocks>

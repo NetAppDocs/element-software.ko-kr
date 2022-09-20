@@ -41,9 +41,9 @@ WARNING: NetApp Support에서 통보하지 않는 한, 이 시스템에 대한 �
 
 
 .문제 해결 옵션
-* <<Troubleshoot a cluster node>>
-* <<Troubleshoot a cluster node with NetApp Support>>
-* <<Troubleshoot a node that is not part of cluster>>
+*  a cluster node
+*  a cluster node with NetApp Support
+*  a node that is not part of cluster
 
 
 

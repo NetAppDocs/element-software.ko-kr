@@ -15,10 +15,10 @@ SolidFire ESDS를 설치한 후 각 SolidFire ESDS 노드에서 클러스터 이
 
 다음은 SolidFire ESDS를 설치한 후 완료해야 하는 작업에 대한 개괄적인 개요입니다.
 
-* <<Configure the cluster name>>
-* <<Set the license key>>
-* <<Create a cluster>>
-* <<Add drives to the cluster>>
+*  the cluster name
+*  the license key
+*  a cluster
+*  drives to the cluster
 
 
 

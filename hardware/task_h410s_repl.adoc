@@ -32,9 +32,9 @@ image::hci_stor_node_ssd_bays.gif[에는 H410S 노드가 있는 4노드 섀시�
 
 이 단계는 다음과 같습니다.
 
-* <<Prepare to replace the node>>
-* <<Replace the node in the chassis>>
-* <<Add the node to the cluster>>
+*  to replace the node
+*  the node in the chassis
+*  the node to the cluster
 
 
 

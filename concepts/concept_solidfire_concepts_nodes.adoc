@@ -15,12 +15,12 @@ summary: 노드는 블록 스토리지 또는 컴퓨팅 리소스로 액세스�
 
 NetApp Element 소프트웨어는 클러스터에 대한 다양한 노드 역할을 정의합니다. 노드 역할의 유형은 다음과 같습니다.
 
-* <<Management node>>
-* <<Storage node>>
-* <<Fibre Channel node>>
+*  node
+*  node
+*  Channel node
 
 
-<<Node states of operation,노드 상태>> 클러스터 연결에 따라 다릅니다.
+ states of operation,노드 상태 클러스터 연결에 따라 다릅니다.
 
 
 
