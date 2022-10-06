@@ -12275,4 +12275,5 @@
   <block id="4b8861a11346d673205d074f862db70a" category="inline-link">지원되는 펌웨어 및 ESXi 드라이버 버전</block>
   <block id="7f6c7867ac3c62c136dad288b3e3298e" category="paragraph">^1^ 하드웨어의 펌웨어 및 드라이버 펌웨어의 전체 매트릭스는 을 참조하십시오<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>.</block>
   <block id="3c22f77849e3b66d2e0c9c63419afb53" category="admonition">하드웨어의 펌웨어 및 드라이버 펌웨어의 전체 매트릭스는 을 참조하십시오<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>.</block>
+  <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp H-Series 스토리지 노드의 펌웨어 버전이 지원됩니다</block>
 </blocks>

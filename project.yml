@@ -63,8 +63,8 @@ homepage:
       url: "/hardware/concept_h410s_h610s_info.html"
     - title: SF-시리즈 하드웨어 정보
       url: "/hardware/concept_sfseries_info.html"
-    - title: 지원되는 펌웨어 및 ESXi 드라이버 버전
-      url: https://docs.netapp.com/us-en/hci/docs/firmware_driver_versions.html
+    - title: NetApp H-Series 스토리지 노드의 펌웨어 버전이 지원됩니다
+      url: https://docs.netapp.com/us-en/hci/docs/fw_storage_nodes.html
   - title: 스토리지 관리
     links:
     - title: Element 소프트웨어 UI를 사용합니다
