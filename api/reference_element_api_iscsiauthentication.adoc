@@ -1,0 +1,61 @@
+---
+permalink: api/reference_element_api_iscsiauthentication.html 
+sidebar: sidebar 
+keywords: ISCSIAuthentication,iscsi,authentication 
+summary: ISCSIAuthentication 개체에는 iSCSI 세션에 대한 인증 정보가 들어 있습니다. 
+---
+= ISCSICAuthentication을 참조하십시오
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ISCSIAuthentication 개체에는 iSCSI 세션에 대한 인증 정보가 들어 있습니다.
+
+
+
+== 개체 멤버
+
+이 개체에는 다음 멤버가 포함되어 있습니다.
+
+|===
+| 이름 | 설명 | 유형 
+
+
+ a| 
+AuthMethod
+ a| 
+iSCSI 세션 로그인 중에 사용되는 인증 방법(예: CHAP 또는 없음)입니다.
+ a| 
+문자열
+
+
+
+ a| 
+챕터 알고리즘
+ a| 
+사용 중인 CHAP 알고리즘(예: MD5, SHA1 *, SHA-256 *, 또는 SHA3-256 *
+ a| 
+문자열
+
+
+
+ a| 
+챕터 사용자 이름
+ a| 
+iSCSI 세션 로그인 중에 이니시에이터에서 지정한 CHAP 사용자 이름입니다.
+ a| 
+문자열
+
+
+
+ a| 
+방향
+ a| 
+인증 방향(예: 단방향(이니시에이터만 해당) 또는 양방향(이니시에이터와 대상 모두)
+ a| 
+문자열
+
+|===
+* Element 12.7부터 사용할 수 있습니다.

@@ -42,6 +42,15 @@ CHAP 인증에 사용되는 계정의 이름입니다(있는 경우).
 
 
  a| 
+인증
+ a| 
+이 iSCSI 세션에 대한 인증 정보입니다.
+ a| 
+xref:reference_element_api_iscsiauthentication.adoc[ISCSICAuthentication을 참조하십시오]
+
+
+
+ a| 
 createTime(createTime)
  a| 
 UTC + 0 형식으로 iSCSI 세션을 생성한 시간입니다.

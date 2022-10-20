@@ -75,6 +75,8 @@ entries:
     url: "/api/reference_element_api_idpconfiginfo.html"
   - title: 이니시에이터
     url: "/api/reference_element_api_initiator.html"
+  - title: ISCSICAuthentication을 참조하십시오
+    url: "/api/reference_element_api_iscsiauthentication.html"
   - title: KeyProviderKmip 을 참조하십시오
     url: "/api/reference_element_api_keyproviderkmip.html"
   - title: KeyServerKmip

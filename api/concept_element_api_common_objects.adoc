@@ -40,6 +40,7 @@ Element 소프트웨어 API는 JSON 개체를 사용하여 조직화된 데이�
 * xref:reference_element_api_host.adoc[호스트(가상 볼륨)]
 * xref:reference_element_api_idpconfiginfo.adoc[idpConfigInfo]
 * xref:reference_element_api_initiator.adoc[이니시에이터]
+* xref:reference_element_api_iscsiauthentication.adoc[ISCSICAuthentication을 참조하십시오]
 * xref:reference_element_api_keyproviderkmip.adoc[KeyProviderKmip 을 참조하십시오]
 * xref:reference_element_api_keyserverkmip.adoc[KeyServerKmip]
 * xref:reference_element_api_ldapconfiguration.adoc[ldapConfiguration 을 선택합니다]

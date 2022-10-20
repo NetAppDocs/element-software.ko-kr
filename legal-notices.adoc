@@ -47,6 +47,9 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.
 
+* link:./media/Element_Software_12.7.pdf["Element 소프트웨어 12.7에 대한 고지 사항"^]
+* link:./media/Ember_OS_12.7.pdf["Ember OS 12.7에 대한 고지 사항"^]
+* link:./media/mNode_12.7.pdf["관리 노드 12.7에 대한 고지 사항"^]
 * link:./media/Element_Software_12.5.pdf["Element 소프트웨어 12.5에 대한 고지 사항"^]
 * link:./media/SolidFire_eSDS_12.5.pdf["NetApp SolidFire 엔터프라이즈 SDS 12.5에 대한 고지 사항"^]
 * link:./media/mNode_12.5.pdf["관리 노드 12.5에 대한 고지 사항"^]
@@ -59,6 +62,7 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 * link:./media/mgmt-214.pdf["관리 서비스 2.14(vCenter Server 4.5.42용 NetApp Element 플러그인)에 대한 고지 사항"^]
 * link:./media/mgmt-213.pdf["관리 서비스 2.13에 대한 고지 사항(vCenter Server 4.5.42용 NetApp Element 플러그인)"^]
 * link:./media/SolidFire_eSDS_12.5.pdf["NetApp SolidFire 엔터프라이즈 SDS에 대한 고지 사항"^]
+* link:./media/storage_firmware_bundle_2.164.0_notices.pdf["스토리지 펌웨어 번들 2.164.0에 대한 고지 사항"^]
 * link:./media/storage_firmware_bundle_2.150_notices.pdf["스토리지 펌웨어 번들 2.150에 대한 고지 사항"^]
 * link:./media/storage_firmware_bundle_2.146_notices.pdf["스토리지 펌웨어 번들 2.146에 대한 고지 사항"^]
 * link:./media/storage_firmware_bundle_2.99_notices.pdf["스토리지 펌웨어 번들 2.99.2에 대한 고지 사항"^]
