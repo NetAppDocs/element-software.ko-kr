@@ -6650,7 +6650,6 @@
   <block id="050a0195689eb13051d78e278eae86ff" category="paragraph">다음 그림은 SF9605 섀시에 드라이브를 배치하는 모습입니다.</block>
   <block id="5a23ec1a6f5e87de11e59c22d96e2bd7" category="image-alt">이 그림은 SolidFire 섀시의 드라이브를 보여줍니다.</block>
   <block id="24fc9cf8cab934ad1c788b6bb3a2c787" category="admonition">위의 그림은 예입니다. SF9608은 왼쪽에서 오른쪽으로 1부터 8까지 번호가 매겨진 드라이브 8개만 포함하는 다른 드라이브 레이아웃을 가집니다.</block>
-  <block id="a1ea4553e6d3011ca1816468f53f4286" category="paragraph">슬롯 0은 노드에 대한 메타데이터 드라이브를 보유합니다. 슬롯 0에 있는 드라이브를 교체하는 경우 교체 드라이브의 배송 상자에 포함된 스티커를 부착해야 나머지 드라이브와 별도로 식별할 수 있습니다. 메타데이터는 내부 SATA(Serial Advanced Technology Attachment) DIMM(Dual Inline Memory Module)에 보관되므로 SF3010은 예외입니다.</block>
   <block id="c8d4ba7da30930acc89e5d2a87511ca3" category="paragraph">드라이브를 처리하는 동안 다음 모범 사례를 따르십시오.</block>
   <block id="58c147306bf280b47a164e7c0b0dd750" category="list-text">설치할 준비가 될 때까지 드라이브를 ESD 백에 넣어 정전기 방전(ESD)을 방지합니다.</block>
   <block id="0c03fb247c8bb85a717d43d5091a6825" category="list-text">ESD 백에 금속 공구나 칼날을 넣지 마십시오.</block>
@@ -12235,7 +12234,6 @@
   <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp H-Series 스토리지 노드의 펌웨어 버전이 지원됩니다</block>
   <block id="376acf421ab362eb5e198d9dbe0ef1f4" category="summary">Element 12.5부터 관리 노드에서 sfreadonly 사용자 계정을 활성화하여 NetApp 지원팀의 도움 없이 시스템 구성요소 문제를 해결할 수 있습니다. 고급 문제 해결을 위해 NetApp 지원에 대한 원격 지원 터널 액세스를 활성화 및 열 수도 있습니다.</block>
   <block id="03977ca9014ed49925d2fb260f5a2b6f" category="paragraph">Element 소프트웨어 버전에 따라 다음 SF-시리즈 스토리지 노드는 지원되지 않습니다.</block>
-  <block id="8c807086e16a6bf793517a3ea6554487" category="paragraph">이러한 스토리지 노드 중 하나를 지원되지 않는 Element 버전으로 업그레이드하면 이 노드가 Element 12.x에서 지원되지 않는다는 오류가 표시됩니다</block>
   <block id="b1ac6637f319a778daa4b7822c1798b5" category="paragraph">Element 12.5 이상으로 업그레이드하는 동안 장애가 발생한 기존 BMC가 있거나 업그레이드 중에 노드의 BMC에 장애가 발생한 노드에 대해 "BmcSelfTestFailed" 장애가 생성되지 않습니다. 업그레이드 중 자체 테스트에 실패한 BMC는 전체 클러스터에서 업그레이드가 완료된 후 "BmcSelfTestFailed" 경고 오류를 발행합니다.</block>
   <block id="57f06358fba0b8a8922a0641b09632cd" category="list-text">* 업그레이드 프로세스 시간 *: 업그레이드를 수행하기에 충분한 시간을 예약했습니다. Element 소프트웨어 12.5 이상으로 업그레이드할 경우 업그레이드 프로세스 시간은 현재 Element 소프트웨어 버전 및 펌웨어 업데이트에 따라 달라집니다.</block>
   <block id="139691973eba994346784166c2abe4d8" category="cell">최신 펌웨어 ^3^을(를) 사용하는 모든 SolidFire 및 NetApp H 시리즈 노드</block>
@@ -12305,7 +12303,6 @@
   <block id="b8bb97697b35e86a4877aef90f591533" category="paragraph">Element 12.7 업그레이드 중에 스토리지 노드가 재부팅될 때 SHA 알고리즘을 포함하는 목록이 포함된 세션 요청을 보내도록 호스트 iSCSI 이니시에이터 구성을 이미 업데이트한 경우 새로운 보안 알고리즘이 활성화되고 가장 안전한 프로토콜을 사용하여 새 iSCSI 세션 또는 다시 연결된 iSCSI 세션이 설정됩니다. 업그레이드 중에 기존의 모든 iSCSI 세션이 MD5에서 SHA로 전환됩니다. 호스트 iSCSI 이니시에이터 구성을 SHA를 요청하기 위해 업데이트하지 않으면 기존 iSCSI 세션에서 계속 MD5를 사용합니다. 나중에 호스트 iSCSI 이니시에이터 CHAP 알고리즘을 업데이트한 후 iSCSI 세션이 다시 연결되는 유지 보수 작업에 따라 iSCSI 세션이 점차 MD5에서 SHA로 전환되어야 합니다.</block>
   <block id="db6cb10180fa1523938da319a188d13d" category="paragraph">예를 들어, RHEL(Red Hat Enterprise Linux) 8.3의 기본 호스트 iSCSI 초기자는 "node.session.auth.chap_algs = SHA3-256, SHA256, SHA1, MD5" 설정이 MD5만 사용하는 iSCSI 초기자에 대한 의견을 남겼습니다. 호스트에서 이 설정의 주석 처리를 해제하고 iSCSI 이니시에이터를 다시 시작하면 해당 호스트에서 iSCSI 세션이 트리거되어 SHA3-256을 사용합니다.</block>
   <block id="55fc627721522ae45305c9f988153a20" category="paragraph">필요한 경우 를 사용할 수 있습니다<block ref="06aa6b6b67e008146e7c8d6417794b62" category="inline-link-rx"></block> 각 세션에 사용 중인 CHAP 알고리즘을 확인하는 API 메소드</block>
-  <block id="822cfacfacaf81a90ce9862ea1ea1e0e" category="paragraph">^3^ Element 12.7부터 SF2405 및 SF9608 스토리지 노드, FC0025 및 SF-FCN-01 FC 노드는 지원되지 않습니다. SF2405를 Element 12.7로 업그레이드하려고 하면 이 노드가 Element 12.7에서 지원되지 않는다는 오류가 표시됩니다.</block>
   <block id="197daf7bc8c465056c36b92f2d586989" category="paragraph">Element 소프트웨어 버전에 따라 다음 노드는 지원되지 않습니다.</block>
   <block id="08c7862f5f38b9fd867553b48afef501" category="list-text">Element 12.7, SF2405 및 SF9608 스토리지 노드 및 FC0025 및 SF-FCN-01 FC 노드로 시작</block>
   <block id="8308b7fe397e44d83e5a712066af41fb" category="list-text">Element 12.0, SF3010, SF6010 및 SF9010 스토리지 노드로 시작</block>
@@ -12322,7 +12319,6 @@
   <block id="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="list-text"><block ref="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="inline-xref-macro-rx"></block></block>
   <block id="6fa691d2c07bea6ae78b7022c80e9d20" category="paragraph">인증</block>
   <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">이 iSCSI 세션에 대한 인증 정보입니다.</block>
-  <block id="2e5eceda3bfa3409dad5d20e93cd57ac" category="list-text">Element 12.7부터 SF2405 및 SF9608 스토리지 노드, FC0025 및 SF-FCN-01 FC 노드는 지원되지 않습니다. 이러한 노드 중 하나를 Element 12.7로 업그레이드하면 이 노드가 Element 12.7에서 지원되지 않는다는 오류가 표시됩니다.</block>
   <block id="3ce48b341428a446ef1ef80ae2ebc84a" category="list-text">Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레이드가 더 이상 지원되지 않습니다. Element 11.0 또는 11.1을 실행 중인 경우 먼저 해야 합니다 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5로 업그레이드하십시오. 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5 이상으로 업그레이드하십시오.</block>
   <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">관리 서비스 공지 2.21.61(VMware vCenter Server용 NetApp Element 플러그인 4.10.12)</block>
   <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
@@ -12338,4 +12334,8 @@
   <block id="e4eccb810d78b1a07fe7514cdf52eb9f" category="admonition">VMware vCenter Server 7.0 U3으로 업그레이드하면 Element 플러그인이 배포되지 않습니다. Spring Framework 4를 사용하여 이 문제를 해결하려면 을 참조하십시오<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>.</block>
   <block id="62449609bcf95f48fbdbae6dddedcc19" category="list-text">* 최종 사용자 라이센스 계약(EULA) *: 관리 서비스 2.20.69부터 NetApp 하이브리드 클라우드 제어 UI 또는 API를 사용하여 Element 소프트웨어를 업그레이드하기 전에 EULA에 동의하고 저장해야 합니다.</block>
   <block id="d6802e127914e53f73aa2f2db8cb5e44" category="paragraph">관리 서비스 2.20.69부터 NetApp 하이브리드 클라우드 제어 UI 또는 API를 사용하여 관리 서비스를 업그레이드하기 전에 최종 사용자 라이센스 계약(EULA)에 동의해야 합니다.</block>
+  <block id="33d4cce2372c2f81af75e357ed402fe5" category="paragraph">^3^ Element 12.7부터 SF2405 및 SF9608 스토리지 노드, FC0025 및 SF-FCN-01 FC 노드는 지원되지 않습니다. 이러한 노드 중 하나를 Element 12.7로 업그레이드하려고 하면 Element 12.7에서 이 노드가 지원되지 않는다는 오류가 표시됩니다.</block>
+  <block id="eb354756273b461b7f8b4d3abc6ac150" category="paragraph">이러한 노드 중 하나를 지원되지 않는 Element 버전으로 업그레이드하려고 하면 이 노드가 Element 12.x에서 지원되지 않는다는 오류가 표시됩니다</block>
+  <block id="ab23337415270010383937ce784cb519" category="list-text">Element 12.7부터 SF2405 및 SF9608 스토리지 노드, FC0025 및 SF-FCN-01 FC 노드는 지원되지 않습니다. 이러한 노드 중 하나를 Element 12.7로 업그레이드하려고 하면 Element 12.7에서 이 노드가 지원되지 않는다는 오류가 표시됩니다.</block>
+  <block id="b2466e723f3725978ed96accd95013ae" category="paragraph">슬롯 0은 노드에 대한 메타데이터 드라이브를 보유합니다. 슬롯 0에 있는 드라이브를 교체하는 경우 교체 드라이브의 배송 상자에 포함된 스티커를 부착해야 나머지 드라이브와 별도로 식별할 수 있습니다.</block>
 </blocks>
