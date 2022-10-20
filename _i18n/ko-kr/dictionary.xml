@@ -3266,11 +3266,9 @@
   <block id="c9587cb08e5592f619eef36a7fb5d994" category="doc">혼합 노드 환경의 클러스터 용량</block>
   <block id="e1a3e19f69efda7a7363311358c45df4" category="paragraph">H-Series는 H610S-1, H610S-2, H610S-4 및 H410S 노드로 구성됩니다. 이러한 노드는 10GbE와 25GbE 모두 지원합니다.</block>
   <block id="17d44e89eecd428fa4268b3fa3873164" category="paragraph">암호화되지 않은 노드와 암호화된 노드를 혼합하지 않는 것이 가장 좋습니다. 혼합 노드 클러스터에서 노드는 총 클러스터 용량의 33%를 초과할 수 없습니다. 예를 들어, 4개의 SF-Series 4805 노드가 있는 클러스터에서 단독으로 추가할 수 있는 가장 큰 노드는 SF-Series 9605입니다. 클러스터 용량 임계값은 이 상황에서 최대 노드의 잠재적 손실을 기준으로 계산됩니다.</block>
-  <block id="dde5a199f31b4af53ccd088330e8314c" category="paragraph">Element 12.0부터 다음 SF 시리즈 스토리지 노드는 지원되지 않습니다.</block>
   <block id="e20bd5cbcbe45cd37f6757535ba650c4" category="list-text">SF3010</block>
   <block id="6062dc119fdeb97b9bb107c1063467a8" category="list-text">SF6010</block>
   <block id="f01ab7a5082dba0b14f15d3b2e71f12b" category="list-text">SF9010</block>
-  <block id="58432e4b26f0e5c8db86828d17f3a7ba" category="paragraph">이러한 스토리지 노드 중 하나를 Element 12.0으로 업그레이드하면 이 노드가 Element 12.0에서 지원되지 않는다는 오류가 표시됩니다.</block>
   <block id="0b627a9e309e95034aa647662c6850ba" category="summary">네트워크 시간 프로토콜\(NTP\)은 다음 두 가지 방법 중 하나로 설정할 수 있습니다. 즉, 클러스터의 각 노드에 브로드캐스트를 청취하도록 지시하거나 각 노드에 업데이트를 쿼리하도록 지시합니다.</block>
   <block id="aee40dc887e7ee1a678b3c4f23851b92" category="doc">네트워크 시간 프로토콜을 설정합니다</block>
   <block id="e4fb8fa88e0f62a27817b1b76b7fb1f6" category="paragraph">NTP(네트워크 시간 프로토콜)는 두 가지 방법 중 하나로 설정할 수 있습니다. 즉, 클러스터의 각 노드에 브로드캐스트를 청취하도록 지시하거나 각 노드에 업데이트를 쿼리하도록 지시하십시오.</block>
@@ -6470,8 +6468,6 @@
   <block id="8c62a8856619185a333cdec6cc116a79" category="list-text"><block ref="8c62a8856619185a333cdec6cc116a79" category="inline-link-rx"></block></block>
   <block id="feaf808951dafefbf9943700efdb4315" category="inline-link">이전 버전용 SolidFire 및 Element 소프트웨어 설명서 센터</block>
   <block id="049adc1802f0210729234e1fe80d95e6" category="list-text"><block ref="049adc1802f0210729234e1fe80d95e6" category="inline-link-rx"></block></block>
-  <block id="311f4aa48c89c4e8754b8d93a8d5c0d5" category="inline-link">NetApp HCI 및 NetApp Element 소프트웨어용 펌웨어 및 드라이버 버전</block>
-  <block id="8c47ac98e3f72388d0a7fb3d375c0441" category="list-text"><block ref="8c47ac98e3f72388d0a7fb3d375c0441" category="inline-link-rx"></block></block>
   <block id="0e93badeabe261c69b6984cdc67bfc5d" category="summary">이니시에이터에 대한 정보와 이러한 이니시에이터를 사용하여 볼륨 액세스 그룹의 스토리지에 대한 액세스를 허용하는 방법에 대해 알아봅니다.</block>
   <block id="6430db21988dbbdfca7783c89a7710df" category="doc">이니시에이터</block>
   <block id="80d6153382e70910f8e51a18694440a4" category="paragraph">이니시에이터는 외부 클라이언트가 클러스터의 볼륨에 액세스할 수 있도록 하며, 클라이언트와 볼륨 간의 통신을 위한 진입점 역할을 합니다. 스토리지 볼륨에 대한 계정 기반 액세스 대신 CHAP 기반 액세스에 이니시에이터를 사용할 수 있습니다. 볼륨 액세스 그룹에 추가된 단일 이니시에이터는 볼륨 액세스 그룹 구성원이 인증을 요구하지 않고 그룹에 추가된 모든 스토리지 볼륨에 액세스할 수 있도록 합니다. 이니시에이터는 하나의 액세스 그룹에만 속할 수 있습니다.</block>
@@ -11907,7 +11903,6 @@
   <block id="47e9151ac689287505aa641c93450d92" category="list-text">vCenter Server 4.9, 4.8, 4.7, 4.6, 4.5 또는 4.4용 NetApp Element 플러그인으로 업그레이드하려는 경우</block>
   <block id="8eeabd6de4a231c731b82c27ee25bbdb" category="admonition">이 플러그인은 VMware vCenter Server 4.6, 4.7 및 4.8용 Element Plug-in용 VMware vCenter Server 6.5와 호환되지 않습니다.</block>
   <block id="c7c27143d481078e23cd4144c0df2f10" category="inline-link">vCenter 플러그인 4.9 릴리즈 노트</block>
-  <block id="6452d1b3e56fe38fdc537aeb6fe8d1c8" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block>_신규 _</block>
   <block id="95f27799ddeb01b37a606c94f6349232" category="paragraph">NetApp 하이브리드 클라우드 제어 웹 UI 및 API NetApp 온라인 소프트웨어 저장소에서 소프트웨어 패키지를 다운로드합니다. 이로 인해 일부 URL 또는 IP 주소는 콘텐츠 전송 네트워크를 기반으로 다른 URL 또는 IP 주소로 해결될 수 있습니다. 가능한 경우 네트워크 엔지니어와 협력하여 다음 일반 단계를 사용하여 이러한 URL 또는 IP 주소를 방화벽 규칙에 추가해야 합니다.</block>
   <block id="468e2827e5dc0169c965a021b0f015d8" category="list-text">wget 또는 curl 유틸리티를 사용하여 URL(예: support-sg-nawest.netapp.com 액세스합니다.</block>
   <block id="887a9d2ae67bb61c76d5d0032a4b7b0f" category="list-text">다음 예에 표시된 것처럼 연결을 확인합니다.</block>
@@ -11919,13 +11914,11 @@
   <block id="9fc75d41716cfd46199787dcf77473a1" category="list-text">"https://support-sg-emea.netapp.com`</block>
   <block id="a1b1a9120bbc7238c7b6088d7223d194" category="list-text">"https://support-sg-naeast.netapp.com`</block>
   <block id="219033cd316af31663b173765be6dd78" category="list-text">"https://support-sg-nawest.netapp.com`</block>
-  <block id="54aa7f2dcdc54ac5abd932a5b6c8b3d7" category="list-text">* 업그레이드 프로세스 시간 *: 업그레이드를 수행하기에 충분한 시간을 예약했습니다. Element 소프트웨어 12.5로 업그레이드할 때 업그레이드 프로세스 시간은 현재 Element 소프트웨어 버전 및 펌웨어 업데이트에 따라 달라집니다.</block>
   <block id="778b8320a31f425d9021c72ba59dd8bd" category="cell">스토리지 노드</block>
   <block id="c4303966c5d95835840cedbb4010f17d" category="cell">최신 Element 소프트웨어 버전</block>
   <block id="0eb587cb5fd7c18c359cc306f978cd9d" category="cell">노드당 대략적인 소프트웨어 및 펌웨어 설치 시간 ^1^</block>
   <block id="67578343d744d824d2ae7f1f0780853f" category="cell">노드당 대략적인 데이터 동기화 시간 ^2^</block>
   <block id="16ac89e788575fb90e5d952ce28c7d05" category="cell">노드당 대략적인 총 업그레이드 시간입니다</block>
-  <block id="ff99582146f5f2ab14948a290d24066e" category="cell">최신 펌웨어를 제공하는 모든 SolidFire 및 NetApp H 시리즈 노드</block>
   <block id="94a391e7535162277a17a069254b24c6" category="cell">12.x</block>
   <block id="2a7bb67d9681d8b5c8241cd49c734772" category="cell">15분</block>
   <block id="5e1ee2491e0c0ac6da474bab9124ae95" category="cell">10-15분</block>
@@ -11941,10 +11934,8 @@
   <block id="9b2b1e8f398acbac5493461c590118f6" category="inline-link">전체 노드 종료 및 전원 차단을 수행합니다</block>
   <block id="2233d6c0637a0dd985141fefd60451a0" category="cell">130-160분 정도 소요됩니다<block ref="b75cb1417453c96f34f9e695ad57b88f" category="inline-link-rx"></block> 각 H610S 노드에 대해 적용됩니다.</block>
   <block id="0fe84530e14d6cb77f51c3d2cc85aa18" category="paragraph">^2^ 펌웨어를 업데이트하는 데 시간이 오래 걸리는 쓰기 IOPS 로드가 많은 클러스터를 결합할 경우 데이터 동기화 시간이 증가합니다.</block>
-  <block id="eb05636c0d5a8e35fae14ecd37584ea8" category="doc">SolidFire 및 Element 소프트웨어 12.5 문서</block>
   <block id="7275696d9abdd4848d9921861f886410" category="inline-link">요소 12.3.x 문서</block>
   <block id="b3c5f594b6d2e3e6a1ff3b84dd766edf" category="list-text"><block ref="b3c5f594b6d2e3e6a1ff3b84dd766edf" category="inline-link-rx"></block></block>
-  <block id="70a1cc9bac71af783948e9c6d13ed046" category="summary">Element 12.5 이상의 경우 관리 노드에서 sfreadonly 사용자 계정을 설정하여 NetApp Support의 도움 없이 시스템 구성요소 문제를 해결할 수 있습니다. 고급 문제 해결을 위해 NetApp 지원에 대한 원격 지원 터널 액세스를 활성화 및 열 수도 있습니다.</block>
   <block id="87c6849449248757341d19789f0ecb83" category="doc">기본 문제 해결을 위해 SSH를 사용하여 스토리지 노드 액세스</block>
   <block id="ed66fa0901c1a26113d52acbb6ee20dd" category="paragraph">Element 12.5부터 기본 문제 해결을 위해 스토리지 노드에서 sfreadonly 시스템 계정을 사용할 수 있습니다. 고급 문제 해결을 위해 NetApp 지원에 대한 원격 지원 터널 액세스를 활성화 및 열 수도 있습니다.</block>
   <block id="d1ac7db9c842ceaac83404d4d52e800f" category="paragraph">sfreadonly 시스템 계정은 기본 Linux 시스템 및 "ping"을 포함한 네트워크 문제 해결 명령을 실행할 수 있도록 액세스를 활성화합니다.</block>
@@ -12020,7 +12011,6 @@
   <block id="3ae6493bf18ba6963b40d7f9821c1a52" category="summary">노드나 클러스터에서 ssh를 사용하도록 설정한 후에는 SignSshKeys 메서드를 사용하여 sfadmin 또는 sfreadonly 로 노드의 셸에 액세스할 수 있습니다. sfreadonly 는 Element 12.5의 새로운 사용자 계정으로서 노드에서 초기 문제 해결을 허용하지만 상승된 명령을 만들 수 있는 권한이 없습니다.</block>
   <block id="a7917a2f080408ce1e230f197d5433cd" category="inline-link-macro">EnableSSH 메서드</block>
   <block id="6dda290cb72d73d469f631c0dfd2e0f3" category="paragraph">를 사용하여 클러스터에서 SSH를 활성화한 후 <block ref="7d9609f81e054cdd171756b31fbc7560" category="inline-link-macro-rx"></block>'SignSshKeys' 메서드를 사용하여 노드의 셸에 액세스할 수 있습니다.</block>
-  <block id="ac22ef258ca6640c6916f485dfb04a12" category="paragraph">'읽기 전용'은 Element 12.5의 새로운 시스템 계정으로, 노드에 대한 기본적인 문제 해결이 가능합니다. 이 API를 사용하면 클러스터의 모든 노드에서 'readonly' 시스템 계정을 사용하여 SSH에 액세스할 수 있습니다.</block>
   <block id="4c99bed64e74c6cc1cfc268cdeaa6615" category="admonition">NetApp Support에서 통보하지 않는 한, 시스템에 대한 모든 변경 사항은 지원되지 않으며 지원 계약을 무효로 하고 데이터의 불안정이나 액세스 불가능성을 초래할 수 있습니다.</block>
   <block id="b076eaceedc6422f2cfaa718fed94e69" category="paragraph">메소드를 사용한 후에는 응답에서 키 체인을 복사하여 SSH 연결을 시작할 시스템에 저장한 후 다음 명령을 실행해야 합니다.</block>
   <block id="d0bb781e5b5f30c7270f5c59dbe3b4b0" category="paragraph">identity_file은 공개 키 인증을 위한 identity(private key)를 읽고 node_ip를 노드의 IP 주소로 하는 파일입니다. identity_file에 대한 자세한 내용은 SSH man 페이지를 참조하십시오.</block>
@@ -12045,28 +12035,17 @@
   <block id="cf3e481a44141cabd4e9d46cfbb1f899" category="paragraph">12.5</block>
   <block id="1cd7e1f52564ecd1b9b47bf17fe8d192" category="inline-link-macro">활성화 및 비활성화</block>
   <block id="9be1c6c1a5e1d288c79545fe648fce2d" category="paragraph">클러스터 전체를 사용하려는 경우 <block ref="46beba8112888a31f3c57eea2d458bf9" category="inline-link-macro-rx"></block> SolidFire All-Flash 스토리지 클러스터의 경우, 클러스터 생성 중에 클러스터를 생성해야 합니다. Element 12.5부터 클러스터 생성 시 클러스터 생성 UI에서 유휴 상태의 소프트웨어 암호화를 활성화해야 합니다. Element 12.3.x 및 이전 버전의 경우 를 사용하여 클러스터를 생성해야 합니다 <block ref="3302765abfbbe930557ebd20cdd8d8e8" category="inline-link-macro-rx"></block> API 메서드 및 enableSoftwareEncryptionAtRest 매개 변수를 "true"로 변경합니다. SolidFire ESDS 클러스터에는 유휴 소프트웨어 암호화가 기본적으로 활성화되어 있습니다. SolidFire All-Flash 스토리지 클러스터 및 SolidFire ESDS 클러스터의 경우, 클러스터에서 유휴 소프트웨어 암호화를 설정한 후에는 비활성화할 수 없습니다. 가능합니다 <block ref="c4953cd715ac499bd17d25e3487e7fdb" category="inline-link-macro-rx"></block> 클러스터 생성 후 유휴 상태의 하드웨어 기반 암호화</block>
-  <block id="90c2dc9b8e4f7b029c80f8c7488a4b58" category="paragraph">관리 노드를 버전 12.3.x에서 관리 노드 12.5로 업그레이드할 수 있습니다</block>
   <block id="2ee9526aa61dc0808ea0ccf6ccfa2412" category="paragraph">스토리지 클러스터에서 Element 소프트웨어를 업그레이드하는 데 관리 노드 운영 체제를 더 이상 업그레이드할 필요가 없습니다. NetApp 하이브리드 클라우드 제어를 사용하여 관리 서비스를 최신 버전으로 간단히 업그레이드하여 Element 업그레이드를 수행할 수 있습니다. 보안 문제 해결과 같은 다른 이유로 관리 노드 운영 체제를 업그레이드하려면 시나리오에 따라 관리 노드 업그레이드 절차를 따르십시오.</block>
   <block id="cd5e8795f7da1b9c55223a753f0c64bd" category="inline-link">Element 12.3.x 관리 노드 업그레이드 설명서</block>
   <block id="33fea926c5e46b795ee89cd754264618" category="admonition">관리 노드 12.2 이전 버전 업그레이드에 대한 정보가 필요한 경우 를 참조하십시오<block ref="7510c32e54d32b91989c1cd2810dc6d2" category="inline-link-rx"></block>.</block>
-  <block id="8802b9126d6080e36bb95641f40cfab3" category="list-text"><block ref="54df05cfe3df35112175e19c0aa861b7" category="inline-xref-macro-rx"></block></block>
   <block id="4ec79ca5d6408d326fb4a58b0c3b2e40" category="list-text"><block ref="35b702a8c6556d6de2f367adef3740ff" category="inline-xref-macro-rx"></block></block>
   <block id="f3bac24ec8b72ab99e38f7ecb167cc25" category="paragraph">관리 서비스 버전(1) 및 (2) 요소 스토리지 버전을 * 순차적으로 * 업데이트하고 * 기존 관리 노드를 * 유지하려면 이 옵션을 선택하십시오.</block>
-  <block id="e94fb483edf44bcb1d0066bfff1ffe18" category="section-title">관리 노드를 12.3.x에서 버전 12.5로 업그레이드합니다</block>
-  <block id="e071a52c7e2ea747fe3b237e04bcec11" category="paragraph">새 관리 노드 가상 머신을 프로비저닝하지 않고도 관리 노드를 버전 12.3.x에서 버전 12.5로 데이터 이동 없이 업그레이드할 수 있습니다.</block>
-  <block id="cd6641a5f66844b15e37f50c79eafa6e" category="admonition">Element 12.5 관리 노드는 선택적 업그레이드입니다. 기존 배포에는 필요하지 않습니다.</block>
-  <block id="02bd6928c03c8f53c18f8a5143bdd5f4" category="list-text">업그레이드하려는 관리 노드는 버전 12.0이며 IPv4 네트워킹을 사용합니다. 관리 노드 버전 12.5는 IPv6을 지원하지 않습니다.</block>
-  <block id="1e92b13cdf15b50caf5e299263e754d4" category="list-text">관리 노드를 버전 12.5로 업데이트하는 경우 계속하려면 관리 서비스 2.20.69 이상이 필요합니다.</block>
-  <block id="dfa645595ef398bf7b6f3c49d39a3426" category="list-text">스토리지 노드가 Element 12.3 이상을 실행하고 있습니다.</block>
   <block id="2914d2e1549f2ef461f9b040823e6218" category="list-text">관리 서비스를 2.20.69 이상으로 업데이트했습니다.</block>
   <block id="311e83625ce0c896e7a3f811f3ac48c2" category="list-text">스토리지 클러스터에서 Element 12.3 이상이 실행되고 있습니다.</block>
   <block id="0637ebd56fb666abb4197f99ee28a8be" category="list-text">* H610S 노드의 업데이트된 베이스보드 관리 컨트롤러(BMC) *: H610S 노드의 BMC 버전을 업그레이드했습니다. 을 참조하십시오 <block ref="c240390f1d50c698cb63f0c07c7d1edd" category="inline-link-macro-rx"></block>.</block>
   <block id="356747bc1580f5d7e13f9055ae1f02df" category="paragraph">NetApp Element 소프트웨어를 업그레이드하려면 NetApp 하이브리드 클라우드 제어 UI 또는 REST API를 사용할 수 있습니다. 노드 추가 및 제거, 드라이브 추가 및 제거, 이니시에이터, 볼륨 액세스 그룹 및 가상 네트워크와 관련된 명령 등 Element 소프트웨어를 업그레이드하는 동안 특정 작업이 표시되지 않습니다.</block>
   <block id="abad8a22ec62bb4befaee820afb760ef" category="inline-link-macro">HealthTools를 사용하여 Element 12.3으로 업그레이드하십시오</block>
-  <block id="e4f2f9baf039ea62b7a0740e3ba88a7a" category="admonition">Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레이드가 더 이상 지원되지 않습니다. Element 11.0 또는 11.1을 실행 중인 경우 먼저 해야 합니다 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5로 업그레이드하십시오.</block>
-  <block id="7970314795c697c589f52cd629d4a341" category="admonition">Element 소프트웨어를 버전 12.5로 업그레이드하기 전에 최신 관리 서비스 번들로 업그레이드해야 합니다. Element 소프트웨어를 버전 12.5로 업데이트하는 경우 계속하려면 관리 서비스 2.20.69 이상이 필요합니다.</block>
   <block id="649c8d7c132041751dab6da01f1fd9db" category="list-text">* H610S 스토리지 노드의 업데이트된 베이스보드 관리 컨트롤러(BMC) *: H610S 노드의 BMC 버전을 업그레이드했습니다. 를 참조하십시오 <block ref="c240390f1d50c698cb63f0c07c7d1edd" category="inline-link-macro-rx"></block>.</block>
-  <block id="eed743cc753cdf3d22086e7df918db02" category="admonition">H610S 시리즈 노드를 Element 12.5로 업그레이드하고 노드가 11.8 이전의 Element 버전을 실행 중인 경우 이 단계에서 추가 업그레이드 단계를 수행해야 합니다<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block> 각 스토리지 노드에 대해 Element 11.8 이상을 실행하는 경우 추가 업그레이드 단계가 필요하지 않습니다.</block>
   <block id="02526a9433819b3363fdad9cdfc66a7d" category="list-text">관리 노드가 인터넷에 연결되어 있지 않은 경우 를 다운로드했습니다<block ref="0c09c6a7a60b11e622c5ccc20d3a7783" category="inline-link-rx"></block>.</block>
   <block id="a901d2b8512ddf5cf3b7654718ea92a4" category="admonition">NetApp 하이브리드 클라우드 제어를 사용하여 스토리지 클러스터를 업그레이드하는 동안 발생할 수 있는 문제와 그 해결 방법은 다음을 참조하십시오<block ref="385c83615df1d77fbf0bae3f06fabb3d" category="inline-link-rx"></block>.</block>
   <block id="981a393a1b5619c45c3545ca7373b5cf" category="list-text">업그레이드 시작 * 을 선택합니다. 업그레이드가 완료되면 UI에서 추가 업그레이드 단계를 수행하라는 메시지가 표시됩니다.</block>
@@ -12076,14 +12055,11 @@
   <block id="fb9099604c3233c77b3c8b5487c99eb3" category="list-text">이 단계에서 추가 업그레이드 단계를 완료합니다<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block> 각 노드에 대해.</block>
   <block id="7fdc03d82c29eba6b61c702a58fd28ba" category="paragraph">이러한 구성 요소에는 관리 서비스, NetApp 하이브리드 클라우드 제어, Element 소프트웨어, 관리 노드 및 설치에 따라 vCenter Server용 Element 플러그인이 포함됩니다.</block>
   <block id="85aed6fa173952d69db4c99c1290921b" category="inline-link-macro">스토리지 펌웨어</block>
-  <block id="a8c7f4c70c59120de0b33efda8af8aa5" category="list-text">에 대해 충분한 시간을 예약했습니다 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 및 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 업그레이드. Element 소프트웨어 12.5로 업그레이드할 경우 업그레이드 프로세스 시간은 Element 소프트웨어 버전 및 펌웨어 업데이트에 따라 달라집니다.</block>
   <block id="2fa7dfb88e1cb5cf745edc36604f73fd" category="paragraph">NetApp 하이브리드 클라우드 제어 UI 또는 NetApp 하이브리드 클라우드 제어 API를 사용하여 상태 점검을 실행할 수 있습니다.</block>
   <block id="d37f0270ef1cdc666fe669356e1a4f75" category="inline-link-macro">사용자 지정 보호 도메인을 구성합니다</block>
   <block id="b9d7f7d96ba0d7f9fb0ebbfdd76705d5" category="list-text"><block ref="a92b076f4c042891d554c076d8d2ec26" category="inline-link-macro-rx"></block> - 각 노드가 속한 섀시와 사용자 지정 보호 도메인을 표시합니다.</block>
   <block id="ed4cb7ef9d0074dd188232c212f3131c" category="list-text"><block ref="79208a7b3d3c86443da0ca3bafbef925" category="inline-link-macro-rx"></block> - 각 노드에 사용자 지정 보호 도메인을 할당할 수 있습니다.</block>
-  <block id="61b35a1ffe9df32c3c0e2e4a7969de4b" category="paragraph">NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 SolidFire 및 Element 소프트웨어를 정기적으로 업데이트합니다. Element 12.5에는 향상된 스토리지 노드 액세스, 향상된 맞춤형 보호 도메인 관리, 새롭고 개선된 클러스터 장애 및 이벤트, 향상된 클러스터 UI 생성 기능, 향상된 보안 및 Ansible을 사용한 자동 업그레이드가 도입되었습니다.</block>
   <block id="38614c843f3a64f496d80e9b3a15ca3c" category="section-title">요소 12.5</block>
-  <block id="3841a44fe905d7faa925f35d459015bf" category="paragraph">Element 12.5의 새로운 기능에 대해 자세히 알아보십시오.</block>
   <block id="632a0cf5bff2b4038d81ba8a87bedf56" category="section-title">스토리지 노드 액세스 향상</block>
   <block id="36c6fef8b472466a86d8c04fae14b83a" category="paragraph">Element 12.5는 서명된 SSH 인증서를 사용하여 개별 노드에 대한 원격 액세스를 향상시킵니다. 스토리지 노드에 대한 보안 원격 액세스를 제공하기 위해 스토리지 노드의 RTFI 중에 's freadonly'라는 새로운 제한된 권한의 로컬 사용자 계정이 생성됩니다. 'readonly' 계정을 사용하면 기본적인 유지 관리 또는 문제 해결을 위해 스토리지 노드 백엔드에 액세스할 수 있습니다. 이제 클러스터 관리자에 대한 'upportAdmin' 액세스 유형을 구성하여 NetApp에서 필요에 따라 클러스터에 액세스하도록 허용할 수 있습니다.</block>
   <block id="c4850a0256fd94385624e245ebb4e3f5" category="section-title">향상된 맞춤형 보호 도메인 관리 기능</block>
@@ -12102,7 +12078,6 @@
   <block id="3e295da75c8e1147efb1d40b92bc67b1" category="section-title">온라인에서 제공되는 NetApp 버그는 해결된 알려진 문제를 포함합니다</block>
   <block id="dacb18e4909785f6226e9cc6bcd62371" category="paragraph">해결된 알려진 문제가 NetApp 버그 온라인 툴에 나열되어 있습니다. Element 소프트웨어 및 기타 제품에 대한 이러한 문제는 에서 찾아볼 수 있습니다<block ref="6d0e40d4342f9a7ae6016dd8d3efbf3e" category="inline-link-rx"></block>.</block>
   <block id="875455659aea2dfd3f63e40de150b31c" category="inline-link">NetApp Element 소프트웨어 12.5 릴리스 정보</block>
-  <block id="f8e8ebc61e5eb8b12488dfac5a827259" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block> _신규 _</block>
   <block id="9de5606ae9b23ff6651244b85bd5dae8" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block></block>
   <block id="5ed2b0be7714cf9bfe94c6d0660549bb" category="list-text"><block ref="5ed2b0be7714cf9bfe94c6d0660549bb" category="inline-link-rx"></block></block>
   <block id="ad6795e432521efb065caaec447cfa77" category="inline-link">스토리지 펌웨어 번들 2.146 릴리스 정보</block>
@@ -12110,7 +12085,6 @@
   <block id="efe7c0d4ed04341756689674a3fb46c4" category="list-text">* BmcSelfTestFailed *</block>
   <block id="e14ad5a8fd8d67543e771552b5287d65" category="paragraph">베이스보드 관리 컨트롤러(BMC)가 자체 테스트에 실패했습니다.</block>
   <block id="f13985a4689ae985836f2d3e56cd1a5f" category="paragraph">도움이 필요하면 NetApp 지원에 문의하십시오.</block>
-  <block id="dfe7f32d919b2362aed8eecc2ad964cf" category="paragraph">Element 12.5를 업그레이드하는 동안 장애가 발생한 기존 BMC가 있거나 업그레이드 중에 노드의 BMC에 장애가 발생한 노드에 대해 BmcSelfTestFailed 장애가 생성되지 않습니다. 업그레이드 중 자체 테스트에 실패한 BMC는 전체 클러스터에서 업그레이드가 완료된 후 "BmcSelfTestFailed" 경고 오류를 발행합니다.</block>
   <block id="45a258c05276cacb5b1d7863b0d316e4" category="list-text">* CpuThermalEventThreshold *</block>
   <block id="2e83559dc365c7e917e7fba7009ec948" category="paragraph">하나 이상의 CPU에 대한 CPU 열 이벤트 수가 구성된 임계값을 초과합니다.</block>
   <block id="b045aebb370ef7c237c48505464a66fe" category="paragraph">10분 내에 새 CPU 열 이벤트가 감지되지 않으면 경고가 자동으로 해결됩니다.</block>
@@ -12147,18 +12121,15 @@
   <block id="07cf8fd6e47576d971bbe1a1f3791d23" category="cell">SetProtectionDomainLayout 실패: 보호 도메인 유형 'custom'이 보호 도메인 유형 'chassis'를 분할합니다.</block>
   <block id="74edc88174dceefbbbb11b9aba21d425" category="cell">다중 노드 섀시의 노드에는 섀시의 다른 노드와 다른 보호 도메인이 할당됩니다.</block>
   <block id="49c71a7c59d3ffac02af2e11f20c6903" category="cell">섀시의 모든 노드에 동일한 보호 도메인이 할당되었는지 확인합니다.</block>
-  <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">Element 소프트웨어 12.5를 위해 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드하십시오</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">사용자 지정 보호 도메인을 구성합니다</block>
   <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">원격 NetApp 지원 세션을 시작합니다</block>
   <block id="6d76b07dcfce8c041eb64f1886c69449" category="paragraph">SolidFire All-Flash 스토리지 시스템에 대한 기술 지원이 필요한 경우 NetApp Support를 통해 시스템과 원격으로 연결할 수 있습니다. 세션을 시작하고 원격 액세스를 위해 NetApp Support는 사용자 환경에 대한 역방향 SSH(Secure Shell) 연결을 열 수 있습니다.</block>
   <block id="22e8c0119e5a615de3153bd0cf6157f1" category="list-text">* 저장된 소프트웨어 암호화 기능 향상 *: SolidFire 엔터프라이즈 SDS 스토리지 클러스터를 생성할 때 기본적으로 사용되는 유휴 소프트웨어 암호화 기능에 대한 향상된 기능은 Element 12.3에 도입되었습니다. 이 기능은 스토리지 노드의 SSD에 저장된 모든 데이터를 암호화하므로 클라이언트 IO에 미치는 성능이 2% 정도로 매우 적습니다. 다음은 저장된 소프트웨어 암호화와 관련된 Element API 메서드입니다(참조)<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 각 방법에 대한 자세한 내용 참조).</block>
   <block id="a22ab525bece28b87773c244a6f1b3a0" category="list-text">* 보존할 최대 스냅샷 수를 정의하는 기능 *: 스냅샷 보존 기능에 대한 개선 사항이 Element 12.3에 도입되었습니다. 이 향상 기능을 지원하도록 다음 API가 수정되었습니다(참조)<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 각 방법에 대한 자세한 내용 참조).</block>
-  <block id="7e567302f5ef9349d96e39bff1919742" category="paragraph">다음 순서를 사용하여 Element 12.5용 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드할 수 있습니다.</block>
   <block id="763c55956ad9c66895ee6e099d610ff4" category="list-text">요소 소프트웨어 패치에 대한 정보 얻기 *: Element 12.3에 도입된 "GetPatchInfo" 메서드를 사용하면 스토리지 노드에 설치된 Element 소프트웨어 패치에 대한 정보를 얻을 수 있습니다. 를 참조하십시오<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="7b6627460723fe1128ae2566dade0d76" category="list-text">* 노드의 각 네트워크 인터페이스에 대한 통계 나열 *: Element 12.3에 도입된 "ListNetworkInterfaceStats" 메서드를 사용하면 노드의 각 네트워크 인터페이스에 대해 삭제된 패킷 수와 다양한 유형의 오류 등 통계를 나열할 수 있습니다. 이 API 메서드는 개별 노드에 사용하기 위한 것으로, 개별 노드에 액세스하려면 사용자 ID 및 암호 인증이 필요합니다. 하지만 매개 변수 force가 메서드 호출에서 true 값을 지정하면 클러스터에서 이 메서드를 사용할 수 있습니다. 클러스터에서 매개 변수를 사용하면 모든 인터페이스의 네트워크 통계가 나열됩니다. 를 참조하십시오<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">Element 12.3.1에 도입된 동적 노드 등급을 통해 현재 플랫폼당 단일 CPU 모델이 아닌 ESDS 플랫폼당 24개의 지원되는 CPU를 활용할 수 있습니다.</block>
   <block id="234a1430825055fe25203429facd267e" category="admonition">단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.</block>
-  <block id="3f28cad21e73645ec84c4a70033925a4" category="doc">Element 소프트웨어 12.5의 새로운 기능</block>
   <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">원격 NetApp Support 연결을 설정합니다</block>
   <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">CHAP를 사용하여 계정 작업</block>
@@ -12272,8 +12243,67 @@
   <block id="c557278939ddfc5c37a8606a5b8bc3d8" category="paragraph">vCenter Server용 Element 플러그인에 대한 자세한 내용은 를 참조하십시오<block ref="4a40fe421733073daff96e428d226590" category="inline-link-rx"></block>.</block>
   <block id="fd0b9b1500c5983ac27a332210ebfe29" category="paragraph">많은 NetApp 하이브리드 클라우드 제어 기능은 여러 스토리지 클러스터에서 작동하도록 설계되었지만 인증과 권한 부여에는 제한이 있습니다. 인증 및 권한 부여에 대한 제한 사항은 권한 있는 클러스터의 사용자가 다른 스토리지 클러스터의 사용자가 아니더라도 NetApp 하이브리드 클라우드 제어에 연결된 다른 클러스터에 대한 작업을 실행할 수 있다는 것입니다.</block>
   <block id="f0e8a2f025f562374fa58233f9f7cd01" category="sidebar">vCenter Server용 Element 플러그인을 사용하여 스토리지를 관리합니다</block>
-  <block id="4b8861a11346d673205d074f862db70a" category="inline-link">지원되는 펌웨어 및 ESXi 드라이버 버전</block>
-  <block id="7f6c7867ac3c62c136dad288b3e3298e" category="paragraph">^1^ 하드웨어의 펌웨어 및 드라이버 펌웨어의 전체 매트릭스는 을 참조하십시오<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>.</block>
-  <block id="3c22f77849e3b66d2e0c9c63419afb53" category="admonition">하드웨어의 펌웨어 및 드라이버 펌웨어의 전체 매트릭스는 을 참조하십시오<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>.</block>
   <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp H-Series 스토리지 노드의 펌웨어 버전이 지원됩니다</block>
+  <block id="376acf421ab362eb5e198d9dbe0ef1f4" category="summary">Element 12.5부터 관리 노드에서 sfreadonly 사용자 계정을 활성화하여 NetApp 지원팀의 도움 없이 시스템 구성요소 문제를 해결할 수 있습니다. 고급 문제 해결을 위해 NetApp 지원에 대한 원격 지원 터널 액세스를 활성화 및 열 수도 있습니다.</block>
+  <block id="03977ca9014ed49925d2fb260f5a2b6f" category="paragraph">Element 소프트웨어 버전에 따라 다음 SF-시리즈 스토리지 노드는 지원되지 않습니다.</block>
+  <block id="02cf6300fcf798dec9268510fe501399" category="cell">Element 소프트웨어 버전</block>
+  <block id="d491880ed7c4f2716c5b8ebf0f2cfbb0" category="cell">SF-시리즈 스토리지 노드</block>
+  <block id="30e5e485b533c453bba3daf6375cc212" category="cell">Element 12.0부터 시작합니다</block>
+  <block id="7f2ce5d6d8ad99c7a9f40d2f7b993f65" category="cell">요소 12.7로 시작</block>
+  <block id="8c807086e16a6bf793517a3ea6554487" category="paragraph">이러한 스토리지 노드 중 하나를 지원되지 않는 Element 버전으로 업그레이드하면 이 노드가 Element 12.x에서 지원되지 않는다는 오류가 표시됩니다</block>
+  <block id="b1ac6637f319a778daa4b7822c1798b5" category="paragraph">Element 12.5 이상으로 업그레이드하는 동안 장애가 발생한 기존 BMC가 있거나 업그레이드 중에 노드의 BMC에 장애가 발생한 노드에 대해 "BmcSelfTestFailed" 장애가 생성되지 않습니다. 업그레이드 중 자체 테스트에 실패한 BMC는 전체 클러스터에서 업그레이드가 완료된 후 "BmcSelfTestFailed" 경고 오류를 발행합니다.</block>
+  <block id="57f06358fba0b8a8922a0641b09632cd" category="list-text">* 업그레이드 프로세스 시간 *: 업그레이드를 수행하기에 충분한 시간을 예약했습니다. Element 소프트웨어 12.5 이상으로 업그레이드할 경우 업그레이드 프로세스 시간은 현재 Element 소프트웨어 버전 및 펌웨어 업데이트에 따라 달라집니다.</block>
+  <block id="139691973eba994346784166c2abe4d8" category="cell">최신 펌웨어 ^3^을(를) 사용하는 모든 SolidFire 및 NetApp H 시리즈 노드</block>
+  <block id="f8d237cd828d649cb8579bc85ca63755" category="inline-link">SolidFire 스토리지 노드에 대해 지원되는 스토리지 펌웨어 버전입니다</block>
+  <block id="b20b54856add4fca7311231c02ca0554" category="paragraph">^1^ 하드웨어의 펌웨어 및 드라이버 펌웨어의 전체 매트릭스는 을 참조하십시오<block ref="30c1aa6de93ea8b8201546979be3ae7b" category="inline-link-rx"></block>.</block>
+  <block id="084b51ffb24ddd67b6e5691377e919f4" category="paragraph">^3^ Element 12.7부터 SF2405 스토리지 노드가 지원되지 않습니다. SF2405를 Element 12.7로 업그레이드하려고 하면 이 노드가 Element 12.7에서 지원되지 않는다는 오류가 표시됩니다.</block>
+  <block id="05b5a3d236fa2bfaecf9efbeb480af88" category="paragraph">Element 12.5부터, 'readonly'는 노드에 대한 기본적인 문제 해결을 허용하는 새로운 시스템 계정입니다. 이 API를 사용하면 클러스터의 모든 노드에서 'readonly' 시스템 계정을 사용하여 SSH에 액세스할 수 있습니다.</block>
+  <block id="482c14e23170c54f9df57d397733d7af" category="doc">Element 소프트웨어 12.5 이상의 새로운 기능</block>
+  <block id="5267888908e1548e1d5846f51c92bac9" category="paragraph">NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 SolidFire 및 Element 소프트웨어를 정기적으로 업데이트합니다. Element 12.7은 최신 릴리즈이며 보안 및 시스템 구성 요소 업데이트, 운영 개선 사항 및 해결된 문제를 포함합니다.</block>
+  <block id="31433f4c595cf82b6f9b0654fe86c038" category="admonition">누적 소프트웨어 및 펌웨어 업데이트는 스토리지 클러스터에서 실행 중인 현재 Element 버전을 기반으로 Element 12.7 업그레이드의 일부로 설치됩니다. 예를 들어, 클러스터가 현재 Element 12.3.x를 실행 중인 경우 Element 12.7로 직접 업그레이드하여 Element 12.5와 12.7에서 누적 업데이트를 받을 수 있습니다. 지원되는 업그레이드 경로는 이를 참조하십시오<block ref="5d2488aae82cc199977a2b418e4bfb0b" category="inline-link-rx"></block></block>
+  <block id="7a5d44771145d6289118d595153e9a0f" category="section-title">요소 12.7</block>
+  <block id="c5955a73b2634f54a283c2c1c11a5f00" category="paragraph">Element 12.7의 새로운 기능에 대해 자세히 알아보십시오.</block>
+  <block id="e1aa603edc6a21750a2c4f3ad4c5c6fe" category="section-title">보안 CHAP 알고리즘입니다</block>
+  <block id="7d8047866d4cd4b945792113fe0aef7e" category="paragraph">Element 12.7에는 보안 FIPS 호환 CHAP(Challenge-Handshake Authentication Protocol) 알고리즘 SHA1, SHA-256 및 SHA3-256에 대한 지원이 포함됩니다. <block ref="b6cad66d2ee175f758d394e0154cb07f" category="inline-link-macro-rx"></block>.</block>
+  <block id="3dd61b40b979f11e2f99dcbda82fabe4" category="section-title">동적 블록(bin) 동기화 속도</block>
+  <block id="f0f51fd465849cb53ced2b63167aa2a4" category="paragraph">노드 추가, 업그레이드, 유지 관리 또는 드라이브 추가 등과 같은 클러스터 작업은 블록(bin) 동기화를 트리거하여 클러스터 레이아웃의 새 노드 또는 업데이트된 노드에 블록 데이터를 배포합니다. 기본 동기화 속도로 단일 느린 속도를 사용하면 이러한 작업에 시간이 오래 걸릴 수 있으며 큰 노드의 높은 처리 성능을 활용하지 못합니다. Element 12.7부터 동기화 속도는 스토리지 노드의 코어 수에 따라 동적으로 조정되므로 이러한 작업이 훨씬 빨라집니다.</block>
+  <block id="9a34a7d8791a1a6d72b590e86a6e6c71" category="paragraph">예를 들어, Element 12.7을 실행하는 대규모 28코어 스토리지 노드(H610S, SF19210 및 SF38410)를 기존 클러스터에 추가할 경우 데이터에 대한 동기화 속도는 60Mbps 대신 110Mbps로 자동 조정됩니다. 또한 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.3.x 이상에서 Element 12.7로 업그레이드하는 동안 노드 유지보수 모드에서 이러한 대규모 스토리지 노드를 전환하면 변경된 블록 데이터 속도의 동기화 속도가 20Mbps가 아닌 110Mbps로 자동 조정됩니다.</block>
+  <block id="5ea9100be0bb0a226350ecb83ed7bbf3" category="paragraph">중간 규모 16코어 스토리지 노드(H410S)와 작은 12코어 스토리지 노드(SF4805)를 Element 12.7 클러스터에 추가할 경우 데이터의 동기화 속도는 60Mbps로 유지됩니다. 하지만 Element 12.3.x에서 Element 12.7로 업그레이드하는 동안 변경된 블록을 노드 유지 관리 모드에서 벗어났을 때 동기화의 경우, 동기화 속도는 중간 스토리지 노드의 경우 20Mbps에서 60Mbps로, 작은 스토리지 노드의 경우 40Mbps로 자동 조정됩니다.</block>
+  <block id="238da46c9fb35f77225a8601b5dcc7c7" category="paragraph">스토리지 노드를 제거하면 블록 동기화 속도에 영향을 미치지 않으므로 클라이언트 입출력에 대한 성능 영향을 방지할 수 있습니다</block>
+  <block id="cba547779696e53fe77f25c2836e9ea2" category="section-title">가비지 수집 개선</block>
+  <block id="2089f735c5678c4d81adad19a94b0654" category="paragraph">예를 들어, 1PB의 사용 공간이 있는 대용량 스토리지 노드가 포함된 클러스터의 경우 H610S-4는 덮어쓰기로 인해 매우 높은 워크로드를 실행하고 있습니다. 또한 중복 제거 및 압축 수준이 높기 때문에 더 큰 노드의 기본 Bloom 필터 크기가 700GB 이상의 메모리에서 1048576비트로 증가하므로 가비지 수집 작업이 계속 수행됩니다. 이 변경 사항은 스토리지 노드를 Element 12.7로 업그레이드한 후 자동으로 적용되고 더 작은 노드에도 영향을 주지 않습니다.</block>
+  <block id="83e68150a866d5b50cad0d93cf7c5492" category="section-title">확장성 향상</block>
+  <block id="0f4f4bf2c2176ad09cbc4a0ca3ff4eeb" category="paragraph">Element 12.7을 사용하면 더 이상 블록 및 메타데이터 드라이브별로 가치가 있는 여러 스토리지 노드를 기존 클러스터에 추가할 때 특정 순서를 따를 필요가 없습니다. Element UI 또는 API를 사용하면 사용 가능한 모든 드라이브를 선택하고 동시에 대량 추가할 수 있습니다. 요소 12.7은 모든 블록 서비스가 동시에 동기화되도록 데이터 동기화를 자동으로 관리합니다. 각 노드의 블록 서비스가 동기화를 완료하면 해당 노드의 메타데이터 드라이브가 호스트 볼륨에 할당할 수 있게 됩니다. 이러한 확장성 향상은 새로 추가된 스토리지 노드 간에 데이터가 동기화되는 동안 읽기 응답 지연 시간을 크게 줄이고 성능 저하를 방지합니다.</block>
+  <block id="43a918d4e27a1a7a8251fef04c98185b" category="paragraph">Element 12.7에는 새 시스템 구성 요소에 대한 지원이 포함된 스토리지 펌웨어 번들 버전 2.164.0이 포함됩니다. <block ref="01562cc61c3c006c5e7ad8d89f347678" category="inline-link-macro-rx"></block>.</block>
+  <block id="3fc5b3acd1d3708d5cfa3ba7d0a8162e" category="admonition">Element 12.7 릴리스에는 새 펌웨어 업데이트가 없습니다. 그러나 스토리지 노드에서 실행 중인 현재 펌웨어 번들에 따라 Element 12.7로 업그레이드할 때 누적 업데이트가 설치됩니다.</block>
+  <block id="5c74c03fbdeea06c0e7eb5afe2d9f9bb" category="paragraph">이제 SolidFire Active IQ UI에서 QoS 관리 페이지로 이동하여 클러스터에 대한 권장 사항과 노드 제한 정보를 확인할 수 있습니다. 또한 클러스터 대시보드에 총 스냅샷 수가 표시됩니다. 그 밖에도, 액티브 볼륨에 대한 운영 및 2차 노드 정보 추가, 노드의 운영 볼륨에서 최근 30분 동안의 평균 처리량, IOPS, 평균 지연 시간 등이 최근에 향상되었습니다.</block>
+  <block id="ab55ac9ce7363800677511aee7a9ab12" category="paragraph">이제 Element 소프트웨어 문서에서 SolidFire Active IQ 문서에 액세스할 수 있습니다. <block ref="cf42182e91c5e79a875ebd341c48eb99" category="inline-link-macro-rx"></block>.</block>
+  <block id="4dae8e1e6549980e8397eec97af1ecaf" category="paragraph">Element 12.5에는 향상된 스토리지 노드 액세스, 향상된 맞춤형 보호 도메인 관리, 새롭고 개선된 클러스터 장애 및 이벤트, 향상된 클러스터 UI 생성 기능, 향상된 보안 및 Ansible을 사용한 자동 업그레이드가 도입되었습니다.</block>
+  <block id="b1eb510dd705c0d83386b5f196686d5a" category="inline-link">SolidFire 스토리지 노드에 대해 지원되는 스토리지 펌웨어 버전입니다</block>
+  <block id="2ef946a9f76c178cd4c28a70511f3ac8" category="list-text"><block ref="2ef946a9f76c178cd4c28a70511f3ac8" category="inline-link-rx"></block></block>
+  <block id="1dea56720635d200a6c7b3a71efca6ab" category="inline-link">NetApp Element 소프트웨어 12.7 릴리스 정보</block>
+  <block id="3e51721b09445e45502532be5e6096fc" category="list-text"><block ref="939f531b35412529043c2c302552fa24" category="inline-link-rx"></block> _신규 _</block>
+  <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
+  <block id="90e7c2277ee69a3d3ecf30fa1fe61ab1" category="inline-link">vCenter 플러그인 4.10 릴리즈 노트</block>
+  <block id="5c6c5d2c88269bcae97dbd93d213851a" category="list-text"><block ref="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="inline-link-rx"></block> _신규 _</block>
+  <block id="779aeeb0a67ee84cae70c2361654111d" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block></block>
+  <block id="b7faeba39aadbf9af836a1e70f5708d7" category="doc">SolidFire 및 Element 소프트웨어 12.5 이상 문서</block>
+  <block id="280ccd6bb84b0a0b3e9c579cabeab78e" category="list-text">Element 12.7부터 SF2405 스토리지 노드는 지원되지 않습니다. SF2405 스토리지 노드를 Element 12.7로 업그레이드할 경우 이 노드가 Element 12.7에서 지원되지 않는다는 오류가 표시됩니다.</block>
+  <block id="dddc768078a274c29d2a79433013cc8b" category="list-text">Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레이드가 더 이상 지원되지 않습니다. Element 11.0 또는 11.1을 실행 중인 경우 먼저 해야 합니다 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5 이상으로 업그레이드하십시오.</block>
+  <block id="4b1a9ce7f7fbe6c6a81ef1238b7e421a" category="list-text">에 대해 충분한 시간을 예약했습니다 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 및 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 업그레이드. Element 소프트웨어 12.5 이상으로 업그레이드할 경우 업그레이드 프로세스 시간은 Element 소프트웨어 버전 및 펌웨어 업데이트에 따라 달라집니다.</block>
+  <block id="11d9cbba51c832a014742a5da1938d41" category="paragraph">다음 시퀀스를 사용하여 Element 12.5 이상의 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드할 수 있습니다.</block>
+  <block id="840a7d863d92c143994565c1a1169097" category="admonition">하드웨어의 펌웨어 및 드라이버 펌웨어의 전체 매트릭스는 을 참조하십시오<block ref="30c1aa6de93ea8b8201546979be3ae7b" category="inline-link-rx"></block>.</block>
+  <block id="7df8805b6d2dda4d3fb6d3ac7bb98b27" category="inline-link-macro">HealthTools를 사용하여 Element 12.3.x로 업그레이드하십시오</block>
+  <block id="dc1b969077a38d3c5d1ddc04ce3b29c7" category="admonition">Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레이드가 더 이상 지원되지 않습니다. Element 11.0 또는 11.1을 실행 중인 경우 먼저 해야 합니다 <block ref="b94815288b0622c054c235dd32c9c615" category="inline-link-macro-rx"></block> 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5 이상으로 업그레이드하십시오.</block>
+  <block id="7ef561ec74f917ecad309d4001bff056" category="admonition">Element 소프트웨어를 버전 12.5 이상으로 업그레이드하기 전에 최신 관리 서비스 번들로 업그레이드해야 합니다. Element 소프트웨어를 버전 12.5 이상으로 업데이트하는 경우 계속하려면 관리 서비스 2.21.61 이상이 필요합니다.</block>
+  <block id="25c6e7b86999549e989728f739c4fc89" category="admonition">H610S 시리즈 노드를 Element 12.5 이상으로 업그레이드하는 경우 노드에서 11.8 이전의 Element 버전을 실행하는 경우 이 단계에서 추가 업그레이드 단계를 수행해야 합니다<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block> 각 스토리지 노드에 대해 Element 11.8 이상을 실행하는 경우 추가 업그레이드 단계가 필요하지 않습니다.</block>
+  <block id="29bba7cbe3dac4ea58cab61272150fe8" category="paragraph">관리 노드를 버전 12.3.x 이상에서 관리 노드 12.5 이상으로 업그레이드할 수 있습니다.</block>
+  <block id="4ff70a8151851ab1e82db6f0eed42808" category="list-text"><block ref="810c9a492c31390e08f0e76e7c298785" category="inline-xref-macro-rx"></block></block>
+  <block id="2a67edcd39483da3b7c2244d1a853ca7" category="section-title">관리 노드를 버전 12.3.x 이상에서 버전 12.5 이상으로 업그레이드합니다</block>
+  <block id="00986f242d79556b370e046857ac478c" category="paragraph">새 관리 노드 가상 머신을 프로비저닝하지 않고도 관리 노드를 버전 12.3.x 이상에서 버전 12.5 이상으로 업그레이드할 수 있습니다.</block>
+  <block id="162101c4a12e19388bdcdc0495ccc2ae" category="admonition">Element 12.5 이상의 관리 노드는 선택적 업그레이드입니다. 기존 배포에는 필요하지 않습니다.</block>
+  <block id="cd847f70c9955e37a7a701eee9f2cd67" category="list-text">업그레이드하려는 관리 노드는 버전 12.0이며 IPv4 네트워킹을 사용합니다. 관리 노드 버전 12.5 이상은 IPv6를 지원하지 않습니다.</block>
+  <block id="94f146a196ada89ebff337e86bd67dd8" category="list-text">관리 노드를 버전 12.5 이상으로 업데이트하는 경우 계속하려면 관리 서비스 2.21.61 이상이 필요합니다.</block>
+  <block id="b529479350602e9be1d9caa1838edb9b" category="list-text">스토리지 노드가 Element 12.3.x 이상을 실행하고 있습니다.</block>
+  <block id="a3fc65b85282a6a88ae5d5d3defca6e5" category="sidebar">Element 소프트웨어 12.5 이상을 위해 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드하십시오</block>
 </blocks>

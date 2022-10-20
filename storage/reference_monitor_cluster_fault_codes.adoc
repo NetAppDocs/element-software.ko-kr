@@ -101,7 +101,7 @@ IP 주소 블록의 가상 네트워크 주소 수가 적습니다.
 도움이 필요하면 NetApp 지원에 문의하십시오.
 
 +
-Element 12.5를 업그레이드하는 동안 장애가 발생한 기존 BMC가 있거나 업그레이드 중에 노드의 BMC에 장애가 발생한 노드에 대해 BmcSelfTestFailed 장애가 생성되지 않습니다. 업그레이드 중 자체 테스트에 실패한 BMC는 전체 클러스터에서 업그레이드가 완료된 후 "BmcSelfTestFailed" 경고 오류를 발행합니다.
+Element 12.5 이상으로 업그레이드하는 동안 장애가 발생한 기존 BMC가 있거나 업그레이드 중에 노드의 BMC에 장애가 발생한 노드에 대해 "BmcSelfTestFailed" 장애가 생성되지 않습니다. 업그레이드 중 자체 테스트에 실패한 BMC는 전체 클러스터에서 업그레이드가 완료된 후 "BmcSelfTestFailed" 경고 오류를 발행합니다.
 
 * * ClockSkewExceedsFaultThreshold *
 +

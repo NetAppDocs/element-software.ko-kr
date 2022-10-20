@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: netapp, solidfire, element, storage, solidfire enterprise sds 
 summary: NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 SolidFire 및 Element 소프트웨어를 정기적으로 업데이트합니다. 
 ---
-= Element 소프트웨어 12.5의 새로운 기능
+= Element 소프트웨어 12.5 이상의 새로운 기능
 :allow-uri-read: 
 :url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Element_Software_-_Apache_Log4j_Vulnerability_-_Workaround
 :icons: font
@@ -12,13 +12,75 @@ summary: NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공�
 
 
 [role="lead"]
-NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 SolidFire 및 Element 소프트웨어를 정기적으로 업데이트합니다. Element 12.5에는 향상된 스토리지 노드 액세스, 향상된 맞춤형 보호 도메인 관리, 새롭고 개선된 클러스터 장애 및 이벤트, 향상된 클러스터 UI 생성 기능, 향상된 보안 및 Ansible을 사용한 자동 업그레이드가 도입되었습니다.
+NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 SolidFire 및 Element 소프트웨어를 정기적으로 업데이트합니다. Element 12.7은 최신 릴리즈이며 보안 및 시스템 구성 요소 업데이트, 운영 개선 사항 및 해결된 문제를 포함합니다.
+
+
+NOTE: 누적 소프트웨어 및 펌웨어 업데이트는 스토리지 클러스터에서 실행 중인 현재 Element 버전을 기반으로 Element 12.7 업그레이드의 일부로 설치됩니다. 예를 들어, 클러스터가 현재 Element 12.3.x를 실행 중인 경우 Element 12.7로 직접 업그레이드하여 Element 12.5와 12.7에서 누적 업데이트를 받을 수 있습니다. 지원되는 업그레이드 경로는 이를 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["KB 문서를 참조하십시오"^]
+
+
+
+== 요소 12.7
+
+Element 12.7의 새로운 기능에 대해 자세히 알아보십시오.
+
+
+
+=== 보안 CHAP 알고리즘입니다
+
+Element 12.7에는 보안 FIPS 호환 CHAP(Challenge-Handshake Authentication Protocol) 알고리즘 SHA1, SHA-256 및 SHA3-256에 대한 지원이 포함됩니다. link:../storage/task_data_manage_accounts_work_with_accounts_task.html["자세한 정보"].
+
+
+
+=== 동적 블록(bin) 동기화 속도
+
+노드 추가, 업그레이드, 유지 관리 또는 드라이브 추가 등과 같은 클러스터 작업은 블록(bin) 동기화를 트리거하여 클러스터 레이아웃의 새 노드 또는 업데이트된 노드에 블록 데이터를 배포합니다. 기본 동기화 속도로 단일 느린 속도를 사용하면 이러한 작업에 시간이 오래 걸릴 수 있으며 큰 노드의 높은 처리 성능을 활용하지 못합니다. Element 12.7부터 동기화 속도는 스토리지 노드의 코어 수에 따라 동적으로 조정되므로 이러한 작업이 훨씬 빨라집니다.
+
+예를 들어, Element 12.7을 실행하는 대규모 28코어 스토리지 노드(H610S, SF19210 및 SF38410)를 기존 클러스터에 추가할 경우 데이터에 대한 동기화 속도는 60Mbps 대신 110Mbps로 자동 조정됩니다. 또한 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.3.x 이상에서 Element 12.7로 업그레이드하는 동안 노드 유지보수 모드에서 이러한 대규모 스토리지 노드를 전환하면 변경된 블록 데이터 속도의 동기화 속도가 20Mbps가 아닌 110Mbps로 자동 조정됩니다.
+
+중간 규모 16코어 스토리지 노드(H410S)와 작은 12코어 스토리지 노드(SF4805)를 Element 12.7 클러스터에 추가할 경우 데이터의 동기화 속도는 60Mbps로 유지됩니다. 하지만 Element 12.3.x에서 Element 12.7로 업그레이드하는 동안 변경된 블록을 노드 유지 관리 모드에서 벗어났을 때 동기화의 경우, 동기화 속도는 중간 스토리지 노드의 경우 20Mbps에서 60Mbps로, 작은 스토리지 노드의 경우 40Mbps로 자동 조정됩니다.
+
+스토리지 노드를 제거하면 블록 동기화 속도에 영향을 미치지 않으므로 클라이언트 입출력에 대한 성능 영향을 방지할 수 있습니다
+
+
+
+=== 가비지 수집 개선
+
+예를 들어, 1PB의 사용 공간이 있는 대용량 스토리지 노드가 포함된 클러스터의 경우 H610S-4는 덮어쓰기로 인해 매우 높은 워크로드를 실행하고 있습니다. 또한 중복 제거 및 압축 수준이 높기 때문에 더 큰 노드의 기본 Bloom 필터 크기가 700GB 이상의 메모리에서 1048576비트로 증가하므로 가비지 수집 작업이 계속 수행됩니다. 이 변경 사항은 스토리지 노드를 Element 12.7로 업그레이드한 후 자동으로 적용되고 더 작은 노드에도 영향을 주지 않습니다.
+
+
+
+=== 확장성 향상
+
+Element 12.7을 사용하면 더 이상 블록 및 메타데이터 드라이브별로 가치가 있는 여러 스토리지 노드를 기존 클러스터에 추가할 때 특정 순서를 따를 필요가 없습니다. Element UI 또는 API를 사용하면 사용 가능한 모든 드라이브를 선택하고 동시에 대량 추가할 수 있습니다. 요소 12.7은 모든 블록 서비스가 동시에 동기화되도록 데이터 동기화를 자동으로 관리합니다. 각 노드의 블록 서비스가 동기화를 완료하면 해당 노드의 메타데이터 드라이브가 호스트 볼륨에 할당할 수 있게 됩니다. 이러한 확장성 향상은 새로 추가된 스토리지 노드 간에 데이터가 동기화되는 동안 읽기 응답 지연 시간을 크게 줄이고 성능 저하를 방지합니다.
+
+
+
+=== 스토리지 노드 펌웨어 업데이트
+
+Element 12.7에는 새 시스템 구성 요소에 대한 지원이 포함된 스토리지 펌웨어 번들 버전 2.164.0이 포함됩니다. link:https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.164.0.html["자세한 정보"].
+
+
+NOTE: Element 12.7 릴리스에는 새 펌웨어 업데이트가 없습니다. 그러나 스토리지 노드에서 실행 중인 현재 펌웨어 번들에 따라 Element 12.7로 업그레이드할 때 누적 업데이트가 설치됩니다.
+
+
+
+=== SolidFire Active IQ 설명서
+
+이제 SolidFire Active IQ UI에서 QoS 관리 페이지로 이동하여 클러스터에 대한 권장 사항과 노드 제한 정보를 확인할 수 있습니다. 또한 클러스터 대시보드에 총 스냅샷 수가 표시됩니다. 그 밖에도, 액티브 볼륨에 대한 운영 및 2차 노드 정보 추가, 노드의 운영 볼륨에서 최근 30분 동안의 평균 처리량, IOPS, 평균 지연 시간 등이 최근에 향상되었습니다.
+
+이제 Element 소프트웨어 문서에서 SolidFire Active IQ 문서에 액세스할 수 있습니다. link:https://docs.netapp.com/us-en/element-software/monitor-storage-active-iq.html["자세한 정보"].
+
+
+
+=== 온라인에서 제공되는 NetApp 버그는 해결된 알려진 문제를 포함합니다
+
+해결된 알려진 문제가 NetApp 버그 온라인 툴에 나열되어 있습니다. Element 소프트웨어 및 기타 제품에 대한 이러한 문제는 에서 찾아볼 수 있습니다 https://mysupport.netapp.com/site/products/all/details/element-software/bugsonline-tab["NetApp 온라인 버그"^].
 
 
 
 == 요소 12.5
 
-Element 12.5의 새로운 기능에 대해 자세히 알아보십시오.
+Element 12.5에는 향상된 스토리지 노드 액세스, 향상된 맞춤형 보호 도메인 관리, 새롭고 개선된 클러스터 장애 및 이벤트, 향상된 클러스터 UI 생성 기능, 향상된 보안 및 Ansible을 사용한 자동 업그레이드가 도입되었습니다.
 
 
 
@@ -66,12 +128,6 @@ Element 12.5에는 120개 이상의 CVE 보안 취약점 해결도 포함되어 
 
 Element 12.5를 사용하면 Ansible을 사용하여 전체 스토리지 클러스터의 롤링 업그레이드를 수행하여 Element 소프트웨어 업그레이드 워크플로우를 자동화할 수 있습니다. 시작하려면 로 이동합니다 https://github.com/NetApp-Automation["NetApp Ansible 리포지토리"^] GitHub에서 NAR_solidfire_sds_upgrade 역할 및 문서를 다운로드합니다.
 
-
-
-=== 온라인에서 제공되는 NetApp 버그는 해결된 알려진 문제를 포함합니다
-
-해결된 알려진 문제가 NetApp 버그 온라인 툴에 나열되어 있습니다. Element 소프트웨어 및 기타 제품에 대한 이러한 문제는 에서 찾아볼 수 있습니다 https://mysupport.netapp.com/site/products/all/details/element-software/bugsonline-tab["NetApp 온라인 버그"^].
-
 [discrete]
 == 자세한 내용을 확인하십시오
 
@@ -81,5 +137,5 @@ Element 12.5를 사용하면 Ansible을 사용하여 전체 스토리지 클러�
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"^]
 * http://docs.netapp.com/sfe-122/index.jsp["이전 버전용 SolidFire 및 Element 소프트웨어 설명서 센터"^]
 * https://www.netapp.com/us/documentation/hci.aspx["NetApp HCI 리소스 페이지를 참조하십시오"^]
-* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software["NetApp HCI 및 NetApp Element 소프트웨어용 펌웨어 및 드라이버 버전"^]
+* https://docs.netapp.com/us-en/hci/docs/fw_storage_nodes.html["SolidFire 스토리지 노드에 대해 지원되는 스토리지 펌웨어 버전입니다"^]
 
