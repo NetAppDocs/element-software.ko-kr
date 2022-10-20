@@ -11899,7 +11899,6 @@
   <block id="cd87cb364b82cfd7ff555087f3e88e59" category="list-text">* Element 소프트웨어 *: 클러스터 버전에서 NetApp Element 소프트웨어 11.3 이상이 실행되고 있습니다.</block>
   <block id="84d8587fb67731ba50262a0ffeacb7ac" category="list-text">* 최종 사용자 라이센스 계약(EULA) *: 관리 서비스 2.20부터 NetApp 하이브리드 클라우드 제어 UI 또는 API를 사용하여 Element 스토리지 상태 점검을 실행하기 전에 EULA에 동의하고 저장해야 합니다.</block>
   <block id="651784e7a6ddc6534201a6e8d1fbf248" category="paragraph">vCenter Server용 NetApp Element 플러그인이 등록된 기존 vSphere 환경의 경우 플러그인 서비스가 포함된 관리 서비스 패키지를 먼저 업데이트한 후 플러그인 등록을 업데이트할 수 있습니다.</block>
-  <block id="47e9151ac689287505aa641c93450d92" category="list-text">vCenter Server 4.9, 4.8, 4.7, 4.6, 4.5 또는 4.4용 NetApp Element 플러그인으로 업그레이드하려는 경우</block>
   <block id="8eeabd6de4a231c731b82c27ee25bbdb" category="admonition">이 플러그인은 VMware vCenter Server 4.6, 4.7 및 4.8용 Element Plug-in용 VMware vCenter Server 6.5와 호환되지 않습니다.</block>
   <block id="c7c27143d481078e23cd4144c0df2f10" category="inline-link">vCenter 플러그인 4.9 릴리즈 노트</block>
   <block id="95f27799ddeb01b37a606c94f6349232" category="paragraph">NetApp 하이브리드 클라우드 제어 웹 UI 및 API NetApp 온라인 소프트웨어 저장소에서 소프트웨어 패키지를 다운로드합니다. 이로 인해 일부 URL 또는 IP 주소는 콘텐츠 전송 네트워크를 기반으로 다른 URL 또는 IP 주소로 해결될 수 있습니다. 가능한 경우 네트워크 엔지니어와 협력하여 다음 일반 단계를 사용하여 이러한 URL 또는 IP 주소를 방화벽 규칙에 추가해야 합니다.</block>
@@ -12334,4 +12333,7 @@
   <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">이 iSCSI 세션에 대한 인증 정보입니다.</block>
   <block id="2e5eceda3bfa3409dad5d20e93cd57ac" category="list-text">Element 12.7부터 SF2405 및 SF9608 스토리지 노드, FC0025 및 SF-FCN-01 FC 노드는 지원되지 않습니다. 이러한 노드 중 하나를 Element 12.7로 업그레이드하면 이 노드가 Element 12.7에서 지원되지 않는다는 오류가 표시됩니다.</block>
   <block id="3ce48b341428a446ef1ef80ae2ebc84a" category="list-text">Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레이드가 더 이상 지원되지 않습니다. Element 11.0 또는 11.1을 실행 중인 경우 먼저 해야 합니다 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5로 업그레이드하십시오. 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5 이상으로 업그레이드하십시오.</block>
+  <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">관리 서비스 공지 2.21.61(VMware vCenter Server용 NetApp Element 플러그인 4.10.12)</block>
+  <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
+  <block id="01c72a31a534b06f00c7ab5b05653a0a" category="list-text">vCenter Server 4.10, 4.9, 4.8, 4.7, 4.6용 NetApp Element 플러그인으로 업그레이드하려는 경우 4.5 또는 4.4.</block>
 </blocks>
