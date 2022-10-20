@@ -12144,7 +12144,6 @@
   <block id="65475fb8d204c527f117e51b4e025657" category="sidebar">Element 12.3 문서</block>
   <block id="612f97930662fc3cd831ed7bc5ae322c" category="list-text">Element Demo Node 12.3 및 12.5용 ESXi 6.7 및 7.0 VM</block>
   <block id="f73f11dc118d0773193fe38ff975e133" category="inline-link">스토리지 펌웨어 번들 2.150 릴리스 정보</block>
-  <block id="4ed157f2adee50f00ed14eca30c23284" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block> _신규 _</block>
   <block id="e8158506d71c28d8d821c3acbeb0f97d" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block></block>
   <block id="831b7fafcb48c5cdc3232392066936d8" category="inline-link-macro">스토리지 펌웨어 번들 2.150에 대한 고지 사항</block>
   <block id="24918f39116096f98dc92e1125b8a780" category="list-text"><block ref="24918f39116096f98dc92e1125b8a780" category="inline-link-macro-rx"></block></block>
@@ -12319,7 +12318,6 @@
   <block id="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="list-text"><block ref="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="inline-xref-macro-rx"></block></block>
   <block id="6fa691d2c07bea6ae78b7022c80e9d20" category="paragraph">인증</block>
   <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">이 iSCSI 세션에 대한 인증 정보입니다.</block>
-  <block id="3ce48b341428a446ef1ef80ae2ebc84a" category="list-text">Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레이드가 더 이상 지원되지 않습니다. Element 11.0 또는 11.1을 실행 중인 경우 먼저 해야 합니다 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5로 업그레이드하십시오. 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5 이상으로 업그레이드하십시오.</block>
   <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">관리 서비스 공지 2.21.61(VMware vCenter Server용 NetApp Element 플러그인 4.10.12)</block>
   <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
   <block id="01c72a31a534b06f00c7ab5b05653a0a" category="list-text">vCenter Server 4.10, 4.9, 4.8, 4.7, 4.6용 NetApp Element 플러그인으로 업그레이드하려는 경우 4.5 또는 4.4.</block>
@@ -12338,4 +12336,10 @@
   <block id="eb354756273b461b7f8b4d3abc6ac150" category="paragraph">이러한 노드 중 하나를 지원되지 않는 Element 버전으로 업그레이드하려고 하면 이 노드가 Element 12.x에서 지원되지 않는다는 오류가 표시됩니다</block>
   <block id="ab23337415270010383937ce784cb519" category="list-text">Element 12.7부터 SF2405 및 SF9608 스토리지 노드, FC0025 및 SF-FCN-01 FC 노드는 지원되지 않습니다. 이러한 노드 중 하나를 Element 12.7로 업그레이드하려고 하면 Element 12.7에서 이 노드가 지원되지 않는다는 오류가 표시됩니다.</block>
   <block id="b2466e723f3725978ed96accd95013ae" category="paragraph">슬롯 0은 노드에 대한 메타데이터 드라이브를 보유합니다. 슬롯 0에 있는 드라이브를 교체하는 경우 교체 드라이브의 배송 상자에 포함된 스티커를 부착해야 나머지 드라이브와 별도로 식별할 수 있습니다.</block>
+  <block id="eb66a5e31d8328246fdb5497ed40a7a4" category="inline-link">스토리지 펌웨어 번들 2.164.0 릴리스 정보</block>
+  <block id="e95c3968984424b94d3bd781dd9e8819" category="list-text"><block ref="758831bd0271b3c8b1bf3b7bf6466060" category="inline-link-rx"></block> _신규 _</block>
+  <block id="134e2a3d5f4b8b65c064815f605c76e6" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block></block>
+  <block id="4b8861a11346d673205d074f862db70a" category="inline-link">지원되는 펌웨어 및 ESXi 드라이버 버전</block>
+  <block id="bb3b8b57aaaa2ec5e665324ff79ed132" category="list-text"><block ref="16447f3faa9ba0e1db5b0d946a9dbeaf" category="inline-link-rx"></block> _신규 _</block>
+  <block id="e4f2f9baf039ea62b7a0740e3ba88a7a" category="list-text">Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레이드가 더 이상 지원되지 않습니다. Element 11.0 또는 11.1을 실행 중인 경우 먼저 해야 합니다 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5로 업그레이드하십시오.</block>
 </blocks>

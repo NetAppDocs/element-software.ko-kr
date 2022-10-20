@@ -22,7 +22,7 @@ keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgra
 [NOTE]
 ====
 * Element 12.7부터 SF2405 및 SF9608 스토리지 노드, FC0025 및 SF-FCN-01 FC 노드는 지원되지 않습니다. 이러한 노드 중 하나를 Element 12.7로 업그레이드하려고 하면 Element 12.7에서 이 노드가 지원되지 않는다는 오류가 표시됩니다.
-* Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레이드가 더 이상 지원되지 않습니다. Element 11.0 또는 11.1을 실행 중인 경우 먼저 해야 합니다 link:https://docs.netapp.com/us-en/element-software-123/upgrade/task_hcc_upgrade_element_software.html#upgrade-element-software-at-connected-sites-using-healthtools["HealthTools를 사용하여 Element 12.3으로 업그레이드하십시오"^] 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5로 업그레이드하십시오. 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5 이상으로 업그레이드하십시오.
+* Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레이드가 더 이상 지원되지 않습니다. Element 11.0 또는 11.1을 실행 중인 경우 먼저 해야 합니다 link:https://docs.netapp.com/us-en/element-software-123/upgrade/task_hcc_upgrade_element_software.html#upgrade-element-software-at-connected-sites-using-healthtools["HealthTools를 사용하여 Element 12.3으로 업그레이드하십시오"^] 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5로 업그레이드하십시오.
 
 
 ====
