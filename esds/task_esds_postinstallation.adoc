@@ -22,7 +22,7 @@ SolidFire ESDS를 설치한 후 각 SolidFire ESDS 노드에서 클러스터 이
 
 
 
-NOTE: 를 사용할 수 있습니다 link:https://github.com/NetApp-Automation/nar_solidfire_cluster_config["'NAR_solidfire_cluster_config'입니다"^] 설치 후 단계를 수행하기 위해 NetApp에서 제공하는 Ansible 역할 수동으로 실행하려면 아래에 설명된 단계를 참조하십시오.
+NOTE: 를 사용할 수 있습니다 link:https://github.com/NetApp-Automation/nar_solidfire_cluster_config["49284958c9d16c4b6d8ee9ddd4ebbca5"^] 설치 후 단계를 수행하기 위해 NetApp에서 제공하는 Ansible 역할 수동으로 실행하려면 아래에 설명된 단계를 참조하십시오.
 
 
 
@@ -43,7 +43,7 @@ IMPORTANT: 클러스터 생성 후에는 클러스터 이름을 변경할 수 �
 ... Apply Changes * 를 선택합니다.
 
 
-** 를 사용합니다 link:../api/reference_element_api_setclusterconfig.html["셋클러스터 구성"^] API 메소드.
+** 를 사용합니다 link:../api/reference_element_api_setclusterconfig.html["acf00854bc64655927abe2f08f53203f"^] API 메소드.
 +
 이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
 
@@ -411,7 +411,7 @@ JSON 개체
 ... 드라이브가 추가되고 클러스터 용량이 예상대로 되는지 확인합니다.
 
 
-** 를 사용합니다 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_adddrives.html["'AddDrives'입니다"^] API 메소드.
+** 를 사용합니다 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_adddrives.html["775ca0ad68fdedd2fe06eeb23598d120"^] API 메소드.
 +
 이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
 
@@ -468,7 +468,7 @@ JSON 개체 어레이
 
 
 
-이 API 메서드에 대한 자세한 내용은 를 참조하십시오 link:../api/reference_element_api_adddrives.html["'AddDrives'입니다"^].
+이 API 메서드에 대한 자세한 내용은 를 참조하십시오 link:../api/reference_element_api_adddrives.html["775ca0ad68fdedd2fe06eeb23598d120"^].
 
 
 

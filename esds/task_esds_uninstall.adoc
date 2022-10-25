@@ -14,14 +14,14 @@ summary: '노드에서 SolidFire ESDS를 제거하여 SolidFire ESDS를 설치�
 노드에서 SolidFire ESDS를 제거하여 SolidFire ESDS를 설치한 노드를 * 재설정할 수 있습니다. 노드에서 SolidFire ESDS를 복구하려면 모든 설치 단계를 수행해야 합니다.
 
 
-NOTE: 를 사용할 수 있습니다 link:https://github.com/NetApp-Automation/nar_solidfire_sds_uninstall["'NAR_solidfire_sds_uninstall'을 선택합니다"^] 운영을 수행하기 위해 NetApp에서 제공하는 Ansible 역할 노드에서 SolidFire ESDS를 수동으로 제거하려면 아래 단계를 참조하십시오.
+NOTE: 를 사용할 수 있습니다 link:https://github.com/NetApp-Automation/nar_solidfire_sds_uninstall["bfc7399c1c92cf0d90621d6b98ee2e84"^] 운영을 수행하기 위해 NetApp에서 제공하는 Ansible 역할 노드에서 SolidFire ESDS를 수동으로 제거하려면 아래 단계를 참조하십시오.
 
 .단계
-. Element UI 또는 를 사용하여 클러스터에서 드라이브를 제거합니다 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removedrives.html["'RemoveDrives'입니다"^] API 메소드.
+. Element UI 또는 를 사용하여 클러스터에서 드라이브를 제거합니다 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removedrives.html["c97feb073ff79f44cf03a1742a29f033"^] API 메소드.
 +
 따라서 시스템이 노드의 드라이브에서 클러스터의 다른 드라이브로 데이터를 마이그레이션합니다. 이 프로세스에 걸리는 시간은 마이그레이션해야 하는 데이터의 양에 따라 달라집니다.
 
-. Element UI 또는 를 사용하여 클러스터에서 노드를 제거합니다 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removenodes.html[""RemoveNodes"입니다"^] API 메소드.
+. Element UI 또는 를 사용하여 클러스터에서 노드를 제거합니다 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removenodes.html["3a7274d7e44dc3f5bd547cc6bc747d94"^] API 메소드.
 . SSH를 사용하여 클러스터에서 제거된 노드에 연결합니다.
 . 다음과 같이 노드에서 SolidFire ESDS를 제거합니다.
 +

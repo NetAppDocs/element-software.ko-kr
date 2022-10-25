@@ -8,7 +8,6 @@
   <block id="97b3e300fdc30fec27018f67c316a56f" category="list-text"><block ref="7369d04fe6c601eb40cc8c3814fb604a" category="inline-xref-macro-rx"></block></block>
   <block id="73096b8e22ce33d059ca2ade7fd93679" category="list-text"><block ref="cba2bab244fa54c4d64cb2a1ec0ab9ca" category="inline-xref-macro-rx"></block></block>
   <block id="ef5b20c600ed307281dd18a2e008153b" category="list-text"><block ref="c3d184e2b4d651938156eb240caa790b" category="inline-xref-macro-rx"></block></block>
-  <block id="49284958c9d16c4b6d8ee9ddd4ebbca5" category="inline-link-macro">'NAR_solidfire_cluster_config'입니다</block>
   <block id="bdc50eb6c47970077e948f5bb3f2f8a9" category="admonition">를 사용할 수 있습니다 <block ref="66b3dfe54b73a97277e6f9c94606df0e" category="inline-link-macro-rx"></block> 설치 후 단계를 수행하기 위해 NetApp에서 제공하는 Ansible 역할 수동으로 실행하려면 아래에 설명된 단계를 참조하십시오.</block>
   <block id="9130cceb2ee763a25b9513639313012e" category="section-title">클러스터 이름을 구성합니다</block>
   <block id="3b50f0fa5346b2b7a1dbbc42b96fff06" category="paragraph">클러스터에 노드를 추가하기 전에 각 SolidFire ESDS 노드에서 클러스터 이름을 구성해야 합니다. 노드별 UI 또는 Element API를 사용하여 이 작업을 수행할 수 있습니다.</block>
@@ -19,7 +18,6 @@
   <block id="3b8521cd8c98f1b89d1886e9da53e4c7" category="list-text">노드별 관리 노드 UI:'https://&lt;node_mip&gt;:442` 열기</block>
   <block id="ecf9269363976c8aa9dfb2d865ab2460" category="list-text">클러스터 설정 * 을 선택하고 클러스터 이름을 입력합니다.</block>
   <block id="2ce8d1287d5fe484f0fb11eb92e9f79a" category="list-text">Apply Changes * 를 선택합니다.</block>
-  <block id="acf00854bc64655927abe2f08f53203f" category="inline-link-macro">셋클러스터 구성</block>
   <block id="cadf3b6311b2a5cd1f2479588b496983" category="list-text">를 사용합니다 <block ref="ae527e5fc4083ce232328ba1f392402b" category="inline-link-macro-rx"></block> API 메소드.</block>
   <block id="e802251d4dcfaecfcfd731ece9ad093c" category="paragraph">이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.</block>
   <block id="49ee3087348e8d44e1feda1917443987" category="cell">이름</block>
@@ -100,7 +98,6 @@
   <block id="260df32cf8828ee4c326d39588cc979f" category="list-text">개별 드라이브를 추가하려면 추가할 드라이브에 대한 * 작업 * 아이콘을 선택한 다음 * 추가 * 를 선택합니다.</block>
   <block id="c9347a5a6675f6567839e4fc23da9425" category="list-text">여러 드라이브를 추가하려면 추가할 드라이브의 확인란을 선택하고 * 벌크 작업 * 을 선택한 다음 * 추가 * 를 선택합니다.</block>
   <block id="368f584747203782ae3edd4027e4dbb3" category="list-text">드라이브가 추가되고 클러스터 용량이 예상대로 되는지 확인합니다.</block>
-  <block id="775ca0ad68fdedd2fe06eeb23598d120" category="inline-link">'AddDrives'입니다</block>
   <block id="0c6dbcef2d177e85c06897fc358c21b2" category="list-text">를 사용합니다<block ref="c0d40b2326a5711bff7fb806cc298f7f" category="inline-link-rx"></block> API 메소드.</block>
   <block id="eba45a3406905c7055cebb16bd953ac4" category="paragraph">"늑대들"</block>
   <block id="e5cad4cec16acc7173b90f0aba2cb647" category="paragraph">클러스터에 추가할 각 드라이브에 대한 정보입니다. 가능한 값:</block>
@@ -200,16 +197,11 @@
   <block id="b4d38d2cfe8361b4706ee65b48cd47e7" category="list-text">'CreateGroupSnapshot'을 선택합니다</block>
   <block id="b39b4f606b587cbb01f67a7e70186eea" category="list-text">SolidFire ESDS * 를 지원하기 위해 Element 12.2에 도입되고 업데이트된 * API: SolidFire ESDS 클러스터에서 사용할 수 있는 Element 12.2에 몇 가지 새로운 API가 도입되었습니다.</block>
   <block id="463224af5ebc7979ed09e40e54613a35" category="paragraph">요소 12.2의 새로운 API 목록은 다음과 같습니다.</block>
-  <block id="41773f0138486ec234a35d7b9f9a9fbd" category="inline-link-macro">게라이센스 키</block>
   <block id="234e051281051671e79fd955b3cc36a1" category="list-text"><block ref="234e051281051671e79fd955b3cc36a1" category="inline-link-macro-rx"></block></block>
-  <block id="024825eae18cb8bc988d2efcdf5a78f7" category="inline-link-macro">셋라이센스 키</block>
   <block id="2107b28d0e666b2c94a8ae5ac00facf7" category="list-text"><block ref="2107b28d0e666b2c94a8ae5ac00facf7" category="inline-link-macro-rx"></block></block>
-  <block id="c465b1888bcc159df3ab3662fac3d576" category="inline-link-macro">Enable유지보수모드</block>
   <block id="182314039c230eaf0b610ab5336bd944" category="list-text"><block ref="182314039c230eaf0b610ab5336bd944" category="inline-link-macro-rx"></block></block>
-  <block id="00ec9d3f2cdb59b4897d3e3db8e8db80" category="inline-link-macro">"백업 모드"를 선택합니다</block>
   <block id="6c8f5d51f9d138086b55a6d2b68f0ba9" category="list-text"><block ref="6c8f5d51f9d138086b55a6d2b68f0ba9" category="inline-link-macro-rx"></block></block>
   <block id="f72e130e78ae2a72c1d8ba0e803f0638" category="paragraph">SolidFire ESDS 클러스터를 지원하기 위해 다음 12.2 API가 업데이트되었습니다.</block>
-  <block id="07cacca00a99fbebd82083d61daa7d2f" category="inline-link-macro">아디노드</block>
   <block id="34850bd5fb3f2667bbb87db4cffca2ed" category="list-text"><block ref="34850bd5fb3f2667bbb87db4cffca2ed" category="inline-link-macro-rx"></block></block>
   <block id="8404d841c616b784628d5ae406a01813" category="list-text"><block ref="8404d841c616b784628d5ae406a01813" category="inline-link-macro-rx"></block></block>
   <block id="16a30437f029582ce534f35778eac3b5" category="admonition">요소 소프트웨어 12.2의 CreateCluster 메서드에 orderNumber, serialNumber, enableSoftwareEncryptionAtrest 등의 새 매개 변수가 추가되었습니다. SolidFire ESDS를 설치한 후 이 API를 사용하여 클러스터를 생성하는 동안 이러한 매개 변수를 지정해야 합니다.</block>
@@ -597,12 +589,9 @@
   <block id="560d0945440f76a732a9fbcc35180010" category="summary">노드에서 SolidFire ESDS를 제거하여 SolidFire ESDS를 설치한 노드를 "재설정"할 수 있습니다. 노드에서 SolidFire ESDS를 복구하려면 모든 설치 단계를 수행해야 합니다.</block>
   <block id="9016f524f2973678d7663aea53bb88b3" category="doc">노드에서 SolidFire ESDS를 제거합니다</block>
   <block id="3b6744c82f649728c504907b57a1055e" category="paragraph">노드에서 SolidFire ESDS를 제거하여 SolidFire ESDS를 설치한 노드를 * 재설정할 수 있습니다. 노드에서 SolidFire ESDS를 복구하려면 모든 설치 단계를 수행해야 합니다.</block>
-  <block id="bfc7399c1c92cf0d90621d6b98ee2e84" category="inline-link-macro">'NAR_solidfire_sds_uninstall'을 선택합니다</block>
   <block id="68629b26007b6f0d31da5f710865d8c4" category="admonition">를 사용할 수 있습니다 <block ref="e21e9b52142fa32fc9f2798e0357c93a" category="inline-link-macro-rx"></block> 운영을 수행하기 위해 NetApp에서 제공하는 Ansible 역할 노드에서 SolidFire ESDS를 수동으로 제거하려면 아래 단계를 참조하십시오.</block>
-  <block id="c97feb073ff79f44cf03a1742a29f033" category="inline-link">'RemoveDrives'입니다</block>
   <block id="006a2c6366ad86bc1da05db85ff0ff30" category="list-text">Element UI 또는 를 사용하여 클러스터에서 드라이브를 제거합니다<block ref="af8bb9d27ccaccc91f1f8edbd1b2c6cd" category="inline-link-rx"></block> API 메소드.</block>
   <block id="d25b1313ce24472d1605226c513ef95a" category="paragraph">따라서 시스템이 노드의 드라이브에서 클러스터의 다른 드라이브로 데이터를 마이그레이션합니다. 이 프로세스에 걸리는 시간은 마이그레이션해야 하는 데이터의 양에 따라 달라집니다.</block>
-  <block id="3a7274d7e44dc3f5bd547cc6bc747d94" category="inline-link">"RemoveNodes"입니다</block>
   <block id="215a2ff75aaa54f1e5a17125c706bca4" category="list-text">Element UI 또는 를 사용하여 클러스터에서 노드를 제거합니다<block ref="b93ddc7d3c2a507b426fba6e07c41251" category="inline-link-rx"></block> API 메소드.</block>
   <block id="08a481e768a7e6b16029a890ff83c01c" category="list-text">SSH를 사용하여 클러스터에서 제거된 노드에 연결합니다.</block>
   <block id="3ef7f9e0aa1c6e4768c8761acab7b60c" category="list-text">다음과 같이 노드에서 SolidFire ESDS를 제거합니다.</block>
@@ -734,7 +723,6 @@
   <block id="9c75611c54a1490d7892d192c9aa1f24" category="paragraph">다음은 샘플 출력입니다.</block>
   <block id="697f1902b372db279956f211f1472f8d" category="list-text">SolidFire 서비스가 올바르게 시작되었는지 확인하려면 'stemctl status SolidFire' 명령을 실행하고 출력에서 Active:Active(Exited)... 를 확인합니다.</block>
   <block id="6fc37b544c0c7c6bad6a21c5e2aa379c" category="summary">소프트웨어 업그레이드 또는 호스트 복구 같이 유지보수를 위해 스토리지 노드를 오프라인 상태로 전환해야 하는 경우, 해당 노드에 대한 유지보수 모드를 지원하여 스토리지 클러스터의 나머지 부분에 대한 I/O 영향을 최소화할 수 있습니다.</block>
-  <block id="9a22eba2ac8927a67bb3d8f09e152944" category="inline-link-macro">'ListActiveNodes</block>
   <block id="e69d07edaa334125aaef7f2094da77a8" category="admonition">노드에서 유지보수 모드의 현재 상태를 확인하려면 를 사용하십시오 <block ref="04e910fadadbb107f8995814b13ebed5" category="inline-link-macro-rx"></block> API 메소드. 노드 오브젝트에는 노드에 있는 유지보수 모드의 현재 상태를 나타내는 'maintenanceMode' 매개 변수가 포함됩니다.</block>
   <block id="cec1e459f131189983c83e13023b4c41" category="admonition">유지보수 모드가 활성화된 즉시 유지 관리를 수행해야 합니다. 노드를 유지보수 모드로 필요한 시간 이상으로 방치하지 마십시오.</block>
   <block id="b7ca43b9728873986f598048b8cf1944" category="paragraph">노드가 정상 상태(차단 클러스터 장애가 없음)이고 스토리지 클러스터가 단일 노드 장애를 허용하지 않는 경우에만 스토리지 노드를 유지보수 모드로 전환할 수 있습니다. 정상 및 허용 노드에 대해 유지보수 모드를 활성화하면 노드가 즉시 전환되지 않고 다음 조건이 충족될 때까지 노드가 모니터링됩니다.</block>
@@ -1604,7 +1592,6 @@
   <block id="ec355cf03a7880d1a60bb9371fddcc50" category="inline-link-macro">GetAsyncResult 를 참조하십시오</block>
   <block id="ff0f319d3e651b401a52ec174aba241a" category="admonition">이 프로세스는 비동기식이며 키를 다시 입력하다 를 사용할 수 있습니다 <block ref="0ec3280d129d80613fce987917bb0350" category="inline-link-macro-rx"></block> 프로세스가 완료된 시점을 확인하기 위해 시스템을 폴링하는 방법입니다.</block>
   <block id="33102f89aba193ba0cea9db4531d24e6" category="inline-link-macro">클러스터 생성</block>
-  <block id="9510c8e68784d05acbae2e947dde3cd8" category="inline-link-macro">GetSoftwareEncryptionatRestInfo</block>
   <block id="2f9ac93930569b85149b387a7c125c35" category="list-text">를 사용하여 저장 시 소프트웨어 암호화를 활성화했습니다 <block ref="3302765abfbbe930557ebd20cdd8d8e8" category="inline-link-macro-rx"></block> 볼륨에 포함되어 있지 않고 I/O가 없는 새 클러스터의 방법입니다 사용 <block ref="45a8306c9a5e0c83d4f4c7f381b9868c" category="inline-link-macro-rx"></block> 계속하기 전에 상태가 '활성화됨'인지 확인합니다.</block>
   <block id="62e528d538c732360863f85252c5d0d9" category="inline-link-macro">트러스트 관계를 설정했습니다</block>
   <block id="15511624b789bdf31e38f97755dd6fe2" category="inline-link-macro">TestKeyProviderKmip 을 참조하십시오</block>
@@ -12341,5 +12328,7 @@
   <block id="134e2a3d5f4b8b65c064815f605c76e6" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block></block>
   <block id="4b8861a11346d673205d074f862db70a" category="inline-link">지원되는 펌웨어 및 ESXi 드라이버 버전</block>
   <block id="bb3b8b57aaaa2ec5e665324ff79ed132" category="list-text"><block ref="16447f3faa9ba0e1db5b0d946a9dbeaf" category="inline-link-rx"></block> _신규 _</block>
-  <block id="e4f2f9baf039ea62b7a0740e3ba88a7a" category="list-text">Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레이드가 더 이상 지원되지 않습니다. Element 11.0 또는 11.1을 실행 중인 경우 먼저 해야 합니다 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5로 업그레이드하십시오.</block>
+  <block id="fd755336ba3702c8d419343da5efb6d6" category="list-text">FileSystemIsReadOnly * 를 참조하십시오</block>
+  <block id="ed734a928c08d6cb25fc1abe2d4e0c3a" category="paragraph">파일 시스템이 읽기 전용 모드로 이동되었습니다.</block>
+  <block id="9732e3757f397fc8e75412dea43c030e" category="list-text">Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레이드가 더 이상 지원되지 않습니다. Element 11.0 또는 11.1을 실행 중인 경우 먼저 해야 합니다<block ref="e9afc225a78965c54dbba9b335afd021" category="inline-link-rx"></block> 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5 이상으로 업그레이드하십시오.</block>
 </blocks>
