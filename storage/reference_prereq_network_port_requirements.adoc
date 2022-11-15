@@ -515,6 +515,17 @@ vCenter 플러그인 API 액세스
  a| 
 vCenter Server를 선택합니다
  a| 
+원격 플러그인
+ a| 
+8333
+ a| 
+원격 vCenter 플러그인 서비스
+
+
+
+ a| 
+vCenter Server를 선택합니다
+ a| 
 관리 노드
  a| 
 8443

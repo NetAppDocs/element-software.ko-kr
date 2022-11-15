@@ -5022,19 +5022,15 @@
   <block id="befd59adbc7ca9bef6a93304fb2e0271" category="list-text">스토리지 펌웨어 업그레이드를 실행합니다.</block>
   <block id="2e78b6f70db7c1550da68540c472fe32" category="summary">NetApp SolidFire 스토리지 시스템 업그레이드의 일환으로 vCenter Server용 Element 플러그인을 업그레이드할 수 있습니다.</block>
   <block id="e6c04958395a323ddbc02c929b4dfdf0" category="paragraph">등록 유틸리티를 사용하여 vCenter Server vCSA(Virtual Appliance) 또는 Windows에서 플러그인 등록을 업데이트할 수 있습니다. 플러그인을 사용해야 하는 모든 vCenter Server에서 vCenter 플러그인의 등록을 변경해야 합니다.</block>
-  <block id="badb045d93b6de2fe8d2a1a664b92d6f" category="paragraph">이 업그레이드 절차에서는 다음 업그레이드 시나리오에 대해 설명합니다.</block>
   <block id="a6a18366932bfeffc2341cc7aa5fe09d" category="list-text">7.0, 6.7 또는 6.5 HTML5 vSphere Web Client로 업그레이드하는 중입니다.</block>
   <block id="f171584692be059c88cbbda35827f299" category="list-text">6.7 Flash vSphere Web Client로 업그레이드하는 중입니다.</block>
   <block id="26f2f1d140c70238a07a5f09e846fd82" category="inline-link">플러그인 버전입니다</block>
   <block id="2acbddec1a60b854691b264d7efa1855" category="admonition">이 플러그인은 vSphere Web Client 버전 6.7 U2 for Flash, 6.7 U3(Flash 및 HTML5) 및 7.0 U1과 호환됩니다. 플러그인은 HTML5 vSphere Web Client의 버전 6.7 U2 빌드 13007421 및 업데이트 2a 이전에 릴리스된 기타 6.7 U2 빌드(빌드 13643870)와 호환되지 않습니다. 지원되는 vSphere 버전에 대한 자세한 내용은 의 릴리즈 노트를 참조하십시오<block ref="52a3661120ba33cd100cafc9c9d568e0" category="inline-link-rx"></block>.</block>
   <block id="d7be3f2367f28daeaac07c2967977074" category="list-text">* 관리자 권한 *: 플러그인을 설치할 vCenter 관리자 역할 권한이 있습니다.</block>
   <block id="7df6c84beb4c7f9c0109ea10accef1ed" category="list-text">* vSphere 업그레이드 *: vCenter Server용 NetApp Element 플러그인을 업그레이드하기 전에 필요한 vCenter 업그레이드를 모두 수행했습니다. 이 절차에서는 vCenter 업그레이드가 이미 완료된 것으로 가정합니다.</block>
-  <block id="4b6a458f5e631f2c6085bd25b3456bdf" category="list-text">* vCenter Server *: vCenter 플러그인 버전 4.x가 vCenter Server에 등록됩니다. 등록 유틸리티('https://&lt;ManagementNodeIP&gt;:9443`)에서 * 등록 상태 * 를 선택하고 필수 필드를 입력한 다음 * 상태 확인 * 을 선택하여 vCenter 플러그인이 이미 등록되어 있는지, 현재 설치의 버전 번호를 확인합니다.</block>
   <block id="72b0efdaad5d469b43f79c332bb57be4" category="inline-link">관리 서비스 번들</block>
   <block id="a0b278d8005f2dc2b9518ad7c52c1e27" category="list-text">* 관리 서비스 업데이트 *: 을(를) 업데이트했습니다<block ref="f6e495ec9a99fcd5692d41358780e884" category="inline-link-rx"></block> 를 최신 버전으로 업데이트합니다. vCenter 플러그인의 업데이트는 NetApp SolidFire All-Flash 스토리지의 주요 제품 릴리즈 외부에서 발표된 관리 서비스 업데이트를 통해 배포됩니다.</block>
   <block id="4c02ebe342ea429a0d2a2a23be2ddd19" category="inline-link-macro">업그레이드되었습니다</block>
-  <block id="27c25a67c147529824177fc694e7fd19" category="list-text">* 관리 노드 업그레이드 *: 이미 실행 중인 관리 노드를 실행 중입니다 <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> 11.3 이상 버전으로. vCenter 플러그인 4.4 이상에서는 개별 서비스를 제공하는 모듈식 아키텍처를 갖춘 11.3 이상의 관리 노드가 필요합니다. 관리 노드의 전원은 IP 주소 또는 DHCP 주소가 구성되어 있어야 합니다.</block>
-  <block id="7d3b6b8e2540bf5435b3b6984ad1f702" category="list-text">* Element 스토리지 업그레이드 *: NetApp Element 소프트웨어 11.3 이상을 실행하는 클러스터가 있습니다.</block>
   <block id="12a6ece51476e2d3feae5dff01704e58" category="list-text">* vSphere Web Client *: 플러그인 업그레이드를 시작하기 전에 vSphere Web Client에서 로그아웃했습니다. 로그아웃하지 않으면 웹 클라이언트가 이 프로세스 중에 수행한 업데이트를 플러그인으로 인식하지 못합니다.</block>
   <block id="72b711eab7bf0193b651fa7a07068ae1" category="list-text">등록 TCP 포트를 포함한 브라우저에서 관리 노드의 IP 주소를 입력합니다. ' https://&lt;ManagementNodeIP&gt;:9443` 등록 유틸리티 UI가 열려 플러그인의 * QoSSIOC 서비스 자격 증명 관리 * 페이지가 열립니다.</block>
   <block id="26fc450c5cd9b7f28b10cff7659b479d" category="image-alt">에서는 플러그인의 등록 유틸리티 UI를 보여 줍니다</block>
@@ -5045,7 +5041,6 @@
   <block id="d5fcc07cbc4a070c18d26103f54f3f58" category="list-text">vCenter 관리자 사용자 이름입니다.</block>
   <block id="b1e24f0b2fb8f66a9c2444bf0e385f97" category="admonition">입력한 사용자 이름과 암호 자격 증명은 vCenter 관리자 역할 권한이 있는 사용자의 자격 증명이어야 합니다.</block>
   <block id="c2611280cf76890b83743a67ac6478e2" category="list-text">vCenter 관리자 암호입니다.</block>
-  <block id="92d3ac74b6d30f321507464dbfb9220d" category="list-text">(사내 서버/다크 사이트의 경우) 플러그인 ZIP에 대한 사용자 지정 URL입니다.</block>
   <block id="daa4768416116e6634bf75e379507244" category="admonition">HTTP 또는 HTTPS 서버(다크 사이트)를 사용 중이거나 ZIP 파일 이름 또는 네트워크 설정을 수정한 경우 * 사용자 지정 URL * 을 선택하여 URL을 사용자 지정할 수 있습니다. URL을 사용자 지정하려는 경우 추가 구성 단계를 보려면 vCenter Server용 Element Plug-in 설명서를 참조하십시오. 내부(다크 사이트) HTTP 서버에 대한 vCenter 속성 수정에 대한 자세한 내용은 vCenter Server 설명서를 참조하십시오.</block>
   <block id="35165f9b14f6cde03fa7f6f9b03732ba" category="list-text">Update * 를 선택합니다.</block>
   <block id="14b68e07a69ae90b19c2bd823797ff21" category="paragraph">등록이 성공하면 등록 유틸리티 UI에 배너가 나타납니다.</block>
@@ -5053,7 +5048,6 @@
   <block id="f523905d48a1db956815565365a5a6ad" category="admonition">이 작업을 수행하면 새 데이터베이스가 생성되고 vSphere Web Client에서 설치가 완료됩니다.</block>
   <block id="9b572df8237d34b7c32142ac15f1325f" category="list-text">vSphere Web Client에서 작업 모니터에서 완료된 다음 작업을 찾아 설치가 완료되었는지 확인합니다. "Download plug-in" 및 "ploy plug-in".</block>
   <block id="c4676996d8b51da422f5ab619c54ae01" category="list-text">NetApp Element 구성 및 관리 확장 지점이 vSphere 웹 클라이언트의 * Shortcuts * 탭과 측면 패널에 나타나는지 확인합니다.</block>
-  <block id="342171073fda0fd2cec612dc41323bdb" category="image-alt">에서는 업그레이드 또는 설치 후 플러그인 확장 지점을 보여 줍니다</block>
   <block id="a0abd6db969f497b63a29f8fbd1771df" category="inline-link-macro">vCenter Server용 Element 플러그인</block>
   <block id="b9e50e6a339819ad9d12906b29e978ca" category="list-text">플러그인의 * NetApp Element 구성 * 확장 지점의 * 정보 * 탭에서 버전 변경을 확인합니다.</block>
   <block id="a2b39afbde860c9c0fc759f3772e2dd2" category="paragraph">최신 버전의 다음 버전 세부 정보 또는 세부 정보가 표시됩니다.</block>
@@ -5737,7 +5731,6 @@
   <block id="54847ec5c2792fed8ee2357b2ec34546" category="list-text"><block ref="54847ec5c2792fed8ee2357b2ec34546" category="inline-link-macro-rx"></block></block>
   <block id="4ba4ebd212b1cbb6f7f91af40ffdd6dc" category="summary">관리 노드에 vCenter 자산을 추가하기 전에 vCenter에서 NetApp HCC 역할을 생성해야 합니다.</block>
   <block id="ebb21f9a1a1c0ac53661851a6adcb7ab" category="doc">vCenter에서 NetApp HCC 역할을 생성합니다</block>
-  <block id="d718b24f1548935a3a659c06037a67b3" category="paragraph">설치 후 관리 노드에 vCenter 자산(컨트롤러)을 수동으로 추가하거나 기존 컨트롤러를 수정하려면 vCenter에서 NetApp HCC 역할을 생성하는 것이 좋습니다.</block>
   <block id="ed06c949c2b36fa4b24f130e5bb1267b" category="paragraph">NetApp HCC 역할은 관리 노드 서비스 뷰를 NetApp 전용 자산으로 제한합니다.</block>
   <block id="084f667a768181d2c907c53fa5eba8aa" category="list-text">이 절차에서는 vSphere 버전 6.7에서 사용할 수 있는 단계에 대해 설명합니다. vSphere 사용자 인터페이스는 설치된 vSphere 버전에 따라 약간 다를 수 있습니다. 자세한 내용은 VMware vCenter 설명서를 참조하십시오.</block>
   <block id="86a7adef9801157432daeb81a3a1c70f" category="inline-link-macro">새로운 NetApp HCC 역할을 생성합니다</block>
@@ -5775,7 +5768,6 @@
   <block id="a409b26808477ed8b8f15456cceffd08" category="list-text">최상위 vCenter입니다.</block>
   <block id="f461138bedafcfc6a42f52eac66dab8a" category="list-text">연결 모드에 있는 경우 원하는 vCenter를 선택합니다.</block>
   <block id="4c0d90c9ada6ab81f16f3446180ab3a1" category="inline-link-macro">vCenter 연결 모드</block>
-  <block id="03474279d3fc9d2a56fdc80404029d49" category="admonition">vCenter Server용 NetApp Element 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 <block ref="7b02ca43ff4544fd4c29159c11bae6d5" category="inline-link-macro-rx"></block> 로컬 스토리지 클러스터로만 제한됩니다.</block>
   <block id="0086257e9c830b4d9b546228b58d7f0f" category="list-text">오른쪽 탐색 창에서 * 권한 * 을 선택합니다.</block>
   <block id="69361a3d23c9cf0e15a6856bbe2ef16f" category="list-text">새 사용자를 추가하려면 * + * 아이콘을 선택합니다.</block>
   <block id="48be45545aea0a25445232c0107f6449" category="paragraph">Add permission * (권한 추가 *) 창에 다음 세부 정보를 추가합니다.</block>
@@ -5919,7 +5911,6 @@
   <block id="ed4faf2b135a0f2d74eef06f6fd8899e" category="list-text">스토리지 MVIP로 이동하여 로그인합니다. 이 작업을 수행하면 다음 단계에서 인증서가 수락됩니다.</block>
   <block id="2d627b2788c609fd6539b2b8370f4c40" category="list-text">코드 200 응답 본문에서 설치 ID를 복사하여 나중에 사용할 수 있도록 저장합니다.</block>
   <block id="597135ab4be28d04d311121c3e5ca422" category="list-text">NetApp 하이브리드 클라우드 제어에 대한 vCenter 컨트롤러 자산을 관리 노드의 알려진 자산에 추가합니다.</block>
-  <block id="f9ff4ba30fde92cbf23c00302a8ac526" category="admonition">컨트롤러 하위 자산을 추가하려면 vCenter에서 새로운 NetApp HCC 역할을 생성하는 것이 좋습니다. 이러한 새로운 NetApp HCC 역할은 관리 노드 서비스 뷰를 NetApp 전용 자산으로 제한합니다. 을 참조하십시오 <block ref="8fe5279440ee3c239e840ed9b8e10ddd" category="inline-link-macro-rx"></block>.</block>
   <block id="e2e193a380a16845739e1445cfe23fde" category="list-text">유형 'vCenter'와 vCenter 자격 증명을 사용하여 필요한 페이로드 값을 입력합니다.</block>
   <block id="891d7cb5314c1395a5f98467dc959053" category="inline-link-macro">스토리지 NIC를 구성합니다</block>
   <block id="a5dabe6d3aebca1d4cd3dc7d091f22a0" category="list-text"><block ref="a5dabe6d3aebca1d4cd3dc7d091f22a0" category="inline-link-macro-rx"></block></block>
@@ -11876,7 +11867,6 @@
   <block id="f4926605dca5caffd5d52e790b9eb676" category="list-text">* 관리 서비스 *: 최신 관리 서비스 번들(2.10.27 이상)으로 업데이트되었습니다.</block>
   <block id="fb7a24d6912e863521bf9df7516e215b" category="list-text">* 관리 노드 *: 관리 노드 11.3 이상을 실행하고 있습니다.</block>
   <block id="cd87cb364b82cfd7ff555087f3e88e59" category="list-text">* Element 소프트웨어 *: 클러스터 버전에서 NetApp Element 소프트웨어 11.3 이상이 실행되고 있습니다.</block>
-  <block id="651784e7a6ddc6534201a6e8d1fbf248" category="paragraph">vCenter Server용 NetApp Element 플러그인이 등록된 기존 vSphere 환경의 경우 플러그인 서비스가 포함된 관리 서비스 패키지를 먼저 업데이트한 후 플러그인 등록을 업데이트할 수 있습니다.</block>
   <block id="8eeabd6de4a231c731b82c27ee25bbdb" category="admonition">이 플러그인은 VMware vCenter Server 4.6, 4.7 및 4.8용 Element Plug-in용 VMware vCenter Server 6.5와 호환되지 않습니다.</block>
   <block id="c7c27143d481078e23cd4144c0df2f10" category="inline-link">vCenter 플러그인 4.9 릴리즈 노트</block>
   <block id="95f27799ddeb01b37a606c94f6349232" category="paragraph">NetApp 하이브리드 클라우드 제어 웹 UI 및 API NetApp 온라인 소프트웨어 저장소에서 소프트웨어 패키지를 다운로드합니다. 이로 인해 일부 URL 또는 IP 주소는 콘텐츠 전송 네트워크를 기반으로 다른 URL 또는 IP 주소로 해결될 수 있습니다. 가능한 경우 네트워크 엔지니어와 협력하여 다음 일반 단계를 사용하여 이러한 URL 또는 IP 주소를 방화벽 규칙에 추가해야 합니다.</block>
@@ -12045,7 +12035,6 @@
   <block id="fa2658a3ab727d225eec2ee50b847fff" category="paragraph">클러스터 생성 UI에 새로운 확인란이 추가된 Element 12.5에서는 클러스터 생성 시 SolidFire All-Flash 스토리지 클러스터에 클러스터 전체 소프트웨어 암호화를 사용하도록 설정할 수 있습니다.</block>
   <block id="58fd31fc4a0bf37df4c2efec74cb0f7e" category="paragraph">Element 12.5에는 스토리지 노드의 펌웨어 업데이트가 포함됩니다. <block ref="0f65f1a5cbc84d01ee508f9ae603c679" category="inline-link-macro-rx"></block>.</block>
   <block id="9ae00a023d80f22436817ac40b5dd0e7" category="section-title">향상된 보안</block>
-  <block id="5b9ef84ab53bc8e514e0cea0dbfd914c" category="paragraph">Element 11.x, 12.0 또는 12.2를 실행 중이거나 저장소 클러스터가 이미 Element 12.3 또는 12.3.1에 있고 VVol 기능이 활성화된 경우 12.5로 업그레이드하는 것이 좋습니다.</block>
   <block id="7d22dc13d9443150a483a9d1bcc19811" category="paragraph">Element 12.5에는 120개 이상의 CVE 보안 취약점 해결도 포함되어 있습니다.</block>
   <block id="0a4e6eb7e62cc9a7906b041a5daa8314" category="section-title">Ansible을 사용하여 자동 업그레이드</block>
   <block id="0f3c5d5fd99d58a3db49e358303b6aa1" category="inline-link">NetApp Ansible 리포지토리</block>
@@ -12253,7 +12242,6 @@
   <block id="3e51721b09445e45502532be5e6096fc" category="list-text"><block ref="939f531b35412529043c2c302552fa24" category="inline-link-rx"></block> _신규 _</block>
   <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
   <block id="90e7c2277ee69a3d3ecf30fa1fe61ab1" category="inline-link">vCenter 플러그인 4.10 릴리즈 노트</block>
-  <block id="5c6c5d2c88269bcae97dbd93d213851a" category="list-text"><block ref="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="inline-link-rx"></block> _신규 _</block>
   <block id="779aeeb0a67ee84cae70c2361654111d" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block></block>
   <block id="b7faeba39aadbf9af836a1e70f5708d7" category="doc">SolidFire 및 Element 소프트웨어 12.5 이상 문서</block>
   <block id="4b1a9ce7f7fbe6c6a81ef1238b7e421a" category="list-text">에 대해 충분한 시간을 예약했습니다 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 및 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 업그레이드. Element 소프트웨어 12.5 이상으로 업그레이드할 경우 업그레이드 프로세스 시간은 Element 소프트웨어 버전 및 펌웨어 업데이트에 따라 달라집니다.</block>
@@ -12307,7 +12295,6 @@
   <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">이 iSCSI 세션에 대한 인증 정보입니다.</block>
   <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">관리 서비스 공지 2.21.61(VMware vCenter Server용 NetApp Element 플러그인 4.10.12)</block>
   <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
-  <block id="01c72a31a534b06f00c7ab5b05653a0a" category="list-text">vCenter Server 4.10, 4.9, 4.8, 4.7, 4.6용 NetApp Element 플러그인으로 업그레이드하려는 경우 4.5 또는 4.4.</block>
   <block id="5d8cb69408d9a6773459aa0a397a3003" category="list-text">관리 노드에서 REST API UI를 엽니다.</block>
   <block id="4eed3af07414f10fffdba8a7ff51ca36" category="list-text">관리 서비스 시작 2.21.61:</block>
   <block id="880c70977a68b1ec897e498bb11c7021" category="list-text">관리 서비스 2.20.69 이전:</block>
@@ -12316,7 +12303,6 @@
   <block id="2394ff28a38b482ef2918be4c8e7540c" category="list-text">* 최종 사용자 라이센스 계약(EULA) *: 관리 서비스 2.20.69부터 NetApp 하이브리드 클라우드 제어 UI 또는 API를 사용하여 스토리지 펌웨어를 업그레이드하기 전에 EULA에 동의하고 저장해야 합니다.</block>
   <block id="a7781a9fe3cd57540adc2de5f113d0d1" category="list-text">관리 서비스를 버전 2.20.69 이상으로 업데이트했습니다.</block>
   <block id="54c78d15a850ddddfc9da22742280908" category="list-text">* 최종 사용자 라이센스 계약(EULA) *: 관리 서비스 2.20.69부터 NetApp 하이브리드 클라우드 제어 UI 또는 API를 사용하여 Element 스토리지 상태 점검을 실행하기 전에 EULA에 동의하고 저장해야 합니다.</block>
-  <block id="e4eccb810d78b1a07fe7514cdf52eb9f" category="admonition">VMware vCenter Server 7.0 U3으로 업그레이드하면 Element 플러그인이 배포되지 않습니다. Spring Framework 4를 사용하여 이 문제를 해결하려면 을 참조하십시오<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>.</block>
   <block id="62449609bcf95f48fbdbae6dddedcc19" category="list-text">* 최종 사용자 라이센스 계약(EULA) *: 관리 서비스 2.20.69부터 NetApp 하이브리드 클라우드 제어 UI 또는 API를 사용하여 Element 소프트웨어를 업그레이드하기 전에 EULA에 동의하고 저장해야 합니다.</block>
   <block id="d6802e127914e53f73aa2f2db8cb5e44" category="paragraph">관리 서비스 2.20.69부터 NetApp 하이브리드 클라우드 제어 UI 또는 API를 사용하여 관리 서비스를 업그레이드하기 전에 최종 사용자 라이센스 계약(EULA)에 동의해야 합니다.</block>
   <block id="33d4cce2372c2f81af75e357ed402fe5" category="paragraph">^3^ Element 12.7부터 SF2405 및 SF9608 스토리지 노드, FC0025 및 SF-FCN-01 FC 노드는 지원되지 않습니다. 이러한 노드 중 하나를 Element 12.7로 업그레이드하려고 하면 Element 12.7에서 이 노드가 지원되지 않는다는 오류가 표시됩니다.</block>
@@ -12331,4 +12317,47 @@
   <block id="fd755336ba3702c8d419343da5efb6d6" category="list-text">FileSystemIsReadOnly * 를 참조하십시오</block>
   <block id="ed734a928c08d6cb25fc1abe2d4e0c3a" category="paragraph">파일 시스템이 읽기 전용 모드로 이동되었습니다.</block>
   <block id="9732e3757f397fc8e75412dea43c030e" category="list-text">Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레이드가 더 이상 지원되지 않습니다. Element 11.0 또는 11.1을 실행 중인 경우 먼저 해야 합니다<block ref="e9afc225a78965c54dbba9b335afd021" category="inline-link-rx"></block> 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5 이상으로 업그레이드하십시오.</block>
+  <block id="d69d30fc49141c5bd62756604170d4eb" category="paragraph">설치 후 관리 노드에 vCenter 자산(컨트롤러)을 수동으로 추가하거나 기존 컨트롤러를 수정하려면 vCenter에서 NetApp HCC 역할을 생성해야 합니다.</block>
+  <block id="89e4c8f92f7c3506781613b3dbd40e89" category="list-text">vCenter Server 5.0용 NetApp Element 플러그인부터 사용할 수 있습니다<block ref="b9ce345290cb228a35dd424c40eebf37" category="inline-link-rx"></block>에서 NetApp SolidFire 스토리지 클러스터를 관리하는 각 vCenter Server에 대한 별도의 관리 노드에서 Element 플러그인을 등록합니다(권장).</block>
+  <block id="307d07425c54bb4aa0778a14487a9a93" category="list-text">vCenter Server 4.10 이전 버전용 NetApp Element 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다<block ref="b9ce345290cb228a35dd424c40eebf37" category="inline-link-rx"></block> 로컬 스토리지 클러스터로만 제한됩니다.</block>
+  <block id="9db4acd10c15ec173e6516c347342e25" category="admonition">컨트롤러 하위 자산을 추가하려면 vCenter에서 새로운 NetApp HCC 역할을 생성해야 합니다. 이러한 새로운 NetApp HCC 역할은 관리 노드 서비스 뷰를 NetApp 전용 자산으로 제한합니다. 을 참조하십시오 <block ref="8fe5279440ee3c239e840ed9b8e10ddd" category="inline-link-macro-rx"></block>.</block>
+  <block id="836e51e0f6c3653b09c2a2a467e5d22e" category="paragraph">Element 11.x, 12.0 또는 12.2를 실행 중이거나 저장소 클러스터가 이미 Element 12.3 또는 12.3.1에 있고 VVol 기능이 활성화된 경우 12.5로 업그레이드해야 합니다.</block>
+  <block id="6b777567daa827d5b0665b94c630539f" category="inline-link">vCenter Plug-in 5.0 릴리즈 노트</block>
+  <block id="6e965491616fff846a7ae36b0c989a99" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block> _신규 _</block>
+  <block id="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="list-text"><block ref="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="inline-link-rx"></block></block>
+  <block id="07800d7fa4e084c955b9006d30b6eed1" category="paragraph">원격 플러그인</block>
+  <block id="b8ffa41d4e492f0fad2f13e29e1762eb" category="paragraph">8333</block>
+  <block id="5b3a5766ccd94c0ef0148e61340c831e" category="paragraph">원격 vCenter 플러그인 서비스</block>
+  <block id="1291d04b420cee74581d131dee5acf86" category="paragraph">대안을 적용할 필요 없이 VMware vCenter 7.0 업데이트 3을 사용하여 플러그인을 구축할 수 있도록 vCenter Server 5.0용 NetApp Element 플러그인으로 업그레이드해야 합니다.</block>
+  <block id="af5fe52fe204cf15311c07d5bf36b9a1" category="paragraph">vCenter Server 4.x용 Element 플러그인을 사용하면 VMware vCenter Server 7.0 Update 3으로 업그레이드할 때 플러그인을 구축할 수 없습니다. Spring Framework 4를 사용하여 이 문제를 해결하려면 을 참조하십시오<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>.</block>
+  <block id="9b50fd8de96fcf38bc35a026df14fbc4" category="paragraph">VMware vCenter Server용 NetApp Element 플러그인이 등록된 기존 vSphere 환경의 경우 플러그인 서비스가 포함된 관리 서비스 패키지를 먼저 업데이트한 후 플러그인 등록을 업데이트할 수 있습니다.</block>
+  <block id="56f4bca23bb3dd45148dc7171511b7e5" category="paragraph">이 업그레이드 절차에서는 다음 업그레이드 시나리오에 대해 설명합니다.</block>
+  <block id="ec78c54d60054bc44ae2e26c00313bdb" category="admonition">관리 서비스 2.22.7에는 원격 플러그인이 포함된 VMware vCenter Server 5.0용 NetApp Element 플러그인이 포함되어 있습니다. Element 플러그인을 사용하는 경우, 로컬 플러그인 지원을 제거하는 VMware 지침을 준수하도록 버전 5.0으로 업그레이드해야 합니다.<block ref="3eff1b8505d27ff6caa23fbbb1b7b25c" category="inline-link-rx"></block>. 플러그인을 사용하지 않는 경우 선택적 업그레이드입니다.</block>
+  <block id="1ec8160ad002d3b57b0367c162c7e579" category="open-title">Element vCenter Plug-in 5.0 이상</block>
+  <block id="493b4872884198c5773208e29a2d2ce6" category="paragraph">VMware vCenter Server 5.0용 Element 플러그인부터 이 업그레이드 절차에서는 다음과 같은 업그레이드 시나리오에 대해 설명합니다.</block>
+  <block id="ffccf7c96c162cb046e6087e5ff2c25c" category="list-text">vCenter Server 5.0용 Element 플러그인으로 업그레이드하려는 경우</block>
+  <block id="b5bcaf2164ee5f3d1a22b016747f08e1" category="list-text">8.0 또는 7.0 HTML5 vSphere Web Client로 업그레이드하는 중입니다.</block>
+  <block id="787e0e54cc17d9dd6bbd7cf4c4fbc14d" category="admonition">vCenter 5.0 이상의 Element 플러그인은 vCenter Server 6.7 및 6.5와 호환되지 않습니다.</block>
+  <block id="6243a047f7c7bcc2f2961e8a74f1b5c7" category="admonition">Element Plug-in for vCenter Server 4.x에서 5.0으로 업그레이드하면 vCenter 인스턴스에서 원격 플러그인으로 데이터를 복사할 수 없기 때문에 플러그인으로 이미 구성된 클러스터가 손실됩니다. 원격 플러그인에 클러스터를 다시 추가해야 합니다. 이 작업은 로컬 플러그인에서 원격 플러그인으로 업그레이드할 때 한 번 수행하는 작업입니다.</block>
+  <block id="e6d87bbd73a5a86fcf1e6cbc75296808" category="open-title">Element vCenter 플러그인 4.10 이하</block>
+  <block id="523b0480434215d8d59b3dce41707a7e" category="paragraph">vCenter Server 4.10 이전 버전용 Element Plug-in의 경우 이 업그레이드 절차에 다음과 같은 업그레이드 시나리오가 포함됩니다.</block>
+  <block id="524f8acc9609df7272285a19757aefcb" category="list-text">vCenter Server 4.10, 4.9, 4.8, 4.7, 4.6 용 Element 플러그인으로 업그레이드하려는 경우 4.5 또는 4.4.</block>
+  <block id="c0e80cf197d1adf76fef790848a92f8f" category="list-text">이 플러그인은 VMware vCenter Server 4.x용 Element Plug-in용 VMware vCenter Server 8.0과 호환되지 않습니다</block>
+  <block id="a95f4f0d2a0a7e7a472e3b6c6d23d07c" category="list-text">* vCenter Server *: vCenter 플러그인 버전 4.x 또는 5.x가 vCenter Server에 등록됩니다. 등록 유틸리티에서 <block ref="0e0152f7592ffa53464a10c6a48053e7" prefix="(" category="inline-code"></block>)에서 * 등록 상태 * 를 선택하고 필수 필드를 입력한 다음 * 상태 확인 * 을 선택하여 vCenter 플러그인이 이미 등록되어 있는지, 현재 설치 버전 번호를 확인합니다.</block>
+  <block id="aac8ad795776bcaba9b87cb70791d2d1" category="list-text">* 관리 노드 업그레이드 *:</block>
+  <block id="9163ac7fa12bb2150fecf2f1b174db4d" category="list-text">Element vCenter 플러그인 5.0부터는 이미 있던 관리 노드를 실행하고 있습니다 <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> 12.3.x 이상 버전으로.</block>
+  <block id="5e3078320e7b08b85d42398585874ce3" category="list-text">Element vCenter 플러그인 4.4 ~ 4.10의 경우, 이미 있던 관리 노드를 실행하고 있습니다 <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> 11.3 이상 버전으로. vCenter 플러그인 4.4 이상에서는 개별 서비스를 제공하는 모듈식 아키텍처를 갖춘 11.3 이상의 관리 노드가 필요합니다. 관리 노드의 전원은 IP 주소 또는 DHCP 주소가 구성되어 있어야 합니다.</block>
+  <block id="924861571eeb51fd5eb1d806da0f0e5e" category="list-text">* Element 스토리지 업그레이드 *:</block>
+  <block id="b9ad9c0000e5c2b012be9c9ba83b7cff" category="list-text">Element vCenter 플러그인 5.0부터는 NetApp Element 소프트웨어 12.3.x 이상을 실행하는 클러스터가 있습니다.</block>
+  <block id="02738f63a80a594ad3ab131f3a7298f2" category="list-text">Element vCenter 플러그인 4.10 이전의 경우 NetApp Element 소프트웨어 11.3 이상을 실행하는 클러스터가 있습니다.</block>
+  <block id="e8b1bdd38a7601206cf400f05fbdc57d" category="paragraph">vCenter Server 5:0용 Element 플러그인으로 시작:</block>
+  <block id="05c0e13a813e930c3eab807f98959379" category="paragraph">vCenter Server 4.10 이전 버전용 Element 플러그인:</block>
+  <block id="23fa7915a24406758b2d7b2b274fe1f3" category="list-text">(사내 서버/다크 사이트의 경우) vCenter용 Element 플러그인 버전에 따라 플러그인 JSON 파일 또는 플러그인 ZIP에 대한 사용자 지정 URL:</block>
+  <block id="1e35767408ad5bd29ecc61c301c556ef" category="list-text">vCenter Server 5.0용 Element 플러그인부터 플러그인 JSON 파일의 사용자 지정 URL입니다.</block>
+  <block id="b9d11c83e937a9ece9e8b7051bc68606" category="admonition">HTTP 또는 HTTPS 서버(다크 사이트)를 사용 중이거나 JSON 파일 이름 또는 네트워크 설정을 수정한 경우 * 사용자 지정 URL * 을 선택하여 URL을 사용자 지정할 수 있습니다. URL을 사용자 지정하려는 경우 추가 구성 단계를 보려면 vCenter Server용 Element Plug-in 설명서를 참조하십시오. 내부(다크 사이트) HTTP 서버에 대한 vCenter 속성 수정에 대한 자세한 내용은 vCenter Server 설명서를 참조하십시오.</block>
+  <block id="ba85baaa049f62983a89ac7da1647abd" category="list-text">vCenter Server 4.10 이전 버전용 Element Plug-in의 경우 플러그인 ZIP에 대한 사용자 지정 URL입니다.</block>
+  <block id="3c4718429a8a2991d56e6e719c1942df" category="image-alt">에는 Element Plug-in 5.10 이상의 업그레이드 또는 설치 후 플러그인 확장 지점이 나와 있습니다</block>
+  <block id="85406fb94df2ff523b7477f229b1c9c8" category="image-alt">에는 Element Plug-in 4.10 이전 버전에 대한 업그레이드 또는 설치 성공 후의 플러그인 확장 지점이 나와 있습니다</block>
+  <block id="93c82fa50530ab1db18373f37f38e453" category="inline-link-macro">관리 서비스 2.22.7 공지(VMware vCenter Server 5.0.37용 NetApp Element 플러그인)</block>
+  <block id="6bad10de0797378a77f16be896cb0776" category="list-text"><block ref="6bad10de0797378a77f16be896cb0776" category="inline-link-macro-rx"></block></block>
 </blocks>
