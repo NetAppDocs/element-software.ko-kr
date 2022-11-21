@@ -12349,9 +12349,6 @@
   <block id="924861571eeb51fd5eb1d806da0f0e5e" category="list-text">* Element 스토리지 업그레이드 *:</block>
   <block id="b9ad9c0000e5c2b012be9c9ba83b7cff" category="list-text">Element vCenter 플러그인 5.0부터는 NetApp Element 소프트웨어 12.3.x 이상을 실행하는 클러스터가 있습니다.</block>
   <block id="02738f63a80a594ad3ab131f3a7298f2" category="list-text">Element vCenter 플러그인 4.10 이전의 경우 NetApp Element 소프트웨어 11.3 이상을 실행하는 클러스터가 있습니다.</block>
-  <block id="e8b1bdd38a7601206cf400f05fbdc57d" category="paragraph">vCenter Server 5:0용 Element 플러그인으로 시작:</block>
-  <block id="05c0e13a813e930c3eab807f98959379" category="paragraph">vCenter Server 4.10 이전 버전용 Element 플러그인:</block>
-  <block id="23fa7915a24406758b2d7b2b274fe1f3" category="list-text">(사내 서버/다크 사이트의 경우) vCenter용 Element 플러그인 버전에 따라 플러그인 JSON 파일 또는 플러그인 ZIP에 대한 사용자 지정 URL:</block>
   <block id="1e35767408ad5bd29ecc61c301c556ef" category="list-text">vCenter Server 5.0용 Element 플러그인부터 플러그인 JSON 파일의 사용자 지정 URL입니다.</block>
   <block id="b9d11c83e937a9ece9e8b7051bc68606" category="admonition">HTTP 또는 HTTPS 서버(다크 사이트)를 사용 중이거나 JSON 파일 이름 또는 네트워크 설정을 수정한 경우 * 사용자 지정 URL * 을 선택하여 URL을 사용자 지정할 수 있습니다. URL을 사용자 지정하려는 경우 추가 구성 단계를 보려면 vCenter Server용 Element Plug-in 설명서를 참조하십시오. 내부(다크 사이트) HTTP 서버에 대한 vCenter 속성 수정에 대한 자세한 내용은 vCenter Server 설명서를 참조하십시오.</block>
   <block id="ba85baaa049f62983a89ac7da1647abd" category="list-text">vCenter Server 4.10 이전 버전용 Element Plug-in의 경우 플러그인 ZIP에 대한 사용자 지정 URL입니다.</block>
@@ -12360,6 +12357,14 @@
   <block id="93c82fa50530ab1db18373f37f38e453" category="inline-link-macro">관리 서비스 2.22.7 공지(VMware vCenter Server 5.0.37용 NetApp Element 플러그인)</block>
   <block id="6bad10de0797378a77f16be896cb0776" category="list-text"><block ref="6bad10de0797378a77f16be896cb0776" category="inline-link-macro-rx"></block></block>
   <block id="d471727ba1fb423986701d5307906d08" category="list-text">플러그인 확장 지점이 vSphere Web Client의 * Shortcuts * 탭과 측면 패널에 나타나는지 확인합니다.</block>
-  <block id="290b380ec7760347344e9055b68f217d" category="paragraph">vCenter Server 5.0용 Element 플러그인부터 NetApp Element 원격 플러그인 확장 포인트:</block>
-  <block id="7491d78d51f3545fc9fe30d2249bc196" category="paragraph">vCenter Server 4.10 이전 버전용 Element 플러그인, NetApp Element 구성 및 관리 확장 지점:</block>
+  <block id="78d33ed700a31bfed5ec712d766def44" category="paragraph">스토리지 노드 BMC(베이스보드 관리 컨트롤러)/IPMI(Intelligent Platform Management Interface) H410 및 H600 시리즈</block>
+  <block id="59f1e3a87c5b329f2a5a951d9bf325f8" category="paragraph">노드 원격 제어에 대한 HTTPS UI 및 API 액세스</block>
+  <block id="1381491a5bb8087f95db0601150c5c28" category="paragraph">스토리지 노드 BMC/IPMI H410 및 H600 시리즈</block>
+  <block id="ad097a4f1c93214faa0a1ca354a82225" category="paragraph">623 UDP</block>
+  <block id="483602128e75be96f5280855d8065878" category="paragraph">원격 관리 제어 프로토콜 포트. IPMI 지원 시스템을 관리하는 데 필요합니다.</block>
+  <block id="3ef00ef1af91bf9fe0b72f4052a67f59" category="list-text">vCenter Server 5.0용 Element Plug-in에 대한 vCenter 플러그인 등록 페이지:</block>
+  <block id="1875d143de1e9be70dc9e780b41377fe" category="list-text">vCenter Server 4.10 이전 버전의 Element Plug-in에 대한 vCenter 플러그인 등록 페이지:</block>
+  <block id="b8b146fd1e1ecdf074536a02bfe40871" category="list-text">(사내 서버/다크 사이트의 경우) vCenter용 Element 플러그인 버전에 따라 플러그인 JSON 파일 또는 플러그인 ZIP에 대한 사용자 지정 URL:</block>
+  <block id="1993643c12bb4ee547f04d8d85f8c4bf" category="list-text">vCenter Server 5.0용 Element 플러그인부터 NetApp Element 원격 플러그인 확장 지점이 나타납니다.</block>
+  <block id="1c63b3cd9a6d3bdf8b9b31aca68672d7" category="list-text">vCenter Server 4.10 이전 버전용 Element Plug-in의 경우 NetApp Element 구성 및 관리 확장 지점이 나타납니다.</block>
 </blocks>

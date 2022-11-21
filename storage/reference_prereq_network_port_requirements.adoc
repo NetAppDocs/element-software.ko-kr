@@ -482,11 +482,33 @@ LDAPS 조회
  a| 
 시스템 관리자 PC입니다
  a| 
+스토리지 노드 BMC(베이스보드 관리 컨트롤러)/IPMI(Intelligent Platform Management Interface) H410 및 H600 시리즈
+ a| 
+443
+ a| 
+노드 원격 제어에 대한 HTTPS UI 및 API 액세스
+
+
+
+ a| 
+시스템 관리자 PC입니다
+ a| 
 스토리지 노드 MIP
  a| 
 443
  a| 
 스토리지 클러스터에 대한 HTTPS 스토리지 클러스터 생성, 구축 후 UI 액세스
+
+
+
+ a| 
+시스템 관리자 PC입니다
+ a| 
+스토리지 노드 BMC/IPMI H410 및 H600 시리즈
+ a| 
+623 UDP
+ a| 
+원격 관리 제어 프로토콜 포트. IPMI 지원 시스템을 관리하는 데 필요합니다.
 
 
 
