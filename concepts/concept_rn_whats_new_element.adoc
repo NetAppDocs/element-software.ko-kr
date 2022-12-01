@@ -137,5 +137,5 @@ Element 12.5를 사용하면 Ansible을 사용하여 전체 스토리지 클러�
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"^]
 * http://docs.netapp.com/sfe-122/index.jsp["이전 버전용 SolidFire 및 Element 소프트웨어 설명서 센터"^]
 * https://www.netapp.com/us/documentation/hci.aspx["NetApp HCI 리소스 페이지를 참조하십시오"^]
-* https://docs.netapp.com/us-en/hci/docs/fw_storage_nodes.html["SolidFire 스토리지 노드에 대해 지원되는 스토리지 펌웨어 버전입니다"^]
+* link:../hardware/fw_storage_nodes.html["SolidFire 스토리지 노드에 대해 지원되는 스토리지 펌웨어 버전입니다"]
 
