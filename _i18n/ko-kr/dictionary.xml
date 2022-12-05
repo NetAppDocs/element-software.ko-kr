@@ -12092,7 +12092,6 @@
   <block id="763c55956ad9c66895ee6e099d610ff4" category="list-text">요소 소프트웨어 패치에 대한 정보 얻기 *: Element 12.3에 도입된 "GetPatchInfo" 메서드를 사용하면 스토리지 노드에 설치된 Element 소프트웨어 패치에 대한 정보를 얻을 수 있습니다. 를 참조하십시오<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="7b6627460723fe1128ae2566dade0d76" category="list-text">* 노드의 각 네트워크 인터페이스에 대한 통계 나열 *: Element 12.3에 도입된 "ListNetworkInterfaceStats" 메서드를 사용하면 노드의 각 네트워크 인터페이스에 대해 삭제된 패킷 수와 다양한 유형의 오류 등 통계를 나열할 수 있습니다. 이 API 메서드는 개별 노드에 사용하기 위한 것으로, 개별 노드에 액세스하려면 사용자 ID 및 암호 인증이 필요합니다. 하지만 매개 변수 force가 메서드 호출에서 true 값을 지정하면 클러스터에서 이 메서드를 사용할 수 있습니다. 클러스터에서 매개 변수를 사용하면 모든 인터페이스의 네트워크 통계가 나열됩니다. 를 참조하십시오<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">Element 12.3.1에 도입된 동적 노드 등급을 통해 현재 플랫폼당 단일 CPU 모델이 아닌 ESDS 플랫폼당 24개의 지원되는 CPU를 활용할 수 있습니다.</block>
-  <block id="234a1430825055fe25203429facd267e" category="admonition">단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.</block>
   <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">원격 NetApp Support 연결을 설정합니다</block>
   <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">CHAP를 사용하여 계정 작업</block>
@@ -12553,4 +12552,5 @@
   <block id="55fc3b139c0a126af7257f980acb20c5" category="cell">ID 모듈</block>
   <block id="c9c5cc2efc04287e6fe8d7feebf032aa" category="cell">N41WC 1.02</block>
   <block id="126078d2e17c3ac2589cca85b30163c7" category="cell">부팅 장치</block>
+  <block id="64c9f5445140b2d5ab2eb8fe31bd6872" category="admonition">Element 12.5 및 이전 버전의 경우 단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.</block>
 </blocks>

@@ -20,7 +20,7 @@ VVOL 기능을 활성화하면 VVOL 관련 모니터링 및 제한된 관리 옵
 Element 소프트웨어 스토리지 시스템에서 가상 볼륨 기능을 사용하는 데 필요한 대부분의 구성은 vSphere에서 이루어집니다. VMware vSphere Virtual Volumes for SolidFire Storage 구성 가이드 _ 를 참조하여 vCenter에 VASA Provider를 등록하고, VVOL 데이터 저장소를 생성 및 관리하고, 정책에 따라 스토리지를 관리하십시오.
 
 
-NOTE: 단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.
+NOTE: Element 12.5 및 이전 버전의 경우 단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.
 
 
 NOTE: vCenter에 VASA 공급자를 이미 등록한 경우 여러 vCenter에 대한 VASA 지원을 업그레이드 패치로 사용할 수 있습니다. 설치하려면 에서 VASA39 .tar.gz 파일을 다운로드하십시오 https://mysupport.netapp.com/products/element_software/VASA39/index.html["NetApp 소프트웨어 다운로드"] 사이트를 방문하여 매니페스트의 지침을 따르십시오. NetApp Element VASA 공급자는 NetApp 인증서를 사용합니다. 이 패치를 사용하면 vCenter에서 인증서를 수정하지 않고 사용하여 VASA 및 VVol 사용을 위한 여러 vCenter를 지원합니다. 인증서를 수정하지 마십시오. 사용자 지정 SSL 인증서는 VASA에서 지원되지 않습니다.
