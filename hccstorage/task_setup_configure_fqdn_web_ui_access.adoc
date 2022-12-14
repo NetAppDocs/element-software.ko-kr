@@ -15,7 +15,7 @@ NetApp Element 소프트웨어 12.2 이상이 설치된 SolidFire All-Flash 스�
 
 이 프로세스를 통해 클러스터는 로그인 세션을 올바르게 리디렉션하고 다중 요소 인증을 위한 키 관리자 및 ID 공급자와 같은 외부 서비스와의 통합을 향상시킬 수 있습니다.
 
-.무엇을 &#8217;필요로 할거야
+.필요한 것
 * 이 기능을 사용하려면 Element 12.2 이상이 필요합니다.
 * NetApp 하이브리드 클라우드 제어 REST API를 사용하여 이 기능을 구성하려면 관리 서비스 2.15 이상이 필요합니다.
 * NetApp 하이브리드 클라우드 제어 UI를 사용하여 이 기능을 구성하려면 관리 서비스 2.19 이상이 필요합니다.
@@ -25,11 +25,11 @@ NetApp Element 소프트웨어 12.2 이상이 설치된 SolidFire All-Flash 스�
 
 NetApp 하이브리드 클라우드 제어 및 REST API를 사용하여 FQDN 웹 UI 액세스를 구성하거나 제거할 수 있습니다. 또한 잘못 구성된 FQDN의 문제를 해결할 수도 있습니다.
 
-*  FQDN web UI access using NetApp Hybrid Cloud Control
-*  FQDN web UI access using the REST API
-*  FQDN web UI access using NetApp Hybrid Cloud Control
-*  FQDN web UI access using the REST API
-* 
+* <<NetApp 하이브리드 클라우드 제어를 사용하여 FQDN 웹 UI 액세스를 구성합니다>>
+* <<REST API를 사용하여 FQDN 웹 UI 액세스를 구성합니다>>
+* <<NetApp 하이브리드 클라우드 제어를 사용하여 FQDN 웹 UI 액세스를 제거합니다>>
+* <<REST API를 사용하여 FQDN 웹 UI 액세스를 제거합니다>>
+* <<문제 해결>>
 
 
 

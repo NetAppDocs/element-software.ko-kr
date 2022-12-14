@@ -73,9 +73,9 @@ Element Demo Node 소프트웨어는 .ova 파일로 패키지된 VMware 파일 �
 
 VMware ESXi에 Element Demo Node를 설치하는 작업은 다음과 같습니다.
 
-*  network interfaces
-*  the demo node on an ESXi server
-*  the demo node on an ESXi server
+* <<네트워크 인터페이스를 구성합니다>>
+* <<ESXi 서버에 데모 노드를 등록합니다>>
+* <<ESXi 서버에서 데모 노드를 시작합니다>>
 
 
 

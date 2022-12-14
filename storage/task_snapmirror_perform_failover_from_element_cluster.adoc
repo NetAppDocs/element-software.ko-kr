@@ -15,7 +15,7 @@ Element 클러스터에서 페일오버를 수행하여 대상 볼륨을 읽기/
 
 NetApp Element UI를 사용하여 페일오버를 수행합니다. Element UI를 사용할 수 없는 경우 ONTAP System Manager 또는 ONTAP CLI를 사용하여 Break Relationship 명령을 실행할 수도 있습니다.
 
-.무엇을 &#8217;필요로 할거야
+.필요한 것
 * SnapMirror 관계가 있으며 타겟 볼륨에 유효한 스냅샷이 하나 이상 있습니다.
 * 운영 사이트에서 계획되지 않은 운영 중단 또는 계획된 이벤트로 인해 타겟 볼륨으로 페일오버해야 합니다.
 

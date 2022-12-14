@@ -13,13 +13,14 @@ summary: Ansible과 같은 자동화 툴을 사용하여 SolidFire ESDS를 설�
 [role="lead"]
 Ansible과 같은 자동화 툴을 사용하여 SolidFire ESDS를 설치할 수 있습니다. Ansible에 대해 잘 알고 있다면 SolidFire ESDS 설치 및 클러스터 생성과 같은 여러 작업이 결합된 Ansible 플레이북을 하나 만들 수 있습니다.
 
-.무엇을 &#8217;필요로 할거야
+.필요한 것
 * 제공된 지침에 따라 Ansible을 로컬 서버에 설치했습니다 https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installation-guide["여기"^].
 * Ansible 역할에 익숙해졌죠. 을 참조하십시오 https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html["여기"^].
 * 나열된 필수 작업을 모두 수행했습니다 link:concept_esds_prerequisite_tasks.html["여기"^].
 * SolidFire ESDS에 대한 규정 준수 검사를 실행하였습니다. 규정 준수 검사를 실행하는 방법에 대한 지침은 을 참조하십시오 link:concept_esds_prerequisite_tasks.html["여기"^].
 
 
+.이 작업에 대해
 일반 텍스트가 아닌 암호와 같은 중요한 정보는 Ansible Vault를 사용하십시오. 자세한 내용은 다음 링크를 참조하십시오.
 
 * https://docs.ansible.com/ansible/latest/user_guide/playbooks_vault.html["Ansible Vault 사용"^]

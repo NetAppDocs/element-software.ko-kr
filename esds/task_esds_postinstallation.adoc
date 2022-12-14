@@ -13,12 +13,13 @@ summary: SolidFire ESDS를 설치한 후 각 SolidFire ESDS 노드에서 클러�
 [role="lead"]
 SolidFire ESDS를 설치한 후 각 SolidFire ESDS 노드에서 클러스터 이름을 구성합니다. 그런 다음 SolidFire ESDS 클러스터를 생성할 수 있습니다.
 
+.이 작업에 대해
 다음은 SolidFire ESDS를 설치한 후 완료해야 하는 작업에 대한 개괄적인 개요입니다.
 
-*  the cluster name
-*  the license key
-*  a cluster
-*  drives to the cluster
+* <<클러스터 이름을 구성합니다>>
+* <<라이센스 키를 설정합니다>>
+* <<클러스터를 생성합니다>>
+* <<클러스터에 드라이브를 추가합니다>>
 
 
 
@@ -92,6 +93,7 @@ IMPORTANT: 클러스터 생성 후에는 클러스터 이름을 변경할 수 �
 
 SolidFire ESDS 클러스터를 생성할 때 라이센스 키 정보가 필요합니다. 또한 NetApp Support에서는 문제 해결에 도움이 되는 라이센스 키 정보가 필요합니다. SolidFire ESDS 클러스터의 라이센스 키는 클러스터의 주문 번호와 일련 번호가 결합된 것으로, 구입한 용량 라이센스 모델을 활성화합니다.
 
+.이 작업에 대해
 SolidFire ESDS 스토리지 클러스터에 대한 라이센스 키를 설정하려면 'setup LicenseKey' 메서드를 사용합니다. '셋LicenseKey' 메소드에는 다음과 같은 입력 매개 변수가 있습니다.
 
 [cols="5*"]

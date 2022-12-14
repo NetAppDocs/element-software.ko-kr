@@ -15,6 +15,7 @@ NetApp Element UI를 통해 클러스터 레벨에서 SnapMirror 기능을 수�
 
 SnapMirror는 NetApp ONTAP 시스템의 볼륨과 함께 사용되는 Element 소프트웨어를 실행하는 클러스터에 대해서만 활성화할 수 있습니다. 클러스터가 NetApp ONTAP 볼륨과 함께 사용하도록 연결된 경우에만 SnapMirror 기능을 사용하도록 설정해야 합니다.
 
+.필요한 것
 스토리지 클러스터에서 NetApp Element 소프트웨어가 실행되고 있어야 합니다.
 
 .단계

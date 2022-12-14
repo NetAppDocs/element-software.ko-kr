@@ -13,12 +13,12 @@ summary: SolidFire ESDS를 설치하기 전에 필요한 검사를 수행하고 
 [role="lead"]
 SolidFire ESDS를 설치하기 전에 필요한 검사를 수행하고 환경이 구성, IP 주소 지정 및 네트워킹 요구 사항을 충족하는지 확인하십시오.
 
-.strong>필요한 하드웨어를 설치합니다</strong>
+.* 필요한 하드웨어를 설치합니다 *
 * 지원되는 서버를 설치합니다. 을 참조하십시오 https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU#welcome["NetApp 상호 운용성 매트릭스(로그인 필요)"^] 를 참조하십시오.
 * 하드웨어 구성이 균형 조정되고 모든 채널이 채워졌는지 확인합니다. 대역폭 최대화에 대한 자세한 내용은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/SolidFire_Enterprise_SDS/How_to_balance_memory_and_maximize_bandwidth_for_your_hardware_configurations["KB 문서를 참조하십시오"^] (로그인 필요).
 
 
-.strong>호스트(노드) 구성</strong>
+.* 호스트(노드) 구성 *
 * 에 나열된 지원되는 버전을 기반으로 Red Hat Package Manager를 설치합니다 https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU#welcome["NetApp 상호 운용성 매트릭스(로그인 필요)"^].
 * 네트워크의 모든 호스트에서 사용할 NTP(Network Time Protocol) 서버를 구성합니다.
 * 설치 대상을 선택할 때 라디오 버튼을 선택하여 파일 시스템 파티션을 수동으로 구성합니다. 수동 분할 * 페이지에서 * + * 및 * - * 버튼을 사용하여 기존 파티션을 제거하고 새 파티션을 만들고 여기에 나열된 권장 사항에 따라 크기를 조정합니다. 기본 LVM 파티셔닝 스키마를 사용하여 필요한 경우 나중에 쉽게 크기를 조정할 수 있습니다.
@@ -106,7 +106,7 @@ rhel-7-server-extras-rpms
 
 
 
-.strong>필요한 소프트웨어를 설치합니다</strong>
+.* 필요한 소프트웨어를 설치합니다 *
 * Ansible, Git, Podman, Python 3.0을 설치합니다.
 +
 [NOTE]
@@ -131,7 +131,7 @@ NOTE: 가능한 경우 Podman 버전에 대한 보안 업데이트를 수락하�
 ====
 
 
-.strong>SolidFire ESDS 설치를 위한 귀사의 구성이 NetApp 및 #8217;s 요구 사항과 일치하는지 확인하십시오</strong>
+.* 구성이 SolidFire ESDS * 설치를 위한 NetApp의 요구사항과 일치하는지 확인합니다
 * 에 나열된 SolidFire ESDS 구성을 사용합니다 https://mysupport.netapp.com/matrix/#welcome["NetApp 상호 운용성 매트릭스 툴(IMT)"] 참조하십시오.
 +
 
@@ -184,7 +184,7 @@ NOTE: SolidFire ESDS 시스템을 사용한 후에도 시스템이 규정을 준
 
 
 
-.strong>네트워크 및 IP 주소 요구 사항 이해</strong>
+.* 네트워크 및 IP 주소 요구 사항 이해 *
 * Red Hat Package Manager에서 네트워크 및 네트워크 인터페이스를 구성하고 관리하는 방법에 대해 자세히 알아보십시오. 를 참조하십시오 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index["RedHat 설명서"^].
 * 여기에 설명된 IP 요구 사항에 따라 네트워크를 구성합니다.
 +
@@ -261,7 +261,7 @@ IMPORTANT: 여기에 제시된 그림은 예시용입니다. 실제 하드웨어
 * 스위치 포트 MTU를 9216바이트로 변경합니다.
 
 
-.strong>데이터 센터 및 #8217;s 방화벽을 통해 특정 포트 허용</strong>
+.* 데이터 센터의 방화벽을 통해 특정 포트를 허용합니다 *
 * Red Hat Package Manager를 실행하는 스토리지 노드에서 'firewalld'가 활성화된 경우, 시스템을 원격으로 관리하고, 데이터 센터 외부의 클라이언트가 리소스에 연결하도록 하고, 내부 서비스가 제대로 작동할 수 있도록 다음 포트가 열려 있는지 확인하십시오.
 +
 [cols="4*"]
@@ -446,7 +446,7 @@ firewall-cmd –-reload
 ----
 
 
-.strong>호스트 네트워크 구성</strong>
+.* 호스트 네트워크 구성 *
 * 를 사용하여 호스트 네트워크를 구성합니다 link:task_esds_configure_the_interface_config_files.html["모범 사례"^] 제공됩니다.
 +
 
@@ -454,7 +454,7 @@ IMPORTANT: SolidFire ESDS를 성공적으로 설치하려면 호스트 네트워
 
 
 
-.strong>추가 요구 사항 완료</strong>
+.* 추가 요구 사항 완료 *
 * NetApp Support에서 호스트 로그 수집에 사용되는 Collect를 1개 설치합니다. 에서 수집 하나를 설치할 수 있습니다 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-onecollect["여기"^]. 다운로드에 액세스하려면 NetApp 계정이 필요합니다. One Collect Installation Guide(단일 수집 설치 가이드) 및 Release Notes(릴리스 노트)도 같은 위치에서 찾을 수 있습니다.
 +
 

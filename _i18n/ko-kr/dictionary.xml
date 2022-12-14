@@ -233,7 +233,6 @@
   <block id="83bfe4a93c138c4f60d8874e9ba74e81" category="list-text"><block ref="cdae2d56fb5c7b2e77369d3885b68305" category="inline-xref-macro-rx"></block></block>
   <block id="099c232e5babe7e675afcc12e7835765" category="section-title">드라이브를 사전에 교체합니다</block>
   <block id="789dede1454c270db56065afdee66b4d" category="paragraph">SolidFire ESDS 클러스터의 메타데이터 드라이브 또는 블록 드라이브를 사전에 교체하려면 이 절차를 수행하십시오. Element UI * Cluster * &gt; * Drives * 페이지에는 드라이브 마모 정보가 표시됩니다.</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">무엇을 &amp;#8217;필요로 할거야</block>
   <block id="d24c310313d039073fc99de16da25ff5" category="list-text">NetApp Element 소프트웨어 UI에서 클러스터의 상태가 양호하고 경고 또는 클러스터 오류가 없는지 확인합니다. 기본 클러스터 노드의 관리 가상 IP(MVIP) 주소를 사용하여 Element UI에 액세스할 수 있습니다.</block>
   <block id="4914b249c87b31201b94eeda3698c304" category="list-text">클러스터에서 실행 중인 활성 작업이 없는지 확인합니다.</block>
   <block id="44857896e38e4779632927df69b29cc6" category="list-text">모든 단계에 익숙해졌는지 확인하십시오.</block>
@@ -435,12 +434,10 @@
   <block id="a096ab9c1572be6d30c5297a12165daf" category="list-text">업그레이드가 완료된 후 각 노드를 확인하여 Element UI 또는 클러스터 API를 사용하여 새 버전이 실행되고 있는지 확인합니다.</block>
   <block id="8a221a4f965f4cfc6edfd1e855cb0aaa" category="summary">SolidFire ESDS를 설치하기 전에 필요한 검사를 수행하고 환경이 구성, IP 주소 지정 및 네트워킹 요구 사항을 충족하는지 확인하십시오.</block>
   <block id="88d5e6f116564d2c06f8abf0724efec5" category="doc">설치를 위한 필수 작업을 수행합니다</block>
-  <block id="f7dcb8224f85128ec87fe0a2442fc52a" category="list-title">strong&gt;필요한 하드웨어를 설치합니다&lt;/strong&gt;</block>
   <block id="72af4b89bf6c89e877a119046199a6b7" category="inline-link">NetApp 상호 운용성 매트릭스(로그인 필요)</block>
   <block id="04be9ab6e44a60450ae6452e609984be" category="list-text">지원되는 서버를 설치합니다. 을 참조하십시오<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="dd76252ea7a50def2a98f218cb1505b4" category="inline-link">KB 문서를 참조하십시오</block>
   <block id="fa5b69222b994a8a596eef2320a99a75" category="list-text">하드웨어 구성이 균형 조정되고 모든 채널이 채워졌는지 확인합니다. 대역폭 최대화에 대한 자세한 내용은 을 참조하십시오<block ref="404eae9bc7c2264c66c1f2a9c06f066b" category="inline-link-rx"></block> (로그인 필요).</block>
-  <block id="2a97471ec199242556431779bd30838a" category="list-title">strong&gt;호스트(노드) 구성&lt;/strong&gt;</block>
   <block id="6fa70406f47786b02c8769bd1b178120" category="list-text">네트워크의 모든 호스트에서 사용할 NTP(Network Time Protocol) 서버를 구성합니다.</block>
   <block id="0ce895e38ab4717417ddcc44e6cf4e1c" category="list-text">설치 대상을 선택할 때 라디오 버튼을 선택하여 파일 시스템 파티션을 수동으로 구성합니다. 수동 분할 * 페이지에서 * + * 및 * - * 버튼을 사용하여 기존 파티션을 제거하고 새 파티션을 만들고 여기에 나열된 권장 사항에 따라 크기를 조정합니다. 기본 LVM 파티셔닝 스키마를 사용하여 필요한 경우 나중에 쉽게 크기를 조정할 수 있습니다.</block>
   <block id="17535771fae0ee390ce31ef42ebc5155" category="paragraph">SATA 디스크가 250GB인 경우 아래의 권장 파티션을 따르십시오. SATA 디스크의 공간이 더 많은 경우 /opt 및 /var 파티션 크기를 늘릴 수 있습니다.</block>
@@ -465,9 +462,7 @@
   <block id="68c4b5c87d48a6c6ca4cc14cfacaab03" category="list-text">노드에서 SSH를 사용하도록 설정합니다.</block>
   <block id="f0a2de2efe6108942f8b79e50b1b6be5" category="inline-link">KB 문서(로그인 필요)</block>
   <block id="57208611101414fe2f0426e46c1f0d65" category="list-text">IPv6을 사용하지 않도록 설정하려면 에 설명된 단계를 따르십시오<block ref="2a5c78b7a0390cd7a5313c37d3eb2c52" category="inline-link-rx"></block>.</block>
-  <block id="1a76b48d9d60fd8364da6ea0eaec3eff" category="list-title">strong&gt;필요한 소프트웨어를 설치합니다&lt;/strong&gt;</block>
   <block id="654fdbae1d58bcbbc420ee34e66cbecb" category="list-text">Ansible, Git, Podman, Python 3.0을 설치합니다.</block>
-  <block id="e1633c03fa0d88ea4ec55f043ee4598c" category="list-title">strong&gt;SolidFire ESDS 설치를 위한 귀사의 구성이 NetApp 및 #8217;s 요구 사항과 일치하는지 확인하십시오&lt;/strong&gt;</block>
   <block id="30ec57363b9938495c0097cd8a0bcbbf" category="list-text">에 나열된 SolidFire ESDS 구성을 사용합니다<block ref="d73544449e4c516eccc06a758c5e6c47" category="inline-link-rx"></block> 참조하십시오.</block>
   <block id="909806d31a8e12a761cf09c409cefaad" category="admonition">SolidFire ESDS 관련 문제에 대한 지원을 받기 위해 NetApp 지원에 문의할 경우, 먼저 해당 플랫폼이 IMT에 나열된 SolidFire ESDS에 대한 참조 구성을 준수하는지 확인합니다. 지원 팀에서 기본 플랫폼이 참조 구성을 준수하지 않는다고 판단하면 지원 팀에서 규정을 준수하지 않는 펌웨어, 소프트웨어 및/또는 하드웨어 구성 요소를 IMT의 올바른 버전에 맞출 수 있도록 안내합니다.</block>
   <block id="6314b9fb7626759e31aeab5d959e5286" category="list-text">SolidFire ESDS에 대한 규정 준수 검사를 실행합니다.</block>
@@ -476,7 +471,6 @@
   <block id="34838a3f0559a6f772b5758da69cbbfb" category="list-text">준수 검사에 사용할 플레이북을 생성합니다.</block>
   <block id="e7b21406c191f4c1bb269d3ffee0368d" category="list-text">다음 예에 표시된 대로 규정 준수 확인 플레이북을 실행합니다.</block>
   <block id="37ea6b2cb8a75db09428d93d9a0416d0" category="admonition">SolidFire ESDS 시스템을 사용한 후에도 시스템이 규정을 준수하는지 확인하기 위해 정기적으로 규정 준수 검사를 실행해야 합니다. 경우에 따라 NetApp Support에서 문제 진단 및 해결을 위해 규정 준수 확인을 실행하도록 요청합니다.</block>
-  <block id="09acbcc09d76195cfde55a1522db4644" category="list-title">strong&gt;네트워크 및 IP 주소 요구 사항 이해&lt;/strong&gt;</block>
   <block id="1c39f346a9b7cd529f0e7deeee5ce177" category="list-text">여기에 설명된 IP 요구 사항에 따라 네트워크를 구성합니다.</block>
   <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">구성 요소</block>
   <block id="265df7cdddd316ce979aa017f0753e25" category="cell">스토리지 네트워크 IP 주소입니다</block>
@@ -501,7 +495,6 @@
   <block id="3954d0109fc9c791be6d11e39804cb50" category="paragraph">관리 네트워크용 포트입니다</block>
   <block id="ebff118a006e94651da911d800279c44" category="admonition">여기에 제시된 그림은 예시용입니다. 실제 하드웨어는 사용 중인 서버에 따라 다를 수 있습니다.</block>
   <block id="7300079506cb737ad309140b1f56eeda" category="list-text">스위치 포트 MTU를 9216바이트로 변경합니다.</block>
-  <block id="4b7ef9f74fc5d5abcae07ceee277787a" category="list-title">strong&gt;데이터 센터 및 #8217;s 방화벽을 통해 특정 포트 허용&lt;/strong&gt;</block>
   <block id="f31bbdd1b3e85bccd652680e16935819" category="cell">출처</block>
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">목적지</block>
   <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">포트</block>
@@ -542,11 +535,9 @@
   <block id="f0f166a01d55488cbf1ae223ecbb6068" category="paragraph">vCenter 플러그인 QoSSIOC 서비스입니다</block>
   <block id="b843120f7921517683f4de0687bf0a29" category="admonition">에 대한 포트 2181, 2182 및 2183은 Element 분산 데이터베이스에 필요하며 SolidFire ESDS를 설치할 때 Element 컨테이너에서 동적으로 열립니다.</block>
   <block id="0cb585626379a70b87a0e3ee14309e3b" category="list-text">다음 명령을 사용하여 위에서 언급한 포트를 엽니다.</block>
-  <block id="95f75258f8b33664eeaf8b541ff97858" category="list-title">strong&gt;호스트 네트워크 구성&lt;/strong&gt;</block>
   <block id="78ff65afbf92a15cd30dea91aefc1e9b" category="inline-link-macro">모범 사례</block>
   <block id="f433801b7b771eb645906990697cb40d" category="list-text">를 사용하여 호스트 네트워크를 구성합니다 <block ref="d5d50f06af9eb06fd5c8afba97ab5274" category="inline-link-macro-rx"></block> 제공됩니다.</block>
   <block id="9fe0e0876a07d2247ecb84a994e87a77" category="admonition">SolidFire ESDS를 성공적으로 설치하려면 호스트 네트워크를 구성하는 단계를 완료해야 합니다.</block>
-  <block id="fb96b65afb5d2a139a12f87e3171372c" category="list-title">strong&gt;추가 요구 사항 완료&lt;/strong&gt;</block>
   <block id="d5272d5ecd1fe99c7097dfcca90c8f7d" category="list-text">NetApp Support에서 호스트 로그 수집에 사용되는 Collect를 1개 설치합니다. 에서 수집 하나를 설치할 수 있습니다<block ref="d3b16539387c5c512d10064586f79c65" category="inline-link-rx"></block>. 다운로드에 액세스하려면 NetApp 계정이 필요합니다. One Collect Installation Guide(단일 수집 설치 가이드) 및 Release Notes(릴리스 노트)도 같은 위치에서 찾을 수 있습니다.</block>
   <block id="b4cac9f0dca24135289e8ff89afe6aa1" category="admonition">최적의 지원 환경을 얻으려면 하나의 수집 파일을 다운로드하여 설치해야 합니다.</block>
   <block id="6d1d7be211708c9b56d930f731aa306b" category="list-text">로그 수집용 관리 노드를 설치하고 문제 해결을 위해 NetApp Support 액세스를 설정합니다. 관리 노드 및 설치 단계에 대한 자세한 내용은 를 참조하십시오 <block ref="9915e3fe57455c0bc98ba7d4ab2016f9" category="inline-link-macro-rx"></block>.</block>
@@ -5051,7 +5042,6 @@
   <block id="b9e50e6a339819ad9d12906b29e978ca" category="list-text">플러그인의 * NetApp Element 구성 * 확장 지점의 * 정보 * 탭에서 버전 변경을 확인합니다.</block>
   <block id="a2b39afbde860c9c0fc759f3772e2dd2" category="paragraph">최신 버전의 다음 버전 세부 정보 또는 세부 정보가 표시됩니다.</block>
   <block id="4715e0cc20eb79c52c1f181ce0f6afb0" category="admonition">vCenter 플러그인에는 온라인 도움말 콘텐츠가 포함되어 있습니다. 도움말에 최신 콘텐츠가 포함되어 있는지 확인하려면 플러그인을 업그레이드한 후 브라우저 캐시를 지웁니다.</block>
-  <block id="6ea7f8d4483b20144d2c82f1ed99c07a" category="section-title">시스템 업그레이드 순서</block>
   <block id="ae39d371b28f32c0d2467b06b77ffdc4" category="inline-link-macro">vCenter Server용 Element 플러그인을 사용하여 NetApp SolidFire 스토리지 시스템용 vSphere 구성요소를 업그레이드하십시오</block>
   <block id="36f546dcaf82a7b3487c4002a3c6d1ed" category="summary">NetApp SolidFire 스토리지 시스템 업그레이드의 일환으로 관리 서비스를 업데이트해야 합니다.</block>
   <block id="2fdf7cb371995103b459c97e897b87ee" category="doc">관리 서비스를 업데이트합니다</block>
@@ -12553,4 +12543,28 @@
   <block id="c9c5cc2efc04287e6fe8d7feebf032aa" category="cell">N41WC 1.02</block>
   <block id="126078d2e17c3ac2589cca85b30163c7" category="cell">부팅 장치</block>
   <block id="64c9f5445140b2d5ab2eb8fe31bd6872" category="admonition">Element 12.5 및 이전 버전의 경우 단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="paragraph-title">필요한 것</block>
+  <block id="2cd70ba1e2d0b294626ea7f96d25a07f" category="paragraph-title">로그 수집 옵션</block>
+  <block id="891a52ee80600fd58bac60927df7a3a9" category="section-title">[[enable_main_mode]] 유지보수 모드를 활성화합니다</block>
+  <block id="27404255e546058b4a4837fb07e90bbf" category="section-title">[[DISABLE_MAIN_MODE]] 유지 관리 모드를 비활성화합니다</block>
+  <block id="64916198004d1ee19b1b50002f51f1a8" category="paragraph-title">업그레이드 옵션</block>
+  <block id="bac407daf00ae86b0f95e89cf84eeac1" category="section-title">[[sys_upgrade]] 시스템 업그레이드 순서</block>
+  <block id="df5820ca7f238b48987ff74db1271e4a" category="paragraph-title">업데이트 옵션</block>
+  <block id="a31b6eafc73ca0db90a0d96e6fb9dc93" category="paragraph-title">상태 점검 옵션</block>
+  <block id="f8317d9a65a7e996db437d8eabc22aeb" category="paragraph-title">KB 문서 문제 해결 링크</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">결과</block>
+  <block id="1505b4d22f5b2439d387f71ebb0fccd2" category="paragraph-title">오류가 발생할 수 있습니다</block>
+  <block id="2de79e7b8c77e4847d6bcd5a8ee879ce" category="section-title">[[SF_Nodes]] SF38410, SF19210, SF9605 및 SF4805</block>
+  <block id="6a31058d1e6208d43e0d620fb4953c23" category="paragraph-title">스토리지 클러스터의 자산 관리 옵션</block>
+  <block id="50f33d14f129e4548c1c270fd6725a78" category="paragraph-title">구성 옵션</block>
+  <block id="63f488c7bb829c89f024839d6aa602f4" category="section-title">[[CUSTOM_PD]] 사용자 지정 보호 도메인</block>
+  <block id="fa5cc5e49b65ffd46ba8881097cf8310" category="list-title">* 필요한 하드웨어를 설치합니다 *</block>
+  <block id="6b170e726e4567decff7daaed3e1a08b" category="list-title">* 호스트(노드) 구성 *</block>
+  <block id="c86064ac886a0aab9f8ecf92f19f98b3" category="list-title">* 필요한 소프트웨어를 설치합니다 *</block>
+  <block id="fd9cdaf80c90bdd2d3af18c1c856b60f" category="list-title">* 구성이 SolidFire ESDS * 설치를 위한 NetApp의 요구사항과 일치하는지 확인합니다</block>
+  <block id="9bfadf4c7ec72b1af0ecb9eaabaf58c8" category="list-title">* 네트워크 및 IP 주소 요구 사항 이해 *</block>
+  <block id="a113f5f001cbfcc5dc2a0dde65f4e2d9" category="list-title">* 데이터 센터의 방화벽을 통해 특정 포트를 허용합니다 *</block>
+  <block id="45f450486d575041c747125231750ffe" category="list-title">* 호스트 네트워크 구성 *</block>
+  <block id="abe03d597b94a3f77cae3615416163ef" category="list-title">* 추가 요구 사항 완료 *</block>
+  <block id="71f5771dab663d80ba4dad1627e3386a" category="paragraph-title">업그레이드 개요</block>
 </blocks>
