@@ -12567,4 +12567,6 @@
   <block id="45f450486d575041c747125231750ffe" category="list-title">* 호스트 네트워크 구성 *</block>
   <block id="abe03d597b94a3f77cae3615416163ef" category="list-title">* 추가 요구 사항 완료 *</block>
   <block id="71f5771dab663d80ba4dad1627e3386a" category="paragraph-title">업그레이드 개요</block>
+  <block id="29d5a1c31c94981fab1916121b43f763" category="cell">스토리지 노드 BMC/IPMI</block>
+  <block id="291dd45cc603b1047e92bf5a13259357" category="cell">RMCP 포트. IPMI 지원 시스템을 관리하는 데 필요합니다.</block>
 </blocks>
