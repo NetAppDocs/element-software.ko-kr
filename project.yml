@@ -129,15 +129,15 @@ homepage:
       url: https://mysupport.netapp.com/site/products/all/details/element-software/guideme-tab
   - title: 이전 버전
     links:
-    - title: Element 12.3 문서
-      url: https://docs.netapp.com/us-en/element-software-123/
+    - title: 요소 12.3.x 문서
+      url: https://docs.netapp.com/us-en/element-software-123/index.html
+    - title: Element 12.2.1 설명서
+      url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63945&language=en-US
     - title: 요소 12.2 문서
-      url: https://docs.netapp.com/sfe-122/index.jsp
+      url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63593&language=en-US
+    - title: 요소 12.0.1 문서
+      url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63946&language=en-US
     - title: Element 12.0 문서
-      url: https://docs.netapp.com/sfe-120/index.jsp
-    - title: Element 11.8 문서
-      url: https://docs.netapp.com/sfe-118/index.jsp
-    - title: Element 11.5 문서
-      url: https://docs.netapp.com/sfe-115/index.jsp
-    - title: Element 11.3 문서
-      url: https://docs.netapp.com/sfe-113/index.jsp
+      url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63368&language=en-US
+    - title: Element 11.8.2 및 이전 설명서
+      url: "/element-earlierversions.html"
