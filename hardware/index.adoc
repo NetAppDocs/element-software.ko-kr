@@ -15,6 +15,7 @@ H 시리즈 및 SF 시리즈 하드웨어의 설치 및 유지 관리에 대해 
 
 * xref:concept_h410s_h610s_info.adoc[H410S 및 H610S 하드웨어 정보]
 * xref:concept_sfseries_info.adoc[SF-시리즈 하드웨어 정보]
+* xref:concept_rtfi_configure.html[출하 시 이미지 정보로 돌아갑니다]
 
 
 

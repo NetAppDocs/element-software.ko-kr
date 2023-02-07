@@ -25,3 +25,13 @@ entries:
     url: "/hardware/task_sfseries_driverepl.html"
   - title: 전원 공급 장치를 교체합니다
     url: "/hardware/task_sfseries_psurepl.html"
+- title: 출하 시 이미지 정보로 돌아갑니다
+  entries:
+  - title: 출하 시 이미지로 돌아가기를 구성합니다
+    url: "/hardware/concept_rtfi_configure.html"
+  - title: RTFI 배포 및 설치 옵션
+    url: "/hardware/task_rtfi_deployment_and_install_options.html"
+  - title: RTFI 프로세스
+    url: "/hardware/task_rtfi_process.html"
+  - title: RTFI 옵션 메뉴
+    url: "/hardware/task_rtfi_options_menu.html"

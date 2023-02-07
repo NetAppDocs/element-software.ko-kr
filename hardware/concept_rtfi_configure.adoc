@@ -1,0 +1,40 @@
+---
+permalink: hardware/concept_rtfi_configure.html 
+sidebar: sidebar 
+keywords: rtfi, return, factory, image, nodes, solidfire, software, image 
+summary: NetApp SolidFire 스토리지 시스템은 RTFI 프로세스를 사용하여 소프트웨어 이미지를 새 노드에 쓰거나 노드를 원래 출하 시 상태로 복원합니다. 
+---
+= 출하 시 이미지로 돌아가기를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp SolidFire 스토리지 시스템은 RTFI(Return to Factory Image) 프로세스를 사용하여 새 노드에 소프트웨어 이미지를 작성하거나 노드를 원래 출하 시 상태로 복원합니다. RTFI 프로세스는 기존의 모든 데이터 및 구성(있는 경우)을 안전하게 지우고 구성되지 않은 NetApp Element 소프트웨어 이미지를 설치합니다. RTFI 프로세스는 모든 SolidFire 노드에서 사용할 수 있습니다.
+
+SolidFire 시스템은 모든 Element 소프트웨어 설치에 하나의 RTFI 프로세스를 사용합니다. 여기에는 개발자가 수행하는 내부 수동 설치, 자동화된 프레임워크 테스트를 통한 자동 설치, 서비스 엔지니어 및 고객의 현장 설치, 다양한 통합자 및 파트너가 수행한 설치가 포함됩니다. 사용 중인 섀시 또는 노드 유형에 관계없이 모든 SolidFire 노드에서 동일한 RTFI 프로세스가 사용되어 모든 문제를 자동으로 해결합니다.
+
+이 가이드의 대상 고객은 스토리지 관련 문제를 설치, 구성, 사용 또는 해결하는 통합자입니다.
+
+* Linux: Linux 시스템에 대한 배경 지식이 있습니다.
+* 네트워킹: IP 주소, 넷마스크 및 게이트웨이를 포함하여 서버 네트워킹 및 네트워크 스토리지에 익숙합니다.
+
+
+
+WARNING: RTFI 프로세스는 데이터를 파괴하고 노드에서 모든 데이터 및 구성 정보를 안전하게 지우고 새 운영 체제를 설치합니다. RTFI 프로세스에 사용된 노드가 클러스터의 일부로 활성 상태가 아닌지 확인합니다.
+
+RTFI ISO(International Organization for Standardization) 이미지를 배포 및 설치하고 RTFI 프로세스를 수행합니다.
+
+* xref:task_rtfi_deployment_and_install_options.html[RTFI 배포 및 설치 옵션]
+* xref:task_rtfi_process.html[RTFI 프로세스를 수행합니다]
+* xref:task_rtfi_options_menu.html[RTFI 옵션 메뉴]
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
+
