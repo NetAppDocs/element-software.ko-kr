@@ -40,7 +40,7 @@ RTFI 프로세스가 성공적으로 완료된 후 노드를 구성하려면 를
 
 다음 절차를 사용하여 SolidFire 노드에서 Element 소프트웨어를 복원합니다.
 
-USB 키를 만들거나 BMC를 사용하여 RTFI 프로세스를 수행하는 방법에 대한 자세한 내용은 을 참조하십시오 link:task_rtfi_deployment_and_install_options.html["RTFI 배포 및 설치 옵션"].
+USB 키를 만들거나 BMC를 사용하여 RTFI 프로세스를 수행하는 방법에 대한 자세한 내용은 을 참조하십시오 xref:task_rtfi_deployment_and_install_options.html[RTFI 배포 및 설치 옵션].
 
 .시작하기 전에
 다음 요구 사항을 충족하는지 확인합니다.
@@ -80,7 +80,7 @@ RTFI IMAGE Element 소프트웨어 이름 및 버전 번호가 나타납니다.
 . 초기 프롬프트에서 프로세스가 노드에서 모든 데이터를 제거하고 프로세스가 시작된 후 데이터를 복구할 수 없다는 메시지가 표시됩니다. 시작하려면 * 예 * 를 입력하십시오.
 +
 
-WARNING: 프로세스가 시작된 후 모든 데이터 및 구성 세부 정보가 노드에서 영구적으로 삭제됩니다. 계속하지 않도록 선택하면 로 이동합니다 link:task_rtfi_options_menu.html["RTFI 옵션 메뉴"].
+WARNING: 프로세스가 시작된 후 모든 데이터 및 구성 세부 정보가 노드에서 영구적으로 삭제됩니다. 계속하지 않도록 선택하면 로 이동합니다 xref:task_rtfi_options_menu.html[RTFI 옵션 메뉴].
 
 +
 
@@ -95,7 +95,7 @@ RTFI 프로세스가 완료되고 시스템 전원이 꺼졌음을 알리는 메
 이제 노드의 전원을 켜고 구성할 준비가 되었습니다. 를 참조하십시오 https://docs.netapp.com/us-en/element-software/setup/concept_setup_overview.html["Element 소프트웨어 설정 스토리지 설명서"^] 스토리지 노드를 구성합니다.
 
 +
-RTFI 프로세스 중에 오류 메시지가 나타나면 를 참조하십시오 link:task_rtfi_options_menu.html["RTFI 옵션 메뉴"].
+RTFI 프로세스 중에 오류 메시지가 나타나면 를 참조하십시오 xref:task_rtfi_options_menu.html[RTFI 옵션 메뉴].
 
 
 
