@@ -12628,7 +12628,6 @@
   <block id="9a5aa1da869b4040f524ae9785b78f21" category="list-text">펌웨어 검증 및 업데이트</block>
   <block id="2c3ebc91d3c23ca65bb699ec2b7ccfcf" category="list-text">하드웨어를 확인합니다.</block>
   <block id="2b91c89dcd1e48919f86878407ad759b" category="list-text">하드웨어를 테스트합니다.</block>
-  <block id="efed937b7067e3b9aff1eba0422c2d61" category="list-text">선택한 모든 드라이브를 안전하게 지웁니다.</block>
   <block id="3f534029ecbb9b48b864fc3a278db0fc" category="list-text">루트 드라이브를 파티셔닝하고 파일 시스템을 생성합니다.</block>
   <block id="7c0a0dd3952f3fc7de494542cdc6269b" category="list-text">이미지를 마운트하고 압축을 풉니다.</block>
   <block id="4ce2c84b00ef7e76a2a9152b9d37a5a9" category="list-text">호스트 이름, 네트워킹(동적 호스트 구성 프로토콜), 기본 클러스터 구성 및 GRUB 부트로더를 구성합니다.</block>
@@ -12676,4 +12675,5 @@
   <block id="98f034cb87c1c327b13fbbbb31bc622b" category="paragraph">USB 키를 만들거나 BMC를 사용하여 RTFI 프로세스를 수행하는 방법에 대한 자세한 내용은 을 참조하십시오 <block ref="4761cf42d3167c91f942aaa5770bce7b" category="inline-xref-macro-rx"></block>.</block>
   <block id="a386fc287fd28e52c07d586cfb7aa08b" category="admonition">프로세스가 시작된 후 모든 데이터 및 구성 세부 정보가 노드에서 영구적으로 삭제됩니다. 계속하지 않도록 선택하면 로 이동합니다 <block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block>.</block>
   <block id="d9730da4fb3635f5ccd1c078266c9334" category="paragraph">RTFI 프로세스 중에 오류 메시지가 나타나면 를 참조하십시오 <block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block>.</block>
+  <block id="fe87b6b5d8e86013cf5abe3db7879c77" category="list-text">Secure(보안)를 선택하면 선택한 모든 드라이브가 지워집니다.</block>
 </blocks>
