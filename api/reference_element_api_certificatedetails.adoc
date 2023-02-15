@@ -11,7 +11,7 @@ summary: certificateDetails 개체에는 보안 인증서에 대한 디코딩된
 
 
 [role="lead"]
-certificateDetails 개체에는 보안 인증서에 대한 디코딩된 정보가 들어 있습니다.
+를 클릭합니다 `certificateDetails` Object 보안 인증서에 대한 디코딩된 정보를 포함합니다.
 
 
 
@@ -24,7 +24,7 @@ certificateDetails 개체에는 보안 인증서에 대한 디코딩된 정보�
 
 
  a| 
-발급자
+`issuer`
  a| 
 발급자의 이름입니다.
  a| 
@@ -33,7 +33,7 @@ certificateDetails 개체에는 보안 인증서에 대한 디코딩된 정보�
 
 
  a| 
-모듈러스
+`modulus`
  a| 
 공개 키의 모듈러입니다.
  a| 
@@ -42,7 +42,7 @@ certificateDetails 개체에는 보안 인증서에 대한 디코딩된 정보�
 
 
  a| 
-notAfter
+`notAfter`
  a| 
 인증서의 만료 날짜입니다.
  a| 
@@ -51,7 +51,7 @@ ISO 8601 문자열
 
 
  a| 
-notBefore(앞치다)
+`notBefore`
  a| 
 인증서의 시작 날짜입니다.
  a| 
@@ -60,7 +60,7 @@ ISO 8601 문자열
 
 
  a| 
-일련 번호
+`serial`
  a| 
 인증서 일련 번호입니다.
  a| 
@@ -69,7 +69,7 @@ ISO 8601 문자열
 
 
  a| 
-sha1지문
+`sha1Fingerprint`
  a| 
 DER 인코딩된 인증서 버전의 다이제스트.
  a| 
@@ -78,7 +78,7 @@ DER 인코딩된 인증서 버전의 다이제스트.
 
 
  a| 
-제목
+`subject`
  a| 
 제목 이름입니다.
  a| 

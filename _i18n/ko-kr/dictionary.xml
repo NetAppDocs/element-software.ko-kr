@@ -7625,7 +7625,6 @@
   <block id="72cc2f5d3e5534894d64cec695210bf9" category="paragraph"><block ref="f38748c7ea18ac4df66418ea1982c017" category="inline-xref-macro-rx"></block> 스토리지</block>
   <block id="4f4d5661536c011a5b741adcc4ef375e" category="summary">bulkVolumeJob 객체에는 클론 생성 또는 스냅샷 생성과 같은 대량 볼륨 읽기 또는 쓰기 작업에 대한 정보가 포함되어 있습니다.</block>
   <block id="1d6615a239aa12c4eedb118a5825a76c" category="paragraph">대량 볼륨 작업의 JSON 속성입니다.</block>
-  <block id="f2553a2f3501d5cc5d30d57cc0c0b93a" category="paragraph">벌크 볼륨 ID</block>
   <block id="da0bf234ebace510e62766d4c16cdedb" category="paragraph">내부 벌크 볼륨 작업 ID입니다.</block>
   <block id="1ed2e1b19b6e55d52d2473be17a4afd9" category="paragraph">createTime(createTime)</block>
   <block id="f4c609fc8cfe4b4af500d9b32efdeef8" category="paragraph">UTC+0 형식으로 대량 볼륨 작업에 대해 생성된 타임스탬프입니다.</block>
@@ -9157,18 +9156,12 @@
   <block id="a760798c40863c5d35b9aef77a9841e9" category="list-text">클론 생성: 이 스냅샷은 CopyVolume 작업과 관련되어 있습니다.</block>
   <block id="fcd86fc0f3a4177a09cc909a3d0a9f7f" category="paragraph"><block ref="fcd86fc0f3a4177a09cc909a3d0a9f7f" category="inline-xref-macro-rx"></block></block>
   <block id="b28198827844362b9840eaa3a5887d57" category="summary">certificateDetails 개체에는 보안 인증서에 대한 디코딩된 정보가 들어 있습니다.</block>
-  <block id="3e6c2bc1e7f7e5e8c450394c747a8e9f" category="paragraph">발급자</block>
   <block id="73d85b1c5e216ad3b1af880670cf9dd8" category="paragraph">발급자의 이름입니다.</block>
-  <block id="06efba23b1f3a9b846a25c6b49f30348" category="paragraph">모듈러스</block>
   <block id="56b096d21f789ea9609f940b2a4322a1" category="paragraph">공개 키의 모듈러입니다.</block>
-  <block id="21f1ba3a4a4a624d712b87c23b2fd95a" category="paragraph">notAfter</block>
   <block id="5c8e992f481a2a6e6a603859abf99469" category="paragraph">인증서의 만료 날짜입니다.</block>
-  <block id="cf2c84750b842aaa309ecba4d79ff935" category="paragraph">notBefore(앞치다)</block>
   <block id="7ded06075abb3fd5e744484bb9307bdb" category="paragraph">인증서의 시작 날짜입니다.</block>
   <block id="adc31c3bcfc3c8de65322e54c047705a" category="paragraph">인증서 일련 번호입니다.</block>
-  <block id="b1824a768eb2bedf4deb31cb0dda516e" category="paragraph">sha1지문</block>
   <block id="6dcc496ee5f8b53f4418d8a4857de392" category="paragraph">DER 인코딩된 인증서 버전의 다이제스트.</block>
-  <block id="b5e3374e43f6544852f7751dfc529100" category="paragraph">제목</block>
   <block id="cc6b1cfcd3f0936e0a3eb385e953846c" category="paragraph">제목 이름입니다.</block>
   <block id="cb25cbbf504409da95a6d314cde962a2" category="summary">AddClusterAdmin 메서드를 사용하여 새 클러스터 관리자 계정을 추가할 수 있습니다. 클러스터 관리자는 API 및 관리 툴을 통해 클러스터를 관리할 수 있습니다. 클러스터 관리자는 완전히 분리되어 있으며 표준 테넌트 계정과 관련이 없습니다.</block>
   <block id="cb13336eb98797001e2acc68c3d4acac" category="paragraph">'AddClusterAdmin' 메서드를 사용하여 새 클러스터 관리자 계정을 추가할 수 있습니다. 클러스터 관리자는 API 및 관리 툴을 통해 클러스터를 관리할 수 있습니다. 클러스터 관리자는 완전히 분리되어 있으며 표준 테넌트 계정과 관련이 없습니다.</block>
@@ -9418,20 +9411,14 @@
   <block id="17c0f9d04773952d085fd96c47eb90e0" category="section-title">응답 예(볼륨 메타데이터 드라이브)</block>
   <block id="ebf4d28013a4a1ee4274c5262e594239" category="paragraph">이 메서드는 볼륨 메타데이터 드라이브에 대한 다음 예제와 유사한 응답을 반환합니다.</block>
   <block id="da77bcc62101c9ebe41a2f69ed7a225a" category="summary">authSessionInfo 개체에는 인증 세션에 대한 정보가 들어 있습니다.</block>
-  <block id="82c11ba1b42b51fd5186ac3c7832d4bd" category="paragraph">액세스 그룹 목록</block>
   <block id="c3d46917e290d42cf79506e2c6965017" category="paragraph">사용자의 액세스 그룹 목록입니다.</block>
   <block id="526df192a30d9e2d44f794b48cc12b73" category="list-text">LDAP - LDAP를 통해 인증됩니다.</block>
   <block id="369baf374646153c348856b9bf69414e" category="list-text">클러스터 - 클러스터 데이터베이스에 저장된 사용자 이름 및 암호를 통해 인증됩니다.</block>
   <block id="108afc331184fa4802c5a75fa48d8ab1" category="list-text">IDP - 타사 ID 공급자를 통해 인증되었습니다.</block>
-  <block id="4eec019ba04132017c6c3764134d1ef2" category="paragraph">클러스터 관리자</block>
   <block id="afcdcd750f1faaba6c546e08e1c73321" category="paragraph">이 세션과 연결된 클러스터 관리자 ID의 목록입니다. LDAP 또는 타사 ID 공급자(IDP)와 관련된 세션의 경우 이 세션과 연결된 일치하는 클러스터 관리자 ID의 집계 목록이 됩니다.</block>
-  <block id="fb5b30c6a1ea9f43fae8c0f01394f49f" category="paragraph">최종시간 초과</block>
   <block id="505254db0f83c0910f746d08a7ac99f6" category="paragraph">세션이 유효하지 않게 되는 시간. 세션이 생성될 때 설정되며 변경할 수 없습니다.</block>
-  <block id="35da4f44f342c2e389dd9b58f96947e1" category="paragraph">idpConfigVersion</block>
   <block id="7493515074b71edb089561f159ebb34a" category="paragraph">세션이 생성되었을 때의 IDP 구성 버전입니다.</block>
-  <block id="f48a7a8ee3be3d137267127a48f03a62" category="paragraph">lastAccessTimeout</block>
   <block id="1ed06e45935396a9ca1b25f06cbe7d51" category="paragraph">비활성 상태로 인해 세션이 유효하지 않게 되는 시간이며, 세션 액세스 시 finalTimeout에 도달하여 세션이 유효하지 않게 되는 시간까지 새로운 값으로 설정됩니다.</block>
-  <block id="4dfdaa2c889da42ffa384535c55bad20" category="paragraph">세션 생성 시간</block>
   <block id="565b17feb5f1306aceb85856370e9622" category="paragraph">세션이 생성되는 시간입니다.</block>
   <block id="0ad941b537a927186263b578e28bfd9b" category="paragraph">세션 ID입니다</block>
   <block id="f4d70d668878643ca29fcc21e27945c7" category="paragraph">이 세션의 UUID입니다.</block>
@@ -9826,15 +9813,12 @@
   <block id="ed803bf4b6c9b034d91b1bdcafdf1630" category="paragraph">바인딩 개체에는 가상 볼륨의 바인딩에 대한 정보가 들어 있습니다. 'ListVirtualVolumeBindings' API 메소드를 사용하여 모든 가상 볼륨에 대한 이 정보 목록을 검색할 수 있습니다.</block>
   <block id="09baf477e57e7f3831d71c16e6539e63" category="paragraph">프로토콜종점 ID</block>
   <block id="826c19304258a260f4879fc4acb97655" category="paragraph">프로토콜 끝점의 고유 ID입니다.</block>
-  <block id="c086097777745f6e58e7c869ddec22a4" category="paragraph">프로토콜엔드포인츠반디트</block>
   <block id="8a243326e7441ff313e43923a78d3938" category="paragraph">프로토콜 끝점의 scsiNADeviceID입니다.</block>
   <block id="2451a5f865d1a4f95ca8ac13d9327804" category="paragraph">프로토콜종점 유형</block>
   <block id="39c4c08e56ab2d685095d11aeb7862c5" category="paragraph">프로토콜 엔드포인트 유형입니다. SCSI는 프로토콜 엔드포인트 유형에 대해 반환되는 유일한 값입니다.</block>
-  <block id="ead0832c7060f9a01d951958eea89b12" category="paragraph">가상VolumeBindingID</block>
   <block id="a7fae1ef625697c5a7a612dfdc0dd0d9" category="paragraph">가상 볼륨 바인딩 개체의 고유 ID입니다.</block>
   <block id="853cc9c778b55f73c37ae904ccaf8ca0" category="paragraph">가상볼륨 호스트 ID</block>
   <block id="074caad1387db91896ed65e6b9d15794" category="paragraph">가상 볼륨 호스트의 고유 ID입니다.</block>
-  <block id="a84d0d7286faa74ea242283b2a577249" category="paragraph">virtualVolumeSecondaryID</block>
   <block id="61f0f68050db0e3a705d867283012dc9" category="paragraph">가상 볼륨의 보조 ID입니다.</block>
   <block id="191bb122655686189b83810b68285ebd" category="list-text"><block ref="191bb122655686189b83810b68285ebd" category="inline-xref-macro-rx"></block></block>
   <block id="b21240ab7d678b0017b1e83aa8bf1a54" category="summary">API를 사용할 때 모든 API 요청에 HTTP Basic 인증 헤더를 포함시켜 시스템에서 인증할 수 있습니다. 인증 정보를 생략하면 HTTP 401 응답으로 인증되지 않은 요청이 거부됩니다. 시스템은 TLS를 통한 HTTP Basic 인증을 지원합니다.</block>
@@ -11687,7 +11671,6 @@
   <block id="14cf4fdec399fff89588f21a4a88866e" category="paragraph">노드가 암호화를 지원하는지 여부를 지정합니다.</block>
   <block id="c658b81fa8392ad8358fa7025ef68471" category="paragraph">클러스터에 참여하고 있는 노드</block>
   <block id="aa250ff7f0539ee77ebcbe694fb7ed8e" category="paragraph">노드가 FIPS 140-2 인증 드라이브를 지원하는지 여부를 지정합니다.</block>
-  <block id="9c67fd947bdf4fff7195660e494235a9" category="paragraph">hasLocalAdmin입니다</block>
   <block id="e409ed502bfce3289786dde214400243" category="paragraph">클러스터에 로컬 관리자가 있는지 여부를 지정합니다.</block>
   <block id="ed86fdb4761f4f49f190074a32c13e5a" category="paragraph">노드 관리에 사용되는 네트워크 인터페이스입니다.</block>
   <block id="54a9f14182f9d03b552f882727f9a027" category="paragraph">클러스터의 고유 식별자입니다.</block>
@@ -12676,4 +12659,55 @@
   <block id="a386fc287fd28e52c07d586cfb7aa08b" category="admonition">프로세스가 시작된 후 모든 데이터 및 구성 세부 정보가 노드에서 영구적으로 삭제됩니다. 계속하지 않도록 선택하면 로 이동합니다 <block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block>.</block>
   <block id="d9730da4fb3635f5ccd1c078266c9334" category="paragraph">RTFI 프로세스 중에 오류 메시지가 나타나면 를 참조하십시오 <block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block>.</block>
   <block id="fe87b6b5d8e86013cf5abe3db7879c77" category="list-text">Secure(보안)를 선택하면 선택한 모든 드라이브가 지워집니다.</block>
+  <block id="bc00f70999910793cca72a5ef73422f0" category="paragraph"><block ref="09baf477e57e7f3831d71c16e6539e63" prefix="" category="inline-code"></block></block>
+  <block id="4f6db9bf27ec4feede510bacf8ddd895" category="paragraph"><block ref="c086097777745f6e58e7c869ddec22a4" prefix="" category="inline-code"></block></block>
+  <block id="b480699d7320465070d3fca77728913e" category="paragraph"><block ref="2451a5f865d1a4f95ca8ac13d9327804" prefix="" category="inline-code"></block></block>
+  <block id="34b7e74a069a54a1e4ffcf70f86b3f1b" category="paragraph"><block ref="ead0832c7060f9a01d951958eea89b12" prefix="" category="inline-code"></block></block>
+  <block id="a75e5e3d3f2c0949b2e73a455424475f" category="paragraph"><block ref="853cc9c778b55f73c37ae904ccaf8ca0" prefix="" category="inline-code"></block></block>
+  <block id="dc9b3cdab12de90c933e458b684ea2cb" category="paragraph"><block ref="20d2528785eba01be62c63ef88a34df2" prefix="" category="inline-code"></block></block>
+  <block id="071343dbc99e7d53be5805eed2fea27c" category="paragraph"><block ref="a84d0d7286faa74ea242283b2a577249" prefix="" category="inline-code"></block></block>
+  <block id="cd11615fedd7d5c8dc795d237158ffe3" category="paragraph">를 클릭합니다<block ref="0a9b30c9586139e0c073136d4fd18c70" prefix=" " category="inline-code"></block> Object 보안 인증서에 대한 디코딩된 정보를 포함합니다.</block>
+  <block id="911cdd7166115e429e8e70db0235eac5" category="paragraph"><block ref="3e6c2bc1e7f7e5e8c450394c747a8e9f" prefix="" category="inline-code"></block></block>
+  <block id="b86a341954a6c06a28a76002d65b3475" category="paragraph"><block ref="06efba23b1f3a9b846a25c6b49f30348" prefix="" category="inline-code"></block></block>
+  <block id="1816a44ebe9e35500b1a4ff4f239779c" category="paragraph"><block ref="21f1ba3a4a4a624d712b87c23b2fd95a" prefix="" category="inline-code"></block></block>
+  <block id="908fc73b554678fd09029defca345c56" category="paragraph"><block ref="cf2c84750b842aaa309ecba4d79ff935" prefix="" category="inline-code"></block></block>
+  <block id="601eb78012ee07bb2d1a1f4f756579dd" category="paragraph"><block ref="74136b24217cb75599440e6e1d807cf7" prefix="" category="inline-code"></block></block>
+  <block id="dc1a9e1c0f6c00bb17722cc697bf15b1" category="paragraph"><block ref="b1824a768eb2bedf4deb31cb0dda516e" prefix="" category="inline-code"></block></block>
+  <block id="d417475e5f494306cb8c0eb5b719ac56" category="paragraph"><block ref="b5e3374e43f6544852f7751dfc529100" prefix="" category="inline-code"></block></block>
+  <block id="5b2dcbbe8c405b31e0cdc640023557e4" category="paragraph">를 클릭합니다<block ref="27dc8ad0ed4686d1401b38ad85126f2f" prefix=" " category="inline-code"></block> 객체에는 클론 생성 또는 스냅샷 생성과 같은 대량 볼륨 읽기 또는 쓰기 작업에 대한 정보가 포함되어 있습니다.</block>
+  <block id="126f16f91505e64f86d9db2c760ac5db" category="paragraph"><block ref="f2553a2f3501d5cc5d30d57cc0c0b93a" prefix="" category="inline-code"></block></block>
+  <block id="40aef4b729106c75a0482b701239db2f" category="paragraph"><block ref="1ed2e1b19b6e55d52d2473be17a4afd9" prefix="" category="inline-code"></block></block>
+  <block id="79b0fc8232087a8f03086cf06b588075" category="paragraph"><block ref="dad566b38c7c4c71d805927e9fff2732" prefix="" category="inline-code"></block></block>
+  <block id="703769be5e6210b6a2b6b99e92112954" category="paragraph"><block ref="1ddcb92ade31c8fbd370001f9b29a7d9" prefix="" category="inline-code"></block></block>
+  <block id="b5f22048829ef6db41cb34c651f96faa" category="paragraph"><block ref="3c6e0b8a9c15224a8228b9a98ca1531d" prefix="" category="inline-code"></block></block>
+  <block id="e1e059b40b75849ff9dc719eda5e6c12" category="paragraph"><block ref="69f891d47e66aaa0a968e3fbd070d4a5" prefix="" category="inline-code"></block></block>
+  <block id="0098d750e60da9805e878840bb54382c" category="paragraph"><block ref="ab9b69f140a1e5d13d4862be384ae223" prefix="" category="inline-code"></block></block>
+  <block id="b00941d91b64405f0e06c47a2bed5051" category="paragraph"><block ref="87a17a82989223258916f440886481da" prefix="" category="inline-code"></block></block>
+  <block id="cf9f9fbbb24544659ae4b59937ecb570" category="paragraph"><block ref="9acb44549b41563697bb490144ec6258" prefix="" category="inline-code"></block></block>
+  <block id="f69685a2b9996f27af921b74f37fc276" category="paragraph"><block ref="3205c0ded576131ea255ad2bd38b0fb2" prefix="" category="inline-code"></block></block>
+  <block id="415ce7b551e9decd6aac5fb465bd367b" category="paragraph"><block ref="599dcce2998a6b40b1e38e8c6006cb0a" prefix="" category="inline-code"></block></block>
+  <block id="12429662b50426169e15a3a0bd812b77" category="paragraph">를 클릭합니다<block ref="e268443e43d93dab7ebef303bbe9642f" prefix=" " category="inline-code"></block> Object 계정에 대한 정보를 포함합니다. 이 개체에는 계정에 대한 "구성된" 정보만 포함되며 런타임 또는 사용 정보는 포함되지 않습니다.</block>
+  <block id="0dda361a1e4bd829ec9b993595439c8e" category="paragraph"><block ref="b5e57de5ff2c469efbf205bb99834e4f" prefix="" category="inline-code"></block></block>
+  <block id="41f57963afb778a9cf4af334962398d7" category="paragraph">를 클릭합니다<block ref="9a43554262146ce04817985e50c7f70c" prefix=" " category="inline-code"></block> Object 인증 세션에 대한 정보를 포함합니다.</block>
+  <block id="9743ba415832304c7f52901372714d6e" category="paragraph"><block ref="82c11ba1b42b51fd5186ac3c7832d4bd" prefix="" category="inline-code"></block></block>
+  <block id="65b21ce2c38e6e4f476acbc8ea9ce384" category="paragraph"><block ref="304a19f5c3e0f3f28ed7e5b4fb7d8d2a" prefix="" category="inline-code"></block></block>
+  <block id="2e952bf746164dfd12e866f3dbd95eec" category="paragraph"><block ref="4eec019ba04132017c6c3764134d1ef2" prefix="" category="inline-code"></block></block>
+  <block id="1e1823963d07a2a9ba48e6b2ab3650cc" category="paragraph"><block ref="fb5b30c6a1ea9f43fae8c0f01394f49f" prefix="" category="inline-code"></block></block>
+  <block id="d6f258a79c95d563a0c1a60d24eb84be" category="paragraph"><block ref="35da4f44f342c2e389dd9b58f96947e1" prefix="" category="inline-code"></block></block>
+  <block id="94afa8129819dea3954e0bcf8f7ab7d6" category="paragraph"><block ref="f48a7a8ee3be3d137267127a48f03a62" prefix="" category="inline-code"></block></block>
+  <block id="613b7cd1773d945213f4a726f91f33a8" category="paragraph"><block ref="4dfdaa2c889da42ffa384535c55bad20" prefix="" category="inline-code"></block></block>
+  <block id="8afa9e195204d51d1efe73295a663915" category="paragraph"><block ref="0ad941b537a927186263b578e28bfd9b" prefix="" category="inline-code"></block></block>
+  <block id="b0c8b2bc285eb35c1d17ebbae099e249" category="paragraph">를 클릭합니다<block ref="545969892e468dfdfc30bb51ffc1c34c" prefix=" " category="inline-code"></block> Object는 노드가 클러스터와 통신하는 데 사용하는 정보를 반환합니다.</block>
+  <block id="a38be2de7d274cb8f8108c988ad1c46c" category="paragraph"><block ref="9d08802b313fb8797710d67e55eab896" prefix="" category="inline-code"></block></block>
+  <block id="fa1b1a3e69fb166e323727016fdf6333" category="paragraph"><block ref="a43baddbf2cfaa154f9947e47ee1bfe7" prefix="" category="inline-code"></block></block>
+  <block id="099b42f75c3fbe5c8a528cddcf8819d8" category="paragraph"><block ref="52406e4baf76901e487aadaec67e88ea" prefix="" category="inline-code"></block></block>
+  <block id="d6498c1d07f3702d50a3040ed94f4c63" category="paragraph"><block ref="97ebf541060790cce82e6c290f39469d" prefix="" category="inline-code"></block></block>
+  <block id="9f114e4fa4e7a73268f48f07ea634b02" category="paragraph"><block ref="9c67fd947bdf4fff7195660e494235a9" prefix="" category="inline-code"></block></block>
+  <block id="846405f66574e2c563fc65824e44736b" category="paragraph"><block ref="bc78880f602551cf8a3b259a0c962334" prefix="" category="inline-code"></block></block>
+  <block id="1c63edaccfcb01f1b29cad1cde92f5fd" category="paragraph"><block ref="62ba2c7a16dc89d75e021db678437e35" prefix="" category="inline-code"></block></block>
+  <block id="e31c0062aabb26e49279bbec3cbeb4ed" category="paragraph"><block ref="211df989e77735e4541c48f3cfd7e7b4" prefix="" category="inline-code"></block></block>
+  <block id="6739976c44cd4126fc58284566f9b7d2" category="paragraph"><block ref="29a7e96467b69a9f5a93332e29e9b0de" prefix="" category="inline-code"></block></block>
+  <block id="6232a2f1b30c3036b5c008529bc21aef" category="paragraph"><block ref="cfc64b55d03850e2ab017f7286375f5d" prefix="" category="inline-code"></block></block>
+  <block id="01e67269f053fa497a470b13c81ac40c" category="paragraph"><block ref="9ed39e2ea931586b6a985a6942ef573e" prefix="" category="inline-code"></block></block>
+  <block id="7877022c956918624cc0373ff564cad4" category="paragraph"><block ref="2af72f100c356273d46284f6fd1dfc08" prefix="" category="inline-code"></block></block>
 </blocks>
