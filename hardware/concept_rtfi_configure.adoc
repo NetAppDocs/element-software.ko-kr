@@ -26,9 +26,9 @@ WARNING: RTFI 프로세스는 데이터를 파괴하고 노드에서 모든 데�
 
 RTFI ISO(International Organization for Standardization) 이미지를 배포 및 설치하고 RTFI 프로세스를 수행합니다.
 
-* xref:task_rtfi_deployment_and_install_options.html[RTFI 배포 및 설치 옵션]
-* xref:task_rtfi_process.html[RTFI 프로세스를 수행합니다]
-* xref:task_rtfi_options_menu.html[RTFI 옵션 메뉴]
+* xref:task_rtfi_deployment_and_install_options.adoc[RTFI 배포 및 설치 옵션]
+* xref:task_rtfi_process.adoc[RTFI 프로세스를 수행합니다]
+* xref:task_rtfi_options_menu.adoc[RTFI 옵션 메뉴]
 
 
 

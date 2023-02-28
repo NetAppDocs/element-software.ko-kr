@@ -31,7 +31,7 @@ RTFI 프로세스가 성공적으로 완료된 후 노드를 구성하려면 를
 
 다음 절차를 사용하여 SolidFire 노드에서 Element 소프트웨어를 복원합니다.
 
-USB 키를 만들거나 BMC를 사용하여 RTFI 프로세스를 수행하는 방법에 대한 자세한 내용은 을 참조하십시오 xref:task_rtfi_deployment_and_install_options.html[RTFI 배포 및 설치 옵션].
+USB 키를 만들거나 BMC를 사용하여 RTFI 프로세스를 수행하는 방법에 대한 자세한 내용은 을 참조하십시오 xref:task_rtfi_deployment_and_install_options.adoc[RTFI 배포 및 설치 옵션].
 
 .시작하기 전에
 다음 요구 사항을 충족하는지 확인합니다.
