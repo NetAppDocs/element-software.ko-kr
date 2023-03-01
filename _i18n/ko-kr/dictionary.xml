@@ -3630,9 +3630,6 @@
   <block id="a23d42b46090c0d289cfaae83fb666a0" category="paragraph">계정에 할당된 볼륨의 전체 효율성 점수입니다.</block>
   <block id="25145b9df35ba6ef8386c92cbc7e67aa" category="summary">NetApp Support에 문의하여 예비 단계를 완료한 후 전체 클러스터의 전원을 끕니다.</block>
   <block id="d3dc741b1e26e016be52c0a55b325fda" category="doc">클러스터 전원을 끕니다</block>
-  <block id="7e75e710e04194aacb5b7f056ec5e471" category="paragraph">다음을 수행하여 클러스터를 종료할 준비를 합니다.</block>
-  <block id="7bf4e8d030b2c47061505b2052e7e3c8" category="list-text">모든 I/O를 중지합니다</block>
-  <block id="c1fc137e8581e89d2a694ed758b29c11" category="list-text">모든 iSCSI 세션의 연결을 해제합니다.</block>
   <block id="52774163f10fbc297ca1a2188d7b81c9" category="list-text">클러스터의 관리 가상 IP(MVIP) 주소로 이동하여 Element UI를 엽니다.</block>
   <block id="ecb5391ff71658726fe4fbade2f9af5e" category="list-text">노드 목록에 나열된 노드를 확인합니다.</block>
   <block id="7a9ac18ef12501dac2ab0cc718dd03a4" category="list-text">클러스터의 각 노드 ID에 지정된 중지 옵션으로 Shutdown API 메서드를 실행합니다.</block>
@@ -12725,4 +12722,15 @@
   <block id="51de7a2a44178422229997edab051ac7" category="list-text"><block ref="51de7a2a44178422229997edab051ac7" category="inline-xref-macro-rx"></block></block>
   <block id="8f047e2b521fd8a37be46c7a429ab25b" category="list-text"><block ref="8f047e2b521fd8a37be46c7a429ab25b" category="inline-xref-macro-rx"></block></block>
   <block id="c2350b958761f326a00bd673fc30fdae" category="list-text"><block ref="c2350b958761f326a00bd673fc30fdae" category="inline-xref-macro-rx"></block></block>
+  <block id="57d4d715f0b6238380a88647e5064ab7" category="paragraph">전체 클러스터의 전원을 차단하려면 다음 절차를 수행하십시오.</block>
+  <block id="69824b5487e4b72a56fe97cb153b7404" category="list-text">(선택 사항) 사전 단계를 완료하는 데 도움이 필요하면 NetApp 지원에 문의하십시오.</block>
+  <block id="f901f3a344a86528165d6bab6500fbc5" category="list-text">모든 입출력이 중지되었는지 확인합니다.</block>
+  <block id="f0b8c58f8c65aac7a69a51384ac1a649" category="list-text">모든 iSCSI 세션 연결 끊기:</block>
+  <block id="391aec42faef3b52d4eaaefa153733b2" category="paragraph">클러스터를 재시작할 때 모든 노드가 온라인 상태인지 확인하려면 특정 단계를 수행해야 합니다.</block>
+  <block id="56312700a2d03ce6cacae049f3294807" category="list-text">모든 Critical severity 및 를 확인합니다<block ref="945c53fff9195b4e69a31c30b6a268c6" prefix=" " category="inline-code"></block> 클러스터 장애가 해결되었습니다.</block>
+  <block id="6331b65d2bb9f0f39b6e8331e5b2c669" category="list-text">클러스터가 안정될 때까지 10~15분 정도 기다립니다.</block>
+  <block id="301bf6ea727a40a8d5cc8608cc0c41d7" category="list-text">데이터 액세스를 위해 호스트를 시작합니다.</block>
+  <block id="c192e3c2dbd374233d4685406db01520" category="paragraph">노드 전원을 켜고 상태가 양호한지 확인하는 데 더 많은 시간을 할애하려면 기술 지원 부서에 문의하여 불필요한 입력 용지함 동기화를 방지하기 위해 데이터 동기화를 지연하는 방법에 대해 문의하십시오.</block>
+  <block id="eef615f9029df3b19885b836d67d03a3" category="inline-link">NetApp Solidfire/HCI 스토리지 클러스터를 올바르게 종료하고 전원을 켜는 방법</block>
+  <block id="b8c22947a9d726cf79f399d361ecc7a2" category="paragraph"><block ref="b8c22947a9d726cf79f399d361ecc7a2" category="inline-link-rx"></block></block>
 </blocks>
