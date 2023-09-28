@@ -34,7 +34,7 @@ summary: GetProtectionDomainLayout 메서드를 사용하면 각 노드의 섀�
  a| 
 각 노드에 연결된 보호 도메인이 있는 노드 목록입니다.
  a| 
-의 JSON 목록 link:reference_element_api_nodeprotectiondomains.md#GUID-3750B3B8-6A66-402F-85F1-E828005084BB["노드 보호도메인"] 오브젝트.
+의 JSON 목록 link:reference_element_api_nodeprotectiondomains.html["노드 보호도메인"] 오브젝트.
 
 |===
 

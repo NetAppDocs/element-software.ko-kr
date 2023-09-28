@@ -31,19 +31,11 @@ SolidFire 시스템은 다음과 같은 기능을 제공합니다.
 
 
 
-== SolidFire 구축 옵션
+== SolidFire 구축
 
-SolidFire은 다양한 구축 옵션을 제공합니다.
+NetApp에서 제공하고 NetApp Element 소프트웨어와 통합된 스토리지 노드를 사용합니다.
 
-* NetApp에서 제공하고 NetApp Element 소프트웨어와 통합된 스토리지 노드를 사용합니다
-+
 link:../concepts/concept_solidfire_concepts_solidfire_architecture_overview.html["SolidFire All-Flash 스토리지 아키텍처 개요"]
-
-* 컨테이너화된 SolidFire 엔터프라이즈 SDS를 사용하여 자체 서버를 사용하여 Element 소프트웨어를 실행합니다
-+
-link:../esds/concept_get_started_esds.html["NetApp SolidFire 엔터프라이즈 SDS를 시작하십시오"]
-
-
 
 
 

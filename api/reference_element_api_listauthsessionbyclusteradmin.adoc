@@ -52,7 +52,7 @@ summary: ListAuthSessionsByClusterAdmin 메서드를 사용하여 지정된 Clus
  a| 
 인증 세션에 대한 세션 정보 목록입니다.
  a| 
-link:reference_element_api_authsessioninfo.md#GUID-FF0CE38C-8F99-4F23-8A6F-F6EA4487E808["AuthSessionInfo 를 참조하십시오"]
+link:reference_element_api_authsessioninfo.html["AuthSessionInfo 를 참조하십시오"]
 
 |===
 

@@ -90,7 +90,7 @@ KmipKeyServers를 선택합니다
  a| 
 KMIP 키 서버가 생성된 전체 목록입니다.
  a| 
-link:reference_element_api_keyserverkmip.md#["KeyServerKmip"] 스토리지
+link:reference_element_api_keyserverkmip.html["KeyServerKmip"] 스토리지
 
 |===
 

@@ -102,5 +102,5 @@ ID입니다
 == 자세한 내용을 확인하십시오
 
 * xref:reference_monitor_cluster_fault_codes.adoc[클러스터 고장 코드]
-* link:api/index.html["Element API를 사용하여 스토리지를 관리합니다"]
+* link:../api/index.html["Element API를 사용하여 스토리지를 관리합니다"]
 

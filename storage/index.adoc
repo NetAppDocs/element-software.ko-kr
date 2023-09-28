@@ -19,7 +19,7 @@ Element 소프트웨어를 사용하여 SolidFire 스토리지를 설정하고, 
 
 * link:task_post_deploy_access_the_element_software_user_interface.html["Element 소프트웨어 사용자 인터페이스에 액세스합니다"]
 * link:task_post_deploy_configure_system_options.html["구축 후 SolidFire 시스템 옵션을 구성합니다"]
-* link:concept_upgrade_storage_components.html["스토리지 시스템 구성 요소 업그레이드"]
+* link:../upgrade/concept_element_upgrade_overview.html["스토리지 시스템 구성 요소 업그레이드"]
 * link:task_intro_use_basic_options_in_the_element_software_ui.html["Element 소프트웨어 UI에서 기본 옵션을 사용합니다"]
 * link:concept_system_manage_accounts_overview.html["계정 관리"]
 * link:concept_system_manage_system_management.html["시스템 관리"]

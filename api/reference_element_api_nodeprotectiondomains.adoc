@@ -37,6 +37,6 @@ nodeProtectionDomains 개체에는 노드를 식별하는 정보와 해당 노�
  a| 
 노드가 구성원인 보호 도메인의 목록입니다.
  a| 
-link:reference_element_api_protectiondomain.md#GUID-96388C5C-ACA2-44D9-86CE-19FEF0825A11["보호 도메인"]
+link:reference_element_api_protectiondomain.html["보호 도메인"]
 
 |===

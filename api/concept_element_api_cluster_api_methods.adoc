@@ -29,7 +29,6 @@ Element 소프트웨어 클러스터 API 메서드를 사용하면 스토리지 
 * xref:reference_element_api_getclusterstats.adoc[GetClusterStats 를 참조하십시오]
 * xref:reference_element_api_getclusterversioninfo.adoc[GetClusterVersionInfo 를 참조하십시오]
 * xref:reference_element_api_getfeaturestatus.adoc[GetFeatureStatus 를 참조하십시오]
-* xref:reference_element_api_getlicensekey.adoc[GetLicenseKey 를 참조하십시오]
 * xref:reference_element_api_getloginsessioninfo.adoc[GetLoginSessionInfo 를 참조하십시오]
 * xref:reference_element_api_getnodehardwareinfo.adoc[GetNodeHardwareInfo 를 참조하십시오]
 * xref:reference_element_api_getnodestats.adoc[GetNodeStats 를 참조하십시오]
@@ -46,7 +45,6 @@ Element 소프트웨어 클러스터 API 메서드를 사용하면 스토리지 
 * xref:reference_element_api_modifyclusterfullthreshold.adoc[ModifyClusterFullThreshold를 참조하십시오]
 * xref:reference_element_api_modifyclusterinterfacepreference.adoc[ModifyClusterInterfacePreference를 선택합니다]
 * xref:reference_element_api_removenodes.adoc[노드 제거]
-* xref:reference_element_api_setlicensekey.adoc[SetLicenseKey를 선택합니다]
 * xref:reference_element_api_setloginsessioninfo.adoc[SetLoginSessionInfo 를 참조하십시오]
 * xref:reference_element_api_cluster_shutdown.adoc[종료]
 

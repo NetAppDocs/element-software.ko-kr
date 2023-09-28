@@ -42,7 +42,7 @@ REST API로 수행할 수 있는 작업:
 
 * link:task_mnode_edit_vcenter_assets.html["기존 컨트롤러 자산을 보거나 편집합니다"]
 * link:task_mnode_manage_storage_cluster_assets.html["스토리지 클러스터 자산을 생성하고 관리합니다"]
-* link:hccstorage/task-hcc-collectlogs.html#use-the-rest-api-to-collect-netapp-hci-logs["REST API를 사용하여 Element 시스템 로그를 수집합니다"]
+* link:../hccstorage/task-hcc-collectlogs.html#use-the-rest-api-to-collect-netapp-hci-logs["REST API를 사용하여 Element 시스템 로그를 수집합니다"]
 * link:task_mnode_api_find_mgmt_svcs_version.html["관리 노드 OS 및 서비스 버전을 확인합니다"]
 * link:task_mnode_logs.html["관리 서비스에서 로그를 가져오는 중입니다"]
 

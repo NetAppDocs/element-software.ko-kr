@@ -78,7 +78,7 @@ idpConfigInfos
  a| 
 타사 IDP 구성에 대한 정보입니다.
  a| 
-link:reference_element_api_idpconfiginfo.md#GUID-7DAF8B5D-7803-417F-822B-F5B1A4E3EA93["idpConfigInfo"] 스토리지
+link:reference_element_api_idpconfiginfo.html["idpConfigInfo"] 스토리지
 
 |===
 

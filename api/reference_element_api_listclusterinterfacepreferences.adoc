@@ -14,9 +14,6 @@ summary: ListClusterInterfacePreference 메서드를 사용하면 Element 소프
 "ListClusterInterfacePreference" 방법을 사용하면 Element 소프트웨어를 실행하는 스토리지 클러스터와 통합된 시스템에서 시스템에 저장된 기존 클러스터 인터페이스 기본 설정을 나열할 수 있습니다. 이 방법은 내부용으로 사용됩니다.
 
 
-NOTE: SolidFire 엔터프라이즈 SDS는 이 방법을 지원하지 않습니다. SolidFire ESDS 시스템에서 이 메서드를 사용하면 메서드가 오류를 반환합니다.
-
-
 
 == 매개 변수
 

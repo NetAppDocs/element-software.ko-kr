@@ -17,7 +17,7 @@ summary:
 
 == 저작권
 
-http://www.netapp.com/us/legal/copyright.aspx[]
+link:https://www.netapp.com/company/legal/copyright/["https://www.netapp.com/company/legal/copyright/"^]
 
 
 
@@ -25,7 +25,7 @@ http://www.netapp.com/us/legal/copyright.aspx[]
 
 NetApp, NetApp 로고, NetApp 상표 페이지에 나열된 마크는 NetApp Inc.의 상표입니다. 기타 회사 및 제품 이름은 해당 소유자의 상표일 수 있습니다.
 
-http://www.netapp.com/us/legal/netapptmlist.aspx[]
+link:https://www.netapp.com/company/legal/trademarks/["https://www.netapp.com/company/legal/trademarks/"^]
 
 
 
@@ -33,13 +33,13 @@ http://www.netapp.com/us/legal/netapptmlist.aspx[]
 
 NetApp 소유 특허 목록은 다음 사이트에서 확인할 수 있습니다.
 
-https://www.netapp.com/us/media/patents-page.pdf[]
+link:https://www.netapp.com/pdf.html?item=/media/11887-patentspage.pdf["https://www.netapp.com/pdf.html?item=/media/11887-patentspage.pdf"^]
 
 
 
 == 개인 정보 보호 정책
 
-https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
+link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.com/company/legal/privacy-policy/"^]
 
 
 
@@ -51,10 +51,10 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 * link:./media/Ember_OS_12.7.pdf["Ember OS 12.7에 대한 고지 사항"^]
 * link:./media/mNode_12.7.pdf["관리 노드 12.7에 대한 고지 사항"^]
 * link:./media/Element_Software_12.5.pdf["Element 소프트웨어 12.5에 대한 고지 사항"^]
-* link:./media/SolidFire_eSDS_12.5.pdf["NetApp SolidFire 엔터프라이즈 SDS 12.5에 대한 고지 사항"^]
 * link:./media/mNode_12.5.pdf["관리 노드 12.5에 대한 고지 사항"^]
-* link:media/mgmt_svcs_2.22_notice.pdf["관리 서비스 2.22.7 공지(VMware vCenter Server 5.0.37용 NetApp Element 플러그인)"^]
-* link:media/mgmt_svcs_2.21_notice.pdf["관리 서비스 공지 2.21.61(VMware vCenter Server용 NetApp Element 플러그인 4.10.12)"^]
+* link:./media/mgmt_svcs_2.23_notice.pdf["관리 서비스 2.23.64 알림(VMware vCenter Server 5.1.12용 NetApp Element 플러그인)"^]
+* link:./media/mgmt_svcs_2.22_notice.pdf["관리 서비스 2.22.7 공지(VMware vCenter Server 5.0.37용 NetApp Element 플러그인)"^]
+* link:./media/mgmt_svcs_2.21_notice.pdf["관리 서비스 공지 2.21.61(VMware vCenter Server용 NetApp Element 플러그인 4.10.12)"^]
 * link:./media/mgmt_2.20_notice.pdf["관리 서비스 공지 2.20.69(vCenter Server 4.9.14용 NetApp Element 플러그인)"^]
 * link:./media/mgmt_2.19_notice.pdf["관리 서비스 공지 2.19.48(vCenter Server 4.8.34용 NetApp Element 플러그인)"^]
 * link:./media/mgmt_svcs_2.18.pdf["관리 서비스 공지 2.18.91(vCenter Server 4.7.10용 NetApp Element 플러그인)"^]
@@ -63,7 +63,7 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 * link:./media/mgmt-216.pdf["관리 서비스 참고 사항 2.16(vCenter Server용 NetApp Element 플러그인 4.6.29)"^]
 * link:./media/mgmt-214.pdf["관리 서비스 2.14(vCenter Server 4.5.42용 NetApp Element 플러그인)에 대한 고지 사항"^]
 * link:./media/mgmt-213.pdf["관리 서비스 2.13에 대한 고지 사항(vCenter Server 4.5.42용 NetApp Element 플러그인)"^]
-* link:./media/SolidFire_eSDS_12.5.pdf["NetApp SolidFire 엔터프라이즈 SDS에 대한 고지 사항"^]
+* link:./media/storage_firmware_bundle_2.175.0_notices.pdf["스토리지 펌웨어 번들 2.175.0에 대한 고지 사항"^]
 * link:./media/storage_firmware_bundle_2.164.0_notices.pdf["스토리지 펌웨어 번들 2.164.0에 대한 고지 사항"^]
 * link:./media/storage_firmware_bundle_2.150_notices.pdf["스토리지 펌웨어 번들 2.150에 대한 고지 사항"^]
 * link:./media/storage_firmware_bundle_2.146_notices.pdf["스토리지 펌웨어 번들 2.146에 대한 고지 사항"^]

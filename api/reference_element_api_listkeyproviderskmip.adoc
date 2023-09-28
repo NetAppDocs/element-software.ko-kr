@@ -77,7 +77,7 @@ KmipKeyProviders 를 참조하십시오
  a| 
 KMIP 키 공급자 목록이 생성되었습니다.
  a| 
-link:reference_element_api_keyproviderkmip.md#["키ProviderKmip 을 참조하십시오"] 스토리지
+link:reference_element_api_keyproviderkmip.html["키ProviderKmip 을 참조하십시오"] 스토리지
 
 |===
 

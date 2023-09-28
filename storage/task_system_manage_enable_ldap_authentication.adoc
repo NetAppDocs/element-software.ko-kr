@@ -31,7 +31,7 @@ NOTE: 옵션 사용자 지정 포트 번호를 입력할 수도 있습니다.
 . LDAPS 프로토콜 사용 * 을 선택합니다.
 . 일반 설정 * 에 필요한 정보를 입력합니다.
 +
-link:reference_system_manage_ldap_details.md#["LDAP 세부 정보입니다"]
+link:concept_system_manage_manage_ldap.html#view_ldap_details["LDAP 세부 정보입니다"]
 
 +
 image::../media/element_new_ldap_servers.jpg[Element 새 LDAP 서버]
@@ -59,8 +59,10 @@ image::../media/element_new_cluster_admin.jpg[새로운 클러스터 관리자 �
 
 이를 테스트하려면 Element UI에서 로그아웃한 후 해당 그룹의 사용자로 다시 로그인합니다.
 
-* 관련 정보 *
 
-xref:task_system_manage_create_a_cluster_administrator_account.adoc[클러스터 관리자 계정을 생성합니다]
 
-xref:reference_system_manage_ldap_details.adoc[LDAP 세부 정보입니다]
+== 관련 정보
+
+* link:concept_system_manage_manage_cluster_administrator_users.html#create_cluster_admin_account["클러스터 관리자 계정을 생성합니다"]
+* link:concept_system_manage_manage_ldap.html#view_ldap_details["LDAP 세부 정보입니다"]
+

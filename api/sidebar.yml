@@ -271,8 +271,6 @@ entries:
     url: "/api/reference_element_api_getclusterversioninfo.html"
   - title: GetFeatureStatus 를 참조하십시오
     url: "/api/reference_element_api_getfeaturestatus.html"
-  - title: GetLicenseKey 를 참조하십시오
-    url: "/api/reference_element_api_getlicensekey.html"
   - title: GetLoginSessionInfo 를 참조하십시오
     url: "/api/reference_element_api_getloginsessioninfo.html"
   - title: GetNodeHardwareInfo 를 참조하십시오
@@ -305,8 +303,6 @@ entries:
     url: "/api/reference_element_api_modifyclusterinterfacepreference.html"
   - title: 노드 제거
     url: "/api/reference_element_api_removenodes.html"
-  - title: SetLicenseKey를 선택합니다
-    url: "/api/reference_element_api_setlicensekey.html"
   - title: SetLoginSessionInfo 를 참조하십시오
     url: "/api/reference_element_api_setloginsessioninfo.html"
   - title: 종료
