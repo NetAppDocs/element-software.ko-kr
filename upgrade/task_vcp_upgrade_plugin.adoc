@@ -31,7 +31,7 @@ NOTE: 관리 서비스 2.22.7에는 원격 플러그인이 포함된 vCenter Ser
 * 8.0 또는 7.0 HTML5 vSphere Web Client로 업그레이드하는 중입니다.
 +
 
-IMPORTANT: vCenter 5.0 이상의 Element 플러그인은 vCenter Server 6.7 및 6.5와 호환되지 않습니다.
+IMPORTANT: vCenter 5.0 이상용 Element 플러그인은 vCenter Server 6.7 및 6.5와 호환되지 않습니다.
 
 
 

@@ -84,7 +84,6 @@
   <block id="e73f633d7130bda90fdf8bdfb25a7568" category="paragraph">iSCSI 클라이언트</block>
   <block id="dc00b10af56d2a7366b04770c01c14c2" category="paragraph">스토리지 클러스터 MVIP</block>
   <block id="9d1964604a628a56c31d007f1f2340fb" category="paragraph">(선택 사항) UI 및 API 액세스</block>
-  <block id="00a55ff76496c3c45ca20071f6151bfc" category="paragraph">monitoring.solidfire.com</block>
   <block id="6ac181854a8b48c5ac6018a305f6ae7c" category="paragraph">스토리지 클러스터가 Active IQ에 보고됩니다</block>
   <block id="5ee0194e49d16c87d081efc156fb0d74" category="paragraph">원격 스토리지 클러스터 MVIP</block>
   <block id="75a4d5a956df2844befb13a89867e179" category="paragraph">원격 복제 클러스터 페어링 통신</block>
@@ -1220,7 +1219,6 @@
   <block id="13f3cf8c531952d72e5847c4183e6910" category="paragraph">443</block>
   <block id="d54ce9de9df77c579775a7b6b1a4bdc0" category="paragraph">3260</block>
   <block id="980b3703717b76269490b885f315bb88" category="paragraph">스토리지 노드 SIP</block>
-  <block id="43638993383f845bcd8925bd4e266bc9" category="paragraph">sfsupport.solidfire.com</block>
   <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="paragraph">22</block>
   <block id="54ea06f86e263d9bc3ed3b50598bbf94" category="paragraph">지원 액세스를 위한 역방향 SSH 터널</block>
   <block id="96cfb6e2eafa2acea9be9443ff8808e3" category="paragraph">지원을 위한 SSH 액세스</block>
@@ -6884,7 +6882,6 @@
   <block id="11e18bb72465b19d35f1a1fb2d9a5ccc" category="paragraph">작업이 시작된 후 경과 시간(초)입니다.</block>
   <block id="1ddcb92ade31c8fbd370001f9b29a7d9" category="paragraph">형식</block>
   <block id="e553196c9c6aca88c9d5001211caacb9" category="paragraph">대량 볼륨 작업의 형식입니다. 가능한 값:</block>
-  <block id="2b98a4ad988a18c42682f388901f2672" category="list-text">압축</block>
   <block id="8e5f3adee38c8fccc13c1f3be0143796" category="list-text">네이티브</block>
   <block id="3c6e0b8a9c15224a8228b9a98ca1531d" category="paragraph">키</block>
   <block id="7a5bc9d962882cb35fcea421f3f78bd9" category="paragraph">벌크 볼륨 세션에서 생성한 고유 키입니다.</block>
@@ -11466,7 +11463,6 @@
   <block id="af5fe52fe204cf15311c07d5bf36b9a1" category="paragraph">vCenter Server 4.x용 Element 플러그인을 사용하면 VMware vCenter Server 7.0 Update 3으로 업그레이드할 때 플러그인을 구축할 수 없습니다. Spring Framework 4를 사용하여 이 문제를 해결하려면 을 참조하십시오<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>.</block>
   <block id="9b50fd8de96fcf38bc35a026df14fbc4" category="paragraph">VMware vCenter Server용 NetApp Element 플러그인이 등록된 기존 vSphere 환경의 경우 플러그인 서비스가 포함된 관리 서비스 패키지를 먼저 업데이트한 후 플러그인 등록을 업데이트할 수 있습니다.</block>
   <block id="1ec8160ad002d3b57b0367c162c7e579" category="open-title">Element vCenter Plug-in 5.0 이상</block>
-  <block id="787e0e54cc17d9dd6bbd7cf4c4fbc14d" category="admonition">vCenter 5.0 이상의 Element 플러그인은 vCenter Server 6.7 및 6.5와 호환되지 않습니다.</block>
   <block id="e6d87bbd73a5a86fcf1e6cbc75296808" category="open-title">Element vCenter 플러그인 4.10 이하</block>
   <block id="524f8acc9609df7272285a19757aefcb" category="list-text">vCenter Server 4.10, 4.9, 4.8, 4.7, 4.6 용 Element 플러그인으로 업그레이드하려는 경우 4.5 또는 4.4.</block>
   <block id="c0e80cf197d1adf76fef790848a92f8f" category="list-text">이 플러그인은 VMware vCenter Server 4.x용 Element Plug-in용 VMware vCenter Server 8.0과 호환되지 않습니다</block>
@@ -12017,4 +12013,8 @@
   <block id="eea7cb3a63edf642e1f15162351dfce7" category="list-text">vCenter Server 5.2, 5.1 또는 5.0용 Element 플러그인으로 업그레이드하려고 합니다.</block>
   <block id="c9c6a2f6fa07c1f8c580586914c37e79" category="image-alt">에서는 Element 플러그인 5.1 이상에 대한 업그레이드 또는 설치 후 플러그인 확장 지점을 보여 줍니다</block>
   <block id="f35f89119a6374d18bd89e0103590c61" category="image-alt">에는 Element Plug-in 4.10 이하 버전에 대한 업그레이드 또는 설치 후 플러그인 확장 지점이 나와 있습니다</block>
+  <block id="1583ff28675a9e24a50fa1079a5dd985" category="paragraph"><block ref="43638993383f845bcd8925bd4e266bc9" prefix="" category="inline-code"></block></block>
+  <block id="86eccd8202a873aee7f9acfbe920bb59" category="paragraph"><block ref="00a55ff76496c3c45ca20071f6151bfc" prefix="" category="inline-code"></block></block>
+  <block id="474ed7ffbbc0fc1d58ad983e7ef700f6" category="admonition">vCenter 5.0 이상용 Element 플러그인은 vCenter Server 6.7 및 6.5와 호환되지 않습니다.</block>
+  <block id="dfd25ff244b001be7beece9729517779" category="list-text">비압축</block>
 </blocks>

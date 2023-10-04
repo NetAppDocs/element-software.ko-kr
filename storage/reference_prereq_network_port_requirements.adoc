@@ -67,7 +67,7 @@ iSCSI 클라이언트
  a| 
 관리 노드
  a| 
-sfsupport.solidfire.com
+`sfsupport.solidfire.com`
  a| 
 22
  a| 
@@ -122,7 +122,7 @@ DNS 조회
  a| 
 관리 노드
  a| 
-monitoring.solidfire.com
+`monitoring.solidfire.com`
  a| 
 443
  a| 
