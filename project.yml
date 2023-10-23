@@ -14,7 +14,7 @@ settings:
   langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
-  - title: SolidFire 및 Element 소프트웨어 12.5 이상 문서
+  - title: SolidFire 및 Element 소프트웨어 설명서
     url: "/index.html"
   - title: 릴리스 정보
     url: "/concepts/concept_rn_relatedrn_element.html"
