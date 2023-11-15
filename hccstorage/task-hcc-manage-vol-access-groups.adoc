@@ -84,5 +84,5 @@ NetApp 하이브리드 클라우드 제어를 사용하여 볼륨 액세스 그�
 * link:../concepts/concept_solidfire_concepts_volume_access_groups.html["볼륨 액세스 그룹에 대해 알아보십시오"]
 * link:task-hcc-manage-initiators.html#add-initiators-to-a-volume-access-group["볼륨 액세스 그룹에 이니시에이터를 추가합니다"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
 

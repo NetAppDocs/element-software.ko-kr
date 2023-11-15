@@ -548,6 +548,6 @@ vCenter 플러그인 등록. 등록이 완료되면 포트를 닫을 수 있습�
 
 == 를 참조하십시오
 
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
 

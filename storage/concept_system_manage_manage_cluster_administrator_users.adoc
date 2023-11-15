@@ -158,6 +158,6 @@ Element UI를 사용하여 클러스터 관리자 암호를 변경할 수 있습
 
 * link:task_system_manage_enable_ldap_authentication.html["Element 사용자 인터페이스를 사용하여 LDAP 인증을 설정합니다"]
 * link:concept_system_manage_manage_ldap.html["LDAP를 해제합니다"]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
 

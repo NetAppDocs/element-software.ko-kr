@@ -30,6 +30,6 @@ summary: '브로드캐스트 모드를 사용하면 클러스터의 각 노드�
 
 == 자세한 내용을 확인하십시오
 
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
 

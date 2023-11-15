@@ -103,5 +103,5 @@ NOTE: QoS 정책을 사용하려면 선택한 클러스터가 Element 10.0 이�
 
 == 자세한 내용을 확인하십시오
 
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
 

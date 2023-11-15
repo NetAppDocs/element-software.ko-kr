@@ -29,7 +29,7 @@ summary: 클러스터에 노드를 추가하거나 기존 노드에 새 드라�
 +
 ....
 == Find more information
-* https://www.netapp.com/data-storage/solidfire/documentation[SolidFire and Element Resources page^]
+* https://docs.netapp.com/us-en/element-software/index.html[SolidFire and Element Software Documentation]
 * https://docs.netapp.com/us-en/vcp/index.html[NetApp Element Plug-in for vCenter Server^]
 ....
 

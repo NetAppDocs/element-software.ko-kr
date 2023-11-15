@@ -27,6 +27,6 @@ NOTE: 클러스터가 2048비트 사전 업그레이드 미만의 인증서를 �
 == 자세한 내용을 확인하십시오
 
 * link:../api/index.html["Element API를 사용하여 스토리지 관리"]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
 

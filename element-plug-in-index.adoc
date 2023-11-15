@@ -20,5 +20,5 @@ vCenter Server용 Element 플러그인에 대한 자세한 내용은 를 참조�
 
 == 를 참조하십시오
 
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
 

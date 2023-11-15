@@ -78,6 +78,6 @@ NOTE: 대신 QoS 정책에서 볼륨을 연결 해제하려는 경우 해당 볼
 == 자세한 내용을 확인하십시오
 
 * link:task_data_manage_volumes_remove_a_qos_policy_association_of_a_volume.html["볼륨의 QoS 정책 연결을 제거합니다"]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
 

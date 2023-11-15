@@ -65,5 +65,5 @@ image::mnode_swagger_ui.png[관리 노드 REST API UI]
 
 * link:task_mnode_enable_activeIQ.html["Active IQ 및 NetApp 모니터링 활성화"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
 
