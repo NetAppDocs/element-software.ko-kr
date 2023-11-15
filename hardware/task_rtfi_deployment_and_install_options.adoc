@@ -24,6 +24,6 @@ RTFI ISO 이미지를 다운로드한 후 일반적으로 사용되는 다음 �
 
 == 자세한 내용을 확인하십시오
 
-* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
 * https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
 

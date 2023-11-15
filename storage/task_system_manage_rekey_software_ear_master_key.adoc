@@ -93,6 +93,6 @@ NOTE: 이 프로세스는 비동기식이며 키를 다시 입력하다 를 사�
 == 자세한 내용을 확인하십시오
 
 * link:../api/concept_element_api_about_the_api.html["Element API를 사용하여 스토리지를 관리합니다"]
-* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
 * https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
 

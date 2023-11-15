@@ -49,6 +49,6 @@ Element 스토리지 클러스터의 멀티테넌트 네트워킹에서는 계�
 * xref:reference_element_api_modifyvirtualnetwork.adoc[ModifyVirtualNetwork의 약어입니다]
 * xref:reference_element_api_listvirtualnetworks.adoc[목록가상네트워크]
 * xref:reference_element_api_removevirtualnetwork.adoc[RemoveVirtualNetwork 를 참조하십시오]
-* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 리소스 페이지 를 참조하십시오"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
 * https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["이전 버전의 NetApp SolidFire 및 Element 제품에 대한 문서"^]
 
