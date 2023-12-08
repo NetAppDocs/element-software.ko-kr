@@ -12011,4 +12011,6 @@
   <block id="5858de35bb153f56bdb4f3fbd003b515" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block></block>
   <block id="591c130bf36c26fe5946fac7eeba4c11" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block>설명]</block>
   <block id="710206b65e21ddd5a34f739582fb411f" category="paragraph">Element 12.5에는 향상된 스토리지 노드 액세스, 향상된 사용자 지정 보호 도메인 관리 기능, 새롭고 향상된 클러스터 오류 및 이벤트, 향상된 클러스터 UI 생성 기능 및 향상된 보안이 도입되었습니다.</block>
+  <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">업그레이드 패키지 업로드 오류로 인해 SolidFire 및 HCI 업그레이드를 시작할 수 없습니다</block>
+  <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">2023년 11월 5일에 서명 키 인증서(개인 및 공개)가 만료되어 NetApp 하이브리드 클라우드 제어 또는 REST API를 사용하여 구성요소 업그레이드를 시작할 수 없습니다. 이 문제는 기술 자료 문서에 설명되어 있는 해결 방법을 따라 해결할 수 있습니다<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>.</block>
 </blocks>
