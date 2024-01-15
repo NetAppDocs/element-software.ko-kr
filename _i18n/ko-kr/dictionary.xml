@@ -6431,7 +6431,6 @@
   <block id="02ad845d2f8ac57a5c265ea083b2169b" category="paragraph">11.0</block>
   <block id="bfef1931306d50981d842714565c9b06" category="summary">RemoveDrives 메서드를 사용하여 클러스터의 일부인 드라이브를 사전에 제거할 수 있습니다. 이 방법은 클러스터 용량을 줄이거나 사용 수명이 거의 다 된 드라이브를 교체할 준비를 하는 데 사용할 수 있습니다. 드라이브에서 데이터가 모두 제거되며 클러스터에서 드라이브가 제거되기 전에 클러스터의 다른 드라이브로 마이그레이션됩니다.</block>
   <block id="e7d385ef5ac889916654bf5f865952f1" category="doc">드라이브 제거</block>
-  <block id="33630e5c702ad56f9ed10ea465cbabf6" category="paragraph">"RemoveDrives" 방법을 사용하여 클러스터의 일부인 드라이브를 사전에 제거할 수 있습니다. 이 방법은 클러스터 용량을 줄이거나 사용 수명이 거의 다 된 드라이브를 교체할 준비를 하는 데 사용할 수 있습니다. 드라이브에서 데이터가 모두 제거되며 클러스터에서 드라이브가 제거되기 전에 클러스터의 다른 드라이브로 마이그레이션됩니다.</block>
   <block id="745626a72e187a7dc7eed9e7290f03a6" category="paragraph">RemoveDrives는 비동기 방법입니다. 제거하는 드라이브의 총 용량에 따라 모든 데이터를 마이그레이션하는 데 몇 분이 걸릴 수 있습니다.</block>
   <block id="49b469905f5d598fc884c7182e9cc230" category="paragraph">여러 드라이브를 제거할 때는 각각 하나의 드라이브를 가진 여러 개의 개별 메서드가 아니라 하나의 "RemoveDrives" 메서드 호출을 사용합니다. 이렇게 하면 클러스터의 스토리지 부하를 균등하게 안정화하기 위해 발생하는 데이터 밸런싱의 양이 줄어듭니다.</block>
   <block id="9984e92da1025580d4728a15b5cb89d8" category="paragraph">"RemoveDrives"를 사용하여 "failed" 상태의 드라이브를 제거할 수도 있습니다. "실패" 상태의 드라이브를 제거하면 드라이브가 "사용 가능" 또는 "활성" 상태로 복귀되지 않습니다. 클러스터에서 드라이브를 사용할 수 없습니다.</block>
@@ -12013,4 +12012,5 @@
   <block id="710206b65e21ddd5a34f739582fb411f" category="paragraph">Element 12.5에는 향상된 스토리지 노드 액세스, 향상된 사용자 지정 보호 도메인 관리 기능, 새롭고 향상된 클러스터 오류 및 이벤트, 향상된 클러스터 UI 생성 기능 및 향상된 보안이 도입되었습니다.</block>
   <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">업그레이드 패키지 업로드 오류로 인해 SolidFire 및 HCI 업그레이드를 시작할 수 없습니다</block>
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">2023년 11월 5일에 서명 키 인증서(개인 및 공개)가 만료되어 NetApp 하이브리드 클라우드 제어 또는 REST API를 사용하여 구성요소 업그레이드를 시작할 수 없습니다. 이 문제는 기술 자료 문서에 설명되어 있는 해결 방법을 따라 해결할 수 있습니다<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>.</block>
+  <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">를 사용할 수 있습니다<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 클러스터에 속한 드라이브를 사전에 제거하는 방법 이 방법은 클러스터 용량을 줄이거나 사용 수명이 거의 다 된 드라이브를 교체할 준비를 하는 데 사용할 수 있습니다.<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 클러스터의 다른 노드에 블록 데이터의 세 번째 복사본을 생성하고 동기화가 완료될 때까지 기다린 후 드라이브를 "사용 가능" 목록으로 이동합니다. "사용 가능" 목록의 드라이브는 시스템에서 완전히 제거되며 실행 중인 서비스나 활성 데이터가 없습니다.</block>
 </blocks>
