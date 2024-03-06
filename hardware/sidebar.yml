@@ -35,3 +35,5 @@ entries:
     url: "/hardware/task_rtfi_process.html"
   - title: RTFI 옵션 메뉴
     url: "/hardware/task_rtfi_options_menu.html"
+- title: 스토리지 노드에 대해 지원되는 펌웨어 버전입니다
+  url: "/hardware/fw_storage_nodes.html"

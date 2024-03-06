@@ -10925,24 +10925,6 @@
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 정보</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">이전 버전</block>
-  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하십시오</block>
-  <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">유지보수 하드웨어를 설치합니다</block>
-  <block id="f54101aa6702c025c4f74ec5ada7bae3" category="sidebar">스토리지 관리</block>
-  <block id="bfd78ad06fdbded1393f2f3c6bce1cdb" category="sidebar">Element 소프트웨어 UI를 사용합니다</block>
-  <block id="ed4186f75217d239b68544e14bbe38c9" category="sidebar">NetApp 하이브리드 클라우드 제어권 사용</block>
-  <block id="1d5eadee8dd359da135590100c405785" category="sidebar">Element 소프트웨어 API를 사용합니다</block>
-  <block id="b16427ba775ee26e7f5fa22679a4a605" category="sidebar">vCenter Server용 Element 플러그인을 사용합니다</block>
-  <block id="6216a3b9e8c46cd0635bc8d3f9c8cf4f" category="sidebar">통합 툴 사용(로그인 필요)</block>
-  <block id="52e27f272b7f3c0cd5623309ba926677" category="sidebar">Element SDK(Java, .NET, Python)</block>
-  <block id="2a9dbfa4b74c53d7304fc8b79a1874d3" category="sidebar">해결하세요</block>
-  <block id="fcf140abed196b8eba71c45f21312bce" category="sidebar">NetApp 솔루션</block>
-  <block id="81a123ccab93cd947289b672b0e50348" category="sidebar">데모 자습서</block>
-  <block id="a3306879b2c1b46c3e6e86a4c65d51bc" category="sidebar">NetApp University SolidFire 교육(로그인 필요)</block>
-  <block id="ab1cf947f75ab4705fc3fcf084c10a01" category="sidebar">NetApp SolidFire 클러스터의 설치 및 확장 방법(비디오)</block>
-  <block id="483b680d14606131d42c44dbca0bb4f2" category="sidebar">NetApp SolidFire 설치(비디오)</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 커뮤니티</block>
-  <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">NetApp 커뮤니티</block>
-  <block id="213686afc3803be7caa09348765467fe" category="sidebar">도움을 받을 수 있는 곳</block>
   <block id="2e531c00d20727b760f0fefbb4c65c82" category="sidebar">NetApp 하이브리드 클라우드 제어의 노드 페이지에서 재고를 확인하십시오</block>
   <block id="767682e703a28fefdc1067e1fcf04243" category="sidebar">NetApp 하이브리드 클라우드 제어로 스토리지 클러스터의 볼륨을 모니터링합니다</block>
   <block id="53b2a4dd7325c2d7325f310860b0b55f" category="sidebar">다중 요소 인증에 대한 추가 정보</block>
@@ -11327,14 +11309,12 @@
   <block id="56ee8203bf76c58f39596dab101d98d5" category="list-text">Active IQ의 일부 기능(예: QoS)에서는 Element 11.3 이상이 올바르게 작동해야 합니다. 모든 Active IQ 기능을 사용할 수 있는지 확인하려면 다음 단계를 수행하는 것이 좋습니다.</block>
   <block id="469eaba8a7048afa0ba6f8eb91801de9" category="doc">SolidFire Active IQ를 사용하여 스토리지를 모니터링합니다</block>
   <block id="45f40a7365f71f3eafc4489e01e9aa82" category="sidebar">NetApp SolidFire Active IQ를 사용하여 스토리지를 모니터링합니다</block>
-  <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">NetApp SolidFire Active IQ 사용</block>
   <block id="d214b4cd328cf59221f38d85dca1988f" category="summary">VMware vSphere 인터페이스의 플러그인인 vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp Element 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있습니다.</block>
   <block id="14dc26d359d13f6037d00a6c79232cd6" category="paragraph">vCenter Server용 NetApp Element 플러그인은 NetApp Element 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있도록 VMware vSphere 인터페이스에 대한 플러그인을 제공합니다.</block>
   <block id="da3eb0bd8c882a21931739ac39ce915a" category="inline-link">vCenter Server용 NetApp Element 플러그인 설명서</block>
   <block id="c557278939ddfc5c37a8606a5b8bc3d8" category="paragraph">vCenter Server용 Element 플러그인에 대한 자세한 내용은 를 참조하십시오<block ref="4a40fe421733073daff96e428d226590" category="inline-link-rx"></block>.</block>
   <block id="fd0b9b1500c5983ac27a332210ebfe29" category="paragraph">많은 NetApp 하이브리드 클라우드 제어 기능은 여러 스토리지 클러스터에서 작동하도록 설계되었지만 인증과 권한 부여에는 제한이 있습니다. 인증 및 권한 부여에 대한 제한 사항은 권한 있는 클러스터의 사용자가 다른 스토리지 클러스터의 사용자가 아니더라도 NetApp 하이브리드 클라우드 제어에 연결된 다른 클러스터에 대한 작업을 실행할 수 있다는 것입니다.</block>
   <block id="f0e8a2f025f562374fa58233f9f7cd01" category="sidebar">vCenter Server용 Element 플러그인을 사용하여 스토리지를 관리합니다</block>
-  <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp H-Series 스토리지 노드의 펌웨어 버전이 지원됩니다</block>
   <block id="376acf421ab362eb5e198d9dbe0ef1f4" category="summary">Element 12.5부터 관리 노드에서 sfreadonly 사용자 계정을 활성화하여 NetApp 지원팀의 도움 없이 시스템 구성요소 문제를 해결할 수 있습니다. 고급 문제 해결을 위해 NetApp 지원에 대한 원격 지원 터널 액세스를 활성화 및 열 수도 있습니다.</block>
   <block id="03977ca9014ed49925d2fb260f5a2b6f" category="paragraph">Element 소프트웨어 버전에 따라 다음 SF-시리즈 스토리지 노드는 지원되지 않습니다.</block>
   <block id="b1ac6637f319a778daa4b7822c1798b5" category="paragraph">Element 12.5 이상으로 업그레이드하는 동안 장애가 발생한 기존 BMC가 있거나 업그레이드 중에 노드의 BMC에 장애가 발생한 노드에 대해 "BmcSelfTestFailed" 장애가 생성되지 않습니다. 업그레이드 중 자체 테스트에 실패한 BMC는 전체 클러스터에서 업그레이드가 완료된 후 "BmcSelfTestFailed" 경고 오류를 발행합니다.</block>
@@ -11701,7 +11681,6 @@
   <block id="a869730ec0116e46159bbff419d5cc17" category="list-text"><block ref="2a166fd6597dedff39b139e3ce76f82b" category="inline-link-rx"></block></block>
   <block id="bec35bb5875234837858b1ccdd637fca" category="inline-link">Element 11.1 설명서 및 이전 버전</block>
   <block id="724428733630050ab3140356839e2af1" category="list-text"><block ref="724428733630050ab3140356839e2af1" category="inline-link-rx"></block></block>
-  <block id="b47307258c4d85ffb5f4141d7a660a9b" category="sidebar">Element 11.8.2 및 이전 설명서</block>
   <block id="cf459a4467554220e1dd70f653a8cf43" category="list-text">관리 서비스 2.18 이상의 경우 관리 노드에서 원격 액세스 기능이 기본적으로 해제되어 있습니다. 원격 액세스 기능을 활성화하려면 을 참조하십시오<block ref="9a48ac510c43b73ee86c7be400c5025f" category="inline-link-rx"></block>.</block>
   <block id="c9621c561bd7ae37e9a7ee7358f4f792" category="list-text">(선택 사항) 비활성화<block ref="2ec0ebe378e4a0f1bbb70e72c3942887" category="inline-link-rx"></block> 다시?</block>
   <block id="c046b7ab02983ed5bb8f1b18c0c2c477" category="summary">NetApp Support 사이트에서 Element 소프트웨어 버전에 해당하는 RTFI ISO 이미지를 다운로드하여 부팅 가능하고 설치 가능한 미디어를 사용하여 배포합니다.</block>
@@ -12013,4 +11992,5 @@
   <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">업그레이드 패키지 업로드 오류로 인해 SolidFire 및 HCI 업그레이드를 시작할 수 없습니다</block>
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">2023년 11월 5일에 서명 키 인증서(개인 및 공개)가 만료되어 NetApp 하이브리드 클라우드 제어 또는 REST API를 사용하여 구성요소 업그레이드를 시작할 수 없습니다. 이 문제는 기술 자료 문서에 설명되어 있는 해결 방법을 따라 해결할 수 있습니다<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>.</block>
   <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">를 사용할 수 있습니다<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 클러스터에 속한 드라이브를 사전에 제거하는 방법 이 방법은 클러스터 용량을 줄이거나 사용 수명이 거의 다 된 드라이브를 교체할 준비를 하는 데 사용할 수 있습니다.<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 클러스터의 다른 노드에 블록 데이터의 세 번째 복사본을 생성하고 동기화가 완료될 때까지 기다린 후 드라이브를 "사용 가능" 목록으로 이동합니다. "사용 가능" 목록의 드라이브는 시스템에서 완전히 제거되며 실행 중인 서비스나 활성 데이터가 없습니다.</block>
+  <block id="f9beecbb3d1ea8584ca694bab8a73de7" category="sidebar">스토리지 노드에 대해 지원되는 펌웨어 버전입니다</block>
 </blocks>
