@@ -11968,4 +11968,26 @@
   <block id="bfb37ae14420b32b4119e40e73553257" category="paragraph">플러그인 ZIP에 대한 사용자 지정 URL입니다.</block>
   <block id="8e0d59cc781c5557d1fdc81fdff04d8f" category="paragraph">NetApp Element 원격 플러그인 확장 지점이 나타납니다.</block>
   <block id="5770384eddfc0ac7f73f0f6242a52b50" category="paragraph">NetApp Element 구성 및 관리 확장 지점이 나타납니다.</block>
+  <block id="518a4b6a1346e1ad096698dafab107cf" category="sidebar">SolidFire All-Flash 스토리지 시스템은 스토리지 리소스 풀로 결합된 드라이브 및 노드와 같은 하드웨어 구성 요소로 이루어집니다. Element 인터페이스, API 또는 기타 관리 툴을 사용하여 NetApp Element 소프트웨어를 사용하여 이러한 스토리지 리소스 클러스터를 관리할 수 있습니다. 이 사이트에는 Element 소프트웨어 12.5 및 12.7에 대한 문서가 포함되어 있습니다.</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하십시오</block>
+  <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">하드웨어 설치 및 유지 관리</block>
+  <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp H-Series 스토리지 노드의 펌웨어 버전이 지원됩니다</block>
+  <block id="f54101aa6702c025c4f74ec5ada7bae3" category="sidebar">스토리지 관리</block>
+  <block id="bfd78ad06fdbded1393f2f3c6bce1cdb" category="sidebar">Element 소프트웨어 UI를 사용합니다</block>
+  <block id="ed4186f75217d239b68544e14bbe38c9" category="sidebar">NetApp 하이브리드 클라우드 제어권 사용</block>
+  <block id="1d5eadee8dd359da135590100c405785" category="sidebar">Element 소프트웨어 API 사용</block>
+  <block id="b16427ba775ee26e7f5fa22679a4a605" category="sidebar">vCenter Server용 Element 플러그인을 사용합니다</block>
+  <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">NetApp SolidFire Active IQ 사용</block>
+  <block id="6216a3b9e8c46cd0635bc8d3f9c8cf4f" category="sidebar">통합 툴 사용(로그인 필요)</block>
+  <block id="52e27f272b7f3c0cd5623309ba926677" category="sidebar">Element SDK(Java, .NET, Python)</block>
+  <block id="2a9dbfa4b74c53d7304fc8b79a1874d3" category="sidebar">해결하세요</block>
+  <block id="fcf140abed196b8eba71c45f21312bce" category="sidebar">NetApp 솔루션</block>
+  <block id="81a123ccab93cd947289b672b0e50348" category="sidebar">데모 및 자습서</block>
+  <block id="a3306879b2c1b46c3e6e86a4c65d51bc" category="sidebar">NetApp University SolidFire 교육(로그인 필요)</block>
+  <block id="ab1cf947f75ab4705fc3fcf084c10a01" category="sidebar">NetApp SolidFire 클러스터의 설치 및 확장 방법(비디오)</block>
+  <block id="483b680d14606131d42c44dbca0bb4f2" category="sidebar">NetApp SolidFire 설치(비디오)</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 및 커뮤니티</block>
+  <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">NetApp 커뮤니티</block>
+  <block id="213686afc3803be7caa09348765467fe" category="sidebar">도움을 받을 수 있는 곳</block>
+  <block id="b47307258c4d85ffb5f4141d7a660a9b" category="sidebar">Element 11.8.2 및 이전 설명서</block>
 </blocks>
