@@ -1513,9 +1513,6 @@
   <block id="829222e37a81e6723ec1c8312f0896ff" category="doc">SolidFire All-Flash 스토리지를 위한 관리 서비스</block>
   <block id="a5b2d4de2841c516a54a4c4b3db587b1" category="summary">NetApp Element 소프트웨어를 실행하는 시스템에서는 SnapMirror 기능을 지원하여 NetApp ONTAP 시스템에서 스냅샷을 복사 및 복원할 수 있습니다.</block>
   <block id="908041e9f7dbdfd6dd76e9617f0b3454" category="doc">SnapMirror 개요</block>
-  <block id="5a5a2d3bbdb5fecdea9055d444ee32af" category="paragraph">기능이 제한된 특정 사용 사례에서 ONTAP 생성 볼륨을 Element 볼륨으로 복제할 수 있습니다. 자세한 내용은 ONTAP 설명서를 참조하십시오.</block>
-  <block id="49c8c279b60ab1926e498dd27ba47ce7" category="inline-link">Element 소프트웨어와 ONTAP 간 복제</block>
-  <block id="e01755805869b3d9cedc19fff7c5daae" category="paragraph"><block ref="e01755805869b3d9cedc19fff7c5daae" category="inline-link-rx"></block></block>
   <block id="148da2fc8997120fa9c4ae723fb03eb1" category="summary">Active IQ는 클러스터 전체 데이터의 기간별 뷰를 지속적으로 업데이트하는 웹 기반 툴입니다. 특정 이벤트, 임계값 또는 메트릭에 대한 알림을 설정할 수 있습니다. Active IQ를 사용하면 시스템 성능과 용량을 모니터링할 수 있을 뿐만 아니라 클러스터 상태에 대한 최신 정보를 유지할 수 있습니다.</block>
   <block id="c9618f4b15d53501dee68300c1517890" category="doc">SolidFire Active IQ</block>
   <block id="4cea75009713f3eadbea7bd906d0523e" category="list-text">노드의 수 및 노드 상태: 정상, 오프라인 또는 장애</block>
@@ -2098,8 +2095,6 @@
   <block id="02917d00c6e974040b113eec406f933d" category="paragraph">NetApp Element 소프트웨어를 실행하는 시스템에서는 SnapMirror 기능을 지원하여 NetApp ONTAP 시스템에서 스냅샷 복사본을 복사 및 복원할 수 있습니다. 이 기술을 사용하는 가장 큰 이유는 NetApp HCI에서 ONTAP로 재해 복구 때문입니다. 엔드포인트에는 ONTAP, ONTAP Select 및 Cloud Volumes ONTAP가 포함됩니다. TR-4641 NetApp HCI 데이터 보호 를 참조하십시오.</block>
   <block id="37a9cf4fd8039696452f63fb22f06182" category="inline-link">NetApp 기술 보고서 4641: NetApp HCI 데이터 보호</block>
   <block id="0ae5c767cabcaa90f5848cabc66f8aa9" category="inline-link">NetApp HCI, ONTAP 및 통합 인프라를 통해 데이터 패브릭 구축</block>
-  <block id="5865b8968ae6d9762765ab7ce3d35fc2" category="inline-link">NetApp Element 소프트웨어와 ONTAP 간의 복제</block>
-  <block id="b00bc340461aac1deb8b1a1e1382cf0c" category="list-text"><block ref="b00bc340461aac1deb8b1a1e1382cf0c" category="inline-link-rx"></block></block>
   <block id="f211ba9bb877d46a1f3fa38b6016f8e2" category="summary">클러스터의 모든 볼륨에 대한 자세한 성능 정보를 볼 수 있습니다. 볼륨 ID 또는 성능 열을 기준으로 정보를 정렬할 수 있습니다. 특정 기준에 따라 정보를 필터링할 수도 있습니다.</block>
   <block id="d1d1b8bea20f9815e7a14b650bd0b24e" category="doc">볼륨 성능을 봅니다</block>
   <block id="6426224b2a99ad61332e046b0bb79779" category="paragraph">모든 * 새로 고침 * 목록을 클릭하고 다른 값을 선택하여 시스템에서 페이지의 성능 정보를 새로 고치는 빈도를 변경할 수 있습니다. 클러스터의 볼륨이 1,000개 미만인 경우 기본 업데이트 간격은 10초입니다. 그렇지 않으면 기본값은 60초입니다. Never 값을 선택하면 자동 페이지 새로 고침이 비활성화됩니다.</block>
@@ -5345,7 +5340,6 @@
   <block id="5ce5a4c32220893139a79b7961ce29a5" category="paragraph">NetApp Element 소프트웨어 10.1 이상 버전은 ONTAP 시스템으로 스냅샷을 복사 및 복원하는 SnapMirror 기능을 지원합니다.</block>
   <block id="160c1461d4530203bf5d64f7eb1c0982" category="paragraph">Element 10.1 이상을 실행하는 시스템에는 9.3 이상을 실행하는 ONTAP 시스템에서 SnapMirror와 직접 통신할 수 있는 코드가 포함되어 있습니다. Element API는 클러스터, 볼륨 및 스냅숏에서 SnapMirror 기능을 활성화하는 방법을 제공합니다. 또한 Element UI에는 Element 소프트웨어와 ONTAP 시스템 간의 SnapMirror 관계를 관리하는 기능이 포함되어 있습니다.</block>
   <block id="62f54381b903447523bd94d04a2364be" category="paragraph">Element 10.3 및 ONTAP 9.4 시스템에서 시작하여 기능이 제한된 특정 사용 사례에서 ONTAP 생성 볼륨을 Element 볼륨으로 복제할 수 있습니다.</block>
-  <block id="b3720743bae305bb474d5e403e3739bf" category="paragraph">자세한 내용은 ONTAP 설명서를 참조하십시오.</block>
   <block id="ced6f02fa4444aad2c499194d415578f" category="section-title">데이터 보호를 위한 볼륨 스냅샷입니다</block>
   <block id="6335301e7b2b5f151c62c7dad20c7c1d" category="paragraph">볼륨 스냅샷은 나중에 볼륨을 특정 시간으로 복원하는 데 사용할 수 있는 볼륨의 시점 복제본입니다.</block>
   <block id="64ce2a4042bd6dcc85f4453c84c625bd" category="paragraph">스냅숏은 볼륨 클론과 비슷하지만 스냅숏은 볼륨 메타데이터의 복제본이므로 마운트하거나 쓸 수 없습니다. 볼륨 스냅샷을 생성하면 시스템 리소스 및 공간도 소량만 차지하기 때문에 클론 생성보다 스냅샷 생성 속도가 빨라집니다.</block>
@@ -11994,4 +11988,284 @@
   <block id="cafb4d76dc2f8321d0134957e0bf3f5d" category="sidebar">SolidFire All-Flash 스토리지 시스템은 스토리지 리소스 풀로 결합된 드라이브 및 노드와 같은 하드웨어 구성 요소로 이루어집니다. Element 인터페이스, API 또는 기타 관리 툴을 사용하여 NetApp Element 소프트웨어를 사용하여 이러한 스토리지 리소스 클러스터를 관리할 수 있습니다. 이 사이트에는 Element 소프트웨어 관련 문서가 포함되어 있습니다.</block>
   <block id="ab8cbf6e7f3310f1970fbef383696645" category="sidebar">SolidFire 및 Element 소프트웨어 12.7 문서</block>
   <block id="f46f40c99ef0e96fdc79a2f007e1939a" category="sidebar">SolidFire 및 Element 소프트웨어 문서 12.7</block>
+  <block id="6580584049ef8cc78e6be1833466e606" category="inline-link-macro">NetApp Element 소프트웨어와 ONTAP 간 복제(ONTAP CLI)</block>
+  <block id="9051badc24841b5e2521cd8790e8f7d8" category="paragraph">자세한 내용은 을 <block ref="5aaa67c40a6461657bd1345524045131" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="39f2369f3b77569b78b2438bb261689c" category="summary">대상 볼륨을 쓰기 가능한 상태로 만든 후 데이터 액세스를 위해 볼륨을 구성해야 합니다. SAN 호스트는 소스 볼륨이 다시 활성화될 때까지 대상 볼륨의 데이터에 액세스할 수 있습니다.</block>
+  <block id="5612d69b54615fdbdc0bb5203664f808" category="doc">데이터 액세스를 위한 대상 볼륨을 구성합니다</block>
+  <block id="76f713176b430a51d8711f47a99d0f8a" category="list-text">Element LUN을 적절한 이니시에이터 그룹에 매핑합니다.</block>
+  <block id="57b98362a5b6c4d458251e5989a7cddc" category="list-text">SAN 호스트 이니시에이터에서 SAN LIF로 iSCSI 세션을 생성합니다.</block>
+  <block id="adfba1c6b0a4ee17e069c826350fd982" category="list-text">SAN 클라이언트에서 스토리지 재검색을 수행하여 연결된 LUN을 검색합니다.</block>
+  <block id="e02d811196d527520d9f9847ef74439d" category="summary">관계의 기본 정책이 적합하지 않은 경우 사용자 지정 복제 정책을 생성할 수 있습니다.</block>
+  <block id="75f83bbaf7f814729366d9e0bac3638f" category="doc">사용자 지정 복제 정책을 생성합니다</block>
+  <block id="e7cb3e43a84c97395c30e6e4d68129f7" category="paragraph">복제 관계를 생성할 때 기본 또는 사용자 지정 정책을 사용할 수 있습니다. 사용자 지정 통합 복제 정책의 경우 초기화 및 업데이트 중에 전송되는 스냅샷 복제본을 결정하는 _rules_를 하나 이상 정의해야 합니다.</block>
+  <block id="30f6b1249bdeb93367e19f178253fdf9" category="paragraph">관계의 기본 정책이 적합하지 않은 경우 사용자 지정 복제 정책을 생성할 수 있습니다. 예를 들어, 네트워크 전송에서 데이터를 압축하거나 SnapMirror에서 스냅샷 복사본 전송 시도 횟수를 수정할 수 있습니다.</block>
+  <block id="1fac572d0bdbbcd92ac120d658648335" category="paragraph">복제 정책의 _policy type_은 이 정책이 지원하는 관계 유형을 결정합니다. 아래 표에는 사용 가능한 정책 유형이 나와 있습니다.</block>
+  <block id="551e9178cd3ea95d0d7df735e2e30c6f" category="cell">정책 유형입니다</block>
+  <block id="2228e7753431617c517a7caaa0194b62" category="cell">관계 유형</block>
+  <block id="1790a357007477a89ec0d17e60c8f2da" category="paragraph">비동기식 - 미러</block>
+  <block id="902d019343f451bbc199de2753b39807" category="paragraph">SnapMirror DR</block>
+  <block id="e7d3e049f94ce3ff8a47f209f012173d" category="paragraph">대칭 복사 - 볼트</block>
+  <block id="f0e0a508c999134c2e1bf29356c7e683" category="paragraph">통합 복제</block>
+  <block id="f676d3bac6846b9c3cbc3cd472858b82" category="list-text">사용자 지정 복제 정책 생성:</block>
+  <block id="6ad3f82f7c308031d857eac4cbdd47e5" category="paragraph"><block ref="e0c517637c29a89517f910f357fbcec9" prefix="" category="inline-code"></block></block>
+  <block id="cf88f24c3f5326757ea1a0c352d3c45b" category="paragraph">전체 명령 구문은 man 페이지를 참조하십시오.</block>
+  <block id="bd327b4638ae747ffe450595f761296d" category="paragraph">ONTAP 9.5부터 매개 변수를 사용하여 SnapMirror 동기식 관계에 대한 일반 스냅샷 복사본 일정을 생성하기 위한 일정을 지정할 수<block ref="1c2e058e59e0621899abf5587a37dafb" prefix=" " category="inline-code"></block> 있습니다. 기본적으로 SnapMirror Synchronous 관계에 대한 일반적인 스냅샷 복제 일정은 1시간입니다. SnapMirror 동기식 관계의 스냅샷 복제 스케줄에 대해 30분에서 2시간 사이의 값을 지정할 수 있습니다.</block>
+  <block id="ec405ae28bc322b83b8ef2b56af1556f" category="paragraph">다음 예에서는 데이터 전송에 대해 네트워크 압축을 활성화하는 SnapMirror DR에 대한 사용자 지정 복제 정책을 생성합니다.</block>
+  <block id="5038a022fcbb606d55800f700d1a2600" category="paragraph">다음 예에서는 통합 복제에 대한 사용자 지정 복제 정책을 생성합니다.</block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">작업을 마친 후</block>
+  <block id="54c7d4a5f9788eadd5ea0701f3bd679e" category="paragraph">"미러 볼트" 정책 유형의 경우 초기화 및 업데이트 중에 전송되는 스냅샷 복사본을 결정하는 규칙을 정의해야 합니다.</block>
+  <block id="09d4557a2a32f3faa0e7466695eb9ece" category="paragraph">명령을 사용하여<block ref="df3a39db5d8c8c52cbc0d92c0e43a385" prefix=" " category="inline-code"></block> SnapMirror 정책이 생성되었는지 확인하십시오. 전체 명령 구문은 man 페이지를 참조하십시오.</block>
+  <block id="a0c9f37e7486a8ef330fca436e2765e1" category="summary">데이터를 Element에서 ONTAP로 복제하든 ONTAP에서 Element로 복제하든 작업 일정을 구성하고 정책을 지정한 다음 관계를 생성 및 초기화해야 합니다. 기본 또는 사용자 지정 정책을 사용할 수 있습니다.</block>
+  <block id="f8a7eabb7c1c989fb41862022012f5ba" category="doc">Element와 ONTAP 간 복제를 위한 워크플로우</block>
+  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="inline-link-macro">필수 구성 요소</block>
+  <block id="39827364402eb7a6398af8c1194aa72d" category="inline-link-macro">데이터 보호 개요</block>
+  <block id="35d6c0b88909a77a67dfd7da2d3a1c3e" category="paragraph">워크플로에서는 에 나열된 필수 작업을 완료한 것으로 <block ref="033c85b6f39ef9e6b306971ea1e5d5c9" category="inline-link-macro-rx"></block>가정합니다. 사용할 정책에 대한 지침을 포함하여 SnapMirror 정책에 대한 전체 배경 정보는 를 참조하십시오.<block ref="ef3dbddea8dbf43683fb89931b6b3d33" category="inline-link-macro-rx"></block></block>
+  <block id="86fd1e70c681153c9061841b64ec4d5c" category="inline-image-macro">SolidFire에서 ONTAP로의 워크플로</block>
+  <block id="e54292b00b7038b209eaa70423768252" category="paragraph"><block ref="e54292b00b7038b209eaa70423768252" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="388657e2af54b4f8e121163ca5784693" category="inline-link-macro">Element 소프트웨어와 ONTAP 간 복제(ONTAP CLI)</block>
+  <block id="a21a4ab90a18959fa37c0c2fb846d63e" category="paragraph">기능이 제한된 특정 사용 사례에서 ONTAP 생성 볼륨을 Element 볼륨으로 복제할 수 있습니다. 자세한 내용은 을 <block ref="92cf2e7a852a772499cb0000a5d5d5ab" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="a8c738646fb5eef610f0017f7272a70e" category="summary">SnapMirror를 사용하여 Element 볼륨의 스냅샷 복사본을 ONTAP 대상에 복제함으로써 Element 시스템에서 비즈니스 연속성을 보장할 수 있습니다.</block>
+  <block id="0c5cfd2c0e8264bc1b423e19a988bc3d" category="doc">NetApp Element 소프트웨어와 ONTAP 간 복제 개요(ONTAP CLI)</block>
+  <block id="564e8ed9dc801e6baa03256281129a07" category="paragraph">SnapMirror를 사용하여 Element 볼륨의 스냅샷 복사본을 ONTAP 대상에 복제함으로써 Element 시스템에서 비즈니스 연속성을 보장할 수 있습니다. Element 사이트에서 재해가 발생할 경우 ONTAP 시스템에서 클라이언트로 데이터를 제공하고 서비스가 복원되면 Element 시스템을 다시 활성화할 수 있습니다.</block>
+  <block id="34c547b76ee12c36037c1fbd123f8bb7" category="paragraph">ONTAP 9.4부터는 ONTAP 노드에 생성된 LUN의 스냅샷 복사본을 Element 시스템으로 다시 복제할 수 있습니다. Element 사이트에서 운영 중단 중에 LUN을 생성했거나, LUN을 사용하여 ONTAP에서 Element 소프트웨어로 데이터를 마이그레이션할 수 있습니다.</block>
+  <block id="f095051bf202432565bd83b13f223cbe" category="paragraph">다음과 같은 경우 Element to ONTAP 백업으로 작업해야 합니다.</block>
+  <block id="41a6f75570e8276bfdd8656708159091" category="list-text">사용 가능한 모든 옵션을 탐색하는 것이 아니라 모범 사례를 사용하려고 합니다.</block>
+  <block id="1435e27f40347998b5c763bcc4df6b63" category="list-text">System Manager나 자동화된 스크립팅 도구가 아니라 ONTAP CLI(Command-Line Interface)를 사용하려는 경우</block>
+  <block id="83d990511cbb8a6b72c2da3687386ede" category="list-text">iSCSI를 사용하여 클라이언트에 데이터를 제공하고 있습니다.</block>
+  <block id="9ae8f55cfebe47cb9ef25253ceb15709" category="paragraph">추가 SnapMirror 구성 또는 개념 정보가 필요한 경우 을 참조하십시오<block ref="ef3dbddea8dbf43683fb89931b6b3d33" category="inline-link-macro-rx"></block>.</block>
+  <block id="44d71452635eeaf5c7a210399ae9d66d" category="section-title">Element와 ONTAP 간의 복제에 대해 설명합니다</block>
+  <block id="bfd057c12b548f30730c200ffe425aac" category="paragraph">ONTAP 9.3부터 SnapMirror를 사용하여 ONTAP 대상에 Element 볼륨의 스냅샷 복사본을 복제할 수 있습니다. Element 사이트에서 재해가 발생할 경우 ONTAP 시스템에서 클라이언트로 데이터를 제공하고 서비스가 복원되면 Element 소스 볼륨을 다시 활성화할 수 있습니다.</block>
+  <block id="00f0ca5c226cddf734db19705c282ffc" category="section-title">데이터 보호 관계의 유형입니다</block>
+  <block id="ec63b8aecacb81cf9705373c2a309a42" category="paragraph">SnapMirror는 두 가지 유형의 데이터 보호 관계를 제공합니다. 관계를 초기화하거나 업데이트하기 전에 SnapMirror은 각 유형에 대해 요소 소스 볼륨의 스냅샷 복사본을 생성합니다.</block>
+  <block id="064586429a532e66540622ca674c0cd1" category="list-text">DR(재해 복구) _ 데이터 보호 관계에서 대상 볼륨에는 SnapMirror에서 생성한 스냅샷 복사본만 포함되며, 운영 사이트에 재해 발생 시에도 데이터를 계속 제공할 수 있습니다.</block>
+  <block id="d6dbbbf18fd021df4ecd159f9c136ff2" category="list-text">장기 보존_데이터 보호 관계에서 타겟 볼륨에는 Element 소프트웨어에서 생성된 시점 스냅샷 복사본과 SnapMirror에서 생성한 스냅샷 복사본이 포함됩니다. 예를 들어, 20년 동안 생성된 월별 스냅샷 복사본을 유지하려고 할 수 있습니다.</block>
+  <block id="91ab4e454992068049452d720c0ce136" category="section-title">기본 정책</block>
+  <block id="f8efa2b0163fa0c88746c1d17283f1de" category="paragraph">SnapMirror를 처음 호출하면 소스 볼륨에서 대상 볼륨으로 _baseline transfer_를 수행합니다. _SnapMirror 정책_은 기준 및 모든 업데이트의 내용을 정의합니다.</block>
+  <block id="f0c378f7109cd4f114444bcf8cc8f914" category="paragraph">데이터 보호 관계를 생성할 때 기본 또는 사용자 지정 정책을 사용할 수 있습니다. policy type _ 은(는) 포함할 스냅샷 복제본과 보존할 복제본 수를 결정합니다.</block>
+  <block id="a58dcf868b54faad66442b4a73e1790b" category="paragraph">아래 표에는 기본 정책이 나와 있습니다. 정책을 사용하여<block ref="e162cfb3e9ccdaa06cb8c6b686825bee" prefix=" " category="inline-code"></block> 기존 DR 관계를 생성합니다. 또는<block ref="4403b8bed8329a1a1ba838d590fec221" prefix=" " category="inline-code"></block> 정책을 사용하여<block ref="37e459201e5691c90f616e05271f4ba3" prefix=" " category="inline-code"></block> 동일한 대상 볼륨에 DR 및 장기 보존이 구성되는 통합 복제 관계를 생성합니다.</block>
+  <block id="51359e8b51c63b87d50cb1bab73380e2" category="cell">정책</block>
+  <block id="cc34a7c064d7dad286c9d460e22937f2" category="cell">정책 유형</block>
+  <block id="ddbca9efd1616e6cf2fc20b858ab701d" category="cell">업데이트 동작</block>
+  <block id="e162cfb3e9ccdaa06cb8c6b686825bee" category="paragraph">대칭 복사</block>
+  <block id="99a40c6089328d4adfe2e7225e8ae762" category="paragraph">SnapMirror에서 생성한 스냅샷 복제본을 전송합니다.</block>
+  <block id="37e459201e5691c90f616e05271f4ba3" category="paragraph">MirrorAndVault를 선택합니다</block>
+  <block id="ada331490936b1447a0671a382f3b4eb" category="paragraph">SnapMirror에서 생성한 스냅샷 복사본과 마지막 업데이트 이후 생성된 최신 스냅샷 복제본에 SnapMirror 레이블이 ""daily"" 또는 ""weekly""인 경우 이를 전송합니다.</block>
+  <block id="4403b8bed8329a1a1ba838d590fec221" category="paragraph">Unified7year를 참조하십시오</block>
+  <block id="345dd259a4c79c21fb10847c03c29489" category="paragraph">SnapMirror에서 생성한 스냅샷 복사본과 마지막 업데이트 이후 생성된 최신 스냅샷 복제본에 SnapMirror 레이블이 ""daily"", ""weekly"" 또는 ""monthly""인 경우 이를 전송합니다.</block>
+  <block id="eed5438f11ccbb046f71006728017c88" category="paragraph">사용할 정책에 대한 지침을 포함하여 SnapMirror 정책에 대한 전체 배경 정보는 를 참조하십시오.<block ref="ef3dbddea8dbf43683fb89931b6b3d33" category="inline-link-macro-rx"></block></block>
+  <block id="df6dd387c6cb8d3936482f5121407a73" category="section-title">SnapMirror 레이블 이해</block>
+  <block id="51eeb81a2d99a7d3f472b9ce46fdf58c" category="paragraph">"미러 볼트" 정책 유형의 모든 정책에는 복제할 스냅샷 복사본을 지정하는 규칙이 있어야 합니다. 예를 들어 ""daily"" 규칙은 SnapMirror 레이블 ""daily""에 할당된 스냅샷 복사본만 복제해야 함을 나타냅니다. Element 스냅샷 복사본을 구성할 때 SnapMirror 레이블을 할당합니다.</block>
+  <block id="ce874ff02e26566f564e38d0ad8939d1" category="section-title">Element 소스 클러스터에서 ONTAP 대상 클러스터로 복제</block>
+  <block id="1726ceb89cde1975f0569ca9335ad84d" category="paragraph">SnapMirror를 사용하여 Element 볼륨의 스냅샷 복사본을 ONTAP 타겟 시스템에 복제할 수 있습니다. Element 사이트에서 재해가 발생할 경우 ONTAP 시스템에서 클라이언트로 데이터를 제공하고 서비스가 복원되면 Element 소스 볼륨을 다시 활성화할 수 있습니다.</block>
+  <block id="548cdbe30ebc9642da2fa9cb47357c1d" category="paragraph">Element 볼륨은 ONTAP LUN과 거의 동일합니다. SnapMirror는 Element 소프트웨어와 ONTAP 간의 데이터 보호 관계가 초기화될 때 Element 볼륨의 이름을 사용하여 LUN을 생성합니다. LUN이 Element to ONTAP 복제에 대한 요구사항을 충족하는 경우 SnapMirror는 데이터를 기존 LUN에 복제합니다.</block>
+  <block id="611160ee2fed0433c2a5d4711fb48b06" category="paragraph">복제 규칙은 다음과 같습니다.</block>
+  <block id="60ae019897bd3d84eeeed37065ac318c" category="list-text">ONTAP 볼륨은 하나의 요소 볼륨에서만 데이터를 포함할 수 있습니다.</block>
+  <block id="fe9ad9074743f70b148e3d994116d106" category="list-text">ONTAP 볼륨에서 여러 요소 볼륨으로 데이터를 복제할 수는 없습니다.</block>
+  <block id="575ad0e96b85453b0e29f712a71a0a2b" category="section-title">ONTAP 소스 클러스터에서 Element 대상 클러스터로 복제</block>
+  <block id="13040250704a4e12c83cd7b9a2c300e1" category="paragraph">ONTAP 9.4부터는 ONTAP 시스템에 생성된 LUN의 스냅샷 복사본을 Element 볼륨으로 다시 복제할 수 있습니다.</block>
+  <block id="0fab034adb598062e25d1023de01e394" category="list-text">Element 소스와 ONTAP 대상 간에 SnapMirror 관계가 이미 있는 경우, 소스에서 데이터를 제공하는 동안 생성된 LUN은 소스가 재활성화되면 자동으로 복제됩니다.</block>
+  <block id="392abd8bc45542e905483bd6ae5f6efa" category="list-text">그렇지 않으면 ONTAP 소스 클러스터와 Element 대상 클러스터 간에 SnapMirror 관계를 생성하고 초기화해야 합니다.</block>
+  <block id="2cb11b5f797a74130e629e1f045d1461" category="list-text">복제 관계에는 ""비동기 미러"" 유형의 정책이 있어야 합니다.</block>
+  <block id="7efb12c6fe6d977da6b78a66991c0809" category="paragraph">'미러 볼트' 유형의 정책은 지원되지 않습니다.</block>
+  <block id="756804dcf3bdb28fa642d106946fc1fd" category="list-text">iSCSI LUN만 지원됩니다.</block>
+  <block id="214863aa243c8a82fb5eab8543be5523" category="list-text">ONTAP 볼륨에서 Element 볼륨으로 둘 이상의 LUN을 복제할 수 없습니다.</block>
+  <block id="bd60ee943b224c9cf82212c56937cd29" category="list-text">ONTAP 볼륨에서 여러 요소 볼륨으로 LUN을 복제할 수는 없습니다.</block>
+  <block id="d0eb6da02882c585a65ca348ffff05d5" category="paragraph">Element와 ONTAP 간의 데이터 보호 관계를 구성하기 전에 다음 작업을 완료해야 합니다.</block>
+  <block id="37db2f7fb3e49df30cc32a9649aea32f" category="list-text">Element 클러스터는 NetApp Element 소프트웨어 버전 10.1 이상을 실행해야 합니다.</block>
+  <block id="f31b6d38bbeb8fcf8ea29dda985316f0" category="list-text">ONTAP 클러스터는 ONTAP 9.3 이상을 실행해야 합니다.</block>
+  <block id="feaada5a395125a755e15c612cc44149" category="list-text">ONTAP 클러스터에서 SnapMirror 라이센스가 있어야 합니다.</block>
+  <block id="6d74735d1f487a7d257b5cf661f166a9" category="list-text">예상 데이터 전송을 처리할 수 있을 정도로 큰 볼륨을 Element 및 ONTAP 클러스터에 구성해야 합니다.</block>
+  <block id="1c9cc74529c9cbdea35027dbfbe10f61" category="list-text">"'미러 볼트' 정책 유형을 사용하는 경우 SnapMirror 레이블을 통해 요소 스냅샷 복사본을 복제해야 합니다.</block>
+  <block id="ffcff48a8900b759122138dc74affc48" category="inline-link-macro">Element 소프트웨어 웹 UI</block>
+  <block id="faa03ad90cfa8dd02ce4f68b832e5926" category="inline-link-macro">API 메서드</block>
+  <block id="f3fde60a3a60d61f5adcdf60b79d244d" category="paragraph">또는 에서만 이 작업을 수행할 수 <block ref="b93072557c65ffea9f42510ec69c2114" category="inline-link-macro-rx"></block><block ref="887e50fc0bb5d7d97f152ed649a55cbc" category="inline-link-macro-rx"></block>있습니다.</block>
+  <block id="29092ab8561df9315028f9475d370804" category="list-text">포트 5010을 사용할 수 있는지 확인해야 합니다.</block>
+  <block id="ec26990081e21ee38c3e0acab1f5447c" category="list-text">대상 볼륨을 이동해야 할 수 있다고 예상하는 경우 소스와 대상 간에 전체 메시 연결이 존재하는지 확인해야 합니다. Element 소스 클러스터의 모든 노드는 ONTAP 대상 클러스터의 모든 노드와 통신할 수 있어야 합니다.</block>
+  <block id="c3ffc8e078b339d5886703a912ed9b58" category="section-title">지원 세부 정보</block>
+  <block id="d9b09ea2d53525a69cddf8cff070fbc5" category="paragraph">다음 표에는 Element to ONTAP 백업에 대한 지원 세부 정보가 나와 있습니다.</block>
+  <block id="8db918ed0f3814eca3898085fa4c511b" category="cell">리소스 또는 기능</block>
+  <block id="794cb725c5631ad99b5b7c000307f0df" category="paragraph">SnapMirror</block>
+  <block id="21a2e79c7fb50408a04d4338b003fc35" category="list-text">SnapMirror 복원 기능은 지원되지 않습니다.</block>
+  <block id="a4d865020d4d568b7de06dcab179c547" category="list-text"><block ref="549e9a8369377ab9bda71541111ca2f9" prefix=" " category="inline-code"></block>및<block ref="a56c1780b810accc7f0bc23193dc16aa" prefix=" " category="inline-code"></block> 정책은 지원되지 않습니다.</block>
+  <block id="aeb6598f6f0d345a9ea3b8f9306c1870" category="list-text">"볼트" 정책 유형은 지원되지 않습니다.</block>
+  <block id="be23dbf7af78294377409c568f243694" category="list-text">시스템 정의 규칙 ""ALL_SOURCE_SNAPSHOTS""는 지원되지 않습니다.</block>
+  <block id="8c384d54e72de8db435214eca3e993b1" category="list-text">"미러 볼트" 정책 유형은 Element 소프트웨어에서 ONTAP로의 복제에 대해서만 지원됩니다. ONTAP에서 Element 소프트웨어로 복제하려면 ""비동기 미러""를 사용하십시오.</block>
+  <block id="f16a2db4342a84cac6ba3ddf9921e455" category="list-text"><block ref="1115f328ec8d317585cad6b29ed517b9" prefix=" " category="inline-code"></block>및<block ref="6f75186386aaf3d5333336d4c403d2ec" prefix=" " category="inline-code"></block> 옵션은<block ref="0029d3abd55b9ef7d0f43d20838735b2" prefix=" " category="inline-code"></block> 지원되지 않습니다.</block>
+  <block id="7abbb1222642ca1a125a87cfbe8132bc" category="list-text"><block ref="a6db42a9ef6515d0f373aaa0e2cb1da5" prefix=" " category="inline-code"></block>및<block ref="4a44b5e31c49a6876ef22d7209f3e8f1" prefix=" " category="inline-code"></block> 옵션은<block ref="562007dcf7d55742abbc5fd0809cb393" prefix=" " category="inline-code"></block> 지원되지 않습니다.</block>
+  <block id="07bc92e29d924f55f92ba1efe5251a0c" category="list-text">스토리지 효율성이 유지되지 않습니다.</block>
+  <block id="767b3644f591d7296d597952b5c37fb2" category="list-text">팬아웃 및 캐스케이드 데이터 보호 구축은 지원되지 않습니다.</block>
+  <block id="253b40ae359ba25b56231803430c4873" category="paragraph">ONTAP</block>
+  <block id="d1a53027e49c40f67f7d07d9bf2c7289" category="list-text">ONTAP Select는 ONTAP 9.4 및 Element 10.3부터 지원됩니다.</block>
+  <block id="c5fc02d8ab5590c8be21882ed204bef5" category="list-text">Cloud Volumes ONTAP는 ONTAP 9.5 및 Element 11.0부터 지원됩니다.</block>
+  <block id="231afe47f3f37d3808096b36c28b4ded" category="paragraph">요소</block>
+  <block id="af2212368d1a1a96570e6ce2f93486c6" category="list-text">볼륨 크기 제한은 8TiB입니다.</block>
+  <block id="9a4b0811c4aeee55ac501f5f73d0e9cc" category="list-text">볼륨 블록 크기는 512바이트여야 합니다. 4K 바이트 블록 크기는 지원되지 않습니다.</block>
+  <block id="42bb1943ff14049938b7af19c411e1a5" category="list-text">볼륨 크기는 1MiB의 배수여야 합니다.</block>
+  <block id="81c2bbfc9ec9795a841edc371c12fdc9" category="list-text">볼륨 특성은 보존되지 않습니다.</block>
+  <block id="81b77bbc7e578477f69adc3b50924346" category="list-text">복제할 스냅샷 복사본의 최대 수는 30개입니다.</block>
+  <block id="eec89088ee408b80387155272b113256" category="paragraph">네트워크</block>
+  <block id="e92af91135bdb6dced651f59e27e1ddd" category="list-text">전송당 단일 TCP 연결이 허용됩니다.</block>
+  <block id="47bc0716ece5aa8143da2f1021f1046a" category="list-text">Element 노드는 IP 주소로 지정해야 합니다. DNS 호스트 이름 조회가 지원되지 않습니다.</block>
+  <block id="6fbe07d89b9a98b513b28d4bdec6d62e" category="list-text">IPspace는 지원되지 않습니다.</block>
+  <block id="acdc6b4f6edd40f37bce01247a32ff86" category="paragraph">SnapLock</block>
+  <block id="f2443749b29077db72ccdf85691104ac" category="paragraph">SnapLock 볼륨은 지원되지 않습니다.</block>
+  <block id="54452390cac5f65f3bcec580ba079531" category="paragraph">FlexGroup</block>
+  <block id="9b326c2076ec04f5c715a46044ed7875" category="paragraph">FlexGroup 볼륨은 지원되지 않습니다.</block>
+  <block id="7e4716fcadce4a1adb7676534312a764" category="paragraph">SVM DR</block>
+  <block id="be4ce5f5b863230b071a1e9bbc6b526f" category="paragraph">SVM DR 구성의 ONTAP 볼륨은 지원되지 않습니다.</block>
+  <block id="1749d12df3df2319d3eee218a277ff83" category="paragraph">MetroCluster</block>
+  <block id="a3bcdc002e42a770c83a4edb29da0f53" category="paragraph">MetroCluster 구성의 ONTAP 볼륨은 지원되지 않습니다.</block>
+  <block id="4a564490593b9dfe3a2ce1d2fff04fe4" category="summary">ONTAP 9.4부터 SnapMirror를 사용하여 ONTAP 소스에 생성된 LUN의 스냅샷 복사본을 Element 대상에 다시 복제할 수 있습니다. LUN을 사용하여 ONTAP에서 Element 소프트웨어로 데이터를 마이그레이션할 수 있습니다.</block>
+  <block id="5fd75f621e23582f2c44185301f3d0bc" category="doc">ONTAP 소스에서 요소 대상으로 관계를 생성합니다</block>
+  <block id="671d4984a0edd201ed04cb12a6e7e546" category="paragraph">양식에 Element 대상 경로를 지정해야<block ref="e6c8050b8cd0a398b28edeaa070ef325" prefix=" " category="inline-code"></block>합니다. 여기서 ""LUN""은 실제 문자열 ""LUN""이고 Element 볼륨의 이름입니다.<block ref="b068931cc450442b63f5b3d276ea4297" prefix=" " category="inline-code"></block></block>
+  <block id="cd57d551152a56e1d856ea5b32a07cdc" category="paragraph">기본 또는 사용자 지정 정책을 사용할 수 있습니다.</block>
+  <block id="5b389c8a58dad055afa79e4177452302" category="list-text">ONTAP 소스에서 요소 대상으로 복제 관계 생성:</block>
+  <block id="21d54011fd2ab4603029e4ac2184f5a9" category="paragraph"><block ref="c082a86a7cf53d1882908e6733522aef" prefix="" category="inline-code"></block></block>
+  <block id="0d77c8e7d80cb27ae9dc932aa45f1c45" category="paragraph">다음 예에서는 기본 정책을 사용하여 SnapMirror DR 관계를<block ref="e162cfb3e9ccdaa06cb8c6b686825bee" prefix=" " category="inline-code"></block> 생성합니다.</block>
+  <block id="20ca84a5d91d2978217b06774c1ff42a" category="paragraph">다음 예에서는 사용자 지정 정책을 사용하여 SnapMirror DR 관계를<block ref="71d9dcae261bca2017bff65f9d341cdf" prefix=" " category="inline-code"></block> 생성합니다.</block>
+  <block id="9a52d6a5d71c5d44563a5e2f1d1fde56" category="paragraph">명령을 사용하여<block ref="8511c2f3ef6c5e8c42a150c01bd8495c" prefix=" " category="inline-code"></block> SnapMirror 관계가 생성되었는지 확인하십시오. 전체 명령 구문은 man 페이지를 참조하십시오.</block>
+  <block id="1b8f57d8466ed9be37f7a96ca1ff045e" category="summary">작업 스케줄 cron create 명령을 사용하여 복제 작업 스케줄을 생성할 수 있습니다. 작업 일정은 SnapMirror에서 일정이 할당된 데이터 보호 관계를 자동으로 업데이트할지 여부를 결정합니다.</block>
+  <block id="6e0983de50056fdacdd9550f613eab0a" category="doc">복제 작업 스케줄을 생성합니다</block>
+  <block id="77f7f7ae06760be21bad1e934698a2b6" category="paragraph">명령을 사용하여 복제 작업 스케줄을 생성할 수<block ref="859f5842129c4a4759882f44afc53f67" prefix=" " category="inline-code"></block> 있습니다. 작업 일정은 SnapMirror에서 일정이 할당된 데이터 보호 관계를 자동으로 업데이트할지 여부를 결정합니다.</block>
+  <block id="4cd38d835e28dd8e89e58a585a1635ce" category="paragraph">데이터 보호 관계를 생성할 때 작업 일정을 할당합니다. 작업 일정을 할당하지 않으면 관계를 수동으로 업데이트해야 합니다.</block>
+  <block id="30d4f2aeb7b82779c70416788d971465" category="list-text">작업 일정 생성:</block>
+  <block id="81a9fe82fd59a2c04babfe1577b880cc" category="paragraph"><block ref="bedcaa3bb7cb9fb678c133c3f7789c20" prefix="" category="inline-code"></block></block>
+  <block id="f688f55fb3ce384a9ba02dc800aad85c" category="paragraph"><block ref="82a93b05df3feec57c63ce441966c4aa" prefix=" " category="inline-code"></block>, 및 의 경우<block ref="c33078b2e2b402748c5df40230241dfd" prefix=" " category="inline-code"></block> 매월,<block ref="0b82738fba867e44dfa968af10583698" prefix=" " category="inline-code"></block> 요일 및 시간을 각각 실행하도록 지정할 수 있습니다<block ref="a181a603769c1f98ad927e7367c7aa51" prefix=" " category="inline-code"></block>.</block>
+  <block id="e7b3845f547288333fc43557e68ff726" category="paragraph">ONTAP 9.10.1.1부터는 작업 일정에 SVM을 포함할 수 있습니다.</block>
+  <block id="de023266755facdf6e475fb2f1231247" category="paragraph"><block ref="9d80176d3e2b1152929a845746bdfce8" prefix="" category="inline-code"></block></block>
+  <block id="33e6ff13335b307e0cdcabc402432b17" category="paragraph">다음 예제에서는 토요일 오전 3시에 실행되는 라는 작업 일정을 만듭니다<block ref="736f838f8851e1244e29879c9b2c09e2" prefix=" " category="inline-code"></block>.</block>
+  <block id="07c23f69abe32eb16c73feac875a5deb" category="doc">요소 소스에서 ONTAP 대상으로 관계를 생성합니다</block>
+  <block id="cfcb25ba2acb78ebcd2bfe10cdf8c05d" category="paragraph">운영 스토리지의 소스 볼륨과 2차 스토리지의 타겟 볼륨 간의 관계를 _ 데이터 보호 관계 _ 라고 합니다. 명령을 사용하여 Element 소스에서 ONTAP 타겟으로 또는 ONTAP 소스에서 Element 대상으로의 데이터 보호 관계를 생성할 수 있습니다<block ref="f95e5ae9c757f4c65e42842a276ea620" prefix=" " category="inline-code"></block>.</block>
+  <block id="8d1c3ce2c079ea826bf56e8f66968128" category="list-text">복제할 볼륨이 포함된 Element 노드를 ONTAP에서 액세스할 수 있어야 합니다.</block>
+  <block id="93e121887ad04ad70978340760569601" category="paragraph">형태로 Element 소스 경로를 지정해야<block ref="e6c8050b8cd0a398b28edeaa070ef325" prefix=" " category="inline-code"></block>합니다. 여기서 ""lun""은 실제 문자열 ""lun""이고 Element 볼륨의 이름입니다.<block ref="b068931cc450442b63f5b3d276ea4297" prefix=" " category="inline-code"></block></block>
+  <block id="f677578eee8cc049cbf2a85aea7b654a" category="paragraph">Element 볼륨은 ONTAP LUN과 거의 동일합니다. SnapMirror는 Element 소프트웨어와 ONTAP 간의 데이터 보호 관계가 초기화될 때 Element 볼륨의 이름을 사용하여 LUN을 생성합니다. SnapMirror는 LUN이 Element 소프트웨어에서 ONTAP로 복제 시 요구 사항을 충족하는 경우 데이터를 기존 LUN에 복제합니다.</block>
+  <block id="d8931e08767e68e987f1b13d764a1acc" category="paragraph">ONTAP 9 .3 이하 버전에서는 대상 볼륨에 최대 251개의 스냅샷 복사본을 포함할 수 있습니다. ONTAP 9 .4 이상에서는 타겟 볼륨에 최대 1019개의 스냅샷 복사본을 포함할 수 있습니다.</block>
+  <block id="9b410ef8345a58c12249763befbf5acd" category="list-text">대상 클러스터에서 요소 소스에서 ONTAP 대상으로 복제 관계를 생성합니다.</block>
+  <block id="23416754fb164e7a9a90b096e7990743" category="paragraph"><block ref="5b5057c47be283a233ea17044574b88e" prefix="" category="inline-code"></block></block>
+  <block id="df857cb0f08264825fefa55878d286ce" category="paragraph">다음 예에서는 기본 정책을 사용하여 통합 복제 관계를<block ref="37e459201e5691c90f616e05271f4ba3" prefix=" " category="inline-code"></block> 생성합니다.</block>
+  <block id="97fedbfaebdbcfe68bdc2db0e517c79e" category="paragraph">다음 예에서는 정책을 사용하여 통합 복제 관계를<block ref="4403b8bed8329a1a1ba838d590fec221" prefix=" " category="inline-code"></block> 생성합니다.</block>
+  <block id="ea71844b20a2af889daba2027461836d" category="paragraph">다음 예에서는 사용자 지정 정책을 사용하여 통합 복제 관계를<block ref="7d06ce743afb94fd7161f90acba5f66a" prefix=" " category="inline-code"></block> 생성합니다.</block>
+  <block id="6559e429258efad47fd0bec3573ac5e4" category="summary">복제 관계를 생성하려면 먼저 SnapMirror 엔드포인트를 생성해야 합니다. 이 작업은 Element 소프트웨어 웹 UI에서 또는 API 메소드에서만 수행할 수 있습니다.</block>
+  <block id="dca879936ace6cbca538e4b03fc5f880" category="paragraph">복제 관계를 생성하려면 먼저 SnapMirror 엔드포인트를 생성해야 합니다. 이 작업은 Element 소프트웨어 웹 UI 또는 를 사용해야만 수행할 수 <block ref="9641b9cb3efec10f08ee0a17e27a64d6" category="inline-link-macro-rx"></block>있습니다.</block>
+  <block id="410d41840bfe4c79d1cbcbad970381ce" category="paragraph">Element 클러스터에서 SnapMirror를 사용하도록 설정해야 합니다.</block>
+  <block id="5759c23faeaf56d63eb3bea8d1a94825" category="list-text">새 엔드포인트 생성 * 대화 상자에서 ONTAP 클러스터 관리 IP 주소를 입력합니다.</block>
+  <block id="d761d08865080249d5b15ce3eeea8150" category="list-text">ONTAP 클러스터 관리자의 사용자 ID와 암호를 입력합니다.</block>
+  <block id="5273b6bf72b09b4cd1a768e5f5f5004f" category="summary">"미러 볼트" 정책 유형의 사용자 정의 정책의 경우 초기화 및 업데이트 중에 전송되는 스냅샷 복사본을 결정하는 규칙을 하나 이상 정의해야 합니다. "미러 볼트" 정책 유형을 사용하여 기본 정책에 대한 규칙을 정의할 수도 있습니다.</block>
+  <block id="8388fc8e43cd8b1ab56fce10123149f0" category="doc">정책에 대한 규칙을 정의합니다</block>
+  <block id="2eb9dd495de98bb9f61e0c22a0a12849" category="paragraph">"미러 볼트" 정책 유형의 사용자 지정 정책의 경우 초기화 및 업데이트 중에 전송되는 스냅샷 복사본을 결정하는 규칙을 하나 이상 정의해야 합니다. "미러 볼트" 정책 유형을 사용하여 기본 정책에 대한 규칙을 정의할 수도 있습니다.</block>
+  <block id="3f6d281e355855827963828754c8479c" category="paragraph">"미러 볼트" 정책 유형의 모든 정책에는 복제할 스냅샷 복사본을 지정하는 규칙이 있어야 합니다. 예를 들어 ""bi-monthly"" 규칙은 SnapMirror 레이블 ""bi-monthly""에 할당된 스냅샷 복사본만 복제해야 함을 나타냅니다. Element 스냅샷 복사본을 구성할 때 SnapMirror 레이블을 할당합니다.</block>
+  <block id="81b83eeba142c094d38a0295edf7af73" category="paragraph">각 정책 유형은 하나 이상의 시스템 정의 규칙과 연결됩니다. 이러한 규칙은 정책 유형을 지정할 때 정책에 자동으로 할당됩니다. 아래 표에는 시스템 정의 규칙이 나와 있습니다.</block>
+  <block id="b3c6a2407675972cff07d225ff2613f9" category="cell">시스템 정의 규칙</block>
+  <block id="73c6de97e79c7f3f0b5a1b5ec4941980" category="cell">정책 유형에 사용됩니다</block>
+  <block id="3d461e898a5bb577fcbfc3971839e75a" category="paragraph">SM_생성됨</block>
+  <block id="cd34b3820b2d00ae955db7930b07b587" category="paragraph">비동기 미러, 미러 볼트</block>
+  <block id="a91e81695146cf9603a0cced6620207b" category="paragraph">SnapMirror에서 생성한 스냅샷 복사본은 초기화 및 업데이트 시 전송됩니다.</block>
+  <block id="bea79186fd7af2da67e59b4b15df5a26" category="paragraph">매일</block>
+  <block id="39234b8ba77bc7a1fdec2e0fe9301dc1" category="paragraph">SnapMirror 레이블이 ""daily""인 소스의 새 스냅샷 복제본이 초기화 및 업데이트 시 전송됩니다.</block>
+  <block id="4a11fc05ed694c195f0703605b64da90" category="paragraph">매주</block>
+  <block id="658fa3413ecb4367affa36fa4324e85d" category="paragraph">SnapMirror 레이블이 ""weekly""인 소스의 새 스냅샷 복제본이 초기화 및 업데이트 시 전송됩니다.</block>
+  <block id="708638881f3bac9d9c8c742c79502811" category="paragraph">매월</block>
+  <block id="56511f880daf8089ead5d32a0a40f45c" category="paragraph">SnapMirror 레이블이 ""월""인 소스의 새 스냅샷 복제본이 초기화 및 업데이트 시 전송됩니다.</block>
+  <block id="d77edabf22e91ed88c75e865dfb339e9" category="paragraph">필요에 따라 기본 또는 사용자 지정 정책에 대한 추가 규칙을 지정할 수 있습니다. 예를 들면 다음과 같습니다.</block>
+  <block id="aa0e8d0f698f3cfbc2c06adfbaff7f0c" category="list-text">기본 정책의 경우<block ref="37e459201e5691c90f616e05271f4ba3" prefix=" " category="inline-code"></block> ""격월""" 규칙을 만들어 소스의 스냅샷 복제본을 ""격월"" SnapMirror 레이블과 일치시킬 수 있습니다.</block>
+  <block id="3db7df45d3050befeac0ec1c959ce255" category="list-text">"미러 볼트" 정책 유형을 사용하는 사용자 지정 정책의 경우 ""격주"" 규칙을 만들어 소스의 스냅샷 복사본과 ""격주"" SnapMirror 레이블을 일치시킬 수 있습니다.</block>
+  <block id="a6b6919f05b95bb622454b95fbdd03fa" category="list-text">정책의 규칙 정의:</block>
+  <block id="c6eb6a0a85aecd764f2cf991f7d90d5c" category="paragraph"><block ref="d066152b6ff535c7f867d34e357766f2" prefix="" category="inline-code"></block></block>
+  <block id="b28e0c8394118efd7c92324ce02e0135" category="paragraph">다음 예제에서는 SnapMirror 레이블이 있는 규칙을 기본<block ref="37e459201e5691c90f616e05271f4ba3" prefix=" " category="inline-code"></block> 정책에 추가합니다<block ref="a093944ec7193cf13ee005e1af950f4c" prefix=" " category="inline-code"></block>.</block>
+  <block id="20cc35bf4f534abf7c8e15480973e9cf" category="paragraph">다음 예제에서는 SnapMirror 레이블이 있는 규칙을 사용자 지정<block ref="1d5de0bd3d87489e1362714791579989" prefix=" " category="inline-code"></block> 정책에 추가합니다<block ref="2a44471da66622bfc5b82888ae83a7dc" prefix=" " category="inline-code"></block>.</block>
+  <block id="b0eff705a5813714cb73d5b4afee11b9" category="paragraph">다음 예제에서는 SnapMirror 레이블이 있는 규칙을 사용자 지정<block ref="d8e87c0927539672f54462c837be0b7f" prefix=" " category="inline-code"></block> 정책에 추가합니다<block ref="b17c9a947d4e38d7975718380fab6b7a" prefix=" " category="inline-code"></block>.</block>
+  <block id="f0f637ca20caa61073cee1a4ce7e8dfc" category="paragraph">그런 다음 이 SnapMirror 레이블과 일치하는 소스 클러스터에서 스냅샷 복사본을 복제할 수 있습니다.</block>
+  <block id="2914b577684d6c7f339e6fda22c3487f" category="summary">복제 관계를 생성하려면 먼저 Element 클러스터에서 SnapMirror를 활성화해야 합니다. 이 작업은 Element 소프트웨어 웹 UI에서 또는 API 메소드에서만 수행할 수 있습니다.</block>
+  <block id="28d0537c10dbc179674ef31f5b5a2bab" category="doc">Element 클러스터에서 SnapMirror를 사용하도록 설정합니다</block>
+  <block id="c229b2f8b428f342bff7cf24ff75f1b2" category="inline-link-macro">API 메소드</block>
+  <block id="0b8667f1f4456982a27ec231d1a84da6" category="paragraph">복제 관계를 생성하려면 먼저 Element 클러스터에서 SnapMirror를 활성화해야 합니다. 이 작업은 Element 소프트웨어 웹 UI 또는 를 사용해야만 수행할 수 <block ref="08aeb663b3e636fd7806da6cd0761563" category="inline-link-macro-rx"></block>있습니다.</block>
+  <block id="c0b5b482ba26a5488d37e9a7bc811294" category="list-text">SnapMirror는 NetApp ONTAP 볼륨과 함께 사용되는 Element 클러스터에 대해서만 활성화할 수 있습니다.</block>
+  <block id="4afc20f670cf64f0a4b45231ad8a70ba" category="paragraph">Element 시스템에는 기본적으로 SnapMirror가 비활성화되어 있습니다. SnapMirror는 새로운 설치 또는 업그레이드의 일부로 자동 활성화되지 않습니다.</block>
+  <block id="c2d4151faae061b47ac729e96671972f" category="paragraph">SnapMirror를 사용하도록 설정한 후에는 사용하지 않도록 설정할 수 없습니다. SnapMirror 기능만 사용하지 않도록 설정하고 클러스터를 출하 시 상태로 되돌려 기본 설정을 복원할 수 있습니다.</block>
+  <block id="58d35ba486cdacfc31e43fd6a58950a7" category="summary">복제 관계를 생성하려면 먼저 Element 소스 볼륨에서 SnapMirror를 활성화해야 합니다. 이 작업은 Element 소프트웨어 웹 UI에서 또는 API 메소드에서만 수행할 수 있습니다.</block>
+  <block id="98d336445179a80880568e07dde510b1" category="doc">Element 소스 볼륨에서 SnapMirror를 사용하도록 설정합니다</block>
+  <block id="5d2e361c0914a6964545e53b54120709" category="paragraph">복제 관계를 생성하려면 먼저 Element 소스 볼륨에서 SnapMirror를 활성화해야 합니다. 이 작업은 Element 소프트웨어 웹 UI에서 또는 및 <block ref="50b3ddadfbe173a030d079ab859844eb" category="inline-link-macro-rx"></block> API 메서드를 사용해서만 수행할 수 <block ref="ed0492a679a5ccbd40bf302baf82a4fe" category="inline-link-macro-rx"></block>있습니다.</block>
+  <block id="56701c635309a5e65d18a7422b09c3cd" category="list-text">볼륨 블록 크기는 512바이트입니다.</block>
+  <block id="b1811edce82ed716d4bc66b1dd1d116f" category="list-text">볼륨이 Element 원격 복제에 참여해서는 안 됩니다.</block>
+  <block id="235ca555c941bbeb27b8144103315c9b" category="list-text">볼륨 액세스 유형은 ""복제 타겟""이 아니어야 합니다.</block>
+  <block id="aa582564183ce90222c0f16b2593de3d" category="paragraph">아래 절차에서는 볼륨이 이미 있다고 가정합니다. 볼륨을 생성하거나 클론 복제할 때 SnapMirror를 설정할 수도 있습니다.</block>
+  <block id="5ad3e303fff11348579be9fa7186a3bf" category="inline-image-macro">작업 아이콘</block>
+  <block id="e4516ea54829e71aaeb006b12f3c5a2c" category="list-text">볼륨 버튼을 선택합니다 <block ref="c352969104f9ab1e97bd6725465d4889" category="inline-image-macro-rx" type="image"></block> .</block>
+  <block id="ddda07cb938f448af103c180857849eb" category="list-text">드롭다운 메뉴에서 * 편집 * 을 선택합니다.</block>
+  <block id="825a9c3c5a2e7b2df7176baddce9612b" category="list-text">볼륨 편집 * 대화 상자에서 * SnapMirror 사용 * 을 선택합니다.</block>
+  <block id="d8181793389c7f93917cee076030f915" category="summary">모든 관계 유형에 대해 초기화는 기본 전송을 수행합니다. 즉, 소스 볼륨의 스냅샷 복사본을 만든 다음 해당 복사본과 해당 복사본이 타겟 볼륨에 참조하는 모든 데이터 블록을 전송합니다.</block>
+  <block id="45df433d6d3e94a4c9cb03d82b93e7fa" category="doc">복제 관계를 초기화합니다</block>
+  <block id="b2b3be1c2a51c9d4540990c4a5d23aae" category="paragraph">모든 관계 유형에 대해 초기화는 a_baseline transfer_:를 수행합니다. 소스 볼륨의 스냅샷 복사본을 만든 다음 해당 복사본과 해당 복제본이 참조하는 모든 데이터 블록을 대상 볼륨에 전송합니다.</block>
+  <block id="e2ad484a6b62ee4735da3967f915cfcd" category="paragraph">형태로 Element 소스 경로를 지정해야<block ref="e6c8050b8cd0a398b28edeaa070ef325" prefix=" " category="inline-code"></block>합니다. 여기서 ""lun""은 실제 문자열 ""lun""이고 Element 볼륨의 이름입니다.<block ref="556cc083d537486719fe9402a1b8ae6f" prefix=" " category="inline-code"></block></block>
+  <block id="3c8e9155ad3c335597226d2522259967" category="paragraph">초기화에는 시간이 오래 걸릴 수 있습니다. 사용량이 적은 시간에 기준 전송을 실행할 수 있습니다.</block>
+  <block id="73e37d6deeb42cd92441f77e04ef2ec1" category="paragraph">어떤 이유로든 ONTAP 소스에서 요소 대상으로 관계를 초기화하지 못할 경우 문제를 해결한 후에도(예: 잘못된 LUN 이름) 계속 실패합니다. 해결 방법은 다음과 같습니다.</block>
+  <block id="5c5491436ad1d5e7eef4e0acc6abd020" category="list-text">관계를 삭제합니다.</block>
+  <block id="84787e1315f0e4ee09bbe0a1ba9b2e53" category="list-text">Element 대상 볼륨을 삭제합니다.</block>
+  <block id="a625acecf7c6e7cbfefe6e5bad5be4fe" category="list-text">새 Element 대상 볼륨을 생성합니다.</block>
+  <block id="a8afea736dd29aa69fd4831616add70c" category="list-text">ONTAP 소스에서 요소 대상 볼륨으로의 새 관계를 생성하고 초기화합니다.</block>
+  <block id="19f40727c2b4d6910d9be535ade1d3fe" category="list-text">복제 관계 초기화:</block>
+  <block id="46c8ba9b9f1ff7f4af12661928b243b3" category="paragraph"><block ref="95be55af434968dd750356bbc62fee8a" prefix="" category="inline-code"></block></block>
+  <block id="3da2b54c500b7e62c9e006a8e3ecf3dc" category="paragraph">다음 예에서는 IP 주소 10.0.0.11의 소스 볼륨과 의<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block> 대상 볼륨<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block> 간의 관계를<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block> 초기화합니다.</block>
+  <block id="3754a7d0bc07704736c9565c60853267" category="summary">볼륨에서 클라이언트로 데이터를 제공하려면 먼저 대상 볼륨을 쓰기 가능하게 만들어야 합니다. SnapMirror 중지 명령을 사용하여 대상에 대한 예약된 전송을 중지하고, SnapMirror 중단 명령을 사용하여 진행 중인 전송을 중지한 다음, SnapMirror 중단 명령을 사용하여 대상을 쓰기 가능 상태로 만들 수 있습니다.</block>
+  <block id="193977e29c025c21e4fcc5f83c71ced7" category="doc">대상 볼륨을 쓰기 가능하게 만듭니다</block>
+  <block id="e299e64cee7826c89274f83c8977b703" category="paragraph">재해로 인해 SnapMirror DR 관계의 운영 사이트가 비활성화되면 운영 중단을 최소화하면서 타겟 볼륨의 데이터를 제공할 수 있습니다. 기본 사이트에서 서비스가 복원되면 소스 볼륨을 다시 활성화할 수 있습니다.</block>
+  <block id="bdc8fe3e1d2101f8ae7b0b3ce8978ae5" category="paragraph">볼륨에서 클라이언트로 데이터를 제공하려면 먼저 대상 볼륨을 쓰기 가능하게 만들어야 합니다. 명령을 사용하여 대상으로의 예약된 전송을 중지하고,<block ref="55c969b3f726ee6617880fb9c8a3f113" prefix=" " category="inline-code"></block> 지속적인 전송을 중지하는 명령,<block ref="e1d39aa448c4c7cc75f1a16830613e32" prefix=" " category="inline-code"></block> 타겟에 쓰기 가능한 상태로 만드는 명령을 사용할 수<block ref="6b13a41afb71010e4fbb1972f0f33998" prefix=" " category="inline-code"></block> 있습니다.</block>
+  <block id="4c370f7d76a9395959e668dca854bf69" category="list-text">목적지로의 예약된 전송 중지:</block>
+  <block id="6aa110cae07600fc4f788d032825fe8a" category="paragraph"><block ref="0133b66d5b0a4c546f0836d4edf8f8b6" prefix="" category="inline-code"></block></block>
+  <block id="71fc23653cde895afc268937426dd719" category="paragraph">다음 예에서는 IP 주소 10.0.0.11의 소스 볼륨과 에서<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block> 대상 볼륨<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block> 간의 예약된 전송을 중지합니다<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block>.</block>
+  <block id="9622c5db02f0909860645c33ce7ecd5b" category="list-text">목적지로의 진행 중인 전송을 중지합니다.</block>
+  <block id="dc73e892a38aeaa7231db927b9b302d4" category="paragraph"><block ref="231f48d5c42b363a9aa672f96567a3ca" prefix="" category="inline-code"></block></block>
+  <block id="151e9c9a14ab695d2f31445758c764fe" category="paragraph">다음 예에서는 IP 주소 10.0.0.11의 소스 볼륨과 에서<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block> 대상 볼륨<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block> 간의 지속적인 전송을 중지합니다<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block>.</block>
+  <block id="c431f84a8da55289cd5d1e21d9ad35e5" category="list-text">SnapMirror DR 관계 끊기:</block>
+  <block id="c48440b123be4a3f63bdae9e5ffce71f" category="paragraph"><block ref="e9481ba03d6c317b9ef899d94e12eba6" prefix="" category="inline-code"></block></block>
+  <block id="f4e29185613adaf99eff92fd4af77281" category="paragraph">다음 예는 IP 주소 10.0.0.11의 소스 볼륨과 의 타겟 볼륨 및 의<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block> 타겟<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block> 볼륨<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block> 간의 관계를 끊어<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block><block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block> 줍니다.</block>
+  <block id="1f7be050627f22d103d49b8b9ff0375d" category="summary">대상에서 데이터를 더 이상 제공할 필요가 없을 때 소스 볼륨과 타겟 볼륨 간에 원래 데이터 보호 관계를 다시 설정할 수 있습니다.</block>
+  <block id="7cf793834e39bf913f660e315c2cf8ea" category="doc">원본 소스 볼륨을 다시 활성화합니다</block>
+  <block id="d5511ec9c002a4626b5e190c7ad2015f" category="paragraph">아래 절차에서는 원본 소스 볼륨의 기준선이 온전한 것으로 가정합니다. 기준선이 변경되지 않은 경우 절차를 수행하기 전에 데이터를 제공하는 볼륨과 원본 소스 볼륨 간의 관계를 생성하고 초기화해야 합니다.</block>
+  <block id="47caa83e52964920ac786b5585c75193" category="paragraph">ONTAP 9.4부터는 ONTAP 대상에서 데이터를 제공하는 동안 생성된 LUN의 스냅샷 복사본이 Element 소스가 다시 활성화될 때 자동으로 복제됩니다.</block>
+  <block id="306ac0c651173de66a7de6cd2da25ab3" category="list-text">원본 데이터 보호 관계를 삭제합니다.</block>
+  <block id="0ed3f9f870c580e5c7262defb973b65b" category="paragraph"><block ref="118357af521377bc8478ffce60f0a448" prefix="" category="inline-code"></block></block>
+  <block id="e90619ecde90c7c8791fa7552428446a" category="paragraph">다음 예제에서는 IP 주소 10.0.0.11의 원래 소스 볼륨과 데이터를 제공하는 볼륨<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block> 간의 관계를 삭제합니다.<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block><block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block></block>
+  <block id="8d135bd6c282b16c7b22307a785c86fe" category="list-text">원래 데이터 보호 관계를 반대로 전환합니다.</block>
+  <block id="cef688386fba350ca4632b522f623cbc" category="paragraph"><block ref="34b56b5c545a88c82859ac5e7f03d2f8" prefix="" category="inline-code"></block></block>
+  <block id="477838233ef9afdf3352553af0d64d75" category="paragraph">재동기화에는 기본 전송이 필요하지 않지만 시간이 오래 걸릴 수 있습니다. 사용량이 적은 시간에 재동기화를 실행할 수 있습니다.</block>
+  <block id="c9e8c15489e4be41a233bcd4f6dcf856" category="paragraph">다음 예에서는 IP 주소 10.0.0.11에서 원본 소스 볼륨과 데이터를 제공할 볼륨<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block> 간의 관계를 반대로 바꿉니다<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block><block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>.</block>
+  <block id="2e3f9125fa6c133f64c2815387e2f4b9" category="list-text">반대 관계 업데이트:</block>
+  <block id="b6f7200c863ec1352798fdf5afb82903" category="paragraph"><block ref="6a19b4f1d9b8ce10c2a3d4d670b4abb5" prefix="" category="inline-code"></block></block>
+  <block id="db964e9df7713fedd889e510f2f1adf4" category="paragraph">소스와 대상에 공통 스냅샷 복사본이 없으면 명령이 실패합니다. <block ref="933e67aa13ad8ddaabb6373f048e0dac" prefix=" " category="inline-code"></block>관계를 다시 초기화하는 데 사용합니다.</block>
+  <block id="0b2d401ad2bb39d9dc9feb39b6aa29f5" category="paragraph">다음 예에서는 IP 주소 10.0.0.11에서 데이터를 제공하는 볼륨, 에서<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>및 원래 소스 볼륨<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block> 간의 관계를<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block> 업데이트합니다.</block>
+  <block id="27fe2ae42a759ca9346b6534813d7691" category="list-text">역방향 관계에 대한 예약된 전송 중지:</block>
+  <block id="20b15fdd12c7e87b7be4a4584a755102" category="paragraph"><block ref="20ba65039534dd7a733e3f4600b4d5bd" prefix="" category="inline-code"></block></block>
+  <block id="ff0dec56e920ae3e2f9362dd2d0ccee0" category="paragraph">다음 예에서는<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block> IP 주소 10.0.0.11에서 데이터를 제공하고 있는 볼륨 및 원래 소스 볼륨<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block> 간의 예약된 전송을 중지합니다<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>.</block>
+  <block id="bf00ccdd4db5885fdd6cfcab1cbf4631" category="list-text">취소된 관계에 대한 진행 중인 전송 중지:</block>
+  <block id="3100cb6258c8edd24126bd6a81c815b4" category="paragraph"><block ref="97894a2e01c6fba693b35b6ffa26e4fc" prefix="" category="inline-code"></block></block>
+  <block id="1d901a1bc03306ab17374a46bf0c89aa" category="paragraph">다음 예에서는<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block> IP 주소 10.0.0.11에서 데이터를 제공하고 있는 볼륨, 및 원래 소스 볼륨<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block> 간의 지속적인 전송을 중지합니다<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>.</block>
+  <block id="986ff368c1f785eebaa1c5654593165f" category="list-text">역관계를 끊는 경우:</block>
+  <block id="301bb9ab8838d4e7518b479a4b244825" category="paragraph"><block ref="d27bf081842f41efa9020c487a0c1991" prefix="" category="inline-code"></block></block>
+  <block id="b8600527382a4fac17f4db181be1df8a" category="paragraph">다음 예에서는 IP 주소 10.0.0.11에서 데이터를 제공하는 볼륨, 에서<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block>및 원래 소스 볼륨<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block> 간의 관계를 끊습니다<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block>.</block>
+  <block id="caddec87025aaa1d022b7e7f28bd76d1" category="list-text">역방향 데이터 보호 관계를 삭제합니다.</block>
+  <block id="0c251b3806c3a71ffe68c644e1d8f50a" category="paragraph">다음 예제에서는 IP 주소 10.0.0.11의 원래 소스 볼륨과 데이터를 제공하고 있는 볼륨<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block> 간의 역방향 관계를 삭제합니다.<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block><block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block></block>
+  <block id="fc99c44c11f5335138367e9252ce58ae" category="list-text">원래 데이터 보호 관계를 다시 설정합니다.</block>
+  <block id="67e61d92a8471a1f9cece90f7711cde0" category="paragraph"><block ref="bbc2267279e5d8f6299ba6d5245b5d20" prefix="" category="inline-code"></block></block>
+  <block id="bc415badeb68af8c35139c280abc0140" category="paragraph">다음 예에서는 IP 주소 10.0.0.11의 원래 소스 볼륨과 원래 대상 볼륨<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block> 간의 관계를 에<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block> 다시 설정합니다<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block>.</block>
+  <block id="d11ff43305b7581bffd9bf4a0aac8959" category="summary">네트워크 오류로 인해 업데이트에 실패하면 복제 관계를 수동으로 업데이트해야 할 수 있습니다.</block>
+  <block id="4ee2d87695f5bb64b27457df2a7c6e41" category="doc">복제 관계를 다시 동기화합니다</block>
+  <block id="2338f7e5e83af8d305777617f7d4cf8d" category="paragraph">대상 볼륨을 쓰기 가능한 상태로 만든 후, 소스 볼륨과 대상 볼륨에 공통 Snapshot 복사본이 없기 때문에 업데이트가 실패한 후 또는 관계에 대한 복제 정책을 변경하려는 경우 복제 관계를 다시 동기화해야 합니다.</block>
+  <block id="6d5f69495f8e867162efa46a43db438e" category="list-text">소스 및 대상 볼륨 재동기화:</block>
+  <block id="d6f79eadbe284e92f33838a69bd8773e" category="paragraph"><block ref="a49916945de69e088fe119f58d0d86bf" prefix="" category="inline-code"></block></block>
+  <block id="6af23f20bfbdb73aca33a4deb42fc5b5" category="paragraph">다음 예에서는 IP 주소 10.0.0.11의 소스 볼륨과 대상 볼륨<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block> 간의 관계를 재동기화합니다.<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block><block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block></block>
+  <block id="f256b504d2d284ee8560a0f8a3055d20" category="doc">복제 관계를 수동으로 업데이트합니다</block>
+  <block id="8d0d647c12a0bef439f40231d34e27f1" category="list-text">복제 관계를 수동으로 업데이트합니다.</block>
+  <block id="425fa19eb58652df7f13f2ffd99604f0" category="paragraph"><block ref="f6d9025e0c0a6c599c466c69d7a124aa" prefix="" category="inline-code"></block></block>
+  <block id="23c7e9a87097c480c754c8814695f637" category="paragraph">다음 예에서는 IP 주소 10.0.0.11의 소스 볼륨과 의<block ref="f2dcd1c21dd6e00e42ff4b9467c5e011" prefix=" " category="inline-code"></block> 대상 볼륨<block ref="e4682d2fda48014167b71e8800297170" prefix=" " category="inline-code"></block> 간의 관계를 업데이트합니다<block ref="d39934ce111a864abf40391f3da9cdf5" prefix=" " category="inline-code"></block>.</block>
+  <block id="6ee6e98dd3f706a9d56d48dbe0b25dcb" category="doc">Element와 ONTAP 클러스터 간에 SnapMirror 복제 사용(Element UI)</block>
+  <block id="15fdfbff97a006d7f8dd45be7301f5f3" category="list-text"><block ref="15fdfbff97a006d7f8dd45be7301f5f3" category="inline-link-macro-rx"></block></block>
+  <block id="5a0614fc36540b946021f186f3ba6c85" category="sidebar">NetApp Element 소프트웨어와 ONTAP 간 복제(ONTAP CLI)</block>
+  <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">개요</block>
+  <block id="24f47cdbe9ddba774a7cc53e51d9032e" category="sidebar">워크플로우</block>
+  <block id="49bd24b89b4d379ec9d1baed92d0973e" category="sidebar">Element 소프트웨어에서 SnapMirror를 활성화합니다</block>
+  <block id="0dc35b344be5654356d1a015d4e8ceac" category="sidebar">복제 관계를 구성합니다</block>
+  <block id="f12dbb93fdd805bce49a897d2f47cd7b" category="sidebar">복제 정책을 사용자 지정합니다</block>
+  <block id="ca0c3dd7dca9f636af3209d526098e1e" category="sidebar">복제 관계를 생성합니다</block>
+  <block id="66eec66df56998b2d5cdc13fee06aac5" category="sidebar">SnapMirror DR 대상 볼륨의 데이터를 제공합니다</block>
 </blocks>

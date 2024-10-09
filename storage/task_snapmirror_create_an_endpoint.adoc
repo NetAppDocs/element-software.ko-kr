@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_create_an_endpoint.html 
 sidebar: sidebar 
-keywords: endpoints, create, snapmirror, ui 
+keywords: element, endpoints, create, snapmirror, ui 
 summary: 관계를 만들려면 NetApp Element UI에서 SnapMirror 끝점을 만들어야 합니다. 
 ---
 = SnapMirror 끝점을 만듭니다

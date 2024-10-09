@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_add_labels_to_snapshots.html 
 sidebar: sidebar 
-keywords: snapmirror labels, add labels to snapshots, specify retention policies, group snapshots 
+keywords: element, ui, snapmirror, labels, retention, policies, group, snapshots 
 summary: SnapMirror 레이블은 SnapMirror 엔드포인트에 대한 스냅샷 보존 정책을 지정합니다. 스냅샷 및 그룹 스냅샷에 레이블을 추가할 수 있습니다. 
 ---
 = 스냅샷에 SnapMirror 레이블을 추가합니다

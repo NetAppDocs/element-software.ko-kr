@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replication, snapmirror, data protection 
 summary: NetApp Element UI의 데이터 보호 탭에서 SnapMirror 관계를 생성할 수 있습니다. 사용자 인터페이스에서 이를 보려면 SnapMirror 기능이 활성화되어 있어야 합니다. 
 ---
-= Element 및 ONTAP 클러스터 간 SnapMirror 복제 사용
+= Element와 ONTAP 클러스터 간에 SnapMirror 복제 사용(Element UI)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -26,5 +26,5 @@ https://www.netapp.com/pdf.html?item=/media/17048-tr4641pdf.pdf["NetApp 기술 �
 == 자세한 내용을 확인하십시오
 
 * https://www.netapp.com/pdf.html?item=/media/16991-tr4748pdf.pdf["NetApp HCI, ONTAP 및 통합 인프라를 통해 데이터 패브릭 구축"^]
-* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-sdbak/home.html["NetApp Element 소프트웨어와 ONTAP 간의 복제"^]
+* link:element-replication-index.html["NetApp Element 소프트웨어와 ONTAP 간 복제(ONTAP CLI)"]
 
