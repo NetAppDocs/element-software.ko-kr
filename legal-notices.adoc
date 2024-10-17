@@ -65,6 +65,7 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 * link:./media/mgmt-216.pdf["관리 서비스 참고 사항 2.16(vCenter Server용 NetApp Element 플러그인 4.6.29)"^]
 * link:./media/mgmt-214.pdf["관리 서비스 2.14(vCenter Server 4.5.42용 NetApp Element 플러그인)에 대한 고지 사항"^]
 * link:./media/mgmt-213.pdf["관리 서비스 2.13에 대한 고지 사항(vCenter Server 4.5.42용 NetApp Element 플러그인)"^]
+* link:./media/storage_firmware_bundle_2.182.0_notices.pdf["스토리지 펌웨어 번들 2.182.0에 대한 고지 사항"^]
 * link:./media/storage_firmware_bundle_2.175.0_notices.pdf["스토리지 펌웨어 번들 2.175.0에 대한 고지 사항"^]
 * link:./media/storage_firmware_bundle_2.164.0_notices.pdf["스토리지 펌웨어 번들 2.164.0에 대한 고지 사항"^]
 * link:./media/storage_firmware_bundle_2.150_notices.pdf["스토리지 펌웨어 번들 2.150에 대한 고지 사항"^]
