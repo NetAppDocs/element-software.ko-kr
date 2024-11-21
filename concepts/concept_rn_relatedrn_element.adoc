@@ -48,7 +48,8 @@ NOTE: NetApp 지원 자격 증명을 사용하여 로그인하라는 메시지�
 
 == vCenter Server용 NetApp Element 플러그인
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP3316480["vCenter Plug-in 5.3 릴리즈 노트"^] _신규 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3330676["vCenter Plug-in 5.4 릴리즈 노트"^] _신규_
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3316480["vCenter Plug-in 5.3 릴리즈 노트"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2886272["vCenter Plug-in 5.2 릴리즈 노트"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2885734["vCenter Plug-in 5.1 릴리즈 노트"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2884992["vCenter Plug-in 5.0 릴리즈 노트"^]
