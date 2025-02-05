@@ -12142,7 +12142,6 @@
   <block id="df857cb0f08264825fefa55878d286ce" category="paragraph">다음 예에서는 기본 정책을 사용하여 통합 복제 관계를<block ref="37e459201e5691c90f616e05271f4ba3" prefix=" " category="inline-code"></block> 생성합니다.</block>
   <block id="97fedbfaebdbcfe68bdc2db0e517c79e" category="paragraph">다음 예에서는 정책을 사용하여 통합 복제 관계를<block ref="4403b8bed8329a1a1ba838d590fec221" prefix=" " category="inline-code"></block> 생성합니다.</block>
   <block id="ea71844b20a2af889daba2027461836d" category="paragraph">다음 예에서는 사용자 지정 정책을 사용하여 통합 복제 관계를<block ref="7d06ce743afb94fd7161f90acba5f66a" prefix=" " category="inline-code"></block> 생성합니다.</block>
-  <block id="6559e429258efad47fd0bec3573ac5e4" category="summary">복제 관계를 생성하려면 먼저 SnapMirror 엔드포인트를 생성해야 합니다. 이 작업은 Element 소프트웨어 웹 UI에서 또는 API 메소드에서만 수행할 수 있습니다.</block>
   <block id="dca879936ace6cbca538e4b03fc5f880" category="paragraph">복제 관계를 생성하려면 먼저 SnapMirror 엔드포인트를 생성해야 합니다. 이 작업은 Element 소프트웨어 웹 UI 또는 를 사용해야만 수행할 수 <block ref="9641b9cb3efec10f08ee0a17e27a64d6" category="inline-link-macro-rx"></block>있습니다.</block>
   <block id="410d41840bfe4c79d1cbcbad970381ce" category="paragraph">Element 클러스터에서 SnapMirror를 사용하도록 설정해야 합니다.</block>
   <block id="5759c23faeaf56d63eb3bea8d1a94825" category="list-text">새 엔드포인트 생성 * 대화 상자에서 ONTAP 클러스터 관리 IP 주소를 입력합니다.</block>
@@ -12172,7 +12171,6 @@
   <block id="20cc35bf4f534abf7c8e15480973e9cf" category="paragraph">다음 예제에서는 SnapMirror 레이블이 있는 규칙을 사용자 지정<block ref="1d5de0bd3d87489e1362714791579989" prefix=" " category="inline-code"></block> 정책에 추가합니다<block ref="2a44471da66622bfc5b82888ae83a7dc" prefix=" " category="inline-code"></block>.</block>
   <block id="b0eff705a5813714cb73d5b4afee11b9" category="paragraph">다음 예제에서는 SnapMirror 레이블이 있는 규칙을 사용자 지정<block ref="d8e87c0927539672f54462c837be0b7f" prefix=" " category="inline-code"></block> 정책에 추가합니다<block ref="b17c9a947d4e38d7975718380fab6b7a" prefix=" " category="inline-code"></block>.</block>
   <block id="f0f637ca20caa61073cee1a4ce7e8dfc" category="paragraph">그런 다음 이 SnapMirror 레이블과 일치하는 소스 클러스터에서 스냅샷 복사본을 복제할 수 있습니다.</block>
-  <block id="2914b577684d6c7f339e6fda22c3487f" category="summary">복제 관계를 생성하려면 먼저 Element 클러스터에서 SnapMirror를 활성화해야 합니다. 이 작업은 Element 소프트웨어 웹 UI에서 또는 API 메소드에서만 수행할 수 있습니다.</block>
   <block id="28d0537c10dbc179674ef31f5b5a2bab" category="doc">Element 클러스터에서 SnapMirror를 사용하도록 설정합니다</block>
   <block id="c229b2f8b428f342bff7cf24ff75f1b2" category="inline-link-macro">API 메소드</block>
   <block id="0b8667f1f4456982a27ec231d1a84da6" category="paragraph">복제 관계를 생성하려면 먼저 Element 클러스터에서 SnapMirror를 활성화해야 합니다. 이 작업은 Element 소프트웨어 웹 UI 또는 를 사용해야만 수행할 수 <block ref="08aeb663b3e636fd7806da6cd0761563" category="inline-link-macro-rx"></block>있습니다.</block>
@@ -12284,4 +12282,6 @@
   <block id="6f00c58e2f26b2ef4542eb663cdb651d" category="inline-link-macro">관리 서비스 2.26.30 알림(VMware vCenter Server 5.4.1용 NetApp Element 플러그인)</block>
   <block id="ea3b1d5907ee8e4303c54ecc7765f0f2" category="list-text"><block ref="ea3b1d5907ee8e4303c54ecc7765f0f2" category="inline-link-macro-rx"></block></block>
   <block id="fdbd44871ecf32ab0e37e9d3c077e28a" category="list-text">vCenter Server 5.4, 5.3, 5.2, 5.1 또는 5.0용 Element 플러그인으로 업그레이드하려고 합니다.</block>
+  <block id="ec584e493ebc5976220074c48288215d" category="summary">복제 관계를 생성하려면 먼저 SnapMirror 엔드포인트를 생성해야 합니다. 이 작업은 Element 소프트웨어 웹 UI에서 또는 API 메소드에서만 수행할 수 있습니다.</block>
+  <block id="a1d54a55e83901cd25e5b3724d5ca5e5" category="summary">복제 관계를 생성하려면 먼저 Element 클러스터에서 SnapMirror를 활성화해야 합니다. 이 작업은 Element 소프트웨어 웹 UI에서 또는 API 메서드를 사용해서만 수행할 수 있습니다.</block>
 </blocks>
