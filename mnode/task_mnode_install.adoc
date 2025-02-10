@@ -18,7 +18,7 @@ keywords: netapp, element, management node, mnode, storage, install
 
 이 수동 프로세스는 관리 노드 설치에 NetApp 배포 엔진을 사용하지 않는 SolidFire All-Flash 스토리지 관리자를 대상으로 합니다.
 
-.필요한 것
+.시작하기 전에
 * 클러스터 버전이 NetApp Element 소프트웨어 11.3 이상을 실행 중입니다.
 * 설치에 IPv4가 사용됩니다. 관리 노드 11.3은 IPv6을 지원하지 않습니다.
 +
@@ -53,21 +53,15 @@ NOTE: IPv6 지원이 필요한 경우 관리 노드 11.1을 사용할 수 있습
 .이 작업에 대해
 Element 12.2 관리 노드는 선택적 업그레이드입니다. 기존 배포에는 필요하지 않습니다.
 
-이 절차를 수행하기 전에 에 대해 잘 알고 있어야 합니다 link:../concepts/concept_solidfire_concepts_volumes.html#persistent-volumes["영구 볼륨"] 그리고 사용 여부를 결정합니다. 영구 볼륨은 선택 사항이지만 가상 머신(VM)이 손실된 경우 관리 노드 구성 데이터 복구에 권장됩니다.
-
-.단계
-. <<ISO 또는 OVA를 다운로드하고 VM을 배포합니다>>
-. <<create_mnode_admin,관리 노드 admin을 생성하고 네트워크를 구성합니다>>
-. <<시간 동기화를 구성합니다>>
-. <<관리 노드를 설정합니다>>
-. <<컨트롤러 자산을 구성합니다>>
+이 절차를 따르기 전에 해당 기능을 사용할 것인지 및 사용할 것인지 여부를 이해해야 link:../concepts/concept_solidfire_concepts_volumes.html#persistent-volumes["영구 볼륨"]합니다. 영구 볼륨은 선택 사항이지만 가상 머신(VM)이 손실된 경우 관리 노드 구성 데이터 복구에 권장됩니다.
 
 
 
+== 단계 1: ISO 또는 OVA를 다운로드하고 VM을 배포합니다
 
-== ISO 또는 OVA를 다운로드하고 VM을 배포합니다
+NetApp 지원 사이트에서 적절한 ISO 또는 OVA를 다운로드하고 VM을 설치합니다.
 
-. 에서 설치에 대한 OVA 또는 ISO를 다운로드합니다 link:https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["Element 소프트웨어"^] 페이지로 이동합니다.
+. NetApp 지원 사이트의 페이지에서 설치에 필요한 OVA 또는 ISO를 link:https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["Element 소프트웨어"^]다운로드합니다. 새 OVA에는 업데이트된 SSL 인증서가 포함되어 있습니다.
 +
 .. 최신 릴리스 다운로드 * 를 선택하고 EULA에 동의합니다.
 .. 다운로드할 관리 노드 이미지를 선택합니다.
@@ -111,8 +105,11 @@ NOTE: 이미지를 사용하여 관리 노드를 설치하면 시작 화면이 �
 
 
 
-== 관리 노드 admin을 생성하고 네트워크를 구성합니다
+== 2단계: 관리 노드 관리자를 생성하고 네트워크를 구성합니다
 
+VM 설치가 완료된 후 관리 노드 관리자 사용자를 생성하고 관리 노드 네트워크를 구성합니다.
+
+.단계
 . 터미널 사용자 인터페이스(TUI)를 사용하여 관리 노드 관리자 사용자를 생성합니다.
 +
 
@@ -139,13 +136,16 @@ NOTE: 스토리지 트래픽을 격리하기 위해 추가 NIC가 필요한 경�
 
 
 
-== 시간 동기화를 구성합니다
+== 3단계: 시간 동기화를 구성합니다
 
+관리 노드를 설정하기 전에 관리 노드와 스토리지 클러스터 간의 시간을 동기화합니다.
+
+.단계
 . NTP를 사용하여 관리 노드와 스토리지 클러스터 간에 시간이 동기화되는지 확인합니다.
 
 
 
-NOTE: 요소 12.3.1부터 하위 단계(a)에서 (e)까지 자동으로 수행됩니다. 관리 노드 12.3.1의 경우 로 이동합니다 <<substep_f_install_config_time_sync,하위 단계 (f)>> 를 눌러 시간 동기화 구성을 완료합니다.
+NOTE: 요소 12.3.1부터 하위 단계(a)에서 (e)까지 자동으로 수행됩니다. 관리 노드 12.3.1의 경우 로 <<substep_f_install_config_time_sync,하위 단계 (f)>> 이동하여 시간 동기화 구성을 완료합니다.
 
 . SSH 또는 하이퍼바이저에서 제공하는 콘솔을 사용하여 관리 노드에 로그인합니다.
 . NTPD 중지:
@@ -216,8 +216,11 @@ NOTE: 시간 동기화 구성을 완료한 후에는 NTP를 편집하지 마십�
 
 
 
-== 관리 노드를 설정합니다
+== 4단계: 관리 노드 설정
 
+명령을 사용하여 관리 노드를 `setup-mnode` 구성합니다.
+
+.단계
 . 관리 노드 setup 명령을 구성하고 실행합니다.
 +
 
@@ -279,8 +282,11 @@ NOTE: 클러스터의 기존 계정 이름과 다른 영구 볼륨의 경우 고
 
 
 
-== 컨트롤러 자산을 구성합니다
+== 5단계: 컨트롤러 자산 구성
 
+설치 ID를 찾고 vCenter 컨트롤러 자산을 추가합니다.
+
+.단계
 . 설치 ID를 찾습니다.
 +
 .. 브라우저에서 관리 노드 REST API UI에 로그인합니다.
@@ -336,7 +342,8 @@ NOTE: 컨트롤러 하위 자산을 추가하려면 vCenter에서 새로운 NetA
 
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * link:../concepts/concept_solidfire_concepts_volumes.html#persistent-volumes["영구 볼륨"]

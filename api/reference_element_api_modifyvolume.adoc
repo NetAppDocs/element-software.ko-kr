@@ -126,6 +126,19 @@ ISO 8601 문자열
 
 
  a| 
+dontMoveforIops재조정 을 참조하십시오
+ a| 
+실제 IOPS를 통한 로드 밸런싱 시 볼륨 이동을 방지합니다. 이 설정은 Element 12.8부터 사용할 수 있으며 가 활성화된 경우에만 link:reference_element_api_enablefeature.html["VolumeLoadBalanceOnActualIOPS"]적용됩니다. 가능한 값:
+
+* `true`: 볼륨은 실제 IOPS를 기준으로 로드 밸런스를 조정하지 않습니다.
+* `false`: 볼륨은 실제 IOPS를 기준으로 로드 밸런싱을 수행합니다.
+
+
+* 참고 *: 고가용성(노드 장애)에 대한 밸런싱이 및 `dontMoveforIopsRebalance` 보다 `VolumeLoadBalanceOnActualIOPS` 우선합니다.
+| 부울 | 거짓 | 아니요 
+
+
+ a| 
 enableSnapMirrorReplication
  a| 
 SnapMirror 엔드포인트에서 복제를 위해 볼륨을 사용할 수 있는지 여부를 결정합니다. 가능한 값:
@@ -228,8 +241,6 @@ setCreateTime(설정 생성 시간)
 이 메서드의 반환 값은 다음과 같습니다.
 
 |===
-
-
 | 이름 | 설명 | 유형 
 
 
@@ -252,21 +263,10 @@ xref:reference_element_api_volume.adoc[볼륨]
 {
   "method": "ModifyVolume",
   "params": {
-     "volumeID": 5,
-     "attributes": {
-        "name1": "value1",
-        "name2": "value2",
-        "name3": "value3"
+     "volumeID": 319,
+     "access": "readWrite",
+     "dontMoveForIopsRebalance": false
      },
-     "qos": {
-        "minIOPS": 60,
-        "maxIOPS": 100,
-        "burstIOPS": 150,
-        "burstTime": 60
-     },
-      "access" :"readWrite"
-     },
-      "totalSize": 20000000000,
      "id": 1
 }
 ----
@@ -283,47 +283,53 @@ xref:reference_element_api_volume.adoc[볼륨]
   "result": {
       "volume": {
           "access": "readWrite",
-          "accountID": 1,
-          "attributes": {
-              "name1": "value1",
-              "name2": "value2",
-              "name3": "value3"
-          },
+          "accountID":22,
+          "attributes": {},
           "blockSize": 4096,
-          "createTime": "2016-03-28T16:16:13Z",
+          "createTime": "2024-04-01T19:39:40Z",
+          "currentProtectionScheme": "doubleHelix",
           "deleteTime": "",
-          "enable512e": true,
-          "iqn": "iqn.2010-01.com.solidfire:jyay.1459181777648.5",
-          "name": "1459181777648",
+          "dontMoveForIopsRebalance": false,
+          "enable512e": false,
+          "enableSnapMirrorReplication": false,
+          "fifoSize": 24,
+          "iqn": "iqn.2010-01.com.solidfire:3eeu.suite40.319",
+          "lastAccessTime": "2024-04-02T12:41:34Z",
+          "lastAccessTimeIO": "2024-04-01T20:41:19Z",
+          "minFifoSize": 0,
+          "name": "suite40",
+          "previousProtectionScheme": null,
           "purgeTime": "",
           "qos": {
-              "burstIOPS": 150,
+              "burstIOPS": 27000,
               "burstTime": 60,
               "curve": {
-                  "4096": 100,
-                  "8192": 160,
-                  "16384": 270,
-                  "32768": 500,
-                  "65536": 1000,
+                  "1048576": 15000,
                   "131072": 1950,
+                  "16384": 270,
                   "262144": 3900,
+                  "32768": 500, "4096": 100,
                   "524288": 7600,
-                  "1048576": 15000
+                  "65536": 1000,
+                  "8192": 160
               },
-              "maxIOPS": 100,
-              "minIOPS": 60
+              "maxIOPS": 27000,
+              "minIOPS": 500
           },
-          "scsiEUIDeviceID": "6a79617900000005f47acc0100000000",
-          "scsiNAADeviceID": "6f47acc1000000006a79617900000005",
+          "qosPolicyID": null,
+          "scsiEUIDeviceID": "336565750000013ff47acc0100000000",
+          "scsiNAADeviceID": "6f47acc100000000336565750000013f",
           "sliceCount": 1,
           "status": "active",
-          "totalSize": 1000341504,
+          "totalSize": 1000000716800,
           "virtualVolumeID": null,
           "volumeAccessGroups": [
-              1
+          22
           ],
-          "volumeID": 5,
-          "volumePairs": []
+          "volumeConsistencyGroupUUID": "3003109e-6e75-444c-8cee-470d641a09c3",
+          "volumeID": 319,
+          "volumePairs": [],
+          "volumeUUID": "78203136-b0eb-454b-9f67-2c867ec7d7bb"
       }
   }
 }

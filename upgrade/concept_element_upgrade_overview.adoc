@@ -20,8 +20,16 @@ keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgra
 
 [NOTE]
 ====
-* 2023년 11월 5일에 서명 키 인증서(개인 및 공개)가 만료되어 NetApp 하이브리드 클라우드 제어 또는 REST API를 사용하여 구성요소 업그레이드를 시작할 수 없습니다. 이 문제는 기술 자료 문서에 설명되어 있는 해결 방법을 따라 해결할 수 있습니다 https://kb.netapp.com/onprem/solidfire/Element_OS/SolidFire_and_HCI_upgrades_unable_to_start_due_to_upgrade_package_upload_error["업그레이드 패키지 업로드 오류로 인해 SolidFire 및 HCI 업그레이드를 시작할 수 없습니다"^].
-* Element 12.7부터 SF2405 및 SF9608 스토리지 노드, FC0025 및 SF-FCN-01 FC 노드는 지원되지 않습니다. 이러한 노드 중 하나를 Element 12.7로 업그레이드하려고 하면 Element 12.7에서 이 노드가 지원되지 않는다는 오류가 표시됩니다.
+* 2023년 11월부터 서명 키 인증서(개인 및 공개)가 2023년 11월 5일에 만료되므로 NetApp 하이브리드 클라우드 제어 또는 REST API를 사용하여 구성요소 업그레이드를 시작할 수 없습니다. NetApp 하이브리드 클라우드 제어 또는 REST API를 사용하여 관리 서비스, Element 소프트웨어 및 스토리지 펌웨어를 업그레이드하기 전에 버전 12.8까지 이 문제를 해결할 수 link:task_hcc_upgrade_management_node.html["관리 노드의 전체 업그레이드 수행"]있습니다.
++
+버전 12.8을 지원하는 새 관리 노드를 구축할 경우 NetApp Hybrid Cloud Control 또는 REST API를 사용하여 에 나열된 순서대로 구성요소 업그레이드를 수행할 수 있습니다<<sys_upgrade,시스템 업그레이드 순서>>.
+
+* 다음 노드는 지원되지 않습니다. 이러한 노드 중 하나를 지원되지 않는 Element 버전으로 업그레이드하려고 하면 해당 노드가 Element 12.x에서 지원되지 않는다는 오류가 표시됩니다.
++
+** Element 12.8, SF4805, SF9605, SF19210 및 SF38410 스토리지 노드부터 시작합니다.
+** Element 12.7, SF2405 및 SF9608 스토리지 노드 및 FC0025 및 SF-FCN-01 FC 노드로 시작
+
+
 * Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레이드가 더 이상 지원되지 않습니다. Element 11.0 또는 11.1을 실행 중인 경우 먼저 해야 합니다 https://docs.netapp.com/us-en/element-software-123/upgrade/task_hcc_upgrade_element_software.html#upgrade-element-software-at-connected-sites-using-healthtools["HealthTools를 사용하여 Element 12.3으로 업그레이드하십시오"^] 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5 이상으로 업그레이드하십시오.
 
 
@@ -30,7 +38,7 @@ keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgra
 
 를 클릭합니다 link:task_sf_upgrade_all_vsphere.html["vSphere 업그레이드 시퀀스"] vCenter Server용 Element 플러그인 포함 에서는 vCenter Server용 Element 플러그인을 다시 설치하는 데 필요한 추가 사전 및 사후 업그레이드 단계에 대해 설명합니다.
 
-.필요한 것
+.시작하기 전에
 * 관리 노드 11.3 이상을 실행하고 있습니다. 최신 버전의 관리 노드에는 개별 서비스를 제공하는 모듈식 아키텍처가 있습니다.
 +
 

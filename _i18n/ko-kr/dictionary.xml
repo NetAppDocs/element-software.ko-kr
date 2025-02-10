@@ -2679,7 +2679,6 @@
   <block id="026348f9f6e3dc829e365625c33c007a" category="list-text">노드 세부 정보 검토:</block>
   <block id="8511241aabf0b5b22a6ec0f33205020a" category="list-text">* 노드 ID *: 노드에 대해 시스템에서 생성한 ID입니다.</block>
   <block id="11340b9f0ba088ec3cf2083a21132d99" category="list-text">* 노드 이름 *: 노드의 호스트 이름입니다.</block>
-  <block id="0ee99b520b4502ffd981cfc386b7a410" category="list-text">* 사용 가능한 4K IOPS *: 노드에 대해 구성된 IOPS</block>
   <block id="2e08da9f1b8a2b955bb7528232c66123" category="list-text">* 노드 역할 *: 클러스터에 있는 노드의 역할. 가능한 값:</block>
   <block id="5b677361708b3a9e7ae889385ded1639" category="list-text">Cluster Master: 클러스터 전체 관리 작업을 수행하고 MVIP 및 SVIP를 포함하는 노드입니다.</block>
   <block id="e6897c8bbde08136163ed91dd0933239" category="list-text">앙상블 노드: 클러스터에 참여하는 노드. 클러스터 크기에 따라 3개 또는 5개의 앙상블 노드가 있습니다.</block>
@@ -3219,8 +3218,6 @@
   <block id="fb40a26280ca631534e65409962ef9cf" category="list-text">IPv4: https://[IPv4 MVIP 주소 입력] 예:</block>
   <block id="d9a01a15021e40e928f9dfa23ae8b69d" category="list-text">DNS의 경우 호스트 이름을 입력합니다.</block>
   <block id="8021dbf0e4b38da2b3bd89cdf750520d" category="list-text">인증 인증서 메시지를 클릭합니다.</block>
-  <block id="c93817bbfc3fab71f5f7ca740a11c847" category="inline-link">NetApp HCI 리소스 페이지를 참조하십시오</block>
-  <block id="bc218e71c18c2f809dffb10d3bc2a6e8" category="list-text"><block ref="bc218e71c18c2f809dffb10d3bc2a6e8" category="inline-link-rx"></block></block>
   <block id="a2a03434f8a177f519d8b7f2708e2d4f" category="summary">UI 전체에서 액세스할 수 있는 피드백 양식을 사용하여 Element 소프트웨어 웹 사용자 인터페이스를 개선하고 UI 문제를 해결할 수 있습니다.</block>
   <block id="0d55c5671a3c4d77089087ae1f927c8e" category="list-text">Element UI의 페이지에서 * Feedback * 버튼을 클릭합니다.</block>
   <block id="188b02ea7d84c2087ab45916e7c8a478" category="list-text">요약 및 설명 필드에 관련 정보를 입력합니다.</block>
@@ -4447,8 +4444,6 @@
   <block id="0374b3f6d89873148fabfec965f0a85c" category="list-text"><block ref="917c64f79628a9b16c9590709727170a" category="inline-link-rx"></block>:이 실습에서는 Element 소프트웨어를 실행하는 스토리지 시스템에 적용되는 제한 없는 스케일아웃 개념, 보장된 워크로드 성능, 스토리지 인프라 자동화를 제공합니다.</block>
   <block id="94f8a49e22a4517b4cd55d1fa39ec58e" category="inline-link-macro">Element Demo Node를 사용하여 스토리지 기능을 사용해 보십시오</block>
   <block id="a66c6b29dce890bbcc0d228bf1bb7510" category="list-text"><block ref="619476f87ba30914a5fbd5ba47d588c3" category="inline-link-macro-rx"></block>Element Demo Node는 Element 소프트웨어의 VMware 가상 머신 버전으로, NetApp HCI 및 SolidFire 제품의 주요 스토리지 기능을 쉽게 시연할 수 있습니다.</block>
-  <block id="b0cda36836b6d8e27c36c8d9d6b48f3a" category="inline-link">SolidFire All-Flash 스토리지 리소스 페이지를 참조하십시오</block>
-  <block id="a980426853b5ccc1de52aeb0b0ae0463" category="list-text"><block ref="a980426853b5ccc1de52aeb0b0ae0463" category="inline-link-rx"></block></block>
   <block id="3432017bf3450950cff9ebeb57b007b7" category="summary">Element Demo Node는 Element 소프트웨어의 VMware 가상 머신 버전으로, NetApp HCI 및 SolidFire 제품의 주요 스토리지 기능을 쉽게 시연할 수 있습니다.</block>
   <block id="c099da1e7198d2f1407d45eef0d02a48" category="inline-link">요소 데모 노드</block>
   <block id="fae634e54f6a24eca87a92f1d78df928" category="paragraph"><block ref="e1baf480e2c2d0517c80b4748e50de89" category="inline-link-rx"></block> 는 Element 소프트웨어의 VMware 가상 머신(VM) 버전이며, NetApp HCI 및 SolidFire 제품의 주요 스토리지 기능을 쉽게 시연할 수 있습니다. 데모 노드를 사용하면 개발자가 물리적 하드웨어 없이도 Element API를 기준으로 코드를 작성할 수 있습니다. OVA 파일로 패키징되어 VMware를 손쉽게 구축할 수 있습니다.</block>
@@ -4840,7 +4835,6 @@
   <block id="64281a5bcda4b37973a66a8dfcae3626" category="list-text">관리 노드 네트워크(eth0)를 구성합니다.</block>
   <block id="585629174bd7d07bea958ff023cef12f" category="admonition">스토리지 트래픽을 격리하기 위해 추가 NIC가 필요한 경우 다른 NIC 구성에 대한 지침을 참조하십시오. <block ref="3a94a0bfa09a6011bad07afa39abc05f" category="inline-link-macro-rx"></block>.</block>
   <block id="2f81f1b5bf706c50ec3a59d0de214061" category="section-title">시간 동기화를 구성합니다</block>
-  <block id="dfa921e1a8d1ecc5798d976447ec498d" category="list-text">NTP를 사용하여 관리 노드와 스토리지 클러스터 간에 시간이 동기화되는지 확인합니다.</block>
   <block id="4ff9fc7c23fbbdf410e784b18625c201" category="inline-xref">하위 단계 (f)</block>
   <block id="95f677ec3d6290caa67730d5209b4cc2" category="list-text">SSH 또는 하이퍼바이저에서 제공하는 콘솔을 사용하여 관리 노드에 로그인합니다.</block>
   <block id="5c64c907c80a4eaf523f296d26d13989" category="list-text">NTPD 중지:</block>
@@ -5085,20 +5079,14 @@
   <block id="7e6093e52119f18464fc862a969c9f6a" category="admonition">IPv6 지원이 필요한 경우 관리 노드 11.1을 사용할 수 있습니다.</block>
   <block id="9385b032418674e92472a8b4a2ae5cdf" category="list-text">(프록시 서버가 있는 관리 노드 12.0 이상) NetApp 하이브리드 클라우드 제어를 관리 서비스 버전 2.16으로 업데이트한 후 프록시 서버를 구성하게 됩니다.</block>
   <block id="0406c3e25004e3d1dddbc367d2c4010f" category="paragraph">Element 12.2 관리 노드는 선택적 업그레이드입니다. 기존 배포에는 필요하지 않습니다.</block>
-  <block id="c92609be7302c756d6d918553df475c1" category="list-text"><block ref="d9e86326331a25418b718094ae602c19" category="inline-xref-macro-rx"></block></block>
-  <block id="0267f7e06220d0fa6fb42578b5746da3" category="list-text"><block ref="b41cb2f7bd156a4035cdf9347b89cebe" category="inline-xref-macro-rx"></block></block>
   <block id="12b8893b065179b6b80fdc2d448862df" category="inline-link-macro">Element 소프트웨어</block>
-  <block id="e43f2538484fde027e53efbedb634fce" category="list-text">에서 설치에 대한 OVA 또는 ISO를 다운로드합니다 <block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block> 페이지로 이동합니다.</block>
   <block id="4cb04e22051dcc88da6d140ef391aab8" category="list-text">스토리지 어댑터 유형이 LSI Logic Parallel로 설정되어 있습니다</block>
   <block id="1fde8564c11be0856ccf9a21a1d1430c" category="admonition">관리 노드의 기본값은 LSI Logic SAS입니다. New Virtual Machine * 창에서 * 하드웨어 사용자 정의 * &gt; * 가상 하드웨어 * 를 선택하여 스토리지 어댑터 구성을 확인합니다. 필요한 경우 LSI Logic SAS를 * LSI Logic Parallel * 로 변경합니다.</block>
   <block id="d8f671f04a7ff090ddfc9b80caaf4c67" category="list-text">(선택 사항) 스토리지 클러스터에 대한 관리 네트워크 액세스 기능을 갖춘 가상 네트워크 인터페이스 1개 스토리지 클러스터가 관리 노드(eth0)와 별도의 서브넷에 있고 영구 볼륨을 사용하려는 경우 스토리지 서브넷(eth1)의 VM에 두 번째 네트워크 인터페이스 컨트롤러(NIC)를 추가하거나 관리 네트워크가 스토리지 네트워크로 라우팅될 수 있는지 확인합니다.</block>
-  <block id="f894cbc944582e1f10fec4bf2a0639f0" category="section-title">관리 노드 admin을 생성하고 네트워크를 구성합니다</block>
-  <block id="26e6608a1d4408ec1913111c30b06508" category="admonition">요소 12.3.1부터 하위 단계(a)에서 (e)까지 자동으로 수행됩니다. 관리 노드 12.3.1의 경우 로 이동합니다 <block ref="745b7d927b75ef73b131f4d1b2da0731" category="inline-xref-macro-rx"></block> 를 눌러 시간 동기화 구성을 완료합니다.</block>
   <block id="148f57c4f729acea3c3d95b35553a056" category="list-text">추가할 각 기본 시간 서버에 대해 새 줄을 추가합니다. 기본 시간 서버는 에서 사용할 스토리지 클러스터에서 사용되는 NTP 서버와 같아야 합니다 <block ref="1d132a4516f2aafec8e6c256f33f26a5" category="inline-link-macro-rx"></block>.</block>
   <block id="e7538fbaab3148e24ff8ae41d09df5ce" category="list-text">[[substep_f_install_config_time_sync]] 하이퍼바이저를 통해 호스트와 시간 동기화를 비활성화합니다(VMware의 예).</block>
   <block id="2d80cb22364fea2daaca797ae1d938cb" category="inline-link-macro">설정 명령</block>
   <block id="a482c646f7f8199c69090c0d13cac33b" category="admonition">시간 동기화 구성을 완료한 후에는 NTP를 편집하지 마십시오. NTP는 를 실행할 때 NTP에 영향을 주기 때문입니다 <block ref="418ec8b5cff4068b256dfd7e9fc5ded7" category="inline-link-macro-rx"></block> 관리 노드에서.</block>
-  <block id="627bbdc5a7179606b85a5d6ccb6f65e1" category="section-title">관리 노드를 설정합니다</block>
   <block id="5a808c62f4f9557c4df556d6a230ba7c" category="list-text">관리 노드 setup 명령을 구성하고 실행합니다.</block>
   <block id="fea104dd45bc0e75d821ddd5af2b02d0" category="admonition">명령 이름의 약식 형식은 괄호( )로 되어 있으며 전체 이름으로 대체할 수 있습니다.</block>
   <block id="3f124867257c579e7ba689baed3d4f45" category="list-text">* - -mnode_admin_user(-MU) [username] *: 관리 노드 관리자 계정의 사용자 이름입니다. 관리 노드에 로그인하는 데 사용한 사용자 계정의 사용자 이름일 수 있습니다.</block>
@@ -5122,7 +5110,6 @@
   <block id="aabee241823de4ff993b60d0a196a387" category="list-text">(선택 사항) 각 매개 변수에 대한 추가 정보가 필요한 경우 매개 변수 도움말을 사용합니다.</block>
   <block id="f89c180fd45cb0275c5ee18e59d2b43d" category="list-text">* -- help(-h) *: 각 매개 변수에 대한 정보를 반환합니다. 매개 변수는 초기 구축을 기반으로 필수 또는 선택 사항으로 정의됩니다. 업그레이드 및 재배포 매개 변수 요구 사항은 다를 수 있습니다.</block>
   <block id="79032d0c879c3afbbb570dd870eb09e1" category="list-text">셋업 -mnode 명령을 실행합니다.</block>
-  <block id="7ea2768c656768f853cd68b9066eba0f" category="section-title">컨트롤러 자산을 구성합니다</block>
   <block id="4240350efa82cb4b2d0dcd00f64f496b" category="list-text">설치 ID를 찾습니다.</block>
   <block id="ed4faf2b135a0f2d74eef06f6fd8899e" category="list-text">스토리지 MVIP로 이동하여 로그인합니다. 이 작업을 수행하면 다음 단계에서 인증서가 수락됩니다.</block>
   <block id="2d627b2788c609fd6539b2b8370f4c40" category="list-text">코드 200 응답 본문에서 설치 ID를 복사하여 나중에 사용할 수 있도록 저장합니다.</block>
@@ -7337,8 +7324,6 @@
   <block id="00b1983df56a7fa830315720c415311e" category="paragraph">볼륨이 재할당되는 계정 ID입니다. 지정하지 않으면 이전 계정 이름이 사용됩니다.</block>
   <block id="98682f5223338eec989af2c7ff4e1d9e" category="paragraph">associateWithQoSPolicy를 참조하십시오</block>
   <block id="7a782bbf152fd454aea699703ceee544" category="paragraph">볼륨을 지정된 QoS 정책에 연결합니다. 가능한 값:</block>
-  <block id="3c1a8d9bd4749cfbde8131745b6b686a" category="list-text">True: QoSPolicyID 매개 변수에 지정된 QoS 정책과 볼륨을 연결합니다.</block>
-  <block id="668b0f5def0f280a60f397b286c359d0" category="list-text">False: QoSPolicyID 매개 변수에 지정된 QoS 정책과 볼륨을 연결하지 마십시오. false 이면 QoSPolicy 매개 변수에 QoS 정책을 지정했는지 여부에 관계없이 기존 정책 연결이 제거됩니다.</block>
   <block id="f1ce622b3c832a70eb435151f628ac80" category="paragraph">새 볼륨 생성 날짜로 설정할 ISO 8601 날짜 문자열. setCreateTime 이 true 로 설정된 경우 필요합니다.</block>
   <block id="4fdfd8255a7e267a28bb7fd1db1244e4" category="paragraph">ISO 8601 문자열</block>
   <block id="22cfef4d87bd251ba39dd92d08a6b0bb" category="list-text">"참"입니다</block>
@@ -10374,10 +10359,6 @@
   <block id="6f474670193ed24101adc00a3a72f9f1" category="summary">GetFeatureStatus 메서드를 사용하여 클러스터 기능의 상태를 검색할 수 있습니다.</block>
   <block id="5fe0920c9761a6b3a87a1bbfa4bb9caa" category="paragraph">'GetFeatureStatus' 메서드를 사용하여 클러스터 기능의 상태를 검색할 수 있습니다.</block>
   <block id="1a11a5dbdb3a36b6daa4510ffff8ca04" category="paragraph">클러스터 기능의 상태입니다. 값을 제공하지 않으면 모든 기능의 상태가 반환됩니다. 가능한 값:</block>
-  <block id="fd92c1c5cef8e392199a662567e717aa" category="list-text">VVol: VVol 클러스터 기능의 상태를 검색합니다.</block>
-  <block id="5e345bcbaddcc57a5f3ac0fed5034dec" category="list-text">SnapMirror: SnapMirror 복제 클러스터 기능의 상태를 검색합니다.</block>
-  <block id="dda284e7bd1ad4ea16811e634581811f" category="list-text">FIPS: HTTPS 통신 기능을 위해 FIPS 140-2 암호화에 대한 상태를 검색합니다.</block>
-  <block id="26ec8711a6e8d05f3d325ea4fa66c869" category="list-text">FipsDrives: FIPS 140-2 드라이브 암호화 기능의 상태를 검색합니다.</block>
   <block id="9f034b63948763d489f944319c2eb3de" category="paragraph">피처</block>
   <block id="215ee6aa91837f28e7d05a1a6faafac5" category="paragraph">피처 이름과 상태를 나타내는 피처 개체의 배열입니다. 개체 멤버:</block>
   <block id="fcc7ebdd91e5bb840d6f95a4e3b0fc28" category="list-text">피처: (string) 피처의 이름입니다.</block>
@@ -10952,8 +10933,6 @@
   <block id="a4f0b4cd8ed43da899bf23d0cc006ec8" category="inline-link-macro">스토리지 펌웨어 번들 2.146에 대한 고지 사항</block>
   <block id="7a0a6b8351b186d782f2b5b12a09f9d1" category="list-text"><block ref="7a0a6b8351b186d782f2b5b12a09f9d1" category="inline-link-macro-rx"></block></block>
   <block id="fde51f20c5d4f2642518536389dc9ca9" category="list-text"><block ref="fde51f20c5d4f2642518536389dc9ca9" category="inline-link-macro-rx"></block></block>
-  <block id="3ab5d74afdff3156333304ac18ad1977" category="paragraph">이 절차를 수행하기 전에 에 대해 잘 알고 있어야 합니다 <block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block> 그리고 사용 여부를 결정합니다. 영구 볼륨은 선택 사항이지만 가상 머신(VM)이 손실된 경우 관리 노드 구성 데이터 복구에 권장됩니다.</block>
-  <block id="2ef294393b47ae9f1c9dee1f319efb0d" category="list-text"><block ref="bf7a9c417954187cdc8487e05cd6fa32" category="inline-xref-macro-rx"></block></block>
   <block id="bb79fe0e6bf117510635c505cc16e74d" category="list-text">다음 구성을 사용하여 하이퍼바이저에서 새 64비트 VM을 생성합니다.</block>
   <block id="4aec8fb7a6a9c5631ebb25a7b86d9ac5" category="admonition">이 절차의 뒷부분에서 수행할 단계를 나타내는 단계 전에 VM의 전원을 켜서는 안 됩니다.</block>
   <block id="1632315c8463eb1e9d1b980297d68c37" category="list-text">ISO를 VM에 연결하고 .iso 설치 이미지로 부팅합니다.</block>
@@ -11071,8 +11050,6 @@
   <block id="88935f8e32d3f781d70b8758aacc2e03" category="paragraph">아직 클러스터에 추가되지 않은 노드의 기본 문제 해결을 수행할 수 있습니다. NetApp Support의 도움을 받거나 지원을 받지 않고 이 용도로 sfreadonly 시스템 계정을 사용할 수 있습니다. 관리 노드를 설정한 경우 SSH에 사용하고 이 작업에 대해 제공된 스크립트를 실행할 수 있습니다.</block>
   <block id="39d7e3e1db072701b357f9d1235c66dc" category="list-text">SSH 클라이언트가 설치된 Windows, Linux 또는 Mac 시스템에서 NetApp Support에서 제공하는 시스템에 적합한 스크립트를 실행합니다.</block>
   <block id="326d0c521ea9c5fcd0fc04bacc22d618" category="list-text">노드 IP에 SSH:</block>
-  <block id="a83404b3b2ca8b3c39459b719d7844d7" category="inline-link">NetApp HCI 리소스 페이지 를 참조하십시오</block>
-  <block id="efb3497df51898324a04d1329dc9b9ae" category="list-text"><block ref="efb3497df51898324a04d1329dc9b9ae" category="inline-link-rx"></block></block>
   <block id="b727b29e2e84d57f6040d22db60d4f2e" category="admonition">요소 12.3.1부터 하위 단계(a)에서 (e)까지 자동으로 수행됩니다. 관리 노드 12.3.1 이상의 경우 로 이동합니다 <block ref="e7aead760c231b389589c93842d555c1" category="inline-xref-macro-rx"></block> 를 눌러 시간 동기화 구성을 완료합니다.</block>
   <block id="dce49007d1d10ccadf332bd86146cba7" category="list-text"><block ref="dce49007d1d10ccadf332bd86146cba7" category="inline-link-macro-rx"></block></block>
   <block id="d15380f01867fb0f66a13165a708bf5c" category="inline-link-macro">Element 소프트웨어 12.5에 대한 고지 사항</block>
@@ -11279,11 +11256,7 @@
   <block id="139691973eba994346784166c2abe4d8" category="cell">최신 펌웨어 ^3^을(를) 사용하는 모든 SolidFire 및 NetApp H 시리즈 노드</block>
   <block id="f8d237cd828d649cb8579bc85ca63755" category="inline-link">SolidFire 스토리지 노드에 대해 지원되는 스토리지 펌웨어 버전입니다</block>
   <block id="05b5a3d236fa2bfaecf9efbeb480af88" category="paragraph">Element 12.5부터, 'readonly'는 노드에 대한 기본적인 문제 해결을 허용하는 새로운 시스템 계정입니다. 이 API를 사용하면 클러스터의 모든 노드에서 'readonly' 시스템 계정을 사용하여 SSH에 액세스할 수 있습니다.</block>
-  <block id="482c14e23170c54f9df57d397733d7af" category="doc">Element 소프트웨어 12.5 이상의 새로운 기능</block>
-  <block id="5267888908e1548e1d5846f51c92bac9" category="paragraph">NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 SolidFire 및 Element 소프트웨어를 정기적으로 업데이트합니다. Element 12.7은 최신 릴리즈이며 보안 및 시스템 구성 요소 업데이트, 운영 개선 사항 및 해결된 문제를 포함합니다.</block>
-  <block id="31433f4c595cf82b6f9b0654fe86c038" category="admonition">누적 소프트웨어 및 펌웨어 업데이트는 스토리지 클러스터에서 실행 중인 현재 Element 버전을 기반으로 Element 12.7 업그레이드의 일부로 설치됩니다. 예를 들어, 클러스터가 현재 Element 12.3.x를 실행 중인 경우 Element 12.7로 직접 업그레이드하여 Element 12.5와 12.7에서 누적 업데이트를 받을 수 있습니다. 지원되는 업그레이드 경로는 이를 참조하십시오<block ref="5d2488aae82cc199977a2b418e4bfb0b" category="inline-link-rx"></block></block>
   <block id="7a5d44771145d6289118d595153e9a0f" category="section-title">요소 12.7</block>
-  <block id="c5955a73b2634f54a283c2c1c11a5f00" category="paragraph">Element 12.7의 새로운 기능에 대해 자세히 알아보십시오.</block>
   <block id="e1aa603edc6a21750a2c4f3ad4c5c6fe" category="section-title">보안 CHAP 알고리즘입니다</block>
   <block id="7d8047866d4cd4b945792113fe0aef7e" category="paragraph">Element 12.7에는 보안 FIPS 호환 CHAP(Challenge-Handshake Authentication Protocol) 알고리즘 SHA1, SHA-256 및 SHA3-256에 대한 지원이 포함됩니다. <block ref="b6cad66d2ee175f758d394e0154cb07f" category="inline-link-macro-rx"></block>.</block>
   <block id="3dd61b40b979f11e2f99dcbda82fabe4" category="section-title">동적 블록(bin) 동기화 속도</block>
@@ -11331,8 +11304,6 @@
   <block id="80736a9fd1a5cd3a0f3c3ef7e8c627c1" category="cell">요소 12.0</block>
   <block id="3d6ac36552702d0a682fac26d1841715" category="summary">SolidFire 스토리지 시스템에서 테넌트는 계정을 사용하여 클라이언트가 노드의 볼륨에 연결할 수 있도록 설정할 수 있습니다. 계정에는 할당된 볼륨에 액세스하는 데 필요한 CHAP 인증이 포함되어 있습니다. 볼륨을 생성하면 특정 계정에 할당됩니다.</block>
   <block id="adf63029757917f4aff07fe55725e5d9" category="section-title">CHAP 알고리즘입니다</block>
-  <block id="3b2569fbd052a233a8a46886c97fc207" category="paragraph">Element 12.7부터 보안 FIPS 호환 CHAP 알고리즘 SHA1, SHA-256 및 SHA3-256이 지원됩니다. Element 12.7을 사용하는 경우 호스트 iSCSI 이니시에이터가 Element iSCSI 타겟과 함께 iSCSI 세션을 생성하는 경우 사용할 CHAP 알고리즘 목록을 요청합니다. Element iSCSI 대상은 호스트 iSCSI 초기자가 요청한 목록에서 지원하는 첫 번째 알고리즘을 선택합니다. Element iSCSI 타겟이 가장 안전한 알고리즘을 선택하는지 확인하려면 호스트 iSCSI 초기자가 가장 안전한(예: SHA3-256)에서 주문한 알고리즘 목록을 가장 안전한 것으로 보내도록 구성해야 합니다. SHA1 또는 MD5. 호스트 iSCSI 초기자가 SHA 알고리즘을 요청하지 않으면 Element iSCSI 대상이 MD5를 선택하며, 호스트의 제안된 알고리즘 목록에 MD5가 포함되어 있다고 가정합니다. 보안 알고리즘을 지원하려면 호스트 iSCSI 이니시에이터 구성을 업데이트해야 할 수 있습니다.</block>
-  <block id="b8bb97697b35e86a4877aef90f591533" category="paragraph">Element 12.7 업그레이드 중에 스토리지 노드가 재부팅될 때 SHA 알고리즘을 포함하는 목록이 포함된 세션 요청을 보내도록 호스트 iSCSI 이니시에이터 구성을 이미 업데이트한 경우 새로운 보안 알고리즘이 활성화되고 가장 안전한 프로토콜을 사용하여 새 iSCSI 세션 또는 다시 연결된 iSCSI 세션이 설정됩니다. 업그레이드 중에 기존의 모든 iSCSI 세션이 MD5에서 SHA로 전환됩니다. 호스트 iSCSI 이니시에이터 구성을 SHA를 요청하기 위해 업데이트하지 않으면 기존 iSCSI 세션에서 계속 MD5를 사용합니다. 나중에 호스트 iSCSI 이니시에이터 CHAP 알고리즘을 업데이트한 후 iSCSI 세션이 다시 연결되는 유지 보수 작업에 따라 iSCSI 세션이 점차 MD5에서 SHA로 전환되어야 합니다.</block>
   <block id="db6cb10180fa1523938da319a188d13d" category="paragraph">예를 들어, RHEL(Red Hat Enterprise Linux) 8.3의 기본 호스트 iSCSI 초기자는 "node.session.auth.chap_algs = SHA3-256, SHA256, SHA1, MD5" 설정이 MD5만 사용하는 iSCSI 초기자에 대한 의견을 남겼습니다. 호스트에서 이 설정의 주석 처리를 해제하고 iSCSI 이니시에이터를 다시 시작하면 해당 호스트에서 iSCSI 세션이 트리거되어 SHA3-256을 사용합니다.</block>
   <block id="55fc627721522ae45305c9f988153a20" category="paragraph">필요한 경우 를 사용할 수 있습니다<block ref="06aa6b6b67e008146e7c8d6417794b62" category="inline-link-rx"></block> 각 세션에 사용 중인 CHAP 알고리즘을 확인하는 API 메소드</block>
   <block id="197daf7bc8c465056c36b92f2d586989" category="paragraph">Element 소프트웨어 버전에 따라 다음 노드는 지원되지 않습니다.</block>
@@ -11361,9 +11332,6 @@
   <block id="54c78d15a850ddddfc9da22742280908" category="list-text">* 최종 사용자 라이센스 계약(EULA) *: 관리 서비스 2.20.69부터 NetApp 하이브리드 클라우드 제어 UI 또는 API를 사용하여 Element 스토리지 상태 점검을 실행하기 전에 EULA에 동의하고 저장해야 합니다.</block>
   <block id="62449609bcf95f48fbdbae6dddedcc19" category="list-text">* 최종 사용자 라이센스 계약(EULA) *: 관리 서비스 2.20.69부터 NetApp 하이브리드 클라우드 제어 UI 또는 API를 사용하여 Element 소프트웨어를 업그레이드하기 전에 EULA에 동의하고 저장해야 합니다.</block>
   <block id="d6802e127914e53f73aa2f2db8cb5e44" category="paragraph">관리 서비스 2.20.69부터 NetApp 하이브리드 클라우드 제어 UI 또는 API를 사용하여 관리 서비스를 업그레이드하기 전에 최종 사용자 라이센스 계약(EULA)에 동의해야 합니다.</block>
-  <block id="33d4cce2372c2f81af75e357ed402fe5" category="paragraph">^3^ Element 12.7부터 SF2405 및 SF9608 스토리지 노드, FC0025 및 SF-FCN-01 FC 노드는 지원되지 않습니다. 이러한 노드 중 하나를 Element 12.7로 업그레이드하려고 하면 Element 12.7에서 이 노드가 지원되지 않는다는 오류가 표시됩니다.</block>
-  <block id="eb354756273b461b7f8b4d3abc6ac150" category="paragraph">이러한 노드 중 하나를 지원되지 않는 Element 버전으로 업그레이드하려고 하면 이 노드가 Element 12.x에서 지원되지 않는다는 오류가 표시됩니다</block>
-  <block id="ab23337415270010383937ce784cb519" category="list-text">Element 12.7부터 SF2405 및 SF9608 스토리지 노드, FC0025 및 SF-FCN-01 FC 노드는 지원되지 않습니다. 이러한 노드 중 하나를 Element 12.7로 업그레이드하려고 하면 Element 12.7에서 이 노드가 지원되지 않는다는 오류가 표시됩니다.</block>
   <block id="b2466e723f3725978ed96accd95013ae" category="paragraph">슬롯 0은 노드에 대한 메타데이터 드라이브를 보유합니다. 슬롯 0에 있는 드라이브를 교체하는 경우 교체 드라이브의 배송 상자에 포함된 스티커를 부착해야 나머지 드라이브와 별도로 식별할 수 있습니다.</block>
   <block id="eb66a5e31d8328246fdb5497ed40a7a4" category="inline-link">스토리지 펌웨어 번들 2.164.0 릴리스 정보</block>
   <block id="134e2a3d5f4b8b65c064815f605c76e6" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block></block>
@@ -11934,10 +11902,6 @@
   <block id="f814466eb9bcf561b354422b41f381f3" category="summary">데이터 센터의 에지 방화벽을 통해 다음 TCP 포트를 허용하여 시스템을 원격으로 관리하고 데이터 센터 외부의 클라이언트가 리소스에 연결할 수 있도록 해야 할 수 있습니다. 시스템 사용 방법에 따라 이러한 포트 중 일부는 필요하지 않을 수 있습니다.</block>
   <block id="c04c3f3380a29245247f6e8a6c77a880" category="paragraph">시스템을 원격으로 관리하고 데이터 센터 외부의 클라이언트가 리소스에 연결할 수 있도록 데이터 센터의 에지 방화벽을 통해 다음 TCP 및 UDP 포트를 허용해야 할 수 있습니다. 시스템 사용 방법에 따라 이러한 포트 중 일부는 필요하지 않을 수 있습니다.</block>
   <block id="5858de35bb153f56bdb4f3fbd003b515" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block></block>
-  <block id="591c130bf36c26fe5946fac7eeba4c11" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block>설명]</block>
-  <block id="710206b65e21ddd5a34f739582fb411f" category="paragraph">Element 12.5에는 향상된 스토리지 노드 액세스, 향상된 사용자 지정 보호 도메인 관리 기능, 새롭고 향상된 클러스터 오류 및 이벤트, 향상된 클러스터 UI 생성 기능 및 향상된 보안이 도입되었습니다.</block>
-  <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">업그레이드 패키지 업로드 오류로 인해 SolidFire 및 HCI 업그레이드를 시작할 수 없습니다</block>
-  <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">2023년 11월 5일에 서명 키 인증서(개인 및 공개)가 만료되어 NetApp 하이브리드 클라우드 제어 또는 REST API를 사용하여 구성요소 업그레이드를 시작할 수 없습니다. 이 문제는 기술 자료 문서에 설명되어 있는 해결 방법을 따라 해결할 수 있습니다<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>.</block>
   <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">를 사용할 수 있습니다<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 클러스터에 속한 드라이브를 사전에 제거하는 방법 이 방법은 클러스터 용량을 줄이거나 사용 수명이 거의 다 된 드라이브를 교체할 준비를 하는 데 사용할 수 있습니다.<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 클러스터의 다른 노드에 블록 데이터의 세 번째 복사본을 생성하고 동기화가 완료될 때까지 기다린 후 드라이브를 "사용 가능" 목록으로 이동합니다. "사용 가능" 목록의 드라이브는 시스템에서 완전히 제거되며 실행 중인 서비스나 활성 데이터가 없습니다.</block>
   <block id="f9beecbb3d1ea8584ca694bab8a73de7" category="sidebar">스토리지 노드에 대해 지원되는 펌웨어 버전입니다</block>
   <block id="13917e4f5287cba6dc668dc1de806783" category="paragraph">JSON 개체 형식의 이름-값 쌍 목록입니다. <block ref="65c96e1c78eaa97668865607183bf923" category="inline-link-macro-rx"></block>.</block>
@@ -11982,9 +11946,6 @@
   <block id="1791fd435a83f3ee701165e29bb05b2f" category="list-text"><block ref="1791fd435a83f3ee701165e29bb05b2f" category="inline-link-rx"></block></block>
   <block id="30486cdfdde2444e4151845599ac5bf5" category="inline-link">Element 12.5 문서</block>
   <block id="7923ddc778825f970802562c563718d7" category="list-text"><block ref="7923ddc778825f970802562c563718d7" category="inline-link-rx"></block></block>
-  <block id="cafb4d76dc2f8321d0134957e0bf3f5d" category="sidebar">SolidFire All-Flash 스토리지 시스템은 스토리지 리소스 풀로 결합된 드라이브 및 노드와 같은 하드웨어 구성 요소로 이루어집니다. Element 인터페이스, API 또는 기타 관리 툴을 사용하여 NetApp Element 소프트웨어를 사용하여 이러한 스토리지 리소스 클러스터를 관리할 수 있습니다. 이 사이트에는 Element 소프트웨어 관련 문서가 포함되어 있습니다.</block>
-  <block id="ab8cbf6e7f3310f1970fbef383696645" category="sidebar">SolidFire 및 Element 소프트웨어 12.7 문서</block>
-  <block id="f46f40c99ef0e96fdc79a2f007e1939a" category="sidebar">SolidFire 및 Element 소프트웨어 문서 12.7</block>
   <block id="6580584049ef8cc78e6be1833466e606" category="inline-link-macro">NetApp Element 소프트웨어와 ONTAP 간 복제(ONTAP CLI)</block>
   <block id="9051badc24841b5e2521cd8790e8f7d8" category="paragraph">자세한 내용은 을 <block ref="5aaa67c40a6461657bd1345524045131" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="39f2369f3b77569b78b2438bb261689c" category="summary">대상 볼륨을 쓰기 가능한 상태로 만든 후 데이터 액세스를 위해 볼륨을 구성해야 합니다. SAN 호스트는 소스 볼륨이 다시 활성화될 때까지 대상 볼륨의 데이터에 액세스할 수 있습니다.</block>
@@ -12277,11 +12238,135 @@
   <block id="878e10f3ecb83396704ecc4b39ad7aa2" category="inline-link-macro">스토리지 펌웨어 번들 2.182.0에 대한 고지 사항</block>
   <block id="d087896b0989dfd81184775fcc160ca1" category="list-text"><block ref="d087896b0989dfd81184775fcc160ca1" category="inline-link-macro-rx"></block></block>
   <block id="c4891769f65182d5fc5a37494844c496" category="inline-link">vCenter Plug-in 5.4 릴리즈 노트</block>
-  <block id="230e88f97688d3fb971fe1a76f5b2a13" category="list-text"><block ref="912995e99772bb097b2c7b32940725bb" category="inline-link-rx"></block> _신규_</block>
   <block id="ce90fd614158a5c7e0a42a5908fa1cd7" category="list-text"><block ref="ce90fd614158a5c7e0a42a5908fa1cd7" category="inline-link-rx"></block></block>
   <block id="6f00c58e2f26b2ef4542eb663cdb651d" category="inline-link-macro">관리 서비스 2.26.30 알림(VMware vCenter Server 5.4.1용 NetApp Element 플러그인)</block>
   <block id="ea3b1d5907ee8e4303c54ecc7765f0f2" category="list-text"><block ref="ea3b1d5907ee8e4303c54ecc7765f0f2" category="inline-link-macro-rx"></block></block>
   <block id="fdbd44871ecf32ab0e37e9d3c077e28a" category="list-text">vCenter Server 5.4, 5.3, 5.2, 5.1 또는 5.0용 Element 플러그인으로 업그레이드하려고 합니다.</block>
   <block id="ec584e493ebc5976220074c48288215d" category="summary">복제 관계를 생성하려면 먼저 SnapMirror 엔드포인트를 생성해야 합니다. 이 작업은 Element 소프트웨어 웹 UI에서 또는 API 메소드에서만 수행할 수 있습니다.</block>
   <block id="a1d54a55e83901cd25e5b3724d5ca5e5" category="summary">복제 관계를 생성하려면 먼저 Element 클러스터에서 SnapMirror를 활성화해야 합니다. 이 작업은 Element 소프트웨어 웹 UI에서 또는 API 메서드를 사용해서만 수행할 수 있습니다.</block>
+  <block id="5f974f5b5837f6beacdf509a09ac0df9" category="paragraph">다음 노드는 지원되지 않습니다. 이러한 노드 중 하나를 지원되지 않는 Element 버전으로 업그레이드하려고 하면 해당 노드가 Element 12.x에서 지원되지 않는다는 오류가 표시됩니다.</block>
+  <block id="5d58ca5bc208ae8a2b2dccd548e30ae3" category="list-text">Element 12.8, SF4805, SF9605, SF19210 및 SF38410 스토리지 노드부터 시작합니다.</block>
+  <block id="69da7b5a3b37b70e629a477452983e5d" category="summary">DisableFeature 메서드를 사용하여 VolumeLoadBalanceOnActualIOPS를 비활성화할 수 있습니다.</block>
+  <block id="e0d42ad7a0a546483523eee990c4c722" category="doc">작동 불능</block>
+  <block id="8672fdc0f030d7ad0aaee99cc9cfdd76" category="paragraph">메소드를 사용하여 기능을 비활성화할<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block> 수<block ref="e0d42ad7a0a546483523eee990c4c722" prefix=" " category="inline-code"></block> 있습니다.<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block> 는 기본적으로 비활성화되어 있습니다.</block>
+  <block id="ef3cc95d5005ad47e31876972451919d" category="paragraph">VVol과 같은 다른 기능을 비활성화하려고 하면 다음 오류 메시지가 나타납니다.</block>
+  <block id="ca5bd77a41b5024709aa0c976742b627" category="paragraph">클러스터 기능을 비활성화합니다. 가능한 값:</block>
+  <block id="b1e9ed0268988420a784ad80c03e59d5" category="list-text"><block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix="" category="inline-code"></block>: 최소 IOPS가 아닌 실제 IOPS에서 슬라이스 밸런싱을 비활성화합니다.</block>
+  <block id="e76af95319f03251bdf6c3771f39afbe" category="paragraph">12.8</block>
+  <block id="20b0ad010903f7b2d428d021e0c7d07f" category="list-text"><block ref="20b0ad010903f7b2d428d021e0c7d07f" category="inline-xref-macro-rx"></block></block>
+  <block id="e2d508b5a306e7983664021f6348fbff" category="paragraph">volumeLoadBalanceOnActualIopsState 를 참조하십시오</block>
+  <block id="2f422ae686124762f34b256f66599041" category="paragraph">최소 IOPS 기능이 아닌 실제 IOPS를 기반으로 한 슬라이스 균형 조정 상태입니다. Element 12.8부터 사용 가능.</block>
+  <block id="505be3e758aee452e5c40a4250623ef3" category="cell"><block ref="16611c4971284ff4b42c5d19de7c4fc6" prefix="" category="inline-code"></block></block>
+  <block id="02d9b6b9cb591592d0f848c16ce0627a" category="inline-link-macro">VolumeLoadBalanceOnActualIOPS</block>
+  <block id="23c40fdcbdf2c33e4c5cb256f37b65d0" category="paragraph">실제 IOPS를 통한 로드 밸런싱 시 볼륨 이동을 방지합니다. 이 설정은 Element 12.8부터 사용할 수 있으며 가 활성화된 경우에만 <block ref="636ea693b7b2510b539677d0148e4233" category="inline-link-macro-rx"></block>적용됩니다. 가능한 값:</block>
+  <block id="c29abafd53b30e2b89cd07dbab20364e" category="list-text"><block ref="b326b5062b2f0e69046810717534cb09" prefix="" category="inline-code"></block>: 볼륨은 실제 IOPS를 기준으로 로드 밸런스를 조정하지 않습니다.</block>
+  <block id="5d7a3b5e704aa7e7bf62279cc3278f01" category="list-text"><block ref="68934a3e9455fa72420237eb05902327" prefix="" category="inline-code"></block>: 볼륨은 실제 IOPS를 기준으로 로드 밸런싱을 수행합니다.</block>
+  <block id="12d73ef73ec07c1c3f13c03403458ac4" category="paragraph">* 참고 *: 고가용성(노드 장애)에 대한 밸런싱이 및<block ref="16611c4971284ff4b42c5d19de7c4fc6" prefix=" " category="inline-code"></block> 보다<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block> 우선합니다.</block>
+  <block id="70477f1cbb1f9b0ee1ed984e95d175c9" category="list-text"><block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix="" category="inline-code"></block>: 최소 IOPS가 아닌 실제 IOPS에서 슬라이스 밸런싱을 활성화합니다. Element 12.8부터 사용 가능.</block>
+  <block id="51f05aff487f481c11bffc15bbc6e4b2" category="list-text"><block ref="6a4d46deeb21ef2b80060c11f49187e4" prefix="" category="inline-code"></block>: VVols 클러스터 기능에 대한 상태를 검색합니다.</block>
+  <block id="553a63549898987796cafd553180c07b" category="list-text"><block ref="794cb725c5631ad99b5b7c000307f0df" prefix="" category="inline-code"></block>: SnapMirror 복제 클러스터 기능에 대한 상태를 검색합니다.</block>
+  <block id="ec81003d6bad23cab3a28018beda6730" category="list-text"><block ref="db70af2af82d2621886d13d37995e481" prefix="" category="inline-code"></block>: HTTPS 통신 기능에 대한 FIPS 140-2 암호화의 상태를 검색합니다.</block>
+  <block id="cd9f39d245dd7eda6cce60f0322f58d0" category="list-text"><block ref="4223a206268b7c5a804c6b4d52900ea5" prefix="" category="inline-code"></block>: FIPS 140-2 드라이브 암호화 기능에 대한 상태를 검색합니다.</block>
+  <block id="490aeb503dc1e4b03161fcccf4cdffc2" category="list-text"><block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix="" category="inline-code"></block>: 최소 IOPS 기능이 아닌 실제 IOPS에서 슬라이스 밸런싱의 상태를 검색합니다. Element 12.8부터 사용 가능.</block>
+  <block id="16611c4971284ff4b42c5d19de7c4fc6" category="paragraph">dontMoveforIops재조정 을 참조하십시오</block>
+  <block id="4b568da388833daf83ea72e69801ba34" category="paragraph">노드 가열</block>
+  <block id="b5c845afcfb7df2d9d7fbef7714c09a9" category="paragraph">노드 활용도 정보 Element 12.8부터 사용 가능. 구성원:</block>
+  <block id="ca4488466d23621c06230504c824fb83" category="list-text">Primary TotalHeat: 노드 운영 총 IOPS/노드 구성 IOPS는 평균 24시간 동안 계산됩니다</block>
+  <block id="9ebe3bf85a15ba77ec5b2cc4408f55d0" category="list-text">RecentPrimaryTotalHeat: 노드 운영 총 IOPS/노드 구성 IOPS는 1시간 동안 평균되었습니다</block>
+  <block id="1d6d531f7e976462553ff19c1ec745af" category="list-text">recentTotalHeat: 노드 총 IOPS/노드 구성 IOPS는 1시간 동안 평균입니다</block>
+  <block id="545f1469911d2f62c6bceead8a0c2cc8" category="list-text">Total Heat: 노드 구성 IOPS 총 IOPS/노드 구성 IOPS는 평균 24시간 동안 계산됩니다</block>
+  <block id="cd10546771cf4d9146236c94201b070f" category="paragraph">슬라이서 IopsStats</block>
+  <block id="e690e448c74acc89f30fd24eaf5cd5d5" category="paragraph">볼륨의 I/O 사용량 통계입니다. Element 12.8부터 사용 가능. 가능한 슬라이서 IopsStats 값:</block>
+  <block id="c43b8cf1e5e1112e458b0a8aebe23131" category="list-text">LargeStatistics: 일반적으로 최근 24시간 동안 측정된 볼륨의 I/O 통계입니다.</block>
+  <block id="1b11f84facc1daeaa9620b3c31f3c6d0" category="list-text">smallStatistics: 일반적으로 마지막 시간 동안 측정된 볼륨의 I/O 통계입니다.</block>
+  <block id="9c976e58e6bcd2d0658085166cadade3" category="paragraph">가능한 largeStatistics 및 smallStatistics 값:</block>
+  <block id="18cb448ab99d0b204d2b0056e16c6797" category="list-text">averageReadIops: 볼륨에 대한 평균 읽기 IOPS입니다.</block>
+  <block id="82b21b548a27fb7c5ccc9f32dd738465" category="list-text">AverageTotalIops: 볼륨에 대한 평균 총(읽기 + 쓰기) IOPS입니다.</block>
+  <block id="ea7f8d6913391d8b988f31fb9efec9bc" category="list-text">averageWriteIops: 볼륨에 대한 평균 쓰기 IOPS입니다.</block>
+  <block id="eaa3a19818b7f5619e46432a531d1f6a" category="list-text">nSamples: 통계 계산에 포함된 샘플 수입니다.</block>
+  <block id="7fdf87eada1272182b73c768f9f29592" category="list-text">PeakReadIops: 통계 간격 동안 관찰된 최대 읽기 IOPS입니다.</block>
+  <block id="ea1542c36a1086ca0fcd1be36c6f32c6" category="list-text">PeakTotalIops: 통계 간격 동안 관찰된 최대 총 IOPS입니다.</block>
+  <block id="f96ed95b5509cb599aadb504ec5aa0d5" category="list-text">PeakWriteIops: 통계 간격 동안 관찰된 최대 쓰기 IOPS입니다.</block>
+  <block id="041f17de41a9f1db9829ff79ad3ef600" category="list-text">슬라이서 ID: 볼륨 ID 또는 슬라이스 ID입니다</block>
+  <block id="6db7dd4182be7a1979ad403111fa8618" category="inline-link">NetApp Element 소프트웨어 12.8 릴리스 정보</block>
+  <block id="7d776811219f8ebb17adecaa976bd578" category="list-text"><block ref="53e04163346326834efd61306c0800b5" category="inline-link-rx"></block> _신규_</block>
+  <block id="912995e99772bb097b2c7b32940725bb" category="list-text"><block ref="912995e99772bb097b2c7b32940725bb" category="inline-link-rx"></block></block>
+  <block id="de1923eab698e40e118f826163735ce9" category="doc">Element 소프트웨어의 새로운 기능</block>
+  <block id="95dc02f465fb1139e3e92c363bf6965b" category="paragraph">NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 SolidFire 및 Element 소프트웨어를 정기적으로 업데이트합니다. Element 12.8은 최신 릴리즈이며 보안 및 시스템 구성 요소 업데이트, 운영 개선 사항 및 해결된 문제를 포함합니다.</block>
+  <block id="54c87de7f5250ba9aa116c671d66513b" category="inline-link">NetApp Element 소프트웨어를 실행하는 스토리지 클러스터의 업그레이드 매트릭스는 무엇입니까</block>
+  <block id="cbc21275b31252cb0d62b8238bf2f7f4" category="admonition">누적 소프트웨어 및 펌웨어 업데이트는 스토리지 클러스터에서 실행 중인 현재 Element 버전을 기반으로 Element 12.8 업그레이드의 일부로 설치됩니다. 예를 들어, 클러스터에서 현재 Element 12.5를 실행 중인 경우 Element 12.8로 직접 업그레이드하여 Element 12.7과 12.8 모두에서 누적 업데이트를 받을 수 있습니다. 지원되는 업그레이드 경로는 기술 자료 문서 를<block ref="c5b23fd17ac7c12a5a03bb47eaffc085" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="b96f7bb136ed4e13e527257ff99d9aa8" category="section-title">요소 12.8</block>
+  <block id="5f3e8fa2bb7cacdfa568d72b6619b9f7" category="paragraph">Element 12.8의 새로운 기능에 대해 자세히 알아보십시오.</block>
+  <block id="de8b5a628a603f8c3af1b2f5792e68de" category="section-title">볼륨 로드 밸런싱</block>
+  <block id="9a015d8a2733454aff7d7b5bed746662" category="paragraph">Element 12.8에는 볼륨 로드 밸런싱 기능이 도입되었습니다. 이 기능을 사용하면 QoS 정책에 구성된 최소 IOPS가 아니라 각 볼륨의 실제 IOPS 수준을 기준으로 노드 간에 볼륨의 균형을 조정할 수 있습니다. 볼륨 로드 밸런싱 기능만 사용하여 볼륨을 밸런싱할 수 있습니다. 가상 볼륨의 균형을 조정하는 데 사용할 수 없습니다. 볼륨 로드 밸런싱 기능은 기본적으로 비활성화되어 있습니다. API 매개 변수와 및 <block ref="ca543ea41b9fe86f5db5c46f8401b9de" category="inline-link-macro-rx"></block> API 메서드 또는 <block ref="0e280c25b1846637cc005ef57df39d27" category="inline-link-macro-rx"></block>Element UI의 옵션을 사용하여 API 매개 변수를 <block ref="1028004a3d63b00e7896fde204286489" category="inline-link-macro-rx"></block>사용하거나 사용하지 않도록 설정할 수<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block> 있습니다.</block>
+  <block id="380221f3a88d939f31cd4269828e2920" category="section-title">노드 활용률 정보를 봅니다</block>
+  <block id="cf1de2ea971a9d03b59178af9472d4b0" category="paragraph">Element 12.8을 사용하면 및<block ref="84b7393e47ffdee1d6a06f5067a7270c" prefix=" " category="inline-code"></block> API 메서드를 사용하는<block ref="f26fbe9dd2d7f06608bbf6327141caa9" prefix=" " category="inline-code"></block> 것처럼 노드 활용률 정보를 볼 수<block ref="4b568da388833daf83ea72e69801ba34" prefix=" " category="inline-code"></block> 있습니다. <block ref="4b568da388833daf83ea72e69801ba34" prefix=" " category="inline-code"></block>객체는 객체의 구성원이며<block ref="d9bfbffd38f5f9686a85ef17e8138b5c" prefix=" " category="inline-code"></block> 시간 경과에 따라 구성된 IOPS에 대한 운영 총 IOPS 또는 총 IOPS의 비율에 따라 노드 사용률 정보를 표시합니다.</block>
+  <block id="75a2cb34cbc05ac90dcef2f4d04c6588" category="paragraph">또한 Element UI의 노드에 대한 View Details 디스플레이에서 노드 사용률을 백분율로 볼 수 있습니다<block ref="3e970dc4a731d994269545ba0dc518ab" prefix=" " category="inline-code"></block>.</block>
+  <block id="df9435e47754394c09f05283809f164d" category="section-title">볼륨의 I/O 통계를 확인합니다</block>
+  <block id="3fb4d6085a8835e3addca4a9c0fbbf66" category="paragraph">Element 12.8을 사용하면 및<block ref="27e97d4871384c3d242cfa858abc544a" prefix=" " category="inline-code"></block> API 메서드를 사용하는<block ref="d0d8364463968eb91608c292d6fe317a" prefix=" " category="inline-code"></block> 것처럼 볼륨의 I/O 사용량 통계를 볼 수 있습니다<block ref="cd10546771cf4d9146236c94201b070f" prefix=" " category="inline-code"></block>. I/O 통계는 볼륨에 대한 읽기 및 쓰기 IOPS 정보를 사용하여 계산되며 마지막 24시간과 마지막 1시간에 걸쳐 측정됩니다. <block ref="e0c529df1577dac200ea6d61065ab487" category="inline-link-macro-rx"></block>..</block>
+  <block id="dfa7d479451fc6bd725c9494a87f3a6a" category="section-title">iSCSI 세션에 대한 CHAP 알고리즘입니다</block>
+  <block id="b7ff4d8cc30e1648a2610b037b9c5b97" category="paragraph">호스트 iSCSI 초기자는 Element iSCSI 대상을 사용하여 iSCSI 세션을 생성할 때 사용할 CHAP(Challenge-Handshake Authentication Protocol) 알고리즘 목록을 요청합니다. Element 12.8부터 Element iSCSI 타겟이 iSCSI 세션에 사용하도록 선택한 지원되는 CHAP 알고리즘을 볼 수 있습니다.</block>
+  <block id="3c72afcfca67f187b816a55135a243dd" category="section-title">VM 하드웨어 버전을 업그레이드합니다</block>
+  <block id="7dba8a3f7eba09c328d90efc88b182cd" category="paragraph">기존 관리 노드를 Element 12.8로 전체 업그레이드를 수행하는 경우 업그레이드하기 전에 관리 노드의 VM 하드웨어 버전이 ESXi 6.7(VM 하드웨어 버전 14) 이상과 호환되는지 확인해야 합니다. <block ref="f415360b3de270935343c57ae74254e8" category="inline-link-macro-rx"></block>..</block>
+  <block id="9c5d76276e21d49836999553da451b64" category="paragraph">Element 12.7의 새로운 기능에 대해 자세히 알아보십시오.</block>
+  <block id="c709a2d01de03a4c29036ff9f37c0dff" category="paragraph">Element 12.5의 새로운 기능에 대해 자세히 알아보십시오.</block>
+  <block id="ad0a505756223d68dc11afeae3459351" category="inline-link">NetApp HCI 문서</block>
+  <block id="bf667c8802395357e4f080e2fcd819e4" category="list-text"><block ref="bf667c8802395357e4f080e2fcd819e4" category="inline-link-rx"></block></block>
+  <block id="f512bd2c4d2b9ed8c936fc1a75c3581e" category="paragraph">Element 소프트웨어 버전에 따라 다음 노드는 지원되지 않습니다.</block>
+  <block id="c31b8aa345140496ac5200d0d80fa702" category="list-text">Element 12.7, SF2405 및 SF9608 스토리지 노드, FC0025 및 SF-FCN-01 FC 노드부터 시작합니다.</block>
+  <block id="975648a39ca92865d807bc35f02b5984" category="inline-link-macro">Element 소프트웨어 12.8에 대한 고지 사항</block>
+  <block id="2d0be4b4ba388979c4f454ae05179965" category="list-text"><block ref="2d0be4b4ba388979c4f454ae05179965" category="inline-link-macro-rx"></block></block>
+  <block id="906ea05443e4b488a42f3f06305353ee" category="paragraph">이 절차를 따르기 전에 해당 기능을 사용할 것인지 및 사용할 것인지 여부를 이해해야 <block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block>합니다. 영구 볼륨은 선택 사항이지만 가상 머신(VM)이 손실된 경우 관리 노드 구성 데이터 복구에 권장됩니다.</block>
+  <block id="6d8cd87a85946daeae42cb54aade3baa" category="section-title">단계 1: ISO 또는 OVA를 다운로드하고 VM을 배포합니다</block>
+  <block id="90c4d8ddd76d9f5f86c144316cec5657" category="paragraph">NetApp 지원 사이트에서 적절한 ISO 또는 OVA를 다운로드하고 VM을 설치합니다.</block>
+  <block id="4aee9657f267c579c49541b5f19ca32c" category="list-text">NetApp 지원 사이트의 페이지에서 설치에 필요한 OVA 또는 ISO를 <block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>다운로드합니다. 새 OVA에는 업데이트된 SSL 인증서가 포함되어 있습니다.</block>
+  <block id="c6913d34fefabb7329dba971ad99632d" category="section-title">2단계: 관리 노드 관리자를 생성하고 네트워크를 구성합니다</block>
+  <block id="8e1cc7b20e9f183452b777f8a4fb586d" category="paragraph">VM 설치가 완료된 후 관리 노드 관리자 사용자를 생성하고 관리 노드 네트워크를 구성합니다.</block>
+  <block id="5e0472334bca93d0d28d3eeaaf723518" category="section-title">3단계: 시간 동기화를 구성합니다</block>
+  <block id="6646ab3d83d88b5b34e61e3a58b244e8" category="paragraph">관리 노드를 설정하기 전에 관리 노드와 스토리지 클러스터 간의 시간을 동기화합니다.</block>
+  <block id="e2a752315a25d69098c34f13da4b8c94" category="list-text">NTP를 사용하여 관리 노드와 스토리지 클러스터 간에 시간이 동기화되는지 확인합니다.</block>
+  <block id="60ba6327b0772f4d0beb24ef192dcf80" category="admonition">요소 12.3.1부터 하위 단계(a)에서 (e)까지 자동으로 수행됩니다. 관리 노드 12.3.1의 경우 로 <block ref="745b7d927b75ef73b131f4d1b2da0731" category="inline-xref-macro-rx"></block> 이동하여 시간 동기화 구성을 완료합니다.</block>
+  <block id="ef246c91c687e7d720eb49c5e2a4cd47" category="section-title">4단계: 관리 노드 설정</block>
+  <block id="9f150d20e38589485a1bb878b18c51e2" category="paragraph">명령을 사용하여 관리 노드를<block ref="73028873f2b0a018096b6a3d871634b5" prefix=" " category="inline-code"></block> 구성합니다.</block>
+  <block id="2cec258fd66ace0725a9af6922c80f3e" category="section-title">5단계: 컨트롤러 자산 구성</block>
+  <block id="b5d27a207b01cd3ca9fef9594d50836f" category="paragraph">설치 ID를 찾고 vCenter 컨트롤러 자산을 추가합니다.</block>
+  <block id="e667096facd9382b6410238147c6bd7d" category="inline-xref-macro">볼륨 로드 밸런싱을 활성화 및 비활성화합니다</block>
+  <block id="11bdcf58ce21896925e2cbc1f2174d99" category="list-text"><block ref="11bdcf58ce21896925e2cbc1f2174d99" category="inline-xref-macro-rx"></block></block>
+  <block id="6c7b496a2d02d11880156e116d65fdae" category="paragraph">이러한 노드 중 하나를 지원되지 않는 Element 버전으로 업그레이드하려고 하면 해당 노드가 Element 12.x에서 지원되지 않는다는 오류가 표시됩니다</block>
+  <block id="b8857076c45a770e167d021272059208" category="list-text">* CHAP *</block>
+  <block id="9cfc902e020fbc18dd2aff7989d4d45f" category="paragraph">iSCSI 세션에 대한 CHAP 알고리즘입니다. CHAP 알고리즘을 사용하지 않는 경우 대시(-)가 표시됩니다. Element 12.8부터 사용 가능.</block>
+  <block id="4072b99d321d18f605cb9f09366d1668" category="paragraph">Element 12.7부터 보안 FIPS 호환 CHAP 알고리즘 SHA1, SHA-256 및 SHA3-256이 지원됩니다. 호스트 iSCSI 초기자가 Element iSCSI 대상을 사용하여 iSCSI 세션을 생성하는 경우 사용할 CHAP 알고리즘 목록을 요청합니다. Element iSCSI 대상은 호스트 iSCSI 초기자가 요청한 목록에서 지원하는 첫 번째 알고리즘을 선택합니다. Element iSCSI 타겟이 가장 안전한 알고리즘을 선택하는지 확인하려면 호스트 iSCSI 초기자가 가장 안전한(예: SHA3-256)에서 주문한 알고리즘 목록을 가장 안전한 것으로 보내도록 구성해야 합니다. SHA1 또는 MD5. 호스트 iSCSI 초기자가 SHA 알고리즘을 요청하지 않으면 Element iSCSI 대상이 MD5를 선택하며, 호스트의 제안된 알고리즘 목록에 MD5가 포함되어 있다고 가정합니다. 보안 알고리즘을 지원하려면 호스트 iSCSI 이니시에이터 구성을 업데이트해야 할 수 있습니다.</block>
+  <block id="b0d6e61e8313606c921c3d2b2ae7e76d" category="paragraph">Element 12.7 이상 업그레이드 중에 스토리지 노드가 재부팅될 때 SHA 알고리즘이 포함된 목록을 사용하여 세션 요청을 보내도록 호스트 iSCSI 이니시에이터 구성을 이미 업데이트한 경우 새로운 보안 알고리즘이 활성화되고 가장 안전한 프로토콜을 사용하여 새 iSCSI 세션 또는 다시 연결된 iSCSI 세션이 설정됩니다. 업그레이드 중에 기존의 모든 iSCSI 세션이 MD5에서 SHA로 전환됩니다. 호스트 iSCSI 이니시에이터 구성을 SHA를 요청하기 위해 업데이트하지 않으면 기존 iSCSI 세션에서 계속 MD5를 사용합니다. 나중에 호스트 iSCSI 이니시에이터 CHAP 알고리즘을 업데이트한 후 iSCSI 세션이 다시 연결되는 유지 보수 작업에 따라 iSCSI 세션이 점차 MD5에서 SHA로 전환되어야 합니다.</block>
+  <block id="aaee41e33731b48ea709a8d86f92665f" category="summary">Element 12.8부터 볼륨 로드 밸런싱을 활성화하여 QoS 정책에 구성된 최소 IOPS가 아닌 각 볼륨별로 실제 IOPS를 기반으로 노드 간에 볼륨의 균형을 조정할 수 있습니다.</block>
+  <block id="3ef41e0639b21f006f7d5de45b6ee839" category="paragraph">Element 12.8부터 볼륨 로드 밸런싱을 사용하여 QoS 정책에 구성된 최소 IOPS 대신 각 볼륨별 실제 IOPS를 기준으로 노드 간에 볼륨을 밸런싱할 수 있습니다. Element UI 또는 API를 사용하여 기본적으로 비활성화되어 있는 볼륨 로드 밸런싱을 활성화 및 비활성화할 수 있습니다.</block>
+  <block id="bcdaa8bc7cb207354c87d8e1232ab12f" category="list-text">클러스터 * &gt; * 설정 * 을 선택합니다.</block>
+  <block id="0f4c8c48f2ee6af3905e369c115e564d" category="list-text">클러스터별 섹션에서 Volume Load Balancing의 상태를 변경합니다.</block>
+  <block id="3ad3b40ee22c1193fd89bfbd535ff89c" category="open-title">볼륨 로드 밸런싱을 활성화합니다</block>
+  <block id="fc974f059cad1de90d3d0a8283162c27" category="paragraph">실제 IOPS에서 로드 밸런싱 활성화 * 를 선택하고 선택 사항을 확인합니다.</block>
+  <block id="f2b86d8559c9ce4d77248b1cb9564340" category="open-title">볼륨 로드 밸런싱 비활성화:</block>
+  <block id="3216ad57a8f2305cd9a59ab5917e54e4" category="paragraph">실제 IOPS에서 로드 밸런싱 비활성화 * 를 선택하고 선택 사항을 확인합니다.</block>
+  <block id="66b402adbbe6b9f984ecdcd5248bfec0" category="list-text">선택적으로 * Reporting * &gt; * Overview * 를 선택하여 Balance on 실제 IOPS에 대한 상태 변경을 확인합니다. 상태를 보려면 클러스터 상태 정보를 아래로 스크롤해야 할 수 있습니다.</block>
+  <block id="4e5a27f88db1734e1af540886a80a4e9" category="inline-link-macro">API를 사용하여 볼륨 로드 밸런싱을 활성화합니다</block>
+  <block id="3b23faa50d0cdbc4e395b29066b18b08" category="list-text"><block ref="3b23faa50d0cdbc4e395b29066b18b08" category="inline-link-macro-rx"></block></block>
+  <block id="e94e13cb2fcae56ae542775b50cc0b10" category="inline-link">API를 사용하여 볼륨 로드 밸런싱을 비활성화합니다</block>
+  <block id="9ffe0c15921805682448240c94ddc614" category="list-text"><block ref="9ffe0c15921805682448240c94ddc614" category="inline-link-rx"></block></block>
+  <block id="a7f635a546cbb7490b31779618511dd1" category="list-text"><block ref="a7f635a546cbb7490b31779618511dd1" category="inline-link-macro-rx"></block></block>
+  <block id="e52172b27eb39053f2941029ca952216" category="list-text">* 노드 사용률 *: nodeHeat를 기준으로 한 노드 활용도의 비율입니다. 표시된 값은 recentPrimaryTotalHeat 를 백분율로 표시한 것입니다. Element 12.8부터 사용 가능.</block>
+  <block id="5e8ecd2e12df03135f7d9ea0fc9f1e5e" category="list-text">* 사용자 지정 보호 도메인 *: 노드에 할당된 사용자 지정 보호 도메인입니다.</block>
+  <block id="c5c29b3089afd57677f0c6e16b8f6bc1" category="inline-link-macro">관리 노드의 전체 업그레이드 수행</block>
+  <block id="870c21ddabb9d392de6b8260f26cb2bd" category="list-text">2023년 11월부터 서명 키 인증서(개인 및 공개)가 2023년 11월 5일에 만료되므로 NetApp 하이브리드 클라우드 제어 또는 REST API를 사용하여 구성요소 업그레이드를 시작할 수 없습니다. NetApp 하이브리드 클라우드 제어 또는 REST API를 사용하여 관리 서비스, Element 소프트웨어 및 스토리지 펌웨어를 업그레이드하기 전에 버전 12.8까지 이 문제를 해결할 수 <block ref="3f48e72cfa47aa3f4c9b8d036d27a113" category="inline-link-macro-rx"></block>있습니다.</block>
+  <block id="155ca98fbc1ded22cd8604d6760bbd99" category="paragraph">버전 12.8을 지원하는 새 관리 노드를 구축할 경우 NetApp Hybrid Cloud Control 또는 REST API를 사용하여 에 나열된 순서대로 구성요소 업그레이드를 수행할 수 있습니다<block ref="c0f289a1ce14070fe1c9e60f6416d18d" category="inline-xref-macro-rx"></block>.</block>
+  <block id="1806b0c9501c3b2013932e456db5038b" category="list-text">다음 노드는 지원되지 않습니다. 이러한 노드 중 하나를 지원되지 않는 Element 버전으로 업그레이드하려고 하면 해당 노드가 Element 12.x에서 지원되지 않는다는 오류가 표시됩니다.</block>
+  <block id="b036ebb7aa6b63db449d4df71f28c3cd" category="section-title">1단계: 관리 노드에서 VM 하드웨어 버전 업그레이드</block>
+  <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">기존 관리 노드를 Element 12.8로 전체 업그레이드를 수행하는 경우 업그레이드하기 전에 관리 노드의 VM 하드웨어 버전이 ESXi 6.7(VM 하드웨어 버전 14) 이상과 호환되는지 확인해야 합니다.</block>
+  <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">vCenter 관리자로 vSphere Web Client에 로그인합니다.</block>
+  <block id="7936b082e6a3d2167a2478cee0772514" category="list-text">vSphere Client 메뉴에서 * VMS * &gt; * Templates * 를 선택합니다.</block>
+  <block id="ad4062bf296d686c04c351f026e2400d" category="list-text">가상 머신을 마우스 오른쪽 버튼으로 클릭하고 * 호환성 * &gt; * Upgrade VM Compatibility * 를 선택합니다.</block>
+  <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">vSphere 환경의 버전에 따라 ESXi 6.7 이상 버전을 선택합니다.</block>
+  <block id="3d1c64d2c8b1e4058225a78c3ef09fa6" category="list-text">OK * 를 선택합니다.</block>
+  <block id="43c3c8c2f75e6064714e6ec942f1e916" category="list-text">업그레이드가 완료된 후 * vSphere Client Refresh * 를 선택하고 VM 호환성이 원하는 버전인지 확인합니다.</block>
+  <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">2단계: 관리 노드를 Element 12.5 이상으로 업그레이드합니다</block>
+  <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">다음 업그레이드 옵션 중 하나를 선택합니다.</block>
+  <block id="8c5a891df58bfda1762ec23302a952b6" category="sidebar">SolidFire All-Flash 스토리지 시스템은 스토리지 리소스 풀로 결합된 드라이브 및 노드와 같은 하드웨어 구성 요소로 이루어집니다. Element 인터페이스, API 또는 기타 관리 툴을 사용하여 NetApp Element 소프트웨어를 사용하여 이러한 스토리지 리소스 클러스터를 관리할 수 있습니다. 이 사이트에는 Element 소프트웨어 12.8에 대한 문서가 포함되어 있습니다.</block>
+  <block id="83214fe0ca2841bff645ee69075302da" category="sidebar">SolidFire 및 Element 소프트웨어 문서 12.8</block>
 </blocks>

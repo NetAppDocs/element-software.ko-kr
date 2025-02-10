@@ -251,6 +251,8 @@ entries:
     url: "/api/reference_element_api_createclusterinterfacepreference.html"
   - title: DeleteClusterInterfacePreference(삭제 클러스터
     url: "/api/reference_element_api_deleteclusterinterfacepreference.html"
+  - title: 작동 불능
+    url: "/api/reference_element_api_disablefeature.html"
   - title: 공급 기능
     url: "/api/reference_element_api_enablefeature.html"
   - title: GetClusterCapacity 를 선택합니다

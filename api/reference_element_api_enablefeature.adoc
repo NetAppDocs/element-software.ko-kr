@@ -22,6 +22,7 @@ summary: EnableFeature 메서드를 사용하면 기본적으로 사용되지 �
 
 NOTE: Element 소프트웨어 11.x를 실행하는 시스템의 경우 보호 도메인 모니터링을 설정하기 전이나 후에 가상 볼륨을 활성화하면 클러스터 보호 도메인 기능이 노드 레벨에서만 작동합니다.
 
+[cols="1a,3a,1a,1a,1a"]
 |===
 | 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
 
@@ -34,6 +35,7 @@ NOTE: Element 소프트웨어 11.x를 실행하는 시스템의 경우 보호 �
 * FIPS: HTTPS 통신에 FIPS 140-2 인증 암호화를 사용합니다.
 * 'FipsDrives': 스토리지 클러스터에 FIPS 140-2 드라이브 지원을 활성화합니다.
 * '스냅샷 미러': SnapMirror 복제 클러스터 기능을 설정합니다.
+* `VolumeLoadBalanceOnActualIOPS`: 최소 IOPS가 아닌 실제 IOPS에서 슬라이스 밸런싱을 활성화합니다. Element 12.8부터 사용 가능.
 * 'VVol': Element 소프트웨어 VVol 클러스터 기능을 활성화한다.
 
  a| 

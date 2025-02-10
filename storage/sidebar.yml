@@ -53,6 +53,8 @@ entries:
       url: "/storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html"
     - title: 클러스터를 최대 임계값으로 설정합니다
       url: "/storage/task_system_manage_cluster_set_the_cluster_full_threshold.html"
+    - title: 볼륨 로드 밸런싱을 활성화 및 비활성화합니다
+      url: "/storage/task_system_manage_cluster_volume_load_balancing.html"
     - title: 지원 액세스를 설정 및 해제합니다
       url: "/storage/task_system_manage_cluster_enable_and_disable_support_access.html"
     - title: 이용 약관 배너를 관리합니다

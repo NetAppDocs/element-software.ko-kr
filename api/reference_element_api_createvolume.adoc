@@ -43,6 +43,17 @@ summary: CreateVolume 메서드를 사용하여 클러스터에 빈 새 볼륨�
 | '속성' | JSON 개체 형식의 이름-값 쌍 목록입니다. JSON 형식 문자를 포함하여 총 속성 크기는 1000B 또는 1KB 미만이어야 합니다. | JSON 개체 | 없음 | 아니요 
 
 
+| `dontMoveforIopsRebalance`  a| 
+실제 IOPS를 통한 로드 밸런싱 시 볼륨 이동을 방지합니다. 이 설정은 Element 12.8부터 사용할 수 있으며 가 활성화된 경우에만 link:reference_element_api_enablefeature.html["VolumeLoadBalanceOnActualIOPS"]적용됩니다. 가능한 값:
+
+* `true`: 볼륨은 실제 IOPS를 기준으로 로드 밸런스를 조정하지 않습니다.
+* `false`: 볼륨은 실제 IOPS를 기준으로 로드 밸런싱을 수행합니다.
+
+
+* 참고 *: 고가용성(노드 장애)에 대한 밸런싱이 및 `dontMoveforIopsRebalance` 보다 `VolumeLoadBalanceOnActualIOPS` 우선합니다.
+| 부울 | 거짓 | 아니요 
+
+
 | enable512e  a| 
 512바이트 섹터 에뮬레이션을 활성화합니다. 가능한 값:
 
@@ -92,8 +103,6 @@ SnapMirror 엔드포인트에서 복제를 위해 볼륨을 사용할 수 있는
 이 메서드의 반환 값은 다음과 같습니다.
 
 |===
-
-
 | 이름 | 설명 | 유형 
 
 
@@ -134,19 +143,16 @@ JSON 개체
 {
    "method": "CreateVolume",
    "params": {
-      "name": "mysqldata",
-      "accountID": 1,
-      "totalSize": 107374182400,
+      "name": "testit",
+      "accountID": 22,
+      "dontMoveForIopsRebalance": true,
+      "totalSize": 100000000000,
       "enable512e": false,
-      "attributes": {
-         "name1": "value1",
-         "name2": "value2",
-         "name3": "value3"
-      },
+      "attributes": {},
       "qos": {
-         "minIOPS": 50,
-         "maxIOPS": 500,
-         "burstIOPS": 1500,
+         "minIOPS": 500,
+         "maxIOPS": 27000,
+         "burstIOPS": 27000,
          "burstTime": 60
       }
    },
@@ -165,59 +171,66 @@ JSON 개체
     "id": 1,
     "result": {
         "curve": {
-            "4096": 100,
-            "8192": 160,
-            "16384": 270,
-            "32768": 500,
-            "65536": 1000,
+            "1048576": 15000,
             "131072": 1950,
+            "16384": 270,
             "262144": 3900,
+            "32768": 500,
+            "4096": 100,
             "524288": 7600,
-            "1048576": 15000
+            "65536": 1000,
+            "8192": 160
         },
         "volume": {
             "access": "readWrite",
-            "accountID": 1,
-            "attributes": {
-                "name1": "value1",
-                "name2": "value2",
-                "name3": "value3"
-            },
+            "accountID": 22,
+            "attributes": {},
             "blockSize": 4096,
-            "createTime": "2016-03-31T22:20:22Z",
+            "createTime": "2024-04-02T13:03:02Z",
+            "currentProtectionScheme": "doubleHelix",
             "deleteTime": "",
+            "dontMoveForIopsRebalance": true,
             "enable512e": false,
+            "enableSnapMirrorReplication": false,
+            "fifoSize": 24,
             "iqn": "iqn.2010-01.com.solidfire:mysqldata.677",
-            "name": "mysqldata",
+            "lastAccessTime": null,
+            "lastAccessTimeIO": null,
+            "minFifoSize": 0,
+            "name": "testit",
+            "previousProtectionScheme": null,
             "purgeTime": "",
             "qos": {
-                "burstIOPS": 1500,
+                "burstIOPS": 27000,
                 "burstTime": 60,
                 "curve": {
-                    "4096": 100,
-                    "8192": 160,
-                    "16384": 270,
-                    "32768": 500,
-                    "65536": 1000,
+                    "1048576": 15000,
                     "131072": 1950,
+                    "16384": 270,
                     "262144": 3900,
+                    "32768": 500,
+                    "4096": 100,
                     "524288": 7600,
-                    "1048576": 15000
+                    "65536": 1000,
+                    "8192": 160
                 },
-                "maxIOPS": 500,
-                "minIOPS": 50
+                "maxIOPS": 27000,
+                "minIOPS": 500
             },
-            "scsiEUIDeviceID": "6a796179000002a5f47acc0100000000",
-            "scsiNAADeviceID": "6f47acc1000000006a796179000002a5",
+            "qosPolicyID": null,
+            "scsiEUIDeviceID": "3365657500000140f47acc0100000000",
+            "scsiNAADeviceID": "6f47acc1000000003365657500000140",
             "sliceCount": 0,
             "status": "active",
-            "totalSize": 107374182400,
+            "totalSize": 1000000716800,
             "virtualVolumeID": null,
             "volumeAccessGroups": [],
-            "volumeID": 677,
-            "volumePairs": []
+            "volumeConsistencyGroupUUID": "8ed68e57-13ee-47df-8381-29b125142718",
+            "volumeID": 320,
+            "volumePairs": [],
+            "volumeUUID": "e0e2c938-4ecd-4de9-a1be-f6b17c93ce5d"
         },
-        "volumeID": 677
+        "volumeID": 320
     }
 }
 ----

@@ -7,8 +7,10 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   versions:
-  - version-number: '12.7'
+  - version-number: '12.8'
     url: "/element-software"
+  - version-number: '12.7'
+    url: "/element-software-127"
   - version-number: '12.5'
     url: "/element-software-125"
   - version-number: '12.3'
@@ -16,7 +18,7 @@ settings:
   langs: ko-kr,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: SolidFire 및 Element 소프트웨어 문서 12.7
+  - title: SolidFire 및 Element 소프트웨어 문서 12.8
     url: "/index.html"
   - title: 릴리스 정보
     url: "/concepts/concept_rn_relatedrn_element.html"

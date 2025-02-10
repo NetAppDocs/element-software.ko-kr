@@ -1,0 +1,90 @@
+---
+permalink: api/reference_element_api_disablefeature.html 
+sidebar: sidebar 
+keywords: SNMP,disable,disabling,DisableFeature,vvols,virtual volumes 
+summary: DisableFeature 메서드를 사용하여 VolumeLoadBalanceOnActualIOPS를 비활성화할 수 있습니다. 
+---
+= 작동 불능
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+메소드를 사용하여 기능을 비활성화할 `VolumeLoadBalanceOnActualIOPS` 수 `DisableFeature` 있습니다. `VolumeLoadBalanceOnActualIOPS` 는 기본적으로 비활성화되어 있습니다.
+
+[NOTE]
+====
+VVol과 같은 다른 기능을 비활성화하려고 하면 다음 오류 메시지가 나타납니다.
+
+[listing]
+----
+{"error":{"code":500,"message":"VolumeLoadBalanceOnActualIOPS is the only feature that can be disabled","name":"xAPINotPermitted"},"id":null}
+----
+====
+
+
+== 매개 변수
+
+이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
+
+[cols="1a,3a,1a,1a,1a"]
+|===
+| 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
+
+
+ a| 
+피처
+ a| 
+클러스터 기능을 비활성화합니다. 가능한 값:
+
+* `VolumeLoadBalanceOnActualIOPS`: 최소 IOPS가 아닌 실제 IOPS에서 슬라이스 밸런싱을 비활성화합니다.
+
+ a| 
+문자열
+ a| 
+없음
+ a| 
+예
+
+|===
+
+
+== 반환 값
+
+이 메서드에는 반환 값이 없습니다.
+
+
+
+== 요청 예
+
+이 메서드에 대한 요청은 다음 예제와 비슷합니다.
+
+[listing]
+----
+{
+  "method": "DisableFeature",
+    "params": {
+        "feature" : "VolumeLoadBalanceOnActualIOPS"
+    },
+    "id": 1
+}
+----
+
+
+== 응답 예
+
+이 메서드는 다음 예제와 유사한 응답을 반환합니다.
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {}
+}
+----
+
+
+== 버전 이후 새로운 기능
+
+12.8

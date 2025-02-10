@@ -123,6 +123,21 @@ networkUtilizationCluster를 참조하십시오
 
 
  a| 
+노드 가열
+ a| 
+노드 활용도 정보 Element 12.8부터 사용 가능. 구성원:
+
+* Primary TotalHeat: 노드 운영 총 IOPS/노드 구성 IOPS는 평균 24시간 동안 계산됩니다
+* RecentPrimaryTotalHeat: 노드 운영 총 IOPS/노드 구성 IOPS는 1시간 동안 평균되었습니다
+* recentTotalHeat: 노드 총 IOPS/노드 구성 IOPS는 1시간 동안 평균입니다
+* Total Heat: 노드 구성 IOPS 총 IOPS/노드 구성 IOPS는 평균 24시간 동안 계산됩니다
+
+ a| 
+JSON 개체
+
+
+
+ a| 
 ReadLatencyUSecTotal 을 참조하십시오
  a| 
 노드에 대한 읽기 작업을 수행하는 데 소비되는 총 시간의 값을 지속적으로 증가시킵니다.

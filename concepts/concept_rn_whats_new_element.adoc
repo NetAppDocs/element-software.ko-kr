@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: netapp, solidfire, element, storage, solidfire enterprise sds 
 summary: NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 SolidFire 및 Element 소프트웨어를 정기적으로 업데이트합니다. 
 ---
-= Element 소프트웨어 12.5 이상의 새로운 기능
+= Element 소프트웨어의 새로운 기능
 :allow-uri-read: 
 :url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Element_Software_-_Apache_Log4j_Vulnerability_-_Workaround
 :icons: font
@@ -12,10 +12,48 @@ summary: NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공�
 
 
 [role="lead"]
-NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 SolidFire 및 Element 소프트웨어를 정기적으로 업데이트합니다. Element 12.7은 최신 릴리즈이며 보안 및 시스템 구성 요소 업데이트, 운영 개선 사항 및 해결된 문제를 포함합니다.
+NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 SolidFire 및 Element 소프트웨어를 정기적으로 업데이트합니다. Element 12.8은 최신 릴리즈이며 보안 및 시스템 구성 요소 업데이트, 운영 개선 사항 및 해결된 문제를 포함합니다.
 
 
-NOTE: 누적 소프트웨어 및 펌웨어 업데이트는 스토리지 클러스터에서 실행 중인 현재 Element 버전을 기반으로 Element 12.7 업그레이드의 일부로 설치됩니다. 예를 들어, 클러스터가 현재 Element 12.3.x를 실행 중인 경우 Element 12.7로 직접 업그레이드하여 Element 12.5와 12.7에서 누적 업데이트를 받을 수 있습니다. 지원되는 업그레이드 경로는 이를 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["KB 문서를 참조하십시오"^]
+NOTE: 누적 소프트웨어 및 펌웨어 업데이트는 스토리지 클러스터에서 실행 중인 현재 Element 버전을 기반으로 Element 12.8 업그레이드의 일부로 설치됩니다. 예를 들어, 클러스터에서 현재 Element 12.5를 실행 중인 경우 Element 12.8로 직접 업그레이드하여 Element 12.7과 12.8 모두에서 누적 업데이트를 받을 수 있습니다. 지원되는 업그레이드 경로는 기술 자료 문서 를 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["NetApp Element 소프트웨어를 실행하는 스토리지 클러스터의 업그레이드 매트릭스는 무엇입니까"^]참조하십시오.
+
+
+
+== 요소 12.8
+
+Element 12.8의 새로운 기능에 대해 자세히 알아보십시오.
+
+
+
+=== 볼륨 로드 밸런싱
+
+Element 12.8에는 볼륨 로드 밸런싱 기능이 도입되었습니다. 이 기능을 사용하면 QoS 정책에 구성된 최소 IOPS가 아니라 각 볼륨의 실제 IOPS 수준을 기준으로 노드 간에 볼륨의 균형을 조정할 수 있습니다. 볼륨 로드 밸런싱 기능만 사용하여 볼륨을 밸런싱할 수 있습니다. 가상 볼륨의 균형을 조정하는 데 사용할 수 없습니다. 볼륨 로드 밸런싱 기능은 기본적으로 비활성화되어 있습니다. API 매개 변수와 및 link:../api/reference_element_api_disablefeature.html["작동 불능"] API 메서드 또는 link:../storage/task_system_manage_cluster_volume_load_balancing.html["볼륨 로드 밸런싱"]Element UI의 옵션을 사용하여 API 매개 변수를 link:../api/reference_element_api_enablefeature.html["공급 기능"]사용하거나 사용하지 않도록 설정할 수 `VolumeLoadBalanceOnActualIOPS` 있습니다.
+
+
+
+=== 노드 활용률 정보를 봅니다
+
+Element 12.8을 사용하면 및 `ListNodeStats` API 메서드를 사용하는 `GetNodeStats` 것처럼 노드 활용률 정보를 볼 수 `nodeHeat` 있습니다.  `nodeHeat`객체는 객체의 구성원이며 `nodeStats` 시간 경과에 따라 구성된 IOPS에 대한 운영 총 IOPS 또는 총 IOPS의 비율에 따라 노드 사용률 정보를 표시합니다.
+
+또한 Element UI의 노드에 대한 View Details 디스플레이에서 노드 사용률을 백분율로 볼 수 있습니다 `recentPrimaryTotalHeat`.
+
+
+
+=== 볼륨의 I/O 통계를 확인합니다
+
+Element 12.8을 사용하면 및 `ListVolumeStatsByVolume` API 메서드를 사용하는 `GetVolumeStats` 것처럼 볼륨의 I/O 사용량 통계를 볼 수 있습니다 `sliceIopsStats`. I/O 통계는 볼륨에 대한 읽기 및 쓰기 IOPS 정보를 사용하여 계산되며 마지막 24시간과 마지막 1시간에 걸쳐 측정됩니다. link:../api/reference_element_api_volumestats.html#object-members["자세한 정보"]..
+
+
+
+=== iSCSI 세션에 대한 CHAP 알고리즘입니다
+
+호스트 iSCSI 초기자는 Element iSCSI 대상을 사용하여 iSCSI 세션을 생성할 때 사용할 CHAP(Challenge-Handshake Authentication Protocol) 알고리즘 목록을 요청합니다. Element 12.8부터 Element iSCSI 타겟이 iSCSI 세션에 사용하도록 선택한 지원되는 CHAP 알고리즘을 볼 수 있습니다.
+
+
+
+=== VM 하드웨어 버전을 업그레이드합니다
+
+기존 관리 노드를 Element 12.8로 전체 업그레이드를 수행하는 경우 업그레이드하기 전에 관리 노드의 VM 하드웨어 버전이 ESXi 6.7(VM 하드웨어 버전 14) 이상과 호환되는지 확인해야 합니다. link:../upgrade/task_hcc_upgrade_management_node.html#step-1-upgrade-vm-hardware-version-on-a-management-node["자세한 정보"]..
 
 
 
@@ -80,7 +118,7 @@ NOTE: Element 12.7 릴리스에는 새 펌웨어 업데이트가 없습니다. �
 
 == 요소 12.5
 
-Element 12.5에는 향상된 스토리지 노드 액세스, 향상된 사용자 지정 보호 도메인 관리 기능, 새롭고 향상된 클러스터 오류 및 이벤트, 향상된 클러스터 UI 생성 기능 및 향상된 보안이 도입되었습니다.
+Element 12.5의 새로운 기능에 대해 자세히 알아보십시오.
 
 
 
@@ -128,9 +166,7 @@ Element 12.5에는 120개 이상의 CVE 보안 취약점 해결도 포함되어 
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["NetApp 하이브리드 클라우드 제어 및 관리 서비스 릴리즈 노트"^]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
-* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
-* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"^]
 * http://docs.netapp.com/sfe-122/index.jsp["이전 버전용 SolidFire 및 Element 소프트웨어 설명서 센터"^]
-* https://www.netapp.com/us/documentation/hci.aspx["NetApp HCI 리소스 페이지를 참조하십시오"^]
+* https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
 * link:../hardware/fw_storage_nodes.html["SolidFire 스토리지 노드에 대해 지원되는 스토리지 펌웨어 버전입니다"]
 

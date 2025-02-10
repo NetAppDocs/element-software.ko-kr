@@ -19,6 +19,7 @@ Element 소프트웨어 클러스터 API 메서드를 사용하면 스토리지 
 * xref:reference_element_api_clearclusterfaults.adoc[클리어클러스터 폭행]
 * xref:reference_element_api_createclusterinterfacepreference.adoc[CreateClusterInterfacePreference를 선택합니다]
 * xref:reference_element_api_deleteclusterinterfacepreference.adoc[DeleteClusterInterfacePreference(삭제 클러스터]
+* xref:reference_element_api_disablefeature.adoc[작동 불능]
 * xref:reference_element_api_enablefeature.adoc[공급 기능]
 * xref:reference_element_api_getclustercapacity.adoc[GetClusterCapacity 를 선택합니다]
 * xref:reference_element_api_getclusterfullthreshold.adoc[GetClusterFullThreshold 를 참조하십시오]

@@ -1,0 +1,43 @@
+---
+permalink: storage/task_system_manage_cluster_volume_load_balancing.html 
+sidebar: sidebar 
+keywords: cluster, volume, volumes, load, balancing, actual, IOPS 
+summary: Element 12.8부터 볼륨 로드 밸런싱을 활성화하여 QoS 정책에 구성된 최소 IOPS가 아닌 각 볼륨별로 실제 IOPS를 기반으로 노드 간에 볼륨의 균형을 조정할 수 있습니다. 
+---
+= 볼륨 로드 밸런싱을 활성화 및 비활성화합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 12.8부터 볼륨 로드 밸런싱을 사용하여 QoS 정책에 구성된 최소 IOPS 대신 각 볼륨별 실제 IOPS를 기준으로 노드 간에 볼륨을 밸런싱할 수 있습니다. Element UI 또는 API를 사용하여 기본적으로 비활성화되어 있는 볼륨 로드 밸런싱을 활성화 및 비활성화할 수 있습니다.
+
+.단계
+. 클러스터 * > * 설정 * 을 선택합니다.
+. 클러스터별 섹션에서 Volume Load Balancing의 상태를 변경합니다.
++
+[role="tabbed-block"]
+====
+.볼륨 로드 밸런싱을 활성화합니다
+--
+실제 IOPS에서 로드 밸런싱 활성화 * 를 선택하고 선택 사항을 확인합니다.
+
+--
+.볼륨 로드 밸런싱 비활성화:
+--
+실제 IOPS에서 로드 밸런싱 비활성화 * 를 선택하고 선택 사항을 확인합니다.
+
+--
+====
+. 선택적으로 * Reporting * > * Overview * 를 선택하여 Balance on 실제 IOPS에 대한 상태 변경을 확인합니다. 상태를 보려면 클러스터 상태 정보를 아래로 스크롤해야 할 수 있습니다.
+
+
+
+
+== 자세한 내용을 확인하십시오
+
+* link:../api/reference_element_api_enablefeature.html["API를 사용하여 볼륨 로드 밸런싱을 활성화합니다"]
+* https://docs.netapp.com/us-en/element-software/api/reference_element_api_disablefeature.html["API를 사용하여 볼륨 로드 밸런싱을 비활성화합니다"]
+* link:../hccstorage/task-hcc-qos-policies.html["볼륨 QoS 정책 생성 및 관리"]
+

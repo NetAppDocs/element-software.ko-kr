@@ -133,6 +133,4 @@ Element Demo Node는 자원 봉사자 단위로 이용할 수 있습니다. 지�
 
 == 자세한 내용을 확인하십시오
 
-* https://www.netapp.com/data-storage/solidfire/documentation/["SolidFire All-Flash 스토리지 리소스 페이지를 참조하십시오"^]
-* https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Element Demo Node 다운로드 페이지(로그인 필요)"^]
-
+https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Element Demo Node 다운로드 페이지(로그인 필요)"^]

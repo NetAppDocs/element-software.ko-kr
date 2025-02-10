@@ -27,6 +27,7 @@ volumeStats 개체에는 개별 볼륨에 대한 통계 데이터가 포함되�
 
 이 개체에는 다음 멤버가 포함되어 있습니다.
 
+[cols="20,50,15,15"]
 |===
 | 이름 | 설명 | 계산 | 유형 
 
@@ -231,6 +232,33 @@ SamplePeriodMSec
 해당 없음
  a| 
 정수
+
+
+
+ a| 
+슬라이서 IopsStats
+ a| 
+볼륨의 I/O 사용량 통계입니다. Element 12.8부터 사용 가능. 가능한 슬라이서 IopsStats 값:
+
+* LargeStatistics: 일반적으로 최근 24시간 동안 측정된 볼륨의 I/O 통계입니다.
+* smallStatistics: 일반적으로 마지막 시간 동안 측정된 볼륨의 I/O 통계입니다.
+
+
+가능한 largeStatistics 및 smallStatistics 값:
+
+* averageReadIops: 볼륨에 대한 평균 읽기 IOPS입니다.
+* AverageTotalIops: 볼륨에 대한 평균 총(읽기 + 쓰기) IOPS입니다.
+* averageWriteIops: 볼륨에 대한 평균 쓰기 IOPS입니다.
+* nSamples: 통계 계산에 포함된 샘플 수입니다.
+* PeakReadIops: 통계 간격 동안 관찰된 최대 읽기 IOPS입니다.
+* PeakTotalIops: 통계 간격 동안 관찰된 최대 총 IOPS입니다.
+* PeakWriteIops: 통계 간격 동안 관찰된 최대 쓰기 IOPS입니다.
+* 슬라이서 ID: 볼륨 ID 또는 슬라이스 ID입니다
+
+ a| 
+특정 시점
+ a| 
+JSON 개체
 
 
 

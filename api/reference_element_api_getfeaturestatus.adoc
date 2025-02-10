@@ -19,6 +19,7 @@ summary: GetFeatureStatus 메서드를 사용하여 클러스터 기능의 상�
 
 이 메서드에는 다음과 같은 입력 매개 변수가 있습니다.
 
+[cols="1a,3a,1a,1a,1a"]
 |===
 | 이름 | 설명 | 유형 | 기본값 | 필수 요소입니다 
 
@@ -28,10 +29,11 @@ summary: GetFeatureStatus 메서드를 사용하여 클러스터 기능의 상�
  a| 
 클러스터 기능의 상태입니다. 값을 제공하지 않으면 모든 기능의 상태가 반환됩니다. 가능한 값:
 
-* VVol: VVol 클러스터 기능의 상태를 검색합니다.
-* SnapMirror: SnapMirror 복제 클러스터 기능의 상태를 검색합니다.
-* FIPS: HTTPS 통신 기능을 위해 FIPS 140-2 암호화에 대한 상태를 검색합니다.
-* FipsDrives: FIPS 140-2 드라이브 암호화 기능의 상태를 검색합니다.
+* `Vvols`: VVols 클러스터 기능에 대한 상태를 검색합니다.
+* `SnapMirror`: SnapMirror 복제 클러스터 기능에 대한 상태를 검색합니다.
+* `Fips`: HTTPS 통신 기능에 대한 FIPS 140-2 암호화의 상태를 검색합니다.
+* `FipsDrives`: FIPS 140-2 드라이브 암호화 기능에 대한 상태를 검색합니다.
+* `VolumeLoadBalanceOnActualIOPS`: 최소 IOPS 기능이 아닌 실제 IOPS에서 슬라이스 밸런싱의 상태를 검색합니다. Element 12.8부터 사용 가능.
 
  a| 
 문자열
@@ -105,6 +107,10 @@ JSON 개체 어레이
             {
                 "enabled": true,
                 "feature": "FipsDrives"
+            },
+            {
+                "enabled": true,
+                "feature": "VolumeLoadBalanceOnActualIOPS"
             }
         ]
     }
