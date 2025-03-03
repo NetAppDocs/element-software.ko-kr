@@ -12384,8 +12384,8 @@
   <block id="a104ca42a35244c8eaac66b37a617289" category="paragraph">쓰는 데 소요된 시간(밀리초)입니다.</block>
   <block id="cbe31e551cb8a7eda07f7c2fbae6f80b" category="list-text"><block ref="dcd44d342c90672f6b7613a3fda7d755" prefix="" category="inline-code"></block>: 이전 스냅샷 복제가 진행 중인 경우 새 스냅샷 생성을 허용할지 여부를 지정합니다. (부울)</block>
   <block id="e9eb5370de2e3375a67adb6b46c54033" category="list-text"><block ref="6366ebc98be76ca376a9a50b148937ea" prefix="" category="inline-code"></block>: 스냅샷이 보존되는 시간입니다. 시간에 따라 다음 형식 중 하나로 표시됩니다.</block>
-  <block id="a284d3e41f479772896829e0c83474be" category="list-text">FIFO: 스냅샷은 FIFO(First-in-first-out) 방식으로 보존됩니다. 비어 있으면 스냅샷이 영구적으로 유지됩니다. (문자열)</block>
   <block id="7ed79c16ce9b38d79b10c8f36aa9049a" category="list-text">HH:mm:ss입니다</block>
   <block id="99eb6e1c13e9ae0bb02e022566f20121" category="paragraph">스케줄에 지정된 고유한 이름, 생성된 스냅샷의 보존 기간 및 스냅샷이 생성된 볼륨의 볼륨 ID가 포함됩니다. 유효한 값:</block>
   <block id="65dc2083558f47cd1151751a12c24549" category="paragraph">동기화 작업 유형에 따라 부동 또는 정수</block>
+  <block id="ec6874eecaec538abf3d408bf6b6b411" category="list-text"><block ref="cf54937a2330ac17aa523bf7130911a3" prefix="" category="inline-code"></block>: 스냅샷은 FIFO(First-in-first-out) 기준으로 보존됩니다. 비어 있으면 스냅샷이 영구적으로 유지됩니다. (문자열)</block>
 </blocks>
