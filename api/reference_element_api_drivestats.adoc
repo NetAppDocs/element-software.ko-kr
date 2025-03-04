@@ -252,5 +252,3 @@ UncorrectableErrors(교정되지 않은 오류)
 == 자세한 내용을 확인하십시오
 
 xref:reference_element_api_getdrivestats.adoc[GetDriveStats 를 참조하십시오]
-
- // 2025 FEB 27, DOC-4778
