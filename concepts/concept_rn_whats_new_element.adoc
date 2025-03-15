@@ -27,7 +27,7 @@ Element 12.8의 새로운 기능에 대해 자세히 알아보십시오.
 
 === 볼륨 로드 밸런싱
 
-Element 12.8에는 볼륨 로드 밸런싱 기능이 도입되었습니다. 이 기능을 사용하면 QoS 정책에 구성된 최소 IOPS가 아니라 각 볼륨의 실제 IOPS 수준을 기준으로 노드 간에 볼륨의 균형을 조정할 수 있습니다. 볼륨 로드 밸런싱 기능만 사용하여 볼륨을 밸런싱할 수 있습니다. 가상 볼륨의 균형을 조정하는 데 사용할 수 없습니다. 볼륨 로드 밸런싱 기능은 기본적으로 비활성화되어 있습니다. API 매개 변수와 및 link:../api/reference_element_api_disablefeature.html["작동 불능"] API 메서드 또는 link:../storage/task_system_manage_cluster_volume_load_balancing.html["볼륨 로드 밸런싱"]Element UI의 옵션을 사용하여 API 매개 변수를 link:../api/reference_element_api_enablefeature.html["공급 기능"]사용하거나 사용하지 않도록 설정할 수 `VolumeLoadBalanceOnActualIOPS` 있습니다.
+Element 12.8에는 볼륨 로드 밸런싱 기능이 도입되었습니다. 이 기능을 사용하면 QoS 정책에 구성된 최소 IOPS가 아니라 각 볼륨의 실제 IOPS 수준을 기준으로 노드 간에 볼륨의 균형을 조정할 수 있습니다. 볼륨 로드 밸런싱 기능만 사용하여 볼륨을 밸런싱할 수 있습니다. 가상 볼륨의 균형을 조정하는 데 사용할 수 없습니다. 볼륨 로드 밸런싱 기능은 기본적으로 비활성화되어 있습니다. 이 기능을 사용 및 사용하지 않도록 설정할 수 있습니다 `VolumeLoadBalanceOnActualIOPS`API 매개 변수를 및 link:../api/reference_element_api_disablefeature.html["작동 불능"] API 메서드와 함께 link:../api/reference_element_api_enablefeature.html["공급 기능"]사용하거나 Element UI의 옵션을 사용하여 link:../storage/task_system_manage_cluster_volume_load_balancing.html["볼륨 로드 밸런싱"].
 
 
 
