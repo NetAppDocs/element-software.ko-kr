@@ -14,6 +14,9 @@ summary: 사용할 수 있는 Element API 메서드는 사용자가 설정한 �
 사용할 수 있는 Element API 메서드는 사용자가 설정한 액세스 유형에 따라 달라집니다.
 
 
+NOTE: Element UI에서는 사용할 수 없는 액세스 유형이 API를 통해 제공됩니다.
+
+
 
 == 계정
 
@@ -1108,3 +1111,5 @@ GetAsyncResult 를 참조하십시오
 드라이브 제거
 
 |===
+.관련 정보
+link:../storage/concept_system_manage_manage_cluster_administrator_users.html#view-cluster-admin-details["Element UI에서 사용할 수 있는 액세스 유형에 대해 알아봅니다"]
