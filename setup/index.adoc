@@ -38,11 +38,3 @@ summary: 환경에 맞게 스토리지 시스템을 설정하는 방법에 대�
 
 
 
-
-
-
-== 자세한 내용을 확인하십시오
-
-* https://www.netapp.com/data-storage/solidfire/["SolidFire All-Flash 스토리지 개요"^]
-* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
-

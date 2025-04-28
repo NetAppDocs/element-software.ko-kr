@@ -29,12 +29,17 @@ NOTE: 관리 노드 12.2 이전 버전 업그레이드에 대한 정보가 필�
 
 .단계
 . vCenter 관리자로 vSphere Web Client에 로그인합니다.
-. vSphere Client 메뉴에서 * VMS * > * Templates * 를 선택합니다.
-. 가상 머신을 마우스 오른쪽 버튼으로 클릭하고 * 호환성 * > * Upgrade VM Compatibility * 를 선택합니다.
+. vSphere Client 메뉴에서 * VM and Templates * 를 선택합니다.
+. 가상 머신(VM)을 마우스 오른쪽 버튼으로 클릭하고 * Power * > * Shut Down Guest OS * 를 선택합니다.
++
+VM의 전원이 꺼질 때까지 기다립니다.
+
+. VM을 마우스 오른쪽 버튼으로 클릭하고 * 호환성 * > * Upgrade VM Compatibility * 를 선택합니다.
 . 예 * 를 선택합니다.
 . vSphere 환경의 버전에 따라 ESXi 6.7 이상 버전을 선택합니다.
 . OK * 를 선택합니다.
-. 업그레이드가 완료된 후 * vSphere Client Refresh * 를 선택하고 VM 호환성이 원하는 버전인지 확인합니다.
+. 업그레이드가 완료된 후 VM을 마우스 오른쪽 버튼으로 클릭하고 * Power * > * Power On * 을 선택합니다.
+. vSphere 클라이언트 새로 고침 * 을 선택하고 VM 호환성이 원하는 버전인지 확인합니다.
 
 
 
@@ -57,7 +62,7 @@ NOTE: 관리 서비스를 Element 스토리지 뒤에 순차적으로 업데이�
 
 === 관리 노드를 버전 12.3.x 이상에서 버전 12.5 이상으로 업그레이드합니다
 
-새 관리 노드 가상 머신을 프로비저닝하지 않고도 관리 노드를 버전 12.3.x 이상에서 버전 12.5 이상으로 업그레이드할 수 있습니다.
+새 관리 노드 VM을 프로비저닝할 필요 없이 버전 12.3.x 이상에서 버전 12.5 이상으로 관리 노드를 업그레이드할 수 있습니다.
 
 
 NOTE: Element 12.5 이상의 관리 노드는 선택적 업그레이드입니다. 기존 배포에는 필요하지 않습니다.
@@ -80,8 +85,8 @@ NOTE: eth0을 SVIP로 라우팅할 수 없는 경우 영구 볼륨에는 추가 
 
 
 .단계
-. SSH 또는 콘솔 액세스를 사용하여 관리 노드 가상 머신에 로그인합니다.
-. 를 다운로드합니다 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["관리 노드 ISO"^] NetApp Support 사이트에서 관리 노드 가상 시스템까지 Element 소프트웨어의 경우.
+. SSH 또는 콘솔 액세스를 사용하여 관리 노드 VM에 로그인합니다.
+.  https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["관리 노드 ISO"^]NetApp 지원 사이트에서 관리 노드 VM으로 for Element 소프트웨어를 다운로드합니다.
 +
 
 NOTE: ISO의 이름은 'olidfire-fdva-<Element release>-patchX-XX.X.XXXX.iso'와 비슷합니다

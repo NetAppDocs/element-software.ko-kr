@@ -23,11 +23,3 @@ Element 소프트웨어와 관련된 기본 개념을 배웁니다.
 * xref:concept_solidfire_concepts_data_protection.adoc[데이터 보호]
 * xref:concept_data_manage_volumes_solidfire_quality_of_service.adoc[성능 및 서비스 품질]
 
-
-
-
-== 자세한 내용을 확인하십시오
-
-* https://www.netapp.com/data-storage/solidfire/["SolidFire All-Flash 스토리지 개요"^]
-* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
-

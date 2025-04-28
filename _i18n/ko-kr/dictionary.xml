@@ -4201,7 +4201,6 @@
   <block id="580c35d1b4dc1d63073ae537ce0f28ab" category="inline-link-macro">추가 스토리지 NIC 구성</block>
   <block id="4733d6f93dbca188e79e25900eaeacb7" category="list-text">에 대한 지침을 사용하여 추가 네트워크 어댑터를 구성했습니다(필요한 경우) <block ref="1f5ebd4d6fe6b214007c2692b1a22cfb" category="inline-link-macro-rx"></block>.</block>
   <block id="97badad042e3a18dd496d204994f3a2f" category="admonition">eth0을 SVIP로 라우팅할 수 없는 경우 영구 볼륨에는 추가 네트워크 어댑터가 필요할 수 있습니다. 영구 볼륨의 구성을 허용하도록 iSCSI 스토리지 네트워크에서 새 네트워크 어댑터를 구성합니다.</block>
-  <block id="1a6ffd97834fd7495156f52f3058e50b" category="list-text">SSH 또는 콘솔 액세스를 사용하여 관리 노드 가상 머신에 로그인합니다.</block>
   <block id="e097e26564fa470c938b5aa9cb375497" category="admonition">ISO의 이름은 'olidfire-fdva-&lt;Element release&gt;-patchX-XX.X.XXXX.iso'와 비슷합니다</block>
   <block id="7af3e8bcf74bc743e6d42428a1ef8e84" category="list-text">다운로드한 파일에 md5sum을 실행하여 다운로드의 무결성을 확인하고 다음 예제와 같이 Element 소프트웨어에 대해 NetApp Support 사이트에서 제공되는 것과 출력을 비교합니다.</block>
   <block id="4e82f8cfbdbaab82d0c8c7e65d59b756" category="paragraph">'SUDO md5sum -b &lt;ISO&gt;/solidfire-fdva-&lt;Element release&gt;-patchX-XX.X.XXXX.iso'</block>
@@ -4583,8 +4582,6 @@
   <block id="f17bdc3100242be6aa20374cb07b1e01" category="list-text"><block ref="f17bdc3100242be6aa20374cb07b1e01" category="inline-xref-macro-rx"></block></block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="inline-xref-macro">다음 단계</block>
   <block id="6b758c6baa8d819395041efcb30c549d" category="list-text"><block ref="6b758c6baa8d819395041efcb30c549d" category="inline-xref-macro-rx"></block></block>
-  <block id="e2291d0b9bc2d41bc343cf77cf0a1a87" category="inline-link">SolidFire All-Flash 스토리지 개요</block>
-  <block id="e2c85d417b263e570fcb0b7027cad0ba" category="list-text"><block ref="e2c85d417b263e570fcb0b7027cad0ba" category="inline-link-rx"></block></block>
   <block id="4e918d6a3b1bcdd5b4c5e580abae0d2f" category="summary">NetApp Element 소프트웨어 관리 노드 \(mNode\)를 설치하여 시스템 서비스를 업그레이드 및 제공하고, 클러스터 자산 및 설정을 관리하고, 시스템 테스트 및 유틸리티를 실행하고, 문제 해결을 위해 NetApp 지원 액세스를 지원할 수 있습니다.</block>
   <block id="f865d301a6fd50d6c84b80609c81f582" category="paragraph">NetApp Element 소프트웨어 관리 노드(mNode)를 설치하여 시스템 서비스를 업그레이드 및 제공하고, 클러스터 자산 및 설정을 관리하고, 시스템 테스트 및 유틸리티를 실행하고, 문제 해결을 위해 NetApp 지원 액세스를 지원할 수 있습니다.</block>
   <block id="497f3c7374cc7d5dcfc6c54f9e235684" category="inline-link-macro">관리 노드를 설치합니다</block>
@@ -10917,7 +10914,6 @@
   <block id="592247e1218ecdf894b0dc3bf1e2b0c6" category="paragraph">Element 소프트웨어로 이동합니다<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> 최신 스토리지 노드 이미지를 다운로드합니다.</block>
   <block id="37a42081cc0d0c72d69723b5792a6c73" category="list-text">NetApp 하이브리드 클라우드 제어를 사용하여 관리 서비스 번들을 최신 버전으로 업데이트했습니다. 다음 IP 주소로 NetApp 하이브리드 클라우드 제어에 액세스할 수 있습니다. '\https://&lt;ManagementNodeIP&gt;`</block>
   <block id="303c7d52b5c18e714947ecd4996594a2" category="inline-link">관리 노드 ISO</block>
-  <block id="bc6733dc102d98376848617102ed0352" category="list-text">를 다운로드합니다<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block> NetApp Support 사이트에서 관리 노드 가상 시스템까지 Element 소프트웨어의 경우.</block>
   <block id="9ec21c21d51558c2c4720284cc8e9f10" category="summary">모든 NetApp 스토리지 구성요소를 업그레이드하여 구축 후 SolidFire Element 스토리지 시스템을 최신 상태로 유지할 수 있습니다.</block>
   <block id="59a003ce49b82fe00de09fe03510553f" category="doc">업그레이드 순서 개요</block>
   <block id="d38f48e8e196e92a833076faf76e21bc" category="inline-xref">시스템 업그레이드 순서</block>
@@ -11284,7 +11280,6 @@
   <block id="29bba7cbe3dac4ea58cab61272150fe8" category="paragraph">관리 노드를 버전 12.3.x 이상에서 관리 노드 12.5 이상으로 업그레이드할 수 있습니다.</block>
   <block id="4ff70a8151851ab1e82db6f0eed42808" category="list-text"><block ref="810c9a492c31390e08f0e76e7c298785" category="inline-xref-macro-rx"></block></block>
   <block id="2a67edcd39483da3b7c2244d1a853ca7" category="section-title">관리 노드를 버전 12.3.x 이상에서 버전 12.5 이상으로 업그레이드합니다</block>
-  <block id="00986f242d79556b370e046857ac478c" category="paragraph">새 관리 노드 가상 머신을 프로비저닝하지 않고도 관리 노드를 버전 12.3.x 이상에서 버전 12.5 이상으로 업그레이드할 수 있습니다.</block>
   <block id="162101c4a12e19388bdcdc0495ccc2ae" category="admonition">Element 12.5 이상의 관리 노드는 선택적 업그레이드입니다. 기존 배포에는 필요하지 않습니다.</block>
   <block id="cd847f70c9955e37a7a701eee9f2cd67" category="list-text">업그레이드하려는 관리 노드는 버전 12.0이며 IPv4 네트워킹을 사용합니다. 관리 노드 버전 12.5 이상은 IPv6를 지원하지 않습니다.</block>
   <block id="94f146a196ada89ebff337e86bd67dd8" category="list-text">관리 노드를 버전 12.5 이상으로 업데이트하는 경우 계속하려면 관리 서비스 2.21.61 이상이 필요합니다.</block>
@@ -12357,11 +12352,8 @@
   <block id="b036ebb7aa6b63db449d4df71f28c3cd" category="section-title">1단계: 관리 노드에서 VM 하드웨어 버전 업그레이드</block>
   <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">기존 관리 노드를 Element 12.8로 전체 업그레이드를 수행하는 경우 업그레이드하기 전에 관리 노드의 VM 하드웨어 버전이 ESXi 6.7(VM 하드웨어 버전 14) 이상과 호환되는지 확인해야 합니다.</block>
   <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">vCenter 관리자로 vSphere Web Client에 로그인합니다.</block>
-  <block id="7936b082e6a3d2167a2478cee0772514" category="list-text">vSphere Client 메뉴에서 * VMS * &gt; * Templates * 를 선택합니다.</block>
-  <block id="ad4062bf296d686c04c351f026e2400d" category="list-text">가상 머신을 마우스 오른쪽 버튼으로 클릭하고 * 호환성 * &gt; * Upgrade VM Compatibility * 를 선택합니다.</block>
   <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">vSphere 환경의 버전에 따라 ESXi 6.7 이상 버전을 선택합니다.</block>
   <block id="3d1c64d2c8b1e4058225a78c3ef09fa6" category="list-text">OK * 를 선택합니다.</block>
-  <block id="43c3c8c2f75e6064714e6ec942f1e916" category="list-text">업그레이드가 완료된 후 * vSphere Client Refresh * 를 선택하고 VM 호환성이 원하는 버전인지 확인합니다.</block>
   <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">2단계: 관리 노드를 Element 12.5 이상으로 업그레이드합니다</block>
   <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">다음 업그레이드 옵션 중 하나를 선택합니다.</block>
   <block id="8c5a891df58bfda1762ec23302a952b6" category="sidebar">SolidFire All-Flash 스토리지 시스템은 스토리지 리소스 풀로 결합된 드라이브 및 노드와 같은 하드웨어 구성 요소로 이루어집니다. Element 인터페이스, API 또는 기타 관리 툴을 사용하여 NetApp Element 소프트웨어를 사용하여 이러한 스토리지 리소스 클러스터를 관리할 수 있습니다. 이 사이트에는 Element 소프트웨어 12.8에 대한 문서가 포함되어 있습니다.</block>
@@ -12393,4 +12385,13 @@
   <block id="e3ae42684db77c59ef80c04aae526de5" category="paragraph"><block ref="e3ae42684db77c59ef80c04aae526de5" category="inline-link-macro-rx"></block></block>
   <block id="f72c81a1158d9efb9bad238e3c497a6c" category="inline-link-macro">Element API에 사용할 수 있는 액세스 유형에 대해 알아보십시오</block>
   <block id="c858f3d30df8c552799df529153c0e44" category="list-text"><block ref="c858f3d30df8c552799df529153c0e44" category="inline-link-macro-rx"></block></block>
+  <block id="6e93fbac14e98fd4eee5f4f560e1d580" category="list-text">vSphere Client 메뉴에서 * VM and Templates * 를 선택합니다.</block>
+  <block id="be19667c20f2f3c6b932b48a9c488774" category="list-text">가상 머신(VM)을 마우스 오른쪽 버튼으로 클릭하고 * Power * &gt; * Shut Down Guest OS * 를 선택합니다.</block>
+  <block id="6f5f678ae471ecc070cea185b3d40ed4" category="paragraph">VM의 전원이 꺼질 때까지 기다립니다.</block>
+  <block id="b58c4fe6ac8a2dffa0fb94c9d1de7556" category="list-text">VM을 마우스 오른쪽 버튼으로 클릭하고 * 호환성 * &gt; * Upgrade VM Compatibility * 를 선택합니다.</block>
+  <block id="eeb196c0a77fbb85f8908ae3cca16bfc" category="list-text">업그레이드가 완료된 후 VM을 마우스 오른쪽 버튼으로 클릭하고 * Power * &gt; * Power On * 을 선택합니다.</block>
+  <block id="917268d8045dd1bb18e5f8cc7caf9359" category="list-text">vSphere 클라이언트 새로 고침 * 을 선택하고 VM 호환성이 원하는 버전인지 확인합니다.</block>
+  <block id="a879c8e657832d392ef358d2440c3faf" category="paragraph">새 관리 노드 VM을 프로비저닝할 필요 없이 버전 12.3.x 이상에서 버전 12.5 이상으로 관리 노드를 업그레이드할 수 있습니다.</block>
+  <block id="6a309ddf9d0a46d94d5772dacb71dbc0" category="list-text">SSH 또는 콘솔 액세스를 사용하여 관리 노드 VM에 로그인합니다.</block>
+  <block id="7258351fe62749f68f4b75a51c56912b" category="list-text"><block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block>NetApp 지원 사이트에서 관리 노드 VM으로 for Element 소프트웨어를 다운로드합니다.</block>
 </blocks>
