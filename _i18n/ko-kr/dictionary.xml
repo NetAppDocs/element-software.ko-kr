@@ -1239,7 +1239,6 @@
   <block id="2f00805e044ca70467775f06c1872f89" category="paragraph">LDAP 서버</block>
   <block id="5483ab43104d3514dfdd7917f5a51b09" category="paragraph">389 TCP/UDP</block>
   <block id="19a0425f816e3267d5a9f5ee03f4fc4f" category="paragraph">(선택 사항) LDAP 조회</block>
-  <block id="6ca93b96b4cd5e33a779ecc83fde0268" category="paragraph">Element 스토리지 펌웨어 업그레이드</block>
   <block id="94a2163bb19fc95c5d537943a7a7a263" category="paragraph">(선택 사항) 백업 및 복구를 위해 S3/Swift 엔드포인트에 대한 HTTPS 통신</block>
   <block id="ed26bc39a920ff3cacdfe283ccd802dc" category="paragraph">514 TCP/UDP</block>
   <block id="525aa1c52ef30b3901ee99d7dfaa1989" category="paragraph">10514 TCP/UDP</block>
@@ -12394,4 +12393,5 @@
   <block id="6a309ddf9d0a46d94d5772dacb71dbc0" category="list-text">SSH 또는 콘솔 액세스를 사용하여 관리 노드 VM에 로그인합니다.</block>
   <block id="7258351fe62749f68f4b75a51c56912b" category="list-text"><block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block>NetApp 지원 사이트에서 관리 노드 VM으로 for Element 소프트웨어를 다운로드합니다.</block>
   <block id="e43f2538484fde027e53efbedb634fce" category="list-text">NetApp 지원 사이트의 페이지에서 설치에 필요한 OVA 또는 ISO를 <block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>다운로드합니다.</block>
+  <block id="bd000e3a7a010d55765a9684adc1c25f" category="paragraph">엘리먼트 스토리지 업그레이드</block>
 </blocks>
