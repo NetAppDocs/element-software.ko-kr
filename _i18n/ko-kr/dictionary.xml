@@ -4123,9 +4123,6 @@
   <block id="ced99676ffdce11db0cf7ce2a4a812b8" category="list-text">모든 노드의 시스템 시간이 동기화되고 스토리지 클러스터 및 노드에 대해 NTP가 올바르게 구성되었는지 확인했습니다. 각 노드는 시간편중과 관련된 해결되지 않은 클러스터 장애가 없는 노드별 웹 UI('https://[IP address]:442')에서 DNS 이름 서버로 구성되어야 합니다.</block>
   <block id="524813e84d210a04a3c005022becca08" category="inline-link-macro">하이브리드 클라우드 제어에서 관리 서비스를 업데이트합니다</block>
   <block id="c43409e402c491faff614694ff49b45b" category="list-text"><block ref="d96c5e393dc7f7cfcba5644a67a6ff8a" category="inline-link-macro-rx"></block>.</block>
-  <block id="9cd44430d13c7f6664a4e628ee6d90e4" category="admonition">관리 서비스를 버전 2.16 이상으로 업데이트하고 관리 노드 11.3에서 11.8을 실행 중인 경우 관리 서비스를 업데이트하기 전에 관리 노드 VM의 RAM을 늘려야 합니다.</block>
-  <block id="17a2ec8576298e274b3b59e46ff67ea2" category="admonition">Element 소프트웨어를 업그레이드하기 전에 최신 관리 서비스 번들로 업데이트해야 합니다.</block>
-  <block id="109d7dba2c92c9420fece3ae278874f4" category="list-text"><block ref="bdcf6db43efb3c82b174a0c4c0a65c66" category="inline-link-macro-rx"></block>.</block>
   <block id="77f5518534e304c43787d59aa8f3ed00" category="inline-link-macro">Element 소프트웨어 및 스토리지 펌웨어를 업그레이드합니다</block>
   <block id="35e9c48aa9c5ae2adc6b713d2399dba2" category="list-text"><block ref="1e896f189b3768a955ddd6464b4ba1e2" category="inline-link-macro-rx"></block>.</block>
   <block id="1aa4a50ace326eb5b8adfa204053822a" category="inline-link-macro">(선택 사항) Element 스토리지 펌웨어만 업그레이드합니다</block>
@@ -4281,7 +4278,6 @@
   <block id="9b572df8237d34b7c32142ac15f1325f" category="list-text">vSphere Web Client에서 작업 모니터에서 완료된 다음 작업을 찾아 설치가 완료되었는지 확인합니다. "Download plug-in" 및 "ploy plug-in".</block>
   <block id="a0abd6db969f497b63a29f8fbd1771df" category="inline-link-macro">vCenter Server용 Element 플러그인</block>
   <block id="b9e50e6a339819ad9d12906b29e978ca" category="list-text">플러그인의 * NetApp Element 구성 * 확장 지점의 * 정보 * 탭에서 버전 변경을 확인합니다.</block>
-  <block id="a2b39afbde860c9c0fc759f3772e2dd2" category="paragraph">최신 버전의 다음 버전 세부 정보 또는 세부 정보가 표시됩니다.</block>
   <block id="4715e0cc20eb79c52c1f181ce0f6afb0" category="admonition">vCenter 플러그인에는 온라인 도움말 콘텐츠가 포함되어 있습니다. 도움말에 최신 콘텐츠가 포함되어 있는지 확인하려면 플러그인을 업그레이드한 후 브라우저 캐시를 지웁니다.</block>
   <block id="ae39d371b28f32c0d2467b06b77ffdc4" category="inline-link-macro">vCenter Server용 Element 플러그인을 사용하여 NetApp SolidFire 스토리지 시스템용 vSphere 구성요소를 업그레이드하십시오</block>
   <block id="36f546dcaf82a7b3487c4002a3c6d1ed" category="summary">NetApp SolidFire 스토리지 시스템 업그레이드의 일환으로 관리 서비스를 업데이트해야 합니다.</block>
@@ -11274,7 +11270,6 @@
   <block id="11d9cbba51c832a014742a5da1938d41" category="paragraph">다음 시퀀스를 사용하여 Element 12.5 이상의 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드할 수 있습니다.</block>
   <block id="7df8805b6d2dda4d3fb6d3ac7bb98b27" category="inline-link-macro">HealthTools를 사용하여 Element 12.3.x로 업그레이드하십시오</block>
   <block id="dc1b969077a38d3c5d1ddc04ce3b29c7" category="admonition">Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레이드가 더 이상 지원되지 않습니다. Element 11.0 또는 11.1을 실행 중인 경우 먼저 해야 합니다 <block ref="b94815288b0622c054c235dd32c9c615" category="inline-link-macro-rx"></block> 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5 이상으로 업그레이드하십시오.</block>
-  <block id="7ef561ec74f917ecad309d4001bff056" category="admonition">Element 소프트웨어를 버전 12.5 이상으로 업그레이드하기 전에 최신 관리 서비스 번들로 업그레이드해야 합니다. Element 소프트웨어를 버전 12.5 이상으로 업데이트하는 경우 계속하려면 관리 서비스 2.21.61 이상이 필요합니다.</block>
   <block id="25c6e7b86999549e989728f739c4fc89" category="admonition">H610S 시리즈 노드를 Element 12.5 이상으로 업그레이드하는 경우 노드에서 11.8 이전의 Element 버전을 실행하는 경우 이 단계에서 추가 업그레이드 단계를 수행해야 합니다<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block> 각 스토리지 노드에 대해 Element 11.8 이상을 실행하는 경우 추가 업그레이드 단계가 필요하지 않습니다.</block>
   <block id="29bba7cbe3dac4ea58cab61272150fe8" category="paragraph">관리 노드를 버전 12.3.x 이상에서 관리 노드 12.5 이상으로 업그레이드할 수 있습니다.</block>
   <block id="4ff70a8151851ab1e82db6f0eed42808" category="list-text"><block ref="810c9a492c31390e08f0e76e7c298785" category="inline-xref-macro-rx"></block></block>
@@ -12233,7 +12228,6 @@
   <block id="ce90fd614158a5c7e0a42a5908fa1cd7" category="list-text"><block ref="ce90fd614158a5c7e0a42a5908fa1cd7" category="inline-link-rx"></block></block>
   <block id="6f00c58e2f26b2ef4542eb663cdb651d" category="inline-link-macro">관리 서비스 2.26.30 알림(VMware vCenter Server 5.4.1용 NetApp Element 플러그인)</block>
   <block id="ea3b1d5907ee8e4303c54ecc7765f0f2" category="list-text"><block ref="ea3b1d5907ee8e4303c54ecc7765f0f2" category="inline-link-macro-rx"></block></block>
-  <block id="fdbd44871ecf32ab0e37e9d3c077e28a" category="list-text">vCenter Server 5.4, 5.3, 5.2, 5.1 또는 5.0용 Element 플러그인으로 업그레이드하려고 합니다.</block>
   <block id="ec584e493ebc5976220074c48288215d" category="summary">복제 관계를 생성하려면 먼저 SnapMirror 엔드포인트를 생성해야 합니다. 이 작업은 Element 소프트웨어 웹 UI에서 또는 API 메소드에서만 수행할 수 있습니다.</block>
   <block id="a1d54a55e83901cd25e5b3724d5ca5e5" category="summary">복제 관계를 생성하려면 먼저 Element 클러스터에서 SnapMirror를 활성화해야 합니다. 이 작업은 Element 소프트웨어 웹 UI에서 또는 API 메서드를 사용해서만 수행할 수 있습니다.</block>
   <block id="5f974f5b5837f6beacdf509a09ac0df9" category="paragraph">다음 노드는 지원되지 않습니다. 이러한 노드 중 하나를 지원되지 않는 Element 버전으로 업그레이드하려고 하면 해당 노드가 Element 12.x에서 지원되지 않는다는 오류가 표시됩니다.</block>
@@ -12281,7 +12275,6 @@
   <block id="f96ed95b5509cb599aadb504ec5aa0d5" category="list-text">PeakWriteIops: 통계 간격 동안 관찰된 최대 쓰기 IOPS입니다.</block>
   <block id="041f17de41a9f1db9829ff79ad3ef600" category="list-text">슬라이서 ID: 볼륨 ID 또는 슬라이스 ID입니다</block>
   <block id="6db7dd4182be7a1979ad403111fa8618" category="inline-link">NetApp Element 소프트웨어 12.8 릴리스 정보</block>
-  <block id="7d776811219f8ebb17adecaa976bd578" category="list-text"><block ref="53e04163346326834efd61306c0800b5" category="inline-link-rx"></block> _신규_</block>
   <block id="912995e99772bb097b2c7b32940725bb" category="list-text"><block ref="912995e99772bb097b2c7b32940725bb" category="inline-link-rx"></block></block>
   <block id="de1923eab698e40e118f826163735ce9" category="doc">Element 소프트웨어의 새로운 기능</block>
   <block id="95dc02f465fb1139e3e92c363bf6965b" category="paragraph">NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 SolidFire 및 Element 소프트웨어를 정기적으로 업데이트합니다. Element 12.8은 최신 릴리즈이며 보안 및 시스템 구성 요소 업데이트, 운영 개선 사항 및 해결된 문제를 포함합니다.</block>
@@ -12394,4 +12387,17 @@
   <block id="7258351fe62749f68f4b75a51c56912b" category="list-text"><block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block>NetApp 지원 사이트에서 관리 노드 VM으로 for Element 소프트웨어를 다운로드합니다.</block>
   <block id="e43f2538484fde027e53efbedb634fce" category="list-text">NetApp 지원 사이트의 페이지에서 설치에 필요한 OVA 또는 ISO를 <block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>다운로드합니다.</block>
   <block id="bd000e3a7a010d55765a9684adc1c25f" category="paragraph">엘리먼트 스토리지 업그레이드</block>
+  <block id="53e04163346326834efd61306c0800b5" category="list-text"><block ref="53e04163346326834efd61306c0800b5" category="inline-link-rx"></block></block>
+  <block id="7373675a8dd923fb7362a663e0cb6e1f" category="inline-link">vCenter 플러그인 5.5 릴리스 노트</block>
+  <block id="1bb29b9b64a805e59f4873c404e002c4" category="list-text"><block ref="19934d197d6821fc66160fdecbaaf499" category="inline-link-rx"></block>_새로운_</block>
+  <block id="9addfb2ff8ac3a9826d26736c6697320" category="inline-link-macro">Management Services 2.27.40(VMware vCenter Server 5.5.16용 NetApp Element 플러그인)에 대한 알림</block>
+  <block id="5f97199338e05d8d021611cc709fe28f" category="list-text"><block ref="5f97199338e05d8d021611cc709fe28f" category="inline-link-macro-rx"></block></block>
+  <block id="111e46cd39158a394cd8236185cf08df" category="inline-link-macro">스토리지를 업그레이드하기 전에 Element 스토리지 상태 검사를 실행하세요.</block>
+  <block id="15c2fc4333a0aada89bc8cf9f0ebbdac" category="list-text"><block ref="76b28290238ca686b8113b7395511f66" category="inline-link-macro-rx"></block> .</block>
+  <block id="c759706a0ac25a6b9701339b7c7959d4" category="list-text">관리 서비스 2.27 번들에는 vCenter Server 5.5용 Element 플러그인이 포함되어 있으며, 이는 관리 노드 12.8과만 호환됩니다. 관리 서비스 2.27로 업데이트하는 경우 업그레이드 순서를 변경하고 Element 12.8로 업그레이드한 _후에_ 관리 서비스 번들을 업데이트해야 관리 노드와 관리 서비스 간의 호환성을 확보할 수 있습니다.</block>
+  <block id="aebb2147cc4f1c96830ec15bbe8bbaaa" category="list-text">관리 서비스 2.21.61~2.26.40으로 업데이트하는 경우 Element 12.8로 업그레이드하기 _전에_ 관리 서비스 번들을 업데이트해야 합니다.</block>
+  <block id="a364164cb135a0ea8d140eae7c98e606" category="admonition">관리 서비스를 버전 2.16 이상으로 업데이트하고 관리 노드 11.3~11.8을 실행 중인 경우 관리 서비스를 업데이트하기 전에 관리 노드 VM의 RAM을 늘려야 합니다.</block>
+  <block id="e4ccb22f69b8be133f5125883186655e" category="paragraph">관리 서비스 2.22.7 번들에는 원격 플러그인이 포함된 vCenter Server 5.0용 Element 플러그인이 포함되어 있습니다. Element 플러그인을 사용하는 경우, 로컬 플러그인 지원을 중단하는 VMware 지침을 준수하려면 관리 서비스 2.22.7 이상으로 업그레이드해야 합니다.<block ref="3eff1b8505d27ff6caa23fbbb1b7b25c" category="inline-link-rx"></block> .</block>
+  <block id="f09175d59684197ed7788662b7cd5fe4" category="list-text">vCenter Server 5.5, 5.4, 5.3, 5.2, 5.1 또는 5.0용 Element 플러그인으로 업그레이드하고 있습니다.</block>
+  <block id="6eb41496b0f7ef5be359156d440fc5ea" category="paragraph">다음 버전 세부 정보가 표시됩니다.</block>
 </blocks>
