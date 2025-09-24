@@ -8,14 +8,14 @@ entries:
   entries:
   - title: 스토리지를 업그레이드하기 전에 Element 스토리지 상태 점검을 실행합니다
     url: "/upgrade/task_hcc_upgrade_element_prechecks.html"
-  - title: Element 소프트웨어 업그레이드
-    url: "/upgrade/task_hcc_upgrade_element_software.html"
-  - title: 관리 서비스를 업데이트합니다
-    url: "/upgrade/task_hcc_update_management_services.html"
-  - title: 스토리지 펌웨어를 업그레이드합니다
-    url: "/upgrade/task_hcc_upgrade_storage_firmware.html"
   - title: 관리 노드를 업그레이드합니다
     url: "/upgrade/task_hcc_upgrade_management_node.html"
+  - title: 관리 서비스를 업데이트합니다
+    url: "/upgrade/task_hcc_update_management_services.html"
+  - title: Element 소프트웨어 업그레이드
+    url: "/upgrade/task_hcc_upgrade_element_software.html"
+  - title: 스토리지 펌웨어를 업그레이드합니다
+    url: "/upgrade/task_hcc_upgrade_storage_firmware.html"
   - title: vCenter Server용 Element 플러그인을 업그레이드합니다
     url: "/upgrade/task_vcp_upgrade_plugin.html"
 - title: vCenter Server용 Element 플러그인을 사용하여 NetApp SolidFire 스토리지 시스템용 vSphere 구성요소를
