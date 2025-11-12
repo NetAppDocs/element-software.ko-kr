@@ -28,7 +28,7 @@ NetApp Element 소프트웨어 UI를 사용하면 FIPS 드라이브 기능과 �
 == 자세한 내용을 확인하십시오
 
 * xref:reference_monitor_cluster_fault_codes.adoc[클러스터 고장 코드]
-* link:../api/index.html["Element API를 사용하여 스토리지를 관리합니다"]
+* link:../api/concept_element_api_about_the_api.html["Element API를 사용하여 스토리지를 관리합니다"]
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
 

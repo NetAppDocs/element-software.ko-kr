@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: virtual volumes, volumes, manage 
 summary: 'Element UI의 관리 탭에서 Element 소프트웨어를 실행하는 클러스터의 데이터를 관리할 수 있습니다. 사용 가능한 클러스터 관리 기능에는 데이터 볼륨, 사용자 계정, 볼륨 액세스 그룹, 이니시에이터 및 서비스 품질(QoS\) 정책의 생성 및 관리가 포함됩니다.' 
 ---
-= 볼륨 및 가상 볼륨 관리
+= 볼륨 및 가상 볼륨 관리에 대해 알아보세요
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,10 +13,62 @@ summary: 'Element UI의 관리 탭에서 Element 소프트웨어를 실행하는
 [role="lead"]
 Element UI의 관리 탭에서 Element 소프트웨어를 실행하는 클러스터의 데이터를 관리할 수 있습니다. 사용 가능한 클러스터 관리 기능에는 데이터 볼륨, 볼륨 액세스 그룹, 이니시에이터, QoS(서비스 품질) 정책의 생성 및 관리가 포함됩니다.
 
-* link:task_data_manage_volumes_work_with_volumes_task.html["볼륨 작업"]
-* link:concept_data_manage_vvol_work_virtual_volumes.html["가상 볼륨 작업"]
-* link:concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html["볼륨 액세스 그룹 및 이니시에이터와 작업합니다"]
 
+
+== 볼륨 작업
+
+SolidFire 시스템은 볼륨을 사용하여 스토리지를 프로비저닝합니다. 볼륨은 iSCSI 또는 파이버 채널 클라이언트가 네트워크를 통해 액세스하는 블록 디바이스입니다. 관리 탭의 볼륨 페이지에서 노드에서 볼륨을 생성, 수정, 클론 복제 및 삭제할 수 있습니다. 볼륨 대역폭 및 I/O 사용량에 대한 통계도 볼 수 있습니다.
+
+link:../storage/concept_data_manage_volumes_quality_of_service_policies.html["볼륨 작업에 대해 알아보세요"]
+
+
+
+== 가상 볼륨 작업
+
+Element UI를 사용하여 가상 볼륨 및 관련 스토리지 컨테이너, 프로토콜 엔드포인트, 바인딩 및 호스트에 대한 정보를 보고 작업을 수행할 수 있습니다.
+
+NetApp Element 소프트웨어 스토리지 시스템은 VVOL(가상 볼륨) 기능을 비활성화한 상태로 제공됩니다. Element UI를 통해 vSphere VVol 기능을 수동으로 활성화하는 일회성 작업을 수행해야 합니다.
+
+VVOL 기능을 활성화하면 VVOL 관련 모니터링 및 제한된 관리 옵션을 제공하는 사용자 인터페이스에 VVol 탭이 나타납니다. 또한 VASA Provider라고 하는 스토리지 측 소프트웨어 구성 요소는 vSphere에 대한 스토리지 인식 서비스 역할을 합니다. VVOL 생성, 클론 복제 및 편집과 같은 대부분의 VVOL 명령은 vCenter Server 또는 ESXi 호스트에서 시작되며 VASA Provider가 Element 소프트웨어 스토리지 시스템의 Element API로 변환합니다. 스토리지 컨테이너를 생성, 삭제 및 관리하고 가상 볼륨을 삭제하는 명령은 Element UI를 사용하여 시작할 수 있습니다.
+
+Element 소프트웨어 스토리지 시스템에서 가상 볼륨 기능을 사용하는 데 필요한 대부분의 구성은 vSphere에서 이루어집니다. VMware vSphere Virtual Volumes for SolidFire Storage 구성 가이드 _ 를 참조하여 vCenter에 VASA Provider를 등록하고, VVOL 데이터 저장소를 생성 및 관리하고, 정책에 따라 스토리지를 관리하십시오.
+
+
+NOTE: Element 12.5 및 이전 버전의 경우 단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.
+
+
+NOTE: vCenter에 VASA 공급자를 이미 등록한 경우 여러 vCenter에 대한 VASA 지원을 업그레이드 패치로 사용할 수 있습니다. 설치하려면 에서 VASA39 .tar.gz 파일을 다운로드하십시오 https://mysupport.netapp.com/products/element_software/VASA39/index.html["NetApp 소프트웨어 다운로드"] 사이트를 방문하여 매니페스트의 지침을 따르십시오. NetApp Element VASA 공급자는 NetApp 인증서를 사용합니다. 이 패치를 사용하면 vCenter에서 인증서를 수정하지 않고 사용하여 VASA 및 VVol 사용을 위한 여러 vCenter를 지원합니다. 인증서를 수정하지 마십시오. 사용자 지정 SSL 인증서는 VASA에서 지원되지 않습니다.
+
+link:../storage/task_data_manage_vvol_enable_virtual_volumes.html["가상 볼륨 작업에 대해 알아보세요"]
+
+
+
+== 볼륨 액세스 그룹 및 이니시에이터와 작업합니다
+
+iSCSI 이니시에이터 또는 Fibre Channel 이니시에이터를 사용하여 볼륨 액세스 그룹 내에 정의된 볼륨에 액세스할 수 있습니다.
+
+볼륨 컬렉션에 iSCSI 이니시에이터 IQN 또는 파이버 채널 WWPN을 매핑하여 액세스 그룹을 생성할 수 있습니다. 액세스 그룹에 추가하는 각 IQN은 CHAP 인증 없이 그룹의 각 볼륨에 액세스할 수 있습니다.
+
+CHAP 인증 방법에는 두 가지가 있습니다.
+
+* 계정 수준 CHAP 인증: 계정에 CHAP 인증을 할당할 수 있습니다.
+* 이니시에이터 수준 CHAP 인증: 단일 계정의 단일 CHAP에 바인딩되지 않고 특정 이니시에이터에 대한 고유 CHAP 대상 및 암호를 할당할 수 있습니다. 이 이니시에이터 레벨 CHAP 인증은 계정 레벨 자격 증명을 대체합니다.
+
+
+필요에 따라 이니시에이터당 CHAP를 사용하여 이니시에이터 인증 및 이니시에이터당 CHAP 인증을 적용할 수 있습니다. 이러한 옵션은 이니시에이터별로 정의할 수 있으며 액세스 그룹에는 다양한 옵션이 있는 여러 이니시에이터가 포함될 수 있습니다.
+
+액세스 그룹에 추가하는 각 WWPN은 액세스 그룹의 볼륨에 대한 파이버 채널 네트워크 액세스를 설정합니다.
+
+
+NOTE: 볼륨 액세스 그룹은 다음과 같은 제한 사항이 있습니다.
+
+* 액세스 그룹에는 최대 64개의 IQN 또는 WWPN이 허용됩니다.
+* 액세스 그룹은 최대 2000개의 볼륨으로 구성할 수 있습니다.
+* IQN 또는 WWPN은 하나의 액세스 그룹에만 속할 수 있습니다.
+* 단일 볼륨은 최대 4개의 액세스 그룹에 속할 수 있습니다.
+
+
+link:../storage/task_data_manage_vol_access_group_create_a_volume_access_group.html["볼륨 액세스 그룹 및 개시자 작업에 대해 알아보세요."]
 
 
 

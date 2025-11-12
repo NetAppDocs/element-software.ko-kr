@@ -33,7 +33,7 @@ summary: 환경에 맞게 스토리지 시스템을 설정하는 방법에 대�
 
 
 ** xref:task_setup_determine_which_solidfire_components_to_install.adoc[설치할 SolidFire 구성 요소를 확인합니다]
-** xref:/task_setup_gh_redirect_set_up_a_management_node.adoc[관리 노드를 설정합니다]
+** xref:task_setup_gh_redirect_set_up_a_management_node.adoc[관리 노드를 설정합니다]
 ** xref:concept_setup_whats_next.adoc[다음 단계]
 
 

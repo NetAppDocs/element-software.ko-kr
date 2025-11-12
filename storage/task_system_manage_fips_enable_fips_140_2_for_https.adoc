@@ -39,7 +39,7 @@ IMPORTANT: FIPS 140-2 모드를 활성화한 후에는 비활성화할 수 없�
 == 자세한 내용을 확인하십시오
 
 * xref:reference_system_manage_fips_ssl_cipher_changes.adoc[SSL 암호]
-* link:../api/index.html["Element API를 사용하여 스토리지를 관리합니다"]
+* link:../api/concept_element_api_about_the_api.html["Element API를 사용하여 스토리지를 관리합니다"]
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 및 Element 소프트웨어 설명서"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server용 NetApp Element 플러그인"^]
 

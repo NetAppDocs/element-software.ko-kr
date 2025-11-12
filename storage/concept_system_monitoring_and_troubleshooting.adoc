@@ -21,7 +21,7 @@ summary: 진단 목적으로 시스템을 모니터링하고 다양한 시스템
 * link:task_monitor_iscsi_sessions.html["iSCSI 세션을 봅니다"]
 * link:task_monitor_fibre_channel_sessions.html["Fibre Channel 세션을 봅니다"]
 * link:concept_troubleshoot_drives.html["드라이브 문제를 해결합니다"]
-* link:concept_troubleshoot_nodes.html["노드 문제 해결"]
+* link:concept_remove_nodes_from_cluster.html["노드 문제 해결"]
 * link:concept_per_node_work_with_utilities.html["스토리지 노드용 노드별 유틸리티 작업"]
 * link:concept_mnode_work_with_the_management_node.html["관리 노드와 작업합니다"]
 * link:concept_monitor_understand_cluster_fullness_levels.html["클러스터 전체 수준 이해"]

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: bindings, vvols, bound virtual volumes 
 summary: 가상 볼륨에서 입출력 작업을 수행하려면 ESXi 호스트가 먼저 가상 볼륨을 바인딩해야 합니다. 
 ---
-= 바인딩
+= 바인딩에 대해 알아보세요
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

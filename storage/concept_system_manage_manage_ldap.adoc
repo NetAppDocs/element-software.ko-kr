@@ -67,7 +67,7 @@ NOTE: 옵션 사용자 지정 포트 번호를 입력할 수도 있습니다.
 . * 선택 사항: * LDAPS 프로토콜 사용 * 을 선택합니다.
 . 일반 설정 * 에 필요한 정보를 입력합니다.
 +
-image::../media/element_new_ldap_servers.jpg[Element 새 LDAP 서버]
+image::../media/element_new_ldap_servers.jpg[일반 설정 정보의 스크린샷]
 
 . LDAP 활성화 * 를 클릭합니다.
 . 사용자에 대한 서버 액세스를 테스트하려면 * 사용자 인증 테스트 * 를 클릭합니다.
@@ -77,7 +77,7 @@ image::../media/element_new_ldap_servers.jpg[Element 새 LDAP 서버]
 +
 .. 사용자 * > * 보기 * 를 클릭합니다.
 +
-image::../media/element_new_cluster_admin.jpg[새로운 클러스터 관리자 요소]
+image::../media/element_new_cluster_admin.jpg[새 사용자 만들기 페이지의 스크린샷]
 
 .. 새 사용자의 경우 사용자 유형으로 * LDAP * 를 클릭하고 복사한 그룹을 고유 이름 필드에 붙여 넣습니다.
 .. 사용 권한(일반적으로 모든 사용 권한)을 선택합니다.

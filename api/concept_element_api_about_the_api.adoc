@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SolidFire,API,overview,about,Element 
 summary: Element API는 HTTPS를 통한 JSON-RPC 프로토콜을 기반으로 합니다. JSON-RPC는 경량 JSON 데이터 교환 형식을 기반으로 하는 간단한 텍스트 기반 RPC 프로토콜입니다. 클라이언트 라이브러리는 모든 주요 프로그래밍 언어에 사용할 수 있습니다. 
 ---
-= Element 소프트웨어 API 정보
+= Element API를 사용하여 스토리지를 관리하는 방법에 대해 알아보세요.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -23,13 +23,210 @@ NOTE: Element 웹 UI는 이 문서에 설명된 API 메소드를 사용합니다
 
 NOTE: 스토리지 클러스터에 로드가 많이 있거나 중간 지연 없이 여러 개의 연속된 API 요청을 제출하는 경우 메서드가 실패하고 "xDBVersionMismatch" 오류가 반환될 수 있습니다. 이 경우 메서드 호출을 다시 시도하십시오.
 
-* xref:reference_element_api_request_object_members.adoc[객체 구성원 요청]
-* xref:reference_element_api_response_object_members.adoc[응답 객체 멤버]
-* xref:concept_element_api_request_endpoints.adoc[엔드포인트 요청]
-* xref:concept_element_api_authentication.adoc[API 인증]
-* xref:concept_element_api_asynchronous_methods.adoc[비동기 메서드]
-* xref:reference_element_api_attributes.adoc[속성]
 
+
+== 공통 개체
+
+Element 소프트웨어 API는 JSON 개체를 사용하여 조직화된 데이터 개념을 나타냅니다. 이러한 API 메서드 중 다수는 데이터 입력 및 출력에 이러한 객체를 사용합니다. 이 단원에서는 일반적으로 사용되는 이러한 개체를 설명합니다. 단일 메서드에서만 사용되는 개체는 이 섹션 대신 해당 메서드로 문서화됩니다.
+
+link:../api/reference_element_api_account.html["일반적인 사물에 대해 알아보세요"]
+
+
+
+== 일반적인 방법
+
+일반적인 방법은 스토리지 클러스터, API 자체 또는 지속적인 API 작업에 대한 정보를 검색하는 데 사용되는 방법입니다.
+
+link:../api/reference_element_api_getapi.html["일반적인 방법에 대해 알아보세요"]
+
+
+
+== 계정 API 메소드
+
+계정 방법을 사용하면 계정 및 보안 정보를 추가, 제거, 확인 및 수정할 수 있습니다.
+
+link:../api/reference_element_api_addaccount.html["계정 API 메소드에 대해 알아보세요"]
+
+
+
+== 관리자 API 메소드
+
+관리자 API 메소드를 사용하여 스토리지 클러스터 관리자를 생성, 수정, 보기 및 제거하고 스토리지 클러스터에 대한 액세스 권한 및 권한 수준을 할당할 수 있습니다.
+
+link:../api/reference_element_api_addclusteradmin.html["관리자 API 메소드에 대해 알아보세요"]
+
+
+
+== 클러스터 API 메소드
+
+Element 소프트웨어 클러스터 API 메서드를 사용하면 스토리지 클러스터와 스토리지 클러스터에 속한 노드의 구성과 토폴로지를 관리할 수 있습니다.
+
+일부 클러스터 API 방법은 클러스터의 일부이거나 클러스터에 연결되도록 구성된 노드에서 작동합니다. 새 클러스터 또는 기존 클러스터에 노드를 추가할 수 있습니다. 클러스터에 추가할 준비가 된 노드는 "보류 중" 상태입니다. 즉, 노드가 구성되었지만 아직 클러스터에 추가되지 않았습니다.
+
+link:../api/reference_element_api_addnodes.html["클러스터 API 메서드에 대해 알아보세요"]
+
+
+
+== 클러스터 생성 API 메서드
+
+이러한 API 메소드를 사용하여 스토리지 클러스터를 생성할 수 있습니다. 이러한 모든 메서드는 단일 노드의 API 끝점에 대해 사용해야 합니다.
+
+link:../api/reference_element_api_checkproposedcluster.html["클러스터 생성 API 메서드에 대해 알아보세요"]
+
+
+
+== 드라이브 API 메소드
+
+드라이브 API 메소드를 사용하여 스토리지 클러스터에 사용 가능한 드라이브를 추가하고 관리할 수 있습니다. 스토리지 클러스터에 스토리지 노드를 추가하거나 기존 스토리지 노드에 새 드라이브를 설치할 경우 해당 드라이브를 스토리지 클러스터에 추가할 수 있습니다.
+
+link:../api/reference_element_api_adddrives.html["드라이브 API 메서드에 대해 알아보세요"]
+
+
+
+== Fibre Channel API 메소드
+
+Fibre Channel API 메소드를 사용하여 스토리지 클러스터의 Fibre Channel 노드 구성원을 추가, 수정 또는 제거할 수 있습니다.
+
+link:../api/reference_element_api_getvolumeaccessgrouplunassignments.html["Fibre Channel API 메서드에 대해 알아보세요"]
+
+
+
+== 이니시에이터 API 메소드
+
+이니시에이터 방법을 사용하면 스토리지 시스템과 외부 스토리지 클라이언트 간의 통신을 처리하는 iSCSI 이니시에이터 객체를 추가, 제거, 확인 및 수정할 수 있습니다.
+
+link:../api/reference_element_api_createinitiators.html["개시자 API 메소드에 대해 알아보세요"]
+
+
+
+== LDAP API 메소드
+
+LDAP(Lightweight Directory Access Protocol)를 사용하여 Element 스토리지에 대한 액세스를 인증할 수 있습니다. 이 섹션에 설명된 LDAP API 메소드를 사용하여 스토리지 클러스터에 대한 LDAP 액세스를 구성할 수 있습니다.
+
+link:../api/reference_element_api_addldapclusteradmin.html["LDAP API 메소드에 대해 알아보세요"]
+
+
+
+== 다중 요소 인증 API 메서드
+
+MFA(Multi-factor Authentication)를 사용하여 SAML(Security Assertion Markup Language)을 통해 타사 ID 공급자(IDP)를 사용하여 사용자 세션을 관리할 수 있습니다.
+
+link:../api/reference_element_api_addidpclusteradmin.html["다중 요소 인증 API 방법에 대해 알아보세요"]
+
+
+
+== 세션 인증 API 메서드
+
+세션 기반 인증을 사용하여 사용자 세션을 관리할 수 있습니다.
+
+link:../api/reference_element_api_listauthsessionbyclusteradmin.html["세션 인증 API 메소드에 대해 알아보세요"]
+
+
+
+== 노드 API 메소드
+
+노드 API 메소드를 사용하여 개별 노드를 구성할 수 있습니다. 이러한 방법은 구성해야 하는 단일 노드에서 작동하거나, 구성되어 있지만 아직 클러스터에 참여하고 있지 않거나, 클러스터에 적극적으로 참여하고 있는 경우에도 작동합니다. 노드 API 메서드를 사용하면 개별 노드 및 노드와 통신하는 데 사용되는 클러스터 네트워크의 설정을 보고 수정할 수 있습니다. 개별 노드에 대해 이러한 방법을 실행해야 하며 클러스터 주소에 대해 노드당 API 메소드를 실행할 수 없습니다.
+
+link:../api/reference_element_api_checkpingonvlan.html["노드 API 메소드에 대해 알아보세요"]
+
+
+
+== 복제 API 메소드
+
+복제 API 메서드를 사용하면 CDP(Continuous Data Protection)를 위해 두 클러스터를 연결할 수 있습니다. 두 클러스터를 연결하면 클러스터 내의 활성 볼륨을 두 번째 클러스터에 지속적으로 복제하여 데이터를 복구할 수 있습니다. 복제를 위해 볼륨을 페어링하면 데이터에 액세스할 수 없게 될 수 있는 이벤트로부터 데이터를 보호할 수 있습니다.
+
+link:../api/reference_element_api_cluster_pairing_order_of_operations.html["복제 API 방법에 대해 알아보세요"]
+
+
+
+== 보안 API 메서드
+
+Element 소프트웨어를 외부 키 관리 서버와 같은 외부 보안 관련 서비스와 통합할 수 있습니다. 이러한 보안 관련 방법을 사용하면 저장된 암호화에 대한 외부 키 관리와 같은 요소 보안 기능을 구성할 수 있습니다.
+
+link:../api/reference_element_api_addkeyservertoproviderkmip.html["보안 API 방법에 대해 알아보세요"]
+
+
+
+== SnapMirror API 메소드
+
+SnapMirror API 메소드는 원격 ONTAP 시스템으로 미러링된 스냅샷을 관리하기 위한 Element 웹 UI에서 사용됩니다. 이러한 메서드는 Element 웹 UI에서만 사용하도록 되어 있습니다. SnapMirror 기능에 대한 API 액세스가 필요한 경우 ONTAP API를 사용하십시오. SnapMirror API 메소드에 대한 요청 및 반환 예는 제공되지 않습니다.
+
+link:../api/reference_element_api_abortsnapmirrorrelationship.html["SnapMirror API 메소드에 대해 알아보세요"]
+
+
+
+== 시스템 구성 API 메소드
+
+시스템 구성 API 메소드를 사용하여 클러스터의 모든 노드에 적용되는 구성 값을 가져오고 설정할 수 있습니다.
+
+link:../api/reference_element_api_disablebmccoldreset.html["시스템 구성 API 메소드에 대해 알아보세요"]
+
+
+
+== 멀티 테넌트 네트워킹 API 메소드
+
+Element 스토리지 클러스터의 멀티테넌트 네트워킹에서는 계층 3 라우팅 없이 개별 논리 네트워크에 있는 여러 클라이언트 간의 트래픽을 하나의 요소 스토리지 클러스터에 연결할 수 있습니다.
+
+스토리지 클러스터에 대한 연결은 VLAN 태그 지정을 사용하여 네트워킹 스택에서 분리됩니다.
+
+
+
+=== 멀티테넌트 가상 네트워크 설정을 위한 전제 조건
+
+* 스토리지 노드의 가상 네트워크에 할당할 클라이언트 네트워크 IP 주소 블록을 식별해야 합니다.
+* 모든 스토리지 트래픽의 엔드포인트로 사용할 클라이언트 스토리지 네트워크 IP(SVIP) 주소를 식별해야 합니다.
+
+
+
+
+=== 가상 네트워킹 작업 순서
+
+. AddVirtualNetwork 메서드를 사용하여 입력한 IP 주소를 대량으로 프로비저닝할 수 있습니다.
++
+가상 네트워크를 추가하면 클러스터가 자동으로 다음 단계를 수행합니다.
+
++
+** 각 스토리지 노드는 가상 네트워크 인터페이스를 생성합니다.
+** 각 스토리지 노드에는 가상 SVIP를 사용하여 라우팅할 수 있는 VLAN 주소가 할당됩니다.
+** VLAN IP 주소는 노드가 재부팅될 경우 각 노드에서 유지됩니다.
+
+
+. 가상 네트워크 인터페이스 및 VLAN 주소가 할당되면 클라이언트 네트워크 트래픽을 가상 SVIP에 할당할 수 있습니다.
+
+
+link:../api/concept_element_api_virtual_network_naming_conventions.html["멀티테넌트 네트워킹 API 방법에 대해 알아보세요"]
+
+
+
+== 볼륨 API 메소드
+
+Element 소프트웨어 볼륨 API 메서드를 사용하면 스토리지 노드에 있는 볼륨을 관리할 수 있습니다. 이러한 방법으로 볼륨을 생성, 수정, 클론 복제 및 삭제할 수 있습니다. 볼륨 API 메소드를 사용하여 볼륨에 대한 데이터 측정값을 수집하고 표시할 수도 있습니다.
+
+link:../api/reference_element_api_cancelclone.html["볼륨 API 메서드에 대해 알아보세요"]
+
+
+
+== 볼륨 액세스 그룹 API 메소드
+
+볼륨 액세스 그룹 방법을 사용하면 볼륨 액세스 그룹을 추가, 제거, 보기 및 수정할 수 있습니다. 볼륨 액세스 그룹은 사용자가 iSCSI 또는 파이버 채널 이니시에이터를 사용하여 액세스할 수 있는 볼륨 모음입니다.
+
+link:../api/reference_element_api_addinitiatorstovolumeaccessgroup.html["볼륨 액세스 그룹 API 메소드에 대해 알아보세요"]
+
+
+
+== 볼륨 스냅샷 API 메소드
+
+Element 소프트웨어 볼륨 스냅샷 API 메소드를 사용하여 볼륨 스냅샷을 관리할 수 있습니다. 볼륨 스냅샷 API 메소드를 사용하여 볼륨 스냅샷을 생성, 수정, 클론 복제 및 삭제할 수 있습니다.
+
+link:../api/concept_element_api_snapshots_overview.html["볼륨 스냅샷 API 메서드에 대해 알아보세요"]
+
+
+
+== 가상 볼륨 API 메소드
+
+Element 소프트웨어 가상 볼륨 API 메소드를 사용하여 가상 볼륨(VVol)을 관리할 수 있습니다. 이러한 API 메소드를 사용하여 기존 VVOL을 보고 가상 볼륨 스토리지 컨테이너를 생성, 수정 및 삭제할 수 있습니다. 이러한 방법을 사용하여 일반 볼륨에서 작업할 수는 없지만, 일반적인 볼륨 API 방법을 사용하여 VVOL에 대한 정보를 나열할 수 있습니다.
+
+link:../api/reference_element_api_createstoragecontainer.html["가상 볼륨 API 메서드에 대해 알아보세요"]
 
 
 

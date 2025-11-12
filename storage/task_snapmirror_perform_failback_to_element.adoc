@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: failback, perform a failbacl, Element, snapmirror 
 summary: 기본 측의 문제가 완화되면 원본 소스 볼륨을 재동기화하여 NetApp Element 소프트웨어로 페일백해야 합니다. 수행하는 단계는 원래 소스 볼륨이 여전히 있는지 또는 새로 생성된 볼륨으로 페일백해야 하는지 여부에 따라 달라집니다. 
 ---
-= Element에 대한 장애 복구를 수행합니다
+= Element에 대한 장애 복구 수행에 대해 알아보세요.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,6 +12,25 @@ summary: 기본 측의 문제가 완화되면 원본 소스 볼륨을 재동기�
 
 [role="lead"]
 기본 측의 문제가 완화되면 원본 소스 볼륨을 재동기화하여 NetApp Element 소프트웨어로 페일백해야 합니다. 수행하는 단계는 원래 소스 볼륨이 여전히 있는지 또는 새로 생성된 볼륨으로 페일백해야 하는지 여부에 따라 달라집니다.
+
+
+
+== SnapMirror 페일백 시나리오
+
+SnapMirror 재해 복구 기능은 두 가지 장애 복구 시나리오에서 설명됩니다. 이 경우 원래 관계가 장애 발생(장애)된 것으로 간주됩니다.
+
+해당 절차의 단계가 참조용으로 추가됩니다.
+
+
+NOTE: 이 예에서 R1 = NetApp Element 소프트웨어를 실행하는 클러스터가 원래 소스 볼륨(요소)이고 ONTAP가 원래 대상 볼륨(ONTAP)인 원래 관계입니다. R2와 R3은 역재동기화 작업을 통해 생성된 역 관계를 나타냅니다.
+
+다음 이미지는 소스 볼륨이 여전히 존재할 때의 장애 복구 시나리오를 보여 줍니다.
+
+image::../media/snapmirror_element_failback1.gif[소스 볼륨이 여전히 존재하는 경우의 장애 복구 시나리오 이미지]
+
+다음 이미지는 소스 볼륨이 더 이상 존재하지 않는 경우의 장애 복구 시나리오를 보여 줍니다.
+
+image::../media/snapmirror_element_failback2.png[소스 볼륨이 더 이상 존재하지 않을 때의 장애 복구 시나리오 이미지]
 
 
 

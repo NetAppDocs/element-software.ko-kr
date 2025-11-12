@@ -57,7 +57,7 @@ WARNING: SolidFire All-Flash 스토리지 클러스터의 경우, 클러스터 �
 
 다중 요소 인증을 ADFS(Microsoft Active Directory Federation Services) 및 Shibboleth와 같은 일반적인 SAML 2.0 호환 ID 공급자(IdP)와 페어링할 수 있습니다.
 
-MFA를 구성하려면 를 참조하십시오 link:../storage/concept_system_manage_mfa_enable_multi_factor_authentication.html["다중 요소 인증을 사용합니다"] 문서화:
+MFA를 구성하려면 다음을 참조하세요. link:../storage/task_system_manage_mfa_set_up_multi_factor_authentication.html["다중 요소 인증을 사용합니다"] 선적 서류 비치.
 
 
 

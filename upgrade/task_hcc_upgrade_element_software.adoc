@@ -34,6 +34,9 @@ Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레
 * * 관리 노드 *: NetApp 하이브리드 클라우드 제어 UI 및 API의 경우, 사용자 환경의 관리 노드에서 버전 11.3이 실행되고 있습니다.
 * * 클러스터 상태 *: 클러스터를 업그레이드할 준비가 되었는지 확인했습니다. 을 참조하십시오 link:task_hcc_upgrade_element_prechecks.html["스토리지를 업그레이드하기 전에 Element 스토리지 상태 점검을 실행합니다"].
 * * H610S 스토리지 노드의 업데이트된 베이스보드 관리 컨트롤러(BMC) *: H610S 노드의 BMC 버전을 업그레이드했습니다. 를 참조하십시오 link:https://docs.netapp.com/us-en/hci/docs/rn_H610S_BMC_3.84.07.html["릴리스 정보 및 업그레이드 지침"^].
+
+
+[[element-upgrade-tim]]
 * * 업그레이드 프로세스 시간 *: 업그레이드를 수행하기에 충분한 시간을 예약했습니다. Element 소프트웨어 12.5 이상으로 업그레이드할 경우 업그레이드 프로세스 시간은 현재 Element 소프트웨어 버전 및 펌웨어 업데이트에 따라 달라집니다.
 +
 [cols="20,20,20,20,20"]

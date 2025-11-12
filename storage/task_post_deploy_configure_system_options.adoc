@@ -24,7 +24,7 @@ SolidFire 시스템을 설정한 후 몇 가지 선택적 작업을 수행할 �
 * link:task_post_deploy_credentials.html["NetApp HCI 및 NetApp SolidFire에서 자격 증명을 변경합니다"]
 * link:reference_post_deploy_change_default_ssl_certificate.html["Element 소프트웨어 기본 SSL 인증서를 변경합니다"]
 * link:task_post_deploy_credential_change_ipmi_password.html["노드의 IPMI 암호를 변경합니다"]
-* link:concept_system_manage_mfa_enable_multi_factor_authentication.html["다중 요소 인증을 사용합니다"]
+* link:task_system_manage_mfa_set_up_multi_factor_authentication.html["다중 요소 인증을 사용합니다"]
 * link:concept_system_manage_key_get_started_with_external_key_management.html["외부 키 관리를 시작합니다"]
 * link:task_system_manage_fips_create_a_cluster_supporting_fips_drives.html["FIPS 드라이브를 지원하는 클러스터를 생성합니다"]
 

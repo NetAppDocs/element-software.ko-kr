@@ -15,7 +15,7 @@ iSCSI 또는 파이버 채널 이니시에이터를 생성하고 선택적으로
 
 API 호출을 사용하여 이니시에이터 기반 CHAP 특성을 할당할 수도 있습니다. 이니시에이터당 CHAP 계정 이름과 자격 증명을 추가하려면 "CreateInitiator" API 호출을 사용하여 CHAP 액세스 및 특성을 제거하고 추가해야 합니다. "CreateInitiators" 및 "ModifyInitiators" API 호출을 통해 하나 이상의 virtualNetworkID를 지정하여 이니시에이터 액세스를 하나 이상의 VLAN으로 제한할 수 있습니다. 가상 네트워크를 지정하지 않으면 이니시에이터는 모든 네트워크에 액세스할 수 있습니다.
 
-자세한 내용은 API 참조 정보를 참조하십시오.link:../api/index.html["Element API를 사용하여 스토리지를 관리합니다"]
+자세한 내용은 API 참조 정보를 확인하세요. link:../api/concept_element_api_about_the_api.html["Element API를 사용하여 스토리지를 관리합니다"]
 
 .단계
 . 관리 * > * 이니시에이터 * 를 클릭합니다.

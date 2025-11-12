@@ -226,6 +226,9 @@ echo '{"trident": true, "mvip": "[mvip IP address]", "account_name": "[persisten
 
 
 
+
+
+[[step_6_recover_mnode_redeploy]]
 . 관리 노드 재구축 명령을 구성 및 실행하여 클러스터에서 호스팅되는 영구 볼륨에 연결하고 이전 관리 노드 구성 데이터로 서비스를 시작합니다.
 +
 

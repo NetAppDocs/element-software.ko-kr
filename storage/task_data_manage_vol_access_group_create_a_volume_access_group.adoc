@@ -61,7 +61,7 @@ TIP: Management * > * Volumes * > * Active * 목록의 볼륨에 대한 Actions 
 
 이니시에이터를 수정할 때 requiredCHAP 속성을 True로 전환하면 타겟 이니시에이터 암호를 설정할 수 있습니다. 자세한 내용은 ModifyInitiator API 메서드에 대한 API 정보를 참조하십시오.
 
-link:../api/index.html["Element API를 사용하여 스토리지를 관리합니다"]
+link:../api/concept_element_api_about_the_api.html["Element API를 사용하여 스토리지를 관리합니다"]
 
 |===
 . * 선택 사항: * 필요에 따라 이니시에이터를 더 추가합니다.

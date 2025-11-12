@@ -1,10 +1,10 @@
 ---
 section: setup
 title: 스토리지 설정
-url: "/setup/concept_setup_overview.html"
 entries:
+- title: 저장소 설정에 대해 알아보세요
+  url: "/setup/concept_setup_overview.html"
 - title: 스토리지 노드로 클러스터 설정
-  url: "/setup/task_setup_cluster_with_storage_nodes.html"
   entries:
   - title: 스토리지 노드를 구성합니다
     url: "/setup/concept_setup_configure_a_storage_node.html"
@@ -15,7 +15,6 @@ entries:
   - title: 클러스터에 드라이브를 추가합니다
     url: "/setup/task_setup_add_drives_to_a_cluster.html"
 - title: 파이버 채널 노드를 사용하여 클러스터 설정
-  url: "/setup/task_setup_cluster_with_fibre_channel_nodes.html"
   entries:
   - title: Fibre Channel 노드를 구성합니다
     url: "/setup/concept_setup_fc_configure_a_fibre_channel_node.html"

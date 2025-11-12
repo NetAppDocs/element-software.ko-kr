@@ -41,4 +41,4 @@ EKM 관리 및 구성에 사용할 수 있는 모든 API의 목록입니다.
 * TestKeyProviderKmip 을 참조하십시오
 
 
-API 메소드에 대한 자세한 내용은 를 참조하십시오 link:../api/index.html["API 참조 정보입니다"].
+API 메소드에 대한 정보는 다음을 참조하세요. link:../api/concept_element_api_about_the_api.html["API 참조 정보입니다"].

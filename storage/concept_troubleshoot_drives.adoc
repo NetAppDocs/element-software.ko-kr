@@ -39,6 +39,6 @@ IMPORTANT: SolidFire 스토리지 시스템은 데이터를 마이그레이션�
 * xref:task_troubleshoot_remove_mdss_drives.adoc[MDSS 드라이브를 제거합니다]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2844771["SolidFire 스토리지 노드의 드라이브 교체"]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2846859["H600S 시리즈 스토리지 노드의 드라이브 교체"]
-* link:../hardware/concept_h410s_h610s_info.html["H410S 및 H610S 하드웨어 정보"]
-* link:../hardware/concept_sfseries_info.html["SF-시리즈 하드웨어 정보"]
+* link:../hardware/task_h410s_h610s_install.html["H410S 및 H610S 하드웨어 정보"]
+* link:../hardware/task_sfseries_chassisrepl.html["SF-시리즈 하드웨어 정보"]
 

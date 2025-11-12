@@ -4,13 +4,24 @@ sidebar: sidebar
 keywords: snmp, overview, reference, mib, settings, trap 
 summary: Cluster 탭의 SNMP 페이지에서 다음 정보를 볼 수 있습니다. 
 ---
-= SNMP 세부 정보
+= SNMP에 대해 알아보세요
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+클러스터에서 SNMP(Simple Network Management Protocol)를 구성할 수 있습니다.
+
+SNMP 요청자를 선택하고, 사용할 SNMP 버전을 선택하고, USM(사용자 기반 보안 모델) 사용자를 식별하고, SolidFire 클러스터를 모니터링하기 위한 트랩을 구성할 수 있습니다. 관리 정보 기반 파일을 보고 액세스할 수도 있습니다.
+
+
+NOTE: IPv4와 IPv6 주소를 모두 사용할 수 있습니다.
+
+
+
+== SNMP 세부 정보
+
 Cluster 탭의 SNMP 페이지에서 다음 정보를 볼 수 있습니다.
 
 * SNMP MIB *

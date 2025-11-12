@@ -1,7 +1,6 @@
 ---
 section: hccstorage
 title: NetApp 하이브리드 클라우드 제어로 스토리지를 관리 및 모니터링합니다
-url: "/hccstorage/index.html"
 entries:
 - title: NetApp 하이브리드 클라우드 제어를 사용하여 스토리지 클러스터를 추가하고 관리합니다
   url: "/hccstorage/task-hcc-manage-storage-clusters.html"

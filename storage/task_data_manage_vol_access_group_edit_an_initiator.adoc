@@ -15,7 +15,7 @@ summary: 기존 이니시에이터의 별칭을 변경하거나 별칭이 없는
 
 이니시에이터당 CHAP 계정 이름과 자격 증명을 추가하려면 ModfyInitiator API 호출을 사용하여 CHAP 액세스 및 속성을 제거하고 추가해야 합니다.
 
-을 참조하십시오 link:../api/index.html["Element API를 사용하여 스토리지를 관리합니다"].
+보다link:../api/concept_element_api_about_the_api.html["Element API를 사용하여 스토리지를 관리합니다"] .
 
 .단계
 . 관리 * > * 이니시에이터 * 를 클릭합니다.
