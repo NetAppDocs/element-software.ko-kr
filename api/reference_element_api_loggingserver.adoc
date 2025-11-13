@@ -11,7 +11,7 @@ summary: loggingServer 객체에는 스토리지 클러스터에 구성된 로�
 
 
 [role="lead"]
-loggingServer 객체에는 스토리지 클러스터에 구성된 로깅 호스트에 대한 정보가 포함되어 있습니다. GetRemoteLoggingHosts 를 사용하여 현재 로깅 호스트가 무엇인지 확인한 다음 SetRemoteLoggingHosts 를 사용하여 현재 로깅 호스트와 새 로깅 호스트의 원하는 목록을 설정할 수 있습니다.
+loggingServer 객체는 스토리지 클러스터에 대해 구성된 로깅 호스트에 대한 정보를 저장합니다.  사용 `GetRemoteLoggingHosts` 현재 로깅 호스트를 보고 다음을 사용합니다. `SetRemoteLoggingHosts` 현재 및 새로운 로깅 호스트의 원하는 목록을 설정합니다.
 
 
 
@@ -26,7 +26,7 @@ loggingServer 객체에는 스토리지 클러스터에 구성된 로깅 호스�
  a| 
 호스트
  a| 
-로그 서버의 IP 주소입니다.
+로그 서버의 FQDN 또는 IP 주소
  a| 
 문자열
 
@@ -35,8 +35,12 @@ loggingServer 객체에는 스토리지 클러스터에 구성된 로깅 호스�
  a| 
 포트
  a| 
-로그 서버와 통신하는 데 사용되는 포트 번호입니다.
+로그 서버와 통신하는 데 사용되는 포트 번호
  a| 
 정수
 
 |===
+.관련 정보
+* link:reference_element_api_getremotelogginghosts.html["GetRemoteLoggingHosts 를 참조하십시오"]
+* link:reference_element_api_setremotelogginghosts.html["SetRemoteLoggingHosts 를 선택합니다"]
+

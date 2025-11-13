@@ -17,13 +17,13 @@ GetRemoteLoggingHosts 메서드를 사용하여 로그 서버의 현재 목록�
 
 == 매개 변수
 
-이 메서드에는 입력 매개 변수가 없습니다.
+입력 매개변수가 없습니다. `GetRemoteLoggingHosts` .
 
 
 
 == 반환 값
 
-이 메서드의 반환 값은 다음과 같습니다.
+그만큼 `GetRemoteLoggingHosts` 이 메서드는 다음과 같은 반환 값을 갖습니다.
 
 |===
 | 이름 | 설명 | 유형 
@@ -32,7 +32,7 @@ GetRemoteLoggingHosts 메서드를 사용하여 로그 서버의 현재 목록�
  a| 
 원격 호스트
  a| 
-전달된 로깅 정보를 수신하도록 구성된 호스트에 대한 IP 주소 및 포트 정보 목록입니다.
+전달된 로깅 정보를 수신하도록 구성된 호스트의 IP 주소, FQDN 및 포트 정보를 나열합니다.
  a| 
 xref:reference_element_api_loggingserver.adoc[로그 서버] 스토리지
 
@@ -69,6 +69,10 @@ xref:reference_element_api_loggingserver.adoc[로그 서버] 스토리지
          },
          {
            "host": "172.16.1.25"
+         },
+         {
+            "host": "syslogs.lab.company.net",
+            "port": 514
          }
       ]
    }
@@ -78,7 +82,7 @@ xref:reference_element_api_loggingserver.adoc[로그 서버] 스토리지
 
 == 버전 이후 새로운 기능
 
-9.6
+ONTAP 9.6부터 사용 가능합니다.
 
 
 

@@ -20,6 +20,7 @@ NOTE: NetApp 지원 자격 증명을 사용하여 로그인하라는 메시지�
 
 == NetApp Element 소프트웨어
 
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3362264["NetApp Element 소프트웨어 12.9 릴리스 노트"^]_새로운_
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2886996["NetApp Element 소프트웨어 12.8 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2884468["NetApp Element 소프트웨어 12.7 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2882193["NetApp Element 소프트웨어 12.5 릴리스 정보"^]
@@ -49,7 +50,7 @@ NOTE: NetApp 지원 자격 증명을 사용하여 로그인하라는 메시지�
 
 == vCenter Server용 NetApp Element 플러그인
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP3344864["vCenter 플러그인 5.5 릴리스 노트"^]_새로운_
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3344864["vCenter 플러그인 5.5 릴리스 노트"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP3330676["vCenter Plug-in 5.4 릴리즈 노트"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP3316480["vCenter Plug-in 5.3 릴리즈 노트"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2886272["vCenter Plug-in 5.2 릴리즈 노트"^]
@@ -78,7 +79,7 @@ NOTE: NetApp 지원 자격 증명을 사용하여 로그인하라는 메시지�
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.76.html["스토리지 펌웨어 번들 2.76 릴리스 정보"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.27.html["스토리지 펌웨어 번들 2.27 릴리스 정보"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_H610S_BMC_3.84.07.html["H610S BMC 3.84.07 릴리스 정보"^]
-* https://docs.netapp.com/us-en/hci/docs/firmware_driver_versions.html["지원되는 펌웨어 및 ESXi 드라이버 버전"] _신규 _
+* https://docs.netapp.com/us-en/hci/docs/firmware_driver_versions.html["지원되는 펌웨어 및 ESXi 드라이버 버전"]
 
 
 
