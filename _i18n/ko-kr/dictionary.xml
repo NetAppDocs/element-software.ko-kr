@@ -1132,7 +1132,6 @@
   <block id="8038ace7de9a6145f384d01b5f03e2d8" category="list-text"><block ref="8038ace7de9a6145f384d01b5f03e2d8" category="inline-link-macro-rx"></block></block>
   <block id="ae4a16d89bc4c1fd130a91d5ecdfc931" category="list-text"><block ref="ae4a16d89bc4c1fd130a91d5ecdfc931" category="inline-link-macro-rx"></block></block>
   <block id="79d1229024e48c87f7159e2ee740ed37" category="inline-link-macro">액세스할 수 없거나 잘못된 인증 키를 복구합니다</block>
-  <block id="f1f67a70bba55b3b1679804cb55ea1d1" category="list-text"><block ref="f1f67a70bba55b3b1679804cb55ea1d1" category="inline-link-macro-rx"></block></block>
   <block id="cf49738df7fce8d2617f93adb7c24c2f" category="inline-link-macro">외부 키 관리 API 명령</block>
   <block id="06d3db643866a2632d21e5d307008e72" category="list-text"><block ref="06d3db643866a2632d21e5d307008e72" category="inline-link-macro-rx"></block></block>
   <block id="62d29aedc6ec474773233dd69dabe7c4" category="inline-link-macro">저장된 소프트웨어 암호화를 활성화하는 데 사용할 수 있는 CreateCluster API</block>
@@ -1992,10 +1991,7 @@
   <block id="e9065488ba04db892848ac25fd8592aa" category="admonition">모범 사례로서, 하나의 관리 노드만 하나의 VMware vCenter 인스턴스와 연결하고 여러 관리 노드에서 동일한 스토리지 및 컴퓨팅 리소스 또는 vCenter 인스턴스를 정의하지 않는 것이 좋습니다.</block>
   <block id="c790184773e8ef26c5af49a38611a471" category="summary">통합 백업 기능을 사용하여 볼륨 스냅샷을 백업할 수 있습니다. SolidFire 클러스터에서 외부 오브젝트 저장소 또는 다른 SolidFire 클러스터로 스냅샷을 백업할 수 있습니다. 외부 개체 저장소에 스냅샷을 백업할 때 읽기/쓰기 작업을 허용하는 개체 저장소에 대한 연결이 있어야 합니다.</block>
   <block id="6e589b33a7a384693052e3d15301e081" category="inline-link-macro">볼륨 스냅샷을 Amazon S3 오브젝트 저장소에 백업합니다</block>
-  <block id="4e385daedad4a81e3776afbca9ea07a7" category="list-text"><block ref="4e385daedad4a81e3776afbca9ea07a7" category="inline-link-macro-rx"></block></block>
-  <block id="3a50ce5f4085bd0f74405eb1c25f6cc9" category="list-text"><block ref="3a50ce5f4085bd0f74405eb1c25f6cc9" category="inline-link-macro-rx"></block></block>
   <block id="5a7756bec1a6d55954906bd35365f9ec" category="inline-link-macro">볼륨 스냅샷을 SolidFire 클러스터에 백업합니다</block>
-  <block id="091f209abc9bb34dfb86fb2328780ca1" category="list-text"><block ref="091f209abc9bb34dfb86fb2328780ca1" category="inline-link-macro-rx"></block></block>
   <block id="93e2c7b09f34787a239f96b7c02f2037" category="summary">클러스터에 연결된 iSCSI 세션에 대한 정보를 볼 수 있습니다.</block>
   <block id="d7ed15d6c6333c98d209478507476337" category="doc">iSCSI 세션 세부 정보입니다</block>
   <block id="7db5737d7840754e4fe53e1f427ebb41" category="paragraph">다음 목록에서는 iSCSI 세션에 대해 찾을 수 있는 정보를 설명합니다.</block>
@@ -2716,9 +2712,6 @@
   <block id="296dada05fb445c06aed59b8c9afdfa6" category="paragraph">볼륨은 * 활성 * 볼륨 목록에 배치되고 볼륨에 대한 iSCSI 연결이 복원됩니다.</block>
   <block id="dc1cc8200d35d9ec64b7565d154fff16" category="paragraph">단일 볼륨 또는 여러 볼륨의 클론을 생성하여 데이터의 시점 복사본을 만들 수 있습니다. 볼륨을 클론하면 시스템에서 볼륨의 스냅샷을 생성한 다음 스냅샷이 참조하는 데이터의 복제본을 생성합니다. 비동기식 프로세스이며, 프로세스에 필요한 시간은 클론 생성 중인 볼륨의 크기와 현재 클러스터 로드에 따라 다릅니다.</block>
   <block id="50ac16ed5c9a955e644b093813cd75e0" category="paragraph">클러스터는 한 번에 볼륨당 최대 2개의 클론 요청을 실행하고 한 번에 최대 8개의 활성 볼륨 클론 작업을 지원합니다. 이러한 제한을 초과하는 요청은 나중에 처리할 수 있도록 대기열에 추가됩니다.</block>
-  <block id="b8a1cad4a50c9260122967b830aa2f1e" category="inline-link">VMFS 데이터 저장소 복제본 마운트</block>
-  <block id="d79c3c87976b8fd24486c760b99214ec" category="inline-link">중복 VMFS 데이터 저장소 관리</block>
-  <block id="4a82b53219bfaabced3d1c81b475eff8" category="admonition">운영 체제는 복제된 볼륨을 처리하는 방식에 따라 다릅니다. VMware ESXi는 복제된 볼륨을 볼륨 복사본 또는 스냅샷 볼륨으로 처리합니다. 볼륨은 새 데이터 저장소를 생성하는 데 사용할 수 있는 디바이스가 됩니다. 클론 볼륨을 마운트하고 스냅샷 LUN을 처리하는 방법에 대한 자세한 내용은 의 VMware 설명서를 참조하십시오<block ref="e578a339e9493d9c63d57360db9fb8b0" category="inline-link-rx"></block> 및<block ref="6865dba41e05c4300a16bf14013377d9" category="inline-link-rx"></block>.</block>
   <block id="7df9bea854445d9f3836e4622d758b3b" category="admonition">작은 크기로 복제하여 복제된 볼륨을 잘라내려면 먼저 작은 볼륨에 맞도록 파티션을 준비해야 합니다.</block>
   <block id="743554a1317a874d785bae30fdf78296" category="list-text">단일 볼륨을 클론하려면 다음 단계를 수행하십시오.</block>
   <block id="0c45f82d13eb2f161b1469f4deca5df8" category="list-text">Active * 페이지의 볼륨 목록에서 복제할 볼륨의 작업 아이콘을 클릭합니다.</block>
@@ -4203,7 +4196,6 @@
   <block id="8e9a3ba87453eb870e97d5a72d5d9aac" category="inline-link">등록 취소</block>
   <block id="778212e26cda250d5f5f97f4685bf1e0" category="list-text">vCSA 및 Windows 업그레이드의 경우<block ref="da392680dca74f52691137b810baae7b" category="inline-link-rx"></block> 등록 유틸리티를 사용하여 연결된 vCenter Server의 플러그인입니다.</block>
   <block id="2aaad98bfcfbd95f21871cf486a3243c" category="inline-link">vCenter Server, ESXi, VM 및 기타 VMware 구성 요소를 비롯한 vSphere를 업그레이드합니다</block>
-  <block id="f23d91ab86d1cf2e82bd86fd860c8585" category="list-text"><block ref="f0107c2e24795b3c47b3466dee69927b" category="inline-link-rx"></block>.</block>
   <block id="0ba7583639a274c434bbe6ef797115a4" category="inline-link">등록</block>
   <block id="81750b82d55f7148c9a0001ed71e7dd4" category="list-text"><block ref="670ccc28c8c6a3ae1c020a0fa12ec195" category="inline-link-rx"></block> vCenter를 사용하여 vCenter Server용 Element Plug-in을 다시 사용할 수 있습니다.</block>
   <block id="2984cab36bd51d5446963e671e808f5d" category="inline-link">클러스터 추가</block>
@@ -5174,7 +5166,6 @@
   <block id="2e02ae79fb104d3c608baf3627930722" category="paragraph">운영 스토리지의 소스 볼륨과 2차 스토리지의 타겟 볼륨 간의 관계를 데이터 보호 관계라고 합니다. 클러스터는 볼륨이 상주하는 엔드포인트라고 하며 복제된 데이터가 포함된 볼륨을 살펴봐야 합니다. 피어 관계를 사용하면 클러스터와 볼륨이 데이터를 안전하게 교환할 수 있습니다.</block>
   <block id="e8eee300f648a33639310b4549ed1596" category="paragraph">SnapMirror는 기본적으로 NetApp ONTAP 컨트롤러에서 실행되며 NetApp HCI 및 SolidFire 클러스터에서 실행되는 Element에 통합되어 있습니다. SnapMirror를 제어하는 로직은 ONTAP 소프트웨어에 상주하므로, 모든 SnapMirror 관계는 조정 작업을 수행하기 위해 적어도 하나의 ONTAP 시스템을 포함해야 합니다. 사용자는 기본적으로 Element UI를 통해 Element와 ONTAP 클러스터 간의 관계를 관리합니다. 그러나 일부 관리 작업은 NetApp ONTAP System Manager에 상주합니다. 사용자는 ONTAP와 Element에서 모두 사용할 수 있는 CLI 및 API를 통해 SnapMirror를 관리할 수도 있습니다.</block>
   <block id="d95bb83fde5706bb5398bb94c8106f7f" category="inline-link">TR-4651: NetApp SolidFire SnapMirror 아키텍처 및 구성</block>
-  <block id="05f383efa661d49bdf542c9e9e281e05" category="paragraph">을 참조하십시오<block ref="eea98aade109823686927fb53af38fab" category="inline-link-rx"></block> (로그인 필요)</block>
   <block id="52b5fba1a62806fe621dc72218549e9c" category="paragraph">Element 소프트웨어를 사용하여 클러스터 레벨에서 SnapMirror 기능을 수동으로 활성화해야 합니다. SnapMirror 기능은 기본적으로 비활성화되어 있으며, 새로운 설치 또는 업그레이드의 일부로 자동 활성화되지 않습니다.</block>
   <block id="237207bac5b8584faf6c036500958cad" category="paragraph">SnapMirror를 사용하도록 설정한 후 Element 소프트웨어의 데이터 보호 탭에서 SnapMirror 관계를 생성할 수 있습니다.</block>
   <block id="5ce5a4c32220893139a79b7961ce29a5" category="paragraph">NetApp Element 소프트웨어 10.1 이상 버전은 ONTAP 시스템으로 스냅샷을 복사 및 복원하는 SnapMirror 기능을 지원합니다.</block>
@@ -10780,7 +10771,6 @@
   <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
   <block id="90e7c2277ee69a3d3ecf30fa1fe61ab1" category="inline-link">vCenter 플러그인 4.10 릴리즈 노트</block>
   <block id="779aeeb0a67ee84cae70c2361654111d" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block></block>
-  <block id="4b1a9ce7f7fbe6c6a81ef1238b7e421a" category="list-text">에 대해 충분한 시간을 예약했습니다 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 및 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 업그레이드. Element 소프트웨어 12.5 이상으로 업그레이드할 경우 업그레이드 프로세스 시간은 Element 소프트웨어 버전 및 펌웨어 업데이트에 따라 달라집니다.</block>
   <block id="11d9cbba51c832a014742a5da1938d41" category="paragraph">다음 시퀀스를 사용하여 Element 12.5 이상의 NetApp SolidFire All-Flash 스토리지 시스템을 업그레이드할 수 있습니다.</block>
   <block id="7df8805b6d2dda4d3fb6d3ac7bb98b27" category="inline-link-macro">HealthTools를 사용하여 Element 12.3.x로 업그레이드하십시오</block>
   <block id="dc1b969077a38d3c5d1ddc04ce3b29c7" category="admonition">Element 12.5부터는 NetApp HealthTools에서 Element 소프트웨어 업그레이드가 더 이상 지원되지 않습니다. Element 11.0 또는 11.1을 실행 중인 경우 먼저 해야 합니다 <block ref="b94815288b0622c054c235dd32c9c615" category="inline-link-macro-rx"></block> 그리고 NetApp 하이브리드 클라우드 제어를 사용하여 Element 12.5 이상으로 업그레이드하십시오.</block>
@@ -11432,7 +11422,6 @@
   <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">NetApp 커뮤니티</block>
   <block id="213686afc3803be7caa09348765467fe" category="sidebar">도움을 받을 수 있는 곳</block>
   <block id="b47307258c4d85ffb5f4141d7a660a9b" category="sidebar">Element 11.8.2 및 이전 설명서</block>
-  <block id="47fd1428a184377839b3521d9b89b20c" category="paragraph">자세한 내용은 을<block ref="5fe7d084aafda4fb5c53715a85948ffe" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="3d08f19c985682eb2a632e36184cedd2" category="paragraph"><block ref="3d08f19c985682eb2a632e36184cedd2" category="inline-link-rx"></block></block>
   <block id="b456d131470ee117b6ff900f949b80c5" category="paragraph"><block ref="b456d131470ee117b6ff900f949b80c5" category="inline-link-rx"></block></block>
   <block id="1791fd435a83f3ee701165e29bb05b2f" category="list-text"><block ref="1791fd435a83f3ee701165e29bb05b2f" category="inline-link-rx"></block></block>
@@ -12064,4 +12053,14 @@
   <block id="08338b1803089277b6a93f4d800189f8" category="paragraph">기존 관리 노드를 Element 12.9로 인플레이스 업그레이드하는 경우 업그레이드하기 전에 환경에 따라 관리 노드의 VM 하드웨어 버전이 ESXi 6.7(VM 하드웨어 버전 14) 이상과 호환되는지 확인해야 합니다.</block>
   <block id="cf5be9e5b7186b071d6f04d4b0377a82" category="sidebar">SolidFire 올플래시 스토리지 시스템은 드라이브와 노드와 같은 하드웨어 구성 요소로 구성되며, 이러한 구성 요소는 스토리지 리소스 풀로 결합됩니다. Element 인터페이스, API 또는 기타 관리 도구를 사용하면 NetApp Element 소프트웨어로 이러한 스토리지 리소스 클러스터를 관리할 수 있습니다. 이 사이트에는 Element 소프트웨어 12.9에 대한 설명서가 포함되어 있습니다.</block>
   <block id="04d99e886b9a296f2c17ceac36c3b3f7" category="sidebar">SolidFire 및 Element 소프트웨어 설명서 12.9</block>
+  <block id="7ed2110dda4e725820c86037ab54d196" category="paragraph">자세한 내용은<block ref="45dfeaa43e9f1dd00a21977e432c35a4" category="inline-link-rx"></block>를 참조하십시오.</block>
+  <block id="d2ef1335ae8e1d79c299379ac49e4b1b" category="paragraph">참조<block ref="30ea8dea45042e51ef9f45277c3dcfc3" category="inline-link-rx"></block></block>
+  <block id="806181f8afe63ab2176a9668a88c16e9" category="list-text"><block ref="806181f8afe63ab2176a9668a88c16e9" category="inline-link-macro-rx"></block></block>
+  <block id="d64340614e4fc20e1f47eeb584d094b6" category="list-text"><block ref="d64340614e4fc20e1f47eeb584d094b6" category="inline-link-macro-rx"></block></block>
+  <block id="a08e600a476d03b143ad4ffabcc3dc36" category="list-text"><block ref="a08e600a476d03b143ad4ffabcc3dc36" category="inline-link-macro-rx"></block></block>
+  <block id="522cf0a888d1be9011076f48d51639fb" category="list-text"><block ref="522cf0a888d1be9011076f48d51639fb" category="inline-link-macro-rx"></block></block>
+  <block id="70cd8bfb8fd7a4082087201414ab2fe4" category="inline-link-macro">VMware 문서</block>
+  <block id="132c11da2b1e7646c3d397a41e823c61" category="admonition">운영 체제마다 복제된 볼륨을 처리하는 방식이 다릅니다. VMware ESXi는 복제된 볼륨을 볼륨 복사본 또는 스냅샷 볼륨으로 처리합니다. 이 볼륨은 새 데이터스토어를 생성하는 데 사용할 수 있는 장치입니다. 복제 볼륨 마운트 및 스냅샷 LUN 처리에 대한 자세한 내용은 <block ref="3be1aef9521c6da181e637c000f32aa2" category="inline-link-macro-rx"></block> VMFS 데이터스토어 복사본 마운트 및 중복 VMFS 데이터스토어 관리를 참조하십시오.</block>
+  <block id="75b0b932212b6758e37fc8920da31e3e" category="list-text"><block ref="da6d02632764bebb791a1a7b176b342b" category="inline-link-macro-rx"></block> 및 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 업그레이드를 위해 충분한 시간을 확보하셨습니다. Element 소프트웨어 12.5 이상으로 업그레이드할 경우, 업그레이드 소요 시간은 Element 소프트웨어 버전 및 펌웨어 업데이트에 따라 달라집니다.</block>
+  <block id="fe3c28c386d2be6c3cbda4b2feb01c29" category="list-text"><block ref="e8348e5b207b91893f9322900bc614aa" category="inline-link-rx"></block>.</block>
 </blocks>
